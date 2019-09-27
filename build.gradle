@@ -19,11 +19,6 @@ dependencies {
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.10.0.pr3'
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.10.0.pr3'
 
-    //FAN
-    implementation group: 'com.amitshekhar.android', name: 'android-networking', version:'1.0.2'
-    //FAN Jackson
-    implementation group: 'com.amitshekhar.android', name: 'jackson-android-networking', version:'1.0.2'
-
     // Use the Kotlin JDK 8 standard library.
     implementation group: 'org.jetbrains.kotlin', name: 'kotlin-stdlib-jdk8'
     // Use the Kotlin test library.
