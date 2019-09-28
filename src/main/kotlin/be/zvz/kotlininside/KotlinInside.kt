@@ -1,11 +1,8 @@
 package be.zvz.kotlininside
 
 import be.zvz.kotlininside.httpinterface.HttpInterface
+import be.zvz.kotlininside.security.Auth
 
 class KotlinInside(val httpInterface: HttpInterface) {
-    init {
-        httpInterface
-                .setUserAgent("dcinside.app")
-                .setHeader("Referer", "http://www.dcinside.com")
-    }
+    val auth = Auth(this)
 }

@@ -2,12 +2,19 @@ package be.zvz.kotlininside.httpinterface;
 
 public class HttpException extends RuntimeException {
     private int statusCode;
+    private String errorMessage;
 
-    HttpException(int statusCode) {
+    public HttpException(int statusCode, String errorMessage) {
+        super("Error Code : " + statusCode + ", Error Message" + errorMessage);
+        this.errorMessage = errorMessage;
         this.statusCode = statusCode;
     }
 
     public int getStatusCode() {
         return statusCode;
+    }
+
+    public String getErrorMessage() {
+        return errorMessage;
     }
 }

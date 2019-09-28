@@ -1,35 +1,206 @@
 package be.zvz.kotlininside.httpinterface;
 
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
 import be.zvz.kotlininside.json.JsonBrowser;
 
+import java.io.File;
+import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 
 public interface HttpInterface {
-    public JsonBrowser get(String url, Map<String, String> data) throws HttpException;
+    public class Option {
+        @Nullable
+        private String userAgent = null;
+        @NotNull
+        private Map<String, String> headers = new LinkedHashMap<>();
+        @NotNull
+        private Map<String, String> bodyParameter = new LinkedHashMap<>();
+        @NotNull
+        private Map<String, String> pathParameter = new LinkedHashMap<>();
+        @NotNull
+        private Map<String, String> queryParameter = new LinkedHashMap<>();
+        @Nullable
+        private String multipartContentType = null;
+        @NotNull
+        private Map<String, File> multipartFile = new LinkedHashMap<>();
+        @NotNull
+        private Map<String, List<File>> multipartFileList = new LinkedHashMap<>();
+        @NotNull
+        private Map<String, String> multipartParameter = new LinkedHashMap<>();
 
-    public JsonBrowser post(String url, Map<String, String> data) throws HttpException;
 
-    public JsonBrowser delete(String url, Map<String, String> data) throws HttpException;
+        /**
+         *
+         * @param userAgent 설정할 User-Agent 문자열
+         * @return this
+         */
+        @NotNull
+        public Option setUserAgent(@NotNull String userAgent) {
+            this.userAgent = userAgent;
+            return this;
+        }
 
-    public JsonBrowser head(String url, Map<String, String> data) throws HttpException;
+        @Nullable
+        public String getUserAgent() {
+            return this.userAgent;
+        }
 
-    public JsonBrowser put(String url, Map<String, String> data) throws HttpException;
+        /**
+         *
+         * @param key 매개변수 Key
+         * @param value 매개변수 Value
+         * @return this
+         */
+        @NotNull
+        public Option addHeader(@NotNull String key, @NotNull String value) {
+            this.headers.put(key, value);
+            return this;
+        }
 
-    public JsonBrowser patch(String url, Map<String, String> data) throws HttpException;
+        /**
+         *
+         * @return 헤더 목록을 반환합니다.
+         */
+        @NotNull
+        public Map<String, String> getHeaders() {
+            return this.headers;
+        }
 
-    public HttpInterface setUserAgent(String userAgent);
+        /**
+         *
+         * @param key 매개변수 Key
+         * @param value 매개변수 Value
+         * @return this
+         */
+        @NotNull
+        public Option addBodyParameter(@NotNull String key, @NotNull String value) {
+            this.bodyParameter.put(key, value);
+            return this;
+        }
 
-    public HttpInterface setHeader(String key, String value);
+        @NotNull
+        public Map<String, String> getBodyParameter() {
+            return this.bodyParameter;
+        }
 
-    public HttpInterface setHeaders(Map<String, String> data);
+        /**
+         *
+         * @param key 매개변수 Key
+         * @param value 매개변수 Value
+         * @return this
+         */
+        @NotNull
+        public Option addPathParameter(@NotNull String key, @NotNull String value) {
+            this.pathParameter.put(key, value);
+            return this;
+        }
 
-    public String getHeader(String key);
+        @NotNull
+        public Map<String, String> getPathParameter() {
+            return this.pathParameter;
+        }
 
-    public Map<String, String> getHeaders();
+        /**
+         *
+         * @param key 매개변수 Key
+         * @param value 매개변수 Value
+         * @return this
+         */
+        @NotNull
+        public Option addQueryParameter(@NotNull String key, @NotNull String value) {
+            this.queryParameter.put(key, value);
+            return this;
+        }
 
-    public HttpInterface addBodyParameter(String key, String value);
+        @NotNull
+        public Map<String, String> getQueryParameter() {
+            return this.queryParameter;
+        }
 
-    public HttpInterface addPathParameter(String key, String value);
+        @NotNull
+        public Option setMultipartContentType(@Nullable String contentType) {
+            this.multipartContentType = contentType;
+            return this;
+        }
 
-    public HttpInterface addQueryParameter(String key, String value);
+        @Nullable
+        public String getMultipartContentType() {
+            return this.multipartContentType;
+        }
+
+        /**
+         *
+         * @param key 매개변수 Key
+         * @param value 매개변수 Value
+         * @return this
+         */
+        @NotNull
+        public Option addMultipartFile(@NotNull String key, @NotNull File value) {
+            this.multipartFile.put(key, value);
+            return this;
+        }
+
+        @NotNull
+        public Map<String, File> getMultipartFile() {
+            return this.multipartFile;
+        }
+
+        /**
+         *
+         * @param key 매개변수 Key
+         * @param value 매개변수들 Value
+         * @return this
+         */
+        @NotNull
+        public Option addMultipartFileList(@NotNull String key, @NotNull List<File> value) {
+            this.multipartFileList.put(key, value);
+            return this;
+        }
+
+        @NotNull
+        public Map<String, List<File>> getMultipartFileList() {
+            return this.multipartFileList;
+        }
+
+        /**
+         *
+         * @param key 매개변수 Key
+         * @param value 매개변수 Value
+         * @return this
+         */
+        @NotNull
+        public Option addMultipartParameter(@NotNull String key, @NotNull String value) {
+            this.multipartParameter.put(key, value);
+            return this;
+        }
+
+        @NotNull
+        public Map<String, String> getMultipartParameter() {
+            return this.multipartParameter;
+        }
+    }
+
+    @Nullable
+    public JsonBrowser get(@NotNull String url, @Nullable Option option) throws HttpException;
+
+    @Nullable
+    public JsonBrowser post(@NotNull String url, @Nullable Option option) throws HttpException;
+
+    @Nullable
+    public JsonBrowser delete(@NotNull String url, @Nullable Option option) throws HttpException;
+
+    @Nullable
+    public JsonBrowser head(@NotNull String url, @Nullable Option option) throws HttpException;
+
+    @Nullable
+    public JsonBrowser put(@NotNull String url, @Nullable Option option) throws HttpException;
+
+    @Nullable
+    public JsonBrowser patch(@NotNull String url, @Nullable Option option) throws HttpException;
+
+    @Nullable
+    public JsonBrowser upload(@NotNull String url, @Nullable Option option) throws HttpException;
 }
