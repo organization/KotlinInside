@@ -1,4 +1,4 @@
-package be.zvz.kotlininside.httpinterface;
+package be.zvz.kotlininside.http;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;

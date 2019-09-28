@@ -1,4 +1,4 @@
-package be.zvz.kotlininside.httpinterface;
+package be.zvz.kotlininside.http;
 
 public class HttpException extends RuntimeException {
     private int statusCode;
