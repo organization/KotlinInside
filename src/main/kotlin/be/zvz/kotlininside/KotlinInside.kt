@@ -22,6 +22,11 @@ class KotlinInside private constructor(val user: User, val httpInterface: HttpIn
     companion object {
         private lateinit var instance: KotlinInside
 
+        /**
+         * [KotlinInside] 인스턴스를 생성합니다.
+         * @param user 인스턴스 생성과 동시에 로그인할 유저
+         * @param httpInterface KotlinInside에서 사용할 HttpInterface
+         */
         @JvmStatic
         fun createInstance(user: User, httpInterface: HttpInterface) {
             if (!::instance.isInitialized)
@@ -29,6 +34,10 @@ class KotlinInside private constructor(val user: User, val httpInterface: HttpIn
 
         }
 
+        /**
+         *
+         * @return [KotlinInside] 인스턴스를 반환합니다.
+         */
         @JvmStatic
         fun getInstance(): KotlinInside {
             return instance
