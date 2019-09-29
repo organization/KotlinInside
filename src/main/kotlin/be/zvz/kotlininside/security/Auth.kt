@@ -5,25 +5,29 @@ import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.http.HttpInterface
 import be.zvz.kotlininside.session.Session
 import be.zvz.kotlininside.session.SessionDetail
+import be.zvz.kotlininside.session.user.Anonymous
+import be.zvz.kotlininside.session.user.named.DuplicateNamed
+import be.zvz.kotlininside.session.user.named.Named
 import be.zvz.kotlininside.session.user.User
 import be.zvz.kotlininside.session.user.UserType
 import be.zvz.kotlininside.value.ApiUrl
 import be.zvz.kotlininside.value.Const
 import org.apache.commons.codec.digest.DigestUtils
+import java.lang.IllegalArgumentException
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
 
 @Suppress("NOTHING_TO_INLINE")
-class Auth(private val kotlinInside: KotlinInside) {
+class Auth {
     inline fun generateHashedAppKey(): String =
         DigestUtils.sha256Hex(SimpleDateFormat("dcArdchk_yyyyMMddHH", Locale.getDefault()).format(Date()))
     
     fun getAppId(): String = when (val hashedAppKey = generateHashedAppKey()) {
-        kotlinInside.app.token -> kotlinInside.app.id
+        KotlinInside.getInstance().app.token -> KotlinInside.getInstance().app.id
         else -> {
-            kotlinInside.app = App(hashedAppKey, fetchAppId(hashedAppKey))
-            kotlinInside.app.id
+            KotlinInside.getInstance().app = App(hashedAppKey, fetchAppId(hashedAppKey))
+            KotlinInside.getInstance().app.id
         }
     }
 
@@ -36,7 +40,7 @@ class Auth(private val kotlinInside: KotlinInside) {
                 .addQueryParameter("vCode", Const.DC_APP_VERSION_CODE)
                 .addQueryParameter("vName", Const.DC_APP_VERSION_NAME)
 
-            kotlinInside.httpInterface.post(ApiUrl.Auth.APP_ID, option)
+            KotlinInside.getInstance().httpInterface.post(ApiUrl.Auth.APP_ID, option)
         } catch (e: HttpException) {
             return ""
         }
@@ -44,6 +48,13 @@ class Auth(private val kotlinInside: KotlinInside) {
         return appId!!.index(0).get("app_id").text()
     }
 
+    /**
+     * 로그인하기 위해 필요한 메소드
+     *
+     * @exception HttpException 계정에 로그인 할 수 없는 경우 HttpException 발생
+     * @param user [be.zvz.kotlininside.session.user.Anonymous]와 [be.zvz.kotlininside.session.user.LoginUser] 클래스를 매개변수로 받음
+     * @return [be.zvz.kotlininside.session.Session] 로그인에 성공했거나, 유동닉([be.zvz.kotlininside.session.user.Anonymous]) 객체를 담고있는 세션을 반환함
+     */
     @Throws(HttpException::class)
     fun login(user: User): Session {
         if (user.userType !== UserType.ANONYMOUS) {
@@ -51,7 +62,7 @@ class Auth(private val kotlinInside: KotlinInside) {
                 .addBodyParameter("user_id", user.id)
                 .addBodyParameter("user_pw", user.password)
 
-            val json = kotlinInside.httpInterface.post(ApiUrl.Auth.LOGIN, option)!!.index(0)
+            val json = KotlinInside.getInstance().httpInterface.post(ApiUrl.Auth.LOGIN, option)!!.index(0)
 
             val detail = SessionDetail(
                 json.get("user_id").text(),
@@ -60,7 +71,19 @@ class Auth(private val kotlinInside: KotlinInside) {
                 json.get("stype").text()
             )
 
-            return Session(user, detail)
+            val loginUser = when (detail.stype) {
+                UserType.NAMED.stype -> {
+                    Named(user.id, user.password)
+                }
+                UserType.DUPLICATE_NAMED.stype -> {
+                    DuplicateNamed(user.id, user.password)
+                }
+                else -> {
+                    throw HttpException(401, "계정에 로그인 할 수 없습니다") // 계정에 로그인 할 수 없는 경우 post 부분에서 HttpException 이 발생하여 이 코드는 작동하지 않음.
+                }
+            }
+
+            return Session(loginUser, detail)
         } else {
             return Session(user, null)
         }

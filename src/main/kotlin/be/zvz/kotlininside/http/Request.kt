@@ -9,5 +9,11 @@ class Request {
         fun redirectUrl(url: String): String {
             return ApiUrl.REDIRECT + "?hash=" + Base64.encodeToString(url.toByteArray(), false)
         }
+
+        @JvmStatic
+        fun getDefaultOption(): HttpInterface.Option {
+            return HttpInterface.Option()
+                .addHeader("Referer", "http://www.dcinside.com")
+        }
     }
 }

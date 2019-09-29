@@ -59,7 +59,7 @@ public class JsonBrowser {
     /**
      * Get an element at an index for a list value
      *
-     * @param index List index
+     * @param index ArticleList index
      * @return JsonBrowser instance which wraps the value at the specified index
      */
     public JsonBrowser index(int index) {
