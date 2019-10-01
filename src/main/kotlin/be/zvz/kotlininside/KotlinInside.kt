@@ -7,13 +7,12 @@ import be.zvz.kotlininside.session.Session
 import be.zvz.kotlininside.session.user.User
 
 class KotlinInside private constructor(val user: User, val httpInterface: HttpInterface) {
-    val auth: Auth
+    val auth: Auth = Auth()
     var hashedAppKey: String
     var app: App
     var session: Session
 
     init {
-        this.auth = Auth()
         this.hashedAppKey = auth.generateHashedAppKey()
         this.app = App(hashedAppKey, auth.fetchAppId(hashedAppKey))
         this.session = auth.login(user)

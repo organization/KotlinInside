@@ -28,6 +28,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -120,7 +121,11 @@ public class JsonBrowser {
     public List<JsonBrowser> values() {
         List<JsonBrowser> values = new ArrayList<>();
 
-        node.elements().forEachRemaining(child -> values.add(new JsonBrowser(child)));
+        //node.elements().forEachRemaining(child -> values.add(new JsonBrowser(child))); //Android API 21!
+        for (Iterator<JsonNode> it = node.elements(); it.hasNext(); ) {
+            JsonNode child = it.next();
+            values.add(new JsonBrowser(child));
+        }
 
         return values;
     }
