@@ -3,12 +3,16 @@
  */
 package be.zvz.kotlininside
 
+import be.zvz.kotlininside.article.ArticleList
+import be.zvz.kotlininside.session.user.Anonymous
 import kotlin.test.Test
+import kotlin.test.assertNotNull
 import kotlin.test.assertTrue
 
 class KotlinInsideTest {
-    @Test fun testSomeLibraryMethod() {
-        val classUnderTest = KotlinInside()
-        assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'")
+    @Test fun testGetArticle() {
+        KotlinInside.createInstance(Anonymous("ㅇㅇ", "1234"), TestHttpInterface())
+        val classUnderTest = ArticleList("hit", 1)
+        assertNotNull(classUnderTest.get()[0], "ArticleList.get() must not be null")
     }
 }
