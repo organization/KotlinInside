@@ -7,12 +7,11 @@ import be.zvz.kotlininside.article.ArticleList
 import be.zvz.kotlininside.session.user.Anonymous
 import kotlin.test.Test
 import kotlin.test.assertNotNull
-import kotlin.test.assertTrue
 
 class KotlinInsideTest {
     @Test fun testGetArticle() {
         KotlinInside.createInstance(Anonymous("ㅇㅇ", "1234"), TestHttpInterface())
         val classUnderTest = ArticleList("hit", 1)
-        assertNotNull(classUnderTest.get()[0], "ArticleList.get() must not be null")
+        assertNotNull(classUnderTest.getGallList()[0], "ArticleList.getGallList() must not be null")
     }
 }
