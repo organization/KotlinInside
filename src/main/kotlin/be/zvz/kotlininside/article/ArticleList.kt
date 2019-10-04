@@ -8,7 +8,7 @@ import be.zvz.kotlininside.utils.StringUtil
 import be.zvz.kotlininside.value.ApiUrl
 import kotlin.collections.List
 
-class ArticleList(val id: String, val page: Int, val option: Option? = null) {
+class ArticleList(val gallId: String, val page: Int, val option: Option? = null) {
     var json: JsonBrowser? = null
 
     class Option {
@@ -32,7 +32,7 @@ class ArticleList(val id: String, val page: Int, val option: Option? = null) {
         val identifier: Int,
         val views: Int,
         val upvote: Int,
-        val imgIcon: Boolean,
+        val imageIcon: Boolean,
         val upvoteIcon: Boolean,
         val bestCheck: Boolean,
         val voiceIcon: Boolean,
@@ -50,11 +50,11 @@ class ArticleList(val id: String, val page: Int, val option: Option? = null) {
     )
 
     /**
-     * 클래스의 메소드들을 사용하기 전, 반드시 이 메소드를 호출하여 JSON을 다운로드해야합니다.
+     * 클래스의 메소드들을 사용하기 전, 반드시 이 메소드를 호출하여 JSON을 파싱해야합니다.
      * @exception [be.zvz.kotlininside.http.HttpException] 글 목록을 불러오지 못할 경우, HttpException 발생
      */
     fun request() {
-        val url = "${ApiUrl.Article.LIST}?id=$id&page=$page&app_id=${KotlinInside.getInstance().auth.getAppId()}" +
+        val url = "${ApiUrl.Article.LIST}?id=$gallId&page=$page&app_id=${KotlinInside.getInstance().auth.getAppId()}" +
                 option?.let {
                     val s = ""
                     if (it.recommand)
@@ -71,7 +71,7 @@ class ArticleList(val id: String, val page: Int, val option: Option? = null) {
 
     /**
      *
-     * @return [be.zvz.kotlininside.article.ArticleList.GallInfo] gall_info 객체를 반환합니다.
+     * @return [be.zvz.kotlininside.article.ArticleList.GallInfo] gall_info 객체를 반환합니다. 글 목록이 비어있는 경우, null을 반환합니다.
      */
     fun getGallInfo(): GallInfo? {
         json?.let { jsonBrowser ->
@@ -119,7 +119,7 @@ class ArticleList(val id: String, val page: Int, val option: Option? = null) {
                         identifier = gallList.get("no").`as`(Int::class.java),
                         views = gallList.get("hit").`as`(Int::class.java),
                         upvote = gallList.get("recommend").`as`(Int::class.java),
-                        imgIcon = StringUtil.ynToBoolean(gallList.get("img_icon").text()),
+                        imageIcon = StringUtil.ynToBoolean(gallList.get("img_icon").text()),
                         upvoteIcon = StringUtil.ynToBoolean(gallList.get("recommend_icon").text()),
                         bestCheck = StringUtil.ynToBoolean(gallList.get("best_chk").text()),
                         level = gallList.get("level").`as`(Int::class.java),
