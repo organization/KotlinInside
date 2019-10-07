@@ -3,7 +3,8 @@ package be.zvz.kotlininside.article
 import be.zvz.kotlininside.KotlinInside
 import be.zvz.kotlininside.http.Request
 import be.zvz.kotlininside.json.JsonBrowser
-import be.zvz.kotlininside.type.HeadText
+import be.zvz.kotlininside.article.type.HeadText
+import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.utils.StringUtil
 import be.zvz.kotlininside.value.ApiUrl
 
@@ -50,6 +51,7 @@ class ArticleRead(val gallId: String, val articleId: Int) {
      * 클래스의 메소드들을 사용하기 전, 반드시 이 메소드를 호출하여 JSON을 파싱해야합니다.
      * @exception [be.zvz.kotlininside.http.HttpException] 글 목록을 불러오지 못할 경우, HttpException 발생
      */
+    @Throws(HttpException::class)
     fun request() {
         val url = "${ApiUrl.Article.READ}?id=$gallId&no=$articleId&app_id=${KotlinInside.getInstance().auth.getAppId()}"
 

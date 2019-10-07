@@ -1,4 +1,4 @@
-package be.zvz.kotlininside.type
+package be.zvz.kotlininside.article.type
 
 data class HeadText(
     val identifier: Int,
