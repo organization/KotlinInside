@@ -38,8 +38,8 @@ class ArticleWrite(val gallId: String, val session: Session, val article: Articl
 
         if (session.user is Anonymous) {
             option
-                .addMultipartParameter("name", session.user.id)
-                .addMultipartParameter("password", session.user.password)
+                .addMultipartParameter("name", URLEncoder.encode(session.user.id, "UTF-8"))
+                .addMultipartParameter("password", URLEncoder.encode(session.user.password, "UTF-8"))
         } else {
             option
                 .addMultipartParameter("user_id", session.detail!!.userId)
