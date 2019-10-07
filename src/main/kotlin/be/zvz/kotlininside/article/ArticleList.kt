@@ -23,9 +23,11 @@ class ArticleList(val gallId: String, val page: Int, val option: Option? = null)
         val category: Int,
         val fileCount: Int,
         val fileSize: Int,
-        val captcha: Boolean,
-        val codeCount: Int,
-        val isMinor: Boolean,
+        val captcha: Boolean?,
+        val codeCount: Int?,
+        val isMinor: Boolean?,
+        val notifyRecent: Int?,
+        val relationGall: Map<String, String>,
         val headText: List<HeadText>
     )
 
@@ -44,10 +46,11 @@ class ArticleList(val gallId: String, val page: Int, val option: Option? = null)
         val userId: String,
         val memberIcon: Int,
         val ip: String,
+        val gallerCon: String?,
         val subject: String,
         val name: String,
         val dateTime: String,
-        val headText: String
+        val headText: String?
     )
 
     /**
@@ -83,21 +86,58 @@ class ArticleList(val gallId: String, val page: Int, val option: Option? = null)
                 category = gallInfo.get("category").`as`(Int::class.java),
                 fileCount = gallInfo.get("file_cnt").`as`(Int::class.java),
                 fileSize = gallInfo.get("file_size").`as`(Int::class.java),
-                captcha = gallInfo.get("captcha").`as`(Boolean::class.java),
-                codeCount = gallInfo.get("code_count").`as`(Int::class.java),
-                isMinor = gallInfo.get("is_minor").`as`(Boolean::class.java),
+                captcha = gallInfo.safeGet("captcha").run {
+                    when {
+                        isNull -> null
+                        else -> `as`(Boolean::class.java)
+                    }
+                },
+                codeCount = gallInfo.safeGet("code_count").run {
+                    when {
+                        isNull -> null
+                        else -> `as`(Int::class.java)
+                    }
+                },
+                isMinor = gallInfo.get("is_minor").run {
+                    when {
+                        isNull -> null
+                        else -> `as`(Boolean::class.java)
+                    }
+                },
+                notifyRecent = gallInfo.get("notify_recent").run {
+                    when {
+                        isNull -> null
+                        else -> `as`(Int::class.java)
+                    }
+                },
+                relationGall = run {
+                    val map = LinkedHashMap<String, String>()
+
+                    gallInfo.safeGet("relation_gall").let { relationGall ->
+                        if (!relationGall.isNull)
+                            relationGall.values().forEach {
+                                val key = it.text()
+                                map[key] = it.get(key).text()
+                            }
+                    }
+
+                    map
+                },
                 headText = run {
                     val array = ArrayList<HeadText>()
 
-                    gallInfo.get("head_text").values().forEach {
-                        array.add(
-                            HeadText(
-                                identifier = it.get("no").`as`(Int::class.java),
-                                name = it.get("name").text(),
-                                level = it.get("level").`as`(Int::class.java),
-                                selected = it.get("selected").`as`(Boolean::class.java)
-                            )
-                        )
+                    gallInfo.safeGet("head_text").let { headText ->
+                        if (!headText.isNull)
+                            headText.values().forEach {
+                                array.add(
+                                    HeadText(
+                                        identifier = it.get("no").`as`(Int::class.java),
+                                        name = it.get("name").text(),
+                                        level = it.get("level").`as`(Int::class.java),
+                                        selected = it.get("selected").`as`(Boolean::class.java)
+                                    )
+                                )
+                            }
                     }
 
                     array
@@ -132,6 +172,12 @@ class ArticleList(val gallId: String, val page: Int, val option: Option? = null)
                         winnertaIcon = StringUtil.ynToBoolean(gallList.get("winnerta_icon").text()),
                         memberIcon = gallList.get("member_icon").`as`(Int::class.java),
                         ip = gallList.get("ip").text(),
+                        gallerCon = gallList.safeGet("gallercon").run {
+                            when {
+                                isNull -> null
+                                else -> text()
+                            }
+                        },
                         subject = gallList.get("subject").text(),
                         name = gallList.get("name").text(),
                         dateTime = gallList.get("date_time").text(),
