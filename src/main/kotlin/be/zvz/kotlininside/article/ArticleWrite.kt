@@ -2,6 +2,8 @@ package be.zvz.kotlininside.article
 
 import be.zvz.kotlininside.KotlinInside
 import be.zvz.kotlininside.article.type.Article
+import be.zvz.kotlininside.article.type.Image
+import be.zvz.kotlininside.article.type.StringContent
 import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.http.Request
 import be.zvz.kotlininside.session.Session
@@ -47,12 +49,13 @@ class ArticleWrite(val gallId: String, val session: Session, val article: Articl
 
         var imageCount = 0
         article.content.withIndex().forEach { (index, content) ->
-            if (content.isImage) {
-                option.addMultipartParameter("memo_block[$index]", "Dc_App_Img_$imageCount")
-                option.addMultipartFile("upload[$imageCount]", content.image!!)
-                imageCount++
-            } else {
-                option.addMultipartParameter("memo_block[$index]", URLEncoder.encode(StringUtil.toHtml(content.content), "UTF-8"))
+            when (content) {
+                is Image -> {
+                    option.addMultipartParameter("memo_block[$index]", "Dc_App_Img_$imageCount")
+                    option.addMultipartFile("upload[$imageCount]", content.file)
+                    imageCount++
+                }
+                is StringContent -> option.addMultipartParameter("memo_block[$index]", URLEncoder.encode(StringUtil.toHtml(content.string), "UTF-8"))
             }
         }
 
