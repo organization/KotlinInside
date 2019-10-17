@@ -1,9 +1,9 @@
-package be.zvz.kotlininside.article
+package be.zvz.kotlininside.api.article
 
 import be.zvz.kotlininside.KotlinInside
-import be.zvz.kotlininside.article.type.Article
-import be.zvz.kotlininside.article.type.Image
-import be.zvz.kotlininside.article.type.StringContent
+import be.zvz.kotlininside.api.type.Article
+import be.zvz.kotlininside.api.type.Image
+import be.zvz.kotlininside.api.type.StringContent
 import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.http.Request
 import be.zvz.kotlininside.session.Session
@@ -12,7 +12,7 @@ import be.zvz.kotlininside.utils.StringUtil
 import be.zvz.kotlininside.value.ApiUrl
 import java.net.URLEncoder
 
-class ArticleWrite(val gallId: String, val session: Session, val article: Article, val fcmToken: String = "N") {
+class ArticleWrite(val gallId: String, val article: Article, val session: Session, val fcmToken: String = "N") {
     data class WriteResult(
         val result: Boolean,
         val cause: Int,
@@ -20,7 +20,7 @@ class ArticleWrite(val gallId: String, val session: Session, val article: Articl
     )
 
     /**
-     * 이 메소드를 사용하여 글을 작성합니다.
+     * 글을 작성합니다.
      * @exception [be.zvz.kotlininside.http.HttpException] 글을 작성하지 못할 경우, HttpException 발생
      */
     @Throws(HttpException::class)

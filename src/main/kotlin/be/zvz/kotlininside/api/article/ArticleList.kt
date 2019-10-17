@@ -1,9 +1,9 @@
-package be.zvz.kotlininside.article
+package be.zvz.kotlininside.api.article
 
 import be.zvz.kotlininside.KotlinInside
 import be.zvz.kotlininside.http.Request
 import be.zvz.kotlininside.json.JsonBrowser
-import be.zvz.kotlininside.article.type.HeadText
+import be.zvz.kotlininside.api.type.HeadText
 import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.utils.StringUtil
 import be.zvz.kotlininside.value.ApiUrl

@@ -15,6 +15,10 @@ public final class ApiUrl {
         public static final String DOWNVOTE = APP_API + "_recommend_down.php";
     }
 
+    public static final class Comment {
+        public static final String COMMENT = APP_API + "comment_ok.php";
+    }
+
     public static final class GalleryInfo {
         public static final String MINOR = APP_API + "minor_info";
     }

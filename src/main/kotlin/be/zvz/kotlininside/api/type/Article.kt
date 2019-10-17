@@ -1,4 +1,4 @@
-package be.zvz.kotlininside.article.type
+package be.zvz.kotlininside.api.type
 
 data class Article(
     val subject: String,

@@ -3,7 +3,7 @@
  */
 package be.zvz.kotlininside
 
-import be.zvz.kotlininside.article.ArticleList
+import be.zvz.kotlininside.api.article.ArticleList
 import be.zvz.kotlininside.session.user.Anonymous
 import kotlin.test.Test
 import kotlin.test.assertNotNull
