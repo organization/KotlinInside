@@ -13,14 +13,12 @@ import be.zvz.kotlininside.session.user.UserType
 import be.zvz.kotlininside.value.ApiUrl
 import be.zvz.kotlininside.value.Const
 import org.apache.commons.codec.digest.DigestUtils
-import java.lang.IllegalArgumentException
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
 
-@Suppress("NOTHING_TO_INLINE")
 class Auth {
-    inline fun generateHashedAppKey(): String =
+    fun generateHashedAppKey(): String =
         DigestUtils.sha256Hex(SimpleDateFormat("dcArdchk_yyyyMMddHH", Locale.getDefault()).format(Date()))
     
     fun getAppId(): String = when (val hashedAppKey = generateHashedAppKey()) {
@@ -57,7 +55,7 @@ class Auth {
      */
     @Throws(HttpException::class)
     fun login(user: User): Session {
-        if (user.userType !== UserType.ANONYMOUS) {
+        if (user !is Anonymous) {
             val option = HttpInterface.Option()
                 .addBodyParameter("user_id", user.id)
                 .addBodyParameter("user_pw", user.password)

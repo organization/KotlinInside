@@ -12,7 +12,12 @@ import be.zvz.kotlininside.utils.StringUtil
 import be.zvz.kotlininside.value.ApiUrl
 import java.net.URLEncoder
 
-class ArticleWrite(val gallId: String, val article: Article, val session: Session, val fcmToken: String = "N") {
+class ArticleWrite @JvmOverloads constructor(
+    val gallId: String,
+    val article: Article,
+    val session: Session,
+    val fcmToken: String = "N"
+) {
     data class WriteResult(
         val result: Boolean,
         val cause: Int,

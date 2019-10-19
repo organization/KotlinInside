@@ -9,7 +9,11 @@ import be.zvz.kotlininside.utils.StringUtil
 import be.zvz.kotlininside.value.ApiUrl
 import kotlin.collections.List
 
-class ArticleList(val gallId: String, val page: Int, val option: Option? = null) {
+class ArticleList @JvmOverloads constructor(
+    val gallId: String,
+    val page: Int,
+    val option: Option? = null
+) {
     var json: JsonBrowser? = null
 
     class Option {

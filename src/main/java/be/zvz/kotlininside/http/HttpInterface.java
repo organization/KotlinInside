@@ -11,25 +11,25 @@ import java.util.List;
 import java.util.Map;
 
 public interface HttpInterface {
-    public class Option {
+    public final class Option {
         @Nullable
         private String userAgent = null;
         @NotNull
-        private Map<String, String> headers = new LinkedHashMap<>();
+        private final Map<String, String> headers = new LinkedHashMap<>();
         @NotNull
-        private Map<String, String> bodyParameter = new LinkedHashMap<>();
+        private final Map<String, String> bodyParameter = new LinkedHashMap<>();
         @NotNull
-        private Map<String, String> pathParameter = new LinkedHashMap<>();
+        private final Map<String, String> pathParameter = new LinkedHashMap<>();
         @NotNull
-        private Map<String, String> queryParameter = new LinkedHashMap<>();
+        private final Map<String, String> queryParameter = new LinkedHashMap<>();
         @Nullable
         private String multipartContentType = null;
         @NotNull
-        private Map<String, File> multipartFile = new LinkedHashMap<>();
+        private final Map<String, File> multipartFile = new LinkedHashMap<>();
         @NotNull
-        private Map<String, List<File>> multipartFileList = new LinkedHashMap<>();
+        private final Map<String, List<File>> multipartFileList = new LinkedHashMap<>();
         @NotNull
-        private Map<String, String> multipartParameter = new LinkedHashMap<>();
+        private final Map<String, String> multipartParameter = new LinkedHashMap<>();
 
 
         /**

@@ -6,7 +6,10 @@ import be.zvz.kotlininside.security.Auth
 import be.zvz.kotlininside.session.Session
 import be.zvz.kotlininside.session.user.User
 
-class KotlinInside private constructor(val user: User, val httpInterface: HttpInterface) {
+class KotlinInside private constructor(
+    val user: User,
+    val httpInterface: HttpInterface
+) {
     val auth: Auth = Auth()
     var hashedAppKey: String
     var app: App

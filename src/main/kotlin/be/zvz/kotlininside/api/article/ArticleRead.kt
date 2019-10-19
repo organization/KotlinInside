@@ -8,7 +8,10 @@ import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.utils.StringUtil
 import be.zvz.kotlininside.value.ApiUrl
 
-class ArticleRead(val gallId: String, val articleId: Int) {
+class ArticleRead(
+    val gallId: String,
+    val articleId: Int
+) {
     var json: JsonBrowser? = null
 
     data class ViewInfo(
