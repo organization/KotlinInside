@@ -4,6 +4,7 @@ import be.zvz.kotlininside.KotlinInside
 import be.zvz.kotlininside.api.type.Comment
 import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.http.Request
+import be.zvz.kotlininside.json.JsonBrowser
 import be.zvz.kotlininside.session.Session
 import be.zvz.kotlininside.session.user.Anonymous
 import be.zvz.kotlininside.value.ApiUrl
@@ -21,6 +22,15 @@ class CommentWrite @JvmOverloads constructor(
         val cause: String? = null,
         val word: String? = null
     )
+
+    private fun getWord(writeResultJson: JsonBrowser): String? {
+        val word = writeResultJson.safeGet("word")
+
+        return when {
+            !word.isNull -> word.text()
+            else -> null
+        }
+    }
 
     /**
      * 댓글을 작성합니다.
@@ -58,7 +68,7 @@ class CommentWrite @JvmOverloads constructor(
             else -> WriteResult(
                 result = result,
                 cause = json.get("cause").text(),
-                word = json.get("word").text()
+                word = getWord(json)
             )
         }
     }
@@ -102,7 +112,7 @@ class CommentWrite @JvmOverloads constructor(
             else -> WriteResult(
                 result = result,
                 cause = json.get("cause").text(),
-                word = json.get("word").text()
+                word = getWord(json)
             )
         }
     }

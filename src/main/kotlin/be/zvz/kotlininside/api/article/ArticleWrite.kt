@@ -21,7 +21,7 @@ class ArticleWrite @JvmOverloads constructor(
     data class WriteResult(
         val result: Boolean,
         val cause: Int,
-        val id: String
+        val id: String? = null
     )
 
     /**
@@ -66,10 +66,18 @@ class ArticleWrite @JvmOverloads constructor(
 
         val json = KotlinInside.getInstance().httpInterface.upload(ApiUrl.Article.WRITE, option)!!.index(0)
 
-        return WriteResult(
-            result = json.get("result").`as`(Boolean::class.java),
-            cause = json.get("cause").`as`(Int::class.java),
-            id = json.get("id").text()
-        )
+        val result = json.get("result").`as`(Boolean::class.java)
+
+        return when {
+            result -> WriteResult(
+                result = result,
+                cause = json.get("cause").`as`(Int::class.java),
+                id = json.get("id").text()
+            )
+            else -> WriteResult(
+                result = result,
+                cause = json.get("cause").`as`(Int::class.java)
+            )
+        }
     }
 }
