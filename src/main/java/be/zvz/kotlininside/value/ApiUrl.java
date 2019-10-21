@@ -19,6 +19,7 @@ public final class ApiUrl {
     public static final class Comment {
         public static final String OK = APP_API + "comment_ok.php";
         public static final String DELETE = APP_API + "comment_del.php";
+        public static final String READ = APP_API + "comment_new.php";
     }
 
     public static final class GalleryInfo {

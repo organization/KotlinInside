@@ -38,6 +38,7 @@ class ArticleRead(
         val nextSubject: String,
         val bestCheck: Boolean,
         val isNotice: Boolean,
+        val gallerCon: String?,
         val dateTime: String,
         val isMinor: Boolean,
         val headText: List<HeadText>
@@ -92,6 +93,12 @@ class ArticleRead(
                 nextSubject = viewInfo.get("next_subject").text(),
                 bestCheck = StringUtil.ynToBoolean(viewInfo.get("best_chk").text()),
                 isNotice = StringUtil.ynToBoolean(viewInfo.get("isNotice").text()),
+                gallerCon = gallList.safeGet("gallercon").run {
+                    when {
+                        isNull -> null
+                        else -> text()
+                    }
+                },
                 dateTime = viewInfo.get("date_time").text(),
                 isMinor = viewInfo.get("is_minor").`as`(Boolean::class.java),
                 headText = run {
