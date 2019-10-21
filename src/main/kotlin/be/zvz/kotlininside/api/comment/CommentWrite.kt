@@ -56,7 +56,7 @@ class CommentWrite @JvmOverloads constructor(
                 .addMultipartParameter("user_id", session.detail!!.userId)
         }
 
-        val json = KotlinInside.getInstance().httpInterface.upload(ApiUrl.Comment.COMMENT, option)!!.index(0)
+        val json = KotlinInside.getInstance().httpInterface.upload(ApiUrl.Comment.OK, option)!!.index(0)
 
         val result = json.get("result").`as`(Boolean::class.java)
 
@@ -100,7 +100,7 @@ class CommentWrite @JvmOverloads constructor(
                 .addMultipartParameter("user_id", session.detail!!.userId)
         }
 
-        val json = KotlinInside.getInstance().httpInterface.upload(ApiUrl.Comment.COMMENT, option)!!.index(0)
+        val json = KotlinInside.getInstance().httpInterface.upload(ApiUrl.Comment.OK, option)!!.index(0)
 
         val result = json.get("result").`as`(Boolean::class.java)
 

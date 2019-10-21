@@ -10,13 +10,15 @@ public final class ApiUrl {
         public static final String LIST = APP_API + "gall_list_new.php";
         public static final String READ = APP_API + "gall_view_new.php";
         public static final String WRITE = "http://upload.dcinside.com/_app_write_api.php";
+        public static final String DELETE = APP_API + "gall_del.php";
 
         public static final String UPVOTE = APP_API + "_recommend_up.php";
         public static final String DOWNVOTE = APP_API + "_recommend_down.php";
     }
 
     public static final class Comment {
-        public static final String COMMENT = APP_API + "comment_ok.php";
+        public static final String OK = APP_API + "comment_ok.php";
+        public static final String DELETE = APP_API + "comment_del.php";
     }
 
     public static final class GalleryInfo {
