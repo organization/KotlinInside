@@ -10,9 +10,9 @@ import be.zvz.kotlininside.value.ApiUrl
 import kotlin.collections.List
 
 class ArticleList @JvmOverloads constructor(
-    val gallId: String,
-    val page: Int,
-    val option: Option? = null
+    private val gallId: String,
+    private val page: Int,
+    private val option: Option? = null
 ) {
     var json: JsonBrowser? = null
 
@@ -80,7 +80,7 @@ class ArticleList @JvmOverloads constructor(
 
     /**
      *
-     * @return [be.zvz.kotlininside.article.ArticleList.GallInfo] gall_info 객체를 반환합니다. 글 목록이 비어있는 경우, null을 반환합니다.
+     * @return [be.zvz.kotlininside.api.article.ArticleList.GallInfo] gall_info 객체를 반환합니다. 글 목록이 비어있는 경우, null을 반환합니다.
      */
     fun getGallInfo(): GallInfo? {
         json?.let { jsonBrowser ->
@@ -114,8 +114,7 @@ class ArticleList @JvmOverloads constructor(
                         else -> `as`(Int::class.java)
                     }
                 },
-                relationGall = run {
-                    val map = LinkedHashMap<String, String>()
+                relationGall = linkedMapOf<String, String>().let { map ->
 
                     gallInfo.safeGet("relation_gall").let { relationGall ->
                         if (!relationGall.isNull)
@@ -127,8 +126,7 @@ class ArticleList @JvmOverloads constructor(
 
                     map
                 },
-                headText = run {
-                    val array = ArrayList<HeadText>()
+                headText = arrayListOf<HeadText>().let { array ->
 
                     gallInfo.safeGet("head_text").let { headText ->
                         if (!headText.isNull)
@@ -153,7 +151,7 @@ class ArticleList @JvmOverloads constructor(
 
     /**
      *
-     * @return [be.zvz.kotlininside.article.ArticleList.GallList] 목록들을 반환합니다. 글 목록이 비어있을 경우, 빈 리스트를 반환합니다.
+     * @return [be.zvz.kotlininside.api.article.ArticleList.GallList] 목록들을 반환합니다. 글 목록이 비어있을 경우, 빈 리스트를 반환합니다.
      */
     fun getGallList(): List<GallList> {
         val array = ArrayList<GallList>()

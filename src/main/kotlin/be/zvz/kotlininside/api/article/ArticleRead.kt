@@ -9,8 +9,8 @@ import be.zvz.kotlininside.utils.StringUtil
 import be.zvz.kotlininside.value.ApiUrl
 
 class ArticleRead(
-    val gallId: String,
-    val articleId: Int
+    private val gallId: String,
+    private val articleId: Int
 ) {
     var json: JsonBrowser? = null
 
@@ -64,7 +64,7 @@ class ArticleRead(
 
     /**
      *
-     * @return [be.zvz.kotlininside.article.ArticleRead.ViewInfo] view_info 객체를 반환합니다. 글 목록이 비어있는 경우, null을 반환합니다.
+     * @return [be.zvz.kotlininside.api.article.ArticleRead.ViewInfo] view_info 객체를 반환합니다. 글 목록이 비어있는 경우, null을 반환합니다.
      */
     fun getViewInfo(): ViewInfo? {
         json?.let { jsonBrowser ->
@@ -93,7 +93,7 @@ class ArticleRead(
                 nextSubject = viewInfo.get("next_subject").text(),
                 bestCheck = StringUtil.ynToBoolean(viewInfo.get("best_chk").text()),
                 isNotice = StringUtil.ynToBoolean(viewInfo.get("isNotice").text()),
-                gallerCon = gallList.safeGet("gallercon").run {
+                gallerCon = viewInfo.safeGet("gallercon").run {
                     when {
                         isNull -> null
                         else -> text()
@@ -101,8 +101,7 @@ class ArticleRead(
                 },
                 dateTime = viewInfo.get("date_time").text(),
                 isMinor = viewInfo.get("is_minor").`as`(Boolean::class.java),
-                headText = run {
-                    val array = ArrayList<HeadText>()
+                headText = arrayListOf<HeadText>().let { array ->
 
                     viewInfo.get("head_text").values().forEach {
                         array.add(
@@ -124,7 +123,7 @@ class ArticleRead(
 
     /**
      *
-     * @return [be.zvz.kotlininside.article.ArticleRead.ViewMain] view_main 객체를 반환합니다. 글 목록이 비어있는 경우, null을 반환합니다.
+     * @return [be.zvz.kotlininside.api.article.ArticleRead.ViewMain] view_main 객체를 반환합니다. 글 목록이 비어있는 경우, null을 반환합니다.
      */
     fun getViewMain(): ViewMain? {
         json?.let { jsonBrowser ->

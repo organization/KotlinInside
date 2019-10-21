@@ -19,8 +19,8 @@ dependencies {
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.10.0.pr3'
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.10.0.pr3'
 
-    // Use the Kotlin JDK 8 standard library.
-    implementation group: 'org.jetbrains.kotlin', name: 'kotlin-stdlib-jdk8'
+    // Use the Kotlin JDK standard library.
+    implementation group: 'org.jetbrains.kotlin', name: 'kotlin-stdlib'
     // Use the Kotlin test library.
     testImplementation group: 'org.jetbrains.kotlin', name: 'kotlin-test'
     // Use the Kotlin JUnit integration.

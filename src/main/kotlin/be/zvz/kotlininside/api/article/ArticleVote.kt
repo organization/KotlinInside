@@ -8,9 +8,9 @@ import be.zvz.kotlininside.session.user.LoginUser
 import be.zvz.kotlininside.value.ApiUrl
 
 class ArticleVote(
-    val gallId: String,
-    val articleId: Int,
-    val session: Session
+    private val gallId: String,
+    private val articleId: Int,
+    private val session: Session
 ) {
     data class VoteResult(
         val result: Boolean,

@@ -5,13 +5,12 @@ import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.http.Request
 import be.zvz.kotlininside.session.Session
 import be.zvz.kotlininside.session.user.Anonymous
-import be.zvz.kotlininside.utils.StringUtil
 import be.zvz.kotlininside.value.ApiUrl
 
 class ArticleDelete(
-    val gallId: String,
-    val articleId: Int,
-    val session: Session
+    private val gallId: String,
+    private val articleId: Int,
+    private val session: Session
 ) {
     data class DeleteResult(
         val result: Boolean,
@@ -32,7 +31,7 @@ class ArticleDelete(
 
         if (session.user is Anonymous) {
             option
-                .addMultipartParameter("write_pw", URLEncoder.encode(session.user.id, "UTF-8"))
+                .addMultipartParameter("write_pw", session.user.password)
         } else {
             option
                 .addMultipartParameter("user_id", session.detail!!.userId)

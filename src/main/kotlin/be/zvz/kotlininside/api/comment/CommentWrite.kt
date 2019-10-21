@@ -10,11 +10,11 @@ import be.zvz.kotlininside.session.user.Anonymous
 import be.zvz.kotlininside.value.ApiUrl
 
 class CommentWrite @JvmOverloads constructor(
-    val gallId: String,
-    val articleId: Int,
-    val comment: Comment,
-    val session: Session,
-    val fcmToken: String = "N"
+    private val gallId: String,
+    private val articleId: Int,
+    private val comment: Comment,
+    private val session: Session,
+    private val fcmToken: String = "N"
 ) {
     data class WriteResult(
         val result: Boolean,
