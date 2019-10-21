@@ -8,52 +8,36 @@ import be.zvz.kotlininside.session.Session
 import be.zvz.kotlininside.session.user.Anonymous
 import be.zvz.kotlininside.value.ApiUrl
 
-class CommentDelete(
+class CommentRead(
     val gallId: String,
-    val articleId: Int,
-    val commentId: Int,
-    val session: Session
+    val articleId: Int
 ) {
-    data class DeleteResult(
-        val result: Boolean,
-        val cause: String? = null
+    data class ReadResult(
+        val totalComment: Int,
+        val totalPage: Int,
+        val rePage: Int,
+        val commentList: List<CommentData>
+    )
+
+    data class CommentData(
+        val memberIcon: Int,
+        val ipData: String,
+        val gallerCon: String?,
+        val name: String,
+        val userId: String,
+        val content: String,
+        val identifier: Int,
+        val dateTime: String
     )
 
     /**
-     * 댓글을 삭제합니다.
-     * @exception [be.zvz.kotlininside.http.HttpException] 댓글을 삭제하지 못할 경우, HttpException 발생
+     * 댓글 데이터를 읽어옵니다.
+     * @exception [be.zvz.kotlininside.http.HttpException] 댓글을 읽어오지 못할 경우, HttpException 발생
      */
     @Throws(HttpException::class)
-    fun delete(): DeleteResult {
-        val option = Request.getDefaultOption()
-            .addMultipartParameter("id", gallId)
-            .addMultipartParameter("no", articleId.toString())
-            .addMultipartParameter("comment_no", commentId.toString())
-            .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
-            .addMultipartParameter("mode", "comment_del")
+    fun get(): ReadResult {
+        val json = KotlinInside.getInstance().httpInterface.get(Request.redirectUrl(ApiUrl.Comment.READ), Request.getDefaultOption())!!.index(0)
 
-        if (session.user is Anonymous) {
-            option
-                .addMultipartParameter("comment_pw", session.user.password)
-                .addMultipartParameter("board_id", "")
-        } else {
-            option
-                .addMultipartParameter("user_id", session.detail!!.userId)
-                .addMultipartParameter("board_id", session.user.id)
-        }
-
-        val json = KotlinInside.getInstance().httpInterface.upload(ApiUrl.Comment.DELETE, option)!!.index(0)
-
-        val result = json.get("result").`as`(Boolean::class.java)
-
-        return when {
-            result -> DeleteResult(
-                result = result
-            )
-            else -> DeleteResult(
-                result = result,
-                cause = json.get("cause").text()
-            )
-        }
+        TODO("댓글 읽어오기 구현")
     }
 }
