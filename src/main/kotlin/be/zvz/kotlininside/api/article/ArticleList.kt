@@ -58,7 +58,7 @@ class ArticleList @JvmOverloads constructor(
     )
 
     /**
-     * 클래스의 메소드들을 사용하기 전, 이 메소드를 호출해주세요.
+     * 클래스의 메소드들을 사용하기 전, 이 메소드를 호출해주세요. (권장)
      * @exception [be.zvz.kotlininside.http.HttpException] 글 목록을 불러오지 못할 경우, HttpException 발생
      */
     @Throws(HttpException::class)
