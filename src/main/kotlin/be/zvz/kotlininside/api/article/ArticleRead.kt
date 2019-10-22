@@ -12,7 +12,7 @@ class ArticleRead(
     private val gallId: String,
     private val articleId: Int
 ) {
-    var json: JsonBrowser? = null
+    private var json: JsonBrowser? = null
 
     data class ViewInfo(
         val gallTitle: String,

@@ -38,10 +38,10 @@ class ArticleHitUpvote(
         val result = json.get("result").`as`(Boolean::class.java)
 
         return when {
-            result -> DeleteResult(
+            result -> HitUpvoteResult(
                 result = result
             )
-            else -> DeleteResult(
+            else -> HitUpvoteResult(
                 result = result,
                 cause = json.get("cause").text()
             )

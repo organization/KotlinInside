@@ -14,7 +14,7 @@ class ArticleList @JvmOverloads constructor(
     private val page: Int,
     private val option: Option? = null
 ) {
-    var json: JsonBrowser? = null
+    private var json: JsonBrowser? = null
 
     class Option {
         var recommand = false

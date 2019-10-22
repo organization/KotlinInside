@@ -3,6 +3,7 @@ package be.zvz.kotlininside.api.generic
 import be.zvz.kotlininside.KotlinInside
 import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.http.Request
+import be.zvz.kotlininside.json.JsonBrowser
 import be.zvz.kotlininside.value.ApiUrl
 
 class MainPage {
