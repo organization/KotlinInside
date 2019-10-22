@@ -42,9 +42,9 @@ class CommentRead(
             totalComment = json.get("total_comment").`as`(Int::class.java),
             totalPage = json.get("total_page").`as`(Int::class.java),
             rePage = json.get("re_page").`as`(Int::class.java),
-            commentList = arrayListOf<CommentData>().let { array ->
+            commentList = arrayListOf<CommentData>().apply {
                 json.get("comment_list").values().forEach {
-                    array.add(
+                    add(
                         CommentData(
                             memberIcon = it.get("member_icon").`as`(Int::class.java),
                             ipData = it.get("ipData").text(),
@@ -62,8 +62,6 @@ class CommentRead(
                         )
                     )
                 }
-
-                array
             }
         )
 

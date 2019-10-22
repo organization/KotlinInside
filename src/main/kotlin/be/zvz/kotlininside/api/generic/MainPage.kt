@@ -22,8 +22,16 @@ class MainPage {
         val title: String
     )
 
+    /**
+     * 클래스의 메소드들을 사용하기 전, 이 메소드를 호출해주세요.
+     * @exception [be.zvz.kotlininside.http.HttpException] 글 목록을 불러오지 못할 경우, HttpException 발생
+     */
     @Throws(HttpException::class)
-    fun init() {
-        TODO("메인 페이지 파싱 구현")
+    fun request() {
+        json = KotlinInside.getInstance().httpInterface.get(Request.redirectUrl(ApiUrl.MainInfo.APP_MAIN), Request.getDefaultOption())!!
+
+        TODO("메인 페이지 JSON 파싱 구현")
     }
+
+
 }

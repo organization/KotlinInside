@@ -14,7 +14,7 @@ class ArticleList @JvmOverloads constructor(
     private val page: Int,
     private val option: Option? = null
 ) {
-    private var json: JsonBrowser? = null
+    private lateinit var json: JsonBrowser
 
     class Option {
         var recommand = false
@@ -58,7 +58,7 @@ class ArticleList @JvmOverloads constructor(
     )
 
     /**
-     * 클래스의 메소드들을 사용하기 전, 반드시 이 메소드를 호출하여 JSON을 파싱해야합니다.
+     * 클래스의 메소드들을 사용하기 전, 이 메소드를 호출해주세요.
      * @exception [be.zvz.kotlininside.http.HttpException] 글 목록을 불러오지 못할 경우, HttpException 발생
      */
     @Throws(HttpException::class)
@@ -75,90 +75,88 @@ class ArticleList @JvmOverloads constructor(
                     s
                 }
 
-        json = KotlinInside.getInstance().httpInterface.get(Request.redirectUrl(url), Request.getDefaultOption())
+        json = KotlinInside.getInstance().httpInterface.get(Request.redirectUrl(url), Request.getDefaultOption())!!
     }
 
     /**
      *
-     * @return [be.zvz.kotlininside.api.article.ArticleList.GallInfo] gall_info 객체를 반환합니다. 글 목록이 비어있는 경우, null을 반환합니다.
+     * @return [be.zvz.kotlininside.api.article.ArticleList.GallInfo] gall_info 객체를 반환합니다.
+     * @exception [be.zvz.kotlininside.http.HttpException] 글 목록을 불러오지 못할 경우, HttpException 발생
      */
-    fun getGallInfo(): GallInfo? {
-        json?.let { jsonBrowser ->
-            val gallInfo = jsonBrowser.index(0).get("gall_info")
-            return GallInfo(
-                title = gallInfo.get("gall_title").text(),
-                category = gallInfo.get("category").`as`(Int::class.java),
-                fileCount = gallInfo.get("file_cnt").`as`(Int::class.java),
-                fileSize = gallInfo.get("file_size").`as`(Int::class.java),
-                captcha = gallInfo.safeGet("captcha").run {
-                    when {
-                        isNull -> null
-                        else -> `as`(Boolean::class.java)
-                    }
-                },
-                codeCount = gallInfo.safeGet("code_count").run {
-                    when {
-                        isNull -> null
-                        else -> `as`(Int::class.java)
-                    }
-                },
-                isMinor = gallInfo.get("is_minor").run {
-                    when {
-                        isNull -> null
-                        else -> `as`(Boolean::class.java)
-                    }
-                },
-                notifyRecent = gallInfo.get("notify_recent").run {
-                    when {
-                        isNull -> null
-                        else -> `as`(Int::class.java)
-                    }
-                },
-                relationGall = linkedMapOf<String, String>().let { map ->
+    fun getGallInfo(): GallInfo {
+        if (!::json.isInitialized)
+            request()
 
-                    gallInfo.safeGet("relation_gall").let { relationGall ->
-                        if (!relationGall.isNull)
-                            relationGall.values().forEach {
-                                val key = it.text()
-                                map[key] = it.get(key).text()
-                            }
-                    }
+        val gallInfo = json.index(0).get("gall_info")
 
-                    map
-                },
-                headText = arrayListOf<HeadText>().let { array ->
-
-                    gallInfo.safeGet("head_text").let { headText ->
-                        if (!headText.isNull)
-                            headText.values().forEach {
-                                array.add(
-                                    HeadText(
-                                        identifier = it.get("no").`as`(Int::class.java),
-                                        name = it.get("name").text(),
-                                        level = it.get("level").`as`(Int::class.java),
-                                        selected = it.get("selected").`as`(Boolean::class.java)
-                                    )
-                                )
-                            }
-                    }
-
-                    array
+        return GallInfo(
+            title = gallInfo.get("gall_title").text(),
+            category = gallInfo.get("category").`as`(Int::class.java),
+            fileCount = gallInfo.get("file_cnt").`as`(Int::class.java),
+            fileSize = gallInfo.get("file_size").`as`(Int::class.java),
+            captcha = gallInfo.safeGet("captcha").run {
+                when {
+                    isNull -> null
+                    else -> `as`(Boolean::class.java)
                 }
-            )
-        }
-        return null
+            },
+            codeCount = gallInfo.safeGet("code_count").run {
+                when {
+                    isNull -> null
+                    else -> `as`(Int::class.java)
+                }
+            },
+            isMinor = gallInfo.get("is_minor").run {
+                when {
+                    isNull -> null
+                    else -> `as`(Boolean::class.java)
+                }
+            },
+            notifyRecent = gallInfo.get("notify_recent").run {
+                when {
+                    isNull -> null
+                    else -> `as`(Int::class.java)
+                }
+            },
+            relationGall = linkedMapOf<String, String>().apply {
+                gallInfo.safeGet("relation_gall").let { relationGall ->
+                    if (!relationGall.isNull)
+                        relationGall.values().forEach {
+                            val key = it.text()
+                            this[key] = it.get(key).text() //this: LinkedHashMap<String, String>
+                        }
+                }
+            },
+            headText = arrayListOf<HeadText>().apply {
+                gallInfo.safeGet("head_text").let { headText ->
+                    if (!headText.isNull)
+                        headText.values().forEach {
+                            add(
+                                HeadText(
+                                    identifier = it.get("no").`as`(Int::class.java),
+                                    name = it.get("name").text(),
+                                    level = it.get("level").`as`(Int::class.java),
+                                    selected = it.get("selected").`as`(Boolean::class.java)
+                                )
+                            )
+                        }
+                }
+            }
+        )
     }
 
     /**
      *
-     * @return [be.zvz.kotlininside.api.article.ArticleList.GallList] 목록들을 반환합니다. 글 목록이 비어있을 경우, 빈 리스트를 반환합니다.
+     * @return [be.zvz.kotlininside.api.article.ArticleList.GallList] 목록들을 반환합니다.
+     * @exception [be.zvz.kotlininside.http.HttpException] 글 목록을 불러오지 못할 경우, HttpException 발생
      */
     fun getGallList(): List<GallList> {
-        val array = ArrayList<GallList>()
+        if (!::json.isInitialized)
+            request()
 
-        json?.let {
-            for (gallList in it.index(0).get("gall_list").values()) {
-                array.add(
+        return arrayListOf<GallList>().apply {
+            for (gallList in json.index(0).get("gall_list").values()) {
+                add(
                     GallList(
                         identifier = gallList.get("no").`as`(Int::class.java),
                         views = gallList.get("hit").`as`(Int::class.java),
@@ -188,7 +186,5 @@ class ArticleList @JvmOverloads constructor(
                 )
             }
         }
-
-        return array
     }
 }
