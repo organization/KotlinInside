@@ -14,6 +14,10 @@ public final class ApiUrl {
 
         public static final String UPVOTE = APP_API + "_recommend_up.php";
         public static final String DOWNVOTE = APP_API + "_recommend_down.php";
+
+        public static final String REPORT = "http://m.dcinside.com/api/report.php";
+
+        public static final String HIT_UPVOTE = APP_API + "hit_recommend";
     }
 
     public static final class Comment {
