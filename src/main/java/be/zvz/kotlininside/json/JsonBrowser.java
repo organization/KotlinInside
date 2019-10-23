@@ -211,4 +211,9 @@ public class JsonBrowser {
         jsonFactory.enable(JsonParser.Feature.ALLOW_UNQUOTED_FIELD_NAMES);
         return new ObjectMapper(jsonFactory);
     }
+
+    @Override
+    public String toString() {
+        return node.toString();
+    }
 }

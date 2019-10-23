@@ -1,7 +1,7 @@
 package be.zvz.kotlininside.value;
 
 public final class ApiUrl {
-    public static final String APP_API = "http://app.dcinside.com/api/";
+    public static final String APP_API = "https://app.dcinside.com/api/";
     public static final String AUTH_API = "https://dcid.dcinside.com/join/";
     public static final String MAIN_API = "http://json2.dcinside.com/";
     public static final String REDIRECT = APP_API + "redirect.php";

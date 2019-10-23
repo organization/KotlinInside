@@ -11,8 +11,18 @@ import kotlin.test.assertNotNull
 
 class KotlinInsideTest {
     @Test fun testGetArticle() {
-        KotlinInside.createInstance(Anonymous("ㅇㅇ", "1234"), DefaultHttpClient(true))
+        KotlinInside.createInstance(
+                Anonymous("ㅇㅇ", "1234"),
+                DefaultHttpClient(true)
+        )
+
         val classUnderTest = ArticleList("hit", 1)
-        assertNotNull(classUnderTest.getGallList()[0], "ArticleList.getGallList() must not be null")
+        classUnderTest.request()
+
+        assertNotNull(classUnderTest.getGallList()[0], "ArticleList.getGallList()[0] must not be null")
+
+        classUnderTest.getGallList().forEach {
+            println(it.subject)
+        }
     }
 }

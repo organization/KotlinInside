@@ -13,7 +13,8 @@ class Request {
         @JvmStatic
         fun getDefaultOption(): HttpInterface.Option {
             return HttpInterface.Option()
-                .addHeader("Referer", "http://www.dcinside.com")
+                    .setUserAgent("dcinside.app")
+                    .addHeader("Referer", "http://www.dcinside.com")
         }
     }
 }

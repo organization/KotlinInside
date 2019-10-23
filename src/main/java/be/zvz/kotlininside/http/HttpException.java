@@ -5,7 +5,7 @@ public class HttpException extends RuntimeException {
     private final String errorMessage;
 
     public HttpException(int statusCode, String errorMessage) {
-        super("Error Code : " + statusCode + ", Error Message" + errorMessage);
+        super("Error Code : " + statusCode + ", Error Message : " + errorMessage);
         this.errorMessage = errorMessage;
         this.statusCode = statusCode;
     }

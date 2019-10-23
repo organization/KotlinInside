@@ -7,6 +7,7 @@ import org.jetbrains.annotations.Nullable;
 import java.io.File;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.net.HttpURLConnection;
 import java.net.URLEncoder;
 import java.util.List;
 import java.util.Map;
@@ -78,7 +79,8 @@ public class DefaultHttpClient implements HttpInterface {
     @Override
     public JsonBrowser get(@NotNull String url, @Nullable Option option) throws HttpException {
         HttpRequest request = gzipEncode(HttpRequest.get(optionToUrl(url, option)))
-                .acceptJson();
+                .acceptJson()
+                .followRedirects(true);
 
         if (option != null) {
             request.headers(option.getHeaders());
@@ -88,6 +90,39 @@ public class DefaultHttpClient implements HttpInterface {
         }
 
         try {
+            // HTTP API로 변경될 경우 필요한 코드
+            /*
+            int requestCode = request.code();
+
+            if (requestCode == HttpURLConnection.HTTP_MOVED_TEMP ||
+                    requestCode == HttpURLConnection.HTTP_MOVED_PERM ||
+                    requestCode == HttpURLConnection.HTTP_SEE_OTHER) {
+
+                String redirectUrl = request.header("Location");
+
+                HttpRequest temp = gzipEncode(HttpRequest.get(redirectUrl))
+                        .acceptJson()
+                        .followRedirects(true);
+
+                if (option != null) {
+                    temp.headers(option.getHeaders());
+
+                    if (option.getUserAgent() != null)
+                        temp.header("User-Agent", option.getUserAgent());
+                }
+
+                JsonBrowser json = JsonBrowser.parse(
+                        temp.body()
+                );
+
+                return json;
+            } else {
+                return JsonBrowser.parse(
+                        request.body()
+                );
+            }
+            */
+
             return JsonBrowser.parse(
                     request.body()
             );
@@ -100,7 +135,8 @@ public class DefaultHttpClient implements HttpInterface {
     @Override
     public JsonBrowser post(@NotNull String url, @Nullable Option option) throws HttpException {
         HttpRequest request = gzipEncode(HttpRequest.post(optionToUrl(url, option)))
-                .acceptJson();
+                .acceptJson()
+                .followRedirects(true);
 
         StringBuilder bodyData = new StringBuilder();
 
@@ -147,7 +183,8 @@ public class DefaultHttpClient implements HttpInterface {
     @Override
     public JsonBrowser upload(@NotNull String url, @Nullable Option option) throws HttpException {
         HttpRequest request = gzipEncode(HttpRequest.post(optionToUrl(url, option)))
-                .acceptJson();
+                .acceptJson()
+                .followRedirects(true);
 
         StringBuilder bodyData = new StringBuilder();
 

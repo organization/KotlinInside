@@ -64,17 +64,21 @@ class ArticleList @JvmOverloads constructor(
     @Throws(HttpException::class)
     fun request() {
         val url = "${ApiUrl.Article.LIST}?id=$gallId&page=$page&app_id=${KotlinInside.getInstance().auth.getAppId()}" +
-                option?.let {
-                    val s = ""
-                    if (it.recommand)
-                        s.plus("&recommand=").plus("1")
-                    if (it.notice)
-                        s.plus("&notice=").plus("1")
-                    if (it.headid > 0)
-                        s.plus("&headid=").plus(it.headid)
-                    s
+                when {
+                    option !== null -> {
+                        val s = ""
+                        if (option.recommand)
+                            s.plus("&recommand=").plus("1")
+                        if (option.notice)
+                            s.plus("&notice=").plus("1")
+                        if (option.headid > 0)
+                            s.plus("&headid=").plus(option.headid)
+                        s
+                    }
+                    else -> ""
                 }
 
+        println(url)
         json = KotlinInside.getInstance().httpInterface.get(Request.redirectUrl(url), Request.getDefaultOption())!!
     }
 

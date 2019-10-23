@@ -12,11 +12,14 @@ class KotlinInside private constructor(
 ) {
     val auth: Auth = Auth()
     var hashedAppKey: String
-    var app: App
-    var session: Session
+    lateinit var app: App
+    lateinit var session: Session
 
     init {
         this.hashedAppKey = auth.generateHashedAppKey()
+    }
+
+    private fun init() {
         this.app = App(hashedAppKey, auth.fetchAppId(hashedAppKey))
         this.session = auth.login(user)
     }
@@ -31,8 +34,10 @@ class KotlinInside private constructor(
          */
         @JvmStatic
         fun createInstance(user: User, httpInterface: HttpInterface) {
-            if (!::instance.isInitialized)
+            if (!::instance.isInitialized) {
                 instance = KotlinInside(user, httpInterface)
+                instance.init()
+            }
 
         }
 

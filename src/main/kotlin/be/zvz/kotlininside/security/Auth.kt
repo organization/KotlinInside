@@ -3,6 +3,7 @@ package be.zvz.kotlininside.security
 import be.zvz.kotlininside.KotlinInside
 import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.http.HttpInterface
+import be.zvz.kotlininside.http.Request
 import be.zvz.kotlininside.session.Session
 import be.zvz.kotlininside.session.SessionDetail
 import be.zvz.kotlininside.session.user.Anonymous
@@ -19,7 +20,7 @@ import java.util.Locale
 
 class Auth {
     fun generateHashedAppKey(): String =
-        DigestUtils.sha256Hex(SimpleDateFormat("dcArdchk_yyyyMMddHH", Locale.getDefault()).format(Date()))
+        DigestUtils.sha256Hex("dcArdchk_" + SimpleDateFormat("yyyyMMddHH", Locale.getDefault()).format(Date()))
     
     fun getAppId(): String = when (val hashedAppKey = generateHashedAppKey()) {
         KotlinInside.getInstance().app.token -> KotlinInside.getInstance().app.id
@@ -31,14 +32,14 @@ class Auth {
 
     fun fetchAppId(hashedAppKey: String): String {
         val appId = try {
-            val option = HttpInterface.Option()
-                .addQueryParameter("value_token", hashedAppKey)
-                .addQueryParameter("signature", Const.DC_APP_SIGNATURE)
-                .addQueryParameter("pkg", Const.DC_APP_PACKAGE)
-                .addQueryParameter("vCode", Const.DC_APP_VERSION_CODE)
-                .addQueryParameter("vName", Const.DC_APP_VERSION_NAME)
+            val option = Request.getDefaultOption()
+                .addMultipartParameter("value_token", hashedAppKey)
+                .addMultipartParameter("signature", Const.DC_APP_SIGNATURE)
+                .addMultipartParameter("pkg", Const.DC_APP_PACKAGE)
+                .addMultipartParameter("vCode", Const.DC_APP_VERSION_CODE)
+                .addMultipartParameter("vName", Const.DC_APP_VERSION_NAME)
 
-            KotlinInside.getInstance().httpInterface.post(ApiUrl.Auth.APP_ID, option)
+            KotlinInside.getInstance().httpInterface.upload(ApiUrl.Auth.APP_ID, option)
         } catch (e: HttpException) {
             return ""
         }
