@@ -6,13 +6,20 @@ buildscript {
     }
     dependencies {
         classpath group: 'org.jetbrains.kotlin', name: 'kotlin-gradle-plugin', version: '1.3.50'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7'
     }
 }
 
 apply plugin: 'java'
 apply plugin: 'org.jetbrains.kotlin.jvm'
+apply plugin: 'com.jfrog.bintray'
 
-version = '1.0.0'
+def libName = 'KotlinInside'
+def libVersion = '1.0.0'
+def libDesc = 'Unofficial DCInside API written in Kotlin'
+
+group = 'be.zvz'
+version = libVersion
 
 repositories {
     // Use jcenter for resolving your dependencies.
@@ -29,8 +36,8 @@ dependencies {
     implementation group: 'commons-codec', name: 'commons-codec', version: '1.13'
 
     //Jackson
-    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.10.0.pr3'
-    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.10.0.pr3'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.10.0'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.10.0'
 
     // Use the Kotlin JDK standard library.
     implementation group: 'org.jetbrains.kotlin', name: 'kotlin-stdlib'
@@ -39,3 +46,41 @@ dependencies {
     // Use the Kotlin JUnit integration.
     testImplementation group: 'org.jetbrains.kotlin', name: 'kotlin-test-junit'
 }
+
+/*
+bintray {
+    def localProps = new Properties()
+    localProps.load(project.file('local.properties').newDataInputStream())
+
+    user = localProps.getProperty('bintrayUser')
+    key = localProps.getProperty('bintrayApiKey')
+
+    configurations = ['archives']
+
+    publish = true
+
+    pkg {
+        repo = group
+        name = libName
+        userOrg = localProps.getProperty('organization')
+        desc = libDesc
+        licenses = ['GPL-3.0']
+
+        vcsUrl = 'https://github.com/organization/KotlinInside'
+        websiteUrl = 'https://organization.github.io/KotlinInside/'
+        issueTrackerUrl = 'https://github.com/organization/KotlinInside/issues'
+
+        labels = ['dcinside', 'dc-api']
+        publicDownloadNumbers = true
+
+        githubRepo = 'organization/KotlinInside'
+
+        version {
+            name = libVersion
+            desc = 'Version ' + libVersion
+            released  = new Date()
+            vcsTag = libVersion
+        }
+    }
+}
+*/

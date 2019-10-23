@@ -1,4 +1,4 @@
-# *KotlinInside*
+# *KotlinInside* [![Build Status](https://travis-ci.org/organization/KotlinInside.svg?branch=master)](https://travis-ci.org/organization/KotlinInside) [![Build Status](https://github.com/organization/KotlinInside/workflows/Java%20CI/badge.svg)](https://github.com/organization/KotlinInside) [ ![Download](https://api.bintray.com/packages/jellybrick/be.zvz/KotlinInside/images/download.svg) ](https://bintray.com/jellybrick/be.zvz/KotlinInside/_latestVersion)
 
 [***OpenDC***](https://github.com/organization/OpenDC)에서 사용하기 위해 만든 API입니다.
 
