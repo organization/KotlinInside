@@ -3,26 +3,95 @@
  */
 package be.zvz.kotlininside
 
-import be.zvz.kotlininside.api.article.ArticleList
+import be.zvz.kotlininside.api.article.*
+import be.zvz.kotlininside.api.type.Article
+import be.zvz.kotlininside.api.type.StringContent
 import be.zvz.kotlininside.http.DefaultHttpClient
+import be.zvz.kotlininside.session.Session
 import be.zvz.kotlininside.session.user.Anonymous
 import kotlin.test.Test
 import kotlin.test.assertNotNull
 
 class KotlinInsideTest {
-    @Test fun testGetArticle() {
+    var articleId = 0
+
+    @Test fun initKotlinInside() {
         KotlinInside.createInstance(
                 Anonymous("ㅇㅇ", "1234"),
                 DefaultHttpClient(true)
         )
+    }
 
-        val classUnderTest = ArticleList("hit", 1)
-        classUnderTest.request()
+    @Test fun testArticleList() {
+        val articleList = ArticleList("hit", 1)
+        articleList.request()
 
-        assertNotNull(classUnderTest.getGallList()[0], "ArticleList.getGallList()[0] must not be null")
+        val gallList = articleList.getGallList()
+        val gallInfo = articleList.getGallInfo()
 
-        classUnderTest.getGallList().forEach {
-            println(it.subject)
+        assertNotNull(gallList[0], "ArticleList.getGallList()[0] must not be null")
+
+        println(gallInfo)
+        gallList.forEach {
+            println(it)
         }
+    }
+
+    @Test fun testArticleRead() {
+        val articleRead = ArticleRead("hit", 1)
+        articleRead.request()
+
+        println(articleRead.getViewInfo())
+        println(articleRead.getViewMain())
+    }
+
+    @Test fun testArticleWrite() {
+        val articleWrite = ArticleWrite(
+                gallId = "github",
+                article = Article(
+                        subject = "KotlinInside 테스트 글입니다",
+                        content = mutableListOf(
+                                StringContent(
+                                        string = "글은 곧 자동으로 삭제됩니다.\n글의 비밀번호는 1234입니다."
+                                )
+                        )
+                ),
+                session = KotlinInside.getInstance().session
+        )
+
+        val writeResult = articleWrite.write()
+
+        println(writeResult)
+
+        if (writeResult.result)
+            articleId = writeResult.cause
+    }
+
+    @Test fun testArticleVote() {
+        val articleVote = ArticleVote(
+                gallId = "github",
+                articleId = articleId,
+                session = KotlinInside.getInstance().session
+        )
+
+        val upvoteResult = articleVote.upvote()
+
+        println(upvoteResult)
+
+        val downvoteResult = articleVote.downvote()
+
+        println(downvoteResult)
+    }
+
+    @Test fun testArticleDelete() {
+        val articleDelete = ArticleDelete(
+                gallId = "github",
+                articleId = articleId,
+                session = KotlinInside.getInstance().session
+        )
+
+        val deleteResult = articleDelete.delete()
+
+        println(deleteResult)
     }
 }
