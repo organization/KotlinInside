@@ -77,8 +77,6 @@ class ArticleList @JvmOverloads constructor(
                     }
                     else -> ""
                 }
-
-        println(url)
         json = KotlinInside.getInstance().httpInterface.get(Request.redirectUrl(url), Request.getDefaultOption())!!
     }
 
