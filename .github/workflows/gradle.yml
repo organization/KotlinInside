@@ -16,4 +16,4 @@ jobs:
     - name: gradlew Permission
       run: chmod 755 gradlew
     - name: Test with Gradle
-      run: ./gradlew test -
+      run: ./gradlew test -i 
