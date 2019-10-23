@@ -2,7 +2,7 @@
 title: Base64.<init> - 
 ---
 
-[com.migcomponents.migbase64](../index.html) / [Base64](index.html) / [&lt;init&gt;](./-init-.html)
+[be.zvz.kotlininside.migbase64](../index.html) / [Base64](index.html) / [&lt;init&gt;](./-init-.html)
 
 # &lt;init&gt;
 

@@ -4,13 +4,14 @@
 package be.zvz.kotlininside
 
 import be.zvz.kotlininside.api.article.ArticleList
+import be.zvz.kotlininside.http.DefaultHttpClient
 import be.zvz.kotlininside.session.user.Anonymous
 import kotlin.test.Test
 import kotlin.test.assertNotNull
 
 class KotlinInsideTest {
     @Test fun testGetArticle() {
-        KotlinInside.createInstance(Anonymous("ㅇㅇ", "1234"), TestHttpInterface())
+        KotlinInside.createInstance(Anonymous("ㅇㅇ", "1234"), DefaultHttpClient(true))
         val classUnderTest = ArticleList("hit", 1)
         assertNotNull(classUnderTest.getGallList()[0], "ArticleList.getGallList() must not be null")
     }

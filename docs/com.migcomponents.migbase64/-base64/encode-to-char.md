@@ -2,7 +2,7 @@
 title: Base64.encodeToChar - 
 ---
 
-[com.migcomponents.migbase64](../index.html) / [Base64](index.html) / [encodeToChar](./encode-to-char.html)
+[be.zvz.kotlininside.migbase64](../index.html) / [Base64](index.html) / [encodeToChar](./encode-to-char.html)
 
 # encodeToChar
 

@@ -2,7 +2,7 @@
 title: Base64.encodeToString - 
 ---
 
-[com.migcomponents.migbase64](../index.html) / [Base64](index.html) / [encodeToString](./encode-to-string.html)
+[be.zvz.kotlininside.migbase64](../index.html) / [Base64](index.html) / [encodeToString](./encode-to-string.html)
 
 # encodeToString
 

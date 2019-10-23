@@ -14,4 +14,4 @@ be.zvz.kotlininside.session.user
 be.zvz.kotlininside.session.user.named
 be.zvz.kotlininside.utils
 be.zvz.kotlininside.value
-com.migcomponents.migbase64
+be.zvz.kotlininside.migbase64

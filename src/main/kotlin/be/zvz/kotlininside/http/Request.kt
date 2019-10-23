@@ -1,7 +1,7 @@
 package be.zvz.kotlininside.http
 
 import be.zvz.kotlininside.value.ApiUrl
-import com.migcomponents.migbase64.Base64
+import be.zvz.kotlininside.migbase64.Base64
 
 class Request {
     companion object {

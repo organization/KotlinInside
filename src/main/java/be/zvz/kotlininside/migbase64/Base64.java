@@ -1,8 +1,8 @@
-package com.migcomponents.migbase64;
+package be.zvz.kotlininside.migbase64;
 
 import java.util.Arrays;
 
-import static com.migcomponents.migbase64.Dictionary.CA;
+import static be.zvz.kotlininside.migbase64.Dictionary.CA;
 
 /** A very fast and memory efficient class to encode and decode to and from BASE64 in full accordance
  * with RFC 2045.<br><br>

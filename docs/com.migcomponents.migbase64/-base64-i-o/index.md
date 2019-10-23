@@ -2,7 +2,7 @@
 title: Base64IO - 
 ---
 
-[com.migcomponents.migbase64](../index.html) / [Base64IO](./index.html)
+[be.zvz.kotlininside.migbase64](../index.html) / [Base64IO](./index.html)
 
 # Base64IO
 

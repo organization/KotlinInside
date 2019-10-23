@@ -1,11 +1,11 @@
 // Created on 2007-07-04
-package com.migcomponents.migbase64;
+package be.zvz.kotlininside.migbase64;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import static com.migcomponents.migbase64.Dictionary.CA;
+import static be.zvz.kotlininside.migbase64.Dictionary.CA;
 
 /**
  * Base64 for InputStream<br/> Licence = BSD

@@ -2,7 +2,7 @@
 title: Base64.decodeFast - 
 ---
 
-[com.migcomponents.migbase64](../index.html) / [Base64](index.html) / [decodeFast](./decode-fast.html)
+[be.zvz.kotlininside.migbase64](../index.html) / [Base64](index.html) / [decodeFast](./decode-fast.html)
 
 # decodeFast
 

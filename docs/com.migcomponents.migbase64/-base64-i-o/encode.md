@@ -2,7 +2,7 @@
 title: Base64IO.encode - 
 ---
 
-[com.migcomponents.migbase64](../index.html) / [Base64IO](index.html) / [encode](./encode.html)
+[be.zvz.kotlininside.migbase64](../index.html) / [Base64IO](index.html) / [encode](./encode.html)
 
 # encode
 

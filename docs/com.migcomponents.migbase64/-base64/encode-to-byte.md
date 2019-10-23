@@ -2,7 +2,7 @@
 title: Base64.encodeToByte - 
 ---
 
-[com.migcomponents.migbase64](../index.html) / [Base64](index.html) / [encodeToByte](./encode-to-byte.html)
+[be.zvz.kotlininside.migbase64](../index.html) / [Base64](index.html) / [encodeToByte](./encode-to-byte.html)
 
 # encodeToByte
 

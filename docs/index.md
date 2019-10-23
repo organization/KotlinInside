@@ -17,7 +17,7 @@ title:
 | [be.zvz.kotlininside.session.user.named](be.zvz.kotlininside.session.user.named/index.html) |  |
 | [be.zvz.kotlininside.utils](be.zvz.kotlininside.utils/index.html) |  |
 | [be.zvz.kotlininside.value](be.zvz.kotlininside.value/index.html) |  |
-| [com.migcomponents.migbase64](com.migcomponents.migbase64/index.html) |  |
+| [be.zvz.kotlininside.migbase64](be.zvz.kotlininside.migbase64/index.html) |  |
 
 ### Index
 

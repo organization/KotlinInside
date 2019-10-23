@@ -2,7 +2,7 @@
 title: Base64.decode - 
 ---
 
-[com.migcomponents.migbase64](../index.html) / [Base64](index.html) / [decode](./decode.html)
+[be.zvz.kotlininside.migbase64](../index.html) / [Base64](index.html) / [decode](./decode.html)
 
 # decode
 

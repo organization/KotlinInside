@@ -1,10 +1,10 @@
 ---
-title: com.migcomponents.migbase64 - 
+title: be.zvz.kotlininside.migbase64 - 
 ---
 
-[com.migcomponents.migbase64](./index.html)
+[be.zvz.kotlininside.migbase64](./index.html)
 
-## Package com.migcomponents.migbase64
+## Package be.zvz.kotlininside.migbase64
 
 ### Types
 
