@@ -9,5 +9,4 @@ title: be.zvz.kotlininside -
 ### Types
 
 | [KotlinInside](-kotlin-inside/index.html) | `class KotlinInside` |
-| [KotlinInsideTest](-kotlin-inside-test/index.html) | `class KotlinInsideTest` |
 
