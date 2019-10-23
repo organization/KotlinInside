@@ -73,7 +73,7 @@ class ArticleRead(
 
         val viewInfo = json.index(0).get("view_info")
         return ViewInfo(
-            gallTitle = viewInfo.get("gall_title").text(),
+            gallTitle = viewInfo.get("galltitle").text(),
             category = viewInfo.get("category").`as`(Int::class.java),
             subject = viewInfo.get("subject").text(),
             identifier = viewInfo.get("no").`as`(Int::class.java),
@@ -103,7 +103,12 @@ class ArticleRead(
                 }
             },
             dateTime = viewInfo.get("date_time").text(),
-            isMinor = viewInfo.get("is_minor").`as`(Boolean::class.java),
+            isMinor = viewInfo.safeGet("is_minor").run {
+                when {
+                    !isNull -> `as`(Boolean::class.java)
+                    else -> false
+                }
+            },
             headText = arrayListOf<HeadText>().apply {
                 viewInfo.get("head_text").values().forEach {
                     add(

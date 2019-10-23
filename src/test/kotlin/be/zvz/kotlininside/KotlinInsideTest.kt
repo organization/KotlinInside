@@ -7,14 +7,18 @@ import be.zvz.kotlininside.api.article.*
 import be.zvz.kotlininside.api.type.Article
 import be.zvz.kotlininside.api.type.StringContent
 import be.zvz.kotlininside.http.DefaultHttpClient
-import be.zvz.kotlininside.session.Session
 import be.zvz.kotlininside.session.user.Anonymous
+import org.junit.jupiter.api.MethodOrderer
+import org.junit.jupiter.api.Order
+import org.junit.jupiter.api.TestMethodOrder
 import kotlin.test.Test
 import kotlin.test.assertNotNull
 
+@TestMethodOrder(MethodOrderer.OrderAnnotation::class)
 class KotlinInsideTest {
     var articleId = 0
 
+    @Order(1)
     @Test fun initKotlinInside() {
         KotlinInside.createInstance(
                 Anonymous("ㅇㅇ", "1234"),
@@ -22,6 +26,7 @@ class KotlinInsideTest {
         )
     }
 
+    @Order(2)
     @Test fun testArticleList() {
         val articleList = ArticleList("hit", 1)
         articleList.request()
@@ -37,6 +42,7 @@ class KotlinInsideTest {
         }
     }
 
+    @Order(3)
     @Test fun testArticleRead() {
         val articleRead = ArticleRead("hit", 1)
         articleRead.request()
@@ -45,6 +51,7 @@ class KotlinInsideTest {
         println(articleRead.getViewMain())
     }
 
+    @Order(4)
     @Test fun testArticleWrite() {
         val articleWrite = ArticleWrite(
                 gallId = "github",
@@ -64,9 +71,10 @@ class KotlinInsideTest {
         println(writeResult)
 
         if (writeResult.result)
-            articleId = writeResult.cause
+            articleId = writeResult.articleId!!
     }
 
+    @Order(5)
     @Test fun testArticleVote() {
         val articleVote = ArticleVote(
                 gallId = "github",
@@ -83,6 +91,7 @@ class KotlinInsideTest {
         println(downvoteResult)
     }
 
+    @Order(6)
     @Test fun testArticleDelete() {
         val articleDelete = ArticleDelete(
                 gallId = "github",

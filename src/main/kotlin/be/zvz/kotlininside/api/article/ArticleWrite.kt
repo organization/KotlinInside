@@ -20,7 +20,8 @@ class ArticleWrite @JvmOverloads constructor(
 ) {
     data class WriteResult(
         val result: Boolean,
-        val cause: Int,
+        val articleId: Int? = null,
+        val cause: String? = null,
         val id: String? = null
     )
 
@@ -71,12 +72,12 @@ class ArticleWrite @JvmOverloads constructor(
         return when {
             result -> WriteResult(
                 result = result,
-                cause = json.get("cause").`as`(Int::class.java),
+                articleId = json.get("cause").`as`(Int::class.java),
                 id = json.get("id").text()
             )
             else -> WriteResult(
                 result = result,
-                cause = json.get("cause").`as`(Int::class.java)
+                cause = json.get("cause").text()
             )
         }
     }

@@ -92,7 +92,7 @@ class ArticleList @JvmOverloads constructor(
         val gallInfo = json.index(0).get("gall_info")
 
         return GallInfo(
-            title = gallInfo.get("gall_title").text(),
+            title = gallInfo.get("galltitle").text(),
             category = gallInfo.get("category").`as`(Int::class.java),
             fileCount = gallInfo.get("file_cnt").`as`(Int::class.java),
             fileSize = gallInfo.get("file_size").`as`(Int::class.java),

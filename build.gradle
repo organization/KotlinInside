@@ -44,7 +44,16 @@ dependencies {
     // Use the Kotlin test library.
     testImplementation group: 'org.jetbrains.kotlin', name: 'kotlin-test'
     // Use the Kotlin JUnit integration.
-    testImplementation group: 'org.jetbrains.kotlin', name: 'kotlin-test-junit'
+    testImplementation group: 'org.jetbrains.kotlin', name: 'kotlin-test-junit5'
+
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter', version: '5.5.2'
+}
+
+tasks.test {
+    useJUnitPlatform()
+    testLogging {
+        events("passed", "skipped", "failed")
+    }
 }
 
 /*
