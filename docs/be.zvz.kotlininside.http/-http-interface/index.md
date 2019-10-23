@@ -22,3 +22,7 @@ title: HttpInterface -
 | [put](put.html) | `abstract fun put(url: String!, option: Option!): `[`JsonBrowser`](../../be.zvz.kotlininside.json/-json-browser/index.html)`!` |
 | [upload](upload.html) | `abstract fun upload(url: String!, option: Option!): `[`JsonBrowser`](../../be.zvz.kotlininside.json/-json-browser/index.html)`!` |
 
+### Inheritors
+
+| [DefaultHttpClient](../-default-http-client/index.html) | `open class DefaultHttpClient : `[`HttpInterface`](./index.html) |
+

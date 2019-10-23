@@ -110,6 +110,11 @@ Base64 for InputStream Licence = BSD
 
 |
 
+##### [be.zvz.kotlininside.http.DefaultHttpClient](../be.zvz.kotlininside.http/-default-http-client/index.html)
+
+
+|
+
 ##### [be.zvz.kotlininside.session.user.named.DuplicateNamed](../be.zvz.kotlininside.session.user.named/-duplicate-named/index.html)
 
 
@@ -126,6 +131,13 @@ Base64 for InputStream Licence = BSD
 |
 
 ##### [be.zvz.kotlininside.http.HttpInterface](../be.zvz.kotlininside.http/-http-interface/index.html)
+
+
+|
+
+##### [be.zvz.kotlininside.http.HttpRequest](../be.zvz.kotlininside.http/-http-request/index.html)
+
+A fluid interface for making HTTP requests using an underlying ``[`HttpURLConnection`](#) (or sub-class).
 
 
 |
