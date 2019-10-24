@@ -4,6 +4,9 @@
 
 [**API 문서**](https://organization.github.io/KotlinInside/)
 
+## 예제
+[테스트 코드](https://github.com/organization/KotlinInside/blob/master/src/test/kotlin/be/zvz/kotlininside/KotlinInsideTest.kt) 참고
+
 ## 도움이 된 라이브러리
 
 - [***GoInside***](https://github.com/geeksbaek/goinside)
