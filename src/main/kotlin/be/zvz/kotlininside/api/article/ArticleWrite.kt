@@ -62,7 +62,7 @@ class ArticleWrite @JvmOverloads constructor(
                     imageCount++
                 }
                 is StringContent -> {
-                    option.addMultipartParameter("memo_block[$index]", URLEncoder.encode("<div>" + StringUtil.toHtml(content.string), "UTF-8") + "</div>")
+                    option.addMultipartParameter("memo_block[$index]", URLEncoder.encode("<div>" + StringUtil.toHtml(content.string) + "</div>", "UTF-8"))
                 }
             }
         }
