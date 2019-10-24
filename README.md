@@ -1,11 +1,11 @@
-# *KotlinInside* [![Build Status](https://travis-ci.org/organization/KotlinInside.svg?branch=master)](https://travis-ci.org/organization/KotlinInside) [![Build Status](https://github.com/organization/KotlinInside/workflows/Java%20CI/badge.svg)](https://github.com/organization/KotlinInside) [ ![Download](https://api.bintray.com/packages/jellybrick/be.zvz/KotlinInside/images/download.svg) ](https://bintray.com/jellybrick/be.zvz/KotlinInside/_latestVersion)
+# *KotlinInside* [![Build Status](https://travis-ci.com/organization/KotlinInside.svg?branch=master)](https://travis-ci.com/organization/KotlinInside) [![Build Status](https://github.com/organization/KotlinInside/workflows/Java%20CI/badge.svg)](https://github.com/organization/KotlinInside/actions) [ ![Download](https://api.bintray.com/packages/jellybrick/be.zvz/KotlinInside/images/download.svg) ](https://bintray.com/jellybrick/be.zvz/KotlinInside/_latestVersion)
 
 [***OpenDC***](https://github.com/organization/OpenDC)에서 사용하기 위해 만든 API입니다.
 
 [**API 문서**](https://organization.github.io/KotlinInside/)
 
 ## 예제
-[테스트 코드](https://github.com/organization/KotlinInside/blob/master/src/test/kotlin/be/zvz/kotlininside/KotlinInsideTest.kt) 참고
+[*테스트 코드*](https://github.com/organization/KotlinInside/blob/master/src/test/kotlin/be/zvz/kotlininside/KotlinInsideTest.kt) 참고
 
 ## 도움이 된 라이브러리
 

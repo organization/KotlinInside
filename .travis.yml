@@ -2,6 +2,10 @@
 language: java
 jdk:
   - openjdk8
+  - oraclejdk9
+  - openjdk9
+  - openjdk11
+
 
 sudo: false
 
@@ -14,7 +18,7 @@ addons:
 install: true  # if we don't skip install, ./gradlew assemble is invoked, but this task is not available.
 
 script:
-  - ./gradlew test
+  - ./gradlew test -i
 
 # configure caching (https://docs.travis-ci.com/user/languages/java/#Caching)
 before_cache:
