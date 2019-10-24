@@ -110,15 +110,19 @@ class ArticleRead(
                 }
             },
             headText = arrayListOf<HeadText>().apply {
-                viewInfo.get("head_text").values().forEach {
-                    add(
-                        HeadText(
-                            identifier = it.get("no").`as`(Int::class.java),
-                            name = it.get("name").text(),
-                            level = it.get("level").`as`(Int::class.java),
-                            selected = it.get("selected").`as`(Boolean::class.java)
-                        )
-                    )
+                viewInfo.safeGet("head_text").run {
+                    when {
+                        !isNull -> values().forEach {
+                            add(
+                                HeadText(
+                                    identifier = it.get("no").`as`(Int::class.java),
+                                    name = it.get("name").text(),
+                                    level = it.get("level").`as`(Int::class.java),
+                                    selected = it.get("selected").`as`(Boolean::class.java)
+                                )
+                            )
+                        }
+                    }
                 }
             }
         )

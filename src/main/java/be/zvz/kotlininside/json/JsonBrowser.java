@@ -20,6 +20,7 @@ package be.zvz.kotlininside.json;
 
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
@@ -30,6 +31,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Allows to easily navigate in decoded JSON data
@@ -140,6 +142,14 @@ public class JsonBrowser {
     public <T> T as(Class<T> klass) {
         try {
             return mapper.treeToValue(node, klass);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public <K, V> Map<K, V> toMap() {
+        try {
+            return mapper.convertValue(node, new TypeReference<Map<K, V>>() {});
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

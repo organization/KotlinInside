@@ -15,7 +15,7 @@ class ArticleVote(
     data class VoteResult(
         val result: Boolean,
         val cause: String,
-        val member: Int?
+        val member: Int? = null
     )
 
     /**
@@ -33,10 +33,20 @@ class ArticleVote(
             option.addMultipartParameter("confirm_id", session.detail!!.userId)
         }
 
-        val json = KotlinInside.getInstance().httpInterface.upload(
+        var json = KotlinInside.getInstance().httpInterface.upload(
             ApiUrl.Article.UPVOTE,
             option
-        )!!.index(0)
+        )!!
+
+        val firstResult = json.safeGet("result")
+
+        if (!firstResult.isNull)
+            return VoteResult(
+                result = firstResult.`as`(Boolean::class.java),
+                cause = json.get("cause").text()
+            )
+
+        json = json.index(0)
 
         return VoteResult(
             result = json.get("result").`as`(Boolean::class.java),

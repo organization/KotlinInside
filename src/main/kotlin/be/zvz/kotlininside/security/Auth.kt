@@ -15,12 +15,19 @@ import be.zvz.kotlininside.value.ApiUrl
 import be.zvz.kotlininside.value.Const
 import org.apache.commons.codec.digest.DigestUtils
 import java.text.SimpleDateFormat
+import java.util.TimeZone
 import java.util.Date
 import java.util.Locale
 
 class Auth {
+    private val simpleDateFormat = SimpleDateFormat("yyyyMMddHH", Locale.getDefault())
+
+    init {
+        simpleDateFormat.setTimeZone(TimeZone.getTimeZone("Asia/Seoul"))
+    }
+
     fun generateHashedAppKey(): String =
-        DigestUtils.sha256Hex("dcArdchk_" + SimpleDateFormat("yyyyMMddHH", Locale.getDefault()).format(Date()))
+        DigestUtils.sha256Hex("dcArdchk_" + simpleDateFormat.format(Date()))
     
     fun getAppId(): String = when (val hashedAppKey = generateHashedAppKey()) {
         KotlinInside.getInstance().app.token -> KotlinInside.getInstance().app.id

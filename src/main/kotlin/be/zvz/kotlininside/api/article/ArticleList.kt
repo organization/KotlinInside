@@ -29,7 +29,7 @@ class ArticleList @JvmOverloads constructor(
         val fileSize: Int,
         val captcha: Boolean?,
         val codeCount: Int?,
-        val isMinor: Boolean?,
+        val isMinor: Boolean,
         val notifyRecent: Int?,
         val relationGall: Map<String, String>,
         val headText: List<HeadText>
@@ -89,10 +89,10 @@ class ArticleList @JvmOverloads constructor(
         if (!::json.isInitialized)
             request()
 
-        val gallInfo = json.index(0).get("gall_info")
+        val gallInfo = json.index(0).get("gall_info").index(0)
 
         return GallInfo(
-            title = gallInfo.get("galltitle").text(),
+            title = gallInfo.get("gall_title").text(),
             category = gallInfo.get("category").`as`(Int::class.java),
             fileCount = gallInfo.get("file_cnt").`as`(Int::class.java),
             fileSize = gallInfo.get("file_size").`as`(Int::class.java),
@@ -108,9 +108,9 @@ class ArticleList @JvmOverloads constructor(
                     else -> `as`(Int::class.java)
                 }
             },
-            isMinor = gallInfo.get("is_minor").run {
+            isMinor = gallInfo.safeGet("is_minor").run {
                 when {
-                    isNull -> null
+                    isNull -> false
                     else -> `as`(Boolean::class.java)
                 }
             },
@@ -120,14 +120,15 @@ class ArticleList @JvmOverloads constructor(
                     else -> `as`(Int::class.java)
                 }
             },
-            relationGall = linkedMapOf<String, String>().apply {
-                gallInfo.safeGet("relation_gall").let { relationGall ->
-                    if (!relationGall.isNull)
-                        relationGall.values().forEach {
-                            val key = it.text()
-                            this[key] = it.get(key).text() //this: LinkedHashMap<String, String>
-                        }
-                }
+            relationGall = gallInfo.safeGet("relation_gall").let { relationGall ->
+                if (!relationGall.isNull)
+                    relationGall.toMap<String, String>()
+                else
+                    mutableMapOf<String, String>()
+                    /*relationGall.values().forEach {
+                        val key = it.text()
+                        this[key] = it.get(key).text() //this: LinkedHashMap<String, String>
+                    }*/
             },
             headText = arrayListOf<HeadText>().apply {
                 gallInfo.safeGet("head_text").let { headText ->

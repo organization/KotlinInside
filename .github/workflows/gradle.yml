@@ -13,7 +13,5 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: gradlew Permission
-      run: chmod 755 gradlew
     - name: Test with Gradle
       run: ./gradlew test -i 
