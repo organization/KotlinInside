@@ -15,7 +15,7 @@ apply plugin: 'org.jetbrains.kotlin.jvm'
 apply plugin: 'com.jfrog.bintray'
 
 def libName = 'KotlinInside'
-def libVersion = '1.0.0'
+def libVersion = '1.0.1'
 def libDesc = 'Unofficial DCInside API written in Kotlin'
 
 group = 'be.zvz'

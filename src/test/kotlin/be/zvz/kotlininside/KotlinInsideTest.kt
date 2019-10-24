@@ -6,14 +6,17 @@ package be.zvz.kotlininside
 import be.zvz.kotlininside.api.article.*
 import be.zvz.kotlininside.api.type.Article
 import be.zvz.kotlininside.api.type.StringContent
+import be.zvz.kotlininside.api.type.HeadText
 import be.zvz.kotlininside.http.DefaultHttpClient
 import be.zvz.kotlininside.session.user.Anonymous
 import org.junit.jupiter.api.MethodOrderer
 import org.junit.jupiter.api.Order
 import org.junit.jupiter.api.TestMethodOrder
+import org.junit.jupiter.api.TestInstance
 import kotlin.test.Test
 import kotlin.test.assertNotNull
 
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @TestMethodOrder(MethodOrderer.OrderAnnotation::class)
 class KotlinInsideTest {
     var articleId = 0
@@ -61,10 +64,18 @@ class KotlinInsideTest {
                                 StringContent(
                                         string = "글은 곧 자동으로 삭제됩니다.\n글의 비밀번호는 1234입니다."
                                 )
-                        )
+                        ),
+                        headText = HeadText(
+                                identifier = 0,
+                                name = "일반",
+                                level = 0,
+                                selected = false
+                         )
                 ),
                 session = KotlinInside.getInstance().session
         )
+
+        Thread.sleep(5_000)
 
         val writeResult = articleWrite.write()
 

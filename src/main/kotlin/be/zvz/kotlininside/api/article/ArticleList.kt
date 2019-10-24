@@ -125,10 +125,6 @@ class ArticleList @JvmOverloads constructor(
                     relationGall.toMap<String, String>()
                 else
                     mutableMapOf<String, String>()
-                    /*relationGall.values().forEach {
-                        val key = it.text()
-                        this[key] = it.get(key).text() //this: LinkedHashMap<String, String>
-                    }*/
             },
             headText = arrayListOf<HeadText>().apply {
                 gallInfo.safeGet("head_text").let { headText ->

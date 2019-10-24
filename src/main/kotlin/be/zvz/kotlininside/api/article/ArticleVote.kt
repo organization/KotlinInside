@@ -38,20 +38,18 @@ class ArticleVote(
             option
         )!!
 
-        val firstResult = json.safeGet("result")
-
-        if (!firstResult.isNull)
-            return VoteResult(
-                result = firstResult.`as`(Boolean::class.java),
-                cause = json.get("cause").text()
-            )
-
-        json = json.index(0)
+        if (json.isList)
+            json = json.index(0)
 
         return VoteResult(
             result = json.get("result").`as`(Boolean::class.java),
             cause = json.get("cause").text(),
-            member = json.get("member").`as`(Int::class.java)
+            member = json.safeGet("member").run {
+                when {
+                    !isNull -> `as`(Int::class.java)
+                    else -> null
+                }
+            }
         )
     }
 

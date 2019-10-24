@@ -61,7 +61,9 @@ class ArticleWrite @JvmOverloads constructor(
                     option.addMultipartFile("upload[$imageCount]", content.file)
                     imageCount++
                 }
-                is StringContent -> option.addMultipartParameter("memo_block[$index]", URLEncoder.encode(StringUtil.toHtml(content.string), "UTF-8"))
+                is StringContent -> {
+                    option.addMultipartParameter("memo_block[$index]", URLEncoder.encode("<div>" + StringUtil.toHtml(content.string), "UTF-8") + "</div>")
+                }
             }
         }
 

@@ -33,11 +33,11 @@ class StringUtil {
                     '"' -> builder.append("&quot;")
                     '\n' -> builder.append("<br>")
                     '\t' -> builder.append("&nbsp; &nbsp; &nbsp;")
-                    else -> if (c.toInt() < 128) {
+                    else -> builder.append(c) /*if (c.toInt() < 128) {
                         builder.append(c)
                     } else {
                         builder.append("&#").append(c.toInt()).append(";")
-                    }
+                    }*/
                 }
 
             }

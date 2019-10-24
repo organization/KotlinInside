@@ -37,7 +37,10 @@ class ArticleDelete(
                 .addMultipartParameter("user_id", session.detail!!.userId)
         }
 
-        val json = KotlinInside.getInstance().httpInterface.upload(ApiUrl.Article.DELETE, option)!!.index(0)
+        var json = KotlinInside.getInstance().httpInterface.upload(ApiUrl.Article.DELETE, option)!!
+
+        if (json.isList)
+            json = json.index(0)
 
         val result = json.get("result").`as`(Boolean::class.java)
 
