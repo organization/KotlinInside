@@ -11,10 +11,10 @@ class StringUtil {
     companion object {
         private val OPTIONS = MutableDataSet()
             .set(Parser.EXTENSIONS, listOf(TablesExtension.create(), StrikethroughExtension.create(), TaskListExtension.create()))
-            .toImmutable();
+            .toImmutable()
 
-        private val MD_PARSER = Parser.builder(OPTIONS).build();
-        private val HTML_RENDERER = HtmlRenderer.builder(OPTIONS).escapeHtml(true).build();
+        private val MD_PARSER = Parser.builder(OPTIONS).build()
+        private val HTML_RENDERER = HtmlRenderer.builder(OPTIONS).escapeHtml(true).build()
 
         @JvmStatic
         fun ynToBoolean(s: String): Boolean = when (s) {

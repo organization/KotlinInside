@@ -29,7 +29,7 @@ class Auth {
     private val simpleDateFormat = SimpleDateFormat("yyyyMMddHH", Locale.getDefault())
 
     init {
-        simpleDateFormat.setTimeZone(TimeZone.getTimeZone("Asia/Seoul"))
+        simpleDateFormat.timeZone = TimeZone.getTimeZone("Asia/Seoul")
     }
 
     data class AppCheck(

@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.Map;
 
@@ -29,11 +30,7 @@ public class DefaultHttpClient implements HttpInterface {
 
     @NotNull
     private String urlEncode(@NotNull String str) {
-        try {
-            return URLEncoder.encode(str, "UTF-8");
-        } catch (UnsupportedEncodingException e) {
-            return str;
-        }
+        return URLEncoder.encode(str, StandardCharsets.UTF_8);
     }
 
     @NotNull
