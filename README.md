@@ -4,8 +4,6 @@
 
 [**API 문서**](https://organization.github.io/KotlinInside/)
 
-## 사용 방법
-
 ### Gradle
 
 ```
