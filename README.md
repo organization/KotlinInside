@@ -4,7 +4,27 @@
 
 [**API 문서**](https://organization.github.io/KotlinInside/)
 
+## 사용 방법
+
+### Gradle
+
+```
+compile 'be.zvz:KotlinInside:1.0.2'
+```
+
+### Maven
+
+```
+<dependency>
+  <groupId>be.zvz</groupId>
+  <artifactId>KotlinInside</artifactId>
+  <version>1.0.2</version>
+  <type>pom</type>
+</dependency>
+```
+
 ## 예제
+
 [*테스트 코드*](https://github.com/organization/KotlinInside/blob/master/src/test/kotlin/be/zvz/kotlininside/KotlinInsideTest.kt) 참고
 
 ## 도움이 된 라이브러리
