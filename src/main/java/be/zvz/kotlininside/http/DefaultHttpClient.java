@@ -30,7 +30,11 @@ public class DefaultHttpClient implements HttpInterface {
 
     @NotNull
     private String urlEncode(@NotNull String str) {
-        return URLEncoder.encode(str, StandardCharsets.UTF_8);
+        try {
+            return URLEncoder.encode(str, "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            return str;
+        }
     }
 
     @NotNull

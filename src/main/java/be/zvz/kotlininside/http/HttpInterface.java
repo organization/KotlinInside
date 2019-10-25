@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 
 public interface HttpInterface {
-    final class Option {
+    public final class Option {
         @Nullable
         private String userAgent = null;
         @NotNull
@@ -184,23 +184,23 @@ public interface HttpInterface {
     }
 
     @Nullable
-    JsonBrowser get(@NotNull String url, @Nullable Option option) throws HttpException;
+    public JsonBrowser get(@NotNull String url, @Nullable Option option) throws HttpException;
 
     @Nullable
-    JsonBrowser post(@NotNull String url, @Nullable Option option) throws HttpException;
+    public JsonBrowser post(@NotNull String url, @Nullable Option option) throws HttpException;
 
     @Nullable
-    JsonBrowser delete(@NotNull String url, @Nullable Option option) throws HttpException;
+    public JsonBrowser delete(@NotNull String url, @Nullable Option option) throws HttpException;
 
     @Nullable
-    JsonBrowser head(@NotNull String url, @Nullable Option option) throws HttpException;
+    public JsonBrowser head(@NotNull String url, @Nullable Option option) throws HttpException;
 
     @Nullable
-    JsonBrowser put(@NotNull String url, @Nullable Option option) throws HttpException;
+    public JsonBrowser put(@NotNull String url, @Nullable Option option) throws HttpException;
 
     @Nullable
-    JsonBrowser patch(@NotNull String url, @Nullable Option option) throws HttpException;
+    public JsonBrowser patch(@NotNull String url, @Nullable Option option) throws HttpException;
 
     @Nullable
-    JsonBrowser upload(@NotNull String url, @Nullable Option option) throws HttpException;
+    public JsonBrowser upload(@NotNull String url, @Nullable Option option) throws HttpException;
 }
