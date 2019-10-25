@@ -4,6 +4,8 @@ import be.zvz.kotlininside.KotlinInside
 import be.zvz.kotlininside.api.type.Article
 import be.zvz.kotlininside.api.type.Image
 import be.zvz.kotlininside.api.type.StringContent
+import be.zvz.kotlininside.api.type.HtmlContent
+import be.zvz.kotlininside.api.type.MarkdownContent
 import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.http.Request
 import be.zvz.kotlininside.session.Session
@@ -61,9 +63,9 @@ class ArticleWrite @JvmOverloads constructor(
                     option.addMultipartFile("upload[$imageCount]", content.file)
                     imageCount++
                 }
-                is StringContent -> {
-                    option.addMultipartParameter("memo_block[$index]", URLEncoder.encode("<div>" + StringUtil.toHtml(content.string) + "</div>", "UTF-8"))
-                }
+                is StringContent -> option.addMultipartParameter("memo_block[$index]", URLEncoder.encode("<div>" + StringUtil.toHtml(content.string) + "</div>", "UTF-8"))
+                is HtmlContent -> option.addMultipartParameter("memo_block[$index]", URLEncoder.encode(content.htmlString, "UTF-8"))
+                is MarkdownContent -> option.addMultipartParameter("memo_block[$index]", URLEncoder.encode(StringUtil.mdToHtml(content.markdownString), "UTF-8"))
             }
         }
 
