@@ -15,7 +15,7 @@ apply plugin: 'org.jetbrains.kotlin.jvm'
 apply plugin: 'com.jfrog.bintray'
 
 def libName = 'KotlinInside'
-def libVersion = '1.0.1'
+def libVersion = '1.0.2'
 def libDesc = 'Unofficial DCInside API written in Kotlin'
 
 group = 'be.zvz'
@@ -40,7 +40,10 @@ dependencies {
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.10.0'
 
     //FlexMark
-    implementation group: 'com.vladsch.flexmark', name: 'flexmark-all', version: '0.50.42'
+    implementation group: 'com.vladsch.flexmark', name: 'flexmark', version: '0.50.42'
+    implementation group: 'com.vladsch.flexmark', name: 'flexmark-ext-gfm-strikethrough', version: '0.50.42'
+    implementation group: 'com.vladsch.flexmark', name: 'flexmark-ext-tables', version: '0.50.42'
+    implementation group: 'com.vladsch.flexmark', name: 'flexmark-ext-gfm-tasklist', version: '0.50.42'
 
     // Use the Kotlin JDK standard library.
     implementation group: 'org.jetbrains.kotlin', name: 'kotlin-stdlib'
