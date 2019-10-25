@@ -14,21 +14,67 @@ import be.zvz.kotlininside.session.user.UserType
 import be.zvz.kotlininside.value.ApiUrl
 import be.zvz.kotlininside.value.Const
 import org.apache.commons.codec.digest.DigestUtils
+import java.lang.RuntimeException
 import java.text.SimpleDateFormat
 import java.util.TimeZone
 import java.util.Date
 import java.util.Locale
 
 class Auth {
+    /*
+    private var count = 0
+    private var initAppCheckDate = false
+    */
+
     private val simpleDateFormat = SimpleDateFormat("yyyyMMddHH", Locale.getDefault())
 
     init {
         simpleDateFormat.setTimeZone(TimeZone.getTimeZone("Asia/Seoul"))
     }
 
-    fun generateHashedAppKey(): String =
-        DigestUtils.sha256Hex("dcArdchk_" + simpleDateFormat.format(Date()))
-    
+    data class AppCheck(
+            val result: Boolean,
+            val version: String,
+            val notice: Boolean,
+            val noticeUpdate: Boolean,
+            val date: String
+    )
+
+    /**
+     * app_check에서 정보를 얻어오는 메소드입니다.
+     * @return [AppCheck]|null AppCheck 또는 null을 반환합니다.
+     */
+    fun getAppCheck(): AppCheck? {
+        val appCheck = try {
+            KotlinInside.getInstance().httpInterface.get(ApiUrl.Auth.APP_CHECK, Request.getDefaultOption())
+        } catch (e: HttpException) {
+            throw RuntimeException("app_check에 접근할 수 없습니다")
+        }
+
+        appCheck?.let {
+            if (!it.safeGet("result").isNull)
+                throw RuntimeException("app_check를 얻어올 수 없습니다")
+
+            val json = it.index(0)
+
+            return AppCheck(
+                    result = it.get("result").`as`(Boolean::class.java),
+                    version = it.get("ver").text(),
+                    notice = it.get("notice").`as`(Boolean::class.java),
+                    noticeUpdate = it.get("notice_update").`as`(Boolean::class.java),
+                    date = it.get("date").text()
+            )
+        }
+
+        return null
+    }
+
+    fun generateHashedAppKey(): String {
+        val count = ((System.currentTimeMillis() / 1000) - 1_559_142_000) / (12 * 60 * 60) //2019/5/30 0:0:0
+        return DigestUtils.sha256Hex("dcArdchk_${simpleDateFormat.format(Date())}$count")
+    }
+
+    @Throws(RuntimeException::class)
     fun getAppId(): String = when (val hashedAppKey = generateHashedAppKey()) {
         KotlinInside.getInstance().app.token -> KotlinInside.getInstance().app.id
         else -> {
@@ -37,14 +83,15 @@ class Auth {
         }
     }
 
+    @Throws(RuntimeException::class)
     fun fetchAppId(hashedAppKey: String): String {
         val appId = try {
             val option = Request.getDefaultOption()
-                .addMultipartParameter("value_token", hashedAppKey)
-                .addMultipartParameter("signature", Const.DC_APP_SIGNATURE)
-                .addMultipartParameter("pkg", Const.DC_APP_PACKAGE)
-                .addMultipartParameter("vCode", Const.DC_APP_VERSION_CODE)
-                .addMultipartParameter("vName", Const.DC_APP_VERSION_NAME)
+                    .addMultipartParameter("value_token", hashedAppKey)
+                    .addMultipartParameter("signature", Const.DC_APP_SIGNATURE)
+                    .addMultipartParameter("pkg", Const.DC_APP_PACKAGE)
+                    .addMultipartParameter("vCode", Const.DC_APP_VERSION_CODE)
+                    .addMultipartParameter("vName", Const.DC_APP_VERSION_NAME)
 
             KotlinInside.getInstance().httpInterface.upload(ApiUrl.Auth.APP_ID, option)
         } catch (e: HttpException) {

@@ -37,6 +37,7 @@ public final class ApiUrl {
     public static final class Auth {
         public static final String LOGIN = AUTH_API + "mobile_app_login.php";
         public static final String APP_ID = AUTH_API + "mobile_app_key_verification_3rd.php";
+        public static final String APP_CHECK = MAIN_API + "json0/app_check_A_rina_beta.php";
     }
 
     public static final class MainInfo {

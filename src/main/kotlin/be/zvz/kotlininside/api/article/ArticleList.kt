@@ -120,25 +120,26 @@ class ArticleList @JvmOverloads constructor(
                     else -> `as`(Int::class.java)
                 }
             },
-            relationGall = gallInfo.safeGet("relation_gall").let { relationGall ->
-                if (!relationGall.isNull)
-                    relationGall.toMap<String, String>()
-                else
-                    mutableMapOf<String, String>()
+            relationGall = gallInfo.safeGet("relation_gall").run {
+                when {
+                    isNull -> toMap<String, String>()
+                    else -> mutableMapOf<String, String>()
+                }
             },
             headText = arrayListOf<HeadText>().apply {
-                gallInfo.safeGet("head_text").let { headText ->
-                    if (!headText.isNull)
-                        headText.values().forEach {
+                gallInfo.safeGet("head_text").run {
+                    when {
+                        !isNull -> values().forEach {
                             add(
-                                HeadText(
-                                    identifier = it.get("no").`as`(Int::class.java),
-                                    name = it.get("name").text(),
-                                    level = it.get("level").`as`(Int::class.java),
-                                    selected = it.get("selected").`as`(Boolean::class.java)
-                                )
+                                    HeadText(
+                                            identifier = it.get("no").`as`(Int::class.java),
+                                            name = it.get("name").text(),
+                                            level = it.get("level").`as`(Int::class.java),
+                                            selected = it.get("selected").`as`(Boolean::class.java)
+                                    )
                             )
                         }
+                    }
                 }
             }
         )
