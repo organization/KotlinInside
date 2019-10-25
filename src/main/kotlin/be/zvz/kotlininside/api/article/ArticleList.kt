@@ -122,7 +122,7 @@ class ArticleList @JvmOverloads constructor(
             },
             relationGall = gallInfo.safeGet("relation_gall").run {
                 when {
-                    isNull -> toMap<String, String>()
+                    !isNull -> toMap<String, String>()
                     else -> mutableMapOf<String, String>()
                 }
             },
