@@ -20,11 +20,6 @@ import java.util.Date
 import java.util.Locale
 
 class Auth {
-    /*
-    private var count = 0
-    private var initAppCheckDate = false
-    */
-
     private val simpleDateFormat = SimpleDateFormat("yyyyMMddHH", Locale.getDefault())
     private lateinit var time: String
 
