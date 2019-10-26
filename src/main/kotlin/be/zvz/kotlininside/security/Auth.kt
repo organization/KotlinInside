@@ -14,7 +14,6 @@ import be.zvz.kotlininside.session.user.UserType
 import be.zvz.kotlininside.value.ApiUrl
 import be.zvz.kotlininside.value.Const
 import org.apache.commons.codec.digest.DigestUtils
-import java.lang.RuntimeException
 import java.text.SimpleDateFormat
 import java.util.TimeZone
 import java.util.Date
@@ -27,6 +26,7 @@ class Auth {
     */
 
     private val simpleDateFormat = SimpleDateFormat("yyyyMMddHH", Locale.getDefault())
+    private lateinit var time: String
 
     init {
         simpleDateFormat.timeZone = TimeZone.getTimeZone("Asia/Seoul")
@@ -34,56 +34,76 @@ class Auth {
 
     data class AppCheck(
             val result: Boolean,
-            val version: String,
-            val notice: Boolean,
-            val noticeUpdate: Boolean,
-            val date: String
+            val version: String? = null,
+            val notice: Boolean? = null,
+            val noticeUpdate: Boolean? = null,
+            val date: String? = null
     )
 
     /**
      * app_check에서 정보를 얻어오는 메소드입니다.
-     * @return [AppCheck]|null AppCheck 또는 null을 반환합니다.
+     * @return [AppCheck] AppCheck 또는 null을 반환합니다.
+     * @exception [HttpException] app_check에 접근 할 수 없는 경우, HttpException이 발생합니다.
      */
-    fun getAppCheck(): AppCheck? {
-        val appCheck = try {
-            KotlinInside.getInstance().httpInterface.get(ApiUrl.Auth.APP_CHECK, Request.getDefaultOption())
-        } catch (e: HttpException) {
-            throw RuntimeException("app_check에 접근할 수 없습니다")
-        }
+    fun getAppCheck(): AppCheck {
+        val appCheck = KotlinInside.getInstance().httpInterface.get(ApiUrl.Auth.APP_CHECK, Request.getDefaultOption())
 
-        appCheck?.let {
-            if (!it.safeGet("result").isNull)
-                throw RuntimeException("app_check를 얻어올 수 없습니다")
+        when {
+            appCheck !== null -> {
+                if (!appCheck.safeGet("result").isNull)
+                    return AppCheck(
+                            result = appCheck.get("result").`as`(Boolean::class.java)
+                    )
 
-            val json = it.index(0)
+                val json = appCheck.index(0)
 
-            return AppCheck(
-                    result = it.get("result").`as`(Boolean::class.java),
-                    version = it.get("ver").text(),
-                    notice = it.get("notice").`as`(Boolean::class.java),
-                    noticeUpdate = it.get("notice_update").`as`(Boolean::class.java),
-                    date = it.get("date").text()
+                return AppCheck(
+                        result = json.get("result").`as`(Boolean::class.java),
+                        version = json.get("ver").text(),
+                        notice = json.get("notice").`as`(Boolean::class.java),
+                        noticeUpdate = json.get("notice_update").`as`(Boolean::class.java),
+                        date = json.get("date").text()
+                )
+            }
+            else -> return AppCheck(
+                    result = false
             )
         }
-
-        return null
     }
 
     fun generateHashedAppKey(): String {
-        val count = ((System.currentTimeMillis() / 1000) - 1_559_142_000) / (12 * 60 * 60) //2019/5/30 0:0:0
-        return DigestUtils.sha256Hex("dcArdchk_${simpleDateFormat.format(Date())}$count")
+        val now = simpleDateFormat.format(Date())
+
+        if (!::time.isInitialized || time.substring(0, 10) != now) { //time이 아직 초기화되지 않았거나, time의 앞자리 (년월일시간)와 now가 다를때
+            try {
+                getAppCheck().run {
+                    date?.let {
+                        time = it
+                        return DigestUtils.sha256Hex("dcArdchk_$time")
+                    }
+                }
+            } catch (e: Exception) {
+            }
+        } else { //now와 time 앞자리가 같을 때
+            return DigestUtils.sha256Hex("dcArdchk_$time")
+        }
+
+        // 예외가 발생했거나, 값이 null이어서 time을 제대로 설정하지 못한 경우
+        val count = (((System.currentTimeMillis() / 1000) - 1_559_142_000) / (12 * 60 * 60)) - 1 //2019/5/30 0:0:0
+        time = "$now$count"
+        return DigestUtils.sha256Hex("dcArdchk_$time")
     }
 
-    @Throws(RuntimeException::class)
-    fun getAppId(): String = when (val hashedAppKey = generateHashedAppKey()) {
-        KotlinInside.getInstance().app.token -> KotlinInside.getInstance().app.id
-        else -> {
-            KotlinInside.getInstance().app = App(hashedAppKey, fetchAppId(hashedAppKey))
-            KotlinInside.getInstance().app.id
+    fun getAppId(): String {
+        return when (val hashedAppKey = generateHashedAppKey()) {
+            KotlinInside.getInstance().app.token -> KotlinInside.getInstance().app.id
+            else -> {
+                KotlinInside.getInstance().app = App(hashedAppKey, fetchAppId(hashedAppKey))
+                KotlinInside.getInstance().app.id
+            }
         }
     }
 
-    @Throws(RuntimeException::class)
     fun fetchAppId(hashedAppKey: String): String {
         val appId = try {
             val option = Request.getDefaultOption()

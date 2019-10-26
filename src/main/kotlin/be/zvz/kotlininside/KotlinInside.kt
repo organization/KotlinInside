@@ -11,15 +11,12 @@ class KotlinInside private constructor(
     val httpInterface: HttpInterface
 ) {
     val auth: Auth = Auth()
-    var hashedAppKey: String
+    lateinit var hashedAppKey: String
     lateinit var app: App
     lateinit var session: Session
 
-    init {
-        this.hashedAppKey = auth.generateHashedAppKey()
-    }
-
     private fun init() {
+        this.hashedAppKey = auth.generateHashedAppKey()
         this.app = App(hashedAppKey, auth.fetchAppId(hashedAppKey))
         this.session = auth.login(user)
     }
