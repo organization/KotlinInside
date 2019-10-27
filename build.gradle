@@ -18,7 +18,7 @@ apply plugin: 'com.jfrog.bintray'
 apply plugin: 'com.github.dcendents.android-maven'
 
 def libName = 'KotlinInside'
-def libVersion = '1.2.0'
+def libVersion = '1.2.1'
 def libDesc = 'Unofficial DCInside API written in Kotlin'
 
 group = 'be.zvz'

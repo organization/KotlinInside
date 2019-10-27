@@ -14,6 +14,11 @@ import java.util.Map;
 public class DefaultHttpClient implements HttpInterface {
     private boolean enableGzipCompression;
 
+    /**
+     * DefaultHttpClient의 constructor입니다.
+     *
+     * @param gzip GZIP 압축을 사용할 것인지 유무
+     */
     public DefaultHttpClient(boolean gzip) {
         enableGzipCompression = gzip;
     }
