@@ -84,8 +84,12 @@ class Auth {
         }
 
         // 예외가 발생했거나, 값이 null이어서 time을 제대로 설정하지 못한 경우
+        /*
         val count = (((System.currentTimeMillis() / 1000) - 1_559_142_000) / (12 * 60 * 60)) - 1 //2019/5/30 0:0:0
         time = "$now$count"
+        */
+        // 디시인사이드 2019/10/28 변경점 - 더이상 count를 포함하지 않음
+        time = now
         return DigestUtils.sha256Hex("dcArdchk_$time")
     }
 

@@ -67,13 +67,7 @@ import java.security.GeneralSecurityException;
 import java.security.PrivilegedAction;
 import java.security.SecureRandom;
 import java.security.cert.X509Certificate;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.Map.Entry;
 import java.util.concurrent.Callable;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -247,10 +241,11 @@ public class HttpRequest {
      */
     public static final String PARAM_CHARSET = "charset";
 
-    private static final String BOUNDARY = "00content0boundary00";
+    private final static char[] MULTIPART_CHARS =
+            "-_1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    .toCharArray();
 
-    private static final String CONTENT_TYPE_MULTIPART = "multipart/form-data; boundary="
-            + BOUNDARY;
+    private static final String CONTENT_TYPE_MULTIPART = "multipart/form-data; boundary=";
 
     private static final String CRLF = "\r\n";
 
@@ -259,6 +254,18 @@ public class HttpRequest {
     private static SSLSocketFactory TRUSTED_FACTORY;
 
     private static HostnameVerifier TRUSTED_VERIFIER;
+
+    private static String BOUNDARY = generateBoundary();
+
+    private static String generateBoundary() {
+        StringBuilder buffer = new StringBuilder();
+        Random rand = new Random();
+        int count = rand.nextInt(11) + 30; // a random size from 30 to 40
+        for (int i = 0; i < count; i++) {
+            buffer.append(MULTIPART_CHARS[rand.nextInt(MULTIPART_CHARS.length)]);
+        }
+        return buffer.toString();
+    }
 
     private static String getValidCharset(final String charset) {
         if (charset != null && charset.length() > 0)
@@ -835,7 +842,7 @@ public class HttpRequest {
         if (array instanceof Object[])
             return Arrays.asList((Object[]) array);
 
-        List<Object> result = new ArrayList<Object>();
+        List<Object> result = new ArrayList<>();
         // Arrays of the primitive types can't be cast to array of Object, so this:
         if (array instanceof int[])
             for (int value : (int[]) array) result.add(value);
@@ -1414,14 +1421,14 @@ public class HttpRequest {
     private static String setProperty(final String name, final String value) {
         final PrivilegedAction<String> action;
         if (value != null)
-            action = new PrivilegedAction<String>() {
+            action = new PrivilegedAction<>() {
 
                 public String run() {
                     return System.setProperty(name, value);
                 }
             };
         else
-            action = new PrivilegedAction<String>() {
+            action = new PrivilegedAction<>() {
 
                 public String run() {
                     return System.clearProperty(name);
@@ -2191,7 +2198,7 @@ public class HttpRequest {
 
         final List<String> values = headers.get(name);
         if (values != null && !values.isEmpty())
-            return values.toArray(new String[values.size()]);
+            return values.toArray(new String[0]);
         else
             return EMPTY_STRINGS;
     }
@@ -2239,7 +2246,7 @@ public class HttpRequest {
         if (end == -1)
             end = headerLength;
 
-        Map<String, String> params = new LinkedHashMap<String, String>();
+        Map<String, String> params = new LinkedHashMap<>();
         while (start < end) {
             int nameEnd = header.indexOf('=', start);
             if (nameEnd != -1 && nameEnd < end) {
@@ -2682,8 +2689,10 @@ public class HttpRequest {
         progress(null);
         if (output == null)
             return this;
-        if (multipart)
+        if (multipart) {
             output.write(CRLF + "--" + BOUNDARY + "--" + CRLF);
+            BOUNDARY = generateBoundary();
+        }
         if (ignoreCloseExceptions)
             try {
                 output.close();
@@ -2737,7 +2746,7 @@ public class HttpRequest {
     protected HttpRequest startPart() throws IOException {
         if (!multipart) {
             multipart = true;
-            contentType(CONTENT_TYPE_MULTIPART).openOutput();
+            contentType(CONTENT_TYPE_MULTIPART + BOUNDARY).openOutput();
             output.write("--" + BOUNDARY + CRLF);
         } else
             output.write(CRLF + "--" + BOUNDARY + CRLF);
