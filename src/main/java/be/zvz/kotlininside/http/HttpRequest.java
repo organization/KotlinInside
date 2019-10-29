@@ -1421,14 +1421,14 @@ public class HttpRequest {
     private static String setProperty(final String name, final String value) {
         final PrivilegedAction<String> action;
         if (value != null)
-            action = new PrivilegedAction<>() {
+            action = new PrivilegedAction<String>() {
 
                 public String run() {
                     return System.setProperty(name, value);
                 }
             };
         else
-            action = new PrivilegedAction<>() {
+            action = new PrivilegedAction<String>() {
 
                 public String run() {
                     return System.clearProperty(name);

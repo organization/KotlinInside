@@ -9,7 +9,7 @@ public final class ApiUrl {
     public static final class Article {
         public static final String LIST = APP_API + "gall_list_new.php";
         public static final String READ = APP_API + "gall_view_new.php";
-        public static final String WRITE = "http://upload.dcinside.com/_app_write_api.php";
+        public static final String WRITE = "https://upload.dcinside.com/_app_write_api.php";
         public static final String DELETE = APP_API + "gall_del.php";
 
         public static final String UPVOTE = APP_API + "_recommend_up.php";
