@@ -69,6 +69,24 @@ class Auth {
     fun generateHashedAppKey(): String {
         val now = simpleDateFormat.format(Date())
 
+        if (!::time.isInitialized || time != now) {
+            try {
+                getAppCheck().run {
+                    date?.let {
+                        time = it
+                        return DigestUtils.sha256Hex("dcArdchk_$time")
+                    }
+                }
+            } catch (e: Exception) {
+            }
+        } else {
+            return DigestUtils.sha256Hex("dcArdchk_$time")
+        }
+
+        TODO("DC value_token app_id date값 생성 미구현")
+
+        // 디시인사이드 2019/10/31 변경점 - Thu303314444103110 형식으로 변경됨
+        /*
         if (!::time.isInitialized || time.substring(0, 10) != now) { //time이 아직 초기화되지 않았거나, time의 앞자리 (년월일시간)와 now가 다를때
             try {
                 getAppCheck().run {
@@ -83,6 +101,8 @@ class Auth {
             return DigestUtils.sha256Hex("dcArdchk_$time")
         }
 
+
+
         // 예외가 발생했거나, 값이 null이어서 time을 제대로 설정하지 못한 경우
         /*
         val count = (((System.currentTimeMillis() / 1000) - 1_559_142_000) / (12 * 60 * 60)) - 1 //2019/5/30 0:0:0
@@ -91,6 +111,7 @@ class Auth {
         // 디시인사이드 2019/10/28 변경점 - 더이상 count를 포함하지 않음
         time = now
         return DigestUtils.sha256Hex("dcArdchk_$time")
+        */
     }
 
     fun getAppId(): String {

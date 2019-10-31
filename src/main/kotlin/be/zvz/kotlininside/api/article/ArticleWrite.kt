@@ -15,10 +15,10 @@ import be.zvz.kotlininside.value.ApiUrl
 import java.net.URLEncoder
 
 class ArticleWrite @JvmOverloads constructor(
-    private val gallId: String,
-    private val article: Article,
-    private val session: Session,
-    private val fcmToken: String = "N"
+        private val gallId: String,
+        private val article: Article,
+        private val session: Session,
+        private val fcmToken: String = (Long.MIN_VALUE..Long.MAX_VALUE).random().toString() //Generate random FCM Token
 ) {
     data class WriteResult(
         val result: Boolean,
