@@ -22,6 +22,7 @@ import java.util.Locale
 class Auth {
     private val simpleDateFormat = SimpleDateFormat("yyyyMMddHH", Locale.getDefault())
     private lateinit var time: String
+    private lateinit var date: String
 
     init {
         simpleDateFormat.timeZone = TimeZone.getTimeZone("Asia/Seoul")
@@ -69,18 +70,19 @@ class Auth {
     fun generateHashedAppKey(): String {
         val now = simpleDateFormat.format(Date())
 
-        if (!::time.isInitialized || time != now) {
+        if (!::time.isInitialized || !::date.isInitialized || time != now) {
             try {
                 getAppCheck().run {
                     date?.let {
-                        time = it
-                        return DigestUtils.sha256Hex("dcArdchk_$time")
+                        time = now
+                        date = it
+                        return DigestUtils.sha256Hex("dcArdchk_$date")
                     }
                 }
             } catch (e: Exception) {
             }
         } else {
-            return DigestUtils.sha256Hex("dcArdchk_$time")
+            return DigestUtils.sha256Hex("dcArdchk_$date")
         }
 
         TODO("DC value_token app_id date값 생성 미구현")
@@ -100,6 +102,7 @@ class Auth {
         } else { //now와 time 앞자리가 같을 때
             return DigestUtils.sha256Hex("dcArdchk_$time")
         }
+        */
 
 
 
@@ -109,6 +112,7 @@ class Auth {
         time = "$now$count"
         */
         // 디시인사이드 2019/10/28 변경점 - 더이상 count를 포함하지 않음
+        /*
         time = now
         return DigestUtils.sha256Hex("dcArdchk_$time")
         */
