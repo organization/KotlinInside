@@ -22,7 +22,7 @@ import java.util.Locale
 class Auth {
     private val simpleDateFormat = SimpleDateFormat("yyyyMMddHH", Locale.getDefault())
     private lateinit var time: String
-    private lateinit var date: String
+    private lateinit var timeRaw: String
 
     init {
         simpleDateFormat.timeZone = TimeZone.getTimeZone("Asia/Seoul")
@@ -70,19 +70,19 @@ class Auth {
     fun generateHashedAppKey(): String {
         val now = simpleDateFormat.format(Date())
 
-        if (!::time.isInitialized || !::date.isInitialized || time != now) {
+        if (!::time.isInitialized || !::timeRaw.isInitialized || time != now) {
             try {
                 getAppCheck().run {
                     date?.let {
                         time = now
-                        date = it
-                        return DigestUtils.sha256Hex("dcArdchk_$date")
+                        timeRaw = it
+                        return DigestUtils.sha256Hex("dcArdchk_$timeRaw")
                     }
                 }
             } catch (e: Exception) {
             }
         } else {
-            return DigestUtils.sha256Hex("dcArdchk_$date")
+            return DigestUtils.sha256Hex("dcArdchk_$timeRaw")
         }
 
         TODO("DC value_token app_id date값 생성 미구현")
