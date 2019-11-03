@@ -14,19 +14,17 @@ import be.zvz.kotlininside.session.user.UserType
 import be.zvz.kotlininside.value.ApiUrl
 import be.zvz.kotlininside.value.Const
 import org.apache.commons.codec.digest.DigestUtils
-import java.text.SimpleDateFormat
+import org.apache.commons.lang3.time.FastDateFormat
 import java.util.TimeZone
 import java.util.Date
 import java.util.Locale
 
 class Auth {
-    private val simpleDateFormat = SimpleDateFormat("yyyyMMddHH", Locale.getDefault())
+    private val seoulTimeZone = TimeZone.getTimeZone("Asia/Seoul")
+    private val date1001 = Date(1569855600L * 1000)
+    private val date1028 = Date(1572188400L * 1000)
+    private val dayOfWeekFormat = FastDateFormat.getInstance("u", seoulTimeZone, Locale.US)
     private lateinit var time: String
-    private lateinit var timeRaw: String
-
-    init {
-        simpleDateFormat.timeZone = TimeZone.getTimeZone("Asia/Seoul")
-    }
 
     data class AppCheck(
             val result: Boolean,
@@ -67,29 +65,30 @@ class Auth {
         }
     }
 
-    fun generateHashedAppKey(): String {
-        val now = simpleDateFormat.format(Date())
-
-        if (!::time.isInitialized || !::timeRaw.isInitialized || time != now) {
-            try {
-                getAppCheck().run {
-                    date?.let {
-                        time = now
-                        timeRaw = it
-                        return DigestUtils.sha256Hex("dcArdchk_$timeRaw")
-                    }
-                }
-            } catch (e: Exception) {
-            }
-        } else {
-            return DigestUtils.sha256Hex("dcArdchk_$timeRaw")
+    private fun dayOfWeekZero(date: String): String {
+        return when (date) {
+            "7" -> "0"
+            else -> date
         }
+    }
 
-        TODO("DC value_token app_id date값 생성 미구현")
+    // 성능 끔찍함. 수정 필요
+    /**
+     *
+     * @return [java.lang.String] Thu303314444103110 형식의 날짜 문자열을 반환합니다.
+     */
+    private fun dateToString(date: Date): String {
+        val dayOfWeek = dayOfWeekFormat.format(date)
+        return FastDateFormat.getInstance("E30${(date.time - date1028.time) / DAY}d$dayOfWeek${dayOfWeekZero(dayOfWeek)}4${((date.time - date1001.time + DAY) / DAY) / 7}MMddMM", seoulTimeZone, Locale.US).format(date)
+    }
 
-        // 디시인사이드 2019/10/31 변경점 - Thu303314444103110 형식으로 변경됨
-        /*
-        if (!::time.isInitialized || time.substring(0, 10) != now) { //time이 아직 초기화되지 않았거나, time의 앞자리 (년월일시간)와 now가 다를때
+    /**
+     * SHA256 단방향 암호화된 value_token을 서버로부터 얻어오거나, 생성하는 메소드입니다.
+     * @return [java.lang.String] value_token을 반환합니다.
+     */
+    fun generateHashedAppKey(): String {
+        val now = dateToString(Date())
+        if (!::time.isInitialized || time != now) {
             try {
                 getAppCheck().run {
                     date?.let {
@@ -99,25 +98,20 @@ class Auth {
                 }
             } catch (e: Exception) {
             }
-        } else { //now와 time 앞자리가 같을 때
+        } else {
             return DigestUtils.sha256Hex("dcArdchk_$time")
         }
-        */
 
-
-
+        // 디시인사이드 2019/10/31 변경점 - Thu303314444103110 형식으로 변경됨
         // 예외가 발생했거나, 값이 null이어서 time을 제대로 설정하지 못한 경우
-        /*
-        val count = (((System.currentTimeMillis() / 1000) - 1_559_142_000) / (12 * 60 * 60)) - 1 //2019/5/30 0:0:0
-        time = "$now$count"
-        */
-        // 디시인사이드 2019/10/28 변경점 - 더이상 count를 포함하지 않음
-        /*
         time = now
         return DigestUtils.sha256Hex("dcArdchk_$time")
-        */
     }
 
+    /**
+     * 캐시된 app_id를 얻어오는 메소드입니다.
+     * @return [java.lang.String] app_id를 반환합니다.
+     */
     fun getAppId(): String {
         return when (val hashedAppKey = generateHashedAppKey()) {
             KotlinInside.getInstance().app.token -> KotlinInside.getInstance().app.id
@@ -128,6 +122,12 @@ class Auth {
         }
     }
 
+    /**
+     * app_id를 서버로부터 얻어오는 메소드입니다.
+     * @exception [java.lang.NullPointerException] app_id를 얻어올 수 없는 경우, NPE를 반환합니다.
+     * @param hashedAppKey SHA256 단방향 암호화된 value_token 값입니다.
+     * @return [java.lang.String] app_id를 반환합니다.
+     */
     fun fetchAppId(hashedAppKey: String): String {
         val appId = try {
             val option = Request.getDefaultOption()
@@ -184,5 +184,9 @@ class Auth {
         } else {
             return Session(user, null)
         }
+    }
+
+    companion object {
+        private const val DAY = 24 * 60 * 60 * 1000
     }
 }
