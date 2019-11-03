@@ -63,7 +63,7 @@ tasks.test {
     }
 }
 
-
+/*
 bintray {
     def localProps = new Properties()
     localProps.load(project.file('local.properties').newDataInputStream())
@@ -130,3 +130,4 @@ task sourcesJar(type: Jar) {
 artifacts {
     archives sourcesJar
 }
+*/
