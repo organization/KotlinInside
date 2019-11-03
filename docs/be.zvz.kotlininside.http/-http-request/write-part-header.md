@@ -23,7 +23,7 @@ Write part header
 **Return**
 [HttpRequest](index.html)!: this request
 
-`protected open fun writePartHeader(name: String!, filename: String!, contentType: String!): `[`HttpRequest`](index.html)`!`
+`protected open fun writePartHeader(name: String!, filename: String!, contentType: String!, length: Int!): `[`HttpRequest`](index.html)`!`
 
 Write part header
 

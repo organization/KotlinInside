@@ -156,6 +156,6 @@ A fluid interface for making HTTP requests using an underlying ``[`HttpURLConnec
 | [useCaches](use-caches.html) | Set value of ``[`HttpURLConnection#setUseCaches(boolean)`](#)`open fun useCaches(useCaches: Boolean): `[`HttpRequest`](./index.html)`!` |
 | [useProxy](use-proxy.html) | Configure an HTTP proxy on this connection. Use {``[`#proxyBasic(String, String)`](proxy-basic.html) if this proxy requires basic authentication.`open fun useProxy(proxyHost: String!, proxyPort: Int): `[`HttpRequest`](./index.html)`!` |
 | [userAgent](user-agent.html) | Set the 'User-Agent' header to given value`open fun userAgent(userAgent: String!): `[`HttpRequest`](./index.html)`!` |
-| [writePartHeader](write-part-header.html) | Write part header`open fun writePartHeader(name: String!, filename: String!): `[`HttpRequest`](./index.html)`!`<br>`open fun writePartHeader(name: String!, filename: String!, contentType: String!): `[`HttpRequest`](./index.html)`!` |
+| [writePartHeader](write-part-header.html) | Write part header`open fun writePartHeader(name: String!, filename: String!): `[`HttpRequest`](./index.html)`!`<br>`open fun writePartHeader(name: String!, filename: String!, contentType: String!, length: Int!): `[`HttpRequest`](./index.html)`!` |
 | [writer](writer.html) | Create writer to request output stream`open fun writer(): OutputStreamWriter!` |
 

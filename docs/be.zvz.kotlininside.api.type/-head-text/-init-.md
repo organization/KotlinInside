@@ -6,4 +6,4 @@ title: HeadText.<init> -
 
 # &lt;init&gt;
 
-`HeadText(identifier: Int, name: String, level: Int, selected: Boolean)`
+`HeadText(identifier: Int, name: String, level: Int = 0, selected: Boolean = false)`

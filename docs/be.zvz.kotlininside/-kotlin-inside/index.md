@@ -10,11 +10,11 @@ title: KotlinInside -
 
 ### Properties
 
-| [app](app.html) | `var app: `[`App`](../../be.zvz.kotlininside.security/-app/index.html) |
+| [app](app.html) | `lateinit var app: `[`App`](../../be.zvz.kotlininside.security/-app/index.html) |
 | [auth](auth.html) | `val auth: `[`Auth`](../../be.zvz.kotlininside.security/-auth/index.html) |
-| [hashedAppKey](hashed-app-key.html) | `var hashedAppKey: String` |
+| [hashedAppKey](hashed-app-key.html) | `lateinit var hashedAppKey: String` |
 | [httpInterface](http-interface.html) | `val httpInterface: <ERROR CLASS>` |
-| [session](session.html) | `var session: `[`Session`](../../be.zvz.kotlininside.session/-session/index.html) |
+| [session](session.html) | `lateinit var session: `[`Session`](../../be.zvz.kotlininside.session/-session/index.html) |
 | [user](user.html) | `val user: `[`User`](../../be.zvz.kotlininside.session.user/-user/index.html) |
 
 ### Companion Object Functions

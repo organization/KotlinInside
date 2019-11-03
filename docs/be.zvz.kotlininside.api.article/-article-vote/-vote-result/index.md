@@ -10,7 +10,7 @@ title: ArticleVote.VoteResult -
 
 ### Constructors
 
-| [&lt;init&gt;](-init-.html) | `VoteResult(result: Boolean, cause: String, member: Int?)` |
+| [&lt;init&gt;](-init-.html) | `VoteResult(result: Boolean, cause: String, member: Int? = null)` |
 
 ### Properties
 

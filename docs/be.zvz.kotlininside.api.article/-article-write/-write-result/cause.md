@@ -6,4 +6,4 @@ title: ArticleWrite.WriteResult.cause -
 
 # cause
 
-`val cause: Int`
+`val cause: String?`

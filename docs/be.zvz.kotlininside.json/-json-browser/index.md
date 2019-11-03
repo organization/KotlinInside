@@ -23,5 +23,7 @@ Allows to easily navigate in decoded JSON data
 | [put](put.html) | Put a value into the map if this instance contains a map.`open fun put(key: String!, item: Any!): Unit` |
 | [safeGet](safe-get.html) | Get an element by key from a map value`open fun safeGet(key: String!): `[`JsonBrowser`](./index.html)`!` |
 | [text](text.html) | `open fun text(): String!` |
+| [toMap](to-map.html) | `open fun <K : Any!, V : Any!> toMap(): MutableMap<K, V>!` |
+| [toString](to-string.html) | `open fun toString(): String` |
 | [values](values.html) | Returns a list of all the values in this element`open fun values(): MutableList<`[`JsonBrowser`](./index.html)`!>!` |
 

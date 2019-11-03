@@ -6,4 +6,4 @@ title: ArticleWrite.WriteResult.<init> -
 
 # &lt;init&gt;
 
-`WriteResult(result: Boolean, cause: Int, id: String? = null)`
+`WriteResult(result: Boolean, articleId: Int? = null, cause: String? = null, id: String? = null)`

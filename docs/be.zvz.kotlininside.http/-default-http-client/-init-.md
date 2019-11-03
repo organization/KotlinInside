@@ -7,3 +7,9 @@ title: DefaultHttpClient.<init> -
 # &lt;init&gt;
 
 `DefaultHttpClient(gzip: Boolean)`
+
+DefaultHttpClient의 constructor입니다.
+
+### Parameters
+
+`gzip` - Boolean: GZIP 압축을 사용할 것인지 유무

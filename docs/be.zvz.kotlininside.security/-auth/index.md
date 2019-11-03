@@ -8,6 +8,10 @@ title: Auth -
 
 `class Auth`
 
+### Types
+
+| [AppCheck](-app-check/index.html) | `data class AppCheck` |
+
 ### Constructors
 
 | [&lt;init&gt;](-init-.html) | `Auth()` |
@@ -16,6 +20,7 @@ title: Auth -
 
 | [fetchAppId](fetch-app-id.html) | `fun fetchAppId(hashedAppKey: String): String` |
 | [generateHashedAppKey](generate-hashed-app-key.html) | `fun generateHashedAppKey(): String` |
+| [getAppCheck](get-app-check.html) | app_check에서 정보를 얻어오는 메소드입니다.`fun getAppCheck(): AppCheck` |
 | [getAppId](get-app-id.html) | `fun getAppId(): String` |
 | [login](login.html) | 로그인하기 위해 필요한 메소드`fun login(user: `[`User`](../../be.zvz.kotlininside.session.user/-user/index.html)`): `[`Session`](../../be.zvz.kotlininside.session/-session/index.html) |
 

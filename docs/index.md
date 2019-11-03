@@ -21,4 +21,3 @@ title:
 
 ### Index
 
-[All Types](alltypes/index.html)

@@ -6,4 +6,4 @@ title: KotlinInside.session -
 
 # session
 
-`var session: `[`Session`](../../be.zvz.kotlininside.session/-session/index.html)
+`lateinit var session: `[`Session`](../../be.zvz.kotlininside.session/-session/index.html)

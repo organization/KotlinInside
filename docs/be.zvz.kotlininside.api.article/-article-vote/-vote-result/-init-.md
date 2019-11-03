@@ -6,4 +6,4 @@ title: ArticleVote.VoteResult.<init> -
 
 # &lt;init&gt;
 
-`VoteResult(result: Boolean, cause: String, member: Int?)`
+`VoteResult(result: Boolean, cause: String, member: Int? = null)`

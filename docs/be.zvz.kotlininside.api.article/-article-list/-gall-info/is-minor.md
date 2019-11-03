@@ -6,4 +6,4 @@ title: ArticleList.GallInfo.isMinor -
 
 # isMinor
 
-`val isMinor: Boolean?`
+`val isMinor: Boolean`

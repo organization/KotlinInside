@@ -10,7 +10,7 @@ title: DefaultHttpClient -
 
 ### Constructors
 
-| [&lt;init&gt;](-init-.html) | `DefaultHttpClient(gzip: Boolean)` |
+| [&lt;init&gt;](-init-.html) | DefaultHttpClient의 constructor입니다.`DefaultHttpClient(gzip: Boolean)` |
 
 ### Functions
 

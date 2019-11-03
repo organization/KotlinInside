@@ -6,4 +6,4 @@ title: KotlinInside.app -
 
 # app
 
-`var app: `[`App`](../../be.zvz.kotlininside.security/-app/index.html)
+`lateinit var app: `[`App`](../../be.zvz.kotlininside.security/-app/index.html)

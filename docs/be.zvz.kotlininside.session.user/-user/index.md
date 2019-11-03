@@ -16,5 +16,5 @@ title: User -
 ### Inheritors
 
 | [Anonymous](../-anonymous/index.html) | `data class Anonymous : `[`User`](./index.html) |
-| [LoginUser](../-login-user/index.html) | `abstract class LoginUser : `[`User`](./index.html) |
+| [LoginUser](../-login-user/index.html) | `open class LoginUser : `[`User`](./index.html) |
 

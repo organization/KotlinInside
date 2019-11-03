@@ -6,7 +6,7 @@ title: LoginUser -
 
 # LoginUser
 
-`abstract class LoginUser : `[`User`](../-user/index.html)
+`open class LoginUser : `[`User`](../-user/index.html)
 
 ### Constructors
 

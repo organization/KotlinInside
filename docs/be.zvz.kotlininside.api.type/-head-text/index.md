@@ -10,7 +10,7 @@ title: HeadText -
 
 ### Constructors
 
-| [&lt;init&gt;](-init-.html) | `HeadText(identifier: Int, name: String, level: Int, selected: Boolean)` |
+| [&lt;init&gt;](-init-.html) | `HeadText(identifier: Int, name: String, level: Int = 0, selected: Boolean = false)` |
 
 ### Properties
 

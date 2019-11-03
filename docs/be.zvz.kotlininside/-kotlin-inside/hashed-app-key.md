@@ -6,4 +6,4 @@ title: KotlinInside.hashedAppKey -
 
 # hashedAppKey
 
-`var hashedAppKey: String`
+`lateinit var hashedAppKey: String`

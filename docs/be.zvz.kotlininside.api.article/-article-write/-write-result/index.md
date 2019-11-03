@@ -10,11 +10,12 @@ title: ArticleWrite.WriteResult -
 
 ### Constructors
 
-| [&lt;init&gt;](-init-.html) | `WriteResult(result: Boolean, cause: Int, id: String? = null)` |
+| [&lt;init&gt;](-init-.html) | `WriteResult(result: Boolean, articleId: Int? = null, cause: String? = null, id: String? = null)` |
 
 ### Properties
 
-| [cause](cause.html) | `val cause: Int` |
+| [articleId](article-id.html) | `val articleId: Int?` |
+| [cause](cause.html) | `val cause: String?` |
 | [id](id.html) | `val id: String?` |
 | [result](result.html) | `val result: Boolean` |
 
