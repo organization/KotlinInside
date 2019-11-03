@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 public class DefaultHttpClient implements HttpInterface {
-    private boolean enableGzipCompression;
+    private final boolean enableGzipCompression;
 
     /**
      * DefaultHttpClient의 constructor입니다.

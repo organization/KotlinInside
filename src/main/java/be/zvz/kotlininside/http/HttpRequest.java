@@ -245,7 +245,9 @@ public class HttpRequest {
             "-_1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
                     .toCharArray();
 
-    private static final String CONTENT_TYPE_MULTIPART = "multipart/form-data; boundary=";
+    private static final String BOUNDARY = generateBoundary();
+
+    private static final String CONTENT_TYPE_MULTIPART = "multipart/form-data; boundary=" + BOUNDARY;
 
     private static final String CRLF = "\r\n";
 
@@ -254,8 +256,6 @@ public class HttpRequest {
     private static SSLSocketFactory TRUSTED_FACTORY;
 
     private static HostnameVerifier TRUSTED_VERIFIER;
-
-    private static String BOUNDARY = generateBoundary();
 
     private static String generateBoundary() {
         StringBuilder buffer = new StringBuilder();
@@ -2691,7 +2691,6 @@ public class HttpRequest {
             return this;
         if (multipart) {
             output.write(CRLF + "--" + BOUNDARY + "--" + CRLF);
-            BOUNDARY = generateBoundary();
         }
         if (ignoreCloseExceptions)
             try {
@@ -2746,7 +2745,7 @@ public class HttpRequest {
     protected HttpRequest startPart() throws IOException {
         if (!multipart) {
             multipart = true;
-            contentType(CONTENT_TYPE_MULTIPART + BOUNDARY).openOutput();
+            contentType(CONTENT_TYPE_MULTIPART).openOutput();
             output.write("--" + BOUNDARY + CRLF);
         } else
             output.write(CRLF + "--" + BOUNDARY + CRLF);
@@ -2763,7 +2762,7 @@ public class HttpRequest {
      */
     protected HttpRequest writePartHeader(final String name, final String filename)
             throws IOException {
-        return writePartHeader(name, filename, null);
+        return writePartHeader(name, filename, null, 0);
     }
 
     /**
@@ -2776,13 +2775,14 @@ public class HttpRequest {
      * @throws IOException
      */
     protected HttpRequest writePartHeader(final String name,
-                                          final String filename, final String contentType) throws IOException {
+                                          final String filename, final String contentType, final Integer length) throws IOException {
         final StringBuilder partBuffer = new StringBuilder();
         partBuffer.append("form-data; name=\"").append(name);
         if (filename != null)
             partBuffer.append("\"; filename=\"").append(filename);
         partBuffer.append('"');
         partHeader("Content-Disposition", partBuffer.toString());
+        partHeader("Content-Length", length.toString());
         if (contentType != null)
             partHeader(HEADER_CONTENT_TYPE, contentType);
         return send(CRLF);
@@ -2828,7 +2828,7 @@ public class HttpRequest {
                             final String contentType, final String part) throws HttpRequestException {
         try {
             startPart();
-            writePartHeader(name, filename, contentType);
+            writePartHeader(name, filename, contentType, part.length());
             output.write(part);
         } catch (IOException e) {
             throw new HttpRequestException(e);
@@ -2942,7 +2942,7 @@ public class HttpRequest {
             throws HttpRequestException {
         try {
             startPart();
-            writePartHeader(name, filename, contentType);
+            writePartHeader(name, filename, contentType, part.available());
             copy(part, output);
         } catch (IOException e) {
             throw new HttpRequestException(e);

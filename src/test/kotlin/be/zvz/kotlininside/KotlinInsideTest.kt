@@ -17,7 +17,7 @@ import kotlin.test.assertNotNull
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @TestMethodOrder(MethodOrderer.OrderAnnotation::class)
 class KotlinInsideTest {
-    var articleId = 0
+    private var articleId = 0
 
     @Order(1)
     @Test fun initKotlinInside() {

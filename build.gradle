@@ -18,7 +18,7 @@ apply plugin: 'com.jfrog.bintray'
 apply plugin: 'com.github.dcendents.android-maven'
 
 def libName = 'KotlinInside'
-def libVersion = '1.2.4'
+def libVersion = '1.2.5'
 def libDesc = 'Unofficial DCInside API written in Kotlin'
 
 group = 'be.zvz'
@@ -63,7 +63,7 @@ tasks.test {
     }
 }
 
-/*
+
 bintray {
     def localProps = new Properties()
     localProps.load(project.file('local.properties').newDataInputStream())
@@ -130,4 +130,3 @@ task sourcesJar(type: Jar) {
 artifacts {
     archives sourcesJar
 }
-*/

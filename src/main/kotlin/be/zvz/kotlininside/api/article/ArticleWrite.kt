@@ -18,7 +18,7 @@ class ArticleWrite @JvmOverloads constructor(
         private val gallId: String,
         private val article: Article,
         private val session: Session,
-        private val fcmToken: String = (Long.MIN_VALUE..Long.MAX_VALUE).random().toString() //Generate random FCM token
+        private val fcmToken: String = "N" // (Long.MIN_VALUE..Long.MAX_VALUE).random().toString() //Generate random FCM token
 ) {
     data class WriteResult(
         val result: Boolean,
