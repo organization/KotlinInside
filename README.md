@@ -1,6 +1,6 @@
 # *KotlinInside* [![Build Status](https://travis-ci.com/organization/KotlinInside.svg?branch=master)](https://travis-ci.com/organization/KotlinInside) [![Build Status](https://github.com/organization/KotlinInside/workflows/Java%20CI/badge.svg)](https://github.com/organization/KotlinInside/actions) [ ![Download](https://api.bintray.com/packages/jellybrick/be.zvz/KotlinInside/images/download.svg) ](https://bintray.com/jellybrick/be.zvz/KotlinInside/_latestVersion)
 
-[***OpenDC***](https://github.com/organization/OpenDC)에서 사용하기 위해 만든 API입니다.
+**Kotlin**으로 작성한 디시인사이드 비공식 API입니다.
 
 [**API 문서**](https://organization.github.io/KotlinInside/)
 
@@ -21,9 +21,21 @@ compile 'be.zvz:KotlinInside:1.2.7'
 </dependency>
 ```
 
+### 라이브러리 사용
+
+**Java 1.7 (Java 7)** 이상 필요
+
+### 라이브러리 컴파일
+
+**Java 1.8 (Java 8)** 이상 필요
+
 ## 예제
 
 [*테스트 코드*](https://github.com/organization/KotlinInside/blob/master/src/test/kotlin/be/zvz/kotlininside/KotlinInsideTest.kt) 참고
+
+## 이 라이브러리를 사용 중인 프로젝트
+
+- [***OpenDC***](https://github.com/organization/OpenDC)
 
 ## 도움이 된 라이브러리
 
