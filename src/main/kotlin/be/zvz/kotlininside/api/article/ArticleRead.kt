@@ -109,7 +109,7 @@ class ArticleRead(
                     else -> false
                 }
             },
-            headText = mutableListof<HeadText>().apply {
+            headText = mutableListOf<HeadText>().apply {
                 viewInfo.safeGet("head_text").run {
                     when {
                         !isNull -> values().forEach {
