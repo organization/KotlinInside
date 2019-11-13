@@ -56,7 +56,7 @@ class ArticleWrite @JvmOverloads constructor(
         }
 
         var imageCount = 0
-        article.content.withIndex().forEach { (index, content) ->
+        article.content.forEachIndexed { index, content ->
             when (content) {
                 is ImageContent -> {
                     option.addMultipartParameter("memo_block[$index]", "Dc_App_Img_$imageCount")
