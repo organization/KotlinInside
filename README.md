@@ -7,7 +7,7 @@
 ### Gradle
 
 ```
-compile 'be.zvz:KotlinInside:1.3.1'
+compile 'be.zvz:KotlinInside:1.3.2'
 ```
 
 ### Maven
@@ -16,7 +16,7 @@ compile 'be.zvz:KotlinInside:1.3.1'
 <dependency>
   <groupId>be.zvz</groupId>
   <artifactId>KotlinInside</artifactId>
-  <version>1.3.1</version>
+  <version>1.3.2</version>
   <type>pom</type>
 </dependency>
 ```
@@ -24,6 +24,7 @@ compile 'be.zvz:KotlinInside:1.3.1'
 ### 라이브러리 사용
 
 **Java 1.7 (Java 7)** 이상 필요
+**Kotlin 1.3+** 권장
 
 ### 라이브러리 컴파일
 

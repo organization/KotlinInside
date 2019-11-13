@@ -7,6 +7,7 @@ import org.jetbrains.annotations.Nullable;
 import java.io.File;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.net.URLConnection;
 import java.net.URLEncoder;
 import java.util.List;
 import java.util.Map;
@@ -200,11 +201,14 @@ public class DefaultHttpClient implements HttpInterface {
             }
 
             for (Map.Entry<String, File> entry : option.getMultipartFile().entrySet()) {
-                request.part(entry.getKey(), entry.getValue());
+                File file = entry.getValue();
+                request.part(entry.getKey(), file.getName(), URLConnection.guessContentTypeFromName(file.toString()), file);
             }
 
-            for (Map.Entry<String, List<File>> ignored : option.getMultipartFileList().entrySet()) {
-                throw new UnsupportedOperationException("Not implemented yet");
+            for (Map.Entry<String, List<File>> entry : option.getMultipartFileList().entrySet()) {
+                for (File file : entry.getValue()) {
+                    request.part(entry.getKey(), file.getName(), URLConnection.guessContentTypeFromName(file.toString()), file);
+                }
             }
         }
 
