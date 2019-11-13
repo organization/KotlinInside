@@ -2,10 +2,10 @@ package be.zvz.kotlininside.api.article
 
 import be.zvz.kotlininside.KotlinInside
 import be.zvz.kotlininside.api.type.Article
-import be.zvz.kotlininside.api.type.Image
-import be.zvz.kotlininside.api.type.StringContent
-import be.zvz.kotlininside.api.type.HtmlContent
-import be.zvz.kotlininside.api.type.MarkdownContent
+import be.zvz.kotlininside.api.type.content.ImageContent
+import be.zvz.kotlininside.api.type.content.StringContent
+import be.zvz.kotlininside.api.type.content.HtmlContent
+import be.zvz.kotlininside.api.type.content.MarkdownContent
 import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.http.Request
 import be.zvz.kotlininside.session.Session
@@ -58,7 +58,7 @@ class ArticleWrite @JvmOverloads constructor(
         var imageCount = 0
         article.content.withIndex().forEach { (index, content) ->
             when (content) {
-                is Image -> {
+                is ImageContent -> {
                     option.addMultipartParameter("memo_block[$index]", "Dc_App_Img_$imageCount")
                     option.addMultipartFile("upload[$imageCount]", content.file)
                     imageCount++

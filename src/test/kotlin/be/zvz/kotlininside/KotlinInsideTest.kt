@@ -5,6 +5,9 @@ package be.zvz.kotlininside
 
 import be.zvz.kotlininside.api.article.*
 import be.zvz.kotlininside.api.type.*
+import be.zvz.kotlininside.api.type.content.HtmlContent
+import be.zvz.kotlininside.api.type.content.MarkdownContent
+import be.zvz.kotlininside.api.type.content.StringContent
 import be.zvz.kotlininside.http.DefaultHttpClient
 import be.zvz.kotlininside.session.user.Anonymous
 import org.junit.jupiter.api.MethodOrderer

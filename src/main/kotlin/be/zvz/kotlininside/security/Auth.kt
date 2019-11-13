@@ -73,14 +73,15 @@ class Auth {
         }
     }
 
-    // 성능 끔찍함. 수정 필요
+    //TODO: 성능 문제 - 수정 필요
+    //TODO: E 다음의 숫자 (30, 31) 분석 필요
     /**
      *
-     * @return [java.lang.String] Thu303314444103110 형식의 날짜 문자열을 반환합니다.
+     * @return [java.lang.String] Wed316133346111311 형식의 날짜 문자열을 반환합니다.
      */
     private fun dateToString(date: Date): String {
         val dayOfWeek = dayOfWeekFormat.format(date)
-        return FastDateFormat.getInstance("E30${(date.time - date1028.time) / DAY}d$dayOfWeek${dayOfWeekZero(dayOfWeek)}4${((date.time - date1001.time + DAY) / DAY) / 7}MMddMM", seoulTimeZone, Locale.US).format(date)
+        return FastDateFormat.getInstance("E31${(date.time - date1028.time) / DAY}d$dayOfWeek${dayOfWeekZero(dayOfWeek)}4${((date.time - date1001.time + DAY) / DAY) / 7}MMddMM", seoulTimeZone, Locale.US).format(date)
     }
 
     /**
