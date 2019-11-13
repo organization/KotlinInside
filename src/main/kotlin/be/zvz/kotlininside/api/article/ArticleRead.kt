@@ -109,17 +109,17 @@ class ArticleRead(
                     else -> false
                 }
             },
-            headText = arrayListOf<HeadText>().apply {
+            headText = mutableListof<HeadText>().apply {
                 viewInfo.safeGet("head_text").run {
                     when {
                         !isNull -> values().forEach {
                             add(
-                                HeadText(
-                                    identifier = it.get("no").`as`(Int::class.java),
-                                    name = it.get("name").text(),
-                                    level = it.get("level").`as`(Int::class.java),
-                                    selected = it.get("selected").`as`(Boolean::class.java)
-                                )
+                                    HeadText(
+                                            identifier = it.get("no").`as`(Int::class.java),
+                                            name = it.get("name").text(),
+                                            level = it.get("level").`as`(Int::class.java),
+                                            selected = it.get("selected").`as`(Boolean::class.java)
+                                    )
                             )
                         }
                     }

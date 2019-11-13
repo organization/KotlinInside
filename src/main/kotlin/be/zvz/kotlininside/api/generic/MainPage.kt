@@ -40,15 +40,15 @@ class MainPage {
         if (!::json.isInitialized)
             request()
 
-        return arrayListOf<Article>().apply {
+        return mutableListOf<Article>().apply {
             json.get("hit").values().forEach {
                 add(
-                    Article(
-                        gallId = it.get("id").text(),
-                        articleId = it.get("no").`as`(Int::class.java),
-                        title = it.get("title").text(),
-                        thumbnail = it.get("thumbnail").text()
-                    )
+                        Article(
+                                gallId = it.get("id").text(),
+                                articleId = it.get("no").`as`(Int::class.java),
+                                title = it.get("title").text(),
+                                thumbnail = it.get("thumbnail").text()
+                        )
                 )
             }
         }
@@ -63,16 +63,16 @@ class MainPage {
         if (!::json.isInitialized)
             request()
 
-        return arrayListOf<Article>().apply {
+        return mutableListOf<Article>().apply {
             json.get("best").values().forEach {
                 add(
-                    Article(
-                        gallId = it.get("id").text(),
-                        articleId = it.get("no").`as`(Int::class.java),
-                        gallName = it.get("gall_name").text(),
-                        title = it.get("title").text(),
-                        thumbnail = it.get("thumbnail").text()
-                    )
+                        Article(
+                                gallId = it.get("id").text(),
+                                articleId = it.get("no").`as`(Int::class.java),
+                                gallName = it.get("gall_name").text(),
+                                title = it.get("title").text(),
+                                thumbnail = it.get("thumbnail").text()
+                        )
                 )
             }
         }
@@ -87,16 +87,16 @@ class MainPage {
         if (!::json.isInitialized)
             request()
 
-        return arrayListOf<Article>().apply {
+        return mutableListOf<Article>().apply {
             json.get("issuezoom").values().forEach {
                 add(
-                    Article(
-                        gallId = it.get("id").text(),
-                        articleId = it.get("no").`as`(Int::class.java),
-                        gallName = it.get("gall_name").text(),
-                        title = it.get("title").text(),
-                        thumbnail = it.get("thumbnail").text()
-                    )
+                        Article(
+                                gallId = it.get("id").text(),
+                                articleId = it.get("no").`as`(Int::class.java),
+                                gallName = it.get("gall_name").text(),
+                                title = it.get("title").text(),
+                                thumbnail = it.get("thumbnail").text()
+                        )
                 )
             }
         }
@@ -111,13 +111,13 @@ class MainPage {
         if (!::json.isInitialized)
             request()
 
-        return arrayListOf<NewGallery>().apply {
+        return mutableListOf<NewGallery>().apply {
             json.get("new_gallery").values().forEach {
                 add(
-                    NewGallery(
-                        id = it.get("id").text(),
-                        title = it.get("title").text()
-                    )
+                        NewGallery(
+                                id = it.get("id").text(),
+                                title = it.get("title").text()
+                        )
                 )
             }
         }

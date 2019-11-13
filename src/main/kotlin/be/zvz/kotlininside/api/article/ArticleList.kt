@@ -126,7 +126,7 @@ class ArticleList @JvmOverloads constructor(
                     else -> mutableMapOf<String, String>()
                 }
             },
-            headText = arrayListOf<HeadText>().apply {
+            headText = mutableListOf<HeadText>().apply {
                 gallInfo.safeGet("head_text").run {
                     when {
                         !isNull -> values().forEach {
@@ -154,17 +154,17 @@ class ArticleList @JvmOverloads constructor(
         if (!::json.isInitialized)
             request()
 
-        return arrayListOf<GallList>().apply {
+        return mutableListOf<GallList>().apply {
             for (gallList in json.index(0).get("gall_list").values()) {
                 add(
-                    GallList(
-                        identifier = gallList.get("no").`as`(Int::class.java),
-                        views = gallList.get("hit").`as`(Int::class.java),
-                        upvote = gallList.get("recommend").`as`(Int::class.java),
-                        imageIcon = StringUtil.ynToBoolean(gallList.get("img_icon").text()),
-                        upvoteIcon = StringUtil.ynToBoolean(gallList.get("recommend_icon").text()),
-                        bestCheck = StringUtil.ynToBoolean(gallList.get("best_chk").text()),
-                        level = gallList.get("level").`as`(Int::class.java),
+                        GallList(
+                                identifier = gallList.get("no").`as`(Int::class.java),
+                                views = gallList.get("hit").`as`(Int::class.java),
+                                upvote = gallList.get("recommend").`as`(Int::class.java),
+                                imageIcon = StringUtil.ynToBoolean(gallList.get("img_icon").text()),
+                                upvoteIcon = StringUtil.ynToBoolean(gallList.get("recommend_icon").text()),
+                                bestCheck = StringUtil.ynToBoolean(gallList.get("best_chk").text()),
+                                level = gallList.get("level").`as`(Int::class.java),
                         totalComment = gallList.get("total_comment").`as`(Int::class.java),
                         totalVoice = gallList.get("total_voice").`as`(Int::class.java),
                         userId = gallList.get("user_id").text(),

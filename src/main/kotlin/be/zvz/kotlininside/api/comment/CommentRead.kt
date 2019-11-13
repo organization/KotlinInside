@@ -42,17 +42,17 @@ class CommentRead(
             totalComment = json.get("total_comment").`as`(Int::class.java),
             totalPage = json.get("total_page").`as`(Int::class.java),
             rePage = json.get("re_page").`as`(Int::class.java),
-            commentList = arrayListOf<CommentData>().apply {
+            commentList = mutableListOf<CommentData>().apply {
                 json.get("comment_list").values().forEach {
                     add(
-                        CommentData(
-                            memberIcon = it.get("member_icon").`as`(Int::class.java),
-                            ipData = it.get("ipData").text(),
-                            gallerCon = it.safeGet("gallercon").run {
-                                when {
-                                    isNull -> null
-                                    else -> text()
-                                }
+                            CommentData(
+                                    memberIcon = it.get("member_icon").`as`(Int::class.java),
+                                    ipData = it.get("ipData").text(),
+                                    gallerCon = it.safeGet("gallercon").run {
+                                        when {
+                                            isNull -> null
+                                            else -> text()
+                                        }
                             },
                             name = it.get("name").text(),
                             userId = it.get("user_id").text(),
