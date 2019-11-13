@@ -24,8 +24,9 @@ class Auth {
     private val date1001 = Date(1569855600L * 1000)
     private val date1028 = Date(1572188400L * 1000)
     private val dayOfWeekFormat = FastDateFormat.getInstance("u", seoulTimeZone, Locale.US)
+    private val refreshDateFormat = FastDateFormat.getInstance("yyyyMMddHH", seoulTimeZone)
     private lateinit var time: String
-    private var timeRaw: Date = Date()
+    private lateinit var formattedTime: String
 
     data class AppCheck(
             val result: Boolean,
@@ -90,14 +91,13 @@ class Auth {
      */
     fun generateHashedAppKey(): String {
         val now = Date()
+        val tempFormattedTime = refreshDateFormat.format(now)
 
-        val timeLag = (now.time - timeRaw.time) / (1000 * 60 * 60)
-
-        if (!::time.isInitialized || timeLag >= 2) {
+        if (!::time.isInitialized || !::formattedTime.isInitialized || formattedTime != tempFormattedTime) {
             try {
                 getAppCheck().run {
                     date?.let {
-                        timeRaw = now
+                        formattedTime = tempFormattedTime
                         time = it
                         return DigestUtils.sha256Hex("dcArdchk_$time")
                     }
@@ -110,7 +110,7 @@ class Auth {
 
         // 디시인사이드 2019/10/31 변경점 - Thu303314444103110 형식으로 변경됨
         // 예외가 발생했거나, 값이 null이어서 time을 제대로 설정하지 못한 경우
-        timeRaw = now
+        formattedTime = tempFormattedTime
         time = dateToString(now)
         return DigestUtils.sha256Hex("dcArdchk_$time")
     }
