@@ -1,38 +1,37 @@
 package be.zvz.kotlininside.api.article
 
 import be.zvz.kotlininside.KotlinInside
-import be.zvz.kotlininside.http.Request
-import be.zvz.kotlininside.json.JsonBrowser
 import be.zvz.kotlininside.api.type.HeadText
 import be.zvz.kotlininside.http.HttpException
+import be.zvz.kotlininside.http.Request
+import be.zvz.kotlininside.json.JsonBrowser
+import be.zvz.kotlininside.session.Session
+import be.zvz.kotlininside.session.user.Anonymous
 import be.zvz.kotlininside.utils.StringUtil
 import be.zvz.kotlininside.value.ApiUrl
-import kotlin.collections.List
 
 class ArticleList @JvmOverloads constructor(
-    private val gallId: String,
-    private val page: Int,
-    private val option: Option? = null
+        private val gallId: String,
+        private val page: Int = 1,
+        private val recommend: Boolean = false,
+        private val notice: Boolean = false,
+        private val headId: Int = 0,
+        private val session: Session? = null
 ) {
     private lateinit var json: JsonBrowser
 
-    class Option {
-        var recommand = false
-        var notice = false
-        var headid = 0
-    }
-
     data class GallInfo(
-        val title: String,
-        val category: Int,
-        val fileCount: Int,
-        val fileSize: Int,
-        val captcha: Boolean?,
-        val codeCount: Int?,
-        val isMinor: Boolean,
-        val notifyRecent: Int?,
-        val relationGall: Map<String, String>,
-        val headText: List<HeadText>
+            val title: String,
+            val category: Int,
+            val fileCount: Int,
+            val fileSize: Int,
+            val captcha: Boolean?,
+            val codeCount: Int?,
+            val isMinor: Boolean,
+            val isManager: Boolean,
+            val notifyRecent: Int?,
+            val relationGall: Map<String, String>,
+            val headText: List<HeadText>
     )
 
     data class GallList(
@@ -64,19 +63,19 @@ class ArticleList @JvmOverloads constructor(
     @Throws(HttpException::class)
     fun request() {
         val url = "${ApiUrl.Article.LIST}?id=$gallId&page=$page&app_id=${KotlinInside.getInstance().auth.getAppId()}" +
-                when {
-                    option !== null -> {
-                        val s = ""
-                        if (option.recommand)
-                            s.plus("&recommand=").plus("1")
-                        if (option.notice)
-                            s.plus("&notice=").plus("1")
-                        if (option.headid > 0)
-                            s.plus("&headid=").plus(option.headid)
-                        s
+                StringBuilder().apply {
+                    if (recommend)
+                        append("&recommend=1")
+                    if (notice)
+                        append("&notice=1")
+                    if (headId > 0)
+                        append("&headid=").append(headId)
+                    session?.let {
+                        if (it.user !is Anonymous) {
+                            append("&confirm_id=").append(it.detail!!.userId)
+                        }
                     }
-                    else -> ""
-                }
+                }.toString()
         json = KotlinInside.getInstance().httpInterface.get(Request.redirectUrl(url), Request.getDefaultOption())!!
     }
 
@@ -92,56 +91,62 @@ class ArticleList @JvmOverloads constructor(
         val gallInfo = json.index(0).get("gall_info").index(0)
 
         return GallInfo(
-            title = gallInfo.get("gall_title").text(),
-            category = gallInfo.get("category").`as`(Int::class.java),
-            fileCount = gallInfo.get("file_cnt").`as`(Int::class.java),
-            fileSize = gallInfo.get("file_size").`as`(Int::class.java),
-            captcha = gallInfo.safeGet("captcha").run {
-                when {
-                    isNull -> null
-                    else -> `as`(Boolean::class.java)
-                }
-            },
-            codeCount = gallInfo.safeGet("code_count").run {
-                when {
-                    isNull -> null
-                    else -> `as`(Int::class.java)
-                }
-            },
-            isMinor = gallInfo.safeGet("is_minor").run {
-                when {
-                    isNull -> false
-                    else -> `as`(Boolean::class.java)
-                }
-            },
-            notifyRecent = gallInfo.get("notify_recent").run {
-                when {
-                    isNull -> null
-                    else -> `as`(Int::class.java)
-                }
-            },
-            relationGall = gallInfo.safeGet("relation_gall").run {
-                when {
-                    !isNull -> toMap<String, String>()
-                    else -> mutableMapOf<String, String>()
-                }
-            },
-            headText = mutableListOf<HeadText>().apply {
-                gallInfo.safeGet("head_text").run {
+                title = gallInfo.get("gall_title").text(),
+                category = gallInfo.get("category").`as`(Int::class.java),
+                fileCount = gallInfo.get("file_cnt").`as`(Int::class.java),
+                fileSize = gallInfo.get("file_size").`as`(Int::class.java),
+                captcha = gallInfo.safeGet("captcha").run {
                     when {
-                        !isNull -> values().forEach {
-                            add(
-                                    HeadText(
-                                            identifier = it.get("no").`as`(Int::class.java),
-                                            name = it.get("name").text(),
-                                            level = it.get("level").`as`(Int::class.java),
-                                            selected = it.get("selected").`as`(Boolean::class.java)
-                                    )
-                            )
+                        isNull -> null
+                        else -> `as`(Boolean::class.java)
+                    }
+                },
+                codeCount = gallInfo.safeGet("code_count").run {
+                    when {
+                        isNull -> null
+                        else -> `as`(Int::class.java)
+                    }
+                },
+                isMinor = gallInfo.safeGet("is_minor").run {
+                    when {
+                        isNull -> false
+                        else -> `as`(Boolean::class.java)
+                    }
+                },
+                isManager = gallInfo.safeGet("managerskill").run {
+                    when {
+                        isNull -> false
+                        else -> `as`(Boolean::class.java)
+                    }
+                },
+                notifyRecent = gallInfo.get("notify_recent").run {
+                    when {
+                        isNull -> null
+                        else -> `as`(Int::class.java)
+                    }
+                },
+                relationGall = gallInfo.safeGet("relation_gall").run {
+                    when {
+                        !isNull -> toMap<String, String>()
+                        else -> mutableMapOf<String, String>()
+                    }
+                },
+                headText = mutableListOf<HeadText>().apply {
+                    gallInfo.safeGet("head_text").run {
+                        when {
+                            !isNull -> values().forEach {
+                                add(
+                                        HeadText(
+                                                identifier = it.get("no").`as`(Int::class.java),
+                                                name = it.get("name").text(),
+                                                level = it.get("level").`as`(Int::class.java),
+                                                selected = it.get("selected").`as`(Boolean::class.java)
+                                        )
+                                )
+                            }
                         }
                     }
                 }
-            }
         )
     }
 
@@ -165,24 +170,24 @@ class ArticleList @JvmOverloads constructor(
                                 upvoteIcon = StringUtil.ynToBoolean(gallList.get("recommend_icon").text()),
                                 bestCheck = StringUtil.ynToBoolean(gallList.get("best_chk").text()),
                                 level = gallList.get("level").`as`(Int::class.java),
-                        totalComment = gallList.get("total_comment").`as`(Int::class.java),
-                        totalVoice = gallList.get("total_voice").`as`(Int::class.java),
-                        userId = gallList.get("user_id").text(),
-                        voiceIcon = StringUtil.ynToBoolean(gallList.get("voice_icon").text()),
-                        winnertaIcon = StringUtil.ynToBoolean(gallList.get("winnerta_icon").text()),
-                        memberIcon = gallList.get("member_icon").`as`(Int::class.java),
-                        ip = gallList.get("ip").text(),
-                        gallerCon = gallList.safeGet("gallercon").run {
-                            when {
-                                isNull -> null
-                                else -> text()
-                            }
-                        },
-                        subject = gallList.get("subject").text(),
-                        name = gallList.get("name").text(),
-                        dateTime = gallList.get("date_time").text(),
-                        headText = gallList.get("head_text").text()
-                    )
+                                totalComment = gallList.get("total_comment").`as`(Int::class.java),
+                                totalVoice = gallList.get("total_voice").`as`(Int::class.java),
+                                userId = gallList.get("user_id").text(),
+                                voiceIcon = StringUtil.ynToBoolean(gallList.get("voice_icon").text()),
+                                winnertaIcon = StringUtil.ynToBoolean(gallList.get("winnerta_icon").text()),
+                                memberIcon = gallList.get("member_icon").`as`(Int::class.java),
+                                ip = gallList.get("ip").text(),
+                                gallerCon = gallList.safeGet("gallercon").run {
+                                    when {
+                                        isNull -> null
+                                        else -> text()
+                                    }
+                                },
+                                subject = gallList.get("subject").text(),
+                                name = gallList.get("name").text(),
+                                dateTime = gallList.get("date_time").text(),
+                                headText = gallList.get("head_text").text()
+                        )
                 )
             }
         }

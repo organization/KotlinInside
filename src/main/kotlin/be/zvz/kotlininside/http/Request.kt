@@ -1,7 +1,8 @@
 package be.zvz.kotlininside.http
 
-import be.zvz.kotlininside.value.ApiUrl
 import be.zvz.kotlininside.migbase64.Base64
+import be.zvz.kotlininside.value.ApiUrl
+import be.zvz.kotlininside.value.Const
 
 class Request {
     companion object {
@@ -13,7 +14,7 @@ class Request {
         @JvmStatic
         fun getDefaultOption(): HttpInterface.Option {
             return HttpInterface.Option()
-                    .setUserAgent("dcinside.app")
+                    .setUserAgent(Const.USER_AGENT)
                     .addHeader("Referer", "http://www.dcinside.com")
         }
     }

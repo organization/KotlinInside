@@ -131,8 +131,10 @@ public class DefaultHttpClient implements HttpInterface {
             return JsonBrowser.parse(
                     request.body()
             );
-        } catch (HttpRequest.HttpRequestException | IOException e) {
+        } catch (HttpRequest.HttpRequestException e) {
             throw new HttpException(request.code(), e.getMessage());
+        } catch (IOException e) {
+            throw new HttpException(e);
         }
     }
 
@@ -155,8 +157,10 @@ public class DefaultHttpClient implements HttpInterface {
                             .send(bodyData.toString())
                             .body()
             );
-        } catch (HttpRequest.HttpRequestException | IOException e) {
+        } catch (HttpRequest.HttpRequestException e) {
             throw new HttpException(request.code(), e.getMessage());
+        } catch (IOException e) {
+            throw new HttpException(e);
         }
     }
 
@@ -218,8 +222,10 @@ public class DefaultHttpClient implements HttpInterface {
                             .send(bodyData.toString())
                             .body()
             );
-        } catch (HttpRequest.HttpRequestException | IOException e) {
+        } catch (HttpRequest.HttpRequestException e) {
             throw new HttpException(request.code(), e.getMessage());
+        } catch (IOException e) {
+            throw new HttpException(e);
         }
     }
 }

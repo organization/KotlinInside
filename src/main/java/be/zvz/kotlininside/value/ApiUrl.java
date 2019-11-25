@@ -26,8 +26,12 @@ public final class ApiUrl {
         public static final String READ = APP_API + "comment_new.php";
     }
 
-    public static final class GalleryInfo {
-        public static final String MINOR = APP_API + "minor_info";
+    public static final class Gallery {
+        public static final String MINOR_INFO = APP_API + "minor_info";
+        public static final String MINOR_MANAGEMENT = "https://gall.dcinside.com/mgallery/management/mobile";
+        public static final String MINOR_MANAGER_REQUEST = APP_API + "_manager_request.php";
+        public static final String MINOR_BLOCK_WEB = APP_API + "minor_avoid";
+        public static final String MINOR_BLOCK_ADD = APP_API + "minor_avoidadd";
     }
 
     public static final class Search {
