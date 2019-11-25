@@ -6,4 +6,4 @@ title: Article.content -
 
 # content
 
-`val content: List<`[`Content`](../-content.html)`>`
+`val content: List<`[`Content`](../../be.zvz.kotlininside.api.type.content/-content.html)`>`

@@ -10,7 +10,7 @@ title: ArticleList.GallInfo -
 
 ### Constructors
 
-| [&lt;init&gt;](-init-.html) | `GallInfo(title: String, category: Int, fileCount: Int, fileSize: Int, captcha: Boolean?, codeCount: Int?, isMinor: Boolean, notifyRecent: Int?, relationGall: Map<String, String>, headText: List<`[`HeadText`](../../../be.zvz.kotlininside.api.type/-head-text/index.html)`>)` |
+| [&lt;init&gt;](-init-.html) | `GallInfo(title: String, category: Int, fileCount: Int, fileSize: Int, captcha: Boolean?, codeCount: Int?, isMinor: Boolean, isManager: Boolean, notifyRecent: Int?, relationGall: Map<String, String>, headText: List<`[`HeadText`](../../../be.zvz.kotlininside.api.type/-head-text/index.html)`>)` |
 
 ### Properties
 
@@ -20,6 +20,7 @@ title: ArticleList.GallInfo -
 | [fileCount](file-count.html) | `val fileCount: Int` |
 | [fileSize](file-size.html) | `val fileSize: Int` |
 | [headText](head-text.html) | `val headText: List<`[`HeadText`](../../../be.zvz.kotlininside.api.type/-head-text/index.html)`>` |
+| [isManager](is-manager.html) | `val isManager: Boolean` |
 | [isMinor](is-minor.html) | `val isMinor: Boolean` |
 | [notifyRecent](notify-recent.html) | `val notifyRecent: Int?` |
 | [relationGall](relation-gall.html) | `val relationGall: Map<String, String>` |

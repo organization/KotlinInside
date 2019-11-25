@@ -6,4 +6,4 @@ title: ArticleList.<init> -
 
 # &lt;init&gt;
 
-`ArticleList(gallId: String, page: Int, option: Option? = null)`
+`ArticleList(gallId: String, page: Int = 1, recommend: Boolean = false, notice: Boolean = false, headId: Int = 0, session: `[`Session`](../../be.zvz.kotlininside.session/-session/index.html)`? = null)`

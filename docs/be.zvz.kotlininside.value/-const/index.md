@@ -18,4 +18,5 @@ title: Const -
 | [DC_APP_SIGNATURE](-d-c_-a-p-p_-s-i-g-n-a-t-u-r-e.html) | `static val DC_APP_SIGNATURE: String` |
 | [DC_APP_VERSION_CODE](-d-c_-a-p-p_-v-e-r-s-i-o-n_-c-o-d-e.html) | `static val DC_APP_VERSION_CODE: String` |
 | [DC_APP_VERSION_NAME](-d-c_-a-p-p_-v-e-r-s-i-o-n_-n-a-m-e.html) | `static val DC_APP_VERSION_NAME: String` |
+| [USER_AGENT](-u-s-e-r_-a-g-e-n-t.html) | `static val USER_AGENT: String` |
 

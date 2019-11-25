@@ -6,4 +6,4 @@ title: ArticleRead.<init> -
 
 # &lt;init&gt;
 
-`ArticleRead(gallId: String, articleId: Int)`
+`ArticleRead(gallId: String, articleId: Int, session: `[`Session`](../../be.zvz.kotlininside.session/-session/index.html)`? = null)`

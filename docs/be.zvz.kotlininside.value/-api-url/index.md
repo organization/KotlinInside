@@ -13,7 +13,7 @@ title: ApiUrl -
 | [Article](-article/index.html) | `class Article` |
 | [Auth](-auth/index.html) | `class Auth` |
 | [Comment](-comment/index.html) | `class Comment` |
-| [GalleryInfo](-gallery-info/index.html) | `class GalleryInfo` |
+| [Gallery](-gallery/index.html) | `class Gallery` |
 | [MainInfo](-main-info/index.html) | `class MainInfo` |
 | [Search](-search/index.html) | `class Search` |
 

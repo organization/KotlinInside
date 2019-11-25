@@ -6,4 +6,4 @@ title: Article.<init> -
 
 # &lt;init&gt;
 
-`Article(subject: String, content: List<`[`Content`](../-content.html)`>, headText: `[`HeadText`](../-head-text/index.html)`? = null)`
+`Article(subject: String, content: List<`[`Content`](../../be.zvz.kotlininside.api.type.content/-content.html)`>, headText: `[`HeadText`](../-head-text/index.html)`? = null)`

@@ -8,7 +8,9 @@ title:
 | [be.zvz.kotlininside.api.article](be.zvz.kotlininside.api.article/index.html) |  |
 | [be.zvz.kotlininside.api.comment](be.zvz.kotlininside.api.comment/index.html) |  |
 | [be.zvz.kotlininside.api.generic](be.zvz.kotlininside.api.generic/index.html) |  |
+| [be.zvz.kotlininside.api.management](be.zvz.kotlininside.api.management/index.html) |  |
 | [be.zvz.kotlininside.api.type](be.zvz.kotlininside.api.type/index.html) |  |
+| [be.zvz.kotlininside.api.type.content](be.zvz.kotlininside.api.type.content/index.html) |  |
 | [be.zvz.kotlininside.http](be.zvz.kotlininside.http/index.html) |  |
 | [be.zvz.kotlininside.json](be.zvz.kotlininside.json/index.html) |  |
 | [be.zvz.kotlininside.migbase64](be.zvz.kotlininside.migbase64/index.html) |  |
@@ -21,3 +23,4 @@ title:
 
 ### Index
 
+[All Types](alltypes/index.html)

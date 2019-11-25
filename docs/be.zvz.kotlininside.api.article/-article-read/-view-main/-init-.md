@@ -6,4 +6,4 @@ title: ArticleRead.ViewMain.<init> -
 
 # &lt;init&gt;
 
-`ViewMain(content: String, upvote: Int, upvoteMember: Int, downvote: Int)`
+`ViewMain(content: String, upvote: Int, upvoteMember: Int, downvote: Int, isManager: Boolean)`

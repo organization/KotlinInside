@@ -7,3 +7,4 @@ title: HttpException.<init> -
 # &lt;init&gt;
 
 `HttpException(statusCode: Int, errorMessage: String!)`
+`HttpException(cause: Throwable!)`

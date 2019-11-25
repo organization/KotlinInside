@@ -12,11 +12,10 @@ title: ArticleList -
 
 | [GallInfo](-gall-info/index.html) | `data class GallInfo` |
 | [GallList](-gall-list/index.html) | `data class GallList` |
-| [Option](-option/index.html) | `class Option` |
 
 ### Constructors
 
-| [&lt;init&gt;](-init-.html) | `ArticleList(gallId: String, page: Int, option: Option? = null)` |
+| [&lt;init&gt;](-init-.html) | `ArticleList(gallId: String, page: Int = 1, recommend: Boolean = false, notice: Boolean = false, headId: Int = 0, session: `[`Session`](../../be.zvz.kotlininside.session/-session/index.html)`? = null)` |
 
 ### Functions
 

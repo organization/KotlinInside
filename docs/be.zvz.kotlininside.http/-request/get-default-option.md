@@ -6,4 +6,4 @@ title: Request.getDefaultOption -
 
 # getDefaultOption
 
-`fun getDefaultOption(): <ERROR CLASS>`
+`fun getDefaultOption(): Option`

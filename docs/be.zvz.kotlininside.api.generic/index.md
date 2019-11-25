@@ -9,4 +9,5 @@ title: be.zvz.kotlininside.api.generic -
 ### Types
 
 | [MainPage](-main-page/index.html) | `class MainPage` |
+| [MinorGalleryInfo](-minor-gallery-info/index.html) | `class MinorGalleryInfo` |
 

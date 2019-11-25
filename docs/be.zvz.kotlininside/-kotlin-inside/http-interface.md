@@ -6,4 +6,4 @@ title: KotlinInside.httpInterface -
 
 # httpInterface
 
-`val httpInterface: <ERROR CLASS>`
+`val httpInterface: `[`HttpInterface`](../../be.zvz.kotlininside.http/-http-interface/index.html)

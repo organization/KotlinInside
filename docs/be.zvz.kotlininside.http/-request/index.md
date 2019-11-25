@@ -14,6 +14,6 @@ title: Request -
 
 ### Companion Object Functions
 
-| [getDefaultOption](get-default-option.html) | `fun getDefaultOption(): <ERROR CLASS>` |
+| [getDefaultOption](get-default-option.html) | `fun getDefaultOption(): Option` |
 | [redirectUrl](redirect-url.html) | `fun redirectUrl(url: String): String` |
 

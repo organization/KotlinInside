@@ -10,7 +10,11 @@ title: HttpException -
 
 ### Constructors
 
-| [&lt;init&gt;](-init-.html) | `HttpException(statusCode: Int, errorMessage: String!)` |
+| [&lt;init&gt;](-init-.html) | `HttpException(statusCode: Int, errorMessage: String!)`<br>`HttpException(cause: Throwable!)` |
+
+### Properties
+
+| [cause](cause.html) | `open val cause: Throwable?` |
 
 ### Functions
 

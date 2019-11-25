@@ -6,7 +6,7 @@ title: KotlinInside.createInstance -
 
 # createInstance
 
-`fun createInstance(user: `[`User`](../../be.zvz.kotlininside.session.user/-user/index.html)`, httpInterface: <ERROR CLASS>): Unit`
+`fun createInstance(user: `[`User`](../../be.zvz.kotlininside.session.user/-user/index.html)`, httpInterface: `[`HttpInterface`](../../be.zvz.kotlininside.http/-http-interface/index.html)`): Unit`
 
 [KotlinInside](index.html) 인스턴스를 생성합니다.
 

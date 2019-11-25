@@ -15,7 +15,7 @@ title: ArticleRead -
 
 ### Constructors
 
-| [&lt;init&gt;](-init-.html) | `ArticleRead(gallId: String, articleId: Int)` |
+| [&lt;init&gt;](-init-.html) | `ArticleRead(gallId: String, articleId: Int, session: `[`Session`](../../be.zvz.kotlininside.session/-session/index.html)`? = null)` |
 
 ### Functions
 
