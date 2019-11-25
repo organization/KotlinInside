@@ -23,12 +23,12 @@ compile 'be.zvz:KotlinInside:1.4.0'
 
 ### 라이브러리 사용
 
-**Java 1.7 (Java 7)** 이상 필요
-**Kotlin 1.3+** 권장
+- **Java 1.7 (Java 7)** 이상 필요
+- **Kotlin 1.3+** 권장
 
 ### 라이브러리 컴파일
 
-**Java 1.8 (Java 8)** 이상 필요
+- **Java 1.8 (Java 8)** 이상 필요
 
 ## 예제
 
