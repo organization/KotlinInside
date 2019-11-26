@@ -5,7 +5,7 @@ import be.zvz.kotlininside.http.Request
 import be.zvz.kotlininside.value.ApiUrl
 
 class MinorGalleryInfo(
-        val gallId: String
+        private val gallId: String
 ) {
     data class InfoResult(
             val id: String,

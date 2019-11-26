@@ -1,11 +1,10 @@
 package be.zvz.kotlininside.http;
 
+import be.zvz.kotlininside.json.JsonBrowser;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import be.zvz.kotlininside.json.JsonBrowser;
-
-import java.io.File;
+import java.io.InputStream;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -25,9 +24,9 @@ public interface HttpInterface {
         @Nullable
         private String multipartContentType = null;
         @NotNull
-        private final Map<String, File> multipartFile = new LinkedHashMap<>();
+        private final Map<String, InputStream> multipartFile = new LinkedHashMap<>();
         @NotNull
-        private final Map<String, List<File>> multipartFileList = new LinkedHashMap<>();
+        private final Map<String, List<InputStream>> multipartFileList = new LinkedHashMap<>();
         @NotNull
         private final Map<String, String> multipartParameter = new LinkedHashMap<>();
 
@@ -132,19 +131,18 @@ public interface HttpInterface {
         }
 
         /**
-         *
-         * @param key 매개변수 Key
+         * @param key   매개변수 Key
          * @param value 매개변수 Value
          * @return this
          */
         @NotNull
-        public Option addMultipartFile(@NotNull String key, @NotNull File value) {
+        public Option addMultipartFile(@NotNull String key, @NotNull InputStream value) {
             this.multipartFile.put(key, value);
             return this;
         }
 
         @NotNull
-        public Map<String, File> getMultipartFile() {
+        public Map<String, InputStream> getMultipartFile() {
             return this.multipartFile;
         }
 
@@ -155,13 +153,13 @@ public interface HttpInterface {
          * @return this
          */
         @NotNull
-        public Option addMultipartFileList(@NotNull String key, @NotNull List<File> value) {
+        public Option addMultipartFileList(@NotNull String key, @NotNull List<InputStream> value) {
             this.multipartFileList.put(key, value);
             return this;
         }
 
         @NotNull
-        public Map<String, List<File>> getMultipartFileList() {
+        public Map<String, List<InputStream>> getMultipartFileList() {
             return this.multipartFileList;
         }
 

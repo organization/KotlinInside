@@ -2,10 +2,10 @@ package be.zvz.kotlininside.api.article
 
 import be.zvz.kotlininside.KotlinInside
 import be.zvz.kotlininside.api.type.Article
-import be.zvz.kotlininside.api.type.content.ImageContent
-import be.zvz.kotlininside.api.type.content.StringContent
 import be.zvz.kotlininside.api.type.content.HtmlContent
+import be.zvz.kotlininside.api.type.content.ImageContent
 import be.zvz.kotlininside.api.type.content.MarkdownContent
+import be.zvz.kotlininside.api.type.content.StringContent
 import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.http.Request
 import be.zvz.kotlininside.session.Session
@@ -14,17 +14,32 @@ import be.zvz.kotlininside.utils.StringUtil
 import be.zvz.kotlininside.value.ApiUrl
 import java.net.URLEncoder
 
-class ArticleWrite @JvmOverloads constructor(
+class ArticleWrite internal constructor(
         private val gallId: String,
         private val article: Article,
         private val session: Session,
+        private val mode: String,
         private val fcmToken: String = "N" // (Long.MIN_VALUE..Long.MAX_VALUE).random().toString() //Generate random FCM token
 ) {
+    @JvmOverloads
+    constructor(
+            gallId: String,
+            article: Article,
+            session: Session,
+            fcmToken: String = "N"
+    ) : this(
+            gallId = gallId,
+            article = article,
+            session = session,
+            mode = "write",
+            fcmToken = fcmToken
+    )
+
     data class WriteResult(
-        val result: Boolean,
-        val articleId: Int? = null,
-        val cause: String? = null,
-        val id: String? = null
+            val result: Boolean,
+            val articleId: Int? = null,
+            val cause: String? = null,
+            val id: String? = null
     )
 
     /**
@@ -34,9 +49,9 @@ class ArticleWrite @JvmOverloads constructor(
     @Throws(HttpException::class)
     fun write(): WriteResult {
         val option = Request.getDefaultOption()
-            .addMultipartParameter("id", gallId)
-            .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
-            .addMultipartParameter("mode", "write")
+                .addMultipartParameter("id", gallId)
+                .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
+                .addMultipartParameter("mode", mode)
             .addMultipartParameter("client_token", fcmToken)
             .addMultipartParameter("subject", URLEncoder.encode(article.subject, "UTF-8"))
 
@@ -60,7 +75,7 @@ class ArticleWrite @JvmOverloads constructor(
             when (content) {
                 is ImageContent -> {
                     option.addMultipartParameter("memo_block[$index]", "Dc_App_Img_$imageCount")
-                    option.addMultipartFile("upload[$imageCount]", content.file)
+                    option.addMultipartFile("upload[$imageCount]", content.stream)
                     imageCount++
                 }
                 is StringContent -> option.addMultipartParameter("memo_block[$index]", URLEncoder.encode("<div>" + StringUtil.toHtml(content.string) + "</div>", "UTF-8"))
@@ -69,15 +84,18 @@ class ArticleWrite @JvmOverloads constructor(
             }
         }
 
-        val json = KotlinInside.getInstance().httpInterface.upload(ApiUrl.Article.WRITE, option)!!.index(0)
+        val json = KotlinInside.getInstance().httpInterface.upload(
+                ApiUrl.Article.WRITE,
+                option
+        )!!.index(0)
 
         val result = json.get("result").`as`(Boolean::class.java)
 
         return when {
             result -> WriteResult(
-                result = result,
-                articleId = json.get("cause").`as`(Int::class.java),
-                id = json.get("id").text()
+                    result = result,
+                    articleId = json.get("cause").`as`(Int::class.java),
+                    id = json.get("id").text()
             )
             else -> WriteResult(
                 result = result,

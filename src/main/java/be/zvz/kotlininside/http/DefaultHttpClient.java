@@ -4,8 +4,8 @@ import be.zvz.kotlininside.json.JsonBrowser;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.net.URLConnection;
 import java.net.URLEncoder;
@@ -285,14 +285,19 @@ public class DefaultHttpClient implements HttpInterface {
                 request.part(entry.getKey(), entry.getValue());
             }
 
-            for (Map.Entry<String, File> entry : option.getMultipartFile().entrySet()) {
-                File file = entry.getValue();
-                request.part(entry.getKey(), file.getName(), URLConnection.guessContentTypeFromName(file.toString()), file);
+            int count = 0;
+            for (Map.Entry<String, InputStream> entry : option.getMultipartFile().entrySet()) {
+                InputStream stream = entry.getValue();
+
+                request.part(entry.getKey(), getFileName(stream, count), "image/jpg", stream);
+                count++;
             }
 
-            for (Map.Entry<String, List<File>> entry : option.getMultipartFileList().entrySet()) {
-                for (File file : entry.getValue()) {
-                    request.part(entry.getKey(), file.getName(), URLConnection.guessContentTypeFromName(file.toString()), file);
+            count = 0;
+            for (Map.Entry<String, List<InputStream>> entry : option.getMultipartFileList().entrySet()) {
+                for (InputStream stream : entry.getValue()) {
+                    request.part(entry.getKey(), getFileName(stream, count), "image/jpg", stream);
+                    count++;
                 }
             }
         }
@@ -308,5 +313,32 @@ public class DefaultHttpClient implements HttpInterface {
         } catch (IOException e) {
             throw new HttpException(e);
         }
+    }
+
+    private String getFileName(InputStream inputStream, int infix) {
+        String contentType;
+        try {
+            contentType = URLConnection.guessContentTypeFromStream(inputStream);
+            if (contentType == null) {
+                contentType = "image/jpg";
+            }
+        } catch (IOException e) {
+            contentType = "image/jpg";
+        }
+
+        String fileName = "image" + infix + ".";
+
+        switch (contentType) {
+            case "image/png":
+                fileName += "png";
+                break;
+            case "image/gif":
+                fileName += "gif";
+                break;
+            default:
+                fileName += "jpg";
+        }
+
+        return fileName;
     }
 }

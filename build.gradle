@@ -18,7 +18,7 @@ apply plugin: 'com.jfrog.bintray'
 apply plugin: 'com.github.dcendents.android-maven'
 
 def libName = 'KotlinInside'
-def libVersion = '1.5.0'
+def libVersion = '1.6.0'
 def libDesc = 'Unofficial DCInside API written in Kotlin'
 
 group = 'be.zvz'
@@ -38,6 +38,7 @@ compileJava {
 dependencies {
     implementation group: 'commons-codec', name: 'commons-codec', version: '1.13'
     implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.9'
+    implementation group: 'org.apache.commons', name: 'commons-text', version: '1.8'
 
     //Jackson
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.10.1'
