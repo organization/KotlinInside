@@ -84,6 +84,7 @@ public class DefaultHttpClient implements HttpInterface {
     @Override
     public JsonBrowser get(@NotNull String url, @Nullable Option option) throws HttpException {
         HttpRequest request = gzipEncode(HttpRequest.get(optionToUrl(url, option)))
+                .setMultipartFormDataBoundary(HttpRequest.generateBoundary())
                 .acceptJson()
                 .followRedirects(true);
 
@@ -142,6 +143,7 @@ public class DefaultHttpClient implements HttpInterface {
     @Override
     public JsonBrowser post(@NotNull String url, @Nullable Option option) throws HttpException {
         HttpRequest request = gzipEncode(HttpRequest.post(optionToUrl(url, option)))
+                .setMultipartFormDataBoundary(HttpRequest.generateBoundary())
                 .acceptJson()
                 .followRedirects(true);
 
@@ -192,6 +194,7 @@ public class DefaultHttpClient implements HttpInterface {
     @Override
     public JsonBrowser upload(@NotNull String url, @Nullable Option option) throws HttpException {
         HttpRequest request = gzipEncode(HttpRequest.post(optionToUrl(url, option)))
+                .setMultipartFormDataBoundary(HttpRequest.generateBoundary())
                 .acceptJson()
                 .followRedirects(true);
 

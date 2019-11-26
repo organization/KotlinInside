@@ -21,43 +21,9 @@
  */
 package be.zvz.kotlininside.http;
 
-import static java.net.HttpURLConnection.HTTP_BAD_REQUEST;
-import static java.net.HttpURLConnection.HTTP_CREATED;
-import static java.net.HttpURLConnection.HTTP_INTERNAL_ERROR;
-import static java.net.HttpURLConnection.HTTP_NO_CONTENT;
-import static java.net.HttpURLConnection.HTTP_NOT_FOUND;
-import static java.net.HttpURLConnection.HTTP_NOT_MODIFIED;
-import static java.net.HttpURLConnection.HTTP_OK;
-import static java.net.Proxy.Type.HTTP;
-
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.BufferedReader;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.Closeable;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.Flushable;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.io.PrintStream;
-import java.io.Reader;
-import java.io.UnsupportedEncodingException;
-import java.io.Writer;
-import java.net.HttpURLConnection;
-import java.net.InetSocketAddress;
-import java.net.MalformedURLException;
-import java.net.Proxy;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.URL;
-import java.net.URLEncoder;
+import javax.net.ssl.*;
+import java.io.*;
+import java.net.*;
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
 import java.nio.charset.Charset;
@@ -74,13 +40,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.zip.GZIPInputStream;
 
-import javax.net.ssl.HostnameVerifier;
-import javax.net.ssl.HttpsURLConnection;
-import javax.net.ssl.SSLContext;
-import javax.net.ssl.SSLSession;
-import javax.net.ssl.SSLSocketFactory;
-import javax.net.ssl.TrustManager;
-import javax.net.ssl.X509TrustManager;
+import static java.net.HttpURLConnection.*;
+import static java.net.Proxy.Type.HTTP;
 
 /**
  * A fluid interface for making HTTP requests using an underlying
@@ -245,9 +206,9 @@ public class HttpRequest {
             "-_1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
                     .toCharArray();
 
-    private static final String BOUNDARY = generateBoundary();
+    private static final String DEFAULT_BOUNDARY = generateBoundary();
 
-    private static final String CONTENT_TYPE_MULTIPART = "multipart/form-data; boundary=" + BOUNDARY;
+    private static final String DEFAULT_CONTENT_TYPE_MULTIPART = "multipart/form-data; boundary=" + DEFAULT_BOUNDARY;
 
     private static final String CRLF = "\r\n";
 
@@ -257,7 +218,11 @@ public class HttpRequest {
 
     private static HostnameVerifier TRUSTED_VERIFIER;
 
-    private static String generateBoundary() {
+    private String boundary = DEFAULT_BOUNDARY;
+
+    private String contentTypeMultipart = DEFAULT_CONTENT_TYPE_MULTIPART;
+
+    public static String generateBoundary() {
         StringBuilder buffer = new StringBuilder();
         Random rand = new Random();
         int count = rand.nextInt(11) + 30; // a random size from 30 to 40
@@ -2690,7 +2655,7 @@ public class HttpRequest {
         if (output == null)
             return this;
         if (multipart) {
-            output.write(CRLF + "--" + BOUNDARY + "--" + CRLF);
+            output.write(CRLF + "--" + boundary + "--" + CRLF);
         }
         if (ignoreCloseExceptions)
             try {
@@ -2745,10 +2710,10 @@ public class HttpRequest {
     protected HttpRequest startPart() throws IOException {
         if (!multipart) {
             multipart = true;
-            contentType(CONTENT_TYPE_MULTIPART).openOutput();
-            output.write("--" + BOUNDARY + CRLF);
+            contentType(contentTypeMultipart).openOutput();
+            output.write("--" + boundary + CRLF);
         } else
-            output.write(CRLF + "--" + BOUNDARY + CRLF);
+            output.write(CRLF + "--" + boundary + CRLF);
         return this;
     }
 
@@ -3261,6 +3226,14 @@ public class HttpRequest {
      */
     public HttpRequest followRedirects(final boolean followRedirects) {
         getConnection().setInstanceFollowRedirects(followRedirects);
+        return this;
+    }
+
+    public HttpRequest setMultipartFormDataBoundary(String boundary) {
+        this.boundary = boundary;
+        this.contentTypeMultipart = "multipart/form-data; boundary="
+                + boundary;
+
         return this;
     }
 }
