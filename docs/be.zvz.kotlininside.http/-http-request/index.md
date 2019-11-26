@@ -101,6 +101,7 @@ A fluid interface for making HTTP requests using an underlying ``[`HttpURLConnec
 | [expires](expires.html) | Get the 'Expires' header from the response`open fun expires(): Long` |
 | [followRedirects](follow-redirects.html) | Set whether or not the underlying connection should follow redirects in the response.`open fun followRedirects(followRedirects: Boolean): `[`HttpRequest`](./index.html)`!` |
 | [form](form.html) | Write the values in the map as form data to the request body `open fun form(values: MutableMap<*, *>!): `[`HttpRequest`](./index.html)`!`<br>Write the key and value in the entry as form data to the request body `open fun form(entry: MutableEntry<*, *>!): `[`HttpRequest`](./index.html)`!`<br>`open fun form(entry: MutableEntry<*, *>!, charset: String!): `[`HttpRequest`](./index.html)`!`<br>Write the name/value pair as form data to the request body `open fun form(name: Any!, value: Any!): `[`HttpRequest`](./index.html)`!`<br>`open fun form(name: Any!, value: Any!, charset: String!): `[`HttpRequest`](./index.html)`!`<br>Write the values in the map as encoded form data to the request body`open fun form(values: MutableMap<*, *>!, charset: String!): `[`HttpRequest`](./index.html)`!` |
+| [generateBoundary](generate-boundary.html) | `open static fun generateBoundary(): String!` |
 | [get](get.html) | Start a 'GET' request to the given URL`open static fun get(url: CharSequence!): `[`HttpRequest`](./index.html)`!`<br>`open static fun get(url: URL!): `[`HttpRequest`](./index.html)`!`<br>Start a 'GET' request to the given URL along with the query params`open static fun get(baseUrl: CharSequence!, params: MutableMap<*, *>!, encode: Boolean): `[`HttpRequest`](./index.html)`!`<br>`open static fun get(baseUrl: CharSequence!, encode: Boolean, vararg params: Any!): `[`HttpRequest`](./index.html)`!` |
 | [getConnection](get-connection.html) | Get underlying connection`open fun getConnection(): HttpURLConnection!` |
 | [getParam](get-param.html) | Get parameter value from header value`open fun getParam(value: String!, paramName: String!): String!` |
@@ -145,6 +146,7 @@ A fluid interface for making HTTP requests using an underlying ``[`HttpURLConnec
 | [server](server.html) | Get the 'Server' header from the response`open fun server(): String!` |
 | [serverError](server-error.html) | Is the response code a 500 Internal Server Error?`open fun serverError(): Boolean` |
 | [setConnectionFactory](set-connection-factory.html) | Specify the ``[`ConnectionFactory`](-connection-factory/index.html) used to create new requests.`open static fun setConnectionFactory(connectionFactory: ConnectionFactory!): Unit` |
+| [setMultipartFormDataBoundary](set-multipart-form-data-boundary.html) | `open fun setMultipartFormDataBoundary(boundary: String!): `[`HttpRequest`](./index.html)`!` |
 | [startPart](start-part.html) | Start part of a multipart`open fun startPart(): `[`HttpRequest`](./index.html)`!` |
 | [stream](stream.html) | Get stream to response body`open fun stream(): InputStream!` |
 | [toString](to-string.html) | `open fun toString(): String` |

@@ -18,6 +18,7 @@ title: ApiUrl.Article -
 | [DOWNVOTE](-d-o-w-n-v-o-t-e.html) | `static val DOWNVOTE: String` |
 | [HIT_UPVOTE](-h-i-t_-u-p-v-o-t-e.html) | `static val HIT_UPVOTE: String` |
 | [LIST](-l-i-s-t.html) | `static val LIST: String` |
+| [MODIFY](-m-o-d-i-f-y.html) | `static val MODIFY: String` |
 | [READ](-r-e-a-d.html) | `static val READ: String` |
 | [REPORT](-r-e-p-o-r-t.html) | `static val REPORT: String` |
 | [UPVOTE](-u-p-v-o-t-e.html) | `static val UPVOTE: String` |

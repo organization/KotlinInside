@@ -125,6 +125,16 @@ Base64 for InputStream Licence = BSD
 
 |
 
+##### [be.zvz.kotlininside.api.type.Gallery](../be.zvz.kotlininside.api.type/-gallery/index.html)
+
+
+|
+
+##### [be.zvz.kotlininside.api.generic.GallerySearch](../be.zvz.kotlininside.api.generic/-gallery-search/index.html)
+
+
+|
+
 ##### [be.zvz.kotlininside.api.management.GallerySetting](../be.zvz.kotlininside.api.management/-gallery-setting/index.html)
 
 
@@ -230,6 +240,11 @@ Allows to easily navigate in decoded JSON data
 |
 
 ##### [be.zvz.kotlininside.utils.StringUtil](../be.zvz.kotlininside.utils/-string-util/index.html)
+
+
+|
+
+##### [be.zvz.kotlininside.api.generic.TotalSearch](../be.zvz.kotlininside.api.generic/-total-search/index.html)
 
 
 |

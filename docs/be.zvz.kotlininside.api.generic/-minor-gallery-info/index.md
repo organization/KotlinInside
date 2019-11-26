@@ -23,5 +23,5 @@ title: MinorGalleryInfo -
 
 ### Functions
 
-| [get](get.html) | `fun get(): InfoResult` |
+| [get](get.html) | 갤러리 정보를 받아옵니다.`fun get(): InfoResult` |
 

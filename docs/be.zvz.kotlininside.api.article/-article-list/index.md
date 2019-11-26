@@ -15,7 +15,7 @@ title: ArticleList -
 
 ### Constructors
 
-| [&lt;init&gt;](-init-.html) | `ArticleList(gallId: String, page: Int = 1, recommend: Boolean = false, notice: Boolean = false, headId: Int = 0, session: `[`Session`](../../be.zvz.kotlininside.session/-session/index.html)`? = null)` |
+| [&lt;init&gt;](-init-.html) | `ArticleList(gallId: String, page: Int = 1, recommend: Boolean = false, notice: Boolean = false, headId: Int = 0, session: `[`Session`](../../be.zvz.kotlininside.session/-session/index.html)`? = null)`<br>`ArticleList(gallId: String, searchKeyword: String, page: Int = 1, recommend: Boolean = false, notice: Boolean = false, headId: Int = 0, session: `[`Session`](../../be.zvz.kotlininside.session/-session/index.html)`? = null)` |
 
 ### Functions
 

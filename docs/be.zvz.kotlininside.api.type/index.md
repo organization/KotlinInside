@@ -10,5 +10,6 @@ title: be.zvz.kotlininside.api.type -
 
 | [Article](-article/index.html) | `data class Article` |
 | [Comment](-comment/index.html) | `data class Comment` |
+| [Gallery](-gallery/index.html) | `data class Gallery` |
 | [HeadText](-head-text/index.html) | `data class HeadText` |
 

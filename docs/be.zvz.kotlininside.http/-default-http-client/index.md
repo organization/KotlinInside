@@ -8,9 +8,13 @@ title: DefaultHttpClient -
 
 `open class DefaultHttpClient : `[`HttpInterface`](../-http-interface/index.html)
 
+### Types
+
+| [Proxy](-proxy.html) | `open class Proxy` |
+
 ### Constructors
 
-| [&lt;init&gt;](-init-.html) | DefaultHttpClient의 constructor입니다.`DefaultHttpClient(gzip: Boolean)` |
+| [&lt;init&gt;](-init-.html) | DefaultHttpClient의 constructor입니다.`DefaultHttpClient()`<br>`DefaultHttpClient(gzip: Boolean)`<br>`DefaultHttpClient(gzip: Boolean, useCache: Boolean)`<br>`DefaultHttpClient(gzip: Boolean, useCache: Boolean, proxy: Proxy!)` |
 
 ### Functions
 
