@@ -14,20 +14,83 @@ import java.util.Map;
 
 public class DefaultHttpClient implements HttpInterface {
     private final boolean enableGzipCompression;
+    private final boolean enableCache;
+    @Nullable
+    private final Proxy proxy;
+
+    public static class Proxy {
+        Proxy(@NotNull String ip, int port) {
+            this.ip = ip;
+            this.port = port;
+        }
+
+        @NotNull
+        String ip;
+        int port;
+    }
+
+    /**
+     * DefaultHttpClient의 constructor입니다.
+     */
+    public DefaultHttpClient() {
+        this(true);
+    }
 
     /**
      * DefaultHttpClient의 constructor입니다.
      *
-     * @param gzip GZIP 압축을 사용할 것인지 유무
+     * @param gzip GZIP 압축 사용 유무
      */
     public DefaultHttpClient(boolean gzip) {
-        enableGzipCompression = gzip;
+        this(gzip, true);
+    }
+
+    /**
+     * DefaultHttpClient의 constructor입니다.
+     *
+     * @param gzip     GZIP 압축 사용 유무
+     * @param useCache 캐시 사용 유무
+     */
+    public DefaultHttpClient(boolean gzip, boolean useCache) {
+        this(gzip, useCache, null);
+    }
+
+    /**
+     * DefaultHttpClient의 constructor입니다.
+     *
+     * @param gzip     GZIP 압축 사용 유무
+     * @param useCache 캐시 사용 유무
+     * @param proxy    Proxy 설정
+     */
+    public DefaultHttpClient(boolean gzip, boolean useCache, @Nullable Proxy proxy) {
+        this.enableGzipCompression = gzip;
+        this.enableCache = useCache;
+        this.proxy = proxy;
     }
 
     @NotNull
-    private HttpRequest gzipEncode(@NotNull HttpRequest request) {
-        if (enableGzipCompression)
+    private HttpRequest useGzipEncoding(@NotNull HttpRequest request) {
+        if (this.enableGzipCompression) {
             return request.acceptGzipEncoding().uncompress(true);
+        }
+
+        return request;
+    }
+
+    @NotNull
+    private HttpRequest useProxy(@NotNull HttpRequest request) {
+        if (this.proxy != null) {
+            request.useProxy(this.proxy.ip, this.proxy.port);
+        }
+
+        return request;
+    }
+
+    @NotNull
+    private HttpRequest useCache(@NotNull HttpRequest request) {
+        if (this.enableCache) {
+            request.useCaches(true);
+        }
 
         return request;
     }
@@ -83,8 +146,13 @@ public class DefaultHttpClient implements HttpInterface {
     @Nullable
     @Override
     public JsonBrowser get(@NotNull String url, @Nullable Option option) throws HttpException {
-        HttpRequest request = gzipEncode(HttpRequest.get(optionToUrl(url, option)))
-                .setMultipartFormDataBoundary(HttpRequest.generateBoundary())
+        HttpRequest request = useCache(
+                useGzipEncoding(
+                        useProxy(
+                                HttpRequest.get(optionToUrl(url, option))
+                        )
+                )
+        )
                 .acceptJson()
                 .followRedirects(true);
 
@@ -142,8 +210,13 @@ public class DefaultHttpClient implements HttpInterface {
     @Nullable
     @Override
     public JsonBrowser post(@NotNull String url, @Nullable Option option) throws HttpException {
-        HttpRequest request = gzipEncode(HttpRequest.post(optionToUrl(url, option)))
-                .setMultipartFormDataBoundary(HttpRequest.generateBoundary())
+        HttpRequest request = useCache(
+                useGzipEncoding(
+                        useProxy(
+                                HttpRequest.post(optionToUrl(url, option))
+                        )
+                )
+        )
                 .acceptJson()
                 .followRedirects(true);
 
@@ -193,8 +266,13 @@ public class DefaultHttpClient implements HttpInterface {
     @Nullable
     @Override
     public JsonBrowser upload(@NotNull String url, @Nullable Option option) throws HttpException {
-        HttpRequest request = gzipEncode(HttpRequest.post(optionToUrl(url, option)))
-                .setMultipartFormDataBoundary(HttpRequest.generateBoundary())
+        HttpRequest request = useCache(
+                useGzipEncoding(
+                        useProxy(
+                                HttpRequest.post(optionToUrl(url, option)).setMultipartFormDataBoundary(HttpRequest.generateBoundary())
+                        )
+                )
+        )
                 .acceptJson()
                 .followRedirects(true);
 

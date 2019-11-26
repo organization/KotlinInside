@@ -7,17 +7,15 @@ import be.zvz.kotlininside.http.Request
 import be.zvz.kotlininside.session.Session
 import be.zvz.kotlininside.session.SessionDetail
 import be.zvz.kotlininside.session.user.Anonymous
-import be.zvz.kotlininside.session.user.named.DuplicateNamed
-import be.zvz.kotlininside.session.user.named.Named
 import be.zvz.kotlininside.session.user.User
 import be.zvz.kotlininside.session.user.UserType
+import be.zvz.kotlininside.session.user.named.DuplicateNamed
+import be.zvz.kotlininside.session.user.named.Named
 import be.zvz.kotlininside.value.ApiUrl
 import be.zvz.kotlininside.value.Const
 import org.apache.commons.codec.digest.DigestUtils
 import org.apache.commons.lang3.time.FastDateFormat
-import java.util.TimeZone
-import java.util.Date
-import java.util.Locale
+import java.util.*
 
 class Auth {
     private val seoulTimeZone = TimeZone.getTimeZone("Asia/Seoul")
@@ -75,14 +73,14 @@ class Auth {
     }
 
     //TODO: 성능 문제 - 수정 필요
-    //TODO: E 다음의 숫자 (30, 31) 분석 필요
+    //TODO: E 다음의 숫자 (30, 31, 32) 분석 필요
     /**
      *
-     * @return [java.lang.String] Wed316133346111311 형식의 날짜 문자열을 반환합니다.
+     * @return [java.lang.String] Tue329262248112611 형식의 날짜 문자열을 반환합니다.
      */
     private fun dateToString(date: Date): String {
         val dayOfWeek = dayOfWeekFormat.format(date)
-        return FastDateFormat.getInstance("E31${(date.time - date1028.time) / DAY}d$dayOfWeek${dayOfWeekZero(dayOfWeek)}4${((date.time - date1001.time + DAY) / DAY) / 7}MMddMM", seoulTimeZone, Locale.US).format(date)
+        return FastDateFormat.getInstance("E32${(date.time - date1028.time) / DAY}d$dayOfWeek${dayOfWeekZero(dayOfWeek)}4${((date.time - date1001.time + DAY) / DAY) / 7}MMddMM", seoulTimeZone, Locale.US).format(date)
     }
 
     /**

@@ -25,6 +25,11 @@ class MinorGalleryInfo(
             val name: String
     )
 
+    /**
+     * 갤러리 정보를 받아옵니다.
+     *
+     * @return 갤러리 정보를 반환합니다.
+     */
     fun get(): InfoResult {
         val option = Request.getDefaultOption()
                 .addMultipartParameter("id", gallId)

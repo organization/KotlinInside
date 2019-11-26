@@ -4,7 +4,8 @@
 package be.zvz.kotlininside
 
 import be.zvz.kotlininside.api.article.*
-import be.zvz.kotlininside.api.type.*
+import be.zvz.kotlininside.api.type.Article
+import be.zvz.kotlininside.api.type.HeadText
 import be.zvz.kotlininside.api.type.content.HtmlContent
 import be.zvz.kotlininside.api.type.content.MarkdownContent
 import be.zvz.kotlininside.api.type.content.StringContent
@@ -12,8 +13,8 @@ import be.zvz.kotlininside.http.DefaultHttpClient
 import be.zvz.kotlininside.session.user.Anonymous
 import org.junit.jupiter.api.MethodOrderer
 import org.junit.jupiter.api.Order
-import org.junit.jupiter.api.TestMethodOrder
 import org.junit.jupiter.api.TestInstance
+import org.junit.jupiter.api.TestMethodOrder
 import kotlin.test.Test
 import kotlin.test.assertNotNull
 
@@ -26,7 +27,7 @@ class KotlinInsideTest {
     @Test fun initKotlinInside() {
         KotlinInside.createInstance(
                 Anonymous("ㅇㅇ", "1234"),
-                DefaultHttpClient(true)
+                DefaultHttpClient(true, true)
         )
     }
 

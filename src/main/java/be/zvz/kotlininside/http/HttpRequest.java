@@ -3230,6 +3230,9 @@ public class HttpRequest {
     }
 
     public HttpRequest setMultipartFormDataBoundary(String boundary) {
+        if (connection != null)
+            throw new IllegalStateException("The connection has already been created. This method must be called before reading or writing to the request.");
+
         this.boundary = boundary;
         this.contentTypeMultipart = "multipart/form-data; boundary="
                 + boundary;

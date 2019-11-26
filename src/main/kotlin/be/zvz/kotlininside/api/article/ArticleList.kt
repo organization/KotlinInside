@@ -9,15 +9,35 @@ import be.zvz.kotlininside.session.Session
 import be.zvz.kotlininside.session.user.Anonymous
 import be.zvz.kotlininside.utils.StringUtil
 import be.zvz.kotlininside.value.ApiUrl
+import java.net.URLEncoder
 
 class ArticleList @JvmOverloads constructor(
         private val gallId: String,
+        private val searchKeyword: String,
         private val page: Int = 1,
         private val recommend: Boolean = false,
         private val notice: Boolean = false,
         private val headId: Int = 0,
         private val session: Session? = null
 ) {
+    @JvmOverloads
+    constructor(
+            gallId: String,
+            page: Int = 1,
+            recommend: Boolean = false,
+            notice: Boolean = false,
+            headId: Int = 0,
+            session: Session? = null
+    ) : this(
+            gallId = gallId,
+            searchKeyword = "",
+            page = page,
+            recommend = recommend,
+            notice = notice,
+            headId = headId,
+            session = session
+    )
+
     private lateinit var json: JsonBrowser
 
     data class GallInfo(
@@ -35,25 +55,25 @@ class ArticleList @JvmOverloads constructor(
     )
 
     data class GallList(
-        val identifier: Int,
-        val views: Int,
-        val upvote: Int,
-        val imageIcon: Boolean,
-        val upvoteIcon: Boolean,
-        val bestCheck: Boolean,
-        val voiceIcon: Boolean,
-        val winnertaIcon: Boolean,
-        val level: Int,
-        val totalComment: Int,
-        val totalVoice: Int,
-        val userId: String,
-        val memberIcon: Int,
-        val ip: String,
-        val gallerCon: String?,
-        val subject: String,
-        val name: String,
-        val dateTime: String,
-        val headText: String?
+            val identifier: Int,
+            val views: Int,
+            val upvote: Int,
+            val imageIcon: Boolean,
+            val upvoteIcon: Boolean,
+            val bestCheck: Boolean,
+            val voiceIcon: Boolean,
+            val winnertaIcon: Boolean,
+            val level: Int,
+            val totalComment: Int,
+            val totalVoice: Int,
+            val userId: String,
+            val memberIcon: Int,
+            val ip: String,
+            val gallerCon: String?,
+            val subject: String,
+            val name: String,
+            val dateTime: String,
+            val headText: String?
     )
 
     /**
@@ -64,6 +84,10 @@ class ArticleList @JvmOverloads constructor(
     fun request() {
         val url = "${ApiUrl.Article.LIST}?id=$gallId&page=$page&app_id=${KotlinInside.getInstance().auth.getAppId()}" +
                 StringBuilder().apply {
+                    if (searchKeyword.isNotEmpty()) {
+                        append("&s_type=all")
+                        append("&serVal=").append(URLEncoder.encode(searchKeyword, "UTF-8").replace("+", "%20"))
+                    }
                     if (recommend)
                         append("&recommend=1")
                     if (notice)

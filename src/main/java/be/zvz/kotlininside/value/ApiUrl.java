@@ -11,6 +11,7 @@ public final class ApiUrl {
         public static final String READ = APP_API + "gall_view_new.php";
         public static final String WRITE = "https://upload.dcinside.com/_app_write_api.php";
         public static final String DELETE = APP_API + "gall_del.php";
+        public static final String MODIFY = APP_API + "gall_modify.php";
 
         public static final String UPVOTE = APP_API + "_recommend_up.php";
         public static final String DOWNVOTE = APP_API + "_recommend_down.php";
