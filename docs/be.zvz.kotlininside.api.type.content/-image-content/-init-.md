@@ -7,3 +7,4 @@ title: ImageContent.<init> -
 # &lt;init&gt;
 
 `ImageContent(file: File)`
+`ImageContent(stream: InputStream)`

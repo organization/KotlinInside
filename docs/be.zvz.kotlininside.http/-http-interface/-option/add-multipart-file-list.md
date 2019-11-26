@@ -6,13 +6,13 @@ title: HttpInterface.Option.addMultipartFileList -
 
 # addMultipartFileList
 
-`fun addMultipartFileList(key: String!, value: MutableList<File!>!): Option!`
+`fun addMultipartFileList(key: String!, value: MutableList<InputStream!>!): Option!`
 
 ### Parameters
 
 `key` - String!: 매개변수 Key
 
-`value` - MutableList&lt;File!&gt;!: 매개변수들 Value
+`value` - MutableList&lt;InputStream!&gt;!: 매개변수들 Value
 
 **Return**
 Option!: this

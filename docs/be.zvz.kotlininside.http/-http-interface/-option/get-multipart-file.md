@@ -6,4 +6,4 @@ title: HttpInterface.Option.getMultipartFile -
 
 # getMultipartFile
 
-`fun getMultipartFile(): MutableMap<String!, File!>!`
+`fun getMultipartFile(): MutableMap<String!, InputStream!>!`

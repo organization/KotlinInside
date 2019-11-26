@@ -41,6 +41,11 @@ title: alltypes -
 
 |
 
+##### [be.zvz.kotlininside.api.article.ArticleModify](../be.zvz.kotlininside.api.article/-article-modify/index.html)
+
+
+|
+
 ##### [be.zvz.kotlininside.api.article.ArticleRead](../be.zvz.kotlininside.api.article/-article-read/index.html)
 
 

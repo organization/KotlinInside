@@ -10,9 +10,9 @@ title: ImageContent -
 
 ### Constructors
 
-| [&lt;init&gt;](-init-.html) | `ImageContent(file: File)` |
+| [&lt;init&gt;](-init-.html) | `ImageContent(file: File)`<br>`ImageContent(stream: InputStream)` |
 
 ### Properties
 
-| [file](file.html) | `val file: File` |
+| [stream](stream.html) | `val stream: InputStream` |
 

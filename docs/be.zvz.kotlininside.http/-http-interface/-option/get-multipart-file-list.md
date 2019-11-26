@@ -6,4 +6,4 @@ title: HttpInterface.Option.getMultipartFileList -
 
 # getMultipartFileList
 
-`fun getMultipartFileList(): MutableMap<String!, MutableList<File!>!>!`
+`fun getMultipartFileList(): MutableMap<String!, MutableList<InputStream!>!>!`

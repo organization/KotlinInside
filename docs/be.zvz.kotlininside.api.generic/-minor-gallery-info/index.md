@@ -17,10 +17,6 @@ title: MinorGalleryInfo -
 
 | [&lt;init&gt;](-init-.html) | `MinorGalleryInfo(gallId: String)` |
 
-### Properties
-
-| [gallId](gall-id.html) | `val gallId: String` |
-
 ### Functions
 
 | [get](get.html) | 갤러리 정보를 받아옵니다.`fun get(): InfoResult` |

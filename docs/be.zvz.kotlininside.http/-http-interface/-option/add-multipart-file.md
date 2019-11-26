@@ -6,13 +6,13 @@ title: HttpInterface.Option.addMultipartFile -
 
 # addMultipartFile
 
-`fun addMultipartFile(key: String!, value: File!): Option!`
+`fun addMultipartFile(key: String!, value: InputStream!): Option!`
 
 ### Parameters
 
 `key` - String!: 매개변수 Key
 
-`value` - File!: 매개변수 Value
+`value` - InputStream!: 매개변수 Value
 
 **Return**
 Option!: this
