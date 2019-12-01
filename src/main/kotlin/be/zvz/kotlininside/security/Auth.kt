@@ -17,11 +17,9 @@ import org.apache.commons.codec.digest.DigestUtils
 import org.apache.commons.lang3.time.FastDateFormat
 import java.util.*
 
+
 class Auth {
     private val seoulTimeZone = TimeZone.getTimeZone("Asia/Seoul")
-    private val date1001 = Date(1569855600L * 1000)
-    private val date1028 = Date(1572188400L * 1000)
-    private val dayOfWeekFormat = FastDateFormat.getInstance("u", seoulTimeZone, Locale.US)
     private val refreshDateFormat = FastDateFormat.getInstance("yyyyMMddHH", seoulTimeZone)
     private lateinit var time: String
     private lateinit var formattedTime: String
@@ -65,22 +63,32 @@ class Auth {
         }
     }
 
-    private fun dayOfWeekZero(date: String): String {
-        return when (date) {
-            "7" -> "0"
-            else -> date
+    private fun getDayOfWeekMonday(day: Int): Int {
+        return when (day) {
+            Calendar.MONDAY -> 1
+            Calendar.TUESDAY -> 2
+            Calendar.WEDNESDAY -> 3
+            Calendar.THURSDAY -> 4
+            Calendar.FRIDAY -> 5
+            Calendar.SATURDAY -> 6
+            Calendar.SUNDAY -> 7
+            else -> 1
         }
     }
 
-    //TODO: 성능 문제 - 수정 필요
-    //TODO: E 다음의 숫자 (30, 31, 32) 분석 필요
     /**
      *
-     * @return [java.lang.String] Tue329262248112611 형식의 날짜 문자열을 반환합니다.
+     * @return [java.lang.String] Fri332295548112911 형식의 날짜 문자열을 반환합니다.
      */
     private fun dateToString(date: Date): String {
-        val dayOfWeek = dayOfWeekFormat.format(date)
-        return FastDateFormat.getInstance("E32${(date.time - date1028.time) / DAY}d$dayOfWeek${dayOfWeekZero(dayOfWeek)}4${((date.time - date1001.time + DAY) / DAY) / 7}MMddMM", seoulTimeZone, Locale.US).format(date)
+        val calendar = Calendar.getInstance()
+        calendar.time = date
+
+        val dayOfYear = calendar[Calendar.DAY_OF_YEAR]
+        val dayOfWeek = calendar[Calendar.DAY_OF_WEEK]
+        val weekOfYear = calendar[Calendar.WEEK_OF_YEAR]
+
+        return FastDateFormat.getInstance("E${dayOfYear - 1}d${getDayOfWeekMonday(dayOfWeek)}${dayOfWeek - 1}${weekOfYear - 1}MMddMM", seoulTimeZone, Locale.US).format(date)
     }
 
     /**
@@ -106,7 +114,7 @@ class Auth {
             return DigestUtils.sha256Hex("dcArdchk_$time")
         }
 
-        // 디시인사이드 2019/10/31 변경점 - Thu303314444103110 형식으로 변경됨
+        // 디시인사이드 2019/10/31 변경점 - Fri332295548112911 형식으로 변경됨
         // 예외가 발생했거나, 값이 null이어서 time을 제대로 설정하지 못한 경우
         formattedTime = tempFormattedTime
         time = dateToString(now)
@@ -117,13 +125,14 @@ class Auth {
      * 캐시된 app_id를 얻어오는 메소드입니다.
      * @return [java.lang.String] app_id를 반환합니다.
      */
-    fun getAppId(): String {
-        return when (val hashedAppKey = generateHashedAppKey()) {
-            KotlinInside.getInstance().app.token -> KotlinInside.getInstance().app.id
-            else -> {
-                KotlinInside.getInstance().app = App(hashedAppKey, fetchAppId(hashedAppKey))
-                KotlinInside.getInstance().app.id
-            }
+    fun getAppId(): String = when (val hashedAppKey = generateHashedAppKey()) {
+        KotlinInside.getInstance().app.token -> KotlinInside.getInstance().app.id
+        else -> {
+            KotlinInside.getInstance().app = App(
+                    token = hashedAppKey,
+                    id = fetchAppId(hashedAppKey)
+            )
+            KotlinInside.getInstance().app.id
         }
     }
 
@@ -167,10 +176,10 @@ class Auth {
             val json = KotlinInside.getInstance().httpInterface.post(ApiUrl.Auth.LOGIN, option)!!.index(0)
 
             val detail = SessionDetail(
-                json.get("user_id").text(),
-                json.get("user_no").text(),
-                json.get("name").text(),
-                json.get("stype").text()
+                    userId = json.get("user_id").text(),
+                    userNo = json.get("user_no").text(),
+                    name = json.get("name").text(),
+                    stype = json.get("stype").text()
             )
 
             val loginUser = when (detail.stype) {
@@ -189,9 +198,5 @@ class Auth {
         } else {
             return Session(user, null)
         }
-    }
-
-    companion object {
-        private const val DAY = 24 * 60 * 60 * 1000
     }
 }
