@@ -81,14 +81,14 @@ class Auth {
      * @return [java.lang.String] Fri332295548112911 형식의 날짜 문자열을 반환합니다.
      */
     private fun dateToString(date: Date): String {
-        val calendar = Calendar.getInstance()
+        val calendar = Calendar.getInstance(seoulTimeZone, Locale.US)
         calendar.time = date
 
         val dayOfYear = calendar[Calendar.DAY_OF_YEAR]
         val dayOfWeek = calendar[Calendar.DAY_OF_WEEK]
         val weekOfYear = calendar[Calendar.WEEK_OF_YEAR]
 
-        return FastDateFormat.getInstance("E${dayOfYear - 1}d${getDayOfWeekMonday(dayOfWeek)}${dayOfWeek - 1}${weekOfYear - 1}MMddMM", seoulTimeZone, Locale.US).format(date)
+        return FastDateFormat.getInstance("E${dayOfYear - 1}d${getDayOfWeekMonday(dayOfWeek)}${dayOfWeek - 1}${weekOfYear}MMddMM", seoulTimeZone, Locale.US).format(date)
     }
 
     /**
