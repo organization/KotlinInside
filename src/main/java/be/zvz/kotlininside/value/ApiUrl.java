@@ -27,6 +27,10 @@ public final class ApiUrl {
         public static final String READ = APP_API + "comment_new.php";
     }
 
+    public static final class DCCon {
+        public static final String DCCON = APP_API + "dccon.php";
+    }
+
     public static final class Gallery {
         public static final String MINOR_INFO = APP_API + "minor_info";
         public static final String MINOR_MANAGEMENT = "https://gall.dcinside.com/mgallery/management/mobile";

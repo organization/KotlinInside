@@ -52,22 +52,22 @@ class ArticleWrite internal constructor(
                 .addMultipartParameter("id", gallId)
                 .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
                 .addMultipartParameter("mode", mode)
-            .addMultipartParameter("client_token", fcmToken)
-            .addMultipartParameter("subject", URLEncoder.encode(article.subject, "UTF-8"))
+                .addMultipartParameter("client_token", fcmToken)
+                .addMultipartParameter("subject", URLEncoder.encode(article.subject, "UTF-8"))
 
         article.headText?.let {
             option
-                .addMultipartParameter("head_name", it.name)
-                .addMultipartParameter("head_no", it.identifier.toString())
+                    .addMultipartParameter("head_name", it.name)
+                    .addMultipartParameter("head_no", it.identifier.toString())
         }
 
         if (session.user is Anonymous) {
             option
-                .addMultipartParameter("name", URLEncoder.encode(session.user.id, "UTF-8"))
-                .addMultipartParameter("password", URLEncoder.encode(session.user.password, "UTF-8"))
+                    .addMultipartParameter("name", URLEncoder.encode(session.user.id, "UTF-8"))
+                    .addMultipartParameter("password", URLEncoder.encode(session.user.password, "UTF-8"))
         } else {
             option
-                .addMultipartParameter("user_id", session.detail!!.userId)
+                    .addMultipartParameter("user_id", session.detail!!.userId)
         }
 
         var imageCount = 0
@@ -98,8 +98,8 @@ class ArticleWrite internal constructor(
                     id = json.get("id").text()
             )
             else -> WriteResult(
-                result = result,
-                cause = json.get("cause").text()
+                    result = result,
+                    cause = json.get("cause").text()
             )
         }
     }

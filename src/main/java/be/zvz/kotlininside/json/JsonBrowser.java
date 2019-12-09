@@ -46,6 +46,35 @@ public class JsonBrowser {
     }
 
     /**
+     * Parse from string.
+     *
+     * @param json The JSON object as a string
+     * @return JsonBrowser instance for navigating in the result
+     * @throws IOException When parsing the JSON failed
+     */
+    public static JsonBrowser parse(String json) throws IOException {
+        return new JsonBrowser(mapper.readTree(json));
+    }
+
+    /**
+     * Parse from string.
+     *
+     * @param stream The JSON object as a stream
+     * @return JsonBrowser instance for navigating in the result
+     * @throws IOException When parsing the JSON failed
+     */
+    public static JsonBrowser parse(InputStream stream) throws IOException {
+        return new JsonBrowser(mapper.readTree(stream));
+    }
+
+    private static ObjectMapper setupMapper() {
+        JsonFactory jsonFactory = new JsonFactory();
+        jsonFactory.enable(JsonParser.Feature.ALLOW_COMMENTS);
+        jsonFactory.enable(JsonParser.Feature.ALLOW_UNQUOTED_FIELD_NAMES);
+        return new ObjectMapper(jsonFactory);
+    }
+
+    /**
      * @return True if the value represents a list.
      */
     public boolean isList() {
@@ -149,7 +178,8 @@ public class JsonBrowser {
 
     public <K, V> Map<K, V> toMap() {
         try {
-            return mapper.convertValue(node, new TypeReference<Map<K, V>>() {});
+            return mapper.convertValue(node, new TypeReference<Map<K, V>>() {
+            });
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -191,35 +221,6 @@ public class JsonBrowser {
      */
     public boolean isNull() {
         return node == null || node.isNull();
-    }
-
-    /**
-     * Parse from string.
-     *
-     * @param json The JSON object as a string
-     * @return JsonBrowser instance for navigating in the result
-     * @throws IOException When parsing the JSON failed
-     */
-    public static JsonBrowser parse(String json) throws IOException {
-        return new JsonBrowser(mapper.readTree(json));
-    }
-
-    /**
-     * Parse from string.
-     *
-     * @param stream The JSON object as a stream
-     * @return JsonBrowser instance for navigating in the result
-     * @throws IOException When parsing the JSON failed
-     */
-    public static JsonBrowser parse(InputStream stream) throws IOException {
-        return new JsonBrowser(mapper.readTree(stream));
-    }
-
-    private static ObjectMapper setupMapper() {
-        JsonFactory jsonFactory = new JsonFactory();
-        jsonFactory.enable(JsonParser.Feature.ALLOW_COMMENTS);
-        jsonFactory.enable(JsonParser.Feature.ALLOW_UNQUOTED_FIELD_NAMES);
-        return new ObjectMapper(jsonFactory);
     }
 
     @Override

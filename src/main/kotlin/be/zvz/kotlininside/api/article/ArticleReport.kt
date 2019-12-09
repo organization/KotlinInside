@@ -7,9 +7,9 @@ import be.zvz.kotlininside.session.user.Anonymous
 import be.zvz.kotlininside.value.ApiUrl
 
 class ArticleReport(
-    private val gallId: String,
-    private val articleId: Int,
-    private val session: Session
+        private val gallId: String,
+        private val articleId: Int,
+        private val session: Session
 ) {
     /**
      * 글 신고 링크를 반환합니다.

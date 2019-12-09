@@ -18,17 +18,6 @@ public class DefaultHttpClient implements HttpInterface {
     @Nullable
     private final Proxy proxy;
 
-    public static class Proxy {
-        Proxy(@NotNull String ip, int port) {
-            this.ip = ip;
-            this.port = port;
-        }
-
-        @NotNull
-        String ip;
-        int port;
-    }
-
     /**
      * DefaultHttpClient의 constructor입니다.
      */
@@ -340,5 +329,16 @@ public class DefaultHttpClient implements HttpInterface {
         }
 
         return fileName;
+    }
+
+    public static class Proxy {
+        @NotNull
+        String ip;
+        int port;
+
+        Proxy(@NotNull String ip, int port) {
+            this.ip = ip;
+            this.port = port;
+        }
     }
 }

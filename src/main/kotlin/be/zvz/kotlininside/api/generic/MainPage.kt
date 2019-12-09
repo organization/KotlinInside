@@ -10,16 +10,16 @@ class MainPage {
     private lateinit var json: JsonBrowser
 
     data class Article(
-        val gallId: String,
-        val articleId: Int,
-        val gallName: String? = null,
-        val title: String,
-        val thumbnail: String
+            val gallId: String,
+            val articleId: Int,
+            val gallName: String? = null,
+            val title: String,
+            val thumbnail: String
     )
 
     data class NewGallery(
-        val id: String,
-        val title: String
+            val id: String,
+            val title: String
     )
 
     /**

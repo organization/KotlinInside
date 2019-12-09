@@ -24,7 +24,8 @@ class KotlinInsideTest {
     private var articleId = 0
 
     @Order(1)
-    @Test fun initKotlinInside() {
+    @Test
+    fun initKotlinInside() {
         KotlinInside.createInstance(
                 Anonymous("ㅇㅇ", "1234"),
                 DefaultHttpClient(true, true)
@@ -32,7 +33,8 @@ class KotlinInsideTest {
     }
 
     @Order(2)
-    @Test fun testArticleList() {
+    @Test
+    fun testArticleList() {
         val articleList = ArticleList("hit", 1)
         articleList.request()
 
@@ -48,7 +50,8 @@ class KotlinInsideTest {
     }
 
     @Order(3)
-    @Test fun testArticleRead() {
+    @Test
+    fun testArticleRead() {
         val articleRead = ArticleRead("hit", 1)
         articleRead.request()
 
@@ -57,7 +60,8 @@ class KotlinInsideTest {
     }
 
     @Order(4)
-    @Test fun testArticleWrite() {
+    @Test
+    fun testArticleWrite() {
         val articleWrite = ArticleWrite(
                 gallId = "github",
                 article = Article(
@@ -78,7 +82,7 @@ class KotlinInsideTest {
                                 name = "일반",
                                 level = 0,
                                 selected = false
-                         ) //옵션입니다. 없어도 글 작성됩니다.
+                        ) //옵션입니다. 없어도 글 작성됩니다.
                 ),
                 session = KotlinInside.getInstance().session
         )
@@ -94,7 +98,8 @@ class KotlinInsideTest {
     }
 
     @Order(5)
-    @Test fun testArticleVote() {
+    @Test
+    fun testArticleVote() {
         val articleVote = ArticleVote(
                 gallId = "github",
                 articleId = articleId,
@@ -111,7 +116,8 @@ class KotlinInsideTest {
     }
 
     @Order(6)
-    @Test fun testArticleDelete() {
+    @Test
+    fun testArticleDelete() {
         val articleDelete = ArticleDelete(
                 gallId = "github",
                 articleId = articleId,

@@ -1,31 +1,35 @@
 package be.zvz.kotlininside.api.comment
 
 import be.zvz.kotlininside.KotlinInside
+import be.zvz.kotlininside.api.type.DCCon
+import be.zvz.kotlininside.api.type.comment.Comment
+import be.zvz.kotlininside.api.type.comment.DCConComment
+import be.zvz.kotlininside.api.type.comment.GenericComment
 import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.http.Request
 import be.zvz.kotlininside.value.ApiUrl
 
 class CommentRead(
-    private val gallId: String,
-    private val articleId: Int,
-    private val rePage: Int
+        private val gallId: String,
+        private val articleId: Int,
+        private val rePage: Int
 ) {
     data class ReadResult(
-        val totalComment: Int,
-        val totalPage: Int,
-        val rePage: Int,
-        val commentList: List<CommentData>
+            val totalComment: Int,
+            val totalPage: Int,
+            val rePage: Int,
+            val commentList: List<CommentData>
     )
 
     data class CommentData(
-        val memberIcon: Int,
-        val ipData: String,
-        val gallerCon: String?,
-        val name: String,
-        val userId: String,
-        val content: String,
-        val identifier: Int,
-        val dateTime: String
+            val memberIcon: Int,
+            val ipData: String,
+            val gallerCon: String?,
+            val name: String,
+            val userId: String,
+            val content: Comment,
+            val identifier: Int,
+            val dateTime: String
     )
 
     /**
@@ -39,30 +43,47 @@ class CommentRead(
         val json = KotlinInside.getInstance().httpInterface.get(Request.redirectUrl(url), Request.getDefaultOption())!!.index(0)
 
         return ReadResult(
-            totalComment = json.get("total_comment").`as`(Int::class.java),
-            totalPage = json.get("total_page").`as`(Int::class.java),
-            rePage = json.get("re_page").`as`(Int::class.java),
-            commentList = mutableListOf<CommentData>().apply {
-                json.get("comment_list").values().forEach {
-                    add(
-                            CommentData(
-                                    memberIcon = it.get("member_icon").`as`(Int::class.java),
-                                    ipData = it.get("ipData").text(),
-                                    gallerCon = it.safeGet("gallercon").run {
-                                        when {
-                                            isNull -> null
-                                            else -> text()
-                                        }
-                            },
-                            name = it.get("name").text(),
-                            userId = it.get("user_id").text(),
-                            content = it.get("comment_memo").text(),
-                            identifier = it.get("comment_no").`as`(Int::class.java),
-                            dateTime = it.get("date_time").text()
+                totalComment = json.get("total_comment").`as`(Int::class.java),
+                totalPage = json.get("total_page").`as`(Int::class.java),
+                rePage = json.get("re_page").`as`(Int::class.java),
+                commentList = mutableListOf<CommentData>().apply {
+                    json.get("comment_list").values().forEach {
+                        add(
+                                CommentData(
+                                        memberIcon = it.get("member_icon").`as`(Int::class.java),
+                                        ipData = it.get("ipData").text(),
+                                        gallerCon = it.safeGet("gallercon").run {
+                                            when {
+                                                isNull -> null
+                                                else -> text()
+                                            }
+                                        },
+                                        name = it.get("name").text(),
+                                        userId = it.get("user_id").text(),
+                                        content = it.safeGet("dccon").run {
+                                            when {
+                                                isNull -> {
+                                                    GenericComment(
+                                                            memo = it.get("comment_memo").text()
+                                                    )
+                                                }
+                                                else -> {
+                                                    DCConComment(
+                                                            dcCon = DCCon(
+                                                                    imgLink = text(),
+                                                                    memo = it.get("comment_memo").text(),
+                                                                    detailIndex = it.get("dccon_detail_idx").`as`(Int::class.java)
+                                                            )
+                                                    )
+                                                }
+                                            }
+                                        },
+                                        identifier = it.get("comment_no").`as`(Int::class.java),
+                                        dateTime = it.get("date_time").text()
+                                )
                         )
-                    )
+                    }
                 }
-            }
         )
 
     }

@@ -10,11 +10,10 @@ import static be.zvz.kotlininside.migbase64.Dictionary.CA;
 /**
  * Base64 for InputStream<br/> Licence = BSD
  *
- * @see Base64
  * @author shamilbi shamilbi@users.sourceforge.net
+ * @see Base64
  */
-public class Base64IO
-{
+public class Base64IO {
 
     private static final int _8_BIT = 0xff;
 
@@ -29,15 +28,13 @@ public class Base64IO
      *
      * @param in
      * @param out
-     * @param lineSep
-     *            Optional "\r\n" after 76 characters, unless end of file.<br>
-     *            No line separator will be in breach of RFC 2045 which
-     *            specifies max 76 per line but will be a little faster.
+     * @param lineSep Optional "\r\n" after 76 characters, unless end of file.<br>
+     *                No line separator will be in breach of RFC 2045 which
+     *                specifies max 76 per line but will be a little faster.
      * @throws IOException
      */
     public final static void encode(InputStream in, OutputStream out,
-                                    boolean lineSep) throws IOException
-    {
+                                    boolean lineSep) throws IOException {
         // must be inBuf.length % 3 == 0
         final byte[] inBuf = new byte[1024 * 32 * 3];
         final byte[] outBuf = new byte[4 * 19 + 2];
@@ -48,21 +45,17 @@ public class Base64IO
         boolean needsRn = false;
         int cc = 0;
 
-        while (true)
-        {
+        while (true) {
             // read full buffer
             final int read = in.read(inBuf, inOff, inBuf.length - inOff);
 
-            if (read == -1)
-            {
+            if (read == -1) {
                 // last bytes
                 left = inOff % 3; // 0 - 2.
                 eLen = inOff - left; // Length of even 24-bits.
-            } else
-            {
+            } else {
                 inOff += read;
-                if (inOff != inBuf.length)
-                {
+                if (inOff != inBuf.length) {
                     continue;
                 }
             }
@@ -72,10 +65,8 @@ public class Base64IO
             // encode buffer
             // Encode even 24-bits
 
-            for (int s = 0/* , d = 0, cc = 0 */; s < eLen;)
-            {
-                if (needsRn)
-                {
+            for (int s = 0/* , d = 0, cc = 0 */; s < eLen; ) {
+                if (needsRn) {
                     outBuf[outOff++] = '\r';
                     outBuf[outOff++] = '\n';
                     needsRn = false;
@@ -93,15 +84,13 @@ public class Base64IO
                 outBuf[--outOff2] = CA[(i >>>= 6) & _6_BIT];
                 outBuf[--outOff2] = CA[(i >>>= 6) & _6_BIT];
 
-                if (++cc == 19 /* && d < dLen - 2 */)
-                {
+                if (++cc == 19 /* && d < dLen - 2 */) {
                     cc = 0;
                     out.write(outBuf, 0, outOff);
                     outOff = 0;
 
                     // Add optional line separator
-                    if (lineSep)
-                    {
+                    if (lineSep) {
                         needsRn = true;
                     }
                 }
@@ -109,8 +98,7 @@ public class Base64IO
             out.write(outBuf, 0, outOff);
 
             // Pad and encode last bits if source isn't an even 24 bits.
-            if (left > 0)
-            {
+            if (left > 0) {
                 // Prepare the int
                 int i = ((inBuf[eLen] & _8_BIT) << 10)
                         | (left == 2 ? ((inBuf[inOff - 1] & _8_BIT) << 2) : 0);
@@ -123,8 +111,7 @@ public class Base64IO
                 out.write(outBuf, 0, 4);
             }
 
-            if (read == -1)
-            {
+            if (read == -1) {
                 break;
             }
 

@@ -10,8 +10,8 @@ import com.vladsch.flexmark.util.data.MutableDataSet
 class StringUtil {
     companion object {
         private val OPTIONS = MutableDataSet()
-            .set(Parser.EXTENSIONS, listOf(TablesExtension.create(), StrikethroughExtension.create(), TaskListExtension.create()))
-            .toImmutable()
+                .set(Parser.EXTENSIONS, listOf(TablesExtension.create(), StrikethroughExtension.create(), TaskListExtension.create()))
+                .toImmutable()
 
         private val MD_PARSER = Parser.builder(OPTIONS).build()
         private val HTML_RENDERER = HtmlRenderer.builder(OPTIONS).escapeHtml(true).build()

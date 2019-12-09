@@ -170,8 +170,8 @@ class Auth {
     fun login(user: User): Session {
         if (user !is Anonymous) {
             val option = HttpInterface.Option()
-                .addBodyParameter("user_id", user.id)
-                .addBodyParameter("user_pw", user.password)
+                    .addBodyParameter("user_id", user.id)
+                    .addBodyParameter("user_pw", user.password)
 
             val json = KotlinInside.getInstance().httpInterface.post(ApiUrl.Auth.LOGIN, option)!!.index(0)
 

@@ -8,14 +8,14 @@ import be.zvz.kotlininside.session.user.Anonymous
 import be.zvz.kotlininside.value.ApiUrl
 
 class CommentDelete(
-    private val gallId: String,
-    private val articleId: Int,
-    private val commentId: Int,
-    private val session: Session
+        private val gallId: String,
+        private val articleId: Int,
+        private val commentId: Int,
+        private val session: Session
 ) {
     data class DeleteResult(
-        val result: Boolean,
-        val cause: String? = null
+            val result: Boolean,
+            val cause: String? = null
     )
 
     /**
@@ -25,20 +25,20 @@ class CommentDelete(
     @Throws(HttpException::class)
     fun delete(): DeleteResult {
         val option = Request.getDefaultOption()
-            .addMultipartParameter("id", gallId)
-            .addMultipartParameter("no", articleId.toString())
-            .addMultipartParameter("comment_no", commentId.toString())
-            .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
-            .addMultipartParameter("mode", "comment_del")
+                .addMultipartParameter("id", gallId)
+                .addMultipartParameter("no", articleId.toString())
+                .addMultipartParameter("comment_no", commentId.toString())
+                .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
+                .addMultipartParameter("mode", "comment_del")
 
         if (session.user is Anonymous) {
             option
-                .addMultipartParameter("comment_pw", session.user.password)
-                .addMultipartParameter("board_id", "")
+                    .addMultipartParameter("comment_pw", session.user.password)
+                    .addMultipartParameter("board_id", "")
         } else {
             option
-                .addMultipartParameter("user_id", session.detail!!.userId)
-                .addMultipartParameter("board_id", session.user.id)
+                    .addMultipartParameter("user_id", session.detail!!.userId)
+                    .addMultipartParameter("board_id", session.user.id)
         }
 
         val json = KotlinInside.getInstance().httpInterface.upload(ApiUrl.Comment.DELETE, option)!!.index(0)
@@ -47,11 +47,11 @@ class CommentDelete(
 
         return when {
             result -> DeleteResult(
-                result = result
+                    result = result
             )
             else -> DeleteResult(
-                result = result,
-                cause = json.get("cause").text()
+                    result = result,
+                    cause = json.get("cause").text()
             )
         }
     }
