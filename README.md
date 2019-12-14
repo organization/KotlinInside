@@ -7,7 +7,7 @@
 ### Gradle
 
 ```
-compile 'be.zvz:KotlinInside:1.6.2'
+compile 'be.zvz:KotlinInside:1.7.0'
 ```
 
 ### Maven
@@ -16,7 +16,7 @@ compile 'be.zvz:KotlinInside:1.6.2'
 <dependency>
   <groupId>be.zvz</groupId>
   <artifactId>KotlinInside</artifactId>
-  <version>1.6.2</version>
+  <version>1.7.0</version>
   <type>pom</type>
 </dependency>
 ```
@@ -25,7 +25,7 @@ compile 'be.zvz:KotlinInside:1.6.2'
 
 - **Java 1.7 (Java 7)** 이상 필요
 - **Kotlin 1.3+** 권장
-- Kotlin을 **몰라도** Java를 사용할 줄 아신다면 라이브러리를 **사용하실 수 있습니다**.
+- Kotlin을 **몰라도** Java를 사용할 줄 아신다면, 라이브러리를 **사용하실 수 있습니다**.
 
 ### 라이브러리 컴파일
 
