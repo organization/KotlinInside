@@ -3,7 +3,7 @@ package be.zvz.kotlininside.api.comment
 import be.zvz.kotlininside.KotlinInside
 import be.zvz.kotlininside.api.type.comment.Comment
 import be.zvz.kotlininside.api.type.comment.DCConComment
-import be.zvz.kotlininside.api.type.comment.GenericComment
+import be.zvz.kotlininside.api.type.comment.StringComment
 import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.http.HttpInterface
 import be.zvz.kotlininside.http.Request
@@ -11,13 +11,14 @@ import be.zvz.kotlininside.json.JsonBrowser
 import be.zvz.kotlininside.session.Session
 import be.zvz.kotlininside.session.user.Anonymous
 import be.zvz.kotlininside.value.ApiUrl
+import be.zvz.kotlininside.value.Const
 
 class CommentWrite @JvmOverloads constructor(
         private val gallId: String,
         private val articleId: Int,
         private val comment: Comment,
         private val session: Session,
-        private val fcmToken: String = "N"
+        private val fcmToken: String = Const.DEFAULT_FCM_TOKEN
 ) {
     data class WriteResult(
             val result: Boolean,
@@ -124,7 +125,7 @@ class CommentWrite @JvmOverloads constructor(
 
     private fun addCommentMemo(comment: Comment, option: HttpInterface.Option) {
         when (comment) {
-            is GenericComment -> option.addMultipartParameter("comment_memo", comment.memo)
+            is StringComment -> option.addMultipartParameter("comment_memo", comment.memo)
             is DCConComment -> {
                 val dcConRequestOption = Request.getDefaultOption()
 

@@ -12,6 +12,7 @@ import be.zvz.kotlininside.session.Session
 import be.zvz.kotlininside.session.user.Anonymous
 import be.zvz.kotlininside.utils.StringUtil
 import be.zvz.kotlininside.value.ApiUrl
+import be.zvz.kotlininside.value.Const
 import java.net.URLEncoder
 
 class ArticleWrite internal constructor(
@@ -19,14 +20,14 @@ class ArticleWrite internal constructor(
         private val article: Article,
         private val session: Session,
         private val mode: String,
-        private val fcmToken: String = "N" // (Long.MIN_VALUE..Long.MAX_VALUE).random().toString() //Generate random FCM token
+        private val fcmToken: String = Const.DEFAULT_FCM_TOKEN
 ) {
     @JvmOverloads
     constructor(
             gallId: String,
             article: Article,
             session: Session,
-            fcmToken: String = "N"
+            fcmToken: String = Const.DEFAULT_FCM_TOKEN
     ) : this(
             gallId = gallId,
             article = article,

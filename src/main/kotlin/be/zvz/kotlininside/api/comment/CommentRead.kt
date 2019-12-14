@@ -4,7 +4,7 @@ import be.zvz.kotlininside.KotlinInside
 import be.zvz.kotlininside.api.type.DCCon
 import be.zvz.kotlininside.api.type.comment.Comment
 import be.zvz.kotlininside.api.type.comment.DCConComment
-import be.zvz.kotlininside.api.type.comment.GenericComment
+import be.zvz.kotlininside.api.type.comment.StringComment
 import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.http.Request
 import be.zvz.kotlininside.value.ApiUrl
@@ -63,7 +63,7 @@ class CommentRead(
                                         content = it.safeGet("dccon").run {
                                             when {
                                                 isNull -> {
-                                                    GenericComment(
+                                                    StringComment(
                                                             memo = it.get("comment_memo").text()
                                                     )
                                                 }

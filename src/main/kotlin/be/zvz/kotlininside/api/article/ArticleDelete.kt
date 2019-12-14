@@ -6,15 +6,19 @@ import be.zvz.kotlininside.http.Request
 import be.zvz.kotlininside.session.Session
 import be.zvz.kotlininside.session.user.Anonymous
 import be.zvz.kotlininside.value.ApiUrl
+import be.zvz.kotlininside.value.Const
 
-class ArticleDelete(
+class ArticleDelete @JvmOverloads constructor(
         private val gallId: String,
         private val articleId: Int,
-        private val session: Session
+        private val session: Session,
+        private val fcmToken: String = Const.DEFAULT_FCM_TOKEN
 ) {
     data class DeleteResult(
             val result: Boolean,
-            val cause: String? = null
+            val cause: String? = null,
+            val message: String? = null,
+            val status: Int? = null
     )
 
     /**
@@ -25,9 +29,10 @@ class ArticleDelete(
     fun delete(): DeleteResult {
         val option = Request.getDefaultOption()
                 .addMultipartParameter("id", gallId)
-                .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
+                .addMultipartParameter("client_token", fcmToken)
                 .addMultipartParameter("no", articleId.toString())
                 .addMultipartParameter("mode", "board_del")
+                .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
 
         if (session.user is Anonymous) {
             option
@@ -42,16 +47,29 @@ class ArticleDelete(
         if (json.isList)
             json = json.index(0)
 
-        val result = json.get("result").`as`(Boolean::class.java)
+        json.safeGet("result").run {
+            when {
+                isNull -> { // 올바른 client_token이 전달되지 않았을 경우
+                    return DeleteResult(
+                            result = false,
+                            message = json.get("message").text(),
+                            status = json.get("status").`as`(Int::class.java)
+                    )
+                }
+                else -> {
+                    val result = `as`(Boolean::class.java)
 
-        return when {
-            result -> DeleteResult(
-                    result = result
-            )
-            else -> DeleteResult(
-                    result = result,
-                    cause = json.get("cause").text()
-            )
+                    return when {
+                        result -> DeleteResult(
+                                result = result
+                        )
+                        else -> DeleteResult(
+                                result = result,
+                                cause = json.get("cause").text()
+                        )
+                    }
+                }
+            }
         }
     }
 }

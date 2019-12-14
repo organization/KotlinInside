@@ -1,5 +1,5 @@
 package be.zvz.kotlininside.api.type.comment
 
-data class GenericComment(
+data class StringComment(
         val memo: String
 ) : Comment
