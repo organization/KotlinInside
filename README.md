@@ -6,13 +6,13 @@
 
 ### Gradle
 
-```
+```gradle
 compile 'be.zvz:KotlinInside:1.7.0'
 ```
 
 ### Maven
 
-```
+```xml
 <dependency>
   <groupId>be.zvz</groupId>
   <artifactId>KotlinInside</artifactId>
@@ -25,7 +25,8 @@ compile 'be.zvz:KotlinInside:1.7.0'
 
 - **Java 1.7 (Java 7)** 이상 필요
 - **Kotlin 1.3+** 권장
-- Kotlin을 **몰라도** Java를 사용할 줄 아신다면, 라이브러리를 **사용하실 수 있습니다**.
+- **Android에서 사용 가능**
+- **Java에서도 사용 가능 (타 JVM 계열 언어에서도 사용 가능)**
 
 ### 라이브러리 컴파일
 
@@ -33,7 +34,41 @@ compile 'be.zvz:KotlinInside:1.7.0'
 
 ## 예제
 
-[*테스트 코드*](https://github.com/organization/KotlinInside/blob/master/src/test/kotlin/be/zvz/kotlininside/KotlinInsideTest.kt) 참고
+### Init
+
+```kotlin
+KotlinInside.createInstance(
+        Anonymous("ㅇㅇ", "1234"),
+        DefaultHttpClient(true, true)
+)
+```
+
+### 글 목록 받아오기
+
+```kotlin
+val articleList = ArticleList("hit", 1)
+articleList.request()
+
+val gallList = articleList.getGallList() // 글 목록
+val gallInfo = articleList.getGallInfo() // 갤러리 정보
+
+println(gallInfo)
+gallList.forEach {
+        println(it)
+}
+```
+
+### 글 읽기
+
+```kotlin
+val articleRead = ArticleRead("hit", 1)
+articleRead.request()
+
+println(articleRead.getViewInfo())
+println(articleRead.getViewMain())
+```
+
+### 더 자세한 예제는 [**테스트 코드**](https://github.com/organization/KotlinInside/blob/master/src/test/kotlin/be/zvz/kotlininside/KotlinInsideTest.kt) 참고
 
 ## 이 라이브러리를 사용 중인 프로젝트
 
@@ -41,8 +76,8 @@ compile 'be.zvz:KotlinInside:1.7.0'
 
 ## 도움이 된 라이브러리
 
-- [***GoInside***](https://github.com/geeksbaek/goinside)
-- [***PyInside***](https://github.com/Jeongsj/pyinside)
+- [***goinside***](https://github.com/geeksbaek/goinside)
+- [***pyinside***](https://github.com/Jeongsj/pyinside)
 
 ## 라이선스
 
