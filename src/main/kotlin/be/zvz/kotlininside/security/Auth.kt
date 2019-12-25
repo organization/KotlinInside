@@ -24,6 +24,8 @@ class Auth {
     private lateinit var time: String
     private lateinit var formattedTime: String
 
+    var fcmToken = Const.DEFAULT_FCM_TOKEN
+
     data class AppCheck(
             val result: Boolean,
             val version: String? = null,
@@ -147,9 +149,9 @@ class Auth {
             val option = Request.getDefaultOption()
                     .addMultipartParameter("value_token", hashedAppKey)
                     .addMultipartParameter("signature", Const.DC_APP_SIGNATURE)
-                    .addMultipartParameter("pkg", Const.DC_APP_PACKAGE)
                     .addMultipartParameter("vCode", Const.DC_APP_VERSION_CODE)
                     .addMultipartParameter("vName", Const.DC_APP_VERSION_NAME)
+                    .addMultipartParameter("client_token", fcmToken)
 
             KotlinInside.getInstance().httpInterface.upload(ApiUrl.Auth.APP_ID, option)
         } catch (e: HttpException) {
