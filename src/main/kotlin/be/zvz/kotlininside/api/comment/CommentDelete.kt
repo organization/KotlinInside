@@ -6,12 +6,14 @@ import be.zvz.kotlininside.http.Request
 import be.zvz.kotlininside.session.Session
 import be.zvz.kotlininside.session.user.Anonymous
 import be.zvz.kotlininside.value.ApiUrl
+import be.zvz.kotlininside.value.Const
 
-class CommentDelete(
+class CommentDelete @JvmOverloads constructor(
         private val gallId: String,
         private val articleId: Int,
         private val commentId: Int,
-        private val session: Session
+        private val session: Session,
+        private val fcmToken: String = Const.DEFAULT_FCM_TOKEN
 ) {
     data class DeleteResult(
             val result: Boolean,
@@ -29,6 +31,7 @@ class CommentDelete(
                 .addMultipartParameter("no", articleId.toString())
                 .addMultipartParameter("comment_no", commentId.toString())
                 .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
+                .addMultipartParameter("client_token", fcmToken)
                 .addMultipartParameter("mode", "comment_del")
 
         if (session.user is Anonymous) {

@@ -1,9 +1,0 @@
----
-title: UserType.ANONYMOUS - 
----
-
-[be.zvz.kotlininside.session.user](../index.html) / [UserType](index.html) / [ANONYMOUS](./-a-n-o-n-y-m-o-u-s.html)
-
-# ANONYMOUS
-
-`ANONYMOUS`

@@ -24,7 +24,7 @@ class Auth {
     private lateinit var time: String
     private lateinit var formattedTime: String
 
-    var fcmToken = Const.DEFAULT_FCM_TOKEN
+    var fcmToken: String = Const.DEFAULT_FCM_TOKEN
 
     data class AppCheck(
             val result: Boolean,
