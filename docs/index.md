@@ -1,4 +1,3 @@
 ---
-redirect_from: "/index.html"
-redirect_to: "/-kotlin-inside/index.html"
+redirect_to: "https://organization.github.io/KotlinInside/-kotlin-inside/index.html"
 ---
