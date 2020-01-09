@@ -28,7 +28,7 @@ class MainPage {
      */
     @Throws(HttpException::class)
     fun request() {
-        json = KotlinInside.getInstance().httpInterface.get(Request.redirectUrl(ApiUrl.MainInfo.APP_MAIN), Request.getDefaultOption())!!.index(0)
+        json = KotlinInside.getInstance().httpInterface.get(ApiUrl.MainInfo.APP_MAIN, Request.getDefaultOption())!!.index(0)
     }
 
     /**

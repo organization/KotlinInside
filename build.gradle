@@ -21,7 +21,7 @@ apply plugin: 'org.jetbrains.dokka'
 
 def libName = 'KotlinInside'
 def libDevVersion = ''
-def libVersion = "1.7.3$libDevVersion"
+def libVersion = "1.7.4$libDevVersion"
 def libDesc = 'Unofficial DCInside API written in Kotlin'
 
 group = 'be.zvz'

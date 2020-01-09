@@ -14,6 +14,7 @@ import java.net.URLEncoder
 class ArticleList @JvmOverloads constructor(
         private val gallId: String,
         private val searchKeyword: String,
+        private val searchType: SearchType = SearchType.ALL,
         private val page: Int = 1,
         private val recommend: Boolean = false,
         private val notice: Boolean = false,
@@ -31,12 +32,40 @@ class ArticleList @JvmOverloads constructor(
     ) : this(
             gallId = gallId,
             searchKeyword = "",
+            searchType = SearchType.ALL,
             page = page,
             recommend = recommend,
             notice = notice,
             headId = headId,
             session = session
     )
+
+    constructor(
+            gallId: String,
+            searchKeyword: String,
+            page: Int = 1,
+            recommend: Boolean = false,
+            notice: Boolean = false,
+            headId: Int = 0,
+            session: Session? = null
+    ) : this(
+            gallId = gallId,
+            searchKeyword = searchKeyword,
+            searchType = SearchType.ALL,
+            page = page,
+            recommend = recommend,
+            notice = notice,
+            headId = headId,
+            session = session
+    )
+
+    enum class SearchType(val type: String) {
+        ALL("all"),
+        SUBJECT("subject"),
+        CONTENT("memo"),
+        NAME("name"),
+        SUBJECT_AND_CONTENT("subject_m")
+    }
 
     private lateinit var json: JsonBrowser
 
@@ -85,7 +114,8 @@ class ArticleList @JvmOverloads constructor(
         val url = "${ApiUrl.Article.LIST}?id=$gallId&page=$page&app_id=${KotlinInside.getInstance().auth.getAppId()}" +
                 StringBuilder().apply {
                     if (searchKeyword.isNotEmpty()) {
-                        append("&s_type=all")
+                        append("&s_type=")
+                        append(searchType.type)
                         append("&serVal=").append(URLEncoder.encode(searchKeyword, "UTF-8").replace("+", "%20"))
                     }
                     if (recommend)
