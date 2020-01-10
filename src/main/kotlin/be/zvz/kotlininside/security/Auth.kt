@@ -13,6 +13,7 @@ import be.zvz.kotlininside.session.user.named.DuplicateNamed
 import be.zvz.kotlininside.session.user.named.Named
 import be.zvz.kotlininside.value.ApiUrl
 import be.zvz.kotlininside.value.Const
+import org.apache.commons.codec.binary.Hex
 import org.apache.commons.codec.digest.DigestUtils
 import org.apache.commons.lang3.time.FastDateFormat
 import java.util.*
@@ -107,20 +108,20 @@ class Auth {
                     date?.let {
                         formattedTime = tempFormattedTime
                         time = it
-                        return DigestUtils.sha256Hex("dcArdchk_$time")
+                        return String(Hex.encodeHex(DigestUtils.sha256("dcArdchk_$time")))
                     }
                 }
             } catch (e: Exception) {
             }
         } else {
-            return DigestUtils.sha256Hex("dcArdchk_$time")
+            return String(Hex.encodeHex(DigestUtils.sha256("dcArdchk_$time")))
         }
 
         // 디시인사이드 2019/10/31 변경점 - Fri332295548112911 형식으로 변경됨
         // 예외가 발생했거나, 값이 null이어서 time을 제대로 설정하지 못한 경우
         formattedTime = tempFormattedTime
         time = dateToString(now)
-        return DigestUtils.sha256Hex("dcArdchk_$time")
+        return String(Hex.encodeHex(DigestUtils.sha256("dcArdchk_$time")))
     }
 
     /**
