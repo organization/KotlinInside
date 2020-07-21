@@ -43,14 +43,14 @@ class CommentRead(
         val json = KotlinInside.getInstance().httpInterface.get(Request.redirectUrl(url), Request.getDefaultOption())!!.index(0)
 
         return ReadResult(
-                totalComment = json.get("total_comment").`as`(Int::class.java),
-                totalPage = json.get("total_page").`as`(Int::class.java),
-                rePage = json.get("re_page").`as`(Int::class.java),
+                totalComment = json.get("total_comment").asInteger(),
+                totalPage = json.get("total_page").asInteger(),
+                rePage = json.get("re_page").asInteger(),
                 commentList = mutableListOf<CommentData>().apply {
                     json.get("comment_list").values().forEach {
                         add(
                                 CommentData(
-                                        memberIcon = it.get("member_icon").`as`(Int::class.java),
+                                        memberIcon = it.get("member_icon").asInteger(),
                                         ipData = it.get("ipData").text(),
                                         gallerCon = it.safeGet("gallercon").run {
                                             when {
@@ -72,13 +72,13 @@ class CommentRead(
                                                             dcCon = DCCon(
                                                                     imgLink = text(),
                                                                     memo = it.get("comment_memo").text(),
-                                                                    detailIndex = it.get("dccon_detail_idx").`as`(Int::class.java)
+                                                                    detailIndex = it.get("dccon_detail_idx").asInteger()
                                                             )
                                                     )
                                                 }
                                             }
                                         },
-                                        identifier = it.get("comment_no").`as`(Int::class.java),
+                                        identifier = it.get("comment_no").asInteger(),
                                         dateTime = it.get("date_time").text()
                                 )
                         )

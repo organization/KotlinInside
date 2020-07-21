@@ -176,6 +176,69 @@ public class JsonBrowser {
         }
     }
 
+    public boolean asBoolean() {
+        return asBoolean(false);
+    }
+
+    public boolean asBoolean(boolean defaultValue) {
+        if (node != null) {
+            if (node.isBoolean()) {
+                return node.booleanValue();
+            } else if (node.isTextual()) {
+                switch (node.textValue()) {
+                    case "TRUE":
+                    case "true":
+                        return true;
+                    case "FALSE":
+                    case "false":
+                        return false;
+                }
+            }
+        }
+
+        return defaultValue;
+    }
+
+    public long asLong() {
+        return asLong(0);
+    }
+
+    public long asLong(long defaultValue) {
+        if (node != null) {
+            if (node.isNumber()) {
+                return node.numberValue().longValue();
+            } else if (node.isTextual()) {
+                try {
+                    return Long.parseLong(node.textValue());
+                } catch (NumberFormatException ignored) {
+                    // Fall through to default value.
+                }
+            }
+        }
+
+        return defaultValue;
+    }
+
+    public int asInteger() {
+        return asInteger(0);
+    }
+
+    public int asInteger(int defaultValue) {
+        if (node != null) {
+            if (node.isNumber()) {
+                return node.numberValue().intValue();
+            } else if (node.isTextual()) {
+                try {
+                    return Integer.parseInt(node.textValue());
+                } catch (NumberFormatException ignored) {
+                    // Fall through to default value.
+                }
+            }
+        }
+
+        return defaultValue;
+    }
+
     public <K, V> Map<K, V> toMap() {
         try {
             return mapper.convertValue(node, new TypeReference<Map<K, V>>() {

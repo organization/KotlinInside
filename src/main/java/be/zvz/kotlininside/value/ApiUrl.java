@@ -1,22 +1,25 @@
 package be.zvz.kotlininside.value;
 
 public final class ApiUrl {
+    public static final String PC_WEB = "https://gall.dcinside.com/";
+    public static final String MOBILE_WEB = "http://m.dcinside.com/";
     public static final String APP_API = "https://app.dcinside.com/api/";
     public static final String AUTH_API = "https://dcid.dcinside.com/join/";
     public static final String MAIN_API = "http://json2.dcinside.com/";
+    public static final String UPLOAD = "https://upload.dcinside.com/";
     public static final String REDIRECT = APP_API + "redirect.php";
 
     public static final class Article {
         public static final String LIST = APP_API + "gall_list_new.php";
         public static final String READ = APP_API + "gall_view_new.php";
-        public static final String WRITE = "https://upload.dcinside.com/_app_write_api.php";
+        public static final String WRITE = UPLOAD + "_app_write_api.php";
         public static final String DELETE = APP_API + "gall_del.php";
         public static final String MODIFY = APP_API + "gall_modify.php";
 
         public static final String UPVOTE = APP_API + "_recommend_up.php";
         public static final String DOWNVOTE = APP_API + "_recommend_down.php";
 
-        public static final String REPORT = "http://m.dcinside.com/api/report.php";
+        public static final String REPORT = MOBILE_WEB + "api/report.php";
 
         public static final String HIT_UPVOTE = APP_API + "hit_recommend";
     }
@@ -33,7 +36,7 @@ public final class ApiUrl {
 
     public static final class Gallery {
         public static final String MINOR_INFO = APP_API + "minor_info";
-        public static final String MINOR_MANAGEMENT = "https://gall.dcinside.com/mgallery/management/mobile";
+        public static final String MINOR_MANAGEMENT = PC_WEB + "mgallery/management/mobile";
         public static final String MINOR_MANAGER_REQUEST = APP_API + "_manager_request.php";
         public static final String MINOR_BLOCK_WEB = APP_API + "minor_avoid";
         public static final String MINOR_BLOCK_ADD = APP_API + "minor_avoidadd";

@@ -42,11 +42,11 @@ class ArticleVote(
             json = json.index(0)
 
         return VoteResult(
-                result = json.get("result").`as`(Boolean::class.java),
+                result = json.get("result").asBoolean(),
                 cause = json.get("cause").text(),
                 member = json.safeGet("member").run {
                     when {
-                        !isNull -> `as`(Int::class.java)
+                        !isNull -> asInteger()
                         else -> null
                     }
                 }
@@ -74,7 +74,7 @@ class ArticleVote(
         )!!.index(0)
 
         return VoteResult(
-                result = json.get("result").`as`(Boolean::class.java),
+                result = json.get("result").asBoolean(),
                 cause = json.get("cause").text(),
                 member = null
         )

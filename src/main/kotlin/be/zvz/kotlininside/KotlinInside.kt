@@ -51,12 +51,12 @@ class KotlinInside private constructor(
          */
         @JvmStatic
         @JvmOverloads
+        @Synchronized
         fun createInstance(user: User, httpInterface: HttpInterface, sessionAutoRefresh: Boolean = false) {
             if (!::instance.isInitialized) {
                 instance = KotlinInside(user, httpInterface, sessionAutoRefresh)
                 instance.init()
             }
-
         }
 
         /**

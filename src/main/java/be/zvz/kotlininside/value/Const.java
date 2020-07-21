@@ -5,8 +5,8 @@ import org.apache.commons.lang3.RandomStringUtils;
 public final class Const {
     public static final String DC_APP_SIGNATURE = "ReOo4u96nnv8Njd7707KpYiIVYQ3FlcKHDJE046Pg6s=";
     public static final String DC_APP_PACKAGE = "com.dcinside.app";
-    public static final String DC_APP_VERSION_CODE = "30131";
-    public static final String DC_APP_VERSION_NAME = "3.5.2";
+    public static final String DC_APP_VERSION_CODE = "30308";
+    public static final String DC_APP_VERSION_NAME = "3.8.15";
 
     public static final String DEFAULT_FCM_TOKEN;
 

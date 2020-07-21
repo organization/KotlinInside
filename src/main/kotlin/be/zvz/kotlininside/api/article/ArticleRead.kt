@@ -85,25 +85,25 @@ class ArticleRead @JvmOverloads constructor(
         val viewInfo = json.index(0).get("view_info")
         return ViewInfo(
                 gallTitle = viewInfo.get("galltitle").text(),
-                category = viewInfo.get("category").`as`(Int::class.java),
+                category = viewInfo.get("category").asInteger(),
                 subject = viewInfo.get("subject").text(),
-                identifier = viewInfo.get("no").`as`(Int::class.java),
+                identifier = viewInfo.get("no").asInteger(),
                 name = viewInfo.get("name").text(),
-                level = viewInfo.get("level").`as`(Int::class.java),
-                memberIcon = viewInfo.get("member_icon").`as`(Int::class.java),
-                totalComment = viewInfo.get("total_comment").`as`(Int::class.java),
+                level = viewInfo.get("level").asInteger(),
+                memberIcon = viewInfo.get("member_icon").asInteger(),
+                totalComment = viewInfo.get("total_comment").asInteger(),
                 ip = viewInfo.get("ip").text(),
                 imageCheck = StringUtil.ynToBoolean(viewInfo.get("img_chk").text()),
                 recommendCheck = StringUtil.ynToBoolean(viewInfo.get("recommend_chk").text()),
                 winnertaCheck = StringUtil.ynToBoolean(viewInfo.get("winnerta_chk").text()),
                 voiceCheck = StringUtil.ynToBoolean(viewInfo.get("voice_chk").text()),
-                views = viewInfo.get("hit").`as`(Int::class.java),
+                views = viewInfo.get("hit").asInteger(),
                 writeType = viewInfo.get("write_type").text(),
                 userId = viewInfo.get("user_id").text(),
-                previousLink = viewInfo.get("prev_link").`as`(Int::class.java),
+                previousLink = viewInfo.get("prev_link").asInteger(),
                 previousSubject = viewInfo.get("prev_subject").text(),
                 headTitle = viewInfo.get("headtitle").text(),
-                nextLink = viewInfo.get("next_link").`as`(Int::class.java),
+                nextLink = viewInfo.get("next_link").asInteger(),
                 nextSubject = viewInfo.get("next_subject").text(),
                 bestCheck = StringUtil.ynToBoolean(viewInfo.get("best_chk").text()),
                 isNotice = StringUtil.ynToBoolean(viewInfo.get("isNotice").text()),
@@ -114,22 +114,17 @@ class ArticleRead @JvmOverloads constructor(
                     }
                 },
                 dateTime = viewInfo.get("date_time").text(),
-                isMinor = viewInfo.safeGet("is_minor").run {
-                    when {
-                        !isNull -> `as`(Boolean::class.java)
-                        else -> false
-                    }
-                },
+                isMinor = viewInfo.safeGet("is_minor").asBoolean(),
                 headText = mutableListOf<HeadText>().apply {
                     viewInfo.safeGet("head_text").run {
                         when {
                             !isNull -> values().forEach {
                                 add(
                                         HeadText(
-                                                identifier = it.get("no").`as`(Int::class.java),
+                                                identifier = it.get("no").asInteger(),
                                                 name = it.get("name").text(),
-                                                level = it.get("level").`as`(Int::class.java),
-                                                selected = it.get("selected").`as`(Boolean::class.java)
+                                                level = it.get("level").asInteger(),
+                                                selected = it.get("selected").asBoolean()
                                         )
                                 )
                             }
@@ -151,15 +146,10 @@ class ArticleRead @JvmOverloads constructor(
         val viewMain = json.index(0).get("view_main")
         return ViewMain(
                 content = viewMain.get("memo").text(),
-                upvote = viewMain.get("recommend").`as`(Int::class.java),
-                upvoteMember = viewMain.get("recommend_member").`as`(Int::class.java),
-                downvote = viewMain.get("nonrecommend").`as`(Int::class.java),
-                isManager = viewMain.safeGet("managerskill").run {
-                    when {
-                        isNull -> false
-                        else -> `as`(Boolean::class.java)
-                    }
-                }
+                upvote = viewMain.get("recommend").asInteger(),
+                upvoteMember = viewMain.get("recommend_member").asInteger(),
+                downvote = viewMain.get("nonrecommend").asInteger(),
+                isManager = viewMain.safeGet("managerskill").asBoolean()
         )
     }
 }

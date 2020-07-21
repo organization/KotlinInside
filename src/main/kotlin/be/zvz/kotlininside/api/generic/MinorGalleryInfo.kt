@@ -72,7 +72,7 @@ class MinorGalleryInfo(
                     }
                 },
                 createDate = json.get("create_dt").text(),
-                new = json.get("new").`as`(Boolean::class.java),
+                new = json.get("new").asBoolean(),
                 hotState = json.get("hot_state").text()
         )
     }

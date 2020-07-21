@@ -47,11 +47,11 @@ class DCConDetail(
                         json.get("info").values().forEach {
                             add(
                                     DCConInfo(
-                                            packageIndex = it.get("package_idx").`as`(Int::class.java),
+                                            packageIndex = it.get("package_idx").asInteger(),
                                             mainImg = it.get("main_img").text(),
                                             title = it.get("title").text(),
                                             description = it.get("description").text(),
-                                            mandu = it.get("mandu").`as`(Int::class.java),
+                                            mandu = it.get("mandu").asInteger(),
                                             getState = StringUtil.ynToBoolean(it.get("get_state").text())
                                     )
                             )

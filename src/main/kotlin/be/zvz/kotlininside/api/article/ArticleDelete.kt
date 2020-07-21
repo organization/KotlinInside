@@ -53,11 +53,11 @@ class ArticleDelete @JvmOverloads constructor(
                     return DeleteResult(
                             result = false,
                             message = json.get("message").text(),
-                            status = json.get("status").`as`(Int::class.java)
+                            status = json.get("status").asInteger()
                     )
                 }
                 else -> {
-                    val result = `as`(Boolean::class.java)
+                    val result = asBoolean()
 
                     return when {
                         result -> DeleteResult(

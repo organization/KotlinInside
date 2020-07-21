@@ -146,37 +146,27 @@ class ArticleList @JvmOverloads constructor(
 
         return GallInfo(
                 title = gallInfo.get("gall_title").text(),
-                category = gallInfo.get("category").`as`(Int::class.java),
-                fileCount = gallInfo.get("file_cnt").`as`(Int::class.java),
-                fileSize = gallInfo.get("file_size").`as`(Int::class.java),
+                category = gallInfo.get("category").asInteger(),
+                fileCount = gallInfo.get("file_cnt").asInteger(),
+                fileSize = gallInfo.get("file_size").asInteger(),
                 captcha = gallInfo.safeGet("captcha").run {
                     when {
                         isNull -> null
-                        else -> `as`(Boolean::class.java)
+                        else -> asBoolean()
                     }
                 },
                 codeCount = gallInfo.safeGet("code_count").run {
                     when {
                         isNull -> null
-                        else -> `as`(Int::class.java)
+                        else -> asInteger()
                     }
                 },
-                isMinor = gallInfo.safeGet("is_minor").run {
-                    when {
-                        isNull -> false
-                        else -> `as`(Boolean::class.java)
-                    }
-                },
-                isManager = gallInfo.safeGet("managerskill").run {
-                    when {
-                        isNull -> false
-                        else -> `as`(Boolean::class.java)
-                    }
-                },
+                isMinor = gallInfo.safeGet("is_minor").asBoolean(),
+                isManager = gallInfo.safeGet("managerskill").asBoolean(),
                 notifyRecent = gallInfo.get("notify_recent").run {
                     when {
                         isNull -> null
-                        else -> `as`(Int::class.java)
+                        else -> asInteger()
                     }
                 },
                 relationGall = gallInfo.safeGet("relation_gall").run {
@@ -191,10 +181,10 @@ class ArticleList @JvmOverloads constructor(
                             !isNull -> values().forEach {
                                 add(
                                         HeadText(
-                                                identifier = it.get("no").`as`(Int::class.java),
+                                                identifier = it.get("no").asInteger(),
                                                 name = it.get("name").text(),
-                                                level = it.get("level").`as`(Int::class.java),
-                                                selected = it.get("selected").`as`(Boolean::class.java)
+                                                level = it.get("level").asInteger(),
+                                                selected = it.get("selected").asBoolean()
                                         )
                                 )
                             }
@@ -217,19 +207,19 @@ class ArticleList @JvmOverloads constructor(
             for (gallList in json.index(0).get("gall_list").values()) {
                 add(
                         GallList(
-                                identifier = gallList.get("no").`as`(Int::class.java),
-                                views = gallList.get("hit").`as`(Int::class.java),
-                                upvote = gallList.get("recommend").`as`(Int::class.java),
+                                identifier = gallList.get("no").asInteger(),
+                                views = gallList.get("hit").asInteger(),
+                                upvote = gallList.get("recommend").asInteger(),
                                 imageIcon = StringUtil.ynToBoolean(gallList.get("img_icon").text()),
                                 upvoteIcon = StringUtil.ynToBoolean(gallList.get("recommend_icon").text()),
                                 bestCheck = StringUtil.ynToBoolean(gallList.get("best_chk").text()),
-                                level = gallList.get("level").`as`(Int::class.java),
-                                totalComment = gallList.get("total_comment").`as`(Int::class.java),
-                                totalVoice = gallList.get("total_voice").`as`(Int::class.java),
+                                level = gallList.get("level").asInteger(),
+                                totalComment = gallList.get("total_comment").asInteger(),
+                                totalVoice = gallList.get("total_voice").asInteger(),
                                 userId = gallList.get("user_id").text(),
                                 voiceIcon = StringUtil.ynToBoolean(gallList.get("voice_icon").text()),
                                 winnertaIcon = StringUtil.ynToBoolean(gallList.get("winnerta_icon").text()),
-                                memberIcon = gallList.get("member_icon").`as`(Int::class.java),
+                                memberIcon = gallList.get("member_icon").asInteger(),
                                 ip = gallList.get("ip").text(),
                                 gallerCon = gallList.safeGet("gallercon").run {
                                     when {

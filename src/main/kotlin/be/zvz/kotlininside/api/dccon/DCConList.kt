@@ -32,7 +32,7 @@ class DCConList(
                     json.get("tab").values().forEach {
                         add(
                                 DCCon(
-                                        packageIndex = it.get("package_idx").`as`(Int::class.java),
+                                        packageIndex = it.get("package_idx").asInteger(),
                                         title = it.get("title").text(),
                                         imgLink = it.get("img").text()
                                 )
@@ -46,8 +46,8 @@ class DCConList(
                                     list.values().forEach {
                                         add(
                                                 DCCon(
-                                                        detailIndex = it.get("detail_idx").`as`(Int::class.java),
-                                                        packageIndex = it.get("package_idx").`as`(Int::class.java),
+                                                        detailIndex = it.get("detail_idx").asInteger(),
+                                                        packageIndex = it.get("package_idx").asInteger(),
                                                         title = it.get("title").text(),
                                                         imgLink = it.get("img").text()
                                                 )

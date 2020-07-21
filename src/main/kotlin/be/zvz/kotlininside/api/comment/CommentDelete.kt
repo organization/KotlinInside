@@ -46,7 +46,7 @@ class CommentDelete @JvmOverloads constructor(
 
         val json = KotlinInside.getInstance().httpInterface.upload(ApiUrl.Comment.DELETE, option)!!.index(0)
 
-        val result = json.get("result").`as`(Boolean::class.java)
+        val result = json.get("result").asBoolean()
 
         return when {
             result -> DeleteResult(

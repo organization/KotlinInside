@@ -58,15 +58,15 @@ class ArticleModify(
                 option
         )!!.index(0)
 
-        val result = json.get("result").`as`(Boolean::class.java)
+        val result = json.get("result").asBoolean()
 
         if (result) {
             return ModifyResult(
                     result = result,
                     gallId = json.get("gall_id").text(),
-                    articleId = json.get("gall_no").`as`(Int::class.java),
-                    fileCount = json.get("file_cnt").`as`(Int::class.java),
-                    fileSize = json.get("file_size").`as`(Int::class.java),
+                    articleId = json.get("gall_no").asInteger(),
+                    fileCount = json.get("file_cnt").asInteger(),
+                    fileSize = json.get("file_size").asInteger(),
                     subject = json.get("subject").text(),
                     content = mutableListOf<Content>().apply {
                         json.get("memo").values().forEach {
@@ -127,10 +127,10 @@ class ArticleModify(
                                 !jsonHeadText.isNull -> jsonHeadText.values().forEach {
                                     add(
                                             HeadText(
-                                                    identifier = it.get("no").`as`(Int::class.java),
+                                                    identifier = it.get("no").asInteger(),
                                                     name = it.get("name").text(),
-                                                    level = it.get("level").`as`(Int::class.java),
-                                                    selected = it.get("selected").`as`(Boolean::class.java)
+                                                    level = it.get("level").asInteger(),
+                                                    selected = it.get("selected").asBoolean()
                                             )
                                     )
                                 }

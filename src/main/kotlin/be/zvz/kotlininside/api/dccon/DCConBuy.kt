@@ -40,7 +40,7 @@ class DCConBuy(
         )!!
 
         return BuyResult(
-                result = json.get("result").`as`(Int::class.java),
+                result = json.get("result").asInteger(),
                 msg = json.get("msg").text()
         )
     }

@@ -94,7 +94,7 @@ class TotalSearch(
                                         content = it.get("content").text(),
                                         gallId = it.get("id").text(),
                                         gallName = it.get("gall_name").text(),
-                                        articleId = it.get("no").`as`(Int::class.java),
+                                        articleId = it.get("no").asInteger(),
                                         regDate = it.get("regdate").text()
                                 )
                         )
@@ -108,7 +108,7 @@ class TotalSearch(
                                         content = it.get("content").text(),
                                         gallId = it.get("id").text(),
                                         gallName = it.get("gall_name").text(),
-                                        articleId = it.get("no").`as`(Int::class.java),
+                                        articleId = it.get("no").asInteger(),
                                         regDate = it.get("regdate").text()
                                 )
                         )
@@ -118,7 +118,7 @@ class TotalSearch(
                     json.get("realtime").values().forEach {
                         add(
                                 RealTime(
-                                        rank = it.get("rank").`as`(Int::class.java),
+                                        rank = it.get("rank").asInteger(),
                                         title = it.get("title").text(),
                                         url = it.get("url").text()
                                 )

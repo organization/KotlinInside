@@ -68,7 +68,7 @@ class MainPage {
                 add(
                         Article(
                                 gallId = it.get("id").text(),
-                                articleId = it.get("no").`as`(Int::class.java),
+                                articleId = it.get("no").asInteger(),
                                 gallName = it.get("gall_name").text(),
                                 title = it.get("title").text(),
                                 thumbnail = it.get("thumbnail").text()
@@ -92,7 +92,7 @@ class MainPage {
                 add(
                         Article(
                                 gallId = it.get("id").text(),
-                                articleId = it.get("no").`as`(Int::class.java),
+                                articleId = it.get("no").asInteger(),
                                 gallName = it.get("gall_name").text(),
                                 title = it.get("title").text(),
                                 thumbnail = it.get("thumbnail").text()

@@ -47,16 +47,16 @@ class Auth {
             appCheck !== null -> {
                 if (!appCheck.safeGet("result").isNull)
                     return AppCheck(
-                            result = appCheck.get("result").`as`(Boolean::class.java)
+                            result = appCheck.get("result").asBoolean()
                     )
 
                 val json = appCheck.index(0)
 
                 return AppCheck(
-                        result = json.get("result").`as`(Boolean::class.java),
+                        result = json.get("result").asBoolean(),
                         version = json.get("ver").text(),
-                        notice = json.get("notice").`as`(Boolean::class.java),
-                        noticeUpdate = json.get("notice_update").`as`(Boolean::class.java),
+                        notice = json.get("notice").asBoolean(),
+                        noticeUpdate = json.get("notice_update").asBoolean(),
                         date = json.get("date").text()
                 )
             }

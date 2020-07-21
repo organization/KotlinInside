@@ -53,7 +53,7 @@ class Recommend(
         }
 
         return RecommendResult(
-                result = json.get("result").`as`(Boolean::class.java),
+                result = json.get("result").asBoolean(),
                 cause = json.get("cause").text(),
                 state = json.safeGet("state").run {
                     when {

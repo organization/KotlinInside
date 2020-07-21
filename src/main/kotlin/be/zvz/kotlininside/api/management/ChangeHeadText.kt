@@ -56,7 +56,7 @@ class ChangeHeadText(
         }
 
         return ChangeResult(
-                result = json.get("result").`as`(Boolean::class.java),
+                result = json.get("result").asBoolean(),
                 cause = json.get("cause").text(),
                 state = json.get("state").text()
         )

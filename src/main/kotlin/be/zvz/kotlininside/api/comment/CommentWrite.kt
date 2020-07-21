@@ -63,12 +63,12 @@ class CommentWrite @JvmOverloads constructor(
 
         val json = KotlinInside.getInstance().httpInterface.upload(ApiUrl.Comment.OK, option)!!.index(0)
 
-        val result = json.get("result").`as`(Boolean::class.java)
+        val result = json.get("result").asBoolean()
 
         return when {
             result -> WriteResult(
                     result = result,
-                    data = json.get("data").`as`(Int::class.java)
+                    data = json.get("data").asInteger()
             )
             else -> WriteResult(
                     result = result,
@@ -108,12 +108,12 @@ class CommentWrite @JvmOverloads constructor(
 
         val json = KotlinInside.getInstance().httpInterface.upload(ApiUrl.Comment.OK, option)!!.index(0)
 
-        val result = json.get("result").`as`(Boolean::class.java)
+        val result = json.get("result").asBoolean()
 
         return when {
             result -> WriteResult(
                     result = result,
-                    data = json.get("data").`as`(Int::class.java)
+                    data = json.get("data").asInteger()
             )
             else -> WriteResult(
                     result = result,
@@ -141,7 +141,7 @@ class CommentWrite @JvmOverloads constructor(
 
                 val dcConJson = KotlinInside.getInstance().httpInterface.upload(ApiUrl.DCCon.DCCON, dcConRequestOption)!!
 
-                when (dcConJson.get("result").`as`(Boolean::class.java)) {
+                when (dcConJson.get("result").asBoolean()) {
                     true -> {
                         option.addMultipartParameter("comment_memo", dcConJson.get("img_tag").text())
                                 .addMultipartParameter("detail_idx", comment.dcCon.detailIndex.toString())
