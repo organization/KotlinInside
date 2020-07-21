@@ -27,5 +27,8 @@ title: ApiUrl - KotlinInside
 | (JVM) [APP_API](-a-p-p_-a-p-i.html) | `static val APP_API: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | (JVM) [AUTH_API](-a-u-t-h_-a-p-i.html) | `static val AUTH_API: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | (JVM) [MAIN_API](-m-a-i-n_-a-p-i.html) | `static val MAIN_API: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| (JVM) [MOBILE_WEB](-m-o-b-i-l-e_-w-e-b.html) | `static val MOBILE_WEB: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| (JVM) [PC_WEB](-p-c_-w-e-b.html) | `static val PC_WEB: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | (JVM) [REDIRECT](-r-e-d-i-r-e-c-t.html) | `static val REDIRECT: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| (JVM) [UPLOAD](-u-p-l-o-a-d.html) | `static val UPLOAD: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 

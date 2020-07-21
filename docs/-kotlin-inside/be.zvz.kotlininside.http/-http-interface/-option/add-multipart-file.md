@@ -6,7 +6,7 @@ title: HttpInterface.Option.addMultipartFile - KotlinInside
 
 # addMultipartFile
 
-(JVM) `@NotNull fun addMultipartFile(@NotNull key: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, @NotNull value: `[`InputStream`](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)`): Option`
+(JVM) `@NotNull fun addMultipartFile(@NotNull key: @NotNull `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, @NotNull value: @NotNull `[`InputStream`](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)`): @NotNull Option`
 
 ### Parameters
 

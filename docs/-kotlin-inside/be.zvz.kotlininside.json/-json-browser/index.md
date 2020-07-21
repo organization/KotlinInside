@@ -13,6 +13,9 @@ Allows to easily navigate in decoded JSON data
 ### Functions
 
 | (JVM) [as](as.html) | Attempt to retrieve the value in the specified format`open fun <T : `[`Any`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`!> as(klass: `[`Class`](https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html)`<T>!): T` |
+| (JVM) [asBoolean](as-boolean.html) | `open fun asBoolean(): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)<br>`open fun asBoolean(defaultValue: `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
+| (JVM) [asInteger](as-integer.html) | `open fun asInteger(): `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)<br>`open fun asInteger(defaultValue: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
+| (JVM) [asLong](as-long.html) | `open fun asLong(): `[`Long`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)<br>`open fun asLong(defaultValue: `[`Long`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`): `[`Long`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) |
 | (JVM) [format](format.html) | `open fun format(): `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!` |
 | (JVM) [get](get.html) | Get an element by key from a map value`open fun get(key: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!): `[`JsonBrowser`](./index.html)`!` |
 | (JVM) [index](--index--.html) | Get an element at an index for a list value`open fun index(index: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`JsonBrowser`](./index.html)`!` |

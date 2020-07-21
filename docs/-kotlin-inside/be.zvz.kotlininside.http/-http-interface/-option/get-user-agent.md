@@ -6,4 +6,4 @@ title: HttpInterface.Option.getUserAgent - KotlinInside
 
 # getUserAgent
 
-(JVM) `@Nullable fun getUserAgent(): `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`?`
+(JVM) `@Nullable fun getUserAgent(): @Nullable `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`?`

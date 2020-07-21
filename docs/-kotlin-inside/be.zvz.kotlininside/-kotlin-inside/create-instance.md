@@ -6,7 +6,7 @@ title: KotlinInside.createInstance - KotlinInside
 
 # createInstance
 
-(JVM) `@JvmStatic @JvmOverloads fun createInstance(user: `[`User`](../../be.zvz.kotlininside.session.user/-user/index.html)`, httpInterface: `[`HttpInterface`](../../be.zvz.kotlininside.http/-http-interface/index.html)`, sessionAutoRefresh: `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` = false): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+(JVM) `@JvmStatic @JvmOverloads @Synchronized fun createInstance(user: `[`User`](../../be.zvz.kotlininside.session.user/-user/index.html)`, httpInterface: `[`HttpInterface`](../../be.zvz.kotlininside.http/-http-interface/index.html)`, sessionAutoRefresh: `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` = false): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
 
 [KotlinInside](index.html) 인스턴스를 생성합니다.
 

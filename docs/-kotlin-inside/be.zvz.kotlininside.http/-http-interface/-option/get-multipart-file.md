@@ -6,4 +6,4 @@ title: HttpInterface.Option.getMultipartFile - KotlinInside
 
 # getMultipartFile
 
-(JVM) `@NotNull fun getMultipartFile(): `[`MutableMap`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)`<`[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, `[`InputStream`](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)`!>`
+(JVM) `@NotNull fun getMultipartFile(): @NotNull `[`MutableMap`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)`<`[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, `[`InputStream`](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)`!>`

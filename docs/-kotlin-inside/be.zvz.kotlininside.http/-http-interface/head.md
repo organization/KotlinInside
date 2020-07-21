@@ -6,4 +6,4 @@ title: HttpInterface.head - KotlinInside
 
 # head
 
-(JVM) `@Nullable abstract fun head(@NotNull url: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, @Nullable option: Option?): `[`JsonBrowser`](../../be.zvz.kotlininside.json/-json-browser/index.html)`?`
+(JVM) `@Nullable abstract fun head(@NotNull url: @NotNull `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, @Nullable option: @Nullable Option?): @Nullable `[`JsonBrowser`](../../be.zvz.kotlininside.json/-json-browser/index.html)`?`

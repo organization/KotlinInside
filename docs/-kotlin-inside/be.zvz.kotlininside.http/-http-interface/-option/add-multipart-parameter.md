@@ -6,7 +6,7 @@ title: HttpInterface.Option.addMultipartParameter - KotlinInside
 
 # addMultipartParameter
 
-(JVM) `@NotNull fun addMultipartParameter(@NotNull key: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, @NotNull value: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`): Option`
+(JVM) `@NotNull fun addMultipartParameter(@NotNull key: @NotNull `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, @NotNull value: @NotNull `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`): @NotNull Option`
 
 ### Parameters
 

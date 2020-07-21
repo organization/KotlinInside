@@ -6,7 +6,7 @@ title: HttpInterface.Option.setUserAgent - KotlinInside
 
 # setUserAgent
 
-(JVM) `@NotNull fun setUserAgent(@NotNull userAgent: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`): Option`
+(JVM) `@NotNull fun setUserAgent(@NotNull userAgent: @NotNull `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`): @NotNull Option`
 
 ### Parameters
 

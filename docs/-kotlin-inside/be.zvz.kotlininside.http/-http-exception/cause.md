@@ -6,4 +6,4 @@ title: HttpException.cause - KotlinInside
 
 # cause
 
-(JVM) `open val cause: `[`Throwable`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)`?`
+(JVM) `open val cause: @Nullable `[`Throwable`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)`?`

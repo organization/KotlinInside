@@ -6,4 +6,4 @@ title: HttpInterface.Option.getMultipartContentType - KotlinInside
 
 # getMultipartContentType
 
-(JVM) `@Nullable fun getMultipartContentType(): `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`?`
+(JVM) `@Nullable fun getMultipartContentType(): @Nullable `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`?`

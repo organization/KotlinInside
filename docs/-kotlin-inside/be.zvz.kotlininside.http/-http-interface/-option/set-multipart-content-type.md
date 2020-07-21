@@ -6,4 +6,4 @@ title: HttpInterface.Option.setMultipartContentType - KotlinInside
 
 # setMultipartContentType
 
-(JVM) `@NotNull fun setMultipartContentType(@Nullable contentType: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`?): Option`
+(JVM) `@NotNull fun setMultipartContentType(@Nullable contentType: @Nullable `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`?): @NotNull Option`
