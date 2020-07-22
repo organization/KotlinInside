@@ -6,4 +6,4 @@ title: JsonBrowser.format - KotlinInside
 
 # format
 
-(JVM) `open fun format(): `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!`
+(JVM) `@Nullable open fun format(): @Nullable `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`?`

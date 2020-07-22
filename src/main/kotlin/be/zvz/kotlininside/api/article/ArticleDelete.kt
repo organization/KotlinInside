@@ -47,29 +47,11 @@ class ArticleDelete @JvmOverloads constructor(
         if (json.isList)
             json = json.index(0)
 
-        json.safeGet("result").run {
-            when {
-                isNull -> { // 올바른 client_token이 전달되지 않았을 경우
-                    return DeleteResult(
-                            result = false,
-                            message = json.get("message").text(),
-                            status = json.get("status").asInteger()
-                    )
-                }
-                else -> {
-                    val result = asBoolean()
-
-                    return when {
-                        result -> DeleteResult(
-                                result = result
-                        )
-                        else -> DeleteResult(
-                                result = result,
-                                cause = json.get("cause").text()
-                        )
-                    }
-                }
-            }
-        }
+        return DeleteResult(
+                result = json.get("result").asBoolean(),
+                message = json.get("message").text(),
+                status = json.get("status").asNullableInteger(),
+                cause = json.get("cause").text()
+        )
     }
 }

@@ -35,8 +35,8 @@ class GallerySearch(
                     json.get("main_gall").values().forEach {
                         add(
                                 Gallery(
-                                        title = it.get("title").text(),
-                                        id = it.get("id").text()
+                                        title = it.get("title").safeText(),
+                                        id = it.get("id").safeText()
                                 )
                         )
                     }
@@ -45,8 +45,8 @@ class GallerySearch(
                     json.get("minor_gall").values().forEach {
                         add(
                                 Gallery(
-                                        title = it.get("title").text(),
-                                        id = it.get("id").text()
+                                        title = it.get("title").safeText(),
+                                        id = it.get("id").safeText()
                                 )
                         )
                     }
@@ -55,8 +55,8 @@ class GallerySearch(
                     json.get("main_recomm_gall").values().forEach {
                         add(
                                 Gallery(
-                                        title = it.get("title").text(),
-                                        id = it.get("id").text()
+                                        title = it.get("title").safeText(),
+                                        id = it.get("id").safeText()
                                 )
                         )
                     }
@@ -65,8 +65,8 @@ class GallerySearch(
                     json.get("minor_recomm_gall").values().forEach {
                         add(
                                 Gallery(
-                                        title = it.get("title").text(),
-                                        id = it.get("id").text()
+                                        title = it.get("title").safeText(),
+                                        id = it.get("id").safeText()
                                 )
                         )
                     }

@@ -35,16 +35,9 @@ class ArticleHitUpvote(
 
         val json = KotlinInside.getInstance().httpInterface.upload(ApiUrl.Article.HIT_UPVOTE, option)!!.index(0)
 
-        val result = json.get("result").asBoolean()
-
-        return when {
-            result -> HitUpvoteResult(
-                    result = result
-            )
-            else -> HitUpvoteResult(
-                    result = result,
-                    cause = json.get("cause").text()
-            )
-        }
+        return HitUpvoteResult(
+                result = json.get("result").asBoolean(),
+                cause = json.get("cause").text()
+        )
     }
 }

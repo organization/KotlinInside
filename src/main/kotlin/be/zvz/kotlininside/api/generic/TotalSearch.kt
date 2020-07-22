@@ -59,8 +59,8 @@ class TotalSearch(
                     json.get("main_gall").values().forEach {
                         add(
                                 Gallery(
-                                        title = it.get("title").text(),
-                                        id = it.get("id").text()
+                                        title = it.get("title").safeText(),
+                                        id = it.get("id").safeText()
                                 )
                         )
                     }
@@ -69,8 +69,8 @@ class TotalSearch(
                     json.get("minor_gall").values().forEach {
                         add(
                                 Gallery(
-                                        title = it.get("title").text(),
-                                        id = it.get("id").text()
+                                        title = it.get("title").safeText(),
+                                        id = it.get("id").safeText()
                                 )
                         )
                     }
@@ -79,9 +79,9 @@ class TotalSearch(
                     json.get("wiki").values().forEach {
                         add(
                                 Wiki(
-                                        title = it.get("title").text(),
-                                        gallName = it.get("gall_name").text(),
-                                        url = it.get("url").text()
+                                        title = it.get("title").safeText(),
+                                        gallName = it.get("gall_name").safeText(),
+                                        url = it.get("url").safeText()
                                 )
                         )
                     }
@@ -90,12 +90,12 @@ class TotalSearch(
                     json.get("board").values().forEach {
                         add(
                                 SearchedArticle(
-                                        title = it.get("title").text(),
-                                        content = it.get("content").text(),
-                                        gallId = it.get("id").text(),
-                                        gallName = it.get("gall_name").text(),
+                                        title = it.get("title").safeText(),
+                                        content = it.get("content").safeText(),
+                                        gallId = it.get("id").safeText(),
+                                        gallName = it.get("gall_name").safeText(),
                                         articleId = it.get("no").asInteger(),
-                                        regDate = it.get("regdate").text()
+                                        regDate = it.get("regdate").safeText()
                                 )
                         )
                     }
@@ -104,12 +104,12 @@ class TotalSearch(
                     json.get("today").values().forEach {
                         add(
                                 SearchedArticle(
-                                        title = it.get("title").text(),
-                                        content = it.get("content").text(),
-                                        gallId = it.get("id").text(),
-                                        gallName = it.get("gall_name").text(),
+                                        title = it.get("title").safeText(),
+                                        content = it.get("content").safeText(),
+                                        gallId = it.get("id").safeText(),
+                                        gallName = it.get("gall_name").safeText(),
                                         articleId = it.get("no").asInteger(),
-                                        regDate = it.get("regdate").text()
+                                        regDate = it.get("regdate").safeText()
                                 )
                         )
                     }
@@ -119,8 +119,8 @@ class TotalSearch(
                         add(
                                 RealTime(
                                         rank = it.get("rank").asInteger(),
-                                        title = it.get("title").text(),
-                                        url = it.get("url").text()
+                                        title = it.get("title").safeText(),
+                                        url = it.get("url").safeText()
                                 )
                         )
                     }

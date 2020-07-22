@@ -43,13 +43,8 @@ class ArticleVote(
 
         return VoteResult(
                 result = json.get("result").asBoolean(),
-                cause = json.get("cause").text(),
-                member = json.safeGet("member").run {
-                    when {
-                        !isNull -> asInteger()
-                        else -> null
-                    }
-                }
+                cause = json.get("cause").safeText(),
+                member = json.get("member").asNullableInteger()
         )
     }
 
@@ -75,7 +70,7 @@ class ArticleVote(
 
         return VoteResult(
                 result = json.get("result").asBoolean(),
-                cause = json.get("cause").text(),
+                cause = json.get("cause").safeText(),
                 member = null
         )
     }

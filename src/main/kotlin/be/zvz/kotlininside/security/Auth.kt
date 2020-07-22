@@ -45,7 +45,7 @@ class Auth {
 
         when {
             appCheck !== null -> {
-                if (!appCheck.safeGet("result").isNull)
+                if (!appCheck.get("result").isNull)
                     return AppCheck(
                             result = appCheck.get("result").asBoolean()
                     )
@@ -141,7 +141,7 @@ class Auth {
 
     /**
      * app_id를 서버로부터 얻어오는 메소드입니다.
-     * @exception [java.lang.NullPointerException] app_id를 얻어올 수 없는 경우, NPE를 반환합니다.
+     * @exception [java.lang.NullPointerException] app_id를 얻어올 수 없는 경우, NullPointerException이 발생합니다.
      * @param hashedAppKey SHA256 단방향 암호화된 value_token 값입니다.
      * @return [java.lang.String] app_id를 반환합니다.
      */
@@ -159,7 +159,7 @@ class Auth {
             return ""
         }
 
-        return appId!!.index(0).get("app_id").text()
+        return appId!!.index(0).get("app_id").text()!!
     }
 
     /**
@@ -179,10 +179,10 @@ class Auth {
             val json = KotlinInside.getInstance().httpInterface.post(ApiUrl.Auth.LOGIN, option)!!.index(0)
 
             val detail = SessionDetail(
-                    userId = json.get("user_id").text(),
-                    userNo = json.get("user_no").text(),
-                    name = json.get("name").text(),
-                    stype = json.get("stype").text()
+                    userId = json.get("user_id").safeText(),
+                    userNo = json.get("user_no").safeText(),
+                    name = json.get("name").safeText(),
+                    stype = json.get("stype").safeText()
             )
 
             val loginUser = when (detail.stype) {

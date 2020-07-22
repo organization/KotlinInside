@@ -145,50 +145,31 @@ class ArticleList @JvmOverloads constructor(
         val gallInfo = json.index(0).get("gall_info").index(0)
 
         return GallInfo(
-                title = gallInfo.get("gall_title").text(),
+                title = gallInfo.get("gall_title").safeText(),
                 category = gallInfo.get("category").asInteger(),
                 fileCount = gallInfo.get("file_cnt").asInteger(),
                 fileSize = gallInfo.get("file_size").asInteger(),
-                captcha = gallInfo.safeGet("captcha").run {
-                    when {
-                        isNull -> null
-                        else -> asBoolean()
-                    }
-                },
-                codeCount = gallInfo.safeGet("code_count").run {
-                    when {
-                        isNull -> null
-                        else -> asInteger()
-                    }
-                },
-                isMinor = gallInfo.safeGet("is_minor").asBoolean(),
-                isManager = gallInfo.safeGet("managerskill").asBoolean(),
-                notifyRecent = gallInfo.get("notify_recent").run {
-                    when {
-                        isNull -> null
-                        else -> asInteger()
-                    }
-                },
-                relationGall = gallInfo.safeGet("relation_gall").run {
+                captcha = gallInfo.get("captcha").asNullableBoolean(),
+                codeCount = gallInfo.get("code_count").asNullableInteger(),
+                isMinor = gallInfo.get("is_minor").asBoolean(),
+                isManager = gallInfo.get("managerskill").asBoolean(),
+                notifyRecent = gallInfo.get("notify_recent").asNullableInteger(),
+                relationGall = gallInfo.get("relation_gall").run {
                     when {
                         !isNull -> toMap<String, String>()
                         else -> mutableMapOf<String, String>()
                     }
                 },
                 headText = mutableListOf<HeadText>().apply {
-                    gallInfo.safeGet("head_text").run {
-                        when {
-                            !isNull -> values().forEach {
-                                add(
-                                        HeadText(
-                                                identifier = it.get("no").asInteger(),
-                                                name = it.get("name").text(),
-                                                level = it.get("level").asInteger(),
-                                                selected = it.get("selected").asBoolean()
-                                        )
+                    gallInfo.get("head_text").values().forEach {
+                        add(
+                                HeadText(
+                                        identifier = it.get("no").asInteger(),
+                                        name = it.get("name").safeText(),
+                                        level = it.get("level").asInteger(),
+                                        selected = it.get("selected").asBoolean()
                                 )
-                            }
-                        }
+                        )
                     }
                 }
         )
@@ -204,32 +185,27 @@ class ArticleList @JvmOverloads constructor(
             request()
 
         return mutableListOf<GallList>().apply {
-            for (gallList in json.index(0).get("gall_list").values()) {
+            json.index(0).get("gall_list").values().forEach { gallList ->
                 add(
                         GallList(
                                 identifier = gallList.get("no").asInteger(),
                                 views = gallList.get("hit").asInteger(),
                                 upvote = gallList.get("recommend").asInteger(),
-                                imageIcon = StringUtil.ynToBoolean(gallList.get("img_icon").text()),
-                                upvoteIcon = StringUtil.ynToBoolean(gallList.get("recommend_icon").text()),
-                                bestCheck = StringUtil.ynToBoolean(gallList.get("best_chk").text()),
+                                imageIcon = StringUtil.ynToBoolean(gallList.get("img_icon").safeText()),
+                                upvoteIcon = StringUtil.ynToBoolean(gallList.get("recommend_icon").safeText()),
+                                bestCheck = StringUtil.ynToBoolean(gallList.get("best_chk").safeText()),
                                 level = gallList.get("level").asInteger(),
                                 totalComment = gallList.get("total_comment").asInteger(),
                                 totalVoice = gallList.get("total_voice").asInteger(),
-                                userId = gallList.get("user_id").text(),
-                                voiceIcon = StringUtil.ynToBoolean(gallList.get("voice_icon").text()),
-                                winnertaIcon = StringUtil.ynToBoolean(gallList.get("winnerta_icon").text()),
+                                userId = gallList.get("user_id").safeText(),
+                                voiceIcon = StringUtil.ynToBoolean(gallList.get("voice_icon").safeText()),
+                                winnertaIcon = StringUtil.ynToBoolean(gallList.get("winnerta_icon").safeText()),
                                 memberIcon = gallList.get("member_icon").asInteger(),
-                                ip = gallList.get("ip").text(),
-                                gallerCon = gallList.safeGet("gallercon").run {
-                                    when {
-                                        isNull -> null
-                                        else -> text()
-                                    }
-                                },
-                                subject = gallList.get("subject").text(),
-                                name = gallList.get("name").text(),
-                                dateTime = gallList.get("date_time").text(),
+                                ip = gallList.get("ip").safeText(),
+                                gallerCon = gallList.get("gallercon").text(),
+                                subject = gallList.get("subject").safeText(),
+                                name = gallList.get("name").safeText(),
+                                dateTime = gallList.get("date_time").safeText(),
                                 headText = gallList.get("head_text").text()
                         )
                 )

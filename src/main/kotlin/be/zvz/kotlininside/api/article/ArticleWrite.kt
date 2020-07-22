@@ -90,18 +90,12 @@ class ArticleWrite internal constructor(
                 option
         )!!.index(0)
 
-        val result = json.get("result").asBoolean()
 
-        return when {
-            result -> WriteResult(
-                    result = result,
-                    articleId = json.get("cause").asInteger(),
-                    id = json.get("id").text()
-            )
-            else -> WriteResult(
-                    result = result,
-                    cause = json.get("cause").text()
-            )
-        }
+        return WriteResult(
+                result = json.get("result").asBoolean(),
+                articleId = json.get("cause").asNullableInteger(),
+                id = json.get("id").text(),
+                cause = json.get("cause").text()
+        )
     }
 }

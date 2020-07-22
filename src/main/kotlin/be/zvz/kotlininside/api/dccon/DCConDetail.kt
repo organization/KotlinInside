@@ -48,11 +48,11 @@ class DCConDetail(
                             add(
                                     DCConInfo(
                                             packageIndex = it.get("package_idx").asInteger(),
-                                            mainImg = it.get("main_img").text(),
-                                            title = it.get("title").text(),
-                                            description = it.get("description").text(),
+                                            mainImg = it.get("main_img").safeText(),
+                                            title = it.get("title").safeText(),
+                                            description = it.get("description").safeText(),
                                             mandu = it.get("mandu").asInteger(),
-                                            getState = StringUtil.ynToBoolean(it.get("get_state").text())
+                                            getState = StringUtil.ynToBoolean(it.get("get_state").safeText())
                                     )
                             )
                         }
@@ -61,7 +61,7 @@ class DCConDetail(
                         json.get("detail").values().forEach {
                             add(
                                     DCCon(
-                                            imgLink = it.get("img").text()
+                                            imgLink = it.get("img").safeText()
                                     )
                             )
                         }

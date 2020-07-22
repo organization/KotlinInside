@@ -41,39 +41,29 @@ class MinorGalleryInfo(
         )!!.index(0)
 
         return InfoResult(
-                id = json.get("id").text(),
-                koName = json.get("ko_name").text(),
-                image = json.safeGet("img").run {
-                    when {
-                        isNull -> null
-                        else -> text()
-                    }
-                },
-                description = json.safeGet("mgallery_desc").run {
-                    when {
-                        isNull -> null
-                        else -> text()
-                    }
-                },
+                id = json.get("id").safeText(),
+                koName = json.get("ko_name").safeText(),
+                image = json.get("img").text(),
+                description = json.get("mgallery_desc").text(),
                 manager = Manager(
                         isMaster = true,
-                        id = json.get("master_id").text(),
-                        name = json.get("master_name").text()
+                        id = json.get("master_id").safeText(),
+                        name = json.get("master_name").safeText()
                 ),
                 subManager = mutableListOf<Manager>().apply {
                     json.get("submanager").values().forEach {
                         add(
                                 Manager(
                                         isMaster = false,
-                                        id = it.get("id").text(),
-                                        name = it.get("name").text()
+                                        id = it.get("id").safeText(),
+                                        name = it.get("name").safeText()
                                 )
                         )
                     }
                 },
-                createDate = json.get("create_dt").text(),
+                createDate = json.get("create_dt").safeText(),
                 new = json.get("new").asBoolean(),
-                hotState = json.get("hot_state").text()
+                hotState = json.get("hot_state").safeText()
         )
     }
 }

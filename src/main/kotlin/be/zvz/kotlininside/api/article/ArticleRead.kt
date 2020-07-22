@@ -84,51 +84,42 @@ class ArticleRead @JvmOverloads constructor(
 
         val viewInfo = json.index(0).get("view_info")
         return ViewInfo(
-                gallTitle = viewInfo.get("galltitle").text(),
+                gallTitle = viewInfo.get("galltitle").safeText(),
                 category = viewInfo.get("category").asInteger(),
-                subject = viewInfo.get("subject").text(),
+                subject = viewInfo.get("subject").safeText(),
                 identifier = viewInfo.get("no").asInteger(),
-                name = viewInfo.get("name").text(),
+                name = viewInfo.get("name").safeText(),
                 level = viewInfo.get("level").asInteger(),
                 memberIcon = viewInfo.get("member_icon").asInteger(),
                 totalComment = viewInfo.get("total_comment").asInteger(),
-                ip = viewInfo.get("ip").text(),
-                imageCheck = StringUtil.ynToBoolean(viewInfo.get("img_chk").text()),
-                recommendCheck = StringUtil.ynToBoolean(viewInfo.get("recommend_chk").text()),
-                winnertaCheck = StringUtil.ynToBoolean(viewInfo.get("winnerta_chk").text()),
-                voiceCheck = StringUtil.ynToBoolean(viewInfo.get("voice_chk").text()),
+                ip = viewInfo.get("ip").safeText(),
+                imageCheck = StringUtil.ynToBoolean(viewInfo.get("img_chk").safeText()),
+                recommendCheck = StringUtil.ynToBoolean(viewInfo.get("recommend_chk").safeText()),
+                winnertaCheck = StringUtil.ynToBoolean(viewInfo.get("winnerta_chk").safeText()),
+                voiceCheck = StringUtil.ynToBoolean(viewInfo.get("voice_chk").safeText()),
                 views = viewInfo.get("hit").asInteger(),
-                writeType = viewInfo.get("write_type").text(),
-                userId = viewInfo.get("user_id").text(),
+                writeType = viewInfo.get("write_type").safeText(),
+                userId = viewInfo.get("user_id").safeText(),
                 previousLink = viewInfo.get("prev_link").asInteger(),
-                previousSubject = viewInfo.get("prev_subject").text(),
-                headTitle = viewInfo.get("headtitle").text(),
+                previousSubject = viewInfo.get("prev_subject").safeText(),
+                headTitle = viewInfo.get("headtitle").safeText(),
                 nextLink = viewInfo.get("next_link").asInteger(),
-                nextSubject = viewInfo.get("next_subject").text(),
-                bestCheck = StringUtil.ynToBoolean(viewInfo.get("best_chk").text()),
-                isNotice = StringUtil.ynToBoolean(viewInfo.get("isNotice").text()),
-                gallerCon = viewInfo.safeGet("gallercon").run {
-                    when {
-                        isNull -> null
-                        else -> text()
-                    }
-                },
-                dateTime = viewInfo.get("date_time").text(),
-                isMinor = viewInfo.safeGet("is_minor").asBoolean(),
+                nextSubject = viewInfo.get("next_subject").safeText(),
+                bestCheck = StringUtil.ynToBoolean(viewInfo.get("best_chk").safeText()),
+                isNotice = StringUtil.ynToBoolean(viewInfo.get("isNotice").safeText()),
+                gallerCon = viewInfo.get("gallercon").text(),
+                dateTime = viewInfo.get("date_time").safeText(),
+                isMinor = viewInfo.get("is_minor").asBoolean(),
                 headText = mutableListOf<HeadText>().apply {
-                    viewInfo.safeGet("head_text").run {
-                        when {
-                            !isNull -> values().forEach {
-                                add(
-                                        HeadText(
-                                                identifier = it.get("no").asInteger(),
-                                                name = it.get("name").text(),
-                                                level = it.get("level").asInteger(),
-                                                selected = it.get("selected").asBoolean()
-                                        )
+                    viewInfo.get("head_text").values().forEach {
+                        add(
+                                HeadText(
+                                        identifier = it.get("no").asInteger(),
+                                        name = it.get("name").safeText(),
+                                        level = it.get("level").asInteger(),
+                                        selected = it.get("selected").asBoolean()
                                 )
-                            }
-                        }
+                        )
                     }
                 }
         )
@@ -145,11 +136,11 @@ class ArticleRead @JvmOverloads constructor(
 
         val viewMain = json.index(0).get("view_main")
         return ViewMain(
-                content = viewMain.get("memo").text(),
+                content = viewMain.get("memo").safeText(),
                 upvote = viewMain.get("recommend").asInteger(),
                 upvoteMember = viewMain.get("recommend_member").asInteger(),
                 downvote = viewMain.get("nonrecommend").asInteger(),
-                isManager = viewMain.safeGet("managerskill").asBoolean()
+                isManager = viewMain.get("managerskill").asBoolean()
         )
     }
 }

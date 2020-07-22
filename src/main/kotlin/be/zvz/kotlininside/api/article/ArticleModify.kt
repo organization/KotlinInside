@@ -60,96 +60,85 @@ class ArticleModify(
 
         val result = json.get("result").asBoolean()
 
-        if (result) {
-            return ModifyResult(
-                    result = result,
-                    gallId = json.get("gall_id").text(),
-                    articleId = json.get("gall_no").asInteger(),
-                    fileCount = json.get("file_cnt").asInteger(),
-                    fileSize = json.get("file_size").asInteger(),
-                    subject = json.get("subject").text(),
-                    content = mutableListOf<Content>().apply {
-                        json.get("memo").values().forEach {
-                            it.safeGet("tag_value").let { tagValue ->
-                                when {
-                                    tagValue.isNull -> {
-                                        it.toMap<String, String>().forEach { (_, value) ->
+        return ModifyResult(
+                result = result,
+                gallId = json.get("gall_id").text(),
+                articleId = json.get("gall_no").asInteger(),
+                fileCount = json.get("file_cnt").asInteger(),
+                fileSize = json.get("file_size").asInteger(),
+                subject = json.get("subject").text(),
+                content = mutableListOf<Content>().apply {
+                    json.get("memo").values().forEach {
+                        it.get("tag_value").let { tagValue ->
+                            when {
+                                tagValue.isNull -> {
+                                    it.toMap<String, String>().forEach { (_, value) ->
+                                        add(
+                                                HtmlContent(
+                                                        htmlString = StringEscapeUtils.unescapeHtml4(value)
+                                                )
+                                        )
+                                    }
+                                }
+                                else -> {
+                                    it.toMap<String, String>().forEach { (key, value) ->
+                                        if (key != "tag_value") {
+                                            val inputStream = BufferedInputStream(URL(StringEscapeUtils.unescapeHtml4(value)).openStream())
                                             add(
-                                                    HtmlContent(
-                                                            htmlString = StringEscapeUtils.unescapeHtml4(value)
+                                                    ImageContent(
+                                                            stream = inputStream
                                                     )
                                             )
                                         }
                                     }
-                                    else -> {
-                                        it.toMap<String, String>().forEach { (key, value) ->
-                                            if (key != "tag_value") {
-                                                val inputStream = BufferedInputStream(URL(StringEscapeUtils.unescapeHtml4(value)).openStream())
-                                                add(
-                                                        ImageContent(
-                                                                stream = inputStream
-                                                        )
-                                                )
-                                            }
-                                        }
-                                    }
                                 }
                             }
-                        }
-                    },
-                    file = mutableListOf<FileData>().apply {
-                        json.get("file").values().forEach {
-                            var block = 0
-                            var fileSize = 0
-
-                            var count = 0
-                            it.toMap<String, String>().forEach { (_, value) ->
-                                if (count == 0) {
-                                    block = value.toInt()
-                                } else {
-                                    fileSize = value.toInt()
-                                }
-
-                                count++
-                            }
-
-                            add(
-                                    FileData(
-                                            block = block,
-                                            fileSize = fileSize
-                                    )
-                            )
-                        }
-                    },
-                    headText = mutableListOf<HeadText>().apply {
-                        json.safeGet("head_text").let { jsonHeadText ->
-                            when {
-                                !jsonHeadText.isNull -> jsonHeadText.values().forEach {
-                                    add(
-                                            HeadText(
-                                                    identifier = it.get("no").asInteger(),
-                                                    name = it.get("name").text(),
-                                                    level = it.get("level").asInteger(),
-                                                    selected = it.get("selected").asBoolean()
-                                            )
-                                    )
-                                }
-                            }
-                        }
-                    },
-                    currentHeadText = json.safeGet("headtext").run {
-                        when {
-                            isNull -> null
-                            else -> text()
                         }
                     }
-            )
-        } else {
-            return ModifyResult(
-                    result = result,
-                    cause = json.get("cause").text()
-            )
-        }
+                },
+                file = mutableListOf<FileData>().apply {
+                    json.get("file").values().forEach {
+                        var block = 0
+                        var fileSize = 0
+
+                        var count = 0
+                        it.toMap<String, String>().forEach { (_, value) ->
+                            if (count == 0) {
+                                block = value.toInt()
+                            } else {
+                                fileSize = value.toInt()
+                            }
+
+                            count++
+                        }
+
+                        add(
+                                FileData(
+                                        block = block,
+                                        fileSize = fileSize
+                                )
+                        )
+                    }
+                },
+                headText = mutableListOf<HeadText>().apply {
+                    json.get("head_text").let { jsonHeadText ->
+                        when {
+                            !jsonHeadText.isNull -> jsonHeadText.values().forEach {
+                                add(
+                                        HeadText(
+                                                identifier = it.get("no").asInteger(),
+                                                name = it.get("name").safeText(),
+                                                level = it.get("level").asInteger(),
+                                                selected = it.get("selected").asBoolean()
+                                        )
+                                )
+                            }
+                        }
+                    }
+                },
+                currentHeadText = json.get("headtext").text(),
+                cause = json.get("cause").text()
+        )
     }
 
     @JvmOverloads

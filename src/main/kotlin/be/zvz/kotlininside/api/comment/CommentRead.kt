@@ -23,13 +23,14 @@ class CommentRead(
 
     data class CommentData(
             val memberIcon: Int,
-            val ipData: String,
+            val ipData: String?,
             val gallerCon: String?,
             val name: String,
             val userId: String,
             val content: Comment,
             val identifier: Int,
-            val dateTime: String
+            val dateTime: String,
+            val isDeleteFlag: String?
     )
 
     /**
@@ -52,26 +53,21 @@ class CommentRead(
                                 CommentData(
                                         memberIcon = it.get("member_icon").asInteger(),
                                         ipData = it.get("ipData").text(),
-                                        gallerCon = it.safeGet("gallercon").run {
-                                            when {
-                                                isNull -> null
-                                                else -> text()
-                                            }
-                                        },
-                                        name = it.get("name").text(),
-                                        userId = it.get("user_id").text(),
-                                        content = it.safeGet("dccon").run {
+                                        gallerCon = it.get("gallercon").text(),
+                                        name = it.get("name").safeText(),
+                                        userId = it.get("user_id").safeText(),
+                                        content = it.get("dccon").run {
                                             when {
                                                 isNull -> {
                                                     StringComment(
-                                                            memo = it.get("comment_memo").text()
+                                                            memo = it.get("comment_memo").safeText()
                                                     )
                                                 }
                                                 else -> {
                                                     DCConComment(
                                                             dcCon = DCCon(
-                                                                    imgLink = text(),
-                                                                    memo = it.get("comment_memo").text(),
+                                                                    imgLink = safeText(),
+                                                                    memo = it.get("comment_memo").safeText(),
                                                                     detailIndex = it.get("dccon_detail_idx").asInteger()
                                                             )
                                                     )
@@ -79,7 +75,8 @@ class CommentRead(
                                             }
                                         },
                                         identifier = it.get("comment_no").asInteger(),
-                                        dateTime = it.get("date_time").text()
+                                        dateTime = it.get("date_time").safeText(),
+                                        isDeleteFlag = it.get("is_delete_flag").text()
                                 )
                         )
                     }

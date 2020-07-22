@@ -12,7 +12,7 @@ app_id를 서버로부터 얻어오는 메소드입니다.
 
 ### Exceptions
 
-`java.lang.NullPointerException` - app_id를 얻어올 수 없는 경우, NPE를 반환합니다.
+`java.lang.NullPointerException` - app_id를 얻어올 수 없는 경우, NullPointerException이 발생합니다.
 
 ### Parameters
 

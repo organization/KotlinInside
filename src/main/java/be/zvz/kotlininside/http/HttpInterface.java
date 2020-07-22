@@ -10,28 +10,21 @@ import java.util.List;
 import java.util.Map;
 
 public interface HttpInterface {
-    @Nullable
-    public JsonBrowser get(@NotNull String url, @Nullable Option option) throws HttpException;
+    @Nullable JsonBrowser get(@NotNull String url, @Nullable Option option) throws HttpException;
 
-    @Nullable
-    public JsonBrowser post(@NotNull String url, @Nullable Option option) throws HttpException;
+    @Nullable JsonBrowser post(@NotNull String url, @Nullable Option option) throws HttpException;
 
-    @Nullable
-    public JsonBrowser delete(@NotNull String url, @Nullable Option option) throws HttpException;
+    @Nullable JsonBrowser delete(@NotNull String url, @Nullable Option option) throws HttpException;
 
-    @Nullable
-    public JsonBrowser head(@NotNull String url, @Nullable Option option) throws HttpException;
+    @Nullable JsonBrowser head(@NotNull String url, @Nullable Option option) throws HttpException;
 
-    @Nullable
-    public JsonBrowser put(@NotNull String url, @Nullable Option option) throws HttpException;
+    @Nullable JsonBrowser put(@NotNull String url, @Nullable Option option) throws HttpException;
 
-    @Nullable
-    public JsonBrowser patch(@NotNull String url, @Nullable Option option) throws HttpException;
+    @Nullable JsonBrowser patch(@NotNull String url, @Nullable Option option) throws HttpException;
 
-    @Nullable
-    public JsonBrowser upload(@NotNull String url, @Nullable Option option) throws HttpException;
+    @Nullable JsonBrowser upload(@NotNull String url, @Nullable Option option) throws HttpException;
 
-    public final class Option {
+    final class Option {
         @NotNull
         private final Map<String, String> headers = new LinkedHashMap<>();
         @NotNull

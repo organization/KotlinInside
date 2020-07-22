@@ -6,7 +6,7 @@ title: JsonBrowser.parse - KotlinInside
 
 # parse
 
-(JVM) `open static fun parse(json: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!): `[`JsonBrowser`](index.html)`!`
+(JVM) `@NotNull open static fun parse(json: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!): @NotNull `[`JsonBrowser`](index.html)
 
 Parse from string.
 
@@ -19,9 +19,9 @@ Parse from string.
 `IOException` - When parsing the JSON failed
 
 **Return**
-[JsonBrowser](index.html)!: JsonBrowser instance for navigating in the result
+[JsonBrowser](index.html): JsonBrowser instance for navigating in the result
 
-(JVM) `open static fun parse(stream: `[`InputStream`](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)`!): `[`JsonBrowser`](index.html)`!`
+(JVM) `@NotNull open static fun parse(stream: `[`InputStream`](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)`!): @NotNull `[`JsonBrowser`](index.html)
 
 Parse from string.
 
@@ -34,5 +34,5 @@ Parse from string.
 `IOException` - When parsing the JSON failed
 
 **Return**
-[JsonBrowser](index.html)!: JsonBrowser instance for navigating in the result
+[JsonBrowser](index.html): JsonBrowser instance for navigating in the result
 

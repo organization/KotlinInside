@@ -6,7 +6,7 @@ title: JsonBrowser.get - KotlinInside
 
 # get
 
-(JVM) `open fun get(key: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!): `[`JsonBrowser`](index.html)`!`
+(JVM) `@NotNull open fun get(key: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!): @NotNull `[`JsonBrowser`](index.html)
 
 Get an element by key from a map value
 
@@ -15,5 +15,5 @@ Get an element by key from a map value
 `key` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Map key
 
 **Return**
-[JsonBrowser](index.html)!: JsonBrowser instance which wraps the value with the specified key
+[JsonBrowser](index.html): JsonBrowser instance which wraps the value with the specified key
 

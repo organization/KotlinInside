@@ -25,6 +25,8 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -37,6 +39,8 @@ import java.util.Map;
  * Allows to easily navigate in decoded JSON data
  */
 public class JsonBrowser {
+    public static final JsonBrowser NULL_BROWSER = new JsonBrowser(null);
+
     private static final ObjectMapper mapper = setupMapper();
 
     private final JsonNode node;
@@ -52,8 +56,9 @@ public class JsonBrowser {
      * @return JsonBrowser instance for navigating in the result
      * @throws IOException When parsing the JSON failed
      */
+    @NotNull
     public static JsonBrowser parse(String json) throws IOException {
-        return new JsonBrowser(mapper.readTree(json));
+        return create(mapper.readTree(json));
     }
 
     /**
@@ -63,8 +68,9 @@ public class JsonBrowser {
      * @return JsonBrowser instance for navigating in the result
      * @throws IOException When parsing the JSON failed
      */
+    @NotNull
     public static JsonBrowser parse(InputStream stream) throws IOException {
-        return new JsonBrowser(mapper.readTree(stream));
+        return create(mapper.readTree(stream));
     }
 
     private static ObjectMapper setupMapper() {
@@ -88,45 +94,23 @@ public class JsonBrowser {
         return node instanceof ObjectNode;
     }
 
+    @NotNull
+    private static JsonBrowser create(JsonNode node) {
+        return node != null ? new JsonBrowser(node) : NULL_BROWSER;
+    }
+
     /**
      * Get an element at an index for a list value
      *
      * @param index ArticleList index
      * @return JsonBrowser instance which wraps the value at the specified index
      */
+    @NotNull
     public JsonBrowser index(int index) {
         if (isList()) {
-            return new JsonBrowser(node.get(index));
+            return create(node.get(index));
         } else {
-            throw new IllegalStateException("Index only works on a list");
-        }
-    }
-
-    /**
-     * Get an element by key from a map value
-     *
-     * @param key Map key
-     * @return JsonBrowser instance which wraps the value with the specified key
-     */
-    public JsonBrowser get(String key) {
-        if (isMap()) {
-            return new JsonBrowser(node.get(key));
-        } else {
-            throw new IllegalStateException("Get only works on a map");
-        }
-    }
-
-    /**
-     * Get an element by key from a map value
-     *
-     * @param key Map key
-     * @return JsonBrowser instance which wraps the value with the specified key
-     */
-    public JsonBrowser safeGet(String key) {
-        if (isMap()) {
-            return new JsonBrowser(node.get(key));
-        } else {
-            return new JsonBrowser(null);
+            return NULL_BROWSER;
         }
     }
 
@@ -145,12 +129,32 @@ public class JsonBrowser {
     }
 
     /**
+     * Get an element by key from a map value
+     *
+     * @param key Map key
+     * @return JsonBrowser instance which wraps the value with the specified key
+     */
+    @NotNull
+    public JsonBrowser get(String key) {
+        if (isMap()) {
+            return create(node.get(key));
+        } else {
+            return NULL_BROWSER;
+        }
+    }
+
+    /**
      * Returns a list of all the values in this element
      *
      * @return The list of values as JsonBrowser elements
      */
+    @NotNull
     public List<JsonBrowser> values() {
         List<JsonBrowser> values = new ArrayList<>();
+
+        if (node == null) {
+            return values;
+        }
 
         //node.elements().forEachRemaining(child -> values.add(new JsonBrowser(child))); //Android API 21!
         for (Iterator<JsonNode> it = node.elements(); it.hasNext(); ) {
@@ -168,6 +172,7 @@ public class JsonBrowser {
      * @return The value as an instance of the specified class
      * @throws IllegalArgumentException If conversion is impossible
      */
+    @NotNull
     public <T> T as(Class<T> klass) {
         try {
             return mapper.treeToValue(node, klass);
@@ -199,6 +204,15 @@ public class JsonBrowser {
         return defaultValue;
     }
 
+    @Nullable
+    public Boolean asNullableBoolean() {
+        if (node == null || node.isNull()) {
+            return null;
+        } else {
+            return asBoolean();
+        }
+    }
+
     public long asLong() {
         return asLong(0);
     }
@@ -217,6 +231,15 @@ public class JsonBrowser {
         }
 
         return defaultValue;
+    }
+
+    @Nullable
+    public Long asNullableLong() {
+        if (node == null || node.isNull()) {
+            return null;
+        } else {
+            return asLong();
+        }
     }
 
     public int asInteger() {
@@ -239,6 +262,16 @@ public class JsonBrowser {
         return defaultValue;
     }
 
+    @Nullable
+    public Integer asNullableInteger() {
+        if (node == null || node.isNull()) {
+            return null;
+        } else {
+            return asInteger();
+        }
+    }
+
+    @NotNull
     public <K, V> Map<K, V> toMap() {
         try {
             return mapper.convertValue(node, new TypeReference<Map<K, V>>() {
@@ -251,6 +284,7 @@ public class JsonBrowser {
     /**
      * @return The value of the element as text
      */
+    @Nullable
     public String text() {
         if (node != null) {
             if (node.isNull()) {
@@ -271,12 +305,10 @@ public class JsonBrowser {
         return null;
     }
 
-    public String format() {
-        try {
-            return node != null ? mapper.writeValueAsString(node) : null;
-        } catch (Exception e) {
-            return null;
-        }
+    @NotNull
+    public String safeText() {
+        String text = text();
+        return text != null ? text : "";
     }
 
     /**
@@ -289,5 +321,14 @@ public class JsonBrowser {
     @Override
     public String toString() {
         return node.toString();
+    }
+
+    @Nullable
+    public String format() {
+        try {
+            return node != null ? mapper.writeValueAsString(node) : null;
+        } catch (Exception e) {
+            return null;
+        }
     }
 }

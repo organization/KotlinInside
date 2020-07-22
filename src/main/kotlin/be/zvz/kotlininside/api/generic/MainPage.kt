@@ -44,10 +44,10 @@ class MainPage {
             json.get("hit").values().forEach {
                 add(
                         Article(
-                                gallId = it.get("id").text(),
+                                gallId = it.get("id").safeText(),
                                 articleId = it.get("no").`as`(Int::class.java),
-                                title = it.get("title").text(),
-                                thumbnail = it.get("thumbnail").text()
+                                title = it.get("title").safeText(),
+                                thumbnail = it.get("thumbnail").safeText()
                         )
                 )
             }
@@ -67,11 +67,11 @@ class MainPage {
             json.get("best").values().forEach {
                 add(
                         Article(
-                                gallId = it.get("id").text(),
+                                gallId = it.get("id").safeText(),
                                 articleId = it.get("no").asInteger(),
                                 gallName = it.get("gall_name").text(),
-                                title = it.get("title").text(),
-                                thumbnail = it.get("thumbnail").text()
+                                title = it.get("title").safeText(),
+                                thumbnail = it.get("thumbnail").safeText()
                         )
                 )
             }
@@ -91,11 +91,11 @@ class MainPage {
             json.get("issuezoom").values().forEach {
                 add(
                         Article(
-                                gallId = it.get("id").text(),
+                                gallId = it.get("id").safeText(),
                                 articleId = it.get("no").asInteger(),
                                 gallName = it.get("gall_name").text(),
-                                title = it.get("title").text(),
-                                thumbnail = it.get("thumbnail").text()
+                                title = it.get("title").safeText(),
+                                thumbnail = it.get("thumbnail").safeText()
                         )
                 )
             }
@@ -115,8 +115,8 @@ class MainPage {
             json.get("new_gallery").values().forEach {
                 add(
                         NewGallery(
-                                id = it.get("id").text(),
-                                title = it.get("title").text()
+                                id = it.get("id").safeText(),
+                                title = it.get("title").safeText()
                         )
                 )
             }

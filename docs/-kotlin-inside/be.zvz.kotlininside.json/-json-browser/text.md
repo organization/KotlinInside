@@ -6,8 +6,8 @@ title: JsonBrowser.text - KotlinInside
 
 # text
 
-(JVM) `open fun text(): `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!`
+(JVM) `@Nullable open fun text(): @Nullable `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`?`
 
 **Return**
-[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The value of the element as text
+[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The value of the element as text
 

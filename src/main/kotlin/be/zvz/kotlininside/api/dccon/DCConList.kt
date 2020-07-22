@@ -33,8 +33,8 @@ class DCConList(
                         add(
                                 DCCon(
                                         packageIndex = it.get("package_idx").asInteger(),
-                                        title = it.get("title").text(),
-                                        imgLink = it.get("img").text()
+                                        title = it.get("title").safeText(),
+                                        imgLink = it.get("img").safeText()
                                 )
                         )
                     }
@@ -48,8 +48,8 @@ class DCConList(
                                                 DCCon(
                                                         detailIndex = it.get("detail_idx").asInteger(),
                                                         packageIndex = it.get("package_idx").asInteger(),
-                                                        title = it.get("title").text(),
-                                                        imgLink = it.get("img").text()
+                                                        title = it.get("title").safeText(),
+                                                        imgLink = it.get("img").safeText()
                                                 )
                                         )
                                     }

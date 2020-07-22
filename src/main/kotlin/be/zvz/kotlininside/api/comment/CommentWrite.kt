@@ -7,7 +7,6 @@ import be.zvz.kotlininside.api.type.comment.StringComment
 import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.http.HttpInterface
 import be.zvz.kotlininside.http.Request
-import be.zvz.kotlininside.json.JsonBrowser
 import be.zvz.kotlininside.session.Session
 import be.zvz.kotlininside.session.user.Anonymous
 import be.zvz.kotlininside.value.ApiUrl
@@ -26,15 +25,6 @@ class CommentWrite @JvmOverloads constructor(
             val cause: String? = null,
             val word: String? = null
     )
-
-    private fun getWord(writeResultJson: JsonBrowser): String? {
-        val word = writeResultJson.safeGet("word")
-
-        return when {
-            !word.isNull -> word.text()
-            else -> null
-        }
-    }
 
     /**
      * 댓글을 작성합니다.
@@ -63,19 +53,13 @@ class CommentWrite @JvmOverloads constructor(
 
         val json = KotlinInside.getInstance().httpInterface.upload(ApiUrl.Comment.OK, option)!!.index(0)
 
-        val result = json.get("result").asBoolean()
 
-        return when {
-            result -> WriteResult(
-                    result = result,
-                    data = json.get("data").asInteger()
-            )
-            else -> WriteResult(
-                    result = result,
-                    cause = json.get("cause").text(),
-                    word = getWord(json)
-            )
-        }
+        return WriteResult(
+                result = json.get("result").asBoolean(),
+                data = json.get("data").asNullableInteger(),
+                cause = json.get("cause").text(),
+                word = json.get("word").text()
+        )
     }
 
     /**
@@ -108,19 +92,12 @@ class CommentWrite @JvmOverloads constructor(
 
         val json = KotlinInside.getInstance().httpInterface.upload(ApiUrl.Comment.OK, option)!!.index(0)
 
-        val result = json.get("result").asBoolean()
-
-        return when {
-            result -> WriteResult(
-                    result = result,
-                    data = json.get("data").asInteger()
-            )
-            else -> WriteResult(
-                    result = result,
-                    cause = json.get("cause").text(),
-                    word = getWord(json)
-            )
-        }
+        return WriteResult(
+                result = json.get("result").asBoolean(),
+                data = json.get("data").asNullableInteger(),
+                cause = json.get("cause").text(),
+                word = json.get("word").text()
+        )
     }
 
     private fun addCommentMemo(comment: Comment, option: HttpInterface.Option) {
@@ -143,7 +120,7 @@ class CommentWrite @JvmOverloads constructor(
 
                 when (dcConJson.get("result").asBoolean()) {
                     true -> {
-                        option.addMultipartParameter("comment_memo", dcConJson.get("img_tag").text())
+                        option.addMultipartParameter("comment_memo", dcConJson.get("img_tag").safeText())
                                 .addMultipartParameter("detail_idx", comment.dcCon.detailIndex.toString())
                     }
                     else -> {

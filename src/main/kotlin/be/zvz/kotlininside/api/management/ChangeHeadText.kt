@@ -57,8 +57,8 @@ class ChangeHeadText(
 
         return ChangeResult(
                 result = json.get("result").asBoolean(),
-                cause = json.get("cause").text(),
-                state = json.get("state").text()
+                cause = json.get("cause").safeText(),
+                state = json.get("state").safeText()
         )
     }
 }

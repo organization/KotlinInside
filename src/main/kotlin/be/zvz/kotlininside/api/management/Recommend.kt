@@ -54,13 +54,8 @@ class Recommend(
 
         return RecommendResult(
                 result = json.get("result").asBoolean(),
-                cause = json.get("cause").text(),
-                state = json.safeGet("state").run {
-                    when {
-                        isNull -> null
-                        else -> text()
-                    }
-                }
+                cause = json.get("cause").safeText(),
+                state = json.get("state").text()
         )
     }
 

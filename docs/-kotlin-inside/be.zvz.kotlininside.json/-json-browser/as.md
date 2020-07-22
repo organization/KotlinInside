@@ -6,7 +6,7 @@ title: JsonBrowser.as - KotlinInside
 
 # as
 
-(JVM) `open fun <T : `[`Any`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`!> as(klass: `[`Class`](https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html)`<T>!): T`
+(JVM) `@NotNull open fun <T : `[`Any`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`!> as(klass: `[`Class`](https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html)`<T>!): @NotNull T`
 
 Attempt to retrieve the value in the specified format
 

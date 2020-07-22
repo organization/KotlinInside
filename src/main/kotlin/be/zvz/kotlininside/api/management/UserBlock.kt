@@ -82,7 +82,7 @@ class UserBlock @JvmOverloads constructor(
 
         return BlockResult(
                 result = json.get("result").asBoolean(),
-                cause = json.get("cause").text()
+                cause = json.get("cause").safeText()
         )
     }
 
