@@ -6,7 +6,7 @@ title: JsonBrowser.index - KotlinInside
 
 # index
 
-(JVM) `open fun index(index: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`JsonBrowser`](index.html)`!`
+(JVM) `@NotNull open fun index(index: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): @NotNull `[`JsonBrowser`](index.html)
 
 Get an element at an index for a list value
 
@@ -15,5 +15,5 @@ Get an element at an index for a list value
 `index` - [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): ArticleList index
 
 **Return**
-[JsonBrowser](index.html)!: JsonBrowser instance which wraps the value at the specified index
+[JsonBrowser](index.html): JsonBrowser instance which wraps the value at the specified index
 
