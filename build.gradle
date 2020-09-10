@@ -70,8 +70,7 @@ tasks.test {
     }
 }
 
-dokka {
-    outputFormat = 'jekyll'
+dokkaJekyll {
     outputDirectory = "docs"
 
     configuration {
