@@ -41,7 +41,7 @@ compileJava {
 dependencies {
     implementation group: 'commons-codec', name: 'commons-codec', version: '1.14'
     implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.11'
-    implementation group: 'org.apache.commons', name: 'commons-text', version: '1.8'
+    implementation group: 'org.apache.commons', name: 'commons-text', version: '1.9'
 
     //Jackson
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.11.1'
