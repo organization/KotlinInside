@@ -7,7 +7,7 @@ buildscript {
     }
     dependencies {
         classpath group: 'org.jetbrains.kotlin', name: 'kotlin-gradle-plugin', version: '1.4.10'
-        classpath group: 'com.jfrog.bintray.gradle', name: 'gradle-bintray-plugin', version: '1.7'
+        classpath group: 'com.jfrog.bintray.gradle', name: 'gradle-bintray-plugin', version: '1.8.5'
         classpath group: 'com.github.dcendents', name: 'android-maven-gradle-plugin', version: '2.1'
         classpath group: 'org.jetbrains.dokka', name: 'dokka-gradle-plugin', version: '1.4.10'
     }
