@@ -1,15 +1,27 @@
 ---
-title: HttpRequest.expires - KotlinInside
+title: expires -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[expires](expires.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [expires](./expires.html)
 
-# expires
 
-(JVM) `open fun expires(): `[`Long`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)
+# expires  
+[jvm]  
+Brief description  
+
 
 Get the 'Expires' header from the response
 
-**Return**
-[Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): expires value, -1 on failures
+
+
+#### Return  
+
+
+expires value, -1 on failures
+
+  
+Content  
+open fun [expires](expires.md)(): [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)  
+
+
 

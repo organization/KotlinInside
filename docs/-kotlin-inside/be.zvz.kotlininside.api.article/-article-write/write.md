@@ -1,15 +1,20 @@
 ---
-title: ArticleWrite.write - KotlinInside
+title: write -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.article](../index.md)/[ArticleWrite](index.md)/[write](write.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.api.article](../index.html) / [ArticleWrite](index.html) / [write](./write.html)
 
-# write
 
-(JVM) `fun write(): WriteResult`
+# write  
+[jvm]  
+Brief description  
+
 
 글을 작성합니다.
 
-### Exceptions
+  
+Content  
+fun [write](write.md)(): [ArticleWrite.WriteResult](-write-result/index.md)  
 
-`be.zvz.kotlininside.http.HttpException` - 글을 작성하지 못할 경우, HttpException 발생
+
+

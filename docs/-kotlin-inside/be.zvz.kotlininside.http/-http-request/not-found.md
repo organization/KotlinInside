@@ -1,19 +1,27 @@
 ---
-title: HttpRequest.notFound - KotlinInside
+title: notFound -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[notFound](not-found.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [notFound](./not-found.html)
 
-# notFound
 
-(JVM) `open fun notFound(): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
+# notFound  
+[jvm]  
+Brief description  
+
 
 Is the response code a 404 Not Found?
 
-### Exceptions
 
-`HttpRequestException` -
 
-**Return**
-[Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true if 404, false otherwise
+#### Return  
+
+
+true if 404, false otherwise
+
+  
+Content  
+open fun [notFound](not-found.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
+
+
 

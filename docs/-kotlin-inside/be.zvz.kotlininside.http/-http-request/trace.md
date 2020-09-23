@@ -1,38 +1,38 @@
 ---
-title: HttpRequest.trace - KotlinInside
+title: trace -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[trace](trace.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [trace](./trace.html)
 
-# trace
 
-(JVM) `open static fun trace(url: `[`CharSequence`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`!): `[`HttpRequest`](index.html)`!`
+# trace  
+[jvm]  
+Brief description  
 
-Start a 'TRACE' request to the given URL
-
-### Parameters
-
-`url` - [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:
-
-### Exceptions
-
-`HttpRequestException` -
-
-**Return**
-[HttpRequest](index.html)!: request
-
-(JVM) `open static fun trace(url: `[`URL`](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html)`!): `[`HttpRequest`](index.html)`!`
 
 Start a 'TRACE' request to the given URL
 
-### Parameters
 
-`url` - [URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html)!:
 
-### Exceptions
+#### Return  
 
-`HttpRequestException` -
 
-**Return**
-[HttpRequest](index.html)!: request
+request
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| url| <br><br><br><br>
+  
+  
+Content  
+open fun [trace](trace.md)(url: [CharSequence](https://docs.oracle.com/javase/7/docs/api/java/lang/CharSequence.html)): [HttpRequest](index.md)  
+open fun [trace](trace.md)(url: [URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html)): [HttpRequest](index.md)  
+
+
 

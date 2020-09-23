@@ -1,15 +1,20 @@
 ---
-title: ArticleVote.downvote - KotlinInside
+title: downvote -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.article](../index.md)/[ArticleVote](index.md)/[downvote](downvote.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.api.article](../index.html) / [ArticleVote](index.html) / [downvote](./downvote.html)
 
-# downvote
 
-(JVM) `fun downvote(): VoteResult`
+# downvote  
+[jvm]  
+Brief description  
+
 
 글을 비추천합니다.
 
-### Exceptions
+  
+Content  
+fun [downvote](downvote.md)(): [ArticleVote.VoteResult](-vote-result/index.md)  
 
-`be.zvz.kotlininside.http.HttpException` - 비추천이 실패할 경우, HttpException 발생
+
+

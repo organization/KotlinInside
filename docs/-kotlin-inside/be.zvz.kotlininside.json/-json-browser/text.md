@@ -1,13 +1,25 @@
 ---
-title: JsonBrowser.text - KotlinInside
+title: text -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.json](../index.md)/[JsonBrowser](index.md)/[text](text.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.json](../index.html) / [JsonBrowser](index.html) / [text](./text.html)
 
-# text
 
-(JVM) `@Nullable open fun text(): @Nullable `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`?`
+# text  
+[jvm]  
+Brief description  
 
-**Return**
-[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The value of the element as text
+
+#### Return  
+
+
+The value of the element as text
+
+  
+Content  
+@Nullable()  
+  
+open fun [text](text.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+
+
 

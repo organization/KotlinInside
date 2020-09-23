@@ -1,17 +1,31 @@
 ---
-title: JsonBrowser.put - KotlinInside
+title: put -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.json](../index.md)/[JsonBrowser](index.md)/[put](put.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.json](../index.html) / [JsonBrowser](index.html) / [put](./put.html)
 
-# put
 
-(JVM) `open fun put(key: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, item: `[`Any`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`!): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+# put  
+[jvm]  
+Brief description  
+
 
 Put a value into the map if this instance contains a map.
 
-### Parameters
 
-`key` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The map entry key
 
-`item` - [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: The map entry value
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| item| <br><br>The map entry value<br><br>
+| key| <br><br>The map entry key<br><br>
+  
+  
+Content  
+open fun [put](put.md)(key: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), item: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html))  
+
+
+

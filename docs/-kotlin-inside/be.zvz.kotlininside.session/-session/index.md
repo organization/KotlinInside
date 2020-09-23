@@ -1,19 +1,30 @@
 ---
-title: Session - KotlinInside
+title: Session -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.session](../index.md)/[Session](index.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.session](../index.html) / [Session](./index.html)
 
-# Session
 
-(JVM) `data class Session`
+# Session  
+ [jvm] data class [Session](index.md)(**user**: [User](../../be.zvz.kotlininside.session.user/-user/index.md), **detail**: [SessionDetail](../-session-detail/index.md)?)   
 
-### Constructors
 
-| (JVM) [&lt;init&gt;](-init-.html) | `Session(user: `[`User`](../../be.zvz.kotlininside.session.user/-user/index.html)`, detail: `[`SessionDetail`](../-session-detail/index.html)`?)` |
+## Functions  
+  
+|  Name|  Summary| 
+|---|---|
+| [component1](component1.md)| [jvm]  <br>Content  <br>operator fun [component1](component1.md)(): [User](../../be.zvz.kotlininside.session.user/-user/index.md)  <br><br><br>
+| [component2](component2.md)| [jvm]  <br>Content  <br>operator fun [component2](component2.md)(): [SessionDetail](../-session-detail/index.md)?  <br><br><br>
+| [copy](copy.md)| [jvm]  <br>Content  <br>fun [copy](copy.md)(user: [User](../../be.zvz.kotlininside.session.user/-user/index.md), detail: [SessionDetail](../-session-detail/index.md)?): [Session](index.md)  <br><br><br>
+| [equals](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/equals.html)| [jvm]  <br>Content  <br>open operator override fun [equals](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/equals.html)(other: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  <br><br><br>
+| [hashCode](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/hash-code.html)| [jvm]  <br>Content  <br>open override fun [hashCode](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/hash-code.html)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  <br><br><br>
+| [toString](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/to-string.html)| [jvm]  <br>Content  <br>open override fun [toString](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/to-string.html)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
 
-### Properties
 
-| (JVM) [detail](detail.html) | `val detail: `[`SessionDetail`](../-session-detail/index.html)`?` |
-| (JVM) [user](user.html) | `val user: `[`User`](../../be.zvz.kotlininside.session.user/-user/index.html) |
+## Properties  
+  
+|  Name|  Summary| 
+|---|---|
+| [detail](index.md#be.zvz.kotlininside.session/Session/detail/#/PointingToDeclaration/)|  [jvm] val [detail](index.md#be.zvz.kotlininside.session/Session/detail/#/PointingToDeclaration/): [SessionDetail](../-session-detail/index.md)?   <br>
+| [user](index.md#be.zvz.kotlininside.session/Session/user/#/PointingToDeclaration/)|  [jvm] val [user](index.md#be.zvz.kotlininside.session/Session/user/#/PointingToDeclaration/): [User](../../be.zvz.kotlininside.session.user/-user/index.md)   <br>
 

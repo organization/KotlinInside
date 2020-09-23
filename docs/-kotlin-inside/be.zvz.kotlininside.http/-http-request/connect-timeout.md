@@ -1,19 +1,37 @@
 ---
-title: HttpRequest.connectTimeout - KotlinInside
+title: connectTimeout -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[connectTimeout](connect-timeout.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [connectTimeout](./connect-timeout.html)
 
-# connectTimeout
 
-(JVM) `open fun connectTimeout(timeout: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`HttpRequest`](index.html)`!`
+# connectTimeout  
+[jvm]  
+Brief description  
+
 
 Set connect timeout on connection to given value
 
-### Parameters
 
-`timeout` - [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):
 
-**Return**
-[HttpRequest](index.html)!: this request
+#### Return  
+
+
+this request
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| timeout| <br><br><br><br>
+  
+  
+Content  
+open fun [connectTimeout](connect-timeout.md)(timeout: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [HttpRequest](index.md)  
+
+
 

@@ -1,19 +1,30 @@
 ---
-title: UserBlock.BlockResult - KotlinInside
+title: BlockResult -
 ---
+//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.management](../../index.md)/[UserBlock](../index.md)/[BlockResult](index.md)
 
-[KotlinInside](../../../index.html) / [be.zvz.kotlininside.api.management](../../index.html) / [UserBlock](../index.html) / [BlockResult](./index.html)
 
-# BlockResult
 
-(JVM) `data class BlockResult`
+# BlockResult  
+ [jvm] data class [BlockResult](index.md)(**result**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), **cause**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))   
 
-### Constructors
 
-| (JVM) [&lt;init&gt;](-init-.html) | `BlockResult(result: `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, cause: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` |
+## Functions  
+  
+|  Name|  Summary| 
+|---|---|
+| [component1](component1.md)| [jvm]  <br>Content  <br>operator fun [component1](component1.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  <br><br><br>
+| [component2](component2.md)| [jvm]  <br>Content  <br>operator fun [component2](component2.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
+| [copy](copy.md)| [jvm]  <br>Content  <br>fun [copy](copy.md)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): [UserBlock.BlockResult](index.md)  <br><br><br>
+| [equals](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/equals.html)| [jvm]  <br>Content  <br>open operator override fun [equals](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/equals.html)(other: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  <br><br><br>
+| [hashCode](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/hash-code.html)| [jvm]  <br>Content  <br>open override fun [hashCode](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/hash-code.html)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  <br><br><br>
+| [toString](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/to-string.html)| [jvm]  <br>Content  <br>open override fun [toString](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/to-string.html)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
 
-### Properties
 
-| (JVM) [cause](cause.html) | `val cause: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
-| (JVM) [result](result.html) | `val result: `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
+## Properties  
+  
+|  Name|  Summary| 
+|---|---|
+| [cause](index.md#be.zvz.kotlininside.api.management/UserBlock.BlockResult/cause/#/PointingToDeclaration/)|  [jvm] val [cause](index.md#be.zvz.kotlininside.api.management/UserBlock.BlockResult/cause/#/PointingToDeclaration/): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
+| [result](index.md#be.zvz.kotlininside.api.management/UserBlock.BlockResult/result/#/PointingToDeclaration/)|  [jvm] val [result](index.md#be.zvz.kotlininside.api.management/UserBlock.BlockResult/result/#/PointingToDeclaration/): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)   <br>
 

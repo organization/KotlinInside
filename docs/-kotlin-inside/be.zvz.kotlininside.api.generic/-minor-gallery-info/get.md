@@ -1,15 +1,27 @@
 ---
-title: MinorGalleryInfo.get - KotlinInside
+title: get -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.generic](../index.md)/[MinorGalleryInfo](index.md)/[get](get.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.api.generic](../index.html) / [MinorGalleryInfo](index.html) / [get](./get.html)
 
-# get
 
-(JVM) `fun get(): InfoResult`
+# get  
+[jvm]  
+Brief description  
+
 
 갤러리 정보를 받아옵니다.
 
-**Return**
+
+
+#### Return  
+
+
 갤러리 정보를 반환합니다.
+
+  
+Content  
+fun [get](get.md)(): [MinorGalleryInfo.InfoResult](-info-result/index.md)  
+
+
 

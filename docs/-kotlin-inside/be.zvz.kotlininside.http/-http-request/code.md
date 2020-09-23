@@ -1,34 +1,55 @@
 ---
-title: HttpRequest.code - KotlinInside
+title: code -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[code](code.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [code](./code.html)
 
-# code
 
-(JVM) `open fun code(): `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
+# code  
+[jvm]  
+Brief description  
+
 
 Get the status code of the response
 
-### Exceptions
 
-`HttpRequestException` -
 
-**Return**
-[Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the response code
+#### Return  
 
-(JVM) `open fun code(output: `[`AtomicInteger`](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicInteger.html)`!): `[`HttpRequest`](index.html)`!`
 
-Set the value of the given ``[`AtomicInteger`](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicInteger.html) to the status code of the response
+the response code
 
-### Parameters
+  
+Content  
+open fun [code](code.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
 
-`output` - [AtomicInteger](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicInteger.html)!:
 
-### Exceptions
+[jvm]  
+Brief description  
 
-`HttpRequestException` -
 
-**Return**
-[HttpRequest](index.html)!: this request
+Set the value of the given [AtomicInteger](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicInteger.html) to the status code of the response
+
+
+
+#### Return  
+
+
+this request
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| output| <br><br><br><br>
+  
+  
+Content  
+open fun [code](code.md)(output: [AtomicInteger](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicInteger.html)): [HttpRequest](index.md)  
+
+
 

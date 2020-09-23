@@ -1,38 +1,69 @@
 ---
-title: JsonBrowser.parse - KotlinInside
+title: parse -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.json](../index.md)/[JsonBrowser](index.md)/[parse](parse.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.json](../index.html) / [JsonBrowser](index.html) / [parse](./parse.html)
 
-# parse
 
-(JVM) `@NotNull open static fun parse(json: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!): @NotNull `[`JsonBrowser`](index.html)
+# parse  
+[jvm]  
+Brief description  
 
-Parse from string.
-
-### Parameters
-
-`json` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The JSON object as a string
-
-### Exceptions
-
-`IOException` - When parsing the JSON failed
-
-**Return**
-[JsonBrowser](index.html): JsonBrowser instance for navigating in the result
-
-(JVM) `@NotNull open static fun parse(stream: `[`InputStream`](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)`!): @NotNull `[`JsonBrowser`](index.html)
 
 Parse from string.
 
-### Parameters
 
-`stream` - [InputStream](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)!: The JSON object as a stream
 
-### Exceptions
+#### Return  
 
-`IOException` - When parsing the JSON failed
 
-**Return**
-[JsonBrowser](index.html): JsonBrowser instance for navigating in the result
+JsonBrowser instance for navigating in the result
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| json| <br><br>The JSON object as a string<br><br>
+  
+  
+Content  
+@NotNull()  
+  
+open fun [parse](parse.md)(json: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [JsonBrowser](index.md)  
+
+
+[jvm]  
+Brief description  
+
+
+Parse from string.
+
+
+
+#### Return  
+
+
+JsonBrowser instance for navigating in the result
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| stream| <br><br>The JSON object as a stream<br><br>
+  
+  
+Content  
+@NotNull()  
+  
+open fun [parse](parse.md)(stream: [InputStream](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)): [JsonBrowser](index.md)  
+
+
 

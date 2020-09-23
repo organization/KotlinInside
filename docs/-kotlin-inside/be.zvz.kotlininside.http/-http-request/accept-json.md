@@ -1,15 +1,27 @@
 ---
-title: HttpRequest.acceptJson - KotlinInside
+title: acceptJson -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[acceptJson](accept-json.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [acceptJson](./accept-json.html)
 
-# acceptJson
 
-(JVM) `open fun acceptJson(): `[`HttpRequest`](index.html)`!`
+# acceptJson  
+[jvm]  
+Brief description  
+
 
 Set the 'Accept' header to 'application/json'
 
-**Return**
-[HttpRequest](index.html)!: this request
+
+
+#### Return  
+
+
+this request
+
+  
+Content  
+open fun [acceptJson](accept-json.md)(): [HttpRequest](index.md)  
+
+
 

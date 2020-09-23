@@ -1,15 +1,19 @@
 ---
-title: be.zvz.kotlininside.session.user - KotlinInside
+title: be.zvz.kotlininside.session.user -
 ---
+//[KotlinInside](../index.md)/[be.zvz.kotlininside.session.user](index.md)
 
-[KotlinInside](../index.html) / [be.zvz.kotlininside.session.user](./index.html)
 
-## Package be.zvz.kotlininside.session.user
 
-### Types
+# Package be.zvz.kotlininside.session.user  
 
-| (JVM) [Anonymous](-anonymous/index.html) | `data class Anonymous : `[`User`](-user/index.html) |
-| (JVM) [LoginUser](-login-user/index.html) | `open class LoginUser : `[`User`](-user/index.html) |
-| (JVM) [User](-user/index.html) | `interface User` |
-| (JVM) [UserType](-user-type/index.html) | `enum class UserType` |
+
+## Types  
+  
+|  Name|  Summary| 
+|---|---|
+| [Anonymous](-anonymous/index.md)| [jvm]  <br>Content  <br>data class [Anonymous](-anonymous/index.md)(**id**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **password**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [User](-user/index.md)  <br><br><br>
+| [LoginUser](-login-user/index.md)| [jvm]  <br>Content  <br>open class [LoginUser](-login-user/index.md)(**id**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **password**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [User](-user/index.md)  <br><br><br>
+| [User](-user/index.md)| [jvm]  <br>Content  <br>interface [User](-user/index.md)  <br><br><br>
+| [UserType](-user-type/index.md)| [jvm]  <br>Content  <br>enum [UserType](-user-type/index.md) : [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)<[UserType](-user-type/index.md)>   <br><br><br>
 

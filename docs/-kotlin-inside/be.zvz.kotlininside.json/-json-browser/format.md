@@ -1,9 +1,16 @@
 ---
-title: JsonBrowser.format - KotlinInside
+title: format -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.json](../index.md)/[JsonBrowser](index.md)/[format](format.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.json](../index.html) / [JsonBrowser](index.html) / [format](./format.html)
 
-# format
 
-(JVM) `@Nullable open fun format(): @Nullable `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`?`
+# format  
+[jvm]  
+Content  
+@Nullable()  
+  
+open fun [format](format.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+
+
+

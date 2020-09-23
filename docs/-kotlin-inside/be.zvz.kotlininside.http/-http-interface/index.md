@@ -1,28 +1,37 @@
 ---
-title: HttpInterface - KotlinInside
+title: HttpInterface -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpInterface](index.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpInterface](./index.html)
 
-# HttpInterface
 
-(JVM) `interface HttpInterface`
+# HttpInterface  
+ [jvm] interface [HttpInterface](index.md)   
 
-### Types
 
-| (JVM) [Option](-option/index.html) | `class Option` |
+## Types  
+  
+|  Name|  Summary| 
+|---|---|
+| [Option](-option/index.md)| [jvm]  <br>Content  <br>class [Option](-option/index.md)  <br><br><br>
 
-### Functions
 
-| (JVM) [delete](delete.html) | `abstract fun delete(url: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, option: Option?): `[`JsonBrowser`](../../be.zvz.kotlininside.json/-json-browser/index.html)`?` |
-| (JVM) [get](get.html) | `abstract fun get(url: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, option: Option?): `[`JsonBrowser`](../../be.zvz.kotlininside.json/-json-browser/index.html)`?` |
-| (JVM) [head](head.html) | `abstract fun head(url: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, option: Option?): `[`JsonBrowser`](../../be.zvz.kotlininside.json/-json-browser/index.html)`?` |
-| (JVM) [patch](patch.html) | `abstract fun patch(url: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, option: Option?): `[`JsonBrowser`](../../be.zvz.kotlininside.json/-json-browser/index.html)`?` |
-| (JVM) [post](post.html) | `abstract fun post(url: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, option: Option?): `[`JsonBrowser`](../../be.zvz.kotlininside.json/-json-browser/index.html)`?` |
-| (JVM) [put](put.html) | `abstract fun put(url: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, option: Option?): `[`JsonBrowser`](../../be.zvz.kotlininside.json/-json-browser/index.html)`?` |
-| (JVM) [upload](upload.html) | `abstract fun upload(url: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, option: Option?): `[`JsonBrowser`](../../be.zvz.kotlininside.json/-json-browser/index.html)`?` |
+## Functions  
+  
+|  Name|  Summary| 
+|---|---|
+| [delete](delete.md)| [jvm]  <br>Content  <br>@Nullable()  <br>  <br>abstract fun [delete](delete.md)(url: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), option: [HttpInterface.Option](-option/index.md)): [JsonBrowser](../../be.zvz.kotlininside.json/-json-browser/index.md)  <br><br><br>
+| [get](get.md)| [jvm]  <br>Content  <br>@Nullable()  <br>  <br>abstract fun [get](get.md)(url: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), option: [HttpInterface.Option](-option/index.md)): [JsonBrowser](../../be.zvz.kotlininside.json/-json-browser/index.md)  <br><br><br>
+| [head](head.md)| [jvm]  <br>Content  <br>@Nullable()  <br>  <br>abstract fun [head](head.md)(url: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), option: [HttpInterface.Option](-option/index.md)): [JsonBrowser](../../be.zvz.kotlininside.json/-json-browser/index.md)  <br><br><br>
+| [patch](patch.md)| [jvm]  <br>Content  <br>@Nullable()  <br>  <br>abstract fun [patch](patch.md)(url: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), option: [HttpInterface.Option](-option/index.md)): [JsonBrowser](../../be.zvz.kotlininside.json/-json-browser/index.md)  <br><br><br>
+| [post](post.md)| [jvm]  <br>Content  <br>@Nullable()  <br>  <br>abstract fun [post](post.md)(url: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), option: [HttpInterface.Option](-option/index.md)): [JsonBrowser](../../be.zvz.kotlininside.json/-json-browser/index.md)  <br><br><br>
+| [put](put.md)| [jvm]  <br>Content  <br>@Nullable()  <br>  <br>abstract fun [put](put.md)(url: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), option: [HttpInterface.Option](-option/index.md)): [JsonBrowser](../../be.zvz.kotlininside.json/-json-browser/index.md)  <br><br><br>
+| [upload](upload.md)| [jvm]  <br>Content  <br>@Nullable()  <br>  <br>abstract fun [upload](upload.md)(url: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), option: [HttpInterface.Option](-option/index.md)): [JsonBrowser](../../be.zvz.kotlininside.json/-json-browser/index.md)  <br><br><br>
 
-### Inheritors
 
-| (JVM) [DefaultHttpClient](../-default-http-client/index.html) | `open class DefaultHttpClient : `[`HttpInterface`](./index.html) |
+## Inheritors  
+  
+|  Name| 
+|---|
+| [DefaultHttpClient](../-default-http-client/index.md)
 

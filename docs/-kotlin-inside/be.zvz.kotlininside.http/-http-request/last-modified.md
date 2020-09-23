@@ -1,15 +1,27 @@
 ---
-title: HttpRequest.lastModified - KotlinInside
+title: lastModified -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[lastModified](last-modified.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [lastModified](./last-modified.html)
 
-# lastModified
 
-(JVM) `open fun lastModified(): `[`Long`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)
+# lastModified  
+[jvm]  
+Brief description  
+
 
 Get the 'Last-Modified' header from the response
 
-**Return**
-[Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): last modified value, -1 on failures
+
+
+#### Return  
+
+
+last modified value, -1 on failures
+
+  
+Content  
+open fun [lastModified](last-modified.md)(): [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)  
+
+
 

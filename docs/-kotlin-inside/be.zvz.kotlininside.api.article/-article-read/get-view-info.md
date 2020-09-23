@@ -1,17 +1,23 @@
 ---
-title: ArticleRead.getViewInfo - KotlinInside
+title: getViewInfo -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.article](../index.md)/[ArticleRead](index.md)/[getViewInfo](get-view-info.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.api.article](../index.html) / [ArticleRead](index.html) / [getViewInfo](./get-view-info.html)
 
-# getViewInfo
 
-(JVM) `fun getViewInfo(): ViewInfo`
+# getViewInfo  
+[jvm]  
+Brief description  
 
-### Exceptions
 
-`be.zvz.kotlininside.http.HttpException` - 글을 불러오지 못할 경우, HttpException 발생
+#### Return  
 
-**Return**
-[be.zvz.kotlininside.api.article.ArticleRead.ViewInfo](-view-info/index.html) view_info 객체를 반환합니다.
+
+[be.zvz.kotlininside.api.article.ArticleRead.ViewInfo](-view-info/index.md) view_info 객체를 반환합니다.
+
+  
+Content  
+fun [getViewInfo](get-view-info.md)(): [ArticleRead.ViewInfo](-view-info/index.md)  
+
+
 

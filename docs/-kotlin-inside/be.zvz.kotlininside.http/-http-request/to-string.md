@@ -1,9 +1,14 @@
 ---
-title: HttpRequest.toString - KotlinInside
+title: toString -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[toString](to-string.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [toString](./to-string.html)
 
-# toString
 
-(JVM) `open fun toString(): `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
+# toString  
+[jvm]  
+Content  
+open fun [toString](to-string.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+
+
+

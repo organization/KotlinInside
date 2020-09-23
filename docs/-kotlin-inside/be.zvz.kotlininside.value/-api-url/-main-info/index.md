@@ -1,20 +1,19 @@
 ---
-title: ApiUrl.MainInfo - KotlinInside
+title: MainInfo -
 ---
+//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.value](../../index.md)/[ApiUrl](../index.md)/[MainInfo](index.md)
 
-[KotlinInside](../../../index.html) / [be.zvz.kotlininside.value](../../index.html) / [ApiUrl](../index.html) / [MainInfo](./index.html)
 
-# MainInfo
 
-(JVM) `class MainInfo`
+# MainInfo  
+ [jvm] class [MainInfo](index.md)   
 
-### Constructors
 
-| (JVM) [&lt;init&gt;](-init-.html) | `MainInfo()` |
-
-### Properties
-
-| (JVM) [APP_MAIN](-a-p-p_-m-a-i-n.html) | `static val APP_MAIN: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
-| (JVM) [GALLERY_RANK](-g-a-l-l-e-r-y_-r-a-n-k.html) | `static val GALLERY_RANK: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
-| (JVM) [MINOR_GALLERY_RANK](-m-i-n-o-r_-g-a-l-l-e-r-y_-r-a-n-k.html) | `static val MINOR_GALLERY_RANK: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+## Properties  
+  
+|  Name|  Summary| 
+|---|---|
+| [APP_MAIN](index.md#be.zvz.kotlininside.value/ApiUrl.MainInfo/APP_MAIN/#/PointingToDeclaration/)|  [jvm] val [APP_MAIN](index.md#be.zvz.kotlininside.value/ApiUrl.MainInfo/APP_MAIN/#/PointingToDeclaration/): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
+| [GALLERY_RANKING](index.md#be.zvz.kotlininside.value/ApiUrl.MainInfo/GALLERY_RANKING/#/PointingToDeclaration/)|  [jvm] val [GALLERY_RANKING](index.md#be.zvz.kotlininside.value/ApiUrl.MainInfo/GALLERY_RANKING/#/PointingToDeclaration/): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
+| [MINOR_GALLERY_RANKING](index.md#be.zvz.kotlininside.value/ApiUrl.MainInfo/MINOR_GALLERY_RANKING/#/PointingToDeclaration/)|  [jvm] val [MINOR_GALLERY_RANKING](index.md#be.zvz.kotlininside.value/ApiUrl.MainInfo/MINOR_GALLERY_RANKING/#/PointingToDeclaration/): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
 

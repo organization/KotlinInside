@@ -1,19 +1,37 @@
 ---
-title: HttpRequest.acceptEncoding - KotlinInside
+title: acceptEncoding -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[acceptEncoding](accept-encoding.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [acceptEncoding](./accept-encoding.html)
 
-# acceptEncoding
 
-(JVM) `open fun acceptEncoding(acceptEncoding: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!): `[`HttpRequest`](index.html)`!`
+# acceptEncoding  
+[jvm]  
+Brief description  
+
 
 Set the 'Accept-Encoding' header to given value
 
-### Parameters
 
-`acceptEncoding` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
 
-**Return**
-[HttpRequest](index.html)!: this request
+#### Return  
+
+
+this request
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| acceptEncoding| <br><br><br><br>
+  
+  
+Content  
+open fun [acceptEncoding](accept-encoding.md)(acceptEncoding: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
+
+
 

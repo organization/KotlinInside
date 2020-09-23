@@ -1,12 +1,20 @@
 ---
-title: HttpRequest.setConnectionFactory - KotlinInside
+title: setConnectionFactory -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[setConnectionFactory](set-connection-factory.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [setConnectionFactory](./set-connection-factory.html)
 
-# setConnectionFactory
 
-(JVM) `open static fun setConnectionFactory(connectionFactory: ConnectionFactory!): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+# setConnectionFactory  
+[jvm]  
+Brief description  
 
-Specify the ``[`ConnectionFactory`](-connection-factory/index.html) used to create new requests.
+
+Specify the [ConnectionFactory](-connection-factory/index.md) used to create new requests.
+
+  
+Content  
+open fun [setConnectionFactory](set-connection-factory.md)(connectionFactory: [HttpRequest.ConnectionFactory](-connection-factory/index.md))  
+
+
 

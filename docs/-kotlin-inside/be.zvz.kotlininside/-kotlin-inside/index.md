@@ -1,24 +1,38 @@
 ---
-title: KotlinInside - KotlinInside
+title: KotlinInside -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside](../index.md)/[KotlinInside](index.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside](../index.html) / [KotlinInside](./index.html)
 
-# KotlinInside
 
-(JVM) `class KotlinInside`
+# KotlinInside  
+ [jvm] class [KotlinInside](index.md)   
 
-### Properties
 
-| (JVM) [app](app.html) | `lateinit var app: `[`App`](../../be.zvz.kotlininside.security/-app/index.html) |
-| (JVM) [auth](auth.html) | `val auth: `[`Auth`](../../be.zvz.kotlininside.security/-auth/index.html) |
-| (JVM) [hashedAppKey](hashed-app-key.html) | `lateinit var hashedAppKey: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
-| (JVM) [httpInterface](http-interface.html) | `val httpInterface: `[`HttpInterface`](../../be.zvz.kotlininside.http/-http-interface/index.html) |
-| (JVM) [session](session.html) | `lateinit var session: `[`Session`](../../be.zvz.kotlininside.session/-session/index.html) |
-| (JVM) [user](user.html) | `val user: `[`User`](../../be.zvz.kotlininside.session.user/-user/index.html) |
+## Types  
+  
+|  Name|  Summary| 
+|---|---|
+| [Companion](-companion/index.md)| [jvm]  <br>Content  <br>object [Companion](-companion/index.md)  <br><br><br>
 
-### Companion Object Functions
 
-| (JVM) [createInstance](create-instance.html) | [KotlinInside](./index.html) 인스턴스를 생성합니다.`fun createInstance(user: `[`User`](../../be.zvz.kotlininside.session.user/-user/index.html)`, httpInterface: `[`HttpInterface`](../../be.zvz.kotlininside.http/-http-interface/index.html)`, sessionAutoRefresh: `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` = false): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) |
-| (JVM) [getInstance](get-instance.html) | `fun getInstance(): `[`KotlinInside`](./index.html) |
+## Functions  
+  
+|  Name|  Summary| 
+|---|---|
+| [equals](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/equals.html)| [jvm]  <br>Content  <br>open operator override fun [equals](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/equals.html)(other: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  <br><br><br>
+| [hashCode](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/hash-code.html)| [jvm]  <br>Content  <br>open override fun [hashCode](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/hash-code.html)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  <br><br><br>
+| [toString](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/to-string.html)| [jvm]  <br>Content  <br>open override fun [toString](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/to-string.html)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
+
+
+## Properties  
+  
+|  Name|  Summary| 
+|---|---|
+| [app](index.md#be.zvz.kotlininside/KotlinInside/app/#/PointingToDeclaration/)|  [jvm] lateinit var [app](index.md#be.zvz.kotlininside/KotlinInside/app/#/PointingToDeclaration/): [App](../../be.zvz.kotlininside.security/-app/index.md)   <br>
+| [auth](index.md#be.zvz.kotlininside/KotlinInside/auth/#/PointingToDeclaration/)|  [jvm] val [auth](index.md#be.zvz.kotlininside/KotlinInside/auth/#/PointingToDeclaration/): [Auth](../../be.zvz.kotlininside.security/-auth/index.md)   <br>
+| [hashedAppKey](index.md#be.zvz.kotlininside/KotlinInside/hashedAppKey/#/PointingToDeclaration/)|  [jvm] lateinit var [hashedAppKey](index.md#be.zvz.kotlininside/KotlinInside/hashedAppKey/#/PointingToDeclaration/): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
+| [httpInterface](index.md#be.zvz.kotlininside/KotlinInside/httpInterface/#/PointingToDeclaration/)|  [jvm] val [httpInterface](index.md#be.zvz.kotlininside/KotlinInside/httpInterface/#/PointingToDeclaration/): [HttpInterface](../../be.zvz.kotlininside.http/-http-interface/index.md)   <br>
+| [session](index.md#be.zvz.kotlininside/KotlinInside/session/#/PointingToDeclaration/)|  [jvm] lateinit var [session](index.md#be.zvz.kotlininside/KotlinInside/session/#/PointingToDeclaration/): [Session](../../be.zvz.kotlininside.session/-session/index.md)   <br>
+| [user](index.md#be.zvz.kotlininside/KotlinInside/user/#/PointingToDeclaration/)|  [jvm] val [user](index.md#be.zvz.kotlininside/KotlinInside/user/#/PointingToDeclaration/): [User](../../be.zvz.kotlininside.session.user/-user/index.md)   <br>
 

@@ -1,17 +1,38 @@
 ---
-title: HttpRequest.proxyPort - KotlinInside
+title: proxyPort -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[proxyPort](proxy-port.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [proxyPort](./proxy-port.html)
 
-# proxyPort
 
-(JVM) `open static fun proxyPort(port: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+# proxyPort  
+[jvm]  
+Brief description  
 
-Set the 'http.proxyPort' and 'https.proxyPort' properties to the given port number.
+
+
+
+Set the 'http.proxyPort' and 'https.proxyPort' properties to the given port number. 
+
+
 
  This setting will apply to all requests.
 
-### Parameters
 
-`port` - [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): 
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| port| <br><br><br><br>
+  
+  
+Content  
+open fun [proxyPort](proxy-port.md)(port: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))  
+
+
+

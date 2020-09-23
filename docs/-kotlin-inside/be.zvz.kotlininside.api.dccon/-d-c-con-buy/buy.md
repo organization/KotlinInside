@@ -1,15 +1,27 @@
 ---
-title: DCConBuy.buy - KotlinInside
+title: buy -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.dccon](../index.md)/[DCConBuy](index.md)/[buy](buy.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.api.dccon](../index.html) / [DCConBuy](index.html) / [buy](./buy.html)
 
-# buy
 
-(JVM) `fun buy(): BuyResult`
+# buy  
+[jvm]  
+Brief description  
+
 
 디시콘을 구매합니다.
 
-**Return**
-[BuyResult](-buy-result/index.html) 구매 결과를 반환합니다.
+
+
+#### Return  
+
+
+[BuyResult](-buy-result/index.md) 구매 결과를 반환합니다.
+
+  
+Content  
+fun [buy](buy.md)(): [DCConBuy.BuyResult](-buy-result/index.md)  
+
+
 

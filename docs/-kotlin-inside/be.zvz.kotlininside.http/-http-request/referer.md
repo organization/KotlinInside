@@ -1,19 +1,37 @@
 ---
-title: HttpRequest.referer - KotlinInside
+title: referer -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[referer](referer.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [referer](./referer.html)
 
-# referer
 
-(JVM) `open fun referer(referer: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!): `[`HttpRequest`](index.html)`!`
+# referer  
+[jvm]  
+Brief description  
+
 
 Set the 'Referer' header to given value
 
-### Parameters
 
-`referer` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
 
-**Return**
-[HttpRequest](index.html)!: this request
+#### Return  
+
+
+this request
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| referer| <br><br><br><br>
+  
+  
+Content  
+open fun [referer](referer.md)(referer: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
+
+
 

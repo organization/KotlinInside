@@ -1,19 +1,39 @@
 ---
-title: JsonBrowser.get - KotlinInside
+title: get -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.json](../index.md)/[JsonBrowser](index.md)/[get](get.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.json](../index.html) / [JsonBrowser](index.html) / [get](./get.html)
 
-# get
 
-(JVM) `@NotNull open fun get(key: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!): @NotNull `[`JsonBrowser`](index.html)
+# get  
+[jvm]  
+Brief description  
+
 
 Get an element by key from a map value
 
-### Parameters
 
-`key` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Map key
 
-**Return**
-[JsonBrowser](index.html): JsonBrowser instance which wraps the value with the specified key
+#### Return  
+
+
+JsonBrowser instance which wraps the value with the specified key
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| key| <br><br>Map key<br><br>
+  
+  
+Content  
+@NotNull()  
+  
+open fun [get](get.md)(key: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [JsonBrowser](index.md)  
+
+
 

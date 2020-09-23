@@ -1,40 +1,66 @@
 ---
-title: HttpRequest.dateHeader - KotlinInside
+title: dateHeader -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[dateHeader](date-header.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [dateHeader](./date-header.html)
 
-# dateHeader
 
-(JVM) `open fun dateHeader(name: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!): `[`Long`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)
+# dateHeader  
+[jvm]  
+Brief description  
+
 
 Get a date header from the response falling back to returning -1 if the header is missing or parsing fails
 
-### Parameters
 
-`name` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
 
-### Exceptions
+#### Return  
 
-`HttpRequestException` -
 
-**Return**
-[Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): date, -1 on failures
+date, -1 on failures
 
-(JVM) `open fun dateHeader(name: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, defaultValue: `[`Long`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`): `[`Long`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| name| <br><br><br><br>
+  
+  
+Content  
+open fun [dateHeader](date-header.md)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)  
+
+
+[jvm]  
+Brief description  
+
 
 Get a date header from the response falling back to returning the given default value if the header is missing or parsing fails
 
-### Parameters
 
-`name` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
 
-`defaultValue` - [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):
+#### Return  
 
-### Exceptions
 
-`HttpRequestException` -
+date, default value on failures
 
-**Return**
-[Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): date, default value on failures
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| defaultValue| <br><br><br><br>
+| name| <br><br><br><br>
+  
+  
+Content  
+open fun [dateHeader](date-header.md)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), defaultValue: [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)): [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)  
+
+
 

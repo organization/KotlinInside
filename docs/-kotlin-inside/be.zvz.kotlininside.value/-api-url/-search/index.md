@@ -1,18 +1,17 @@
 ---
-title: ApiUrl.Search - KotlinInside
+title: Search -
 ---
+//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.value](../../index.md)/[ApiUrl](../index.md)/[Search](index.md)
 
-[KotlinInside](../../../index.html) / [be.zvz.kotlininside.value](../../index.html) / [ApiUrl](../index.html) / [Search](./index.html)
 
-# Search
 
-(JVM) `class Search`
+# Search  
+ [jvm] class [Search](index.md)   
 
-### Constructors
 
-| (JVM) [&lt;init&gt;](-init-.html) | `Search()` |
-
-### Properties
-
-| (JVM) [SEARCH](-s-e-a-r-c-h.html) | `static val SEARCH: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+## Properties  
+  
+|  Name|  Summary| 
+|---|---|
+| [SEARCH](index.md#be.zvz.kotlininside.value/ApiUrl.Search/SEARCH/#/PointingToDeclaration/)|  [jvm] val [SEARCH](index.md#be.zvz.kotlininside.value/ApiUrl.Search/SEARCH/#/PointingToDeclaration/): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
 

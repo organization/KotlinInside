@@ -1,21 +1,45 @@
 ---
-title: HttpRequest.parameters - KotlinInside
+title: parameters -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[parameters](parameters.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [parameters](./parameters.html)
 
-# parameters
 
-(JVM) `open fun parameters(headerName: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!): `[`MutableMap`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)`<`[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!>!`
+# parameters  
+[jvm]  
+Brief description  
 
-Get all parameters from header value in response
+
+
+
+Get all parameters from header value in response 
+
+
 
  This will be all key=value pairs after the first ';' that are separated by a ';'
 
-### Parameters
 
-`headerName` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
 
-**Return**
-[MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)&lt;[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,&nbsp;[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!&gt;!: non-null but possibly empty map of parameter headers
+
+
+#### Return  
+
+
+non -null but possibly empty map of parameter headers
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| headerName| <br><br><br><br>
+  
+  
+Content  
+open fun [parameters](parameters.md)(headerName: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [Map](https://docs.oracle.com/javase/7/docs/api/java/util/Map.html)<[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)>  
+
+
 

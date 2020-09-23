@@ -1,20 +1,32 @@
 ---
-title: TotalSearch.Wiki - KotlinInside
+title: Wiki -
 ---
+//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic](../../index.md)/[TotalSearch](../index.md)/[Wiki](index.md)
 
-[KotlinInside](../../../index.html) / [be.zvz.kotlininside.api.generic](../../index.html) / [TotalSearch](../index.html) / [Wiki](./index.html)
 
-# Wiki
 
-(JVM) `data class Wiki`
+# Wiki  
+ [jvm] data class [Wiki](index.md)(**title**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **gallName**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **url**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))   
 
-### Constructors
 
-| (JVM) [&lt;init&gt;](-init-.html) | `Wiki(title: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, gallName: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, url: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` |
+## Functions  
+  
+|  Name|  Summary| 
+|---|---|
+| [component1](component1.md)| [jvm]  <br>Content  <br>operator fun [component1](component1.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
+| [component2](component2.md)| [jvm]  <br>Content  <br>operator fun [component2](component2.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
+| [component3](component3.md)| [jvm]  <br>Content  <br>operator fun [component3](component3.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
+| [copy](copy.md)| [jvm]  <br>Content  <br>fun [copy](copy.md)(title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), gallName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), url: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): [TotalSearch.Wiki](index.md)  <br><br><br>
+| [equals](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/equals.html)| [jvm]  <br>Content  <br>open operator override fun [equals](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/equals.html)(other: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  <br><br><br>
+| [hashCode](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/hash-code.html)| [jvm]  <br>Content  <br>open override fun [hashCode](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/hash-code.html)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  <br><br><br>
+| [toString](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/to-string.html)| [jvm]  <br>Content  <br>open override fun [toString](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/to-string.html)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
 
-### Properties
 
-| (JVM) [gallName](gall-name.html) | `val gallName: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
-| (JVM) [title](title.html) | `val title: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
-| (JVM) [url](url.html) | `val url: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+## Properties  
+  
+|  Name|  Summary| 
+|---|---|
+| [gallName](index.md#be.zvz.kotlininside.api.generic/TotalSearch.Wiki/gallName/#/PointingToDeclaration/)|  [jvm] val [gallName](index.md#be.zvz.kotlininside.api.generic/TotalSearch.Wiki/gallName/#/PointingToDeclaration/): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
+| [title](index.md#be.zvz.kotlininside.api.generic/TotalSearch.Wiki/title/#/PointingToDeclaration/)|  [jvm] val [title](index.md#be.zvz.kotlininside.api.generic/TotalSearch.Wiki/title/#/PointingToDeclaration/): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
+| [url](index.md#be.zvz.kotlininside.api.generic/TotalSearch.Wiki/url/#/PointingToDeclaration/)|  [jvm] val [url](index.md#be.zvz.kotlininside.api.generic/TotalSearch.Wiki/url/#/PointingToDeclaration/): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
 

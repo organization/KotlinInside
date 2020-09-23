@@ -1,15 +1,27 @@
 ---
-title: HttpRequest.contentEncoding - KotlinInside
+title: contentEncoding -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[contentEncoding](content-encoding.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [contentEncoding](./content-encoding.html)
 
-# contentEncoding
 
-(JVM) `open fun contentEncoding(): `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!`
+# contentEncoding  
+[jvm]  
+Brief description  
+
 
 Get the 'Content-Encoding' header from the response
 
-**Return**
-[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: this request
+
+
+#### Return  
+
+
+this request
+
+  
+Content  
+open fun [contentEncoding](content-encoding.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+
+
 

@@ -1,19 +1,37 @@
 ---
-title: HttpRequest.proxyAuthorization - KotlinInside
+title: proxyAuthorization -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[proxyAuthorization](proxy-authorization.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [proxyAuthorization](./proxy-authorization.html)
 
-# proxyAuthorization
 
-(JVM) `open fun proxyAuthorization(proxyAuthorization: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!): `[`HttpRequest`](index.html)`!`
+# proxyAuthorization  
+[jvm]  
+Brief description  
+
 
 Set the 'Proxy-Authorization' header to given value
 
-### Parameters
 
-`proxyAuthorization` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
 
-**Return**
-[HttpRequest](index.html)!: this request
+#### Return  
+
+
+this request
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| proxyAuthorization| <br><br><br><br>
+  
+  
+Content  
+open fun [proxyAuthorization](proxy-authorization.md)(proxyAuthorization: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
+
+
 

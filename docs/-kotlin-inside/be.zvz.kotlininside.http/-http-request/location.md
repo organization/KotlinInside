@@ -1,15 +1,27 @@
 ---
-title: HttpRequest.location - KotlinInside
+title: location -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[location](location.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [location](./location.html)
 
-# location
 
-(JVM) `open fun location(): `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!`
+# location  
+[jvm]  
+Brief description  
+
 
 Get the 'Location' header from the response
 
-**Return**
-[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: location
+
+
+#### Return  
+
+
+location
+
+  
+Content  
+open fun [location](location.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+
+
 

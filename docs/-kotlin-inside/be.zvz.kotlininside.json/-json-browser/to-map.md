@@ -1,9 +1,16 @@
 ---
-title: JsonBrowser.toMap - KotlinInside
+title: toMap -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.json](../index.md)/[JsonBrowser](index.md)/[toMap](to-map.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.json](../index.html) / [JsonBrowser](index.html) / [toMap](./to-map.html)
 
-# toMap
 
-(JVM) `@NotNull open fun <K : `[`Any`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`!, V : `[`Any`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`!> toMap(): @NotNull `[`MutableMap`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)`<K, V>`
+# toMap  
+[jvm]  
+Content  
+@NotNull()  
+  
+open fun <[K](to-map.md), [V](to-map.md)> [toMap](to-map.md)(): [Map](https://docs.oracle.com/javase/7/docs/api/java/util/Map.html)<[K](to-map.md), V>  
+
+
+

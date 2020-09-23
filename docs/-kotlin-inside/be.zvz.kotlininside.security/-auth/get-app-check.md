@@ -1,19 +1,27 @@
 ---
-title: Auth.getAppCheck - KotlinInside
+title: getAppCheck -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.security](../index.md)/[Auth](index.md)/[getAppCheck](get-app-check.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.security](../index.html) / [Auth](index.html) / [getAppCheck](./get-app-check.html)
 
-# getAppCheck
 
-(JVM) `fun getAppCheck(): AppCheck`
+# getAppCheck  
+[jvm]  
+Brief description  
+
 
 app_check에서 정보를 얻어오는 메소드입니다.
 
-### Exceptions
 
-`HttpException` - app_check에 접근 할 수 없는 경우, HttpException이 발생합니다.
 
-**Return**
-[AppCheck](-app-check/index.html) AppCheck 또는 null을 반환합니다.
+#### Return  
+
+
+[AppCheck](-app-check/index.md) AppCheck 또는 null을 반환합니다.
+
+  
+Content  
+fun [getAppCheck](get-app-check.md)(): [Auth.AppCheck](-app-check/index.md)  
+
+
 

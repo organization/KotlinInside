@@ -1,9 +1,14 @@
 ---
-title: HttpRequest.generateBoundary - KotlinInside
+title: generateBoundary -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[generateBoundary](generate-boundary.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [generateBoundary](./generate-boundary.html)
 
-# generateBoundary
 
-(JVM) `open static fun generateBoundary(): `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!`
+# generateBoundary  
+[jvm]  
+Content  
+open fun [generateBoundary](generate-boundary.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+
+
+

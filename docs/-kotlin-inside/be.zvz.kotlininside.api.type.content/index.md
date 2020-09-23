@@ -1,16 +1,20 @@
 ---
-title: be.zvz.kotlininside.api.type.content - KotlinInside
+title: be.zvz.kotlininside.api.type.content -
 ---
+//[KotlinInside](../index.md)/[be.zvz.kotlininside.api.type.content](index.md)
 
-[KotlinInside](../index.html) / [be.zvz.kotlininside.api.type.content](./index.html)
 
-## Package be.zvz.kotlininside.api.type.content
 
-### Types
+# Package be.zvz.kotlininside.api.type.content  
 
-| (JVM) [Content](-content.html) | `interface Content` |
-| (JVM) [HtmlContent](-html-content/index.html) | `data class HtmlContent : `[`Content`](-content.html) |
-| (JVM) [ImageContent](-image-content/index.html) | `data class ImageContent : `[`Content`](-content.html) |
-| (JVM) [MarkdownContent](-markdown-content/index.html) | `data class MarkdownContent : `[`Content`](-content.html) |
-| (JVM) [StringContent](-string-content/index.html) | `data class StringContent : `[`Content`](-content.html) |
+
+## Types  
+  
+|  Name|  Summary| 
+|---|---|
+| [Content](-content/index.md)| [jvm]  <br>Content  <br>interface [Content](-content/index.md)  <br><br><br>
+| [HtmlContent](-html-content/index.md)| [jvm]  <br>Content  <br>data class [HtmlContent](-html-content/index.md)(**htmlString**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [Content](-content/index.md)  <br><br><br>
+| [ImageContent](-image-content/index.md)| [jvm]  <br>Content  <br>data class [ImageContent](-image-content/index.md)(**stream**: [InputStream](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)) : [Content](-content/index.md)  <br><br><br>
+| [MarkdownContent](-markdown-content/index.md)| [jvm]  <br>Content  <br>data class [MarkdownContent](-markdown-content/index.md)(**markdownString**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [Content](-content/index.md)  <br><br><br>
+| [StringContent](-string-content/index.md)| [jvm]  <br>Content  <br>data class [StringContent](-string-content/index.md)(**string**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [Content](-content/index.md)  <br><br><br>
 

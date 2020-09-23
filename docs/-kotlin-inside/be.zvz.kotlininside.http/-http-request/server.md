@@ -1,15 +1,27 @@
 ---
-title: HttpRequest.server - KotlinInside
+title: server -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[server](server.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [server](./server.html)
 
-# server
 
-(JVM) `open fun server(): `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!`
+# server  
+[jvm]  
+Brief description  
+
 
 Get the 'Server' header from the response
 
-**Return**
-[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: server
+
+
+#### Return  
+
+
+server
+
+  
+Content  
+open fun [server](server.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+
+
 

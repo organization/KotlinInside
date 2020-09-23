@@ -1,21 +1,38 @@
 ---
-title: HttpRequest.parameter - KotlinInside
+title: parameter -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[parameter](parameter.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [parameter](./parameter.html)
 
-# parameter
 
-(JVM) `open fun parameter(headerName: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, paramName: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!): `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!`
+# parameter  
+[jvm]  
+Brief description  
+
 
 Get parameter with given name from header value in response
 
-### Parameters
 
-`headerName` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
 
-`paramName` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
+#### Return  
 
-**Return**
-[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: parameter value or null if missing
+
+parameter value or null if missing
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| headerName| <br><br><br><br>
+| paramName| <br><br><br><br>
+  
+  
+Content  
+open fun [parameter](parameter.md)(headerName: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), paramName: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+
+
 

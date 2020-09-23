@@ -1,15 +1,27 @@
 ---
-title: Auth.generateHashedAppKey - KotlinInside
+title: generateHashedAppKey -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.security](../index.md)/[Auth](index.md)/[generateHashedAppKey](generate-hashed-app-key.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.security](../index.html) / [Auth](index.html) / [generateHashedAppKey](./generate-hashed-app-key.html)
 
-# generateHashedAppKey
 
-(JVM) `fun generateHashedAppKey(): `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
+# generateHashedAppKey  
+[jvm]  
+Brief description  
+
 
 SHA256 단방향 암호화된 value_token을 서버로부터 얻어오거나, 생성하는 메소드입니다.
 
-**Return**
+
+
+#### Return  
+
+
 [java.lang.String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) value_token을 반환합니다.
+
+  
+Content  
+fun [generateHashedAppKey](generate-hashed-app-key.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
+
+
 

@@ -1,24 +1,35 @@
 ---
-title: LoginUser - KotlinInside
+title: LoginUser -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.session.user](../index.md)/[LoginUser](index.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.session.user](../index.html) / [LoginUser](./index.html)
 
-# LoginUser
 
-(JVM) `open class LoginUser : `[`User`](../-user/index.html)
+# LoginUser  
+ [jvm] open class [LoginUser](index.md)(**id**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **password**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [User](../-user/index.md)   
 
-### Constructors
 
-| (JVM) [&lt;init&gt;](-init-.html) | `LoginUser(id: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, password: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` |
+## Functions  
+  
+|  Name|  Summary| 
+|---|---|
+| [equals](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/equals.html)| [jvm]  <br>Content  <br>open operator override fun [equals](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/equals.html)(other: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  <br><br><br>
+| [hashCode](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/hash-code.html)| [jvm]  <br>Content  <br>open override fun [hashCode](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/hash-code.html)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  <br><br><br>
+| [toString](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/to-string.html)| [jvm]  <br>Content  <br>open override fun [toString](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/to-string.html)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
 
-### Properties
 
-| (JVM) [id](id.html) | `open val id: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
-| (JVM) [password](password.html) | `open val password: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+## Properties  
+  
+|  Name|  Summary| 
+|---|---|
+| [id](index.md#be.zvz.kotlininside.session.user/LoginUser/id/#/PointingToDeclaration/)|  [jvm] open override val [id](index.md#be.zvz.kotlininside.session.user/LoginUser/id/#/PointingToDeclaration/): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
+| [password](index.md#be.zvz.kotlininside.session.user/LoginUser/password/#/PointingToDeclaration/)|  [jvm] open override val [password](index.md#be.zvz.kotlininside.session.user/LoginUser/password/#/PointingToDeclaration/): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
 
-### Inheritors
 
-| (JVM) [DuplicateNamed](../../be.zvz.kotlininside.session.user.named/-duplicate-named/index.html) | `data class DuplicateNamed : `[`LoginUser`](./index.html) |
-| (JVM) [Named](../../be.zvz.kotlininside.session.user.named/-named/index.html) | `data class Named : `[`LoginUser`](./index.html) |
+## Inheritors  
+  
+|  Name| 
+|---|
+| [DuplicateNamed](../../be.zvz.kotlininside.session.user.named/-duplicate-named/index.md)
+| [Named](../../be.zvz.kotlininside.session.user.named/-named/index.md)
 

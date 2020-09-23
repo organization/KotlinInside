@@ -1,19 +1,37 @@
 ---
-title: HttpRequest.progress - KotlinInside
+title: progress -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[progress](progress.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [progress](./progress.html)
 
-# progress
 
-(JVM) `open fun progress(callback: UploadProgress!): `[`HttpRequest`](index.html)`!`
+# progress  
+[jvm]  
+Brief description  
+
 
 Set the UploadProgress callback for this request
 
-### Parameters
 
-`callback` - UploadProgress!:
 
-**Return**
-[HttpRequest](index.html)!: this request
+#### Return  
+
+
+this request
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| callback| <br><br><br><br>
+  
+  
+Content  
+open fun [progress](progress.md)(callback: [HttpRequest.UploadProgress](-upload-progress/index.md)): [HttpRequest](index.md)  
+
+
 

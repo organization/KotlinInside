@@ -1,19 +1,37 @@
 ---
-title: HttpRequest.ifModifiedSince - KotlinInside
+title: ifModifiedSince -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[ifModifiedSince](if-modified-since.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [ifModifiedSince](./if-modified-since.html)
 
-# ifModifiedSince
 
-(JVM) `open fun ifModifiedSince(ifModifiedSince: `[`Long`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`): `[`HttpRequest`](index.html)`!`
+# ifModifiedSince  
+[jvm]  
+Brief description  
+
 
 Set the 'If-Modified-Since' request header to the given value
 
-### Parameters
 
-`ifModifiedSince` - [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):
 
-**Return**
-[HttpRequest](index.html)!: this request
+#### Return  
+
+
+this request
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| ifModifiedSince| <br><br><br><br>
+  
+  
+Content  
+open fun [ifModifiedSince](if-modified-since.md)(ifModifiedSince: [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)): [HttpRequest](index.md)  
+
+
 

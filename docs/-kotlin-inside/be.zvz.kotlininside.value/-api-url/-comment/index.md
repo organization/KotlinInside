@@ -1,20 +1,19 @@
 ---
-title: ApiUrl.Comment - KotlinInside
+title: Comment -
 ---
+//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.value](../../index.md)/[ApiUrl](../index.md)/[Comment](index.md)
 
-[KotlinInside](../../../index.html) / [be.zvz.kotlininside.value](../../index.html) / [ApiUrl](../index.html) / [Comment](./index.html)
 
-# Comment
 
-(JVM) `class Comment`
+# Comment  
+ [jvm] class [Comment](index.md)   
 
-### Constructors
 
-| (JVM) [&lt;init&gt;](-init-.html) | `Comment()` |
-
-### Properties
-
-| (JVM) [DELETE](-d-e-l-e-t-e.html) | `static val DELETE: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
-| (JVM) [OK](-o-k.html) | `static val OK: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
-| (JVM) [READ](-r-e-a-d.html) | `static val READ: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+## Properties  
+  
+|  Name|  Summary| 
+|---|---|
+| [DELETE](index.md#be.zvz.kotlininside.value/ApiUrl.Comment/DELETE/#/PointingToDeclaration/)|  [jvm] val [DELETE](index.md#be.zvz.kotlininside.value/ApiUrl.Comment/DELETE/#/PointingToDeclaration/): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
+| [OK](index.md#be.zvz.kotlininside.value/ApiUrl.Comment/OK/#/PointingToDeclaration/)|  [jvm] val [OK](index.md#be.zvz.kotlininside.value/ApiUrl.Comment/OK/#/PointingToDeclaration/): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
+| [READ](index.md#be.zvz.kotlininside.value/ApiUrl.Comment/READ/#/PointingToDeclaration/)|  [jvm] val [READ](index.md#be.zvz.kotlininside.value/ApiUrl.Comment/READ/#/PointingToDeclaration/): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
 

@@ -1,15 +1,27 @@
 ---
-title: HttpRequest.method - KotlinInside
+title: method -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[method](method.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [method](./method.html)
 
-# method
 
-(JVM) `open fun method(): `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!`
+# method  
+[jvm]  
+Brief description  
+
 
 Get the HTTP method of this request
 
-**Return**
-[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: method
+
+
+#### Return  
+
+
+method
+
+  
+Content  
+open fun [method](method.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+
+
 

@@ -1,83 +1,149 @@
 ---
-title: HttpRequest.receive - KotlinInside
+title: receive -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[receive](receive.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [receive](./receive.html)
 
-# receive
 
-(JVM) `open fun receive(file: `[`File`](https://docs.oracle.com/javase/7/docs/api/java/io/File.html)`!): `[`HttpRequest`](index.html)`!`
+# receive  
+[jvm]  
+Brief description  
+
 
 Stream response body to file
 
-### Parameters
 
-`file` - [File](https://docs.oracle.com/javase/7/docs/api/java/io/File.html)!:
 
-### Exceptions
+#### Return  
 
-`HttpRequestException` -
 
-**Return**
-[HttpRequest](index.html)!: this request
+this request
 
-(JVM) `open fun receive(output: `[`OutputStream`](https://docs.oracle.com/javase/7/docs/api/java/io/OutputStream.html)`!): `[`HttpRequest`](index.html)`!`
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| file| <br><br><br><br>
+  
+  
+Content  
+open fun [receive](receive.md)(file: [File](https://docs.oracle.com/javase/7/docs/api/java/io/File.html)): [HttpRequest](index.md)  
+
+
+[jvm]  
+Brief description  
+
 
 Stream response to given output stream
 
-### Parameters
 
-`output` - [OutputStream](https://docs.oracle.com/javase/7/docs/api/java/io/OutputStream.html)!:
 
-### Exceptions
+#### Return  
 
-`HttpRequestException` -
 
-**Return**
-[HttpRequest](index.html)!: this request
+this request
 
-(JVM) `open fun receive(output: `[`PrintStream`](https://docs.oracle.com/javase/7/docs/api/java/io/PrintStream.html)`!): `[`HttpRequest`](index.html)`!`
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| output| <br><br><br><br>
+  
+  
+Content  
+open fun [receive](receive.md)(output: [OutputStream](https://docs.oracle.com/javase/7/docs/api/java/io/OutputStream.html)): [HttpRequest](index.md)  
+
+
+[jvm]  
+Brief description  
+
 
 Stream response to given print stream
 
-### Parameters
 
-`output` - [PrintStream](https://docs.oracle.com/javase/7/docs/api/java/io/PrintStream.html)!:
 
-### Exceptions
+#### Return  
 
-`HttpRequestException` -
 
-**Return**
-[HttpRequest](index.html)!: this request
+this request
 
-(JVM) `open fun receive(appendable: `[`Appendable`](https://docs.oracle.com/javase/7/docs/api/java/lang/Appendable.html)`!): `[`HttpRequest`](index.html)`!`
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| output| <br><br><br><br>
+  
+  
+Content  
+open fun [receive](receive.md)(output: [PrintStream](https://docs.oracle.com/javase/7/docs/api/java/io/PrintStream.html)): [HttpRequest](index.md)  
+
+
+[jvm]  
+Brief description  
+
 
 Receive response into the given appendable
 
-### Parameters
 
-`appendable` - [Appendable](https://docs.oracle.com/javase/7/docs/api/java/lang/Appendable.html)!:
 
-### Exceptions
+#### Return  
 
-`HttpRequestException` -
 
-**Return**
-[HttpRequest](index.html)!: this request
+this request
 
-(JVM) `open fun receive(writer: `[`Writer`](https://docs.oracle.com/javase/7/docs/api/java/io/Writer.html)`!): `[`HttpRequest`](index.html)`!`
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| appendable| <br><br><br><br>
+  
+  
+Content  
+open fun [receive](receive.md)(appendable: [Appendable](https://docs.oracle.com/javase/7/docs/api/java/lang/Appendable.html)): [HttpRequest](index.md)  
+
+
+[jvm]  
+Brief description  
+
 
 Receive response into the given writer
 
-### Parameters
 
-`writer` - [Writer](https://docs.oracle.com/javase/7/docs/api/java/io/Writer.html)!:
 
-### Exceptions
+#### Return  
 
-`HttpRequestException` -
 
-**Return**
-[HttpRequest](index.html)!: this request
+this request
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| writer| <br><br><br><br>
+  
+  
+Content  
+open fun [receive](receive.md)(writer: [Writer](https://docs.oracle.com/javase/7/docs/api/java/io/Writer.html)): [HttpRequest](index.md)  
+
+
 

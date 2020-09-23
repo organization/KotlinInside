@@ -1,12 +1,16 @@
 ---
-title: be.zvz.kotlininside.utils - KotlinInside
+title: be.zvz.kotlininside.utils -
 ---
+//[KotlinInside](../index.md)/[be.zvz.kotlininside.utils](index.md)
 
-[KotlinInside](../index.html) / [be.zvz.kotlininside.utils](./index.html)
 
-## Package be.zvz.kotlininside.utils
 
-### Types
+# Package be.zvz.kotlininside.utils  
 
-| (JVM) [StringUtil](-string-util/index.html) | `class StringUtil` |
+
+## Types  
+  
+|  Name|  Summary| 
+|---|---|
+| [StringUtil](-string-util/index.md)| [jvm]  <br>Content  <br>class [StringUtil](-string-util/index.md)  <br><br><br>
 

@@ -1,19 +1,27 @@
 ---
-title: HttpRequest.message - KotlinInside
+title: message -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[message](message.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [message](./message.html)
 
-# message
 
-(JVM) `open fun message(): `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!`
+# message  
+[jvm]  
+Brief description  
+
 
 Get status message of the response
 
-### Exceptions
 
-`HttpRequestException` -
 
-**Return**
-[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: message
+#### Return  
+
+
+message
+
+  
+Content  
+open fun [message](message.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+
+
 

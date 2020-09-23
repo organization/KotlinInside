@@ -1,20 +1,32 @@
 ---
-title: HttpRequest.RequestOutputStream - KotlinInside
+title: RequestOutputStream -
 ---
+//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.http](../../index.md)/[HttpRequest](../index.md)/[RequestOutputStream](index.md)
 
-[KotlinInside](../../../index.html) / [be.zvz.kotlininside.http](../../index.html) / [HttpRequest](../index.html) / [RequestOutputStream](./index.html)
 
-# RequestOutputStream
 
-(JVM) `open class RequestOutputStream : `[`BufferedOutputStream`](https://docs.oracle.com/javase/7/docs/api/java/io/BufferedOutputStream.html)
+# RequestOutputStream  
+ [jvm] 
 
 Request output stream
 
-### Constructors
+open class [RequestOutputStream](index.md) : [BufferedOutputStream](https://docs.oracle.com/javase/7/docs/api/java/io/BufferedOutputStream.html)   
 
-| (JVM) [&lt;init&gt;](-init-.html) | Create request output stream`RequestOutputStream(stream: `[`OutputStream`](https://docs.oracle.com/javase/7/docs/api/java/io/OutputStream.html)`!, charset: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, bufferSize: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` |
 
-### Functions
+## Constructors  
+  
+|  Name|  Summary| 
+|---|---|
+| [RequestOutputStream](-request-output-stream.md)|  [jvm] <br><br>Create request output stream<br><br>open fun [RequestOutputStream](-request-output-stream.md)(stream: [OutputStream](https://docs.oracle.com/javase/7/docs/api/java/io/OutputStream.html), charset: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), bufferSize: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))   <br>
 
-| (JVM) [write](write.html) | Write string to stream`open fun write(value: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!): RequestOutputStream!` |
+
+## Functions  
+  
+|  Name|  Summary| 
+|---|---|
+| [close](https://docs.oracle.com/javase/7/docs/api/java/io/FilterOutputStream.html#close())| [jvm]  <br>Content  <br>open fun [close](https://docs.oracle.com/javase/7/docs/api/java/io/FilterOutputStream.html#close())()  <br><br><br>
+| [flush](https://docs.oracle.com/javase/7/docs/api/java/io/BufferedOutputStream.html#flush())| [jvm]  <br>Content  <br>open fun [flush](https://docs.oracle.com/javase/7/docs/api/java/io/BufferedOutputStream.html#flush())()  <br><br><br>
+| [flushBuffer](https://docs.oracle.com/javase/7/docs/api/java/io/BufferedOutputStream.html#flushBuffer())| [jvm]  <br>Content  <br>open fun [flushBuffer](https://docs.oracle.com/javase/7/docs/api/java/io/BufferedOutputStream.html#flushBuffer())()  <br><br><br>
+| [nullOutputStream](https://docs.oracle.com/javase/7/docs/api/java/io/OutputStream.html#nullOutputStream())| [jvm]  <br>Content  <br>open fun [nullOutputStream](https://docs.oracle.com/javase/7/docs/api/java/io/OutputStream.html#nullOutputStream())(): [OutputStream](https://docs.oracle.com/javase/7/docs/api/java/io/OutputStream.html)  <br><br><br>
+| [write](write.md)| [jvm]  <br>Brief description  <br><br><br>Write string to stream<br><br>  <br>Content  <br>open fun [write](write.md)(value: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest.RequestOutputStream](index.md)  <br><br><br>[jvm]  <br>Content  <br>open fun [write](https://docs.oracle.com/javase/7/docs/api/java/io/BufferedOutputStream.html#write(int))(b: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))  <br><br><br>
 

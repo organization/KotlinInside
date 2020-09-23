@@ -1,19 +1,27 @@
 ---
-title: HttpRequest.bytes - KotlinInside
+title: bytes -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[bytes](bytes.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [bytes](./bytes.html)
 
-# bytes
 
-(JVM) `open fun bytes(): `[`ByteArray`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`!`
+# bytes  
+[jvm]  
+Brief description  
+
 
 Get response as byte array
 
-### Exceptions
 
-`HttpRequestException` -
 
-**Return**
-[ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: byte array
+#### Return  
+
+
+byte array
+
+  
+Content  
+open fun [bytes](bytes.md)(): [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)>  
+
+
 

@@ -1,15 +1,20 @@
 ---
-title: CommentWrite.write - KotlinInside
+title: write -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.comment](../index.md)/[CommentWrite](index.md)/[write](write.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.api.comment](../index.html) / [CommentWrite](index.html) / [write](./write.html)
 
-# write
 
-(JVM) `fun write(): WriteResult`
+# write  
+[jvm]  
+Brief description  
+
 
 댓글을 작성합니다.
 
-### Exceptions
+  
+Content  
+fun [write](write.md)(): [CommentWrite.WriteResult](-write-result/index.md)  
 
-`be.zvz.kotlininside.http.HttpException` - 댓글을 작성하지 못할 경우, HttpException 발생
+
+

@@ -1,9 +1,0 @@
----
-title: ArticleModify.ModifyResult.<init> - KotlinInside
----
-
-[KotlinInside](../../../index.html) / [be.zvz.kotlininside.api.article](../../index.html) / [ArticleModify](../index.html) / [ModifyResult](index.html) / [&lt;init&gt;](./-init-.html)
-
-# &lt;init&gt;
-
-(JVM) `ModifyResult(result: `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, gallId: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`? = null, articleId: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` = 0, fileCount: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` = 0, fileSize: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` = 0, subject: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`? = null, content: `[`List`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)`<`[`Content`](../../../be.zvz.kotlininside.api.type.content/-content.html)`> = mutableListOf(), file: `[`List`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)`<FileData> = mutableListOf(), headText: `[`List`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)`<`[`HeadText`](../../../be.zvz.kotlininside.api.type/-head-text/index.html)`> = mutableListOf(), currentHeadText: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`? = null, cause: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`? = null)`

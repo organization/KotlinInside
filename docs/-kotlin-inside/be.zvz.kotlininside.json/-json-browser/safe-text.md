@@ -1,9 +1,16 @@
 ---
-title: JsonBrowser.safeText - KotlinInside
+title: safeText -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.json](../index.md)/[JsonBrowser](index.md)/[safeText](safe-text.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.json](../index.html) / [JsonBrowser](index.html) / [safeText](./safe-text.html)
 
-# safeText
 
-(JVM) `@NotNull open fun safeText(): @NotNull `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
+# safeText  
+[jvm]  
+Content  
+@NotNull()  
+  
+open fun [safeText](safe-text.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+
+
+

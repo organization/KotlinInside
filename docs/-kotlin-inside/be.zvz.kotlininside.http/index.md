@@ -1,19 +1,20 @@
 ---
-title: be.zvz.kotlininside.http - KotlinInside
+title: be.zvz.kotlininside.http -
 ---
+//[KotlinInside](../index.md)/[be.zvz.kotlininside.http](index.md)
 
-[KotlinInside](../index.html) / [be.zvz.kotlininside.http](./index.html)
 
-## Package be.zvz.kotlininside.http
 
-### Types
+# Package be.zvz.kotlininside.http  
 
-| (JVM) [DefaultHttpClient](-default-http-client/index.html) | `open class DefaultHttpClient : `[`HttpInterface`](-http-interface/index.html) |
-| (JVM) [HttpInterface](-http-interface/index.html) | `interface HttpInterface` |
-| (JVM) [HttpRequest](-http-request/index.html) | A fluid interface for making HTTP requests using an underlying ``[`HttpURLConnection`](https://docs.oracle.com/javase/7/docs/api/java/net/HttpURLConnection.html) (or sub-class). `open class HttpRequest` |
-| (JVM) [Request](-request/index.html) | `class Request` |
 
-### Exceptions
-
-| (JVM) [HttpException](-http-exception/index.html) | `open class HttpException : `[`RuntimeException`](https://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html) |
+## Types  
+  
+|  Name|  Summary| 
+|---|---|
+| [DefaultHttpClient](-default-http-client/index.md)| [jvm]  <br>Content  <br>open class [DefaultHttpClient](-default-http-client/index.md) : [HttpInterface](-http-interface/index.md)  <br><br><br>
+| [HttpException](-http-exception/index.md)| [jvm]  <br>Content  <br>open class [HttpException](-http-exception/index.md) : [RuntimeException](https://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html)  <br><br><br>
+| [HttpInterface](-http-interface/index.md)| [jvm]  <br>Content  <br>interface [HttpInterface](-http-interface/index.md)  <br><br><br>
+| [HttpRequest](-http-request/index.md)| [jvm]  <br>Brief description  <br><br><br><br><br>A fluid interface for making HTTP requests using an underlying [HttpURLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/HttpURLConnection.html) (or sub-class). <br><br><br><br> Each instance supports making a single request and cannot be reused for further requests.<br><br><br><br>  <br>Content  <br>open class [HttpRequest](-http-request/index.md)  <br><br><br>
+| [Request](-request/index.md)| [jvm]  <br>Content  <br>class [Request](-request/index.md)  <br><br><br>
 

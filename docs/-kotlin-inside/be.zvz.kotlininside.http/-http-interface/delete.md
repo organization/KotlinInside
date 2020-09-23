@@ -1,9 +1,16 @@
 ---
-title: HttpInterface.delete - KotlinInside
+title: delete -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpInterface](index.md)/[delete](delete.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpInterface](index.html) / [delete](./delete.html)
 
-# delete
 
-(JVM) `@Nullable abstract fun delete(@NotNull url: @NotNull `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, @Nullable option: @Nullable Option?): @Nullable `[`JsonBrowser`](../../be.zvz.kotlininside.json/-json-browser/index.html)`?`
+# delete  
+[jvm]  
+Content  
+@Nullable()  
+  
+abstract fun [delete](delete.md)(url: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), option: [HttpInterface.Option](-option/index.md)): [JsonBrowser](../../be.zvz.kotlininside.json/-json-browser/index.md)  
+
+
+

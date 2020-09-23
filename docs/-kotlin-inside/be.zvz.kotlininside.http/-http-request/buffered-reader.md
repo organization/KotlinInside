@@ -1,40 +1,75 @@
 ---
-title: HttpRequest.bufferedReader - KotlinInside
+title: bufferedReader -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[bufferedReader](buffered-reader.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [bufferedReader](./buffered-reader.html)
 
-# bufferedReader
 
-(JVM) `open fun bufferedReader(charset: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!): `[`BufferedReader`](https://docs.oracle.com/javase/7/docs/api/java/io/BufferedReader.html)`!`
+# bufferedReader  
+[jvm]  
+Brief description  
+
 
 Get buffered reader to response body using the given character set r and the configured buffer size
 
-### Parameters
 
-`charset` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
 
-### Exceptions
+#### Return  
 
-`HttpRequestException` -
 
-**Return**
-[BufferedReader](https://docs.oracle.com/javase/7/docs/api/java/io/BufferedReader.html)!: reader
+reader
 
-**See Also**
-[#bufferSize(int)](buffer-size.html)
 
-(JVM) `open fun bufferedReader(): `[`BufferedReader`](https://docs.oracle.com/javase/7/docs/api/java/io/BufferedReader.html)`!`
 
-Get buffered reader to response body using the character set returned from ``[`#charset()`](charset.html) and the configured buffer size
+## See also  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| [#bufferSize(int)](buffer-size.md)| [bufferSize](buffer-size.md)
+  
 
-### Exceptions
 
-`HttpRequestException` -
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| charset| <br><br><br><br>
+  
+  
+Content  
+open fun [bufferedReader](buffered-reader.md)(charset: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [BufferedReader](https://docs.oracle.com/javase/7/docs/api/java/io/BufferedReader.html)  
 
-**Return**
-[BufferedReader](https://docs.oracle.com/javase/7/docs/api/java/io/BufferedReader.html)!: reader
 
-**See Also**
-[#bufferSize(int)](buffer-size.html)
+[jvm]  
+Brief description  
+
+
+Get buffered reader to response body using the character set returned from [charset](charset.md) and the configured buffer size
+
+
+
+#### Return  
+
+
+reader
+
+
+
+## See also  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| [#bufferSize(int)](buffer-size.md)| [bufferSize](buffer-size.md)
+  
+  
+Content  
+open fun [bufferedReader](buffered-reader.md)(): [BufferedReader](https://docs.oracle.com/javase/7/docs/api/java/io/BufferedReader.html)  
+
+
 

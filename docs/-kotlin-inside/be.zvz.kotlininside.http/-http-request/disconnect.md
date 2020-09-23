@@ -1,15 +1,27 @@
 ---
-title: HttpRequest.disconnect - KotlinInside
+title: disconnect -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[disconnect](disconnect.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [disconnect](./disconnect.html)
 
-# disconnect
 
-(JVM) `open fun disconnect(): `[`HttpRequest`](index.html)`!`
+# disconnect  
+[jvm]  
+Brief description  
+
 
 Disconnect the connection
 
-**Return**
-[HttpRequest](index.html)!: this request
+
+
+#### Return  
+
+
+this request
+
+  
+Content  
+open fun [disconnect](disconnect.md)(): [HttpRequest](index.md)  
+
+
 

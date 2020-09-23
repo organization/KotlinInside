@@ -1,9 +1,14 @@
 ---
-title: UserBlock.block - KotlinInside
+title: block -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.management](../index.md)/[UserBlock](index.md)/[block](block.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.api.management](../index.html) / [UserBlock](index.html) / [block](./block.html)
 
-# block
 
-(JVM) `fun block(): BlockResult`
+# block  
+[jvm]  
+Content  
+fun [block](block.md)(): [UserBlock.BlockResult](-block-result/index.md)  
+
+
+

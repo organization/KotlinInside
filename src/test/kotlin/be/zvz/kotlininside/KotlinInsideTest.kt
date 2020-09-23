@@ -4,6 +4,8 @@
 package be.zvz.kotlininside
 
 import be.zvz.kotlininside.api.article.*
+import be.zvz.kotlininside.api.generic.GalleryRanking
+import be.zvz.kotlininside.api.generic.MinorGalleryRanking
 import be.zvz.kotlininside.api.type.Article
 import be.zvz.kotlininside.api.type.HeadText
 import be.zvz.kotlininside.api.type.content.HtmlContent
@@ -34,6 +36,20 @@ class KotlinInsideTest {
 
     @Order(2)
     @Test
+    fun testGalleryRanking() {
+        val galleryRanking = GalleryRanking()
+        println(galleryRanking.get())
+    }
+
+    @Order(3)
+    @Test
+    fun testMinorGalleryRanking() {
+        val minorGalleryRanking = MinorGalleryRanking()
+        println(minorGalleryRanking.get())
+    }
+
+    @Order(4)
+    @Test
     fun testArticleList() {
         val articleList = ArticleList("hit", 1)
         articleList.request()
@@ -49,7 +65,7 @@ class KotlinInsideTest {
         }
     }
 
-    @Order(3)
+    @Order(5)
     @Test
     fun testArticleRead() {
         val articleRead = ArticleRead("hit", 1)
@@ -59,13 +75,13 @@ class KotlinInsideTest {
         println(articleRead.getViewMain())
     }
 
-    @Order(4)
+    @Order(6)
     @Test
     fun testArticleWrite() {
         val articleWrite = ArticleWrite(
                 gallId = "github",
                 article = Article(
-                        subject = "KotlinInside 테스트 글입니다",
+                        subject = "KotlinInside CI 테스트용 글입니다",
                         content = mutableListOf(
                                 StringContent(
                                         string = "글은 곧 자동으로 삭제됩니다.\n글의 비밀번호는 1234입니다."
@@ -97,7 +113,7 @@ class KotlinInsideTest {
             articleId = writeResult.articleId!!
     }
 
-    @Order(5)
+    @Order(7)
     @Test
     fun testArticleVote() {
         val articleVote = ArticleVote(
@@ -115,7 +131,7 @@ class KotlinInsideTest {
         println(downvoteResult)
     }
 
-    @Order(6)
+    @Order(8)
     @Test
     fun testArticleDelete() {
         val articleDelete = ArticleDelete(

@@ -1,19 +1,36 @@
 ---
-title: HttpInterface.Option.addMultipartParameter - KotlinInside
+title: addMultipartParameter -
 ---
+//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.http](../../index.md)/[HttpInterface](../index.md)/[Option](index.md)/[addMultipartParameter](add-multipart-parameter.md)
 
-[KotlinInside](../../../index.html) / [be.zvz.kotlininside.http](../../index.html) / [HttpInterface](../index.html) / [Option](index.html) / [addMultipartParameter](./add-multipart-parameter.html)
 
-# addMultipartParameter
 
-(JVM) `@NotNull fun addMultipartParameter(@NotNull key: @NotNull `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, @NotNull value: @NotNull `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`): @NotNull Option`
+# addMultipartParameter  
+[jvm]  
+Brief description  
 
-### Parameters
 
-`key` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): 매개변수 Key
+#### Return  
 
-`value` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): 매개변수 Value
 
-**Return**
-Option: this
+this
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| key| <br><br>매개변수 Key<br><br>
+| value| <br><br>매개변수 Value<br><br>
+  
+  
+Content  
+@NotNull()  
+  
+open fun [addMultipartParameter](add-multipart-parameter.md)(key: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), value: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpInterface.Option](index.md)  
+
+
 

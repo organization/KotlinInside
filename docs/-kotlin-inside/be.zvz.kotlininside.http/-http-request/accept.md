@@ -1,19 +1,37 @@
 ---
-title: HttpRequest.accept - KotlinInside
+title: accept -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[accept](accept.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [accept](./accept.html)
 
-# accept
 
-(JVM) `open fun accept(accept: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!): `[`HttpRequest`](index.html)`!`
+# accept  
+[jvm]  
+Brief description  
+
 
 Set the 'Accept' header to given value
 
-### Parameters
 
-`accept` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
 
-**Return**
-[HttpRequest](index.html)!: this request
+#### Return  
+
+
+this request
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| accept| <br><br><br><br>
+  
+  
+Content  
+open fun [accept](accept.md)(accept: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
+
+
 

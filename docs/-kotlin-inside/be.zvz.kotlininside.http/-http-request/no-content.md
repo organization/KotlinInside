@@ -1,19 +1,27 @@
 ---
-title: HttpRequest.noContent - KotlinInside
+title: noContent -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[noContent](no-content.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [noContent](./no-content.html)
 
-# noContent
 
-(JVM) `open fun noContent(): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
+# noContent  
+[jvm]  
+Brief description  
+
 
 Is the response code a 204 No Content?
 
-### Exceptions
 
-`HttpRequestException` -
 
-**Return**
-[Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true if 204, false otherwise
+#### Return  
+
+
+true if 204, false otherwise
+
+  
+Content  
+open fun [noContent](no-content.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
+
+
 

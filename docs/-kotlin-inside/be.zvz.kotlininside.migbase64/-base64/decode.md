@@ -1,56 +1,123 @@
 ---
-title: Base64.decode - KotlinInside
+title: decode -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.migbase64](../index.md)/[Base64](index.md)/[decode](decode.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.migbase64](../index.html) / [Base64](index.html) / [decode](./decode.html)
 
-# decode
 
-(JVM) `static fun decode(sArr: `[`CharArray`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)`!): `[`ByteArray`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`!`
+# decode  
+[jvm]  
+Brief description  
+
 
 Decodes a BASE64 encoded char array. All illegal characters will be ignored and can handle both arrays with and without line separators.
 
-### Parameters
 
-`sArr` - [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!: The source array. `null` or length 0 will return an empty array.
 
-**Return**
-[ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: The decoded array of bytes. May be of length 0. Will be `null` if the legal characters (including '=') isn't divideable by 4. (I.e. definitely corrupted).
+#### Return  
 
-(JVM) `static fun decode(sArr: `[`ByteArray`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`!): `[`ByteArray`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`!`
+
+The decoded array of bytes. May be of length 0. Will be null if the legal characters (including '=') isn't divideable by 4. (I.e. definitely corrupted).
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| sArr| <br><br>The source array. null or length 0 will return an empty array.<br><br>
+  
+  
+Content  
+fun [decode](decode.md)(sArr: [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)>): [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)>  
+
+
+[jvm]  
+Brief description  
+
 
 Decodes a BASE64 encoded byte array. All illegal characters will be ignored and can handle both arrays with and without line separators.
 
-### Parameters
 
-`sArr` - [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: The source array. Length 0 will return an empty array. `null` will throw an exception.
 
-**Return**
-[ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: The decoded array of bytes. May be of length 0. Will be `null` if the legal characters (including '=') isn't divideable by 4. (I.e. definitely corrupted).
+#### Return  
 
-(JVM) `static fun decode(sArr: `[`ByteArray`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`!, sOff: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, sLen: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`ByteArray`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`!`
+
+The decoded array of bytes. May be of length 0. Will be null if the legal characters (including '=') isn't divideable by 4. (I.e. definitely corrupted).
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| sArr| <br><br>The source array. Length 0 will return an empty array. null will throw an exception.<br><br>
+  
+  
+Content  
+fun [decode](decode.md)(sArr: [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)>): [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)>  
+
+
+[jvm]  
+Brief description  
+
 
 Decodes a BASE64 encoded byte array. All illegal characters will be ignored and can handle both arrays with and without line separators.
 
-### Parameters
 
-`sArr` - [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: The source array. `null` will throw an exception.
 
-`sOff` - [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The starting position in the source array.
+#### Return  
 
-`sLen` - [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of bytes to decode from the source array. Length 0 will return an empty array.
 
-**Return**
-[ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: The decoded array of bytes. May be of length 0. Will be `null` if the legal characters (including '=') isn't divideable by 4. (I.e. definitely corrupted).
+The decoded array of bytes. May be of length 0. Will be null if the legal characters (including '=') isn't divideable by 4. (I.e. definitely corrupted).
 
-(JVM) `static fun decode(str: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!): `[`ByteArray`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`!`
 
-Decodes a BASE64 encoded `String`. All illegal characters will be ignored and can handle both strings with and without line separators. **Note!** It can be up to about 2x the speed to call `decode(str.toCharArray())` instead. That will create a temporary array though. This version will use `str.charAt(i)` to iterate the string.
 
-### Parameters
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| sArr| <br><br>The source array. null will throw an exception.<br><br>
+| sLen| <br><br>The number of bytes to decode from the source array. Length 0 will return an empty array.<br><br>
+| sOff| <br><br>The starting position in the source array.<br><br>
+  
+  
+Content  
+fun [decode](decode.md)(sArr: [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)>, sOff: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), sLen: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)>  
 
-`str` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The source string. `null` or length 0 will return an empty array.
 
-**Return**
-[ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: The decoded array of bytes. May be of length 0. Will be `null` if the legal characters (including '=') isn't divideable by 4. (I.e. definitely corrupted).
+[jvm]  
+Brief description  
+
+
+Decodes a BASE64 encoded String. All illegal characters will be ignored and can handle both strings with and without line separators.**Note!** It can be up to about 2x the speed to call decode(str.toCharArray()) instead. That will create a temporary array though. This version will use str.charAt(i) to iterate the string.
+
+
+
+#### Return  
+
+
+The decoded array of bytes. May be of length 0. Will be null if the legal characters (including '=') isn't divideable by 4. (I.e. definitely corrupted).
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| str| <br><br>The source string. null or length 0 will return an empty array.<br><br>
+  
+  
+Content  
+fun [decode](decode.md)(str: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)>  
+
+
 

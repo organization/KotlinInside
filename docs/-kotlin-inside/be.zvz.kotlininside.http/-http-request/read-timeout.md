@@ -1,19 +1,37 @@
 ---
-title: HttpRequest.readTimeout - KotlinInside
+title: readTimeout -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[readTimeout](read-timeout.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [readTimeout](./read-timeout.html)
 
-# readTimeout
 
-(JVM) `open fun readTimeout(timeout: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`HttpRequest`](index.html)`!`
+# readTimeout  
+[jvm]  
+Brief description  
+
 
 Set read timeout on connection to given value
 
-### Parameters
 
-`timeout` - [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):
 
-**Return**
-[HttpRequest](index.html)!: this request
+#### Return  
+
+
+this request
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| timeout| <br><br><br><br>
+  
+  
+Content  
+open fun [readTimeout](read-timeout.md)(timeout: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [HttpRequest](index.md)  
+
+
 

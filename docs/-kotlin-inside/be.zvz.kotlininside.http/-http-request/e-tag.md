@@ -1,15 +1,27 @@
 ---
-title: HttpRequest.eTag - KotlinInside
+title: eTag -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[eTag](e-tag.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [eTag](./e-tag.html)
 
-# eTag
 
-(JVM) `open fun eTag(): `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!`
+# eTag  
+[jvm]  
+Brief description  
+
 
 Get the 'ETag' header from the response
 
-**Return**
-[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: entity tag
+
+
+#### Return  
+
+
+entity tag
+
+  
+Content  
+open fun [eTag](e-tag.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+
+
 

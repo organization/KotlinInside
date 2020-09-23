@@ -1,25 +1,38 @@
 ---
-title: HttpRequest.partHeader - KotlinInside
+title: partHeader -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[partHeader](part-header.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [partHeader](./part-header.html)
 
-# partHeader
 
-(JVM) `open fun partHeader(name: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, value: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!): `[`HttpRequest`](index.html)`!`
+# partHeader  
+[jvm]  
+Brief description  
+
 
 Write a multipart header to the response body
 
-### Parameters
 
-`name` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
 
-`value` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
+#### Return  
 
-### Exceptions
 
-`HttpRequestException` -
+this request
 
-**Return**
-[HttpRequest](index.html)!: this request
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| name| <br><br><br><br>
+| value| <br><br><br><br>
+  
+  
+Content  
+open fun [partHeader](part-header.md)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), value: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
+
+
 

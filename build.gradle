@@ -7,9 +7,9 @@ buildscript {
     }
     dependencies {
         classpath group: 'org.jetbrains.kotlin', name: 'kotlin-gradle-plugin', version: '1.4.10'
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7'
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
-        classpath "org.jetbrains.dokka:dokka-gradle-plugin:0.10.0"
+        classpath group: 'com.jfrog.bintray.gradle', name: 'gradle-bintray-plugin', version: '1.7'
+        classpath group: 'com.github.dcendents', name: 'android-maven-gradle-plugin', version: '2.1'
+        classpath group: 'org.jetbrains.dokka', name: 'dokka-gradle-plugin', version: '1.4.0'
     }
 }
 
@@ -21,7 +21,7 @@ apply plugin: 'org.jetbrains.dokka'
 
 def libName = 'KotlinInside'
 def libDevVersion = ''
-def libVersion = "1.7.7$libDevVersion"
+def libVersion = "1.7.8$libDevVersion"
 def libDesc = 'Unofficial DCInside API written in Kotlin'
 
 group = 'be.zvz'
@@ -70,59 +70,57 @@ tasks.test {
     }
 }
 
-dokka {
-    outputFormat = 'jekyll'
-    outputDirectory = "docs"
+dokkaJekyll {
+    outputDirectory.set(file("docs"))
 
-    configuration {
-        targets = ["JVM"]
-        platform = "JVM"
+    dokkaSourceSets {
+        configureEach {
+            platform.set(org.jetbrains.dokka.Platform.jvm)
 
-        sourceRoot {
-            path = "src/main/kotlin"
+            jdkVersion.set(7)
+            noStdlibLink.set(false)
+            noJdkLink.set(false)
+
+            sourceRoots.setFrom(file("src/main/kotlin"))
+            sourceRoots.from(file("src/main/java"))
         }
-        sourceRoot {
-            path = "src/main/java"
-        }
-
-        jdkVersion = 7
-        noStdlibLink = false
-        noJdkLink = false
     }
 }
 
-/*
 bintray {
     def localProps = new Properties()
-    localProps.load(project.file('local.properties').newDataInputStream())
+    def propFile = project.file('local.properties')
+    if (propFile.exists()) {
+        localProps.load(propFile.newDataInputStream())
 
-    user = localProps.getProperty('bintrayUser')
-    key = localProps.getProperty('bintrayApiKey')
+        user = localProps.getProperty('bintrayUser')
+        key = localProps.getProperty('bintrayApiKey')
 
-    configurations = ['archives']
+        configurations = ['archives']
 
-    publish = true
+        publish = true
 
-    pkg {
-        repo = group
-        name = libName
-        desc = libDesc
-        licenses = ['GPL-3.0']
+        pkg {
+            repo = group
+            name = libName
+            desc = libDesc
+            licenses = ['GPL-3.0']
 
-        vcsUrl = 'https://github.com/organization/KotlinInside'
-        websiteUrl = 'https://organization.github.io/KotlinInside/'
-        issueTrackerUrl = 'https://github.com/organization/KotlinInside/issues'
+            vcsUrl = 'https://github.com/organization/KotlinInside'
+            websiteUrl = 'https://organization.github.io/KotlinInside/'
+            issueTrackerUrl = 'https://github.com/organization/KotlinInside/issues'
 
-        labels = ['dcinside', 'dc-api']
-        publicDownloadNumbers = true
+            labels = ['dcinside', 'dc-api']
+            publicDownloadNumbers = true
 
-        githubRepo = 'organization/KotlinInside'
+            githubRepo = 'organization/KotlinInside'
 
-        version {
-            name = libVersion
-            desc = 'Version ' + libVersion
-            released  = new Date()
-            vcsTag = libVersion
+            version {
+                name = libVersion
+                desc = 'Version ' + libVersion
+                released  = new Date()
+                vcsTag = libVersion
+            }
         }
     }
 }
@@ -130,7 +128,7 @@ bintray {
 install {
     repositories.mavenInstaller {
         pom.project {
-            name 'KotlinInside'
+            name libName
             description 'Unofficial DCInside API written in Kotlin'
             url 'https://github.com/organization/KotlinInside'
             inceptionYear '2019'
@@ -153,9 +151,8 @@ install {
 task sourcesJar(type: Jar) {
     from sourceSets.main.java.srcDirs
     from sourceSets.main.kotlin.srcDirs
-    classifier = 'sources'
+    archiveClassifier = 'sources'
 }
 artifacts {
     archives sourcesJar
 }
-*/

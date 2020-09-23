@@ -1,19 +1,39 @@
 ---
-title: JsonBrowser.index - KotlinInside
+title: index -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.json](../index.md)/[JsonBrowser](index.md)/[index](--index--.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.json](../index.html) / [JsonBrowser](index.html) / [index](./--index--.html)
 
-# index
 
-(JVM) `@NotNull open fun index(index: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): @NotNull `[`JsonBrowser`](index.html)
+# index  
+[jvm]  
+Brief description  
+
 
 Get an element at an index for a list value
 
-### Parameters
 
-`index` - [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): ArticleList index
 
-**Return**
-[JsonBrowser](index.html): JsonBrowser instance which wraps the value at the specified index
+#### Return  
+
+
+JsonBrowser instance which wraps the value at the specified index
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| index| <br><br>ArticleList index<br><br>
+  
+  
+Content  
+@NotNull()  
+  
+open fun [index](--index--.md)(index: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [JsonBrowser](index.md)  
+
+
 

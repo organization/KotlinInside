@@ -1,15 +1,20 @@
 ---
-title: MainPage.getHit - KotlinInside
+title: getHit -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.generic](../index.md)/[MainPage](index.md)/[getHit](get-hit.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.api.generic](../index.html) / [MainPage](index.html) / [getHit](./get-hit.html)
 
-# getHit
 
-(JVM) `fun getHit(): `[`List`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)`<Article>`
+# getHit  
+[jvm]  
+Brief description  
+
 
 메인 화면에 표시되어 있는 Hit갤 게시물 목록을 가져옵니다.
 
-### Exceptions
+  
+Content  
+fun [getHit](get-hit.md)(): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[MainPage.Article](-article/index.md)>  
 
-`be.zvz.kotlininside.http.HttpException` - 글 목록을 불러오지 못할 경우, HttpException 발생
+
+

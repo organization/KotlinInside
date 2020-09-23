@@ -1,12 +1,16 @@
 ---
-title: be.zvz.kotlininside - KotlinInside
+title: be.zvz.kotlininside -
 ---
+//[KotlinInside](../index.md)/[be.zvz.kotlininside](index.md)
 
-[KotlinInside](../index.html) / [be.zvz.kotlininside](./index.html)
 
-## Package be.zvz.kotlininside
 
-### Types
+# Package be.zvz.kotlininside  
 
-| (JVM) [KotlinInside](-kotlin-inside/index.html) | `class KotlinInside` |
+
+## Types  
+  
+|  Name|  Summary| 
+|---|---|
+| [KotlinInside](-kotlin-inside/index.md)| [jvm]  <br>Content  <br>class [KotlinInside](-kotlin-inside/index.md)  <br><br><br>
 

@@ -1,15 +1,20 @@
 ---
-title: ArticleDelete.delete - KotlinInside
+title: delete -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.article](../index.md)/[ArticleDelete](index.md)/[delete](delete.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.api.article](../index.html) / [ArticleDelete](index.html) / [delete](./delete.html)
 
-# delete
 
-(JVM) `fun delete(): DeleteResult`
+# delete  
+[jvm]  
+Brief description  
+
 
 글을 삭제합니다.
 
-### Exceptions
+  
+Content  
+fun [delete](delete.md)(): [ArticleDelete.DeleteResult](-delete-result/index.md)  
 
-`be.zvz.kotlininside.http.HttpException` - 글을 삭제하지 못할 경우, HttpException 발생
+
+

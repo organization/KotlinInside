@@ -1,28 +1,40 @@
 ---
-title: DefaultHttpClient - KotlinInside
+title: DefaultHttpClient -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[DefaultHttpClient](index.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [DefaultHttpClient](./index.html)
 
-# DefaultHttpClient
 
-(JVM) `open class DefaultHttpClient : `[`HttpInterface`](../-http-interface/index.html)
+# DefaultHttpClient  
+ [jvm] open class [DefaultHttpClient](index.md) : [HttpInterface](../-http-interface/index.md)   
 
-### Types
 
-| (JVM) [Proxy](-proxy.html) | `open class Proxy` |
+## Constructors  
+  
+|  Name|  Summary| 
+|---|---|
+| [DefaultHttpClient](-default-http-client.md)|  [jvm] <br><br>DefaultHttpClient의 constructor입니다.<br><br>open fun [DefaultHttpClient](-default-http-client.md)()   <br>
+| [DefaultHttpClient](-default-http-client.md)|  [jvm] <br><br>DefaultHttpClient의 constructor입니다.<br><br>open fun [DefaultHttpClient](-default-http-client.md)(gzip: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))   <br>
+| [DefaultHttpClient](-default-http-client.md)|  [jvm] <br><br>DefaultHttpClient의 constructor입니다.<br><br>open fun [DefaultHttpClient](-default-http-client.md)(gzip: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), useCache: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))   <br>
+| [DefaultHttpClient](-default-http-client.md)|  [jvm] <br><br>DefaultHttpClient의 constructor입니다.<br><br>open fun [DefaultHttpClient](-default-http-client.md)(gzip: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), useCache: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), proxy: [DefaultHttpClient.Proxy](-proxy/index.md))   <br>
 
-### Constructors
 
-| (JVM) [&lt;init&gt;](-init-.html) | DefaultHttpClient의 constructor입니다.`DefaultHttpClient()`<br>`DefaultHttpClient(gzip: `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)`<br>`DefaultHttpClient(gzip: `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, useCache: `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)`<br>`DefaultHttpClient(gzip: `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, useCache: `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, proxy: Proxy?)` |
+## Types  
+  
+|  Name|  Summary| 
+|---|---|
+| [Proxy](-proxy/index.md)| [jvm]  <br>Content  <br>open class [Proxy](-proxy/index.md)  <br><br><br>
 
-### Functions
 
-| (JVM) [delete](delete.html) | `open fun delete(url: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, option: Option?): `[`JsonBrowser`](../../be.zvz.kotlininside.json/-json-browser/index.html)`?` |
-| (JVM) [get](get.html) | `open fun get(url: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, option: Option?): `[`JsonBrowser`](../../be.zvz.kotlininside.json/-json-browser/index.html)`?` |
-| (JVM) [head](head.html) | `open fun head(url: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, option: Option?): `[`JsonBrowser`](../../be.zvz.kotlininside.json/-json-browser/index.html)`?` |
-| (JVM) [patch](patch.html) | `open fun patch(url: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, option: Option?): `[`JsonBrowser`](../../be.zvz.kotlininside.json/-json-browser/index.html)`?` |
-| (JVM) [post](post.html) | `open fun post(url: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, option: Option?): `[`JsonBrowser`](../../be.zvz.kotlininside.json/-json-browser/index.html)`?` |
-| (JVM) [put](put.html) | `open fun put(url: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, option: Option?): `[`JsonBrowser`](../../be.zvz.kotlininside.json/-json-browser/index.html)`?` |
-| (JVM) [upload](upload.html) | `open fun upload(url: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, option: Option?): `[`JsonBrowser`](../../be.zvz.kotlininside.json/-json-browser/index.html)`?` |
+## Functions  
+  
+|  Name|  Summary| 
+|---|---|
+| [delete](delete.md)| [jvm]  <br>Content  <br>@Nullable()  <br>  <br>open fun [delete](delete.md)(url: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), option: [HttpInterface.Option](../-http-interface/-option/index.md)): [JsonBrowser](../../be.zvz.kotlininside.json/-json-browser/index.md)  <br><br><br>
+| [get](get.md)| [jvm]  <br>Content  <br>@Nullable()  <br>  <br>open fun [get](get.md)(url: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), option: [HttpInterface.Option](../-http-interface/-option/index.md)): [JsonBrowser](../../be.zvz.kotlininside.json/-json-browser/index.md)  <br><br><br>
+| [head](head.md)| [jvm]  <br>Content  <br>@Nullable()  <br>  <br>open fun [head](head.md)(url: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), option: [HttpInterface.Option](../-http-interface/-option/index.md)): [JsonBrowser](../../be.zvz.kotlininside.json/-json-browser/index.md)  <br><br><br>
+| [patch](patch.md)| [jvm]  <br>Content  <br>@Nullable()  <br>  <br>open fun [patch](patch.md)(url: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), option: [HttpInterface.Option](../-http-interface/-option/index.md)): [JsonBrowser](../../be.zvz.kotlininside.json/-json-browser/index.md)  <br><br><br>
+| [post](post.md)| [jvm]  <br>Content  <br>@Nullable()  <br>  <br>open fun [post](post.md)(url: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), option: [HttpInterface.Option](../-http-interface/-option/index.md)): [JsonBrowser](../../be.zvz.kotlininside.json/-json-browser/index.md)  <br><br><br>
+| [put](put.md)| [jvm]  <br>Content  <br>@Nullable()  <br>  <br>open fun [put](put.md)(url: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), option: [HttpInterface.Option](../-http-interface/-option/index.md)): [JsonBrowser](../../be.zvz.kotlininside.json/-json-browser/index.md)  <br><br><br>
+| [upload](upload.md)| [jvm]  <br>Content  <br>@Nullable()  <br>  <br>open fun [upload](upload.md)(url: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), option: [HttpInterface.Option](../-http-interface/-option/index.md)): [JsonBrowser](../../be.zvz.kotlininside.json/-json-browser/index.md)  <br><br><br>
 

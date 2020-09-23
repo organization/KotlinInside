@@ -1,19 +1,27 @@
 ---
-title: HttpRequest.isBodyEmpty - KotlinInside
+title: isBodyEmpty -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[isBodyEmpty](is-body-empty.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [isBodyEmpty](./is-body-empty.html)
 
-# isBodyEmpty
 
-(JVM) `open fun isBodyEmpty(): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
+# isBodyEmpty  
+[jvm]  
+Brief description  
+
 
 Is the response body empty?
 
-### Exceptions
 
-`HttpRequestException` -
 
-**Return**
-[Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true if the Content-Length response header is 0, false otherwise
+#### Return  
+
+
+true if the Content-Length response header is 0, false otherwise
+
+  
+Content  
+open fun [isBodyEmpty](is-body-empty.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
+
+
 

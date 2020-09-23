@@ -54,7 +54,7 @@ public final class ApiUrl {
 
     public static final class MainInfo {
         public static final String APP_MAIN = MAIN_API + "json3/main_content.php";
-        public static final String GALLERY_RANK = MAIN_API + "json3/ranking_gallery.php";
-        public static final String MINOR_GALLERY_RANK = MAIN_API + "json1/mgallmain/mgallery_ranking.php";
+        public static final String GALLERY_RANKING = MAIN_API + "json3/ranking_gallery.php";
+        public static final String MINOR_GALLERY_RANKING = MAIN_API + "json1/mgallmain/mgallery_ranking.php";
     }
 }

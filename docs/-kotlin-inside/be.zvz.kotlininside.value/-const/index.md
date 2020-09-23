@@ -1,23 +1,22 @@
 ---
-title: Const - KotlinInside
+title: Const -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.value](../index.md)/[Const](index.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.value](../index.html) / [Const](./index.html)
 
-# Const
 
-(JVM) `class Const`
+# Const  
+ [jvm] class [Const](index.md)   
 
-### Constructors
 
-| (JVM) [&lt;init&gt;](-init-.html) | `Const()` |
-
-### Properties
-
-| (JVM) [DC_APP_PACKAGE](-d-c_-a-p-p_-p-a-c-k-a-g-e.html) | `static val DC_APP_PACKAGE: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
-| (JVM) [DC_APP_SIGNATURE](-d-c_-a-p-p_-s-i-g-n-a-t-u-r-e.html) | `static val DC_APP_SIGNATURE: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
-| (JVM) [DC_APP_VERSION_CODE](-d-c_-a-p-p_-v-e-r-s-i-o-n_-c-o-d-e.html) | `static val DC_APP_VERSION_CODE: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
-| (JVM) [DC_APP_VERSION_NAME](-d-c_-a-p-p_-v-e-r-s-i-o-n_-n-a-m-e.html) | `static val DC_APP_VERSION_NAME: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
-| (JVM) [DEFAULT_FCM_TOKEN](-d-e-f-a-u-l-t_-f-c-m_-t-o-k-e-n.html) | `static val DEFAULT_FCM_TOKEN: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!` |
-| (JVM) [USER_AGENT](-u-s-e-r_-a-g-e-n-t.html) | `static val USER_AGENT: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+## Properties  
+  
+|  Name|  Summary| 
+|---|---|
+| [DC_APP_PACKAGE](index.md#be.zvz.kotlininside.value/Const/DC_APP_PACKAGE/#/PointingToDeclaration/)|  [jvm] val [DC_APP_PACKAGE](index.md#be.zvz.kotlininside.value/Const/DC_APP_PACKAGE/#/PointingToDeclaration/): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
+| [DC_APP_SIGNATURE](index.md#be.zvz.kotlininside.value/Const/DC_APP_SIGNATURE/#/PointingToDeclaration/)|  [jvm] val [DC_APP_SIGNATURE](index.md#be.zvz.kotlininside.value/Const/DC_APP_SIGNATURE/#/PointingToDeclaration/): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
+| [DC_APP_VERSION_CODE](index.md#be.zvz.kotlininside.value/Const/DC_APP_VERSION_CODE/#/PointingToDeclaration/)|  [jvm] val [DC_APP_VERSION_CODE](index.md#be.zvz.kotlininside.value/Const/DC_APP_VERSION_CODE/#/PointingToDeclaration/): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
+| [DC_APP_VERSION_NAME](index.md#be.zvz.kotlininside.value/Const/DC_APP_VERSION_NAME/#/PointingToDeclaration/)|  [jvm] val [DC_APP_VERSION_NAME](index.md#be.zvz.kotlininside.value/Const/DC_APP_VERSION_NAME/#/PointingToDeclaration/): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
+| [DEFAULT_FCM_TOKEN](index.md#be.zvz.kotlininside.value/Const/DEFAULT_FCM_TOKEN/#/PointingToDeclaration/)|  [jvm] val [DEFAULT_FCM_TOKEN](index.md#be.zvz.kotlininside.value/Const/DEFAULT_FCM_TOKEN/#/PointingToDeclaration/): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
+| [USER_AGENT](index.md#be.zvz.kotlininside.value/Const/USER_AGENT/#/PointingToDeclaration/)|  [jvm] val [USER_AGENT](index.md#be.zvz.kotlininside.value/Const/USER_AGENT/#/PointingToDeclaration/): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
 

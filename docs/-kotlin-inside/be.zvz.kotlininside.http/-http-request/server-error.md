@@ -1,19 +1,27 @@
 ---
-title: HttpRequest.serverError - KotlinInside
+title: serverError -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[serverError](server-error.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [serverError](./server-error.html)
 
-# serverError
 
-(JVM) `open fun serverError(): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
+# serverError  
+[jvm]  
+Brief description  
+
 
 Is the response code a 500 Internal Server Error?
 
-### Exceptions
 
-`HttpRequestException` -
 
-**Return**
-[Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true if 500, false otherwise
+#### Return  
+
+
+true if 500, false otherwise
+
+  
+Content  
+open fun [serverError](server-error.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
+
+
 

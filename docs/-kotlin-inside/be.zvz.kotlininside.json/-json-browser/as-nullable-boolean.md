@@ -1,9 +1,16 @@
 ---
-title: JsonBrowser.asNullableBoolean - KotlinInside
+title: asNullableBoolean -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.json](../index.md)/[JsonBrowser](index.md)/[asNullableBoolean](as-nullable-boolean.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.json](../index.html) / [JsonBrowser](index.html) / [asNullableBoolean](./as-nullable-boolean.html)
 
-# asNullableBoolean
 
-(JVM) `@Nullable open fun asNullableBoolean(): @Nullable `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`?`
+# asNullableBoolean  
+[jvm]  
+Content  
+@Nullable()  
+  
+open fun [asNullableBoolean](as-nullable-boolean.md)(): [Boolean](https://docs.oracle.com/javase/7/docs/api/java/lang/Boolean.html)  
+
+
+

@@ -1,12 +1,16 @@
 ---
-title: be.zvz.kotlininside.json - KotlinInside
+title: be.zvz.kotlininside.json -
 ---
+//[KotlinInside](../index.md)/[be.zvz.kotlininside.json](index.md)
 
-[KotlinInside](../index.html) / [be.zvz.kotlininside.json](./index.html)
 
-## Package be.zvz.kotlininside.json
 
-### Types
+# Package be.zvz.kotlininside.json  
 
-| (JVM) [JsonBrowser](-json-browser/index.html) | Allows to easily navigate in decoded JSON data`open class JsonBrowser` |
+
+## Types  
+  
+|  Name|  Summary| 
+|---|---|
+| [JsonBrowser](-json-browser/index.md)| [jvm]  <br>Brief description  <br><br><br>Allows to easily navigate in decoded JSON data<br><br>  <br>Content  <br>open class [JsonBrowser](-json-browser/index.md)  <br><br><br>
 

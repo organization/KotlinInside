@@ -1,74 +1,120 @@
 ---
-title: HttpRequest.put - KotlinInside
+title: put -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[put](put.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [put](./put.html)
 
-# put
 
-(JVM) `open static fun put(url: `[`CharSequence`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`!): `[`HttpRequest`](index.html)`!`
+# put  
+[jvm]  
+Brief description  
 
-Start a 'PUT' request to the given URL
-
-### Parameters
-
-`url` - [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:
-
-### Exceptions
-
-`HttpRequestException` -
-
-**Return**
-[HttpRequest](index.html)!: request
-
-(JVM) `open static fun put(url: `[`URL`](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html)`!): `[`HttpRequest`](index.html)`!`
 
 Start a 'PUT' request to the given URL
 
-### Parameters
 
-`url` - [URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html)!:
 
-### Exceptions
+#### Return  
 
-`HttpRequestException` -
 
-**Return**
-[HttpRequest](index.html)!: request
+request
 
-(JVM) `open static fun put(baseUrl: `[`CharSequence`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`!, params: `[`MutableMap`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)`<*, *>!, encode: `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`): `[`HttpRequest`](index.html)`!`
 
-Start a 'PUT' request to the given URL along with the query params
 
-### Parameters
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| url| <br><br><br><br>
+  
+  
+Content  
+open fun [put](put.md)(url: [CharSequence](https://docs.oracle.com/javase/7/docs/api/java/lang/CharSequence.html)): [HttpRequest](index.md)  
+open fun [put](put.md)(url: [URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html)): [HttpRequest](index.md)  
 
-`baseUrl` - [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:
 
-`params` - [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)&lt;*,&nbsp;*&gt;!: the query parameters to include as part of the baseUrl
+[jvm]  
+Brief description  
 
-`encode` - [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true to encode the full URL
-
-**Return**
-[HttpRequest](index.html)!: request
-
-**See Also**
-[#append(CharSequence, Map)](append.html)[#encode(CharSequence)](encode.html)
-
-(JVM) `open static fun put(baseUrl: `[`CharSequence`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`!, encode: `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, vararg params: `[`Any`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`!): `[`HttpRequest`](index.html)`!`
 
 Start a 'PUT' request to the given URL along with the query params
 
-### Parameters
 
-`baseUrl` - [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:
 
-`encode` - [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true to encode the full URL
+#### Return  
 
-`params` - [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: the name/value query parameter pairs to include as part of the baseUrl
 
-**Return**
-[HttpRequest](index.html)!: request
+request
 
-**See Also**
-[#append(CharSequence, Object...)](append.html)[#encode(CharSequence)](encode.html)
+
+
+## See also  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| [#append(CharSequence, Map)](append.md)| [append](append.md)
+| [#encode(CharSequence)](encode.md)| [encode](encode.md)
+  
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| baseUrl| <br><br><br><br>
+| encode| <br><br>true to encode the full URL<br><br>
+| params| <br><br>the query parameters to include as part of the baseUrl<br><br>
+  
+  
+Content  
+open fun [put](put.md)(baseUrl: [CharSequence](https://docs.oracle.com/javase/7/docs/api/java/lang/CharSequence.html), params: [Map](https://docs.oracle.com/javase/7/docs/api/java/util/Map.html)<Out [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), Out [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)>, encode: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)): [HttpRequest](index.md)  
+
+
+[jvm]  
+Brief description  
+
+
+Start a 'PUT' request to the given URL along with the query params
+
+
+
+#### Return  
+
+
+request
+
+
+
+## See also  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| [#append(CharSequence, Object...)](append.md)| [append](append.md)
+| [#encode(CharSequence)](encode.md)| [encode](encode.md)
+  
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| baseUrl| <br><br><br><br>
+| encode| <br><br>true to encode the full URL<br><br>
+| params| <br><br>the name/value query parameter pairs to include as part of the baseUrl<br><br>
+  
+  
+Content  
+open fun [put](put.md)(baseUrl: [CharSequence](https://docs.oracle.com/javase/7/docs/api/java/lang/CharSequence.html), encode: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), params: [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)>): [HttpRequest](index.md)  
+
+
 

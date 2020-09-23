@@ -1,41 +1,83 @@
 ---
-title: HttpRequest.headers - KotlinInside
+title: headers -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[headers](headers.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [headers](./headers.html)
 
-# headers
 
-(JVM) `open fun headers(headers: `[`MutableMap`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)`<`[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!>!): `[`HttpRequest`](index.html)`!`
+# headers  
+[jvm]  
+Brief description  
+
 
 Set all headers found in given map where the keys are the header names and the values are the header values
 
-### Parameters
 
-`headers` - [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)&lt;[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,&nbsp;[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!&gt;!:
 
-**Return**
-[HttpRequest](index.html)!: this request
+#### Return  
 
-(JVM) `open fun headers(): `[`MutableMap`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)`<`[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, `[`MutableList`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)`<`[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!>!>!`
+
+this request
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| headers| <br><br><br><br>
+  
+  
+Content  
+open fun [headers](headers.md)(headers: [Map](https://docs.oracle.com/javase/7/docs/api/java/util/Map.html)<[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)>): [HttpRequest](index.md)  
+
+
+[jvm]  
+Brief description  
+
 
 Get all the response headers
 
-### Exceptions
 
-`HttpRequestException` -
 
-**Return**
-[MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)&lt;[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,&nbsp;[MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)&lt;[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!&gt;!&gt;!: map of response header names to their value(s)
+#### Return  
 
-(JVM) `open fun headers(name: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!): `[`Array`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)`<`[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!>!`
+
+map of response header names to their value(s)
+
+  
+Content  
+open fun [headers](headers.md)(): [Map](https://docs.oracle.com/javase/7/docs/api/java/util/Map.html)<[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), [List](https://docs.oracle.com/javase/7/docs/api/java/util/List.html)<[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)>>  
+
+
+[jvm]  
+Brief description  
+
 
 Get all values of the given header from the response
 
-### Parameters
 
-`name` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
 
-**Return**
-[Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)&lt;[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!&gt;!: non-null but possibly empty array of ``[`String`](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) header values
+#### Return  
+
+
+non -null but possibly empty array of [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) header values
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| name| <br><br><br><br>
+  
+  
+Content  
+open fun [headers](headers.md)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)>  
+
+
 

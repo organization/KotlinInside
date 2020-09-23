@@ -1,18 +1,37 @@
 ---
-title: HttpRequest.acceptGzipEncoding - KotlinInside
+title: acceptGzipEncoding -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[acceptGzipEncoding](accept-gzip-encoding.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [acceptGzipEncoding](./accept-gzip-encoding.html)
 
-# acceptGzipEncoding
 
-(JVM) `open fun acceptGzipEncoding(): `[`HttpRequest`](index.html)`!`
+# acceptGzipEncoding  
+[jvm]  
+Brief description  
+
 
 Set the 'Accept-Encoding' header to 'gzip'
 
-**Return**
-[HttpRequest](index.html)!: this request
 
-**See Also**
-[#uncompress(boolean)](uncompress.html)
+
+#### Return  
+
+
+this request
+
+
+
+## See also  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| [#uncompress(boolean)](uncompress.md)| [uncompress](uncompress.md)
+  
+  
+Content  
+open fun [acceptGzipEncoding](accept-gzip-encoding.md)(): [HttpRequest](index.md)  
+
+
 

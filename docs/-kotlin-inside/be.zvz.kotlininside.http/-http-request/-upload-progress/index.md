@@ -1,20 +1,28 @@
 ---
-title: HttpRequest.UploadProgress - KotlinInside
+title: UploadProgress -
 ---
+//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.http](../../index.md)/[HttpRequest](../index.md)/[UploadProgress](index.md)
 
-[KotlinInside](../../../index.html) / [be.zvz.kotlininside.http](../../index.html) / [HttpRequest](../index.html) / [UploadProgress](./index.html)
 
-# UploadProgress
 
-(JVM) `interface UploadProgress`
+# UploadProgress  
+ [jvm] 
 
 Callback interface for reporting upload progress for a request.
 
-### Properties
+interface [UploadProgress](index.md)   
 
-| (JVM) [DEFAULT](-d-e-f-a-u-l-t.html) | `static val DEFAULT: UploadProgress!` |
 
-### Functions
+## Functions  
+  
+|  Name|  Summary| 
+|---|---|
+| [onUpload](on-upload.md)| [jvm]  <br>Brief description  <br><br><br>Callback invoked as data is uploaded by the request.<br><br>  <br>Content  <br>abstract fun [onUpload](on-upload.md)(uploaded: [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html), total: [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html))  <br><br><br>
 
-| (JVM) [onUpload](on-upload.html) | Callback invoked as data is uploaded by the request.`abstract fun onUpload(uploaded: `[`Long`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, total: `[`Long`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) |
+
+## Properties  
+  
+|  Name|  Summary| 
+|---|---|
+| [DEFAULT](index.md#be.zvz.kotlininside.http/HttpRequest.UploadProgress/DEFAULT/#/PointingToDeclaration/)|  [jvm] val [DEFAULT](index.md#be.zvz.kotlininside.http/HttpRequest.UploadProgress/DEFAULT/#/PointingToDeclaration/): [HttpRequest.UploadProgress](index.md)   <br>
 

@@ -1,52 +1,67 @@
 ---
-title: HttpRequest.Base64.encodeBytes - KotlinInside
+title: encodeBytes -
 ---
+//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.http](../../index.md)/[HttpRequest](../index.md)/[Base64](index.md)/[encodeBytes](encode-bytes.md)
 
-[KotlinInside](../../../index.html) / [be.zvz.kotlininside.http](../../index.html) / [HttpRequest](../index.html) / [Base64](index.html) / [encodeBytes](./encode-bytes.html)
 
-# encodeBytes
 
-(JVM) `open static fun encodeBytes(source: `[`ByteArray`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`!): `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!`
+# encodeBytes  
+[jvm]  
+Brief description  
 
-Encodes a byte array into Base64 notation.
-
-### Parameters
-
-`source` - [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: The data to convert
-
-### Exceptions
-
-`NullPointerException` - if source array is null
-
-`IllegalArgumentException` - if source array, offset, or length are invalid
-
-**Return**
-[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The Base64-encoded data as a String
-
-**Since**
-2.0
-
-(JVM) `open static fun encodeBytes(source: `[`ByteArray`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`!, off: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, len: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!`
 
 Encodes a byte array into Base64 notation.
 
-### Parameters
 
-`source` - [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: The data to convert
 
-`off` - [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Offset in array where conversion should begin
+#### Return  
 
-`len` - [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Length of data to convert
 
-### Exceptions
+The Base64-encoded data as a String
 
-`NullPointerException` - if source array is null
 
-`IllegalArgumentException` - if source array, offset, or length are invalid
 
-**Return**
-[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The Base64-encoded data as a String
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| source| <br><br>The data to convert<br><br>
+  
+  
+Content  
+open fun [encodeBytes](encode-bytes.md)(source: [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)>): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
-**Since**
-2.0
+
+[jvm]  
+Brief description  
+
+
+Encodes a byte array into Base64 notation.
+
+
+
+#### Return  
+
+
+The Base64-encoded data as a String
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| len| <br><br>Length of data to convert<br><br>
+| off| <br><br>Offset in array where conversion should begin<br><br>
+| source| <br><br>The data to convert<br><br>
+  
+  
+Content  
+open fun [encodeBytes](encode-bytes.md)(source: [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)>, off: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), len: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+
+
 

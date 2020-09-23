@@ -1,19 +1,27 @@
 ---
-title: HttpRequest.badRequest - KotlinInside
+title: badRequest -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[badRequest](bad-request.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [badRequest](./bad-request.html)
 
-# badRequest
 
-(JVM) `open fun badRequest(): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
+# badRequest  
+[jvm]  
+Brief description  
+
 
 Is the response code a 400 Bad Request?
 
-### Exceptions
 
-`HttpRequestException` -
 
-**Return**
-[Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true if 400, false otherwise
+#### Return  
+
+
+true if 400, false otherwise
+
+  
+Content  
+open fun [badRequest](bad-request.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
+
+
 

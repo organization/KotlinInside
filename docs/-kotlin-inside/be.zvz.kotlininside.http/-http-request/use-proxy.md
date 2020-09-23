@@ -1,21 +1,38 @@
 ---
-title: HttpRequest.useProxy - KotlinInside
+title: useProxy -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[useProxy](use-proxy.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [useProxy](./use-proxy.html)
 
-# useProxy
 
-(JVM) `open fun useProxy(proxyHost: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, proxyPort: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`HttpRequest`](index.html)`!`
+# useProxy  
+[jvm]  
+Brief description  
 
-Configure an HTTP proxy on this connection. Use {``[`#proxyBasic(String, String)`](proxy-basic.html) if this proxy requires basic authentication.
 
-### Parameters
+Configure an HTTP proxy on this connection. Use { [proxyBasic](proxy-basic.md) if this proxy requires basic authentication.
 
-`proxyHost` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
 
-`proxyPort` - [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):
 
-**Return**
-[HttpRequest](index.html)!: this request
+#### Return  
+
+
+this request
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| proxyHost| <br><br><br><br>
+| proxyPort| <br><br><br><br>
+  
+  
+Content  
+open fun [useProxy](use-proxy.md)(proxyHost: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), proxyPort: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [HttpRequest](index.md)  
+
+
 

@@ -1,13 +1,23 @@
 ---
-title: JsonBrowser.isMap - KotlinInside
+title: isMap -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.json](../index.md)/[JsonBrowser](index.md)/[isMap](is-map.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.json](../index.html) / [JsonBrowser](index.html) / [isMap](./is-map.html)
 
-# isMap
 
-(JVM) `open fun isMap(): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
+# isMap  
+[jvm]  
+Brief description  
 
-**Return**
-[Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if the value represents a map.
+
+#### Return  
+
+
+True if the value represents a map.
+
+  
+Content  
+open fun [isMap](is-map.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
+
+
 

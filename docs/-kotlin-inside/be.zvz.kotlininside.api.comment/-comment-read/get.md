@@ -1,15 +1,20 @@
 ---
-title: CommentRead.get - KotlinInside
+title: get -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.comment](../index.md)/[CommentRead](index.md)/[get](get.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.api.comment](../index.html) / [CommentRead](index.html) / [get](./get.html)
 
-# get
 
-(JVM) `fun get(): ReadResult`
+# get  
+[jvm]  
+Brief description  
+
 
 댓글 데이터를 읽어옵니다.
 
-### Exceptions
+  
+Content  
+fun [get](get.md)(): [CommentRead.ReadResult](-read-result/index.md)  
 
-`be.zvz.kotlininside.http.HttpException` - 댓글을 읽어오지 못할 경우, HttpException 발생
+
+

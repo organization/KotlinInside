@@ -1,19 +1,37 @@
 ---
-title: HttpRequest.useCaches - KotlinInside
+title: useCaches -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[useCaches](use-caches.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [useCaches](./use-caches.html)
 
-# useCaches
 
-(JVM) `open fun useCaches(useCaches: `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`): `[`HttpRequest`](index.html)`!`
+# useCaches  
+[jvm]  
+Brief description  
 
-Set value of ``[`HttpURLConnection#setUseCaches(boolean)`](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html#setUseCaches(boolean))
 
-### Parameters
+Set value of [setUseCaches](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html#setUseCaches(boolean))
 
-`useCaches` - [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):
 
-**Return**
-[HttpRequest](index.html)!: this request
+
+#### Return  
+
+
+this request
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| useCaches| <br><br><br><br>
+  
+  
+Content  
+open fun [useCaches](use-caches.md)(useCaches: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)): [HttpRequest](index.md)  
+
+
 

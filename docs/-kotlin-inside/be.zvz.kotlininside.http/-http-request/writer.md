@@ -1,19 +1,27 @@
 ---
-title: HttpRequest.writer - KotlinInside
+title: writer -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[writer](writer.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [writer](./writer.html)
 
-# writer
 
-(JVM) `open fun writer(): `[`OutputStreamWriter`](https://docs.oracle.com/javase/7/docs/api/java/io/OutputStreamWriter.html)`!`
+# writer  
+[jvm]  
+Brief description  
+
 
 Create writer to request output stream
 
-### Exceptions
 
-`HttpRequestException` -
 
-**Return**
-[OutputStreamWriter](https://docs.oracle.com/javase/7/docs/api/java/io/OutputStreamWriter.html)!: writer
+#### Return  
+
+
+writer
+
+  
+Content  
+open fun [writer](writer.md)(): [OutputStreamWriter](https://docs.oracle.com/javase/7/docs/api/java/io/OutputStreamWriter.html)  
+
+
 

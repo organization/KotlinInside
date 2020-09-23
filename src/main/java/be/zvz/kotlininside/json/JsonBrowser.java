@@ -58,6 +58,8 @@ public class JsonBrowser {
      */
     @NotNull
     public static JsonBrowser parse(String json) throws IOException {
+        if (json.charAt(0) == '(')
+            json = json.substring(1);
         return create(mapper.readTree(json));
     }
 

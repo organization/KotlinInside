@@ -1,21 +1,38 @@
 ---
-title: HttpRequest.basic - KotlinInside
+title: basic -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[basic](basic.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [basic](./basic.html)
 
-# basic
 
-(JVM) `open fun basic(name: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, password: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!): `[`HttpRequest`](index.html)`!`
+# basic  
+[jvm]  
+Brief description  
+
 
 Set the 'Authorization' header to given values in Basic authentication format
 
-### Parameters
 
-`name` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
 
-`password` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
+#### Return  
 
-**Return**
-[HttpRequest](index.html)!: this request
+
+this request
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| name| <br><br><br><br>
+| password| <br><br><br><br>
+  
+  
+Content  
+open fun [basic](basic.md)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), password: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
+
+
 

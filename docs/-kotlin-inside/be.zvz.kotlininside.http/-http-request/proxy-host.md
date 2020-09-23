@@ -1,17 +1,38 @@
 ---
-title: HttpRequest.proxyHost - KotlinInside
+title: proxyHost -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[proxyHost](proxy-host.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [proxyHost](./proxy-host.html)
 
-# proxyHost
 
-(JVM) `open static fun proxyHost(host: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+# proxyHost  
+[jvm]  
+Brief description  
 
-Set the 'http.proxyHost' and 'https.proxyHost' properties to the given host value.
+
+
+
+Set the 'http.proxyHost' and 'https.proxyHost' properties to the given host value. 
+
+
 
  This setting will apply to all requests.
 
-### Parameters
 
-`host` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: 
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| host| <br><br><br><br>
+  
+  
+Content  
+open fun [proxyHost](proxy-host.md)(host: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html))  
+
+
+

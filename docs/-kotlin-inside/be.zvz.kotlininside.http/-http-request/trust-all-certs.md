@@ -1,21 +1,35 @@
 ---
-title: HttpRequest.trustAllCerts - KotlinInside
+title: trustAllCerts -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[trustAllCerts](trust-all-certs.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [trustAllCerts](./trust-all-certs.html)
 
-# trustAllCerts
 
-(JVM) `open fun trustAllCerts(): `[`HttpRequest`](index.html)`!`
+# trustAllCerts  
+[jvm]  
+Brief description  
 
-Configure HTTPS connection to trust all certificates
+
+
+
+Configure HTTPS connection to trust all certificates 
+
+
 
  This method does nothing if the current request is not a HTTPS request
 
-### Exceptions
 
-`HttpRequestException` -
 
-**Return**
-[HttpRequest](index.html)!: this request
+
+
+#### Return  
+
+
+this request
+
+  
+Content  
+open fun [trustAllCerts](trust-all-certs.md)(): [HttpRequest](index.md)  
+
+
 

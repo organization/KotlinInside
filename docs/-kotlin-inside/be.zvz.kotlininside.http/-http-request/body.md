@@ -1,68 +1,120 @@
 ---
-title: HttpRequest.body - KotlinInside
+title: body -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[body](body.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [body](./body.html)
 
-# body
 
-(JVM) `open fun body(charset: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!): `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!`
+# body  
+[jvm]  
+Brief description  
 
-Get response as ``[`String`](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) in given character set
+
+
+
+Get response as [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) in given character set 
+
+
 
  This will fall back to using the UTF-8 character set if the given charset is null
 
-### Parameters
 
-`charset` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
 
-### Exceptions
 
-`HttpRequestException` -
 
-**Return**
-[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: string
+#### Return  
 
-(JVM) `open fun body(): `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!`
 
-Get response as ``[`String`](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) using character set returned from ``[`#charset()`](charset.html)
+string
 
-### Exceptions
 
-`HttpRequestException` -
 
-**Return**
-[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: string
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| charset| <br><br><br><br>
+  
+  
+Content  
+open fun [body](body.md)(charset: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
-(JVM) `open fun body(output: `[`AtomicReference`](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicReference.html)`<`[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!>!): `[`HttpRequest`](index.html)`!`
 
-Get the response body as a ``[`String`](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) and set it as the value of the given reference.
+[jvm]  
+Brief description  
 
-### Parameters
 
-`output` - [AtomicReference](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicReference.html)&lt;[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!&gt;!:
+Get response as [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) using character set returned from [charset](charset.md)
 
-### Exceptions
 
-`HttpRequestException` -
 
-**Return**
-[HttpRequest](index.html)!: this request
+#### Return  
 
-(JVM) `open fun body(output: `[`AtomicReference`](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicReference.html)`<`[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!>!, charset: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!): `[`HttpRequest`](index.html)`!`
 
-Get the response body as a ``[`String`](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) and set it as the value of the given reference.
+string
 
-### Parameters
+  
+Content  
+open fun [body](body.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
-`output` - [AtomicReference](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicReference.html)&lt;[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!&gt;!:
 
-`charset` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
+[jvm]  
+Brief description  
 
-### Exceptions
 
-`HttpRequestException` -
+Get the response body as a [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) and set it as the value of the given reference.
 
-**Return**
-[HttpRequest](index.html)!: this request
+
+
+#### Return  
+
+
+this request
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| output| <br><br><br><br>
+  
+  
+Content  
+open fun [body](body.md)(output: [AtomicReference](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicReference.html)<[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)>): [HttpRequest](index.md)  
+
+
+[jvm]  
+Brief description  
+
+
+Get the response body as a [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) and set it as the value of the given reference.
+
+
+
+#### Return  
+
+
+this request
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| charset| <br><br><br><br>
+| output| <br><br><br><br>
+  
+  
+Content  
+open fun [body](body.md)(output: [AtomicReference](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicReference.html)<[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)>, charset: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
+
+
 

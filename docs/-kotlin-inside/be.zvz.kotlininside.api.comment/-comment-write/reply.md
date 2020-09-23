@@ -1,19 +1,30 @@
 ---
-title: CommentWrite.reply - KotlinInside
+title: reply -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.comment](../index.md)/[CommentWrite](index.md)/[reply](reply.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.api.comment](../index.html) / [CommentWrite](index.html) / [reply](./reply.html)
 
-# reply
 
-(JVM) `fun reply(commentId: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): WriteResult`
+# reply  
+[jvm]  
+Brief description  
+
 
 대댓글을 작성합니다.
 
-### Parameters
 
-`commentId` - 대댓글을 작성할 코멘트 ID입니다.
 
-### Exceptions
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| commentId| <br><br>대댓글을 작성할 코멘트 ID입니다.<br><br>
+  
+  
+Content  
+fun [reply](reply.md)(commentId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [CommentWrite.WriteResult](-write-result/index.md)  
 
-`be.zvz.kotlininside.http.HttpException` - 대댓글을 작성하지 못할 경우, HttpException 발생
+
+

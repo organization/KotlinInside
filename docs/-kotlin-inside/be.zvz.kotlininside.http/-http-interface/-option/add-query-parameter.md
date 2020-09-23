@@ -1,19 +1,36 @@
 ---
-title: HttpInterface.Option.addQueryParameter - KotlinInside
+title: addQueryParameter -
 ---
+//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.http](../../index.md)/[HttpInterface](../index.md)/[Option](index.md)/[addQueryParameter](add-query-parameter.md)
 
-[KotlinInside](../../../index.html) / [be.zvz.kotlininside.http](../../index.html) / [HttpInterface](../index.html) / [Option](index.html) / [addQueryParameter](./add-query-parameter.html)
 
-# addQueryParameter
 
-(JVM) `@NotNull fun addQueryParameter(@NotNull key: @NotNull `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, @NotNull value: @NotNull `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`): @NotNull Option`
+# addQueryParameter  
+[jvm]  
+Brief description  
 
-### Parameters
 
-`key` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): 매개변수 Key
+#### Return  
 
-`value` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): 매개변수 Value
 
-**Return**
-Option: this
+this
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| key| <br><br>매개변수 Key<br><br>
+| value| <br><br>매개변수 Value<br><br>
+  
+  
+Content  
+@NotNull()  
+  
+open fun [addQueryParameter](add-query-parameter.md)(key: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), value: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpInterface.Option](index.md)  
+
+
 

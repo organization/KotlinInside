@@ -1,12 +1,20 @@
 ---
-title: Recommend.request - KotlinInside
+title: request -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.management](../index.md)/[Recommend](index.md)/[request](request.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.api.management](../index.html) / [Recommend](index.html) / [request](./request.html)
 
-# request
 
-(JVM) `fun request(): RecommendResult`
+# request  
+[jvm]  
+Brief description  
+
 
 개념글을 내리거나, 올립니다.
+
+  
+Content  
+fun [request](request.md)(): [Recommend.RecommendResult](-recommend-result/index.md)  
+
+
 

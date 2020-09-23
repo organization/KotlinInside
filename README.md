@@ -1,13 +1,13 @@
 # *KotlinInside* [![Build Status](https://travis-ci.com/organization/KotlinInside.svg?branch=master)](https://travis-ci.com/organization/KotlinInside) [![Build Status](https://github.com/organization/KotlinInside/workflows/Java%20CI/badge.svg)](https://github.com/organization/KotlinInside/actions) [ ![Download](https://api.bintray.com/packages/jellybrick/be.zvz/KotlinInside/images/download.svg) ](https://bintray.com/jellybrick/be.zvz/KotlinInside/_latestVersion)
 
-**Kotlin**으로 작성한 디시인사이드 비공식 API입니다.
+**Kotlin**으로 작성한 **디시인사이드 비공식 API**입니다.
 
 [**API 문서**](https://organization.github.io/KotlinInside/)
 
 ### Gradle
 
 ```gradle
-compile 'be.zvz:KotlinInside:1.7.7'
+compile 'be.zvz:KotlinInside:1.7.8'
 ```
 
 ### Maven
@@ -16,7 +16,7 @@ compile 'be.zvz:KotlinInside:1.7.7'
 <dependency>
   <groupId>be.zvz</groupId>
   <artifactId>KotlinInside</artifactId>
-  <version>1.7.7</version>
+  <version>1.7.8</version>
   <type>pom</type>
 </dependency>
 ```

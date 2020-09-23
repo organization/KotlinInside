@@ -1,23 +1,37 @@
 ---
-title: HttpRequest.RequestOutputStream.write - KotlinInside
+title: write -
 ---
+//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.http](../../index.md)/[HttpRequest](../index.md)/[RequestOutputStream](index.md)/[write](write.md)
 
-[KotlinInside](../../../index.html) / [be.zvz.kotlininside.http](../../index.html) / [HttpRequest](../index.html) / [RequestOutputStream](index.html) / [write](./write.html)
 
-# write
 
-(JVM) `open fun write(value: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!): RequestOutputStream!`
+# write  
+[jvm]  
+Brief description  
+
 
 Write string to stream
 
-### Parameters
 
-`value` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
 
-### Exceptions
+#### Return  
 
-`IOException` -
 
-**Return**
-RequestOutputStream!: this stream
+this stream
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| value| <br><br><br><br>
+  
+  
+Content  
+open fun [write](write.md)(value: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest.RequestOutputStream](index.md)  
+
+
 

@@ -1,9 +1,14 @@
 ---
-title: DCConList.request - KotlinInside
+title: request -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.dccon](../index.md)/[DCConList](index.md)/[request](request.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.api.dccon](../index.html) / [DCConList](index.html) / [request](./request.html)
 
-# request
 
-(JVM) `fun request(): ListResult`
+# request  
+[jvm]  
+Content  
+fun [request](request.md)(): [DCConList.ListResult](-list-result/index.md)  
+
+
+

@@ -1,26 +1,38 @@
 ---
-title: Base64IO - KotlinInside
+title: Base64IO -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.migbase64](../index.md)/[Base64IO](index.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.migbase64](../index.html) / [Base64IO](./index.html)
 
-# Base64IO
 
-(JVM) `open class Base64IO`
+# Base64IO  
+ [jvm] 
 
 Base64 for InputStream Licence = BSD
 
-**Author**
+
+
+#### Author  
+
+
 shamilbi shamilbi@users.sourceforge.net
 
-**See Also**
-[Base64](../-base64/index.html)
+open class [Base64IO](index.md)   
 
-### Constructors
 
-| (JVM) [&lt;init&gt;](-init-.html) | Base64 for InputStream Licence = BSD`Base64IO()` |
+## See also  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| [Base64](../-base64/index.md)| [Base64](../-base64/index.md)
+  
 
-### Functions
 
-| (JVM) [encode](encode.html) | Encodes a raw InputStream into a BASE64 OutputStream representation in accordance with RFC 2045. This implementation was inspired by MIG Base64 ``[`Base64#encodeToByte(byte[], boolean)`](../-base64/encode-to-byte.html)`static fun encode(in: `[`InputStream`](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)`!, out: `[`OutputStream`](https://docs.oracle.com/javase/7/docs/api/java/io/OutputStream.html)`!, lineSep: `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) |
+## Functions  
+  
+|  Name|  Summary| 
+|---|---|
+| [encode](encode.md)| [jvm]  <br>Brief description  <br><br><br>Encodes a raw InputStream into a BASE64 OutputStream representation in accordance with RFC 2045. This implementation was inspired by MIG Base64 [encodeToByte](../-base64/encode-to-byte.md)<br><br>  <br>Content  <br>fun [encode](encode.md)(in: [InputStream](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html), out: [OutputStream](https://docs.oracle.com/javase/7/docs/api/java/io/OutputStream.html), lineSep: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))  <br><br><br>
 

@@ -1,19 +1,27 @@
 ---
-title: HttpRequest.created - KotlinInside
+title: created -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[created](created.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [created](./created.html)
 
-# created
 
-(JVM) `open fun created(): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
+# created  
+[jvm]  
+Brief description  
+
 
 Is the response code a 201 Created?
 
-### Exceptions
 
-`HttpRequestException` -
 
-**Return**
-[Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true if 201, false otherwise
+#### Return  
+
+
+true if 201, false otherwise
+
+  
+Content  
+open fun [created](created.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
+
+
 

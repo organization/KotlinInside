@@ -1,5 +1,5 @@
-$dokka.format:jekyll
-$dokka.linkExtension:html
+$dokka.format:jekyll-v1
+$dokka.linkExtension:md
 
 be.zvz.kotlininside
 be.zvz.kotlininside.api.article
@@ -19,3 +19,4 @@ be.zvz.kotlininside.session.user
 be.zvz.kotlininside.session.user.named
 be.zvz.kotlininside.utils
 be.zvz.kotlininside.value
+

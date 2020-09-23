@@ -1,13 +1,23 @@
 ---
-title: JsonBrowser.isList - KotlinInside
+title: isList -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.json](../index.md)/[JsonBrowser](index.md)/[isList](is-list.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.json](../index.html) / [JsonBrowser](index.html) / [isList](./is-list.html)
 
-# isList
 
-(JVM) `open fun isList(): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
+# isList  
+[jvm]  
+Brief description  
 
-**Return**
-[Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if the value represents a list.
+
+#### Return  
+
+
+True if the value represents a list.
+
+  
+Content  
+open fun [isList](is-list.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
+
+
 

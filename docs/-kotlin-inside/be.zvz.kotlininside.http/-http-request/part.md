@@ -1,192 +1,106 @@
 ---
-title: HttpRequest.part - KotlinInside
+title: part -
 ---
+//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[part](part.md)
 
-[KotlinInside](../../index.html) / [be.zvz.kotlininside.http](../index.html) / [HttpRequest](index.html) / [part](./part.html)
 
-# part
 
-(JVM) `open fun part(name: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, part: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!): `[`HttpRequest`](index.html)`!`
+# part  
+[jvm]  
+Brief description  
 
-Write part of a multipart request to the request body
-
-### Parameters
-
-`name` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
-
-`part` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
-
-**Return**
-[HttpRequest](index.html)!: this request
-
-(JVM) `open fun part(name: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, filename: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, part: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!): `[`HttpRequest`](index.html)`!`
 
 Write part of a multipart request to the request body
 
-### Parameters
 
-`name` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
 
-`filename` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
+#### Return  
 
-`part` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
 
-### Exceptions
+this request
 
-`HttpRequestException` -
 
-**Return**
-[HttpRequest](index.html)!: this request
 
-(JVM) `open fun part(name: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, filename: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, contentType: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, part: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!): `[`HttpRequest`](index.html)`!`
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| name| <br><br><br><br>
+| part| <br><br><br><br>
+  
+  
+Content  
+open fun [part](part.md)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), part: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
+open fun [part](part.md)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), part: [Number](https://docs.oracle.com/javase/7/docs/api/java/lang/Number.html)): [HttpRequest](index.md)  
+open fun [part](part.md)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), part: [File](https://docs.oracle.com/javase/7/docs/api/java/io/File.html)): [HttpRequest](index.md)  
+open fun [part](part.md)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), part: [InputStream](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)): [HttpRequest](index.md)  
 
-Write part of a multipart request to the request body
 
-### Parameters
+[jvm]  
+Brief description  
 
-`name` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
-
-`filename` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
-
-`contentType` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: value of the Content-Type part header
-
-`part` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
-
-### Exceptions
-
-`HttpRequestException` -
-
-**Return**
-[HttpRequest](index.html)!: this request
-
-(JVM) `open fun part(name: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, part: `[`Number`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)`!): `[`HttpRequest`](index.html)`!`
 
 Write part of a multipart request to the request body
 
-### Parameters
 
-`name` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
 
-`part` - [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)!:
+#### Return  
 
-### Exceptions
 
-`HttpRequestException` -
+this request
 
-**Return**
-[HttpRequest](index.html)!: this request
 
-(JVM) `open fun part(name: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, filename: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, part: `[`Number`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)`!): `[`HttpRequest`](index.html)`!`
 
-Write part of a multipart request to the request body
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| filename| <br><br><br><br>
+| name| <br><br><br><br>
+| part| <br><br><br><br>
+  
+  
+Content  
+open fun [part](part.md)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), filename: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), part: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
+open fun [part](part.md)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), filename: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), part: [Number](https://docs.oracle.com/javase/7/docs/api/java/lang/Number.html)): [HttpRequest](index.md)  
+open fun [part](part.md)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), filename: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), part: [File](https://docs.oracle.com/javase/7/docs/api/java/io/File.html)): [HttpRequest](index.md)  
 
-### Parameters
 
-`name` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
+[jvm]  
+Brief description  
 
-`filename` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
-
-`part` - [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)!:
-
-### Exceptions
-
-`HttpRequestException` -
-
-**Return**
-[HttpRequest](index.html)!: this request
-
-(JVM) `open fun part(name: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, part: `[`File`](https://docs.oracle.com/javase/7/docs/api/java/io/File.html)`!): `[`HttpRequest`](index.html)`!`
 
 Write part of a multipart request to the request body
 
-### Parameters
 
-`name` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
 
-`part` - [File](https://docs.oracle.com/javase/7/docs/api/java/io/File.html)!:
+#### Return  
 
-### Exceptions
 
-`HttpRequestException` -
+this request
 
-**Return**
-[HttpRequest](index.html)!: this request
 
-(JVM) `open fun part(name: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, filename: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, part: `[`File`](https://docs.oracle.com/javase/7/docs/api/java/io/File.html)`!): `[`HttpRequest`](index.html)`!`
 
-Write part of a multipart request to the request body
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| contentType| <br><br>value of the Content-Type part header<br><br>
+| filename| <br><br><br><br>
+| name| <br><br><br><br>
+| part| <br><br><br><br>
+  
+  
+Content  
+open fun [part](part.md)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), filename: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), contentType: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), part: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
+open fun [part](part.md)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), filename: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), contentType: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), part: [File](https://docs.oracle.com/javase/7/docs/api/java/io/File.html)): [HttpRequest](index.md)  
+open fun [part](part.md)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), filename: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), contentType: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), part: [InputStream](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)): [HttpRequest](index.md)  
 
-### Parameters
 
-`name` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
-
-`filename` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
-
-`part` - [File](https://docs.oracle.com/javase/7/docs/api/java/io/File.html)!:
-
-### Exceptions
-
-`HttpRequestException` -
-
-**Return**
-[HttpRequest](index.html)!: this request
-
-(JVM) `open fun part(name: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, filename: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, contentType: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, part: `[`File`](https://docs.oracle.com/javase/7/docs/api/java/io/File.html)`!): `[`HttpRequest`](index.html)`!`
-
-Write part of a multipart request to the request body
-
-### Parameters
-
-`name` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
-
-`filename` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
-
-`contentType` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: value of the Content-Type part header
-
-`part` - [File](https://docs.oracle.com/javase/7/docs/api/java/io/File.html)!:
-
-### Exceptions
-
-`HttpRequestException` -
-
-**Return**
-[HttpRequest](index.html)!: this request
-
-(JVM) `open fun part(name: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, part: `[`InputStream`](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)`!): `[`HttpRequest`](index.html)`!`
-
-Write part of a multipart request to the request body
-
-### Parameters
-
-`name` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
-
-`part` - [InputStream](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)!:
-
-### Exceptions
-
-`HttpRequestException` -
-
-**Return**
-[HttpRequest](index.html)!: this request
-
-(JVM) `open fun part(name: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, filename: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, contentType: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`!, part: `[`InputStream`](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)`!): `[`HttpRequest`](index.html)`!`
-
-Write part of a multipart request to the request body
-
-### Parameters
-
-`name` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
-
-`filename` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:
-
-`contentType` - [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: value of the Content-Type part header
-
-`part` - [InputStream](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)!:
-
-### Exceptions
-
-`HttpRequestException` -
-
-**Return**
-[HttpRequest](index.html)!: this request
 
