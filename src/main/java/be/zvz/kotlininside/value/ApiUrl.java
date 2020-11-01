@@ -1,12 +1,18 @@
 package be.zvz.kotlininside.value;
 
 public final class ApiUrl {
-    public static final String PC_WEB = "https://gall.dcinside.com/";
-    public static final String MOBILE_WEB = "http://m.dcinside.com/";
-    public static final String APP_API = "https://app.dcinside.com/api/";
-    public static final String AUTH_API = "https://dcid.dcinside.com/join/";
-    public static final String MAIN_API = "http://json2.dcinside.com/";
-    public static final String UPLOAD = "https://upload.dcinside.com/";
+    public static final String PC_WEB = Protocol.HTTPS + "gall.dcinside.com/";
+    public static final String MOBILE_WEB = Protocol.HTTP + "m.dcinside.com/";
+    public static final String APP_API = Protocol.HTTPS + "app.dcinside.com/api/";
+    public static final String AUTH_API = Protocol.HTTPS + "dcid.dcinside.com/join/";
+    public static final String MAIN_API = Protocol.HTTP + "json2.dcinside.com/";
+    public static final String UPLOAD = Protocol.HTTPS + "upload.dcinside.com/";
+
+    private static final class Protocol {
+        private static final String HTTP = "http://";
+        private static final String HTTPS = "https://";
+    }
+
     public static final String REDIRECT = APP_API + "redirect.php";
 
     public static final class Article {
