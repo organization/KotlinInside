@@ -10,7 +10,11 @@ import com.vladsch.flexmark.util.data.MutableDataSet
 class StringUtil {
     companion object {
         private val OPTIONS = MutableDataSet()
-                .set(Parser.EXTENSIONS, listOf(TablesExtension.create(), StrikethroughExtension.create(), TaskListExtension.create()))
+                .set(Parser.EXTENSIONS, listOf(
+                        TablesExtension.create(),
+                        StrikethroughExtension.create(),
+                        TaskListExtension.create()
+                ))
                 .toImmutable()
 
         private val MD_PARSER = Parser.builder(OPTIONS).build()
@@ -29,13 +33,12 @@ class StringUtil {
         fun toHtml(s: String): String = StringBuilder().apply {
             var previousWasASpace = false
 
-            for (c in s.toCharArray()) {
-
+            s.toCharArray().forEach { c ->
                 if (c == ' ') {
                     if (previousWasASpace) {
                         append("&nbsp;")
                         previousWasASpace = false
-                        continue
+                        return@forEach
                     }
                     previousWasASpace = true
                 } else {
@@ -50,13 +53,7 @@ class StringUtil {
                     '\n' -> append("<br>")
                     '\t' -> append("&nbsp; &nbsp; &nbsp;")
                     else -> append(c)
-                    /*if (c.toInt() < 128) {
-                        append(c)
-                    } else {
-                        append("&#").append(c.toInt()).append(";")
-                    }*/
                 }
-
             }
         }.toString()
     }
