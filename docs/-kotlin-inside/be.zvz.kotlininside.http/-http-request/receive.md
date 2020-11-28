@@ -7,7 +7,9 @@ title: receive -
 
 # receive  
 [jvm]  
-Brief description  
+Content  
+open fun [receive](receive.md)(file: [File](https://docs.oracle.com/javase/7/docs/api/java/io/File.html)): [HttpRequest](index.md)  
+More info  
 
 
 Stream response body to file
@@ -17,7 +19,7 @@ Stream response body to file
 #### Return  
 
 
-this request
+request
 
 
 
@@ -27,15 +29,15 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| file| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/receive/#java.io.File/PointingToDeclaration/"></a>file| <a name="be.zvz.kotlininside.http/HttpRequest/receive/#java.io.File/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [receive](receive.md)(file: [File](https://docs.oracle.com/javase/7/docs/api/java/io/File.html)): [HttpRequest](index.md)  
 
 
 [jvm]  
-Brief description  
+Content  
+open fun [receive](receive.md)(output: [OutputStream](https://docs.oracle.com/javase/7/docs/api/java/io/OutputStream.html)): [HttpRequest](index.md)  
+More info  
 
 
 Stream response to given output stream
@@ -45,7 +47,7 @@ Stream response to given output stream
 #### Return  
 
 
-this request
+request
 
 
 
@@ -55,15 +57,15 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| output| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/receive/#java.io.OutputStream/PointingToDeclaration/"></a>output| <a name="be.zvz.kotlininside.http/HttpRequest/receive/#java.io.OutputStream/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [receive](receive.md)(output: [OutputStream](https://docs.oracle.com/javase/7/docs/api/java/io/OutputStream.html)): [HttpRequest](index.md)  
 
 
 [jvm]  
-Brief description  
+Content  
+open fun [receive](receive.md)(output: [PrintStream](https://docs.oracle.com/javase/7/docs/api/java/io/PrintStream.html)): [HttpRequest](index.md)  
+More info  
 
 
 Stream response to given print stream
@@ -73,7 +75,7 @@ Stream response to given print stream
 #### Return  
 
 
-this request
+request
 
 
 
@@ -83,15 +85,15 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| output| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/receive/#java.io.PrintStream/PointingToDeclaration/"></a>output| <a name="be.zvz.kotlininside.http/HttpRequest/receive/#java.io.PrintStream/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [receive](receive.md)(output: [PrintStream](https://docs.oracle.com/javase/7/docs/api/java/io/PrintStream.html)): [HttpRequest](index.md)  
 
 
 [jvm]  
-Brief description  
+Content  
+open fun [receive](receive.md)(appendable: [Appendable](https://docs.oracle.com/javase/7/docs/api/java/lang/Appendable.html)): [HttpRequest](index.md)  
+More info  
 
 
 Receive response into the given appendable
@@ -101,7 +103,7 @@ Receive response into the given appendable
 #### Return  
 
 
-this request
+request
 
 
 
@@ -111,15 +113,15 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| appendable| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/receive/#java.lang.Appendable/PointingToDeclaration/"></a>appendable| <a name="be.zvz.kotlininside.http/HttpRequest/receive/#java.lang.Appendable/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [receive](receive.md)(appendable: [Appendable](https://docs.oracle.com/javase/7/docs/api/java/lang/Appendable.html)): [HttpRequest](index.md)  
 
 
 [jvm]  
-Brief description  
+Content  
+open fun [receive](receive.md)(writer: [Writer](https://docs.oracle.com/javase/7/docs/api/java/io/Writer.html)): [HttpRequest](index.md)  
+More info  
 
 
 Receive response into the given writer
@@ -129,7 +131,7 @@ Receive response into the given writer
 #### Return  
 
 
-this request
+request
 
 
 
@@ -139,11 +141,9 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| writer| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/receive/#java.io.Writer/PointingToDeclaration/"></a>writer| <a name="be.zvz.kotlininside.http/HttpRequest/receive/#java.io.Writer/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [receive](receive.md)(writer: [Writer](https://docs.oracle.com/javase/7/docs/api/java/io/Writer.html)): [HttpRequest](index.md)  
 
 
 

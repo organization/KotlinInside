@@ -7,9 +7,9 @@ title: trustAllCerts -
 
 # trustAllCerts  
 [jvm]  
-Brief description  
-
-
+Content  
+open fun [trustAllCerts](trust-all-certs.md)(): [HttpRequest](index.md)  
+More info  
 
 
 Configure HTTPS connection to trust all certificates 
@@ -20,16 +20,12 @@ Configure HTTPS connection to trust all certificates
 
 
 
-
-
 #### Return  
 
 
-this request
+request
 
   
-Content  
-open fun [trustAllCerts](trust-all-certs.md)(): [HttpRequest](index.md)  
 
 
 

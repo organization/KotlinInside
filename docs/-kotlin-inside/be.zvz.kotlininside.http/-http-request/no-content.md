@@ -7,7 +7,9 @@ title: noContent -
 
 # noContent  
 [jvm]  
-Brief description  
+Content  
+open fun [noContent](no-content.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
+More info  
 
 
 Is the response code a 204 No Content?
@@ -17,11 +19,9 @@ Is the response code a 204 No Content?
 #### Return  
 
 
-true if 204, false otherwise
+if 204, false otherwise
 
   
-Content  
-open fun [noContent](no-content.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
 
 
 

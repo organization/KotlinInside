@@ -7,17 +7,19 @@ title: useProxy -
 
 # useProxy  
 [jvm]  
-Brief description  
+Content  
+open fun [useProxy](use-proxy.md)(proxyHost: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), proxyPort: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [HttpRequest](index.md)  
+More info  
 
 
-Configure an HTTP proxy on this connection. Use { [proxyBasic](proxy-basic.md) if this proxy requires basic authentication.
+Configure an HTTP proxy on this connection. Use {[proxyBasic](proxy-basic.md) if this proxy requires basic authentication.
 
 
 
 #### Return  
 
 
-this request
+request
 
 
 
@@ -27,12 +29,10 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| proxyHost| <br><br><br><br>
-| proxyPort| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/useProxy/#java.lang.String#int/PointingToDeclaration/"></a>proxyHost| <a name="be.zvz.kotlininside.http/HttpRequest/useProxy/#java.lang.String#int/PointingToDeclaration/"></a>
+| <a name="be.zvz.kotlininside.http/HttpRequest/useProxy/#java.lang.String#int/PointingToDeclaration/"></a>proxyPort| <a name="be.zvz.kotlininside.http/HttpRequest/useProxy/#java.lang.String#int/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [useProxy](use-proxy.md)(proxyHost: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), proxyPort: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [HttpRequest](index.md)  
 
 
 

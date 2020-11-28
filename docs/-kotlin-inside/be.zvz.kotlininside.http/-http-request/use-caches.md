@@ -7,7 +7,9 @@ title: useCaches -
 
 # useCaches  
 [jvm]  
-Brief description  
+Content  
+open fun [useCaches](use-caches.md)(useCaches: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)): [HttpRequest](index.md)  
+More info  
 
 
 Set value of [setUseCaches](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html#setUseCaches(boolean))
@@ -17,7 +19,7 @@ Set value of [setUseCaches](https://docs.oracle.com/javase/7/docs/api/java/net/U
 #### Return  
 
 
-this request
+request
 
 
 
@@ -27,11 +29,9 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| useCaches| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/useCaches/#boolean/PointingToDeclaration/"></a>useCaches| <a name="be.zvz.kotlininside.http/HttpRequest/useCaches/#boolean/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [useCaches](use-caches.md)(useCaches: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)): [HttpRequest](index.md)  
 
 
 

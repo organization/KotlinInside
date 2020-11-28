@@ -7,7 +7,9 @@ title: code -
 
 # code  
 [jvm]  
-Brief description  
+Content  
+open fun [code](code.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
+More info  
 
 
 Get the status code of the response
@@ -17,15 +19,15 @@ Get the status code of the response
 #### Return  
 
 
-the response code
+response code
 
   
-Content  
-open fun [code](code.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
 
 
 [jvm]  
-Brief description  
+Content  
+open fun [code](code.md)(output: [AtomicInteger](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicInteger.html)): [HttpRequest](index.md)  
+More info  
 
 
 Set the value of the given [AtomicInteger](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicInteger.html) to the status code of the response
@@ -35,7 +37,7 @@ Set the value of the given [AtomicInteger](https://docs.oracle.com/javase/7/docs
 #### Return  
 
 
-this request
+request
 
 
 
@@ -45,11 +47,9 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| output| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/code/#java.util.concurrent.atomic.AtomicInteger/PointingToDeclaration/"></a>output| <a name="be.zvz.kotlininside.http/HttpRequest/code/#java.util.concurrent.atomic.AtomicInteger/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [code](code.md)(output: [AtomicInteger](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicInteger.html)): [HttpRequest](index.md)  
 
 
 

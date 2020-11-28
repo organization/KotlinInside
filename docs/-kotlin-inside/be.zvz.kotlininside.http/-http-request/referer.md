@@ -7,7 +7,9 @@ title: referer -
 
 # referer  
 [jvm]  
-Brief description  
+Content  
+open fun [referer](referer.md)(referer: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
+More info  
 
 
 Set the 'Referer' header to given value
@@ -17,7 +19,7 @@ Set the 'Referer' header to given value
 #### Return  
 
 
-this request
+request
 
 
 
@@ -27,11 +29,9 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| referer| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/referer/#java.lang.String/PointingToDeclaration/"></a>referer| <a name="be.zvz.kotlininside.http/HttpRequest/referer/#java.lang.String/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [referer](referer.md)(referer: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
 
 
 

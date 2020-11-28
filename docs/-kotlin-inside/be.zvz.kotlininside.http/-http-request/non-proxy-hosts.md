@@ -7,9 +7,9 @@ title: nonProxyHosts -
 
 # nonProxyHosts  
 [jvm]  
-Brief description  
-
-
+Content  
+open fun [nonProxyHosts](non-proxy-hosts.md)(hosts: [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)>)  
+More info  
 
 
 Set the 'http.nonProxyHosts' property to the given host values. 
@@ -24,19 +24,15 @@ Set the 'http.nonProxyHosts' property to the given host values.
 
 
 
-
-
 ## Parameters  
   
 jvm  
   
 |  Name|  Summary| 
 |---|---|
-| hosts| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/nonProxyHosts/#java.lang.String.../PointingToDeclaration/"></a>hosts| <a name="be.zvz.kotlininside.http/HttpRequest/nonProxyHosts/#java.lang.String.../PointingToDeclaration/"></a>
   
   
-Content  
-open fun [nonProxyHosts](non-proxy-hosts.md)(hosts: [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)>)  
 
 
 

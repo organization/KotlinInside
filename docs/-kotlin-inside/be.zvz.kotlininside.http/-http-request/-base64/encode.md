@@ -7,7 +7,9 @@ title: encode -
 
 # encode  
 [jvm]  
-Brief description  
+Content  
+open fun [encode](encode.md)(string: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+More info  
 
 
 Encode string as a byte array in Base64 annotation.
@@ -17,7 +19,7 @@ Encode string as a byte array in Base64 annotation.
 #### Return  
 
 
-The Base64-encoded data as a string
+Base64-encoded data as a string
 
 
 
@@ -27,11 +29,9 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| string| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest.Base64/encode/#java.lang.String/PointingToDeclaration/"></a>string| <a name="be.zvz.kotlininside.http/HttpRequest.Base64/encode/#java.lang.String/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [encode](encode.md)(string: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 

@@ -7,9 +7,9 @@ title: proxyPort -
 
 # proxyPort  
 [jvm]  
-Brief description  
-
-
+Content  
+open fun [proxyPort](proxy-port.md)(port: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))  
+More info  
 
 
 Set the 'http.proxyPort' and 'https.proxyPort' properties to the given port number. 
@@ -20,19 +20,15 @@ Set the 'http.proxyPort' and 'https.proxyPort' properties to the given port numb
 
 
 
-
-
 ## Parameters  
   
 jvm  
   
 |  Name|  Summary| 
 |---|---|
-| port| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/proxyPort/#int/PointingToDeclaration/"></a>port| <a name="be.zvz.kotlininside.http/HttpRequest/proxyPort/#int/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [proxyPort](proxy-port.md)(port: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))  
 
 
 

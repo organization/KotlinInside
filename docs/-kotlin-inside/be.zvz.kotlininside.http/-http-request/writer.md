@@ -7,7 +7,9 @@ title: writer -
 
 # writer  
 [jvm]  
-Brief description  
+Content  
+open fun [writer](writer.md)(): [OutputStreamWriter](https://docs.oracle.com/javase/7/docs/api/java/io/OutputStreamWriter.html)  
+More info  
 
 
 Create writer to request output stream
@@ -15,13 +17,7 @@ Create writer to request output stream
 
 
 #### Return  
-
-
-writer
-
   
-Content  
-open fun [writer](writer.md)(): [OutputStreamWriter](https://docs.oracle.com/javase/7/docs/api/java/io/OutputStreamWriter.html)  
 
 
 

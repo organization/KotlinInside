@@ -12,5 +12,5 @@ title: be.zvz.kotlininside.json -
   
 |  Name|  Summary| 
 |---|---|
-| [JsonBrowser](-json-browser/index.md)| [jvm]  <br>Brief description  <br><br><br>Allows to easily navigate in decoded JSON data<br><br>  <br>Content  <br>open class [JsonBrowser](-json-browser/index.md)  <br><br><br>
+| <a name="be.zvz.kotlininside.json/JsonBrowser///PointingToDeclaration/"></a>[JsonBrowser](-json-browser/index.md)| <a name="be.zvz.kotlininside.json/JsonBrowser///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open class [JsonBrowser](-json-browser/index.md)  <br>More info  <br>Allows to easily navigate in decoded JSON data  <br><br><br>
 

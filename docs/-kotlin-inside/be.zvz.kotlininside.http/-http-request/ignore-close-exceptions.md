@@ -7,9 +7,9 @@ title: ignoreCloseExceptions -
 
 # ignoreCloseExceptions  
 [jvm]  
-Brief description  
-
-
+Content  
+open fun [ignoreCloseExceptions](ignore-close-exceptions.md)(ignore: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)): [HttpRequest](index.md)  
+More info  
 
 
 Set whether or not to ignore exceptions that occur from calling [close](https://docs.oracle.com/javase/7/docs/api/java/io/Closeable.html#close())
@@ -20,12 +20,10 @@ Set whether or not to ignore exceptions that occur from calling [close](https://
 
 
 
-
-
 #### Return  
 
 
-this request
+request
 
 
 
@@ -35,15 +33,15 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| ignore| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/ignoreCloseExceptions/#boolean/PointingToDeclaration/"></a>ignore| <a name="be.zvz.kotlininside.http/HttpRequest/ignoreCloseExceptions/#boolean/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [ignoreCloseExceptions](ignore-close-exceptions.md)(ignore: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)): [HttpRequest](index.md)  
 
 
 [jvm]  
-Brief description  
+Content  
+open fun [ignoreCloseExceptions](ignore-close-exceptions.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
+More info  
 
 
 Get whether or not exceptions thrown by [close](https://docs.oracle.com/javase/7/docs/api/java/io/Closeable.html#close()) are ignored
@@ -53,11 +51,9 @@ Get whether or not exceptions thrown by [close](https://docs.oracle.com/javase/7
 #### Return  
 
 
-true if ignoring, false if throwing
+if ignoring, false if throwing
 
   
-Content  
-open fun [ignoreCloseExceptions](ignore-close-exceptions.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
 
 
 

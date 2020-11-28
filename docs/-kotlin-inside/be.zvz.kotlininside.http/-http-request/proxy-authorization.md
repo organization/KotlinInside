@@ -7,7 +7,9 @@ title: proxyAuthorization -
 
 # proxyAuthorization  
 [jvm]  
-Brief description  
+Content  
+open fun [proxyAuthorization](proxy-authorization.md)(proxyAuthorization: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
+More info  
 
 
 Set the 'Proxy-Authorization' header to given value
@@ -17,7 +19,7 @@ Set the 'Proxy-Authorization' header to given value
 #### Return  
 
 
-this request
+request
 
 
 
@@ -27,11 +29,9 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| proxyAuthorization| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/proxyAuthorization/#java.lang.String/PointingToDeclaration/"></a>proxyAuthorization| <a name="be.zvz.kotlininside.http/HttpRequest/proxyAuthorization/#java.lang.String/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [proxyAuthorization](proxy-authorization.md)(proxyAuthorization: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
 
 
 

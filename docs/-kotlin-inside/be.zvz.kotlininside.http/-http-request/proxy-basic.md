@@ -7,7 +7,9 @@ title: proxyBasic -
 
 # proxyBasic  
 [jvm]  
-Brief description  
+Content  
+open fun [proxyBasic](proxy-basic.md)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), password: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
+More info  
 
 
 Set the 'Proxy-Authorization' header to given values in Basic authentication format
@@ -17,7 +19,7 @@ Set the 'Proxy-Authorization' header to given values in Basic authentication for
 #### Return  
 
 
-this request
+request
 
 
 
@@ -27,12 +29,10 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| name| <br><br><br><br>
-| password| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/proxyBasic/#java.lang.String#java.lang.String/PointingToDeclaration/"></a>name| <a name="be.zvz.kotlininside.http/HttpRequest/proxyBasic/#java.lang.String#java.lang.String/PointingToDeclaration/"></a>
+| <a name="be.zvz.kotlininside.http/HttpRequest/proxyBasic/#java.lang.String#java.lang.String/PointingToDeclaration/"></a>password| <a name="be.zvz.kotlininside.http/HttpRequest/proxyBasic/#java.lang.String#java.lang.String/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [proxyBasic](proxy-basic.md)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), password: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
 
 
 

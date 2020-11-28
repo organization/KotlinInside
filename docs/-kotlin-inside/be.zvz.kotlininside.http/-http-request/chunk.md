@@ -7,7 +7,9 @@ title: chunk -
 
 # chunk  
 [jvm]  
-Brief description  
+Content  
+open fun [chunk](chunk.md)(size: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [HttpRequest](index.md)  
+More info  
 
 
 Set chunked streaming mode to the given size
@@ -17,7 +19,7 @@ Set chunked streaming mode to the given size
 #### Return  
 
 
-this request
+request
 
 
 
@@ -27,11 +29,9 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| size| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/chunk/#int/PointingToDeclaration/"></a>size| <a name="be.zvz.kotlininside.http/HttpRequest/chunk/#int/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [chunk](chunk.md)(size: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [HttpRequest](index.md)  
 
 
 

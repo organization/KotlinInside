@@ -7,7 +7,9 @@ title: isBodyEmpty -
 
 # isBodyEmpty  
 [jvm]  
-Brief description  
+Content  
+open fun [isBodyEmpty](is-body-empty.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
+More info  
 
 
 Is the response body empty?
@@ -17,11 +19,9 @@ Is the response body empty?
 #### Return  
 
 
-true if the Content-Length response header is 0, false otherwise
+if the Content-Length response header is 0, false otherwise
 
   
-Content  
-open fun [isBodyEmpty](is-body-empty.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
 
 
 

@@ -7,17 +7,17 @@ title: isMap -
 
 # isMap  
 [jvm]  
-Brief description  
+Content  
+open fun [isMap](is-map.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
+More info  
 
 
 #### Return  
 
 
-True if the value represents a map.
+if the value represents a map.
 
   
-Content  
-open fun [isMap](is-map.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
 
 
 

@@ -7,7 +7,9 @@ title: cacheControl -
 
 # cacheControl  
 [jvm]  
-Brief description  
+Content  
+open fun [cacheControl](cache-control.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+More info  
 
 
 Get the 'Cache-Control' header from the response
@@ -17,11 +19,9 @@ Get the 'Cache-Control' header from the response
 #### Return  
 
 
-cache control
+control
 
   
-Content  
-open fun [cacheControl](cache-control.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 

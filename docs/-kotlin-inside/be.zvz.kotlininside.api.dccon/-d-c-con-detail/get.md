@@ -7,7 +7,9 @@ title: get -
 
 # get  
 [jvm]  
-Brief description  
+Content  
+fun [get](get.md)(): [DCConDetail.DetailResult](-detail-result/index.md)  
+More info  
 
 
 디시콘 정보를 받아오는 메소드입니다.
@@ -20,8 +22,6 @@ Brief description
 [DetailResult](-detail-result/index.md) 디시콘 정보를 반환합니다.
 
   
-Content  
-fun [get](get.md)(): [DCConDetail.DetailResult](-detail-result/index.md)  
 
 
 

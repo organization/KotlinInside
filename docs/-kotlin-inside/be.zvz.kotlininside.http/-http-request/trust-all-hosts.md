@@ -7,9 +7,9 @@ title: trustAllHosts -
 
 # trustAllHosts  
 [jvm]  
-Brief description  
-
-
+Content  
+open fun [trustAllHosts](trust-all-hosts.md)(): [HttpRequest](index.md)  
+More info  
 
 
 Configure HTTPS connection to trust all hosts using a custom [HostnameVerifier](https://docs.oracle.com/javase/7/docs/api/javax/net/ssl/HostnameVerifier.html) that always returns true for each host verified 
@@ -20,16 +20,12 @@ Configure HTTPS connection to trust all hosts using a custom [HostnameVerifier](
 
 
 
-
-
 #### Return  
 
 
-this request
+request
 
   
-Content  
-open fun [trustAllHosts](trust-all-hosts.md)(): [HttpRequest](index.md)  
 
 
 

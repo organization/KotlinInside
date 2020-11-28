@@ -7,7 +7,9 @@ title: acceptCharset -
 
 # acceptCharset  
 [jvm]  
-Brief description  
+Content  
+open fun [acceptCharset](accept-charset.md)(acceptCharset: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
+More info  
 
 
 Set the 'Accept-Charset' header to given value
@@ -17,7 +19,7 @@ Set the 'Accept-Charset' header to given value
 #### Return  
 
 
-this request
+request
 
 
 
@@ -27,11 +29,9 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| acceptCharset| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/acceptCharset/#java.lang.String/PointingToDeclaration/"></a>acceptCharset| <a name="be.zvz.kotlininside.http/HttpRequest/acceptCharset/#java.lang.String/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [acceptCharset](accept-charset.md)(acceptCharset: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
 
 
 

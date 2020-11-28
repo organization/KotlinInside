@@ -7,7 +7,9 @@ title: getCause -
 
 # getCause  
 [jvm]  
-Brief description  
+Content  
+open fun [getCause](get-cause.md)(): [IOException](https://docs.oracle.com/javase/7/docs/api/java/io/IOException.html)  
+More info  
 
 
 Get [IOException](https://docs.oracle.com/javase/7/docs/api/java/io/IOException.html) that triggered this request exception
@@ -17,11 +19,9 @@ Get [IOException](https://docs.oracle.com/javase/7/docs/api/java/io/IOException.
 #### Return  
 
 
-[IOException](https://docs.oracle.com/javase/7/docs/api/java/io/IOException.html) cause
+ cause
 
   
-Content  
-open fun [getCause](get-cause.md)(): [IOException](https://docs.oracle.com/javase/7/docs/api/java/io/IOException.html)  
 
 
 

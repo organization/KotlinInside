@@ -7,14 +7,14 @@ title: upvote -
 
 # upvote  
 [jvm]  
-Brief description  
+Content  
+fun [upvote](upvote.md)(): [ArticleVote.VoteResult](-vote-result/index.md)  
+More info  
 
 
 글을 추천합니다.
 
   
-Content  
-fun [upvote](upvote.md)(): [ArticleVote.VoteResult](-vote-result/index.md)  
 
 
 

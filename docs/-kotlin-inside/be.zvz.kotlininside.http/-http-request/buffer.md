@@ -7,7 +7,9 @@ title: buffer -
 
 # buffer  
 [jvm]  
-Brief description  
+Content  
+open fun [buffer](buffer.md)(): [BufferedInputStream](https://docs.oracle.com/javase/7/docs/api/java/io/BufferedInputStream.html)  
+More info  
 
 
 Get response in a buffered stream
@@ -17,21 +19,15 @@ Get response in a buffered stream
 #### Return  
 
 
-stream
-
-
-
 ## See also  
   
 jvm  
   
 |  Name|  Summary| 
 |---|---|
-| [#bufferSize(int)](buffer-size.md)| [bufferSize](buffer-size.md)
+| <a name="be.zvz.kotlininside.http/HttpRequest/buffer/#/PointingToDeclaration/"></a>[#bufferSize(int)](buffer-size.md)| <a name="be.zvz.kotlininside.http/HttpRequest/buffer/#/PointingToDeclaration/"></a>[bufferSize](buffer-size.md)
   
   
-Content  
-open fun [buffer](buffer.md)(): [BufferedInputStream](https://docs.oracle.com/javase/7/docs/api/java/io/BufferedInputStream.html)  
 
 
 

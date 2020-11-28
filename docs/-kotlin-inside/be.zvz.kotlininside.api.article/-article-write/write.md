@@ -7,14 +7,14 @@ title: write -
 
 # write  
 [jvm]  
-Brief description  
+Content  
+fun [write](write.md)(): [ArticleWrite.WriteResult](-write-result/index.md)  
+More info  
 
 
 글을 작성합니다.
 
   
-Content  
-fun [write](write.md)(): [ArticleWrite.WriteResult](-write-result/index.md)  
 
 
 

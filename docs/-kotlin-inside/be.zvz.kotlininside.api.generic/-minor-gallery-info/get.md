@@ -7,7 +7,9 @@ title: get -
 
 # get  
 [jvm]  
-Brief description  
+Content  
+fun [get](get.md)(): [MinorGalleryInfo.InfoResult](-info-result/index.md)  
+More info  
 
 
 갤러리 정보를 받아옵니다.
@@ -20,8 +22,6 @@ Brief description
 갤러리 정보를 반환합니다.
 
   
-Content  
-fun [get](get.md)(): [MinorGalleryInfo.InfoResult](-info-result/index.md)  
 
 
 

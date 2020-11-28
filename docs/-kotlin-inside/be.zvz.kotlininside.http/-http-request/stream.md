@@ -7,7 +7,9 @@ title: stream -
 
 # stream  
 [jvm]  
-Brief description  
+Content  
+open fun [stream](stream.md)(): [InputStream](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)  
+More info  
 
 
 Get stream to response body
@@ -15,13 +17,7 @@ Get stream to response body
 
 
 #### Return  
-
-
-stream
-
   
-Content  
-open fun [stream](stream.md)(): [InputStream](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)  
 
 
 

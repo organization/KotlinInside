@@ -7,7 +7,9 @@ title: acceptJson -
 
 # acceptJson  
 [jvm]  
-Brief description  
+Content  
+open fun [acceptJson](accept-json.md)(): [HttpRequest](index.md)  
+More info  
 
 
 Set the 'Accept' header to 'application/json'
@@ -17,11 +19,9 @@ Set the 'Accept' header to 'application/json'
 #### Return  
 
 
-this request
+request
 
   
-Content  
-open fun [acceptJson](accept-json.md)(): [HttpRequest](index.md)  
 
 
 

@@ -7,7 +7,9 @@ title: getGallInfo -
 
 # getGallInfo  
 [jvm]  
-Brief description  
+Content  
+fun [getGallInfo](get-gall-info.md)(): [ArticleList.GallInfo](-gall-info/index.md)  
+More info  
 
 
 #### Return  
@@ -16,8 +18,6 @@ Brief description
 [be.zvz.kotlininside.api.article.ArticleList.GallInfo](-gall-info/index.md) gall_info 객체를 반환합니다.
 
   
-Content  
-fun [getGallInfo](get-gall-info.md)(): [ArticleList.GallInfo](-gall-info/index.md)  
 
 
 

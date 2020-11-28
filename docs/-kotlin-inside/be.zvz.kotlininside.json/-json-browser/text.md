@@ -7,19 +7,19 @@ title: text -
 
 # text  
 [jvm]  
-Brief description  
+Content  
+@Nullable()  
+  
+open fun [text](text.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+More info  
 
 
 #### Return  
 
 
-The value of the element as text
+value of the element as text
 
   
-Content  
-@Nullable()  
-  
-open fun [text](text.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 

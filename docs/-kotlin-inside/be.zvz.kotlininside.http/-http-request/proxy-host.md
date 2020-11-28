@@ -7,9 +7,9 @@ title: proxyHost -
 
 # proxyHost  
 [jvm]  
-Brief description  
-
-
+Content  
+open fun [proxyHost](proxy-host.md)(host: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html))  
+More info  
 
 
 Set the 'http.proxyHost' and 'https.proxyHost' properties to the given host value. 
@@ -20,19 +20,15 @@ Set the 'http.proxyHost' and 'https.proxyHost' properties to the given host valu
 
 
 
-
-
 ## Parameters  
   
 jvm  
   
 |  Name|  Summary| 
 |---|---|
-| host| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/proxyHost/#java.lang.String/PointingToDeclaration/"></a>host| <a name="be.zvz.kotlininside.http/HttpRequest/proxyHost/#java.lang.String/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [proxyHost](proxy-host.md)(host: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html))  
 
 
 

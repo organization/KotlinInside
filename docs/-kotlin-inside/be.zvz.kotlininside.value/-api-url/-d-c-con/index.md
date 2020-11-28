@@ -13,5 +13,5 @@ title: DCCon -
   
 |  Name|  Summary| 
 |---|---|
-| [DCCON](index.md#be.zvz.kotlininside.value/ApiUrl.DCCon/DCCON/#/PointingToDeclaration/)|  [jvm] val [DCCON](index.md#be.zvz.kotlininside.value/ApiUrl.DCCon/DCCON/#/PointingToDeclaration/): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
+| <a name="be.zvz.kotlininside.value/ApiUrl.DCCon/DCCON/#/PointingToDeclaration/"></a>[DCCON](-d-c-c-o-n.md)| <a name="be.zvz.kotlininside.value/ApiUrl.DCCon/DCCON/#/PointingToDeclaration/"></a> [jvm] val [DCCON](-d-c-c-o-n.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
 

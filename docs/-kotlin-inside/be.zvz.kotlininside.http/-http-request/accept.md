@@ -7,7 +7,9 @@ title: accept -
 
 # accept  
 [jvm]  
-Brief description  
+Content  
+open fun [accept](accept.md)(accept: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
+More info  
 
 
 Set the 'Accept' header to given value
@@ -17,7 +19,7 @@ Set the 'Accept' header to given value
 #### Return  
 
 
-this request
+request
 
 
 
@@ -27,11 +29,9 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| accept| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/accept/#java.lang.String/PointingToDeclaration/"></a>accept| <a name="be.zvz.kotlininside.http/HttpRequest/accept/#java.lang.String/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [accept](accept.md)(accept: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
 
 
 

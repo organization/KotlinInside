@@ -7,7 +7,11 @@ title: getInstance -
 
 # getInstance  
 [jvm]  
-Brief description  
+Content  
+@[JvmStatic](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-static/index.html)()  
+  
+fun [getInstance](get-instance.md)(): [KotlinInside](../index.md)  
+More info  
 
 
 #### Return  
@@ -16,10 +20,6 @@ Brief description
 [KotlinInside](../index.md) 인스턴스를 반환합니다.
 
   
-Content  
-@[JvmStatic](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-static/index.html)()  
-  
-fun [getInstance](get-instance.md)(): [KotlinInside](../index.md)  
 
 
 

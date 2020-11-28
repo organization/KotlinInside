@@ -7,7 +7,9 @@ title: HttpRequestException -
 
 # HttpRequestException  
 [jvm]  
-Brief description  
+Content  
+open fun [HttpRequestException](-http-request-exception.md)(cause: [IOException](https://docs.oracle.com/javase/7/docs/api/java/io/IOException.html))  
+More info  
 
 
 Create a new HttpRequestException with the given cause
@@ -20,11 +22,9 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| cause| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest.HttpRequestException/HttpRequestException/#java.io.IOException/PointingToDeclaration/"></a>cause| <a name="be.zvz.kotlininside.http/HttpRequest.HttpRequestException/HttpRequestException/#java.io.IOException/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [HttpRequestException](-http-request-exception.md)(cause: [IOException](https://docs.oracle.com/javase/7/docs/api/java/io/IOException.html))  
 
 
 

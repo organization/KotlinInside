@@ -7,9 +7,9 @@ title: parameters -
 
 # parameters  
 [jvm]  
-Brief description  
-
-
+Content  
+open fun [parameters](parameters.md)(headerName: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [Map](https://docs.oracle.com/javase/7/docs/api/java/util/Map.html)<[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)>  
+More info  
 
 
 Get all parameters from header value in response 
@@ -20,12 +20,10 @@ Get all parameters from header value in response
 
 
 
-
-
 #### Return  
 
 
-non -null but possibly empty map of parameter headers
+-null but possibly empty map of parameter headers
 
 
 
@@ -35,11 +33,9 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| headerName| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/parameters/#java.lang.String/PointingToDeclaration/"></a>headerName| <a name="be.zvz.kotlininside.http/HttpRequest/parameters/#java.lang.String/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [parameters](parameters.md)(headerName: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [Map](https://docs.oracle.com/javase/7/docs/api/java/util/Map.html)<[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)>  
 
 
 

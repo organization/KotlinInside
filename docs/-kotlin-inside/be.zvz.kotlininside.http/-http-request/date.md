@@ -7,7 +7,9 @@ title: date -
 
 # date  
 [jvm]  
-Brief description  
+Content  
+open fun [date](date.md)(): [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)  
+More info  
 
 
 Get the 'Date' header from the response
@@ -17,11 +19,9 @@ Get the 'Date' header from the response
 #### Return  
 
 
-date value, -1 on failures
+value, -1 on failures
 
   
-Content  
-open fun [date](date.md)(): [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)  
 
 
 

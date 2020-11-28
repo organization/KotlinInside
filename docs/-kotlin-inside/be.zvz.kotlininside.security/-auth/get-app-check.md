@@ -7,7 +7,9 @@ title: getAppCheck -
 
 # getAppCheck  
 [jvm]  
-Brief description  
+Content  
+fun [getAppCheck](get-app-check.md)(): [Auth.AppCheck](-app-check/index.md)  
+More info  
 
 
 app_check에서 정보를 얻어오는 메소드입니다.
@@ -20,8 +22,6 @@ app_check에서 정보를 얻어오는 메소드입니다.
 [AppCheck](-app-check/index.md) AppCheck 또는 null을 반환합니다.
 
   
-Content  
-fun [getAppCheck](get-app-check.md)(): [Auth.AppCheck](-app-check/index.md)  
 
 
 

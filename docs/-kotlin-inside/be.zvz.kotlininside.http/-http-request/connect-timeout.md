@@ -7,7 +7,9 @@ title: connectTimeout -
 
 # connectTimeout  
 [jvm]  
-Brief description  
+Content  
+open fun [connectTimeout](connect-timeout.md)(timeout: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [HttpRequest](index.md)  
+More info  
 
 
 Set connect timeout on connection to given value
@@ -17,7 +19,7 @@ Set connect timeout on connection to given value
 #### Return  
 
 
-this request
+request
 
 
 
@@ -27,11 +29,9 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| timeout| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/connectTimeout/#int/PointingToDeclaration/"></a>timeout| <a name="be.zvz.kotlininside.http/HttpRequest/connectTimeout/#int/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [connectTimeout](connect-timeout.md)(timeout: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [HttpRequest](index.md)  
 
 
 

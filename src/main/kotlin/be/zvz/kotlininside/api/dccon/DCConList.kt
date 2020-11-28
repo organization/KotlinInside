@@ -8,7 +8,7 @@ import be.zvz.kotlininside.session.user.LoginUser
 import be.zvz.kotlininside.value.ApiUrl
 
 class DCConList(
-        val session: Session
+        private val session: Session
 ) {
     data class ListResult(
             val tab: List<DCCon>,

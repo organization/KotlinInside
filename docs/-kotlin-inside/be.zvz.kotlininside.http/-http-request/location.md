@@ -7,7 +7,9 @@ title: location -
 
 # location  
 [jvm]  
-Brief description  
+Content  
+open fun [location](location.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+More info  
 
 
 Get the 'Location' header from the response
@@ -15,13 +17,7 @@ Get the 'Location' header from the response
 
 
 #### Return  
-
-
-location
-
   
-Content  
-open fun [location](location.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 

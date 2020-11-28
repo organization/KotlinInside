@@ -7,9 +7,9 @@ title: maxConnections -
 
 # maxConnections  
 [jvm]  
-Brief description  
-
-
+Content  
+open fun [maxConnections](max-connections.md)(maxConnections: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))  
+More info  
 
 
 Set the 'http.maxConnections' property to the given value. 
@@ -20,19 +20,15 @@ Set the 'http.maxConnections' property to the given value.
 
 
 
-
-
 ## Parameters  
   
 jvm  
   
 |  Name|  Summary| 
 |---|---|
-| maxConnections| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/maxConnections/#int/PointingToDeclaration/"></a>maxConnections| <a name="be.zvz.kotlininside.http/HttpRequest/maxConnections/#int/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [maxConnections](max-connections.md)(maxConnections: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))  
 
 
 

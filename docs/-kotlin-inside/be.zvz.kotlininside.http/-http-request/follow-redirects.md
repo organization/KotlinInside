@@ -7,7 +7,9 @@ title: followRedirects -
 
 # followRedirects  
 [jvm]  
-Brief description  
+Content  
+open fun [followRedirects](follow-redirects.md)(followRedirects: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)): [HttpRequest](index.md)  
+More info  
 
 
 Set whether or not the underlying connection should follow redirects in the response.
@@ -17,7 +19,7 @@ Set whether or not the underlying connection should follow redirects in the resp
 #### Return  
 
 
-this request
+request
 
 
 
@@ -27,11 +29,9 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| followRedirects| <br><br>- true fo follow redirects, false to not.<br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/followRedirects/#boolean/PointingToDeclaration/"></a>followRedirects| <a name="be.zvz.kotlininside.http/HttpRequest/followRedirects/#boolean/PointingToDeclaration/"></a><br><br>- true fo follow redirects, false to not.<br><br>
   
   
-Content  
-open fun [followRedirects](follow-redirects.md)(followRedirects: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)): [HttpRequest](index.md)  
 
 
 

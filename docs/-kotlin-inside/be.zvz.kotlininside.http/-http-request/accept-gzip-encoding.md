@@ -7,7 +7,9 @@ title: acceptGzipEncoding -
 
 # acceptGzipEncoding  
 [jvm]  
-Brief description  
+Content  
+open fun [acceptGzipEncoding](accept-gzip-encoding.md)(): [HttpRequest](index.md)  
+More info  
 
 
 Set the 'Accept-Encoding' header to 'gzip'
@@ -17,7 +19,7 @@ Set the 'Accept-Encoding' header to 'gzip'
 #### Return  
 
 
-this request
+request
 
 
 
@@ -27,11 +29,9 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| [#uncompress(boolean)](uncompress.md)| [uncompress](uncompress.md)
+| <a name="be.zvz.kotlininside.http/HttpRequest/acceptGzipEncoding/#/PointingToDeclaration/"></a>[#uncompress(boolean)](uncompress.md)| <a name="be.zvz.kotlininside.http/HttpRequest/acceptGzipEncoding/#/PointingToDeclaration/"></a>[uncompress](uncompress.md)
   
   
-Content  
-open fun [acceptGzipEncoding](accept-gzip-encoding.md)(): [HttpRequest](index.md)  
 
 
 

@@ -7,9 +7,9 @@ title: form -
 
 # form  
 [jvm]  
-Brief description  
-
-
+Content  
+open fun [form](form.md)(values: [Map](https://docs.oracle.com/javase/7/docs/api/java/util/Map.html)<out [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), out [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)>): [HttpRequest](index.md)  
+More info  
 
 
 Write the values in the map as form data to the request body 
@@ -20,12 +20,10 @@ Write the values in the map as form data to the request body
 
 
 
-
-
 #### Return  
 
 
-this request
+request
 
 
 
@@ -35,17 +33,15 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| values| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/form/#java.util.Map<?,?>/PointingToDeclaration/"></a>values| <a name="be.zvz.kotlininside.http/HttpRequest/form/#java.util.Map<?,?>/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [form](form.md)(values: [Map](https://docs.oracle.com/javase/7/docs/api/java/util/Map.html)<Out [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), Out [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)>): [HttpRequest](index.md)  
 
 
 [jvm]  
-Brief description  
-
-
+Content  
+open fun [form](form.md)(entry: [Map.Entry](https://docs.oracle.com/javase/7/docs/api/java/util/Map.Entry.html)<out [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), out [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)>): [HttpRequest](index.md)  
+More info  
 
 
 Write the key and value in the entry as form data to the request body 
@@ -56,12 +52,10 @@ Write the key and value in the entry as form data to the request body
 
 
 
-
-
 #### Return  
 
 
-this request
+request
 
 
 
@@ -71,17 +65,15 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| entry| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/form/#java.util.Map.Entry<?,?>/PointingToDeclaration/"></a>entry| <a name="be.zvz.kotlininside.http/HttpRequest/form/#java.util.Map.Entry<?,?>/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [form](form.md)(entry: [Map.Entry](https://docs.oracle.com/javase/7/docs/api/java/util/Map.Entry.html)<Out [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), Out [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)>): [HttpRequest](index.md)  
 
 
 [jvm]  
-Brief description  
-
-
+Content  
+open fun [form](form.md)(entry: [Map.Entry](https://docs.oracle.com/javase/7/docs/api/java/util/Map.Entry.html)<out [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), out [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)>, charset: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
+More info  
 
 
 Write the key and value in the entry as form data to the request body 
@@ -92,12 +84,10 @@ Write the key and value in the entry as form data to the request body
 
 
 
-
-
 #### Return  
 
 
-this request
+request
 
 
 
@@ -107,18 +97,16 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| charset| <br><br><br><br>
-| entry| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/form/#java.util.Map.Entry<?,?>#java.lang.String/PointingToDeclaration/"></a>charset| <a name="be.zvz.kotlininside.http/HttpRequest/form/#java.util.Map.Entry<?,?>#java.lang.String/PointingToDeclaration/"></a>
+| <a name="be.zvz.kotlininside.http/HttpRequest/form/#java.util.Map.Entry<?,?>#java.lang.String/PointingToDeclaration/"></a>entry| <a name="be.zvz.kotlininside.http/HttpRequest/form/#java.util.Map.Entry<?,?>#java.lang.String/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [form](form.md)(entry: [Map.Entry](https://docs.oracle.com/javase/7/docs/api/java/util/Map.Entry.html)<Out [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), Out [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)>, charset: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
 
 
 [jvm]  
-Brief description  
-
-
+Content  
+open fun [form](form.md)(name: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), value: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)): [HttpRequest](index.md)  
+More info  
 
 
 Write the name/value pair as form data to the request body 
@@ -129,12 +117,10 @@ Write the name/value pair as form data to the request body
 
 
 
-
-
 #### Return  
 
 
-this request
+request
 
 
 
@@ -144,18 +130,16 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| name| <br><br><br><br>
-| value| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/form/#java.lang.Object#java.lang.Object/PointingToDeclaration/"></a>name| <a name="be.zvz.kotlininside.http/HttpRequest/form/#java.lang.Object#java.lang.Object/PointingToDeclaration/"></a>
+| <a name="be.zvz.kotlininside.http/HttpRequest/form/#java.lang.Object#java.lang.Object/PointingToDeclaration/"></a>value| <a name="be.zvz.kotlininside.http/HttpRequest/form/#java.lang.Object#java.lang.Object/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [form](form.md)(name: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), value: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)): [HttpRequest](index.md)  
 
 
 [jvm]  
-Brief description  
-
-
+Content  
+open fun [form](form.md)(name: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), value: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), charset: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
+More info  
 
 
 Write the name/value pair as form data to the request body 
@@ -166,12 +150,10 @@ Write the name/value pair as form data to the request body
 
 
 
-
-
 #### Return  
 
 
-this request
+request
 
 
 
@@ -181,17 +163,17 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| charset| <br><br><br><br>
-| name| <br><br><br><br>
-| value| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/form/#java.lang.Object#java.lang.Object#java.lang.String/PointingToDeclaration/"></a>charset| <a name="be.zvz.kotlininside.http/HttpRequest/form/#java.lang.Object#java.lang.Object#java.lang.String/PointingToDeclaration/"></a>
+| <a name="be.zvz.kotlininside.http/HttpRequest/form/#java.lang.Object#java.lang.Object#java.lang.String/PointingToDeclaration/"></a>name| <a name="be.zvz.kotlininside.http/HttpRequest/form/#java.lang.Object#java.lang.Object#java.lang.String/PointingToDeclaration/"></a>
+| <a name="be.zvz.kotlininside.http/HttpRequest/form/#java.lang.Object#java.lang.Object#java.lang.String/PointingToDeclaration/"></a>value| <a name="be.zvz.kotlininside.http/HttpRequest/form/#java.lang.Object#java.lang.Object#java.lang.String/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [form](form.md)(name: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), value: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), charset: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
 
 
 [jvm]  
-Brief description  
+Content  
+open fun [form](form.md)(values: [Map](https://docs.oracle.com/javase/7/docs/api/java/util/Map.html)<out [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), out [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)>, charset: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
+More info  
 
 
 Write the values in the map as encoded form data to the request body
@@ -201,7 +183,7 @@ Write the values in the map as encoded form data to the request body
 #### Return  
 
 
-this request
+request
 
 
 
@@ -211,12 +193,10 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| charset| <br><br><br><br>
-| values| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/form/#java.util.Map<?,?>#java.lang.String/PointingToDeclaration/"></a>charset| <a name="be.zvz.kotlininside.http/HttpRequest/form/#java.util.Map<?,?>#java.lang.String/PointingToDeclaration/"></a>
+| <a name="be.zvz.kotlininside.http/HttpRequest/form/#java.util.Map<?,?>#java.lang.String/PointingToDeclaration/"></a>values| <a name="be.zvz.kotlininside.http/HttpRequest/form/#java.util.Map<?,?>#java.lang.String/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [form](form.md)(values: [Map](https://docs.oracle.com/javase/7/docs/api/java/util/Map.html)<Out [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), Out [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)>, charset: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
 
 
 

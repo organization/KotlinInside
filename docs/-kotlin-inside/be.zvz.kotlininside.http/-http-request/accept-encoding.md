@@ -7,7 +7,9 @@ title: acceptEncoding -
 
 # acceptEncoding  
 [jvm]  
-Brief description  
+Content  
+open fun [acceptEncoding](accept-encoding.md)(acceptEncoding: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
+More info  
 
 
 Set the 'Accept-Encoding' header to given value
@@ -17,7 +19,7 @@ Set the 'Accept-Encoding' header to given value
 #### Return  
 
 
-this request
+request
 
 
 
@@ -27,11 +29,9 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| acceptEncoding| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/acceptEncoding/#java.lang.String/PointingToDeclaration/"></a>acceptEncoding| <a name="be.zvz.kotlininside.http/HttpRequest/acceptEncoding/#java.lang.String/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [acceptEncoding](accept-encoding.md)(acceptEncoding: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
 
 
 

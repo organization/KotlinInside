@@ -13,7 +13,7 @@ title: Comment -
   
 |  Name|  Summary| 
 |---|---|
-| [DELETE](index.md#be.zvz.kotlininside.value/ApiUrl.Comment/DELETE/#/PointingToDeclaration/)|  [jvm] val [DELETE](index.md#be.zvz.kotlininside.value/ApiUrl.Comment/DELETE/#/PointingToDeclaration/): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
-| [OK](index.md#be.zvz.kotlininside.value/ApiUrl.Comment/OK/#/PointingToDeclaration/)|  [jvm] val [OK](index.md#be.zvz.kotlininside.value/ApiUrl.Comment/OK/#/PointingToDeclaration/): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
-| [READ](index.md#be.zvz.kotlininside.value/ApiUrl.Comment/READ/#/PointingToDeclaration/)|  [jvm] val [READ](index.md#be.zvz.kotlininside.value/ApiUrl.Comment/READ/#/PointingToDeclaration/): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
+| <a name="be.zvz.kotlininside.value/ApiUrl.Comment/DELETE/#/PointingToDeclaration/"></a>[DELETE](-d-e-l-e-t-e.md)| <a name="be.zvz.kotlininside.value/ApiUrl.Comment/DELETE/#/PointingToDeclaration/"></a> [jvm] val [DELETE](-d-e-l-e-t-e.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
+| <a name="be.zvz.kotlininside.value/ApiUrl.Comment/OK/#/PointingToDeclaration/"></a>[OK](-o-k.md)| <a name="be.zvz.kotlininside.value/ApiUrl.Comment/OK/#/PointingToDeclaration/"></a> [jvm] val [OK](-o-k.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
+| <a name="be.zvz.kotlininside.value/ApiUrl.Comment/READ/#/PointingToDeclaration/"></a>[READ](-r-e-a-d.md)| <a name="be.zvz.kotlininside.value/ApiUrl.Comment/READ/#/PointingToDeclaration/"></a> [jvm] val [READ](-r-e-a-d.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
 

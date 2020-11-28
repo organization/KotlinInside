@@ -7,7 +7,9 @@ title: serverError -
 
 # serverError  
 [jvm]  
-Brief description  
+Content  
+open fun [serverError](server-error.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
+More info  
 
 
 Is the response code a 500 Internal Server Error?
@@ -17,11 +19,9 @@ Is the response code a 500 Internal Server Error?
 #### Return  
 
 
-true if 500, false otherwise
+if 500, false otherwise
 
   
-Content  
-open fun [serverError](server-error.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
 
 
 

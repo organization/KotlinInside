@@ -7,7 +7,9 @@ title: getViewMain -
 
 # getViewMain  
 [jvm]  
-Brief description  
+Content  
+fun [getViewMain](get-view-main.md)(): [ArticleRead.ViewMain](-view-main/index.md)  
+More info  
 
 
 #### Return  
@@ -16,8 +18,6 @@ Brief description
 [be.zvz.kotlininside.api.article.ArticleRead.ViewMain](-view-main/index.md) view_main 객체를 반환합니다.
 
   
-Content  
-fun [getViewMain](get-view-main.md)(): [ArticleRead.ViewMain](-view-main/index.md)  
 
 
 

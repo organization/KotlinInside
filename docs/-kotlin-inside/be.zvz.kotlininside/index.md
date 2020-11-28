@@ -12,5 +12,5 @@ title: be.zvz.kotlininside -
   
 |  Name|  Summary| 
 |---|---|
-| [KotlinInside](-kotlin-inside/index.md)| [jvm]  <br>Content  <br>class [KotlinInside](-kotlin-inside/index.md)  <br><br><br>
+| <a name="be.zvz.kotlininside/KotlinInside///PointingToDeclaration/"></a>[KotlinInside](-kotlin-inside/index.md)| <a name="be.zvz.kotlininside/KotlinInside///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [KotlinInside](-kotlin-inside/index.md)  <br><br><br>
 

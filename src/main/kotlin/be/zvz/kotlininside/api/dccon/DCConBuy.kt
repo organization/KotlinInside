@@ -9,8 +9,8 @@ import be.zvz.kotlininside.session.user.Anonymous
 import be.zvz.kotlininside.value.ApiUrl
 
 class DCConBuy(
-        val dcCon: DCCon,
-        val session: Session
+        private val dcCon: DCCon,
+        private val session: Session
 ) {
     data class BuyResult(
             val result: Int,

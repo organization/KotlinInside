@@ -7,9 +7,9 @@ title: body -
 
 # body  
 [jvm]  
-Brief description  
-
-
+Content  
+open fun [body](body.md)(charset: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+More info  
 
 
 Get response as [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) in given character set 
@@ -20,13 +20,7 @@ Get response as [String](https://docs.oracle.com/javase/7/docs/api/java/lang/Str
 
 
 
-
-
 #### Return  
-
-
-string
-
 
 
 ## Parameters  
@@ -35,15 +29,15 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| charset| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/body/#java.lang.String/PointingToDeclaration/"></a>charset| <a name="be.zvz.kotlininside.http/HttpRequest/body/#java.lang.String/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [body](body.md)(charset: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 [jvm]  
-Brief description  
+Content  
+open fun [body](body.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+More info  
 
 
 Get response as [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) using character set returned from [charset](charset.md)
@@ -51,45 +45,13 @@ Get response as [String](https://docs.oracle.com/javase/7/docs/api/java/lang/Str
 
 
 #### Return  
-
-
-string
-
   
-Content  
-open fun [body](body.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 [jvm]  
-Brief description  
-
-
-Get the response body as a [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) and set it as the value of the given reference.
-
-
-
-#### Return  
-
-
-this request
-
-
-
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
-|---|---|
-| output| <br><br><br><br>
-  
-  
 Content  
 open fun [body](body.md)(output: [AtomicReference](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicReference.html)<[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)>): [HttpRequest](index.md)  
-
-
-[jvm]  
-Brief description  
+More info  
 
 
 Get the response body as a [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) and set it as the value of the given reference.
@@ -99,7 +61,7 @@ Get the response body as a [String](https://docs.oracle.com/javase/7/docs/api/ja
 #### Return  
 
 
-this request
+request
 
 
 
@@ -109,12 +71,38 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| charset| <br><br><br><br>
-| output| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/body/#java.util.concurrent.atomic.AtomicReference<java.lang.String>/PointingToDeclaration/"></a>output| <a name="be.zvz.kotlininside.http/HttpRequest/body/#java.util.concurrent.atomic.AtomicReference<java.lang.String>/PointingToDeclaration/"></a>
   
   
+
+
+[jvm]  
 Content  
 open fun [body](body.md)(output: [AtomicReference](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicReference.html)<[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)>, charset: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
+More info  
+
+
+Get the response body as a [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) and set it as the value of the given reference.
+
+
+
+#### Return  
+
+
+request
+
+
+
+## Parameters  
+  
+jvm  
+  
+|  Name|  Summary| 
+|---|---|
+| <a name="be.zvz.kotlininside.http/HttpRequest/body/#java.util.concurrent.atomic.AtomicReference<java.lang.String>#java.lang.String/PointingToDeclaration/"></a>charset| <a name="be.zvz.kotlininside.http/HttpRequest/body/#java.util.concurrent.atomic.AtomicReference<java.lang.String>#java.lang.String/PointingToDeclaration/"></a>
+| <a name="be.zvz.kotlininside.http/HttpRequest/body/#java.util.concurrent.atomic.AtomicReference<java.lang.String>#java.lang.String/PointingToDeclaration/"></a>output| <a name="be.zvz.kotlininside.http/HttpRequest/body/#java.util.concurrent.atomic.AtomicReference<java.lang.String>#java.lang.String/PointingToDeclaration/"></a>
+  
+  
 
 
 

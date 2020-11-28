@@ -7,7 +7,9 @@ title: notModified -
 
 # notModified  
 [jvm]  
-Brief description  
+Content  
+open fun [notModified](not-modified.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
+More info  
 
 
 Is the response code a 304 Not Modified?
@@ -17,11 +19,9 @@ Is the response code a 304 Not Modified?
 #### Return  
 
 
-true if 304, false otherwise
+if 304, false otherwise
 
   
-Content  
-open fun [notModified](not-modified.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
 
 
 

@@ -7,7 +7,7 @@ import be.zvz.kotlininside.utils.StringUtil
 import be.zvz.kotlininside.value.ApiUrl
 
 class DCConDetail(
-        val dcCon: DCCon
+        private val dcCon: DCCon
 ) {
     data class DetailResult(
             val info: List<DCConInfo> = listOf(),

@@ -7,7 +7,9 @@ title: disconnect -
 
 # disconnect  
 [jvm]  
-Brief description  
+Content  
+open fun [disconnect](disconnect.md)(): [HttpRequest](index.md)  
+More info  
 
 
 Disconnect the connection
@@ -17,11 +19,9 @@ Disconnect the connection
 #### Return  
 
 
-this request
+request
 
   
-Content  
-open fun [disconnect](disconnect.md)(): [HttpRequest](index.md)  
 
 
 

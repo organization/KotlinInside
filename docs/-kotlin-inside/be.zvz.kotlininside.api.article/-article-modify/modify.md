@@ -10,7 +10,7 @@ title: modify -
 Content  
 @[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)()  
   
-fun [modify](modify.md)(article: [Article](../../be.zvz.kotlininside.api.type/-article/index.md), fcmToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): [ArticleWrite.WriteResult](../-article-write/-write-result/index.md)  
+fun [modify](modify.md)(article: [Article](../../be.zvz.kotlininside.api.type/-article/index.md), fcmToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) = "N"): [ArticleWrite.WriteResult](../-article-write/-write-result/index.md)  
 
 
 

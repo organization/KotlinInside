@@ -7,14 +7,14 @@ title: get -
 
 # get  
 [jvm]  
-Brief description  
+Content  
+fun [get](get.md)(): [CommentRead.ReadResult](-read-result/index.md)  
+More info  
 
 
 댓글 데이터를 읽어옵니다.
 
   
-Content  
-fun [get](get.md)(): [CommentRead.ReadResult](-read-result/index.md)  
 
 
 

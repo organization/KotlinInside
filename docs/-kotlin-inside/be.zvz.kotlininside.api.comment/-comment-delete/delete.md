@@ -7,14 +7,14 @@ title: delete -
 
 # delete  
 [jvm]  
-Brief description  
+Content  
+fun [delete](delete.md)(): [CommentDelete.DeleteResult](-delete-result/index.md)  
+More info  
 
 
 댓글을 삭제합니다.
 
   
-Content  
-fun [delete](delete.md)(): [CommentDelete.DeleteResult](-delete-result/index.md)  
 
 
 

@@ -7,7 +7,9 @@ title: encodeBytes -
 
 # encodeBytes  
 [jvm]  
-Brief description  
+Content  
+open fun [encodeBytes](encode-bytes.md)(source: [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)>): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+More info  
 
 
 Encodes a byte array into Base64 notation.
@@ -17,7 +19,7 @@ Encodes a byte array into Base64 notation.
 #### Return  
 
 
-The Base64-encoded data as a String
+Base64-encoded data as a String
 
 
 
@@ -27,15 +29,15 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| source| <br><br>The data to convert<br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest.Base64/encodeBytes/#byte[]/PointingToDeclaration/"></a>source| <a name="be.zvz.kotlininside.http/HttpRequest.Base64/encodeBytes/#byte[]/PointingToDeclaration/"></a><br><br>The data to convert<br><br>
   
   
-Content  
-open fun [encodeBytes](encode-bytes.md)(source: [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)>): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 [jvm]  
-Brief description  
+Content  
+open fun [encodeBytes](encode-bytes.md)(source: [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)>, off: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), len: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+More info  
 
 
 Encodes a byte array into Base64 notation.
@@ -45,7 +47,7 @@ Encodes a byte array into Base64 notation.
 #### Return  
 
 
-The Base64-encoded data as a String
+Base64-encoded data as a String
 
 
 
@@ -55,13 +57,11 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| len| <br><br>Length of data to convert<br><br>
-| off| <br><br>Offset in array where conversion should begin<br><br>
-| source| <br><br>The data to convert<br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest.Base64/encodeBytes/#byte[]#int#int/PointingToDeclaration/"></a>len| <a name="be.zvz.kotlininside.http/HttpRequest.Base64/encodeBytes/#byte[]#int#int/PointingToDeclaration/"></a><br><br>Length of data to convert<br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest.Base64/encodeBytes/#byte[]#int#int/PointingToDeclaration/"></a>off| <a name="be.zvz.kotlininside.http/HttpRequest.Base64/encodeBytes/#byte[]#int#int/PointingToDeclaration/"></a><br><br>Offset in array where conversion should begin<br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest.Base64/encodeBytes/#byte[]#int#int/PointingToDeclaration/"></a>source| <a name="be.zvz.kotlininside.http/HttpRequest.Base64/encodeBytes/#byte[]#int#int/PointingToDeclaration/"></a><br><br>The data to convert<br><br>
   
   
-Content  
-open fun [encodeBytes](encode-bytes.md)(source: [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)>, off: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), len: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 

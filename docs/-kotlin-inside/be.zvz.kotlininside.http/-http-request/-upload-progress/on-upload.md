@@ -7,7 +7,9 @@ title: onUpload -
 
 # onUpload  
 [jvm]  
-Brief description  
+Content  
+abstract fun [onUpload](on-upload.md)(uploaded: [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html), total: [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html))  
+More info  
 
 
 Callback invoked as data is uploaded by the request.
@@ -20,12 +22,10 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| total| <br><br>The total number of bytes that will be uploaded or -1 if the length is unknown.<br><br>
-| uploaded| <br><br>The number of bytes already uploaded<br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest.UploadProgress/onUpload/#long#long/PointingToDeclaration/"></a>total| <a name="be.zvz.kotlininside.http/HttpRequest.UploadProgress/onUpload/#long#long/PointingToDeclaration/"></a><br><br>The total number of bytes that will be uploaded or -1 if the length is unknown.<br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest.UploadProgress/onUpload/#long#long/PointingToDeclaration/"></a>uploaded| <a name="be.zvz.kotlininside.http/HttpRequest.UploadProgress/onUpload/#long#long/PointingToDeclaration/"></a><br><br>The number of bytes already uploaded<br><br>
   
   
-Content  
-abstract fun [onUpload](on-upload.md)(uploaded: [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html), total: [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html))  
 
 
 

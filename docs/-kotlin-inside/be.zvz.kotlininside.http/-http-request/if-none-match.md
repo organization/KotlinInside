@@ -7,7 +7,9 @@ title: ifNoneMatch -
 
 # ifNoneMatch  
 [jvm]  
-Brief description  
+Content  
+open fun [ifNoneMatch](if-none-match.md)(ifNoneMatch: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
+More info  
 
 
 Set the 'If-None-Match' request header to the given value
@@ -17,7 +19,7 @@ Set the 'If-None-Match' request header to the given value
 #### Return  
 
 
-this request
+request
 
 
 
@@ -27,11 +29,9 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| ifNoneMatch| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/ifNoneMatch/#java.lang.String/PointingToDeclaration/"></a>ifNoneMatch| <a name="be.zvz.kotlininside.http/HttpRequest/ifNoneMatch/#java.lang.String/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [ifNoneMatch](if-none-match.md)(ifNoneMatch: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
 
 
 

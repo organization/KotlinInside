@@ -7,9 +7,9 @@ title: encode -
 
 # encode  
 [jvm]  
-Brief description  
-
-
+Content  
+open fun [encode](encode.md)(url: [CharSequence](https://docs.oracle.com/javase/7/docs/api/java/lang/CharSequence.html)): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+More info  
 
 
 Encode the given URL as an ASCII [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
@@ -20,12 +20,10 @@ Encode the given URL as an ASCII [String](https://docs.oracle.com/javase/7/docs/
 
 
 
-
-
 #### Return  
 
 
-encoded URL
+URL
 
 
 
@@ -35,11 +33,9 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| url| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/encode/#java.lang.CharSequence/PointingToDeclaration/"></a>url| <a name="be.zvz.kotlininside.http/HttpRequest/encode/#java.lang.CharSequence/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [encode](encode.md)(url: [CharSequence](https://docs.oracle.com/javase/7/docs/api/java/lang/CharSequence.html)): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 

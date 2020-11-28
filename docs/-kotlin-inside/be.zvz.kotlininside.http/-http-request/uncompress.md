@@ -7,9 +7,9 @@ title: uncompress -
 
 # uncompress  
 [jvm]  
-Brief description  
-
-
+Content  
+open fun [uncompress](uncompress.md)(uncompress: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)): [HttpRequest](index.md)  
+More info  
 
 
 Set whether or not the response body should be automatically uncompressed when read from. 
@@ -28,12 +28,10 @@ Set whether or not the response body should be automatically uncompressed when r
 
 
 
-
-
 #### Return  
 
 
-this request
+request
 
 
 
@@ -43,11 +41,9 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| uncompress| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/uncompress/#boolean/PointingToDeclaration/"></a>uncompress| <a name="be.zvz.kotlininside.http/HttpRequest/uncompress/#boolean/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [uncompress](uncompress.md)(uncompress: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)): [HttpRequest](index.md)  
 
 
 

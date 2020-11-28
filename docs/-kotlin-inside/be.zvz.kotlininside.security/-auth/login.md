@@ -7,7 +7,9 @@ title: login -
 
 # login  
 [jvm]  
-Brief description  
+Content  
+fun [login](login.md)(user: [User](../../be.zvz.kotlininside.session.user/-user/index.md)): [Session](../../be.zvz.kotlininside.session/-session/index.md)  
+More info  
 
 
 로그인하기 위해 필요한 메소드
@@ -27,11 +29,9 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| user| <br><br>[be.zvz.kotlininside.session.user.Anonymous](../../be.zvz.kotlininside.session.user/-anonymous/index.md)와 [be.zvz.kotlininside.session.user.LoginUser](../../be.zvz.kotlininside.session.user/-login-user/index.md) 클래스를 매개변수로 받음<br><br>
+| <a name="be.zvz.kotlininside.security/Auth/login/#be.zvz.kotlininside.session.user.User/PointingToDeclaration/"></a>user| <a name="be.zvz.kotlininside.security/Auth/login/#be.zvz.kotlininside.session.user.User/PointingToDeclaration/"></a><br><br>[be.zvz.kotlininside.session.user.Anonymous](../../be.zvz.kotlininside.session.user/-anonymous/index.md)와 [be.zvz.kotlininside.session.user.LoginUser](../../be.zvz.kotlininside.session.user/-login-user/index.md) 클래스를 매개변수로 받음<br><br>
   
   
-Content  
-fun [login](login.md)(user: [User](../../be.zvz.kotlininside.session.user/-user/index.md)): [Session](../../be.zvz.kotlininside.session/-session/index.md)  
 
 
 

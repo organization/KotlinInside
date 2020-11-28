@@ -7,7 +7,9 @@ title: contentType -
 
 # contentType  
 [jvm]  
-Brief description  
+Content  
+open fun [contentType](content-type.md)(contentType: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
+More info  
 
 
 Set the 'Content-Type' request header to the given value
@@ -17,7 +19,7 @@ Set the 'Content-Type' request header to the given value
 #### Return  
 
 
-this request
+request
 
 
 
@@ -27,15 +29,15 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| contentType| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/contentType/#java.lang.String/PointingToDeclaration/"></a>contentType| <a name="be.zvz.kotlininside.http/HttpRequest/contentType/#java.lang.String/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [contentType](content-type.md)(contentType: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
 
 
 [jvm]  
-Brief description  
+Content  
+open fun [contentType](content-type.md)(contentType: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), charset: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
+More info  
 
 
 Set the 'Content-Type' request header to the given value and charset
@@ -45,7 +47,7 @@ Set the 'Content-Type' request header to the given value and charset
 #### Return  
 
 
-this request
+request
 
 
 
@@ -55,16 +57,16 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| charset| <br><br><br><br>
-| contentType| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/contentType/#java.lang.String#java.lang.String/PointingToDeclaration/"></a>charset| <a name="be.zvz.kotlininside.http/HttpRequest/contentType/#java.lang.String#java.lang.String/PointingToDeclaration/"></a>
+| <a name="be.zvz.kotlininside.http/HttpRequest/contentType/#java.lang.String#java.lang.String/PointingToDeclaration/"></a>contentType| <a name="be.zvz.kotlininside.http/HttpRequest/contentType/#java.lang.String#java.lang.String/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [contentType](content-type.md)(contentType: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), charset: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
 
 
 [jvm]  
-Brief description  
+Content  
+open fun [contentType](content-type.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+More info  
 
 
 Get the 'Content-Type' header from the response
@@ -74,11 +76,9 @@ Get the 'Content-Type' header from the response
 #### Return  
 
 
-response header value
+header value
 
   
-Content  
-open fun [contentType](content-type.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 

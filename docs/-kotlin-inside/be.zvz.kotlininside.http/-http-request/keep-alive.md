@@ -7,9 +7,9 @@ title: keepAlive -
 
 # keepAlive  
 [jvm]  
-Brief description  
-
-
+Content  
+open fun [keepAlive](keep-alive.md)(keepAlive: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))  
+More info  
 
 
 Set the 'http.keepAlive' property to the given value. 
@@ -20,19 +20,15 @@ Set the 'http.keepAlive' property to the given value.
 
 
 
-
-
 ## Parameters  
   
 jvm  
   
 |  Name|  Summary| 
 |---|---|
-| keepAlive| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/keepAlive/#boolean/PointingToDeclaration/"></a>keepAlive| <a name="be.zvz.kotlininside.http/HttpRequest/keepAlive/#boolean/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [keepAlive](keep-alive.md)(keepAlive: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))  
 
 
 

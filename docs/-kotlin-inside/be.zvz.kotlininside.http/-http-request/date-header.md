@@ -7,7 +7,9 @@ title: dateHeader -
 
 # dateHeader  
 [jvm]  
-Brief description  
+Content  
+open fun [dateHeader](date-header.md)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)  
+More info  
 
 
 Get a date header from the response falling back to returning -1 if the header is missing or parsing fails
@@ -17,7 +19,7 @@ Get a date header from the response falling back to returning -1 if the header i
 #### Return  
 
 
-date, -1 on failures
+-1 on failures
 
 
 
@@ -27,15 +29,15 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| name| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/dateHeader/#java.lang.String/PointingToDeclaration/"></a>name| <a name="be.zvz.kotlininside.http/HttpRequest/dateHeader/#java.lang.String/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [dateHeader](date-header.md)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)  
 
 
 [jvm]  
-Brief description  
+Content  
+open fun [dateHeader](date-header.md)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), defaultValue: [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)): [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)  
+More info  
 
 
 Get a date header from the response falling back to returning the given default value if the header is missing or parsing fails
@@ -45,7 +47,7 @@ Get a date header from the response falling back to returning the given default 
 #### Return  
 
 
-date, default value on failures
+default value on failures
 
 
 
@@ -55,12 +57,10 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| defaultValue| <br><br><br><br>
-| name| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/dateHeader/#java.lang.String#long/PointingToDeclaration/"></a>defaultValue| <a name="be.zvz.kotlininside.http/HttpRequest/dateHeader/#java.lang.String#long/PointingToDeclaration/"></a>
+| <a name="be.zvz.kotlininside.http/HttpRequest/dateHeader/#java.lang.String#long/PointingToDeclaration/"></a>name| <a name="be.zvz.kotlininside.http/HttpRequest/dateHeader/#java.lang.String#long/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [dateHeader](date-header.md)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), defaultValue: [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)): [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)  
 
 
 

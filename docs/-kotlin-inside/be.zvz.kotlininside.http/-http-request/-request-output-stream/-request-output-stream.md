@@ -7,7 +7,9 @@ title: RequestOutputStream -
 
 # RequestOutputStream  
 [jvm]  
-Brief description  
+Content  
+open fun [RequestOutputStream](-request-output-stream.md)(stream: [OutputStream](https://docs.oracle.com/javase/7/docs/api/java/io/OutputStream.html), charset: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), bufferSize: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))  
+More info  
 
 
 Create request output stream
@@ -20,13 +22,11 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| bufferSize| <br><br><br><br>
-| charset| <br><br><br><br>
-| stream| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest.RequestOutputStream/RequestOutputStream/#java.io.OutputStream#java.lang.String#int/PointingToDeclaration/"></a>bufferSize| <a name="be.zvz.kotlininside.http/HttpRequest.RequestOutputStream/RequestOutputStream/#java.io.OutputStream#java.lang.String#int/PointingToDeclaration/"></a>
+| <a name="be.zvz.kotlininside.http/HttpRequest.RequestOutputStream/RequestOutputStream/#java.io.OutputStream#java.lang.String#int/PointingToDeclaration/"></a>charset| <a name="be.zvz.kotlininside.http/HttpRequest.RequestOutputStream/RequestOutputStream/#java.io.OutputStream#java.lang.String#int/PointingToDeclaration/"></a>
+| <a name="be.zvz.kotlininside.http/HttpRequest.RequestOutputStream/RequestOutputStream/#java.io.OutputStream#java.lang.String#int/PointingToDeclaration/"></a>stream| <a name="be.zvz.kotlininside.http/HttpRequest.RequestOutputStream/RequestOutputStream/#java.io.OutputStream#java.lang.String#int/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [RequestOutputStream](-request-output-stream.md)(stream: [OutputStream](https://docs.oracle.com/javase/7/docs/api/java/io/OutputStream.html), charset: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), bufferSize: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))  
 
 
 

@@ -7,7 +7,9 @@ title: ifModifiedSince -
 
 # ifModifiedSince  
 [jvm]  
-Brief description  
+Content  
+open fun [ifModifiedSince](if-modified-since.md)(ifModifiedSince: [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)): [HttpRequest](index.md)  
+More info  
 
 
 Set the 'If-Modified-Since' request header to the given value
@@ -17,7 +19,7 @@ Set the 'If-Modified-Since' request header to the given value
 #### Return  
 
 
-this request
+request
 
 
 
@@ -27,11 +29,9 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| ifModifiedSince| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/ifModifiedSince/#long/PointingToDeclaration/"></a>ifModifiedSince| <a name="be.zvz.kotlininside.http/HttpRequest/ifModifiedSince/#long/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [ifModifiedSince](if-modified-since.md)(ifModifiedSince: [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)): [HttpRequest](index.md)  
 
 
 

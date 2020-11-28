@@ -7,7 +7,9 @@ title: expires -
 
 # expires  
 [jvm]  
-Brief description  
+Content  
+open fun [expires](expires.md)(): [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)  
+More info  
 
 
 Get the 'Expires' header from the response
@@ -17,11 +19,9 @@ Get the 'Expires' header from the response
 #### Return  
 
 
-expires value, -1 on failures
+value, -1 on failures
 
   
-Content  
-open fun [expires](expires.md)(): [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)  
 
 
 

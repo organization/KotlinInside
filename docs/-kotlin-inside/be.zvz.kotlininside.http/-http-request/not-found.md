@@ -7,7 +7,9 @@ title: notFound -
 
 # notFound  
 [jvm]  
-Brief description  
+Content  
+open fun [notFound](not-found.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
+More info  
 
 
 Is the response code a 404 Not Found?
@@ -17,11 +19,9 @@ Is the response code a 404 Not Found?
 #### Return  
 
 
-true if 404, false otherwise
+if 404, false otherwise
 
   
-Content  
-open fun [notFound](not-found.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
 
 
 

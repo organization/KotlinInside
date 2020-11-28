@@ -12,5 +12,5 @@ title: be.zvz.kotlininside.utils -
   
 |  Name|  Summary| 
 |---|---|
-| [StringUtil](-string-util/index.md)| [jvm]  <br>Content  <br>class [StringUtil](-string-util/index.md)  <br><br><br>
+| <a name="be.zvz.kotlininside.utils/StringUtil///PointingToDeclaration/"></a>[StringUtil](-string-util/index.md)| <a name="be.zvz.kotlininside.utils/StringUtil///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [StringUtil](-string-util/index.md)  <br><br><br>
 

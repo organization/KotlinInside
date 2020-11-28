@@ -7,14 +7,14 @@ title: setConnectionFactory -
 
 # setConnectionFactory  
 [jvm]  
-Brief description  
+Content  
+open fun [setConnectionFactory](set-connection-factory.md)(connectionFactory: [HttpRequest.ConnectionFactory](-connection-factory/index.md))  
+More info  
 
 
 Specify the [ConnectionFactory](-connection-factory/index.md) used to create new requests.
 
   
-Content  
-open fun [setConnectionFactory](set-connection-factory.md)(connectionFactory: [HttpRequest.ConnectionFactory](-connection-factory/index.md))  
 
 
 

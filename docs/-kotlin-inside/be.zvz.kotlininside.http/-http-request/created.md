@@ -7,7 +7,9 @@ title: created -
 
 # created  
 [jvm]  
-Brief description  
+Content  
+open fun [created](created.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
+More info  
 
 
 Is the response code a 201 Created?
@@ -17,11 +19,9 @@ Is the response code a 201 Created?
 #### Return  
 
 
-true if 201, false otherwise
+if 201, false otherwise
 
   
-Content  
-open fun [created](created.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
 
 
 

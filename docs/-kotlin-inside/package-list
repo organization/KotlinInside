@@ -3,6 +3,11 @@ $dokka.linkExtension:md
 
 be.zvz.kotlininside
 be.zvz.kotlininside.api.article
+be.zvz.kotlininside.api.async.article
+be.zvz.kotlininside.api.async.comment
+be.zvz.kotlininside.api.async.dccon
+be.zvz.kotlininside.api.async.generic
+be.zvz.kotlininside.api.async.management
 be.zvz.kotlininside.api.comment
 be.zvz.kotlininside.api.dccon
 be.zvz.kotlininside.api.generic

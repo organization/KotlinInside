@@ -7,7 +7,9 @@ title: contentEncoding -
 
 # contentEncoding  
 [jvm]  
-Brief description  
+Content  
+open fun [contentEncoding](content-encoding.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+More info  
 
 
 Get the 'Content-Encoding' header from the response
@@ -17,11 +19,9 @@ Get the 'Content-Encoding' header from the response
 #### Return  
 
 
-this request
+request
 
   
-Content  
-open fun [contentEncoding](content-encoding.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 

@@ -7,14 +7,14 @@ title: request -
 
 # request  
 [jvm]  
-Brief description  
+Content  
+fun [request](request.md)(): [Recommend.RecommendResult](-recommend-result/index.md)  
+More info  
 
 
 개념글을 내리거나, 올립니다.
 
   
-Content  
-fun [request](request.md)(): [Recommend.RecommendResult](-recommend-result/index.md)  
 
 
 

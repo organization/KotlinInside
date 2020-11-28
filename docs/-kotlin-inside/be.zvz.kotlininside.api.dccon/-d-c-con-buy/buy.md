@@ -7,7 +7,9 @@ title: buy -
 
 # buy  
 [jvm]  
-Brief description  
+Content  
+fun [buy](buy.md)(): [DCConBuy.BuyResult](-buy-result/index.md)  
+More info  
 
 
 디시콘을 구매합니다.
@@ -20,8 +22,6 @@ Brief description
 [BuyResult](-buy-result/index.md) 구매 결과를 반환합니다.
 
   
-Content  
-fun [buy](buy.md)(): [DCConBuy.BuyResult](-buy-result/index.md)  
 
 
 

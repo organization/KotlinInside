@@ -7,7 +7,9 @@ title: getAppId -
 
 # getAppId  
 [jvm]  
-Brief description  
+Content  
+fun [getAppId](get-app-id.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
+More info  
 
 
 캐시된 app_id를 얻어오는 메소드입니다.
@@ -20,8 +22,6 @@ Brief description
 [java.lang.String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) app_id를 반환합니다.
 
   
-Content  
-fun [getAppId](get-app-id.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
 
 
 

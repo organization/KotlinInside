@@ -7,7 +7,9 @@ title: bytes -
 
 # bytes  
 [jvm]  
-Brief description  
+Content  
+open fun [bytes](bytes.md)(): [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)>  
+More info  
 
 
 Get response as byte array
@@ -17,11 +19,9 @@ Get response as byte array
 #### Return  
 
 
-byte array
+array
 
   
-Content  
-open fun [bytes](bytes.md)(): [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)>  
 
 
 

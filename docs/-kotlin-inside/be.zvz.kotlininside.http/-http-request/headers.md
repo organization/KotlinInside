@@ -7,7 +7,9 @@ title: headers -
 
 # headers  
 [jvm]  
-Brief description  
+Content  
+open fun [headers](headers.md)(headers: [Map](https://docs.oracle.com/javase/7/docs/api/java/util/Map.html)<[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)>): [HttpRequest](index.md)  
+More info  
 
 
 Set all headers found in given map where the keys are the header names and the values are the header values
@@ -17,7 +19,7 @@ Set all headers found in given map where the keys are the header names and the v
 #### Return  
 
 
-this request
+request
 
 
 
@@ -27,15 +29,15 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| headers| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/headers/#java.util.Map<java.lang.String,java.lang.String>/PointingToDeclaration/"></a>headers| <a name="be.zvz.kotlininside.http/HttpRequest/headers/#java.util.Map<java.lang.String,java.lang.String>/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [headers](headers.md)(headers: [Map](https://docs.oracle.com/javase/7/docs/api/java/util/Map.html)<[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)>): [HttpRequest](index.md)  
 
 
 [jvm]  
-Brief description  
+Content  
+open fun [headers](headers.md)(): [Map](https://docs.oracle.com/javase/7/docs/api/java/util/Map.html)<[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), [List](https://docs.oracle.com/javase/7/docs/api/java/util/List.html)<[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)>>  
+More info  
 
 
 Get all the response headers
@@ -45,15 +47,15 @@ Get all the response headers
 #### Return  
 
 
-map of response header names to their value(s)
+of response header names to their value(s)
 
   
-Content  
-open fun [headers](headers.md)(): [Map](https://docs.oracle.com/javase/7/docs/api/java/util/Map.html)<[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), [List](https://docs.oracle.com/javase/7/docs/api/java/util/List.html)<[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)>>  
 
 
 [jvm]  
-Brief description  
+Content  
+open fun [headers](headers.md)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)>  
+More info  
 
 
 Get all values of the given header from the response
@@ -63,7 +65,7 @@ Get all values of the given header from the response
 #### Return  
 
 
-non -null but possibly empty array of [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) header values
+-null but possibly empty array of header values
 
 
 
@@ -73,11 +75,9 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| name| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/headers/#java.lang.String/PointingToDeclaration/"></a>name| <a name="be.zvz.kotlininside.http/HttpRequest/headers/#java.lang.String/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [headers](headers.md)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)>  
 
 
 

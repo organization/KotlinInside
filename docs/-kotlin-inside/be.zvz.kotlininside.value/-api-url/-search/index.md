@@ -13,5 +13,5 @@ title: Search -
   
 |  Name|  Summary| 
 |---|---|
-| [SEARCH](index.md#be.zvz.kotlininside.value/ApiUrl.Search/SEARCH/#/PointingToDeclaration/)|  [jvm] val [SEARCH](index.md#be.zvz.kotlininside.value/ApiUrl.Search/SEARCH/#/PointingToDeclaration/): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
+| <a name="be.zvz.kotlininside.value/ApiUrl.Search/SEARCH/#/PointingToDeclaration/"></a>[SEARCH](-s-e-a-r-c-h.md)| <a name="be.zvz.kotlininside.value/ApiUrl.Search/SEARCH/#/PointingToDeclaration/"></a> [jvm] val [SEARCH](-s-e-a-r-c-h.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
 

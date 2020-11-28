@@ -12,6 +12,6 @@ title: be.zvz.kotlininside.security -
   
 |  Name|  Summary| 
 |---|---|
-| [App](-app/index.md)| [jvm]  <br>Content  <br>data class [App](-app/index.md)(**token**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **id**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  <br><br><br>
-| [Auth](-auth/index.md)| [jvm]  <br>Content  <br>class [Auth](-auth/index.md)  <br><br><br>
+| <a name="be.zvz.kotlininside.security/App///PointingToDeclaration/"></a>[App](-app/index.md)| <a name="be.zvz.kotlininside.security/App///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>data class [App](-app/index.md)(**token**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **id**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  <br><br><br>
+| <a name="be.zvz.kotlininside.security/Auth///PointingToDeclaration/"></a>[Auth](-auth/index.md)| <a name="be.zvz.kotlininside.security/Auth///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [Auth](-auth/index.md)  <br><br><br>
 

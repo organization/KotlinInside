@@ -7,14 +7,14 @@ title: addQueryParameter -
 
 # addQueryParameter  
 [jvm]  
-Brief description  
+Content  
+@NotNull()  
+  
+open fun [addQueryParameter](add-query-parameter.md)(key: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), value: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpInterface.Option](index.md)  
+More info  
 
 
 #### Return  
-
-
-this
-
 
 
 ## Parameters  
@@ -23,14 +23,10 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| key| <br><br>매개변수 Key<br><br>
-| value| <br><br>매개변수 Value<br><br>
+| <a name="be.zvz.kotlininside.http/HttpInterface.Option/addQueryParameter/#java.lang.String#java.lang.String/PointingToDeclaration/"></a>key| <a name="be.zvz.kotlininside.http/HttpInterface.Option/addQueryParameter/#java.lang.String#java.lang.String/PointingToDeclaration/"></a><br><br>매개변수 Key<br><br>
+| <a name="be.zvz.kotlininside.http/HttpInterface.Option/addQueryParameter/#java.lang.String#java.lang.String/PointingToDeclaration/"></a>value| <a name="be.zvz.kotlininside.http/HttpInterface.Option/addQueryParameter/#java.lang.String#java.lang.String/PointingToDeclaration/"></a><br><br>매개변수 Value<br><br>
   
   
-Content  
-@NotNull()  
-  
-open fun [addQueryParameter](add-query-parameter.md)(key: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), value: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpInterface.Option](index.md)  
 
 
 

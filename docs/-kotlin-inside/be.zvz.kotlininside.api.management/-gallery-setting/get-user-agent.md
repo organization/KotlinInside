@@ -7,7 +7,9 @@ title: getUserAgent -
 
 # getUserAgent  
 [jvm]  
-Brief description  
+Content  
+fun [getUserAgent](get-user-agent.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
+More info  
 
 
 User-Agent를 반환합니다.
@@ -20,8 +22,6 @@ User-Agent를 반환합니다.
 갤러리 관리에 접근할 때 필요한 User-Agent를 반환합니다.
 
   
-Content  
-fun [getUserAgent](get-user-agent.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
 
 
 

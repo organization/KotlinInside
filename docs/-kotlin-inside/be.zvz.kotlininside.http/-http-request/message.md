@@ -7,7 +7,9 @@ title: message -
 
 # message  
 [jvm]  
-Brief description  
+Content  
+open fun [message](message.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+More info  
 
 
 Get status message of the response
@@ -15,13 +17,7 @@ Get status message of the response
 
 
 #### Return  
-
-
-message
-
   
-Content  
-open fun [message](message.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 

@@ -7,9 +7,9 @@ title: append -
 
 # append  
 [jvm]  
-Brief description  
-
-
+Content  
+open fun [append](append.md)(url: [CharSequence](https://docs.oracle.com/javase/7/docs/api/java/lang/CharSequence.html), params: [Map](https://docs.oracle.com/javase/7/docs/api/java/util/Map.html)<out [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), out [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)>): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+More info  
 
 
 Append given map as query parameters to the base URL 
@@ -20,12 +20,10 @@ Append given map as query parameters to the base URL
 
 
 
-
-
 #### Return  
 
 
-URL with appended query params
+with appended query params
 
 
 
@@ -35,18 +33,16 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| params| <br><br><br><br>
-| url| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/append/#java.lang.CharSequence#java.util.Map<?,?>/PointingToDeclaration/"></a>params| <a name="be.zvz.kotlininside.http/HttpRequest/append/#java.lang.CharSequence#java.util.Map<?,?>/PointingToDeclaration/"></a>
+| <a name="be.zvz.kotlininside.http/HttpRequest/append/#java.lang.CharSequence#java.util.Map<?,?>/PointingToDeclaration/"></a>url| <a name="be.zvz.kotlininside.http/HttpRequest/append/#java.lang.CharSequence#java.util.Map<?,?>/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [append](append.md)(url: [CharSequence](https://docs.oracle.com/javase/7/docs/api/java/lang/CharSequence.html), params: [Map](https://docs.oracle.com/javase/7/docs/api/java/util/Map.html)<Out [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), Out [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)>): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 [jvm]  
-Brief description  
-
-
+Content  
+open fun [append](append.md)(url: [CharSequence](https://docs.oracle.com/javase/7/docs/api/java/lang/CharSequence.html), params: [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)>): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+More info  
 
 
 Append given name/value pairs as query parameters to the base URL 
@@ -57,12 +53,10 @@ Append given name/value pairs as query parameters to the base URL
 
 
 
-
-
 #### Return  
 
 
-URL with appended query params
+with appended query params
 
 
 
@@ -72,12 +66,10 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| params| <br><br>name/value pairs<br><br>
-| url| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/append/#java.lang.CharSequence#java.lang.Object.../PointingToDeclaration/"></a>params| <a name="be.zvz.kotlininside.http/HttpRequest/append/#java.lang.CharSequence#java.lang.Object.../PointingToDeclaration/"></a><br><br>name/value pairs<br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/append/#java.lang.CharSequence#java.lang.Object.../PointingToDeclaration/"></a>url| <a name="be.zvz.kotlininside.http/HttpRequest/append/#java.lang.CharSequence#java.lang.Object.../PointingToDeclaration/"></a>
   
   
-Content  
-open fun [append](append.md)(url: [CharSequence](https://docs.oracle.com/javase/7/docs/api/java/lang/CharSequence.html), params: [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)>): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 

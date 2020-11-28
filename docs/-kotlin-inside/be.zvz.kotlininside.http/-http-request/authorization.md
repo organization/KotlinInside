@@ -7,7 +7,9 @@ title: authorization -
 
 # authorization  
 [jvm]  
-Brief description  
+Content  
+open fun [authorization](authorization.md)(authorization: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
+More info  
 
 
 Set the 'Authorization' header to given value
@@ -17,7 +19,7 @@ Set the 'Authorization' header to given value
 #### Return  
 
 
-this request
+request
 
 
 
@@ -27,11 +29,9 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| authorization| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/authorization/#java.lang.String/PointingToDeclaration/"></a>authorization| <a name="be.zvz.kotlininside.http/HttpRequest/authorization/#java.lang.String/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [authorization](authorization.md)(authorization: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
 
 
 

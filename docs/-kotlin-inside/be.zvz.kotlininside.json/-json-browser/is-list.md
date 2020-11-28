@@ -7,17 +7,17 @@ title: isList -
 
 # isList  
 [jvm]  
-Brief description  
+Content  
+open fun [isList](is-list.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
+More info  
 
 
 #### Return  
 
 
-True if the value represents a list.
+if the value represents a list.
 
   
-Content  
-open fun [isList](is-list.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
 
 
 

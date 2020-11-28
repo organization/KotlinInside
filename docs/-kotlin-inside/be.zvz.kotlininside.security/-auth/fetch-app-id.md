@@ -7,7 +7,9 @@ title: fetchAppId -
 
 # fetchAppId  
 [jvm]  
-Brief description  
+Content  
+fun [fetchAppId](fetch-app-id.md)(hashedAppKey: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
+More info  
 
 
 app_id를 서버로부터 얻어오는 메소드입니다.
@@ -27,11 +29,9 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| hashedAppKey| <br><br>SHA256 단방향 암호화된 value_token 값입니다.<br><br>
+| <a name="be.zvz.kotlininside.security/Auth/fetchAppId/#kotlin.String/PointingToDeclaration/"></a>hashedAppKey| <a name="be.zvz.kotlininside.security/Auth/fetchAppId/#kotlin.String/PointingToDeclaration/"></a><br><br>SHA256 단방향 암호화된 value_token 값입니다.<br><br>
   
   
-Content  
-fun [fetchAppId](fetch-app-id.md)(hashedAppKey: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
 
 
 

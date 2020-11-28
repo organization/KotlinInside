@@ -7,7 +7,9 @@ title: send -
 
 # send  
 [jvm]  
-Brief description  
+Content  
+open fun [send](send.md)(input: [File](https://docs.oracle.com/javase/7/docs/api/java/io/File.html)): [HttpRequest](index.md)  
+More info  
 
 
 Write contents of file to request body
@@ -17,7 +19,7 @@ Write contents of file to request body
 #### Return  
 
 
-this request
+request
 
 
 
@@ -27,15 +29,15 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| input| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/send/#java.io.File/PointingToDeclaration/"></a>input| <a name="be.zvz.kotlininside.http/HttpRequest/send/#java.io.File/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [send](send.md)(input: [File](https://docs.oracle.com/javase/7/docs/api/java/io/File.html)): [HttpRequest](index.md)  
 
 
 [jvm]  
-Brief description  
+Content  
+open fun [send](send.md)(input: [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)>): [HttpRequest](index.md)  
+More info  
 
 
 Write byte array to request body
@@ -45,7 +47,7 @@ Write byte array to request body
 #### Return  
 
 
-this request
+request
 
 
 
@@ -55,17 +57,15 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| input| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/send/#byte[]/PointingToDeclaration/"></a>input| <a name="be.zvz.kotlininside.http/HttpRequest/send/#byte[]/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [send](send.md)(input: [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)>): [HttpRequest](index.md)  
 
 
 [jvm]  
-Brief description  
-
-
+Content  
+open fun [send](send.md)(input: [InputStream](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)): [HttpRequest](index.md)  
+More info  
 
 
 Write stream to request body 
@@ -76,12 +76,10 @@ Write stream to request body
 
 
 
-
-
 #### Return  
 
 
-this request
+request
 
 
 
@@ -91,17 +89,15 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| input| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/send/#java.io.InputStream/PointingToDeclaration/"></a>input| <a name="be.zvz.kotlininside.http/HttpRequest/send/#java.io.InputStream/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [send](send.md)(input: [InputStream](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)): [HttpRequest](index.md)  
 
 
 [jvm]  
-Brief description  
-
-
+Content  
+open fun [send](send.md)(input: [Reader](https://docs.oracle.com/javase/7/docs/api/java/io/Reader.html)): [HttpRequest](index.md)  
+More info  
 
 
 Write reader to request body 
@@ -112,12 +108,10 @@ Write reader to request body
 
 
 
-
-
 #### Return  
 
 
-this request
+request
 
 
 
@@ -127,17 +121,15 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| input| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/send/#java.io.Reader/PointingToDeclaration/"></a>input| <a name="be.zvz.kotlininside.http/HttpRequest/send/#java.io.Reader/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [send](send.md)(input: [Reader](https://docs.oracle.com/javase/7/docs/api/java/io/Reader.html)): [HttpRequest](index.md)  
 
 
 [jvm]  
-Brief description  
-
-
+Content  
+open fun [send](send.md)(value: [CharSequence](https://docs.oracle.com/javase/7/docs/api/java/lang/CharSequence.html)): [HttpRequest](index.md)  
+More info  
 
 
 Write char sequence to request body 
@@ -148,12 +140,10 @@ Write char sequence to request body
 
 
 
-
-
 #### Return  
 
 
-this request
+request
 
 
 
@@ -163,11 +153,9 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| value| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/send/#java.lang.CharSequence/PointingToDeclaration/"></a>value| <a name="be.zvz.kotlininside.http/HttpRequest/send/#java.lang.CharSequence/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [send](send.md)(value: [CharSequence](https://docs.oracle.com/javase/7/docs/api/java/lang/CharSequence.html)): [HttpRequest](index.md)  
 
 
 

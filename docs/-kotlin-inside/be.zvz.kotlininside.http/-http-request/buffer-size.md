@@ -7,9 +7,9 @@ title: bufferSize -
 
 # bufferSize  
 [jvm]  
-Brief description  
-
-
+Content  
+open fun [bufferSize](buffer-size.md)(size: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [HttpRequest](index.md)  
+More info  
 
 
 Set the size used when buffering and copying between streams 
@@ -24,12 +24,10 @@ Set the size used when buffering and copying between streams
 
 
 
-
-
 #### Return  
 
 
-this request
+request
 
 
 
@@ -39,17 +37,15 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| size| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/bufferSize/#int/PointingToDeclaration/"></a>size| <a name="be.zvz.kotlininside.http/HttpRequest/bufferSize/#int/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [bufferSize](buffer-size.md)(size: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [HttpRequest](index.md)  
 
 
 [jvm]  
-Brief description  
-
-
+Content  
+open fun [bufferSize](buffer-size.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
+More info  
 
 
 Get the configured buffer size 
@@ -60,16 +56,12 @@ Get the configured buffer size
 
 
 
-
-
 #### Return  
 
 
-buffer size
+size
 
   
-Content  
-open fun [bufferSize](buffer-size.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
 
 
 

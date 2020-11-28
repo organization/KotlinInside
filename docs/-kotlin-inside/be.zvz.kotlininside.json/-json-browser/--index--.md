@@ -7,7 +7,11 @@ title: index -
 
 # index  
 [jvm]  
-Brief description  
+Content  
+@NotNull()  
+  
+open fun [index](--index--.md)(index: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [JsonBrowser](index.md)  
+More info  
 
 
 Get an element at an index for a list value
@@ -17,7 +21,7 @@ Get an element at an index for a list value
 #### Return  
 
 
-JsonBrowser instance which wraps the value at the specified index
+instance which wraps the value at the specified index
 
 
 
@@ -27,13 +31,9 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| index| <br><br>ArticleList index<br><br>
+| <a name="be.zvz.kotlininside.json/JsonBrowser/index/#int/PointingToDeclaration/"></a>index| <a name="be.zvz.kotlininside.json/JsonBrowser/index/#int/PointingToDeclaration/"></a><br><br>ArticleList index<br><br>
   
   
-Content  
-@NotNull()  
-  
-open fun [index](--index--.md)(index: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [JsonBrowser](index.md)  
 
 
 

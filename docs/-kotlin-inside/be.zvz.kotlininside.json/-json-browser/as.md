@@ -7,7 +7,11 @@ title: as -
 
 # as  
 [jvm]  
-Brief description  
+Content  
+@NotNull()  
+  
+open fun <[T](as.md)> [as](as.md)(klass: [Class](https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html)<[T](as.md)>): [T](as.md)  
+More info  
 
 
 Attempt to retrieve the value in the specified format
@@ -17,7 +21,7 @@ Attempt to retrieve the value in the specified format
 #### Return  
 
 
-The value as an instance of the specified class
+value as an instance of the specified class
 
 
 
@@ -27,13 +31,9 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| klass| <br><br>The class to retrieve the value as<br><br>
+| <a name="be.zvz.kotlininside.json/JsonBrowser/as/#java.lang.Class<T>/PointingToDeclaration/"></a>klass| <a name="be.zvz.kotlininside.json/JsonBrowser/as/#java.lang.Class<T>/PointingToDeclaration/"></a><br><br>The class to retrieve the value as<br><br>
   
   
-Content  
-@NotNull()  
-  
-open fun <[T](as.md)> [as](as.md)(klass: [Class](https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html)<[T](as.md)>): [T](as.md)  
 
 
 

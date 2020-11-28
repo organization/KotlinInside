@@ -7,7 +7,9 @@ title: eTag -
 
 # eTag  
 [jvm]  
-Brief description  
+Content  
+open fun [eTag](e-tag.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+More info  
 
 
 Get the 'ETag' header from the response
@@ -17,11 +19,9 @@ Get the 'ETag' header from the response
 #### Return  
 
 
-entity tag
+tag
 
   
-Content  
-open fun [eTag](e-tag.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 

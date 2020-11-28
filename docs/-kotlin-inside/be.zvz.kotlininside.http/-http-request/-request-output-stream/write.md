@@ -7,7 +7,9 @@ title: write -
 
 # write  
 [jvm]  
-Brief description  
+Content  
+open fun [write](write.md)(value: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest.RequestOutputStream](index.md)  
+More info  
 
 
 Write string to stream
@@ -17,7 +19,7 @@ Write string to stream
 #### Return  
 
 
-this stream
+stream
 
 
 
@@ -27,11 +29,9 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| value| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest.RequestOutputStream/write/#java.lang.String/PointingToDeclaration/"></a>value| <a name="be.zvz.kotlininside.http/HttpRequest.RequestOutputStream/write/#java.lang.String/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [write](write.md)(value: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest.RequestOutputStream](index.md)  
 
 
 

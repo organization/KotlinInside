@@ -7,7 +7,9 @@ title: ok -
 
 # ok  
 [jvm]  
-Brief description  
+Content  
+open fun [ok](ok.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
+More info  
 
 
 Is the response code a 200 OK?
@@ -17,11 +19,9 @@ Is the response code a 200 OK?
 #### Return  
 
 
-true if 200, false otherwise
+if 200, false otherwise
 
   
-Content  
-open fun [ok](ok.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
 
 
 

@@ -7,14 +7,14 @@ title: request -
 
 # request  
 [jvm]  
-Brief description  
+Content  
+fun [request](request.md)(): [ChangeHeadText.ChangeResult](-change-result/index.md)  
+More info  
 
 
 말머리 변경 요청을 전송합니다.
 
   
-Content  
-fun [request](request.md)(): [ChangeHeadText.ChangeResult](-change-result/index.md)  
 
 
 

@@ -7,14 +7,14 @@ title: downvote -
 
 # downvote  
 [jvm]  
-Brief description  
+Content  
+fun [downvote](downvote.md)(): [ArticleVote.VoteResult](-vote-result/index.md)  
+More info  
 
 
 글을 비추천합니다.
 
   
-Content  
-fun [downvote](downvote.md)(): [ArticleVote.VoteResult](-vote-result/index.md)  
 
 
 

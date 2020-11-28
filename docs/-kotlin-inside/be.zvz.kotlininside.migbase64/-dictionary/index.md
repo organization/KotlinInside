@@ -13,5 +13,5 @@ title: Dictionary -
   
 |  Name|  Summary| 
 |---|---|
-| [CA](index.md#be.zvz.kotlininside.migbase64/Dictionary/CA/#/PointingToDeclaration/)|  [jvm] val [CA](index.md#be.zvz.kotlininside.migbase64/Dictionary/CA/#/PointingToDeclaration/): [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)>   <br>
+| <a name="be.zvz.kotlininside.migbase64/Dictionary/CA/#/PointingToDeclaration/"></a>[CA](-c-a.md)| <a name="be.zvz.kotlininside.migbase64/Dictionary/CA/#/PointingToDeclaration/"></a> [jvm] val [CA](-c-a.md): [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)>   <br>
 

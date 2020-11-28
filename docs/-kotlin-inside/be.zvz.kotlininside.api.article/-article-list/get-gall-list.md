@@ -7,7 +7,9 @@ title: getGallList -
 
 # getGallList  
 [jvm]  
-Brief description  
+Content  
+fun [getGallList](get-gall-list.md)(): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[ArticleList.GallList](-gall-list/index.md)>  
+More info  
 
 
 #### Return  
@@ -16,8 +18,6 @@ Brief description
 [be.zvz.kotlininside.api.article.ArticleList.GallList](-gall-list/index.md) 목록들을 반환합니다.
 
   
-Content  
-fun [getGallList](get-gall-list.md)(): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[ArticleList.GallList](-gall-list/index.md)>  
 
 
 

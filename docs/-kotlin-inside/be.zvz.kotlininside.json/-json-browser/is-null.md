@@ -7,17 +7,17 @@ title: isNull -
 
 # isNull  
 [jvm]  
-Brief description  
+Content  
+open fun [isNull](is-null.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
+More info  
 
 
 #### Return  
 
 
-The value of the element as text
+value of the element as text
 
   
-Content  
-open fun [isNull](is-null.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
 
 
 

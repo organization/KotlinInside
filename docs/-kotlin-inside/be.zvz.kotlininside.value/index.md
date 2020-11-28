@@ -12,6 +12,6 @@ title: be.zvz.kotlininside.value -
   
 |  Name|  Summary| 
 |---|---|
-| [ApiUrl](-api-url/index.md)| [jvm]  <br>Content  <br>class [ApiUrl](-api-url/index.md)  <br><br><br>
-| [Const](-const/index.md)| [jvm]  <br>Content  <br>class [Const](-const/index.md)  <br><br><br>
+| <a name="be.zvz.kotlininside.value/ApiUrl///PointingToDeclaration/"></a>[ApiUrl](-api-url/index.md)| <a name="be.zvz.kotlininside.value/ApiUrl///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [ApiUrl](-api-url/index.md)  <br><br><br>
+| <a name="be.zvz.kotlininside.value/Const///PointingToDeclaration/"></a>[Const](-const/index.md)| <a name="be.zvz.kotlininside.value/Const///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [Const](-const/index.md)  <br><br><br>
 

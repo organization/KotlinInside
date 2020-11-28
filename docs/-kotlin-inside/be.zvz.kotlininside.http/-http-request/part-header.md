@@ -7,7 +7,9 @@ title: partHeader -
 
 # partHeader  
 [jvm]  
-Brief description  
+Content  
+open fun [partHeader](part-header.md)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), value: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
+More info  
 
 
 Write a multipart header to the response body
@@ -17,7 +19,7 @@ Write a multipart header to the response body
 #### Return  
 
 
-this request
+request
 
 
 
@@ -27,12 +29,10 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| name| <br><br><br><br>
-| value| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/partHeader/#java.lang.String#java.lang.String/PointingToDeclaration/"></a>name| <a name="be.zvz.kotlininside.http/HttpRequest/partHeader/#java.lang.String#java.lang.String/PointingToDeclaration/"></a>
+| <a name="be.zvz.kotlininside.http/HttpRequest/partHeader/#java.lang.String#java.lang.String/PointingToDeclaration/"></a>value| <a name="be.zvz.kotlininside.http/HttpRequest/partHeader/#java.lang.String#java.lang.String/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [partHeader](part-header.md)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), value: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
 
 
 

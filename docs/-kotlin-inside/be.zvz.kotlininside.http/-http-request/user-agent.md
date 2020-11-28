@@ -7,7 +7,9 @@ title: userAgent -
 
 # userAgent  
 [jvm]  
-Brief description  
+Content  
+open fun [userAgent](user-agent.md)(userAgent: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
+More info  
 
 
 Set the 'User-Agent' header to given value
@@ -17,7 +19,7 @@ Set the 'User-Agent' header to given value
 #### Return  
 
 
-this request
+request
 
 
 
@@ -27,11 +29,9 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| userAgent| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/userAgent/#java.lang.String/PointingToDeclaration/"></a>userAgent| <a name="be.zvz.kotlininside.http/HttpRequest/userAgent/#java.lang.String/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [userAgent](user-agent.md)(userAgent: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
 
 
 

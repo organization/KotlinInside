@@ -7,9 +7,9 @@ title: reader -
 
 # reader  
 [jvm]  
-Brief description  
-
-
+Content  
+open fun [reader](reader.md)(charset: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [InputStreamReader](https://docs.oracle.com/javase/7/docs/api/java/io/InputStreamReader.html)  
+More info  
 
 
 Get reader to response body using given character set. 
@@ -20,13 +20,7 @@ Get reader to response body using given character set.
 
 
 
-
-
 #### Return  
-
-
-reader
-
 
 
 ## Parameters  
@@ -35,15 +29,15 @@ jvm
   
 |  Name|  Summary| 
 |---|---|
-| charset| <br><br><br><br>
+| <a name="be.zvz.kotlininside.http/HttpRequest/reader/#java.lang.String/PointingToDeclaration/"></a>charset| <a name="be.zvz.kotlininside.http/HttpRequest/reader/#java.lang.String/PointingToDeclaration/"></a>
   
   
-Content  
-open fun [reader](reader.md)(charset: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [InputStreamReader](https://docs.oracle.com/javase/7/docs/api/java/io/InputStreamReader.html)  
 
 
 [jvm]  
-Brief description  
+Content  
+open fun [reader](reader.md)(): [InputStreamReader](https://docs.oracle.com/javase/7/docs/api/java/io/InputStreamReader.html)  
+More info  
 
 
 Get reader to response body using the character set returned from [charset](charset.md)
@@ -51,13 +45,7 @@ Get reader to response body using the character set returned from [charset](char
 
 
 #### Return  
-
-
-reader
-
   
-Content  
-open fun [reader](reader.md)(): [InputStreamReader](https://docs.oracle.com/javase/7/docs/api/java/io/InputStreamReader.html)  
 
 
 
