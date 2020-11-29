@@ -30,6 +30,7 @@ class CommentRead(
             val content: Comment,
             val identifier: Int,
             val dateTime: String,
+            val isReply: Boolean,
             val isDeleteFlag: String?
     )
 
@@ -76,6 +77,7 @@ class CommentRead(
                                         },
                                         identifier = it.get("comment_no").asInteger(),
                                         dateTime = it.get("date_time").safeText(),
+                                        isReply = it.get("under_step").asBoolean(),
                                         isDeleteFlag = it.get("is_delete_flag").text()
                                 )
                         )

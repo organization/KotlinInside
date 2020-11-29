@@ -44,7 +44,8 @@ class ArticleRead @JvmOverloads constructor(
             val gallerCon: String?,
             val dateTime: String,
             val isMinor: Boolean,
-            val headText: List<HeadText>
+            val headText: List<HeadText>,
+            val commentDeleteScope: Boolean // TODO: commentDel_scope 용도 파악 (유동닉 글에서만 확인 가능)
     )
 
     data class ViewMain(
@@ -121,7 +122,8 @@ class ArticleRead @JvmOverloads constructor(
                                 )
                         )
                     }
-                }
+                },
+                commentDeleteScope = viewInfo.get("commentDel_scope").asBoolean()
         )
     }
 

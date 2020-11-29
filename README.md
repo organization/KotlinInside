@@ -7,7 +7,7 @@
 ### Gradle
 
 ```gradle
-compile 'be.zvz:KotlinInside:1.8.0'
+compile 'be.zvz:KotlinInside:1.8.1'
 ```
 
 ### Maven
@@ -16,7 +16,7 @@ compile 'be.zvz:KotlinInside:1.8.0'
 <dependency>
   <groupId>be.zvz</groupId>
   <artifactId>KotlinInside</artifactId>
-  <version>1.8.0</version>
+  <version>1.8.1</version>
   <type>pom</type>
 </dependency>
 ```

@@ -98,7 +98,7 @@ class KotlinInsideTest {
                                 name = "일반",
                                 level = 0,
                                 selected = false
-                        ) //옵션입니다. 없어도 글 작성됩니다.
+                        ) // 옵션입니다. 없어도 글 작성됩니다.
                 ),
                 session = KotlinInside.getInstance().session
         )
