@@ -7,13 +7,12 @@ public final class ApiUrl {
     public static final String AUTH_API = Protocol.HTTPS + "dcid.dcinside.com/join/";
     public static final String MAIN_API = Protocol.HTTP + "json2.dcinside.com/";
     public static final String UPLOAD = Protocol.HTTPS + "upload.dcinside.com/";
+    public static final String REDIRECT = APP_API + "redirect.php";
 
     private static final class Protocol {
         private static final String HTTP = "http://";
         private static final String HTTPS = "https://";
     }
-
-    public static final String REDIRECT = APP_API + "redirect.php";
 
     public static final class Article {
         public static final String LIST = APP_API + "gall_list_new.php";
@@ -56,6 +55,19 @@ public final class ApiUrl {
         public static final String LOGIN = AUTH_API + "mobile_app_login.php";
         public static final String APP_ID = AUTH_API + "mobile_app_key_verification_3rd.php";
         public static final String APP_CHECK = MAIN_API + "json0/app_check_A_rina_beta.php";
+    }
+
+    public static final class User {
+        public static final String MY_GALL = APP_API + "mygall.php";
+        public static final String MY_GALL_MODIFY = APP_API + "mygall_modify.php";
+        public static final String MY_MANAGE_GALL_CHECK = APP_API + "mymanageGallChk";
+        public static final String MY_MINI_JOIN_CHECK = APP_API + "myminijoinGallChk";
+    }
+
+    public static final class MiniGallery {
+        public static final String JOIN = APP_API + "memberjoin";
+        public static final String JOIN_OK = APP_API + "memberjoin_ok";
+        public static final String QUIT = APP_API + "memberout_ok";
     }
 
     public static final class MainInfo {

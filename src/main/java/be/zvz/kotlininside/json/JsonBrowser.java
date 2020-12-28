@@ -82,6 +82,11 @@ public class JsonBrowser {
         return new ObjectMapper(jsonFactory);
     }
 
+    @NotNull
+    private static JsonBrowser create(JsonNode node) {
+        return node != null ? new JsonBrowser(node) : NULL_BROWSER;
+    }
+
     /**
      * @return True if the value represents a list.
      */
@@ -94,11 +99,6 @@ public class JsonBrowser {
      */
     public boolean isMap() {
         return node instanceof ObjectNode;
-    }
-
-    @NotNull
-    private static JsonBrowser create(JsonNode node) {
-        return node != null ? new JsonBrowser(node) : NULL_BROWSER;
     }
 
     /**

@@ -6,13 +6,13 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 
 class AsyncMinorGalleryInfo(
-        gallId: String
+    gallId: String
 ) {
     private val minorGalleryInfo = MinorGalleryInfo(gallId)
 
     suspend fun getAsync() = coroutineScope {
         async(Dispatchers.IO) {
-            minorGalleryInfo.get()
+            minorGalleryInfo.request()
         }
     }
 }

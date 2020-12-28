@@ -8,8 +8,8 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 
 class AsyncDCConBuy(
-        dcCon: DCCon,
-        session: Session
+    dcCon: DCCon,
+    session: Session
 ) {
     private val dcConBuy = DCConBuy(dcCon, session)
 

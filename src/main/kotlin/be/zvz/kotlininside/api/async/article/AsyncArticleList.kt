@@ -7,62 +7,62 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 
 class AsyncArticleList @JvmOverloads constructor(
+    gallId: String,
+    searchKeyword: String,
+    searchType: ArticleList.SearchType = ArticleList.SearchType.ALL,
+    page: Int = 1,
+    recommend: Boolean = false,
+    notice: Boolean = false,
+    headId: Int = 0,
+    session: Session? = null
+) {
+    @JvmOverloads
+    constructor(
         gallId: String,
-        searchKeyword: String,
-        searchType: ArticleList.SearchType = ArticleList.SearchType.ALL,
         page: Int = 1,
         recommend: Boolean = false,
         notice: Boolean = false,
         headId: Int = 0,
         session: Session? = null
-) {
-    @JvmOverloads
-    constructor(
-            gallId: String,
-            page: Int = 1,
-            recommend: Boolean = false,
-            notice: Boolean = false,
-            headId: Int = 0,
-            session: Session? = null
     ) : this(
-            gallId = gallId,
-            searchKeyword = "",
-            searchType = ArticleList.SearchType.ALL,
-            page = page,
-            recommend = recommend,
-            notice = notice,
-            headId = headId,
-            session = session
+        gallId = gallId,
+        searchKeyword = "",
+        searchType = ArticleList.SearchType.ALL,
+        page = page,
+        recommend = recommend,
+        notice = notice,
+        headId = headId,
+        session = session
     )
 
     constructor(
-            gallId: String,
-            searchKeyword: String,
-            page: Int = 1,
-            recommend: Boolean = false,
-            notice: Boolean = false,
-            headId: Int = 0,
-            session: Session? = null
+        gallId: String,
+        searchKeyword: String,
+        page: Int = 1,
+        recommend: Boolean = false,
+        notice: Boolean = false,
+        headId: Int = 0,
+        session: Session? = null
     ) : this(
-            gallId = gallId,
-            searchKeyword = searchKeyword,
-            searchType = ArticleList.SearchType.ALL,
-            page = page,
-            recommend = recommend,
-            notice = notice,
-            headId = headId,
-            session = session
+        gallId = gallId,
+        searchKeyword = searchKeyword,
+        searchType = ArticleList.SearchType.ALL,
+        page = page,
+        recommend = recommend,
+        notice = notice,
+        headId = headId,
+        session = session
     )
 
     private val articleList = ArticleList(
-            gallId,
-            searchKeyword,
-            searchType,
-            page,
-            recommend,
-            notice,
-            headId,
-            session
+        gallId,
+        searchKeyword,
+        searchType,
+        page,
+        recommend,
+        notice,
+        headId,
+        session
     )
 
     suspend fun requestAsync() = coroutineScope {

@@ -7,10 +7,10 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 
 class AsyncChangeHeadText(
-        gallId: String,
-        articleId: Int,
-        headTextId: Int,
-        session: Session
+    gallId: String,
+    articleId: Int,
+    headTextId: Int,
+    session: Session
 ) {
     private val changeHeadText = ChangeHeadText(gallId, articleId, headTextId, session)
 

@@ -14,12 +14,12 @@ class MinorGalleryRanking {
     }
 
     data class RankingItem(
-            val gallLink: String,
-            val gallId: String,
-            val gallName: String,
-            val rankType: RankType,
-            val rank: Int,
-            val rankUpdown: Int
+        val gallLink: String,
+        val gallId: String,
+        val gallName: String,
+        val rankType: RankType,
+        val rank: Int,
+        val rankUpdown: Int
     )
 
     /**
@@ -28,26 +28,29 @@ class MinorGalleryRanking {
      * @exception [be.zvz.kotlininside.http.HttpException] 데이터를 불러오지 못할 경우, HttpException 발생
      */
     @Throws(HttpException::class)
-    fun get(): List<RankingItem> {
+    fun request(): List<RankingItem> {
         return mutableListOf<RankingItem>().apply {
-            val json = KotlinInside.getInstance().httpInterface.get(ApiUrl.MainInfo.MINOR_GALLERY_RANKING, Request.getDefaultOption())!!
+            val json = KotlinInside.getInstance().httpInterface.get(
+                ApiUrl.MainInfo.MINOR_GALLERY_RANKING,
+                Request.getDefaultOption()
+            )!!
             json.values().forEach {
                 add(
-                        RankingItem(
-                                gallLink = it.get("link").text()!!,
-                                gallId = it.get("id").text()!!,
-                                gallName = it.get("ko_name").text()!!,
-                                rankType = it.get("rank_type").text()!!.let { rankTypeString ->
-                                    return@let when (rankTypeString) {
-                                        "up" -> RankType.UP
-                                        "stop" -> RankType.STOP
-                                        "down" -> RankType.DOWN
-                                        else -> RankType.UNKNOWN
-                                    }
-                                },
-                                rank = it.get("rank").asInteger(),
-                                rankUpdown = it.get("rank_updown").asInteger()
-                        )
+                    RankingItem(
+                        gallLink = it.get("link").text()!!,
+                        gallId = it.get("id").text()!!,
+                        gallName = it.get("ko_name").text()!!,
+                        rankType = it.get("rank_type").text()!!.let { rankTypeString ->
+                            return@let when (rankTypeString) {
+                                "up" -> RankType.UP
+                                "stop" -> RankType.STOP
+                                "down" -> RankType.DOWN
+                                else -> RankType.UNKNOWN
+                            }
+                        },
+                        rank = it.get("rank").asInteger(),
+                        rankUpdown = it.get("rank_updown").asInteger()
+                    )
                 )
             }
         }

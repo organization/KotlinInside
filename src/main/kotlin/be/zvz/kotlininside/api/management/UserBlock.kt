@@ -11,10 +11,10 @@ import be.zvz.kotlininside.value.Const
 import java.io.IOException
 
 class UserBlock @JvmOverloads constructor(
-        private val gallId: String,
-        private val articleId: Int,
-        private val session: Session,
-        private val option: BlockOption = BlockOption()
+    private val gallId: String,
+    private val articleId: Int,
+    private val session: Session,
+    private val option: BlockOption = BlockOption()
 ) {
     enum class BlockCategory(val code: Int) {
         OBSCENE(1),
@@ -34,8 +34,8 @@ class UserBlock @JvmOverloads constructor(
     }
 
     data class BlockResult(
-            val result: Boolean,
-            val cause: String
+        val result: Boolean,
+        val cause: String
     )
 
     fun block(): BlockResult {
@@ -44,45 +44,45 @@ class UserBlock @JvmOverloads constructor(
         }
 
         val requestOption = Request.getDefaultOption()
-                .addBodyParameter("_token", "")
-                .addBodyParameter("avoid_hour", option.blockHour.toString())
-                .addBodyParameter("avoid_category", option.blockCategory.code.toString())
+            .addBodyParameter("_token", "")
+            .addBodyParameter("avoid_hour", option.blockHour.toString())
+            .addBodyParameter("avoid_category", option.blockCategory.code.toString())
 
         if (option.blockCategory === BlockCategory.CUSTOM) {
             requestOption.addBodyParameter("avoid_memo", option.blockReason)
         }
 
         requestOption
-                .addBodyParameter("id", gallId)
-                .addBodyParameter("no", articleId.toString())
+            .addBodyParameter("id", gallId)
+            .addBodyParameter("no", articleId.toString())
 
         if (option.commentId > 0) {
             requestOption.addBodyParameter("comment_no", option.commentId.toString())
         }
 
         requestOption
-                .addBodyParameter("app_id", KotlinInside.getInstance().auth.getAppId())
-                .addBodyParameter("confirm_id", session.detail!!.userId)
+            .addBodyParameter("app_id", KotlinInside.getInstance().auth.getAppId())
+            .addBodyParameter("confirm_id", session.detail!!.userId)
 
         lateinit var json: JsonBrowser
 
         try {
             json = KotlinInside.getInstance().httpInterface.post(
-                    ApiUrl.Gallery.MINOR_BLOCK_ADD,
-                    requestOption
+                ApiUrl.Gallery.MINOR_BLOCK_ADD,
+                requestOption
             )!!
         } catch (e: HttpException) {
             if (e.cause is IOException) {
                 return BlockResult(
-                        result = false,
-                        cause = "권한이 없습니다."
+                    result = false,
+                    cause = "권한이 없습니다."
                 )
             }
         }
 
         return BlockResult(
-                result = json.get("result").asBoolean(),
-                cause = json.get("cause").safeText()
+            result = json.get("result").asBoolean(),
+            cause = json.get("cause").safeText()
         )
     }
 
@@ -93,7 +93,8 @@ class UserBlock @JvmOverloads constructor(
      * @return 갤러리 유저 차단 URL을 반환합니다.
      */
     fun getLink(): String {
-        val url = "${ApiUrl.Gallery.MINOR_BLOCK_WEB}?id=$gallId&no=$articleId&app_id=${KotlinInside.getInstance().auth.getAppId()}"
+        val url =
+            "${ApiUrl.Gallery.MINOR_BLOCK_WEB}?id=$gallId&no=$articleId&app_id=${KotlinInside.getInstance().auth.getAppId()}"
 
         if (option.commentId > 0) {
             url.plus("&comment_no=${option.commentId}")

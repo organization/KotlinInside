@@ -7,9 +7,9 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 
 class AsyncArticleVote(
-        gallId: String,
-        articleId: Int,
-        session: Session
+    gallId: String,
+    articleId: Int,
+    session: Session
 ) {
     private val articleVote = ArticleVote(gallId, articleId, session)
 

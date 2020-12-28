@@ -8,9 +8,9 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 
 class AsyncArticleModify(
-        gallId: String,
-        articleId: Int,
-        session: Session
+    gallId: String,
+    articleId: Int,
+    session: Session
 ) {
     private val articleModify = ArticleModify(gallId, articleId, session)
 

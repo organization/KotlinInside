@@ -9,12 +9,12 @@ import be.zvz.kotlininside.session.user.Anonymous
 import be.zvz.kotlininside.value.ApiUrl
 
 class DCConBuy(
-        private val dcCon: DCCon,
-        private val session: Session
+    private val dcCon: DCCon,
+    private val session: Session
 ) {
     data class BuyResult(
-            val result: Int,
-            val msg: String
+        val result: Int,
+        val msg: String
     )
 
     /**
@@ -24,24 +24,24 @@ class DCConBuy(
     fun buy(): BuyResult {
         if (session.user is Anonymous) {
             throw HttpException(
-                    RuntimeException("Anonymous 세션은 DCConBuy를 이용할 수 없습니다.")
+                RuntimeException("Anonymous 세션은 DCConBuy를 이용할 수 없습니다.")
             )
         }
 
         val option = Request.getDefaultOption()
-                .addMultipartParameter("user_id", session.detail!!.userId)
-                .addMultipartParameter("package_idx", dcCon.packageIndex.toString())
-                .addMultipartParameter("type", "buy_dccon")
-                .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
+            .addMultipartParameter("user_id", session.detail!!.userId)
+            .addMultipartParameter("package_idx", dcCon.packageIndex.toString())
+            .addMultipartParameter("type", "buy_dccon")
+            .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
 
         val json = KotlinInside.getInstance().httpInterface.upload(
-                ApiUrl.DCCon.DCCON,
-                option
+            ApiUrl.DCCon.DCCON,
+            option
         )!!
 
         return BuyResult(
-                result = json.get("result").asInteger(),
-                msg = json.get("msg").safeText()
+            result = json.get("result").asInteger(),
+            msg = json.get("msg").safeText()
         )
     }
 }

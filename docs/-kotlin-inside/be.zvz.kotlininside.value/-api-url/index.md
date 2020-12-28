@@ -19,7 +19,9 @@ title: ApiUrl -
 | <a name="be.zvz.kotlininside.value/ApiUrl.DCCon///PointingToDeclaration/"></a>[DCCon](-d-c-con/index.md)| <a name="be.zvz.kotlininside.value/ApiUrl.DCCon///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [DCCon](-d-c-con/index.md)  <br><br><br>
 | <a name="be.zvz.kotlininside.value/ApiUrl.Gallery///PointingToDeclaration/"></a>[Gallery](-gallery/index.md)| <a name="be.zvz.kotlininside.value/ApiUrl.Gallery///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [Gallery](-gallery/index.md)  <br><br><br>
 | <a name="be.zvz.kotlininside.value/ApiUrl.MainInfo///PointingToDeclaration/"></a>[MainInfo](-main-info/index.md)| <a name="be.zvz.kotlininside.value/ApiUrl.MainInfo///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [MainInfo](-main-info/index.md)  <br><br><br>
+| <a name="be.zvz.kotlininside.value/ApiUrl.MiniGallery///PointingToDeclaration/"></a>[MiniGallery](-mini-gallery/index.md)| <a name="be.zvz.kotlininside.value/ApiUrl.MiniGallery///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [MiniGallery](-mini-gallery/index.md)  <br><br><br>
 | <a name="be.zvz.kotlininside.value/ApiUrl.Search///PointingToDeclaration/"></a>[Search](-search/index.md)| <a name="be.zvz.kotlininside.value/ApiUrl.Search///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [Search](-search/index.md)  <br><br><br>
+| <a name="be.zvz.kotlininside.value/ApiUrl.User///PointingToDeclaration/"></a>[User](-user/index.md)| <a name="be.zvz.kotlininside.value/ApiUrl.User///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [User](-user/index.md)  <br><br><br>
 
 
 ## Properties  

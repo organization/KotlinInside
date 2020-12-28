@@ -9,9 +9,9 @@ import be.zvz.kotlininside.session.user.User
 import java.util.*
 
 class KotlinInside private constructor(
-        val user: User,
-        val httpInterface: HttpInterface,
-        private val sessionAutoRefresh: Boolean
+    val user: User,
+    val httpInterface: HttpInterface,
+    private val sessionAutoRefresh: Boolean
 ) {
     val auth: Auth = Auth()
     lateinit var hashedAppKey: String
@@ -31,7 +31,8 @@ class KotlinInside private constructor(
                     if (user is LoginUser) {
                         synchronized(instance) {
                             instance.hashedAppKey = instance.auth.generateHashedAppKey()
-                            instance.app = App(instance.hashedAppKey, instance.auth.fetchAppId(getInstance().hashedAppKey))
+                            instance.app =
+                                App(instance.hashedAppKey, instance.auth.fetchAppId(getInstance().hashedAppKey))
                             instance.session = instance.auth.login(user)
                         }
                     }

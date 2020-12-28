@@ -7,8 +7,8 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 
 class AsyncGallerySetting(
-        gallId: String,
-        session: Session
+    gallId: String,
+    session: Session
 ) {
     private val gallerySetting = GallerySetting(gallId, session)
 

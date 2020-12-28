@@ -6,13 +6,13 @@ import java.io.FileInputStream
 import java.io.InputStream
 
 data class ImageContent(
-        val stream: InputStream
+    val stream: InputStream
 ) : Content {
     constructor(
-            file: File
+        file: File
     ) : this(
-            stream = BufferedInputStream(
-                    FileInputStream(file)
-            )
+        stream = BufferedInputStream(
+            FileInputStream(file)
+        )
     )
 }

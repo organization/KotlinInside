@@ -10,7 +10,7 @@ class AsyncGalleryRanking {
 
     suspend fun getAsync() = coroutineScope {
         async(Dispatchers.IO) {
-            galleryRanking.get()
+            galleryRanking.request()
         }
     }
 }

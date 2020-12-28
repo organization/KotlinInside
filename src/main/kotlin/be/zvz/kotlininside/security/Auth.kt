@@ -28,11 +28,11 @@ class Auth {
     var fcmToken: String = Const.DEFAULT_FCM_TOKEN
 
     data class AppCheck(
-            val result: Boolean,
-            val version: String? = null,
-            val notice: Boolean? = null,
-            val noticeUpdate: Boolean? = null,
-            val date: String? = null
+        val result: Boolean,
+        val version: String? = null,
+        val notice: Boolean? = null,
+        val noticeUpdate: Boolean? = null,
+        val date: String? = null
     )
 
     /**
@@ -47,21 +47,21 @@ class Auth {
             appCheck !== null -> {
                 if (!appCheck.get("result").isNull)
                     return AppCheck(
-                            result = appCheck.get("result").asBoolean()
+                        result = appCheck.get("result").asBoolean()
                     )
 
                 val json = appCheck.index(0)
 
                 return AppCheck(
-                        result = json.get("result").asBoolean(),
-                        version = json.get("ver").text(),
-                        notice = json.get("notice").asBoolean(),
-                        noticeUpdate = json.get("notice_update").asBoolean(),
-                        date = json.get("date").text()
+                    result = json.get("result").asBoolean(),
+                    version = json.get("ver").text(),
+                    notice = json.get("notice").asBoolean(),
+                    noticeUpdate = json.get("notice_update").asBoolean(),
+                    date = json.get("date").text()
                 )
             }
             else -> return AppCheck(
-                    result = false
+                result = false
             )
         }
     }
@@ -85,13 +85,21 @@ class Auth {
      */
     private fun dateToString(date: Date): String {
         val calendar = Calendar.getInstance(seoulTimeZone, Locale.US)
+        calendar.minimalDaysInFirstWeek = 4
         calendar.time = date
 
         val dayOfYear = calendar[Calendar.DAY_OF_YEAR]
         val dayOfWeek = calendar[Calendar.DAY_OF_WEEK]
         val weekOfYear = calendar[Calendar.WEEK_OF_YEAR]
 
-        return FastDateFormat.getInstance("E${dayOfYear - 1}d${getDayOfWeekMonday(dayOfWeek)}${dayOfWeek - 1}${String.format("%02d", weekOfYear)}MddMM", seoulTimeZone, Locale.US).format(date)
+        return FastDateFormat.getInstance(
+            "E${dayOfYear - 1}d${getDayOfWeekMonday(dayOfWeek)}${dayOfWeek - 1}${
+                String.format(
+                    "%02d",
+                    weekOfYear
+                )
+            }MddMM", seoulTimeZone, Locale.US
+        ).format(date)
     }
 
     /**
@@ -132,8 +140,8 @@ class Auth {
         KotlinInside.getInstance().app.token -> KotlinInside.getInstance().app.id
         else -> {
             KotlinInside.getInstance().app = App(
-                    token = hashedAppKey,
-                    id = fetchAppId(hashedAppKey)
+                token = hashedAppKey,
+                id = fetchAppId(hashedAppKey)
             )
             KotlinInside.getInstance().app.id
         }
@@ -148,11 +156,11 @@ class Auth {
     fun fetchAppId(hashedAppKey: String): String {
         val appId = try {
             val option = Request.getDefaultOption()
-                    .addMultipartParameter("value_token", hashedAppKey)
-                    .addMultipartParameter("signature", Const.DC_APP_SIGNATURE)
-                    .addMultipartParameter("vCode", Const.DC_APP_VERSION_CODE)
-                    .addMultipartParameter("vName", Const.DC_APP_VERSION_NAME)
-                    .addMultipartParameter("client_token", fcmToken)
+                .addMultipartParameter("value_token", hashedAppKey)
+                .addMultipartParameter("signature", Const.DC_APP_SIGNATURE)
+                .addMultipartParameter("vCode", Const.DC_APP_VERSION_CODE)
+                .addMultipartParameter("vName", Const.DC_APP_VERSION_NAME)
+                .addMultipartParameter("client_token", fcmToken)
 
             KotlinInside.getInstance().httpInterface.upload(ApiUrl.Auth.APP_ID, option)
         } catch (e: HttpException) {
@@ -173,17 +181,30 @@ class Auth {
     fun login(user: User): Session {
         if (user !is Anonymous) {
             val option = HttpInterface.Option()
-                    .addBodyParameter("user_id", user.id)
-                    .addBodyParameter("user_pw", user.password)
+                .addBodyParameter("user_id", user.id)
+                .addBodyParameter("user_pw", user.password)
+                .addBodyParameter("mode", "login_normal")
+                .addBodyParameter("client_token", fcmToken)
 
             val json = KotlinInside.getInstance().httpInterface.post(ApiUrl.Auth.LOGIN, option)!!.index(0)
 
             val detail = SessionDetail(
-                    userId = json.get("user_id").safeText(),
-                    userNo = json.get("user_no").safeText(),
-                    name = json.get("name").safeText(),
-                    stype = json.get("stype").safeText()
+                result = json.get("result").asBoolean(),
+                userId = json.get("user_id").safeText(),
+                userNo = json.get("user_no").safeText(),
+                name = json.get("name").safeText(),
+                stype = json.get("stype").safeText(),
+                isAdult = json.get("is_adult").asInteger(),
+                isDormancy = json.get("is_dormancy").asInteger(),
+                isOtp = json.get("is_otp").asInteger(),
+                pwCampaign = json.get("pw_campaign").asInteger(),
+                mailSend = json.get("mail_send").safeText(),
+                cause = json.get("cause").text(),
             )
+
+            if (!detail.result) {
+                throw HttpException(401, detail.cause)
+            }
 
             val loginUser = when (detail.stype) {
                 UserType.NAMED.stype -> {
@@ -193,7 +214,7 @@ class Auth {
                     DuplicateNamed(user.id, user.password)
                 }
                 else -> {
-                    throw HttpException(401, "계정에 로그인 할 수 없습니다") // 계정에 로그인 할 수 없는 경우 post 부분에서 HttpException 이 발생하여 이 코드는 작동하지 않음.
+                    throw HttpException(401, "계정의 타입을 알 수 없습니다.")
                 }
             }
 

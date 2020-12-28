@@ -6,7 +6,7 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 
 class AsyncGallerySearch(
-        keyword: String
+    keyword: String
 ) {
     private val gallerySearch = GallerySearch(keyword)
 

@@ -17,6 +17,7 @@ import org.junit.jupiter.api.MethodOrderer
 import org.junit.jupiter.api.Order
 import org.junit.jupiter.api.TestInstance
 import org.junit.jupiter.api.TestMethodOrder
+import java.util.*
 import kotlin.test.Test
 import kotlin.test.assertNotNull
 
@@ -29,26 +30,39 @@ class KotlinInsideTest {
     @Test
     fun initKotlinInside() {
         KotlinInside.createInstance(
-                Anonymous("ㅇㅇ", "1234"),
-                DefaultHttpClient(true, true)
+            Anonymous("ㅇㅇ", "1234"),
+            DefaultHttpClient(true, true)
         )
     }
 
     @Order(2)
     @Test
-    fun testGalleryRanking() {
-        val galleryRanking = GalleryRanking()
-        println(galleryRanking.get())
+    fun testDateGenerator() {
+        val auth = KotlinInside.getInstance().auth
+        val date = Date()
+        val appCheck = auth.getAppCheck()
+        val dateToString = auth::class.java.getDeclaredMethod("dateToString", Date::class.java)
+        dateToString.isAccessible = true
+
+        println(appCheck.date + " == " + dateToString.invoke(auth, date))
+        assert(appCheck.date == dateToString.invoke(auth, date))
     }
 
     @Order(3)
     @Test
-    fun testMinorGalleryRanking() {
-        val minorGalleryRanking = MinorGalleryRanking()
-        println(minorGalleryRanking.get())
+    fun testGalleryRanking() {
+        val galleryRanking = GalleryRanking()
+        println(galleryRanking.request())
     }
 
     @Order(4)
+    @Test
+    fun testMinorGalleryRanking() {
+        val minorGalleryRanking = MinorGalleryRanking()
+        println(minorGalleryRanking.request())
+    }
+
+    @Order(5)
     @Test
     fun testArticleList() {
         val articleList = ArticleList("hit", 1)
@@ -65,7 +79,7 @@ class KotlinInsideTest {
         }
     }
 
-    @Order(5)
+    @Order(6)
     @Test
     fun testArticleRead() {
         val articleRead = ArticleRead("hit", 1)
@@ -75,32 +89,32 @@ class KotlinInsideTest {
         println(articleRead.getViewMain())
     }
 
-    @Order(6)
+    @Order(7)
     @Test
     fun testArticleWrite() {
         val articleWrite = ArticleWrite(
-                gallId = "github",
-                article = Article(
-                        subject = "KotlinInside CI 테스트용 글입니다",
-                        content = mutableListOf(
-                                StringContent(
-                                        string = "글은 곧 자동으로 삭제됩니다.\n글의 비밀번호는 1234입니다."
-                                ),
-                                MarkdownContent(
-                                        markdownString = "**Bold**\n~~취소선~~\n- [ ] Task List\n# 큰 글씨"
-                                ),
-                                HtmlContent(
-                                        htmlString = "<strike>취소선</strike>"
-                                )
-                        ),
-                        headText = HeadText(
-                                identifier = 0,
-                                name = "일반",
-                                level = 0,
-                                selected = false
-                        ) // 옵션입니다. 없어도 글 작성됩니다.
+            gallId = "github",
+            article = Article(
+                subject = "KotlinInside CI 테스트용 글입니다",
+                content = mutableListOf(
+                    StringContent(
+                        string = "글은 곧 자동으로 삭제됩니다.\n글의 비밀번호는 1234입니다."
+                    ),
+                    MarkdownContent(
+                        markdownString = "**Bold**\n~~취소선~~\n- [ ] Task List\n# 큰 글씨"
+                    ),
+                    HtmlContent(
+                        htmlString = "<strike>취소선</strike>"
+                    )
                 ),
-                session = KotlinInside.getInstance().session
+                headText = HeadText(
+                    identifier = 0,
+                    name = "일반",
+                    level = 0,
+                    selected = false
+                ) // 옵션입니다. 없어도 글 작성됩니다.
+            ),
+            session = KotlinInside.getInstance().session
         )
 
         Thread.sleep(5_000)
@@ -113,13 +127,13 @@ class KotlinInsideTest {
             articleId = writeResult.articleId!!
     }
 
-    @Order(7)
+    @Order(8)
     @Test
     fun testArticleVote() {
         val articleVote = ArticleVote(
-                gallId = "github",
-                articleId = articleId,
-                session = KotlinInside.getInstance().session
+            gallId = "github",
+            articleId = articleId,
+            session = KotlinInside.getInstance().session
         )
 
         val upvoteResult = articleVote.upvote()
@@ -131,13 +145,13 @@ class KotlinInsideTest {
         println(downvoteResult)
     }
 
-    @Order(8)
+    @Order(9)
     @Test
     fun testArticleDelete() {
         val articleDelete = ArticleDelete(
-                gallId = "github",
-                articleId = articleId,
-                session = KotlinInside.getInstance().session
+            gallId = "github",
+            articleId = articleId,
+            session = KotlinInside.getInstance().session
         )
 
         val deleteResult = articleDelete.delete()

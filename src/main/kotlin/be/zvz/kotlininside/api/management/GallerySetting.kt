@@ -7,8 +7,8 @@ import be.zvz.kotlininside.value.ApiUrl
 import be.zvz.kotlininside.value.Const
 
 class GallerySetting(
-        private val gallId: String,
-        private val session: Session
+    private val gallId: String,
+    private val session: Session
 ) {
     /**
      * 갤러리 관리 링크를 반환합니다.
