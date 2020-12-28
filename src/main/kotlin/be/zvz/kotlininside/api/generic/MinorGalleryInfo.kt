@@ -40,14 +40,14 @@ class MinorGalleryInfo(
      *
      * @return 갤러리 정보를 반환합니다.
      */
-    fun get(): InfoResult {
+    fun request(): InfoResult {
         val option = Request.getDefaultOption()
-                .addMultipartParameter("id", gallId)
-                .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
+            .addMultipartParameter("id", gallId)
+            .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
 
         val json = KotlinInside.getInstance().httpInterface.upload(
-                ApiUrl.Gallery.MINOR_INFO,
-                option
+            ApiUrl.Gallery.MINOR_INFO,
+            option
         )!!.index(0)
 
         val miniGalleryInfo = json.get("mini")

@@ -12,7 +12,6 @@ import be.zvz.kotlininside.api.type.content.HtmlContent
 import be.zvz.kotlininside.api.type.content.MarkdownContent
 import be.zvz.kotlininside.api.type.content.StringContent
 import be.zvz.kotlininside.http.DefaultHttpClient
-import be.zvz.kotlininside.security.Auth
 import be.zvz.kotlininside.session.user.Anonymous
 import org.junit.jupiter.api.MethodOrderer
 import org.junit.jupiter.api.Order
@@ -53,14 +52,14 @@ class KotlinInsideTest {
     @Test
     fun testGalleryRanking() {
         val galleryRanking = GalleryRanking()
-        println(galleryRanking.get())
+        println(galleryRanking.request())
     }
 
     @Order(4)
     @Test
     fun testMinorGalleryRanking() {
         val minorGalleryRanking = MinorGalleryRanking()
-        println(minorGalleryRanking.get())
+        println(minorGalleryRanking.request())
     }
 
     @Order(5)

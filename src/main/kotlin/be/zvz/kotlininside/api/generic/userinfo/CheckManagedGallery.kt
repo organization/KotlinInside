@@ -26,7 +26,7 @@ class CheckManagedGallery(
      *
      * @return 내 갤러리 정보를 반환합니다.
      */
-    fun get(): CheckResult {
+    fun request(): CheckResult {
         if (session.user is Anonymous) {
             throw RuntimeException("Anonymous는 CheckJoinedMiniGallery을 사용할 수 없습니다.")
         }

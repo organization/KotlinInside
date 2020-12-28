@@ -27,15 +27,15 @@ class DCConDetail(
      * 디시콘 정보를 받아오는 메소드입니다.
      * @return [DetailResult] 디시콘 정보를 반환합니다.
      */
-    fun get(): DetailResult {
+    fun request(): DetailResult {
         val option = Request.getDefaultOption()
-                .addMultipartParameter("package_idx", dcCon.packageIndex.toString())
-                .addMultipartParameter("type", "package_detail")
-                .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
+            .addMultipartParameter("package_idx", dcCon.packageIndex.toString())
+            .addMultipartParameter("type", "package_detail")
+            .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
 
         val json = KotlinInside.getInstance().httpInterface.upload(
-                ApiUrl.DCCon.DCCON,
-                option
+            ApiUrl.DCCon.DCCON,
+            option
         )!!
 
         return when {

@@ -13,7 +13,7 @@ class AsyncDCConDetail(
 
     suspend fun getAsync() = coroutineScope {
         async(Dispatchers.IO) {
-            dcConDetail.get()
+            dcConDetail.request()
         }
     }
 }

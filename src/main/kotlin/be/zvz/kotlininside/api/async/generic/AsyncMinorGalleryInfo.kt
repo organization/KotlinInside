@@ -12,7 +12,7 @@ class AsyncMinorGalleryInfo(
 
     suspend fun getAsync() = coroutineScope {
         async(Dispatchers.IO) {
-            minorGalleryInfo.get()
+            minorGalleryInfo.request()
         }
     }
 }

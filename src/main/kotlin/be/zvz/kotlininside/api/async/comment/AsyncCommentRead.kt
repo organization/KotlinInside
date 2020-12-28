@@ -14,7 +14,7 @@ class AsyncCommentRead(
 
     suspend fun getAsync() = coroutineScope {
         async(Dispatchers.IO) {
-            commentRead.get()
+            commentRead.request()
         }
     }
 }

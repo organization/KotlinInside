@@ -28,17 +28,20 @@ class MinorGalleryRanking {
      * @exception [be.zvz.kotlininside.http.HttpException] 데이터를 불러오지 못할 경우, HttpException 발생
      */
     @Throws(HttpException::class)
-    fun get(): List<RankingItem> {
+    fun request(): List<RankingItem> {
         return mutableListOf<RankingItem>().apply {
-            val json = KotlinInside.getInstance().httpInterface.get(ApiUrl.MainInfo.MINOR_GALLERY_RANKING, Request.getDefaultOption())!!
+            val json = KotlinInside.getInstance().httpInterface.get(
+                ApiUrl.MainInfo.MINOR_GALLERY_RANKING,
+                Request.getDefaultOption()
+            )!!
             json.values().forEach {
                 add(
-                        RankingItem(
-                                gallLink = it.get("link").text()!!,
-                                gallId = it.get("id").text()!!,
-                                gallName = it.get("ko_name").text()!!,
-                                rankType = it.get("rank_type").text()!!.let { rankTypeString ->
-                                    return@let when (rankTypeString) {
+                    RankingItem(
+                        gallLink = it.get("link").text()!!,
+                        gallId = it.get("id").text()!!,
+                        gallName = it.get("ko_name").text()!!,
+                        rankType = it.get("rank_type").text()!!.let { rankTypeString ->
+                            return@let when (rankTypeString) {
                                         "up" -> RankType.UP
                                         "stop" -> RankType.STOP
                                         "down" -> RankType.DOWN

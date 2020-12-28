@@ -39,17 +39,19 @@ class CommentRead(
      * @exception [be.zvz.kotlininside.http.HttpException] 댓글을 읽어오지 못할 경우, HttpException 발생
      */
     @Throws(HttpException::class)
-    fun get(): ReadResult {
-        val url = "${ApiUrl.Comment.READ}?id=$gallId&no=$articleId&re_page=$rePage&app_id=${KotlinInside.getInstance().auth.getAppId()}"
+    fun request(): ReadResult {
+        val url =
+            "${ApiUrl.Comment.READ}?id=$gallId&no=$articleId&re_page=$rePage&app_id=${KotlinInside.getInstance().auth.getAppId()}"
 
-        val json = KotlinInside.getInstance().httpInterface.get(Request.redirectUrl(url), Request.getDefaultOption())!!.index(0)
+        val json = KotlinInside.getInstance().httpInterface.get(Request.redirectUrl(url), Request.getDefaultOption())!!
+            .index(0)
 
         return ReadResult(
-                totalComment = json.get("total_comment").asInteger(),
-                totalPage = json.get("total_page").asInteger(),
-                rePage = json.get("re_page").asInteger(),
-                commentList = mutableListOf<CommentData>().apply {
-                    json.get("comment_list").values().forEach {
+            totalComment = json.get("total_comment").asInteger(),
+            totalPage = json.get("total_page").asInteger(),
+            rePage = json.get("re_page").asInteger(),
+            commentList = mutableListOf<CommentData>().apply {
+                json.get("comment_list").values().forEach {
                         add(
                                 CommentData(
                                         memberIcon = it.get("member_icon").asInteger(),
