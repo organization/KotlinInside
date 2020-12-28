@@ -6,9 +6,9 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 
 class AsyncCommentRead(
-        gallId: String,
-        articleId: Int,
-        rePage: Int
+    gallId: String,
+    articleId: Int,
+    rePage: Int
 ) {
     private val commentRead = CommentRead(gallId, articleId, rePage)
 

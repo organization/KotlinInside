@@ -8,10 +8,10 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 
 class AsyncArticleDelete @JvmOverloads constructor(
-        gallId: String,
-        articleId: Int,
-        session: Session,
-        fcmToken: String = Const.DEFAULT_FCM_TOKEN
+    gallId: String,
+    articleId: Int,
+    session: Session,
+    fcmToken: String = Const.DEFAULT_FCM_TOKEN
 ) {
     private val articleDelete = ArticleDelete(gallId, articleId, session, fcmToken)
 

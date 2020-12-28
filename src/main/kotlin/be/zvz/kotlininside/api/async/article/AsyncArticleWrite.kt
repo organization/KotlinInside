@@ -9,10 +9,10 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 
 class AsyncArticleWrite @JvmOverloads constructor(
-        gallId: String,
-        article: Article,
-        session: Session,
-        fcmToken: String = Const.DEFAULT_FCM_TOKEN
+    gallId: String,
+    article: Article,
+    session: Session,
+    fcmToken: String = Const.DEFAULT_FCM_TOKEN
 ) {
     private val articleWrite = ArticleWrite(gallId, article, session, fcmToken)
 

@@ -9,10 +9,9 @@ public final class Const {
     public static final String DC_APP_VERSION_NAME = "4.0.7";
 
     public static final String DEFAULT_FCM_TOKEN;
+    public static final String USER_AGENT = "dcinside.app";
 
     static {
         DEFAULT_FCM_TOKEN = RandomStringUtils.randomAlphanumeric(11) + ":APA91bFMI-0d1b0wJmlIWoDPVa_V5Nv0OWnAefN7fGLegy6D76TN_CRo5RSUO-6V7Wnq44t7Rzx0A4kICVZ7wX-hJd3mrczE5NnLud722k5c-XRjIxYGVM9yZBScqE3oh4xbJOe2AvDe";
     }
-
-    public static final String USER_AGENT = "dcinside.app";
 }

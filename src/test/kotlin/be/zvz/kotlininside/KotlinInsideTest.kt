@@ -93,28 +93,28 @@ class KotlinInsideTest {
     @Test
     fun testArticleWrite() {
         val articleWrite = ArticleWrite(
-                gallId = "github",
-                article = Article(
-                        subject = "KotlinInside CI 테스트용 글입니다",
-                        content = mutableListOf(
-                                StringContent(
-                                        string = "글은 곧 자동으로 삭제됩니다.\n글의 비밀번호는 1234입니다."
-                                ),
-                                MarkdownContent(
-                                        markdownString = "**Bold**\n~~취소선~~\n- [ ] Task List\n# 큰 글씨"
-                                ),
-                                HtmlContent(
-                                        htmlString = "<strike>취소선</strike>"
-                                )
-                        ),
-                        headText = HeadText(
-                                identifier = 0,
-                                name = "일반",
-                                level = 0,
-                                selected = false
-                        ) // 옵션입니다. 없어도 글 작성됩니다.
+            gallId = "github",
+            article = Article(
+                subject = "KotlinInside CI 테스트용 글입니다",
+                content = mutableListOf(
+                    StringContent(
+                        string = "글은 곧 자동으로 삭제됩니다.\n글의 비밀번호는 1234입니다."
+                    ),
+                    MarkdownContent(
+                        markdownString = "**Bold**\n~~취소선~~\n- [ ] Task List\n# 큰 글씨"
+                    ),
+                    HtmlContent(
+                        htmlString = "<strike>취소선</strike>"
+                    )
                 ),
-                session = KotlinInside.getInstance().session
+                headText = HeadText(
+                    identifier = 0,
+                    name = "일반",
+                    level = 0,
+                    selected = false
+                ) // 옵션입니다. 없어도 글 작성됩니다.
+            ),
+            session = KotlinInside.getInstance().session
         )
 
         Thread.sleep(5_000)
@@ -131,9 +131,9 @@ class KotlinInsideTest {
     @Test
     fun testArticleVote() {
         val articleVote = ArticleVote(
-                gallId = "github",
-                articleId = articleId,
-                session = KotlinInside.getInstance().session
+            gallId = "github",
+            articleId = articleId,
+            session = KotlinInside.getInstance().session
         )
 
         val upvoteResult = articleVote.upvote()
@@ -149,9 +149,9 @@ class KotlinInsideTest {
     @Test
     fun testArticleDelete() {
         val articleDelete = ArticleDelete(
-                gallId = "github",
-                articleId = articleId,
-                session = KotlinInside.getInstance().session
+            gallId = "github",
+            articleId = articleId,
+            session = KotlinInside.getInstance().session
         )
 
         val deleteResult = articleDelete.delete()

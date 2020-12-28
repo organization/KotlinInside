@@ -14,12 +14,12 @@ class MinorGalleryRanking {
     }
 
     data class RankingItem(
-            val gallLink: String,
-            val gallId: String,
-            val gallName: String,
-            val rankType: RankType,
-            val rank: Int,
-            val rankUpdown: Int
+        val gallLink: String,
+        val gallId: String,
+        val gallName: String,
+        val rankType: RankType,
+        val rank: Int,
+        val rankUpdown: Int
     )
 
     /**
@@ -42,15 +42,15 @@ class MinorGalleryRanking {
                         gallName = it.get("ko_name").text()!!,
                         rankType = it.get("rank_type").text()!!.let { rankTypeString ->
                             return@let when (rankTypeString) {
-                                        "up" -> RankType.UP
-                                        "stop" -> RankType.STOP
-                                        "down" -> RankType.DOWN
-                                        else -> RankType.UNKNOWN
-                                    }
-                                },
-                                rank = it.get("rank").asInteger(),
-                                rankUpdown = it.get("rank_updown").asInteger()
-                        )
+                                "up" -> RankType.UP
+                                "stop" -> RankType.STOP
+                                "down" -> RankType.DOWN
+                                else -> RankType.UNKNOWN
+                            }
+                        },
+                        rank = it.get("rank").asInteger(),
+                        rankUpdown = it.get("rank_updown").asInteger()
+                    )
                 )
             }
         }

@@ -7,10 +7,10 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 
 class AsyncUserBlock @JvmOverloads constructor(
-        gallId: String,
-        articleId: Int,
-        session: Session,
-        option: UserBlock.BlockOption = UserBlock.BlockOption()
+    gallId: String,
+    articleId: Int,
+    session: Session,
+    option: UserBlock.BlockOption = UserBlock.BlockOption()
 ) {
     private val userBlock = UserBlock(gallId, articleId, session, option)
 

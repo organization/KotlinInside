@@ -8,11 +8,11 @@ import be.zvz.kotlininside.session.user.LoginUser
 import be.zvz.kotlininside.value.ApiUrl
 
 class DCConList(
-        private val session: Session
+    private val session: Session
 ) {
     data class ListResult(
-            val tab: List<DCCon>,
-            val list: List<List<DCCon>>
+        val tab: List<DCCon>,
+        val list: List<List<DCCon>>
     )
 
     fun request(): ListResult {
@@ -23,40 +23,40 @@ class DCConList(
         }
 
         val json = KotlinInside.getInstance().httpInterface.upload(
-                ApiUrl.DCCon.DCCON,
-                option
+            ApiUrl.DCCon.DCCON,
+            option
         )!!
 
         return ListResult(
-                tab = mutableListOf<DCCon>().apply {
-                    json.get("tab").values().forEach {
-                        add(
-                                DCCon(
+            tab = mutableListOf<DCCon>().apply {
+                json.get("tab").values().forEach {
+                    add(
+                        DCCon(
+                            packageIndex = it.get("package_idx").asInteger(),
+                            title = it.get("title").safeText(),
+                            imgLink = it.get("img").safeText()
+                        )
+                    )
+                }
+            },
+            list = mutableListOf<List<DCCon>>().apply {
+                json.get("list").values().forEach { list ->
+                    add(
+                        mutableListOf<DCCon>().apply {
+                            list.values().forEach {
+                                add(
+                                    DCCon(
+                                        detailIndex = it.get("detail_idx").asInteger(),
                                         packageIndex = it.get("package_idx").asInteger(),
                                         title = it.get("title").safeText(),
                                         imgLink = it.get("img").safeText()
+                                    )
                                 )
-                        )
-                    }
-                },
-                list = mutableListOf<List<DCCon>>().apply {
-                    json.get("list").values().forEach { list ->
-                        add(
-                                mutableListOf<DCCon>().apply {
-                                    list.values().forEach {
-                                        add(
-                                                DCCon(
-                                                        detailIndex = it.get("detail_idx").asInteger(),
-                                                        packageIndex = it.get("package_idx").asInteger(),
-                                                        title = it.get("title").safeText(),
-                                                        imgLink = it.get("img").safeText()
-                                                )
-                                        )
-                                    }
-                                }
-                        )
-                    }
+                            }
+                        }
+                    )
                 }
+            }
         )
     }
 }

@@ -6,7 +6,7 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 
 class AsyncMinorGalleryInfo(
-        gallId: String
+    gallId: String
 ) {
     private val minorGalleryInfo = MinorGalleryInfo(gallId)
 

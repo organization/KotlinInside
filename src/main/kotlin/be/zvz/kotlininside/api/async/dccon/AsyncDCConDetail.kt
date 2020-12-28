@@ -7,7 +7,7 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 
 class AsyncDCConDetail(
-        dcCon: DCCon
+    dcCon: DCCon
 ) {
     private val dcConDetail = DCConDetail(dcCon)
 

@@ -28,11 +28,11 @@ class Auth {
     var fcmToken: String = Const.DEFAULT_FCM_TOKEN
 
     data class AppCheck(
-            val result: Boolean,
-            val version: String? = null,
-            val notice: Boolean? = null,
-            val noticeUpdate: Boolean? = null,
-            val date: String? = null
+        val result: Boolean,
+        val version: String? = null,
+        val notice: Boolean? = null,
+        val noticeUpdate: Boolean? = null,
+        val date: String? = null
     )
 
     /**
@@ -47,21 +47,21 @@ class Auth {
             appCheck !== null -> {
                 if (!appCheck.get("result").isNull)
                     return AppCheck(
-                            result = appCheck.get("result").asBoolean()
+                        result = appCheck.get("result").asBoolean()
                     )
 
                 val json = appCheck.index(0)
 
                 return AppCheck(
-                        result = json.get("result").asBoolean(),
-                        version = json.get("ver").text(),
-                        notice = json.get("notice").asBoolean(),
-                        noticeUpdate = json.get("notice_update").asBoolean(),
-                        date = json.get("date").text()
+                    result = json.get("result").asBoolean(),
+                    version = json.get("ver").text(),
+                    notice = json.get("notice").asBoolean(),
+                    noticeUpdate = json.get("notice_update").asBoolean(),
+                    date = json.get("date").text()
                 )
             }
             else -> return AppCheck(
-                    result = false
+                result = false
             )
         }
     }
@@ -92,7 +92,14 @@ class Auth {
         val dayOfWeek = calendar[Calendar.DAY_OF_WEEK]
         val weekOfYear = calendar[Calendar.WEEK_OF_YEAR]
 
-        return FastDateFormat.getInstance("E${dayOfYear - 1}d${getDayOfWeekMonday(dayOfWeek)}${dayOfWeek - 1}${String.format("%02d", weekOfYear)}MddMM", seoulTimeZone, Locale.US).format(date)
+        return FastDateFormat.getInstance(
+            "E${dayOfYear - 1}d${getDayOfWeekMonday(dayOfWeek)}${dayOfWeek - 1}${
+                String.format(
+                    "%02d",
+                    weekOfYear
+                )
+            }MddMM", seoulTimeZone, Locale.US
+        ).format(date)
     }
 
     /**
@@ -133,8 +140,8 @@ class Auth {
         KotlinInside.getInstance().app.token -> KotlinInside.getInstance().app.id
         else -> {
             KotlinInside.getInstance().app = App(
-                    token = hashedAppKey,
-                    id = fetchAppId(hashedAppKey)
+                token = hashedAppKey,
+                id = fetchAppId(hashedAppKey)
             )
             KotlinInside.getInstance().app.id
         }
@@ -149,11 +156,11 @@ class Auth {
     fun fetchAppId(hashedAppKey: String): String {
         val appId = try {
             val option = Request.getDefaultOption()
-                    .addMultipartParameter("value_token", hashedAppKey)
-                    .addMultipartParameter("signature", Const.DC_APP_SIGNATURE)
-                    .addMultipartParameter("vCode", Const.DC_APP_VERSION_CODE)
-                    .addMultipartParameter("vName", Const.DC_APP_VERSION_NAME)
-                    .addMultipartParameter("client_token", fcmToken)
+                .addMultipartParameter("value_token", hashedAppKey)
+                .addMultipartParameter("signature", Const.DC_APP_SIGNATURE)
+                .addMultipartParameter("vCode", Const.DC_APP_VERSION_CODE)
+                .addMultipartParameter("vName", Const.DC_APP_VERSION_NAME)
+                .addMultipartParameter("client_token", fcmToken)
 
             KotlinInside.getInstance().httpInterface.upload(ApiUrl.Auth.APP_ID, option)
         } catch (e: HttpException) {

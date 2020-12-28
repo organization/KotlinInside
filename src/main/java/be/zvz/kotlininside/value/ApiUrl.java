@@ -7,13 +7,12 @@ public final class ApiUrl {
     public static final String AUTH_API = Protocol.HTTPS + "dcid.dcinside.com/join/";
     public static final String MAIN_API = Protocol.HTTP + "json2.dcinside.com/";
     public static final String UPLOAD = Protocol.HTTPS + "upload.dcinside.com/";
+    public static final String REDIRECT = APP_API + "redirect.php";
 
     private static final class Protocol {
         private static final String HTTP = "http://";
         private static final String HTTPS = "https://";
     }
-
-    public static final String REDIRECT = APP_API + "redirect.php";
 
     public static final class Article {
         public static final String LIST = APP_API + "gall_list_new.php";

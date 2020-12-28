@@ -8,13 +8,13 @@ import be.zvz.kotlininside.session.user.Anonymous
 import be.zvz.kotlininside.value.ApiUrl
 
 class ArticleHitUpvote(
-        private val gallId: String,
-        private val articleId: Int,
-        private val session: Session
+    private val gallId: String,
+    private val articleId: Int,
+    private val session: Session
 ) {
     data class HitUpvoteResult(
-            val result: Boolean,
-            val cause: String? = null
+        val result: Boolean,
+        val cause: String? = null
     )
 
     /**
@@ -24,20 +24,20 @@ class ArticleHitUpvote(
     @Throws(HttpException::class)
     fun upvote(): HitUpvoteResult {
         val option = Request.getDefaultOption()
-                .addMultipartParameter("id", gallId)
-                .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
-                .addMultipartParameter("no", articleId.toString())
+            .addMultipartParameter("id", gallId)
+            .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
+            .addMultipartParameter("no", articleId.toString())
 
         if (session.user !is Anonymous) {
             option
-                    .addMultipartParameter("confirm_id", session.detail!!.userId)
+                .addMultipartParameter("confirm_id", session.detail!!.userId)
         }
 
         val json = KotlinInside.getInstance().httpInterface.upload(ApiUrl.Article.HIT_UPVOTE, option)!!.index(0)
 
         return HitUpvoteResult(
-                result = json.get("result").asBoolean(),
-                cause = json.get("cause").text()
+            result = json.get("result").asBoolean(),
+            cause = json.get("cause").text()
         )
     }
 }

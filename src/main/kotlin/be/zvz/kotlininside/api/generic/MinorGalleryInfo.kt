@@ -5,7 +5,7 @@ import be.zvz.kotlininside.http.Request
 import be.zvz.kotlininside.value.ApiUrl
 
 class MinorGalleryInfo(
-        private val gallId: String
+    private val gallId: String
 ) {
     data class MiniGalleryInfo(
         val hide: Int,
@@ -30,9 +30,9 @@ class MinorGalleryInfo(
     )
 
     data class Manager(
-            val isMaster: Boolean,
-            val id: String,
-            val name: String
+        val isMaster: Boolean,
+        val id: String,
+        val name: String
     )
 
     /**
@@ -52,26 +52,26 @@ class MinorGalleryInfo(
 
         val miniGalleryInfo = json.get("mini")
         return InfoResult(
-                id = json.get("id").safeText(),
-                koName = json.get("ko_name").safeText(),
-                image = json.get("img").text(),
-                description = json.get("mgallery_desc").text(),
-                manager = Manager(
-                        isMaster = true,
-                        id = json.get("master_id").safeText(),
-                        name = json.get("master_name").safeText()
-                ),
-                subManager = mutableListOf<Manager>().apply {
-                    json.get("submanager").values().forEach {
-                        add(
-                            Manager(
-                                isMaster = false,
-                                id = it.get("id").safeText(),
-                                name = it.get("name").safeText()
-                            )
+            id = json.get("id").safeText(),
+            koName = json.get("ko_name").safeText(),
+            image = json.get("img").text(),
+            description = json.get("mgallery_desc").text(),
+            manager = Manager(
+                isMaster = true,
+                id = json.get("master_id").safeText(),
+                name = json.get("master_name").safeText()
+            ),
+            subManager = mutableListOf<Manager>().apply {
+                json.get("submanager").values().forEach {
+                    add(
+                        Manager(
+                            isMaster = false,
+                            id = it.get("id").safeText(),
+                            name = it.get("name").safeText()
                         )
-                    }
-                },
+                    )
+                }
+            },
             createDate = json.get("create_dt").safeText(),
             new = json.get("new").asBoolean(),
             hotState = json.get("hot_state").safeText(),

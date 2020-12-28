@@ -6,7 +6,7 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 
 class AsyncTotalSearch(
-        keyword: String
+    keyword: String
 ) {
     private val totalSearch = TotalSearch(keyword)
 

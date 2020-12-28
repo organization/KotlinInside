@@ -11,9 +11,9 @@ import be.zvz.kotlininside.utils.StringUtil
 import be.zvz.kotlininside.value.ApiUrl
 
 class ArticleRead @JvmOverloads constructor(
-        private val gallId: String,
-        private val articleId: Int,
-        private val session: Session? = null
+    private val gallId: String,
+    private val articleId: Int,
+    private val session: Session? = null
 ) {
     private lateinit var json: JsonBrowser
 
@@ -54,11 +54,11 @@ class ArticleRead @JvmOverloads constructor(
     )
 
     data class ViewMain(
-            val content: String,
-            val upvote: Int,
-            val upvoteMember: Int,
-            val downvote: Int,
-            val isManager: Boolean
+        val content: String,
+        val upvote: Int,
+        val upvoteMember: Int,
+        val downvote: Int,
+        val isManager: Boolean
     )
 
     /**
@@ -67,14 +67,15 @@ class ArticleRead @JvmOverloads constructor(
      */
     @Throws(HttpException::class)
     fun request() {
-        val url = "${ApiUrl.Article.READ}?id=$gallId&no=$articleId&app_id=${KotlinInside.getInstance().auth.getAppId()}" +
-                StringBuilder().apply {
-                    session?.let {
-                        if (it.user !is Anonymous) {
-                            append("&confirm_id=").append(it.detail!!.userId)
+        val url =
+            "${ApiUrl.Article.READ}?id=$gallId&no=$articleId&app_id=${KotlinInside.getInstance().auth.getAppId()}" +
+                    StringBuilder().apply {
+                        session?.let {
+                            if (it.user !is Anonymous) {
+                                append("&confirm_id=").append(it.detail!!.userId)
+                            }
                         }
-                    }
-                }.toString()
+                    }.toString()
 
         json = KotlinInside.getInstance().httpInterface.get(Request.redirectUrl(url), Request.getDefaultOption())!!
     }
@@ -90,22 +91,22 @@ class ArticleRead @JvmOverloads constructor(
 
         val viewInfo = json.index(0).get("view_info")
         return ViewInfo(
-                gallTitle = viewInfo.get("galltitle").safeText(),
-                category = viewInfo.get("category").asInteger(),
-                subject = viewInfo.get("subject").safeText(),
-                identifier = viewInfo.get("no").asInteger(),
-                name = viewInfo.get("name").safeText(),
-                level = viewInfo.get("level").asInteger(),
-                memberIcon = viewInfo.get("member_icon").asInteger(),
-                totalComment = viewInfo.get("total_comment").asInteger(),
-                ip = viewInfo.get("ip").safeText(),
-                imageCheck = StringUtil.ynToBoolean(viewInfo.get("img_chk").safeText()),
-                recommendCheck = StringUtil.ynToBoolean(viewInfo.get("recommend_chk").safeText()),
-                winnertaCheck = StringUtil.ynToBoolean(viewInfo.get("winnerta_chk").safeText()),
-                voiceCheck = StringUtil.ynToBoolean(viewInfo.get("voice_chk").safeText()),
-                views = viewInfo.get("hit").asInteger(),
-                writeType = viewInfo.get("write_type").safeText(),
-                userId = viewInfo.get("user_id").safeText(),
+            gallTitle = viewInfo.get("galltitle").safeText(),
+            category = viewInfo.get("category").asInteger(),
+            subject = viewInfo.get("subject").safeText(),
+            identifier = viewInfo.get("no").asInteger(),
+            name = viewInfo.get("name").safeText(),
+            level = viewInfo.get("level").asInteger(),
+            memberIcon = viewInfo.get("member_icon").asInteger(),
+            totalComment = viewInfo.get("total_comment").asInteger(),
+            ip = viewInfo.get("ip").safeText(),
+            imageCheck = StringUtil.ynToBoolean(viewInfo.get("img_chk").safeText()),
+            recommendCheck = StringUtil.ynToBoolean(viewInfo.get("recommend_chk").safeText()),
+            winnertaCheck = StringUtil.ynToBoolean(viewInfo.get("winnerta_chk").safeText()),
+            voiceCheck = StringUtil.ynToBoolean(viewInfo.get("voice_chk").safeText()),
+            views = viewInfo.get("hit").asInteger(),
+            writeType = viewInfo.get("write_type").safeText(),
+            userId = viewInfo.get("user_id").safeText(),
             previousLink = viewInfo.get("prev_link").asInteger(),
             previousSubject = viewInfo.get("prev_subject").safeText(),
             headTitle = viewInfo.get("headtitle").safeText(),
@@ -133,9 +134,9 @@ class ArticleRead @JvmOverloads constructor(
                             selected = it.get("selected").asBoolean()
                         )
                     )
-                    }
-                },
-                commentDeleteScope = viewInfo.get("commentDel_scope").asBoolean()
+                }
+            },
+            commentDeleteScope = viewInfo.get("commentDel_scope").asBoolean()
         )
     }
 
@@ -150,11 +151,11 @@ class ArticleRead @JvmOverloads constructor(
 
         val viewMain = json.index(0).get("view_main")
         return ViewMain(
-                content = viewMain.get("memo").safeText(),
-                upvote = viewMain.get("recommend").asInteger(),
-                upvoteMember = viewMain.get("recommend_member").asInteger(),
-                downvote = viewMain.get("nonrecommend").asInteger(),
-                isManager = viewMain.get("managerskill").asBoolean()
+            content = viewMain.get("memo").safeText(),
+            upvote = viewMain.get("recommend").asInteger(),
+            upvoteMember = viewMain.get("recommend_member").asInteger(),
+            downvote = viewMain.get("nonrecommend").asInteger(),
+            isManager = viewMain.get("managerskill").asBoolean()
         )
     }
 }

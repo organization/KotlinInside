@@ -8,14 +8,14 @@ import be.zvz.kotlininside.session.user.LoginUser
 import be.zvz.kotlininside.value.ApiUrl
 
 class ArticleVote(
-        private val gallId: String,
-        private val articleId: Int,
-        private val session: Session
+    private val gallId: String,
+    private val articleId: Int,
+    private val session: Session
 ) {
     data class VoteResult(
-            val result: Boolean,
-            val cause: String,
-            val member: Int? = null
+        val result: Boolean,
+        val cause: String,
+        val member: Int? = null
     )
 
     /**
@@ -25,26 +25,26 @@ class ArticleVote(
     @Throws(HttpException::class)
     fun upvote(): VoteResult {
         val option = Request.getDefaultOption()
-                .addMultipartParameter("id", gallId)
-                .addMultipartParameter("no", articleId.toString())
-                .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
+            .addMultipartParameter("id", gallId)
+            .addMultipartParameter("no", articleId.toString())
+            .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
 
         if (session.user is LoginUser) {
             option.addMultipartParameter("confirm_id", session.detail!!.userId)
         }
 
         var json = KotlinInside.getInstance().httpInterface.upload(
-                ApiUrl.Article.UPVOTE,
-                option
+            ApiUrl.Article.UPVOTE,
+            option
         )!!
 
         if (json.isList)
             json = json.index(0)
 
         return VoteResult(
-                result = json.get("result").asBoolean(),
-                cause = json.get("cause").safeText(),
-                member = json.get("member").asNullableInteger()
+            result = json.get("result").asBoolean(),
+            cause = json.get("cause").safeText(),
+            member = json.get("member").asNullableInteger()
         )
     }
 
@@ -55,23 +55,23 @@ class ArticleVote(
     @Throws(HttpException::class)
     fun downvote(): VoteResult {
         val option = Request.getDefaultOption()
-                .addMultipartParameter("id", gallId)
-                .addMultipartParameter("no", articleId.toString())
-                .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
+            .addMultipartParameter("id", gallId)
+            .addMultipartParameter("no", articleId.toString())
+            .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
 
         if (session.user is LoginUser) {
             option.addMultipartParameter("confirm_id", session.detail!!.userId)
         }
 
         val json = KotlinInside.getInstance().httpInterface.upload(
-                ApiUrl.Article.DOWNVOTE,
-                option
+            ApiUrl.Article.DOWNVOTE,
+            option
         )!!.index(0)
 
         return VoteResult(
-                result = json.get("result").asBoolean(),
-                cause = json.get("cause").safeText(),
-                member = null
+            result = json.get("result").asBoolean(),
+            cause = json.get("cause").safeText(),
+            member = null
         )
     }
 }

@@ -7,20 +7,20 @@ import be.zvz.kotlininside.utils.StringUtil
 import be.zvz.kotlininside.value.ApiUrl
 
 class DCConDetail(
-        private val dcCon: DCCon
+    private val dcCon: DCCon
 ) {
     data class DetailResult(
-            val info: List<DCConInfo> = listOf(),
-            val detail: List<DCCon> = listOf()
+        val info: List<DCConInfo> = listOf(),
+        val detail: List<DCCon> = listOf()
     )
 
     data class DCConInfo(
-            val packageIndex: Int,
-            val mainImg: String,
-            val title: String,
-            val description: String,
-            val mandu: Int,
-            val getState: Boolean
+        val packageIndex: Int,
+        val mainImg: String,
+        val title: String,
+        val description: String,
+        val mandu: Int,
+        val getState: Boolean
     )
 
     /**
@@ -43,29 +43,29 @@ class DCConDetail(
                 DetailResult()
             }
             else -> DetailResult(
-                    info = mutableListOf<DCConInfo>().apply {
-                        json.get("info").values().forEach {
-                            add(
-                                    DCConInfo(
-                                            packageIndex = it.get("package_idx").asInteger(),
-                                            mainImg = it.get("main_img").safeText(),
-                                            title = it.get("title").safeText(),
-                                            description = it.get("description").safeText(),
-                                            mandu = it.get("mandu").asInteger(),
-                                            getState = StringUtil.ynToBoolean(it.get("get_state").safeText())
-                                    )
+                info = mutableListOf<DCConInfo>().apply {
+                    json.get("info").values().forEach {
+                        add(
+                            DCConInfo(
+                                packageIndex = it.get("package_idx").asInteger(),
+                                mainImg = it.get("main_img").safeText(),
+                                title = it.get("title").safeText(),
+                                description = it.get("description").safeText(),
+                                mandu = it.get("mandu").asInteger(),
+                                getState = StringUtil.ynToBoolean(it.get("get_state").safeText())
                             )
-                        }
-                    },
-                    detail = mutableListOf<DCCon>().apply {
-                        json.get("detail").values().forEach {
-                            add(
-                                    DCCon(
-                                            imgLink = it.get("img").safeText()
-                                    )
-                            )
-                        }
+                        )
                     }
+                },
+                detail = mutableListOf<DCCon>().apply {
+                    json.get("detail").values().forEach {
+                        add(
+                            DCCon(
+                                imgLink = it.get("img").safeText()
+                            )
+                        )
+                    }
+                }
             )
         }
 

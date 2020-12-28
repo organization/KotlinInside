@@ -10,16 +10,16 @@ class MainPage {
     private lateinit var json: JsonBrowser
 
     data class Article(
-            val gallId: String,
-            val articleId: Int,
-            val gallName: String? = null,
-            val title: String,
-            val thumbnail: String
+        val gallId: String,
+        val articleId: Int,
+        val gallName: String? = null,
+        val title: String,
+        val thumbnail: String
     )
 
     data class NewGallery(
-            val id: String,
-            val title: String
+        val id: String,
+        val title: String
     )
 
     /**
@@ -28,7 +28,8 @@ class MainPage {
      */
     @Throws(HttpException::class)
     fun request() {
-        json = KotlinInside.getInstance().httpInterface.get(ApiUrl.MainInfo.APP_MAIN, Request.getDefaultOption())!!.index(0)
+        json = KotlinInside.getInstance().httpInterface.get(ApiUrl.MainInfo.APP_MAIN, Request.getDefaultOption())!!
+            .index(0)
     }
 
     /**
@@ -43,12 +44,12 @@ class MainPage {
         return mutableListOf<Article>().apply {
             json.get("hit").values().forEach {
                 add(
-                        Article(
-                                gallId = it.get("id").safeText(),
-                                articleId = it.get("no").`as`(Int::class.java),
-                                title = it.get("title").safeText(),
-                                thumbnail = it.get("thumbnail").safeText()
-                        )
+                    Article(
+                        gallId = it.get("id").safeText(),
+                        articleId = it.get("no").`as`(Int::class.java),
+                        title = it.get("title").safeText(),
+                        thumbnail = it.get("thumbnail").safeText()
+                    )
                 )
             }
         }
@@ -66,13 +67,13 @@ class MainPage {
         return mutableListOf<Article>().apply {
             json.get("best").values().forEach {
                 add(
-                        Article(
-                                gallId = it.get("id").safeText(),
-                                articleId = it.get("no").asInteger(),
-                                gallName = it.get("gall_name").text(),
-                                title = it.get("title").safeText(),
-                                thumbnail = it.get("thumbnail").safeText()
-                        )
+                    Article(
+                        gallId = it.get("id").safeText(),
+                        articleId = it.get("no").asInteger(),
+                        gallName = it.get("gall_name").text(),
+                        title = it.get("title").safeText(),
+                        thumbnail = it.get("thumbnail").safeText()
+                    )
                 )
             }
         }
@@ -90,13 +91,13 @@ class MainPage {
         return mutableListOf<Article>().apply {
             json.get("issuezoom").values().forEach {
                 add(
-                        Article(
-                                gallId = it.get("id").safeText(),
-                                articleId = it.get("no").asInteger(),
-                                gallName = it.get("gall_name").text(),
-                                title = it.get("title").safeText(),
-                                thumbnail = it.get("thumbnail").safeText()
-                        )
+                    Article(
+                        gallId = it.get("id").safeText(),
+                        articleId = it.get("no").asInteger(),
+                        gallName = it.get("gall_name").text(),
+                        title = it.get("title").safeText(),
+                        thumbnail = it.get("thumbnail").safeText()
+                    )
                 )
             }
         }
@@ -114,10 +115,10 @@ class MainPage {
         return mutableListOf<NewGallery>().apply {
             json.get("new_gallery").values().forEach {
                 add(
-                        NewGallery(
-                                id = it.get("id").safeText(),
-                                title = it.get("title").safeText()
-                        )
+                    NewGallery(
+                        id = it.get("id").safeText(),
+                        title = it.get("title").safeText()
+                    )
                 )
             }
         }
