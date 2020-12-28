@@ -8,7 +8,8 @@ title: component28 -
 # component28  
 [jvm]  
 Content  
-operator fun [component28](component28.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
+operator fun [component28](component28.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
+?  
 
 
 
