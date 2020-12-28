@@ -58,6 +58,19 @@ public final class ApiUrl {
         public static final String APP_CHECK = MAIN_API + "json0/app_check_A_rina_beta.php";
     }
 
+    public static final class User {
+        public static final String MY_GALL = APP_API + "mygall.php";
+        public static final String MY_GALL_MODIFY = APP_API + "mygall_modify.php";
+        public static final String MY_MANAGE_GALL_CHECK = APP_API + "mymanageGallChk";
+        public static final String MY_MINI_JOIN_CHECK = APP_API + "myminijoinGallChk";
+    }
+
+    public static final class MiniGallery {
+        public static final String JOIN = APP_API + "memberjoin";
+        public static final String JOIN_OK = APP_API + "memberjoin_ok";
+        public static final String QUIT = APP_API + "memberout_ok";
+    }
+
     public static final class MainInfo {
         public static final String APP_MAIN = MAIN_API + "json3/main_content.php";
         public static final String GALLERY_RANKING = MAIN_API + "json3/ranking_gallery.php";

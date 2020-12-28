@@ -70,17 +70,25 @@ class ArticleList @JvmOverloads constructor(
     private lateinit var json: JsonBrowser
 
     data class GallInfo(
-            val title: String,
-            val category: Int,
-            val fileCount: Int,
-            val fileSize: Int,
-            val captcha: Boolean?,
-            val codeCount: Int?,
-            val isMinor: Boolean,
-            val isManager: Boolean,
-            val notifyRecent: Int?,
-            val relationGall: Map<String, String>,
-            val headText: List<HeadText>
+        val title: String,
+        val category: Int,
+        val fileCount: Int,
+        val fileSize: Int,
+        val noWrite: Boolean,
+        val captcha: Boolean?,
+        val codeCount: Int?,
+        val isMinor: Boolean,
+        val isMini: Boolean,
+        val isManager: Boolean,
+        val membership: Boolean?,
+        val profileImage: String?,
+        val totalMember: Int?,
+        val memberJoin: Boolean?,
+        val useAutoDelete: Int?,
+        val useListFix: Boolean?,
+        val notifyRecent: Int?,
+        val relationGall: Map<String, String>,
+        val headText: List<HeadText>
     )
 
     data class GallList(
@@ -145,24 +153,34 @@ class ArticleList @JvmOverloads constructor(
         val gallInfo = json.index(0).get("gall_info").index(0)
 
         return GallInfo(
-                title = gallInfo.get("gall_title").safeText(),
-                category = gallInfo.get("category").asInteger(),
-                fileCount = gallInfo.get("file_cnt").asInteger(),
-                fileSize = gallInfo.get("file_size").asInteger(),
-                captcha = gallInfo.get("captcha").asNullableBoolean(),
-                codeCount = gallInfo.get("code_count").asNullableInteger(),
-                isMinor = gallInfo.get("is_minor").asBoolean(),
-                isManager = gallInfo.get("managerskill").asBoolean(),
-                notifyRecent = gallInfo.get("notify_recent").asNullableInteger(),
-                relationGall = gallInfo.get("relation_gall").run {
-                    when {
-                        !isNull -> toMap<String, String>()
-                        else -> mutableMapOf<String, String>()
-                    }
-                },
-                headText = mutableListOf<HeadText>().apply {
-                    gallInfo.get("head_text").values().forEach {
-                        add(
+            title = gallInfo.get("gall_title").safeText(),
+            category = gallInfo.get("category").asInteger(),
+            fileCount = gallInfo.get("file_cnt").asInteger(),
+            fileSize = gallInfo.get("file_size").asInteger(),
+            noWrite = gallInfo.get("no_write").asBoolean(),
+            captcha = gallInfo.get("captcha").asNullableBoolean(),
+            codeCount = gallInfo.get("code_count").asNullableInteger(),
+            isMinor = gallInfo.get("is_minor").asBoolean(),
+            isMini = gallInfo.get("is_mini").asBoolean(),
+            isManager = gallInfo.get("managerskill").asBoolean(),
+            membership = gallInfo.get("membership").asNullableBoolean(),
+            memberJoin = gallInfo.get("member_join").asNullableBoolean(),
+            profileImage = gallInfo.get("profile_img").text(),
+            totalMember = gallInfo.get("total_member").asNullableInteger(),
+            useAutoDelete = gallInfo.get("use_auto_delete").asNullableInteger(),
+            useListFix = gallInfo.get("use_list_fix").text()?.let {
+                StringUtil.ynToBoolean(it)
+            },
+            notifyRecent = gallInfo.get("notify_recent").asNullableInteger(),
+            relationGall = gallInfo.get("relation_gall").run {
+                when {
+                    !isNull -> toMap()
+                    else -> mutableMapOf()
+                }
+            },
+            headText = mutableListOf<HeadText>().apply {
+                gallInfo.get("head_text").values().forEach {
+                    add(
                                 HeadText(
                                         identifier = it.get("no").asInteger(),
                                         name = it.get("name").safeText(),

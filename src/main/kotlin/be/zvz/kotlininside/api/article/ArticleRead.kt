@@ -18,34 +18,39 @@ class ArticleRead @JvmOverloads constructor(
     private lateinit var json: JsonBrowser
 
     data class ViewInfo(
-            val gallTitle: String,
-            val category: Int,
-            val subject: String,
-            val identifier: Int,
-            val name: String,
-            val level: Int,
-            val memberIcon: Int,
-            val totalComment: Int,
-            val ip: String,
-            val imageCheck: Boolean,
-            val recommendCheck: Boolean,
-            val winnertaCheck: Boolean,
-            val voiceCheck: Boolean,
-            val views: Int,
-            val writeType: String,
-            val userId: String,
-            val previousLink: Int,
-            val previousSubject: String,
-            val headTitle: String,
-            val nextLink: Int,
-            val nextSubject: String,
-            val bestCheck: Boolean,
-            val isNotice: Boolean,
-            val gallerCon: String?,
-            val dateTime: String,
-            val isMinor: Boolean,
-            val headText: List<HeadText>,
-            val commentDeleteScope: Boolean // TODO: commentDel_scope 용도 파악 (유동닉 글에서만 확인 가능)
+        val gallTitle: String,
+        val category: Int,
+        val subject: String,
+        val identifier: Int,
+        val name: String,
+        val level: Int,
+        val memberIcon: Int,
+        val totalComment: Int,
+        val ip: String,
+        val imageCheck: Boolean,
+        val recommendCheck: Boolean,
+        val winnertaCheck: Boolean,
+        val voiceCheck: Boolean,
+        val views: Int,
+        val writeType: String,
+        val userId: String,
+        val previousLink: Int,
+        val previousSubject: String,
+        val headTitle: String,
+        val nextLink: Int,
+        val nextSubject: String,
+        val bestCheck: Boolean,
+        val isNotice: Boolean,
+        val gallerCon: String?,
+        val dateTime: String,
+        val isMinor: Boolean,
+        val isMini: Boolean,
+        val useAutoDelete: Int?,
+        val useListFix: Boolean?,
+        val membership: Boolean?,
+        val memberGrant: Int?,
+        val headText: List<HeadText>,
+        val commentDeleteScope: Boolean // TODO: commentDel_scope 용도 파악 (유동닉 글에서만 확인 가능)
     )
 
     data class ViewMain(
@@ -101,26 +106,33 @@ class ArticleRead @JvmOverloads constructor(
                 views = viewInfo.get("hit").asInteger(),
                 writeType = viewInfo.get("write_type").safeText(),
                 userId = viewInfo.get("user_id").safeText(),
-                previousLink = viewInfo.get("prev_link").asInteger(),
-                previousSubject = viewInfo.get("prev_subject").safeText(),
-                headTitle = viewInfo.get("headtitle").safeText(),
-                nextLink = viewInfo.get("next_link").asInteger(),
-                nextSubject = viewInfo.get("next_subject").safeText(),
-                bestCheck = StringUtil.ynToBoolean(viewInfo.get("best_chk").safeText()),
-                isNotice = StringUtil.ynToBoolean(viewInfo.get("isNotice").safeText()),
-                gallerCon = viewInfo.get("gallercon").text(),
-                dateTime = viewInfo.get("date_time").safeText(),
-                isMinor = viewInfo.get("is_minor").asBoolean(),
-                headText = mutableListOf<HeadText>().apply {
-                    viewInfo.get("head_text").values().forEach {
-                        add(
-                                HeadText(
-                                        identifier = it.get("no").asInteger(),
-                                        name = it.get("name").safeText(),
-                                        level = it.get("level").asInteger(),
-                                        selected = it.get("selected").asBoolean()
-                                )
+            previousLink = viewInfo.get("prev_link").asInteger(),
+            previousSubject = viewInfo.get("prev_subject").safeText(),
+            headTitle = viewInfo.get("headtitle").safeText(),
+            nextLink = viewInfo.get("next_link").asInteger(),
+            nextSubject = viewInfo.get("next_subject").safeText(),
+            bestCheck = StringUtil.ynToBoolean(viewInfo.get("best_chk").safeText()),
+            isNotice = StringUtil.ynToBoolean(viewInfo.get("isNotice").safeText()),
+            gallerCon = viewInfo.get("gallercon").text(),
+            dateTime = viewInfo.get("date_time").safeText(),
+            isMinor = viewInfo.get("is_minor").asBoolean(),
+            isMini = viewInfo.get("is_mini").asBoolean(),
+            useAutoDelete = viewInfo.get("use_auto_delete").asNullableInteger(),
+            useListFix = viewInfo.get("use_list_fix").text()?.let {
+                StringUtil.ynToBoolean(it)
+            },
+            membership = viewInfo.get("membership").asNullableBoolean(),
+            memberGrant = viewInfo.get("member_grant").asNullableInteger(),
+            headText = mutableListOf<HeadText>().apply {
+                viewInfo.get("head_text").values().forEach {
+                    add(
+                        HeadText(
+                            identifier = it.get("no").asInteger(),
+                            name = it.get("name").safeText(),
+                            level = it.get("level").asInteger(),
+                            selected = it.get("selected").asBoolean()
                         )
+                    )
                     }
                 },
                 commentDeleteScope = viewInfo.get("commentDel_scope").asBoolean()

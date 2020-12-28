@@ -174,17 +174,30 @@ class Auth {
     fun login(user: User): Session {
         if (user !is Anonymous) {
             val option = HttpInterface.Option()
-                    .addBodyParameter("user_id", user.id)
-                    .addBodyParameter("user_pw", user.password)
+                .addBodyParameter("user_id", user.id)
+                .addBodyParameter("user_pw", user.password)
+                .addBodyParameter("mode", "login_normal")
+                .addBodyParameter("client_token", fcmToken)
 
             val json = KotlinInside.getInstance().httpInterface.post(ApiUrl.Auth.LOGIN, option)!!.index(0)
 
             val detail = SessionDetail(
-                    userId = json.get("user_id").safeText(),
-                    userNo = json.get("user_no").safeText(),
-                    name = json.get("name").safeText(),
-                    stype = json.get("stype").safeText()
+                result = json.get("result").asBoolean(),
+                userId = json.get("user_id").safeText(),
+                userNo = json.get("user_no").safeText(),
+                name = json.get("name").safeText(),
+                stype = json.get("stype").safeText(),
+                isAdult = json.get("is_adult").asInteger(),
+                isDormancy = json.get("is_dormancy").asInteger(),
+                isOtp = json.get("is_otp").asInteger(),
+                pwCampaign = json.get("pw_campaign").asInteger(),
+                mailSend = json.get("mail_send").safeText(),
+                cause = json.get("cause").text(),
             )
+
+            if (!detail.result) {
+                throw HttpException(401, detail.cause)
+            }
 
             val loginUser = when (detail.stype) {
                 UserType.NAMED.stype -> {
@@ -194,7 +207,7 @@ class Auth {
                     DuplicateNamed(user.id, user.password)
                 }
                 else -> {
-                    throw HttpException(401, "계정에 로그인 할 수 없습니다") // 계정에 로그인 할 수 없는 경우 post 부분에서 HttpException 이 발생하여 이 코드는 작동하지 않음.
+                    throw HttpException(401, "계정의 타입을 알 수 없습니다.")
                 }
             }
 
