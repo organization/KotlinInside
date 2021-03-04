@@ -56,7 +56,7 @@ dependencies {
     // Use the Kotlin JDK standard library.
     implementation group: 'org.jetbrains.kotlin', name: 'kotlin-stdlib-jdk7'
     // Use the Kotlin coroutines library.
-    implementation group: 'org.jetbrains.kotlinx', name: 'kotlinx-coroutines-core', version: '1.4.2-native-mt'
+    implementation group: 'org.jetbrains.kotlinx', name: 'kotlinx-coroutines-core', version: '1.4.3-native-mt'
     // Use the Kotlin test library.
     testImplementation group: 'org.jetbrains.kotlin', name: 'kotlin-test'
     // Use the Kotlin JUnit integration.
