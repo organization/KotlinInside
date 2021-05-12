@@ -4,6 +4,7 @@ plugins {
     id 'org.jetbrains.dokka' version '1.4.32'
     id 'maven-publish'
     id 'io.github.gradle-nexus.publish-plugin' version '1.1.0'
+    id 'signing'
 }
 
 def libName = 'KotlinInside'
@@ -87,6 +88,11 @@ task sourcesJar(type: Jar, dependsOn: classes) {
     from sourceSets.main.allSource
 }
 
+signing {
+    useGpgCmd()
+    sign publishing.publications
+}
+
 artifacts {
     archives javadocJar
     archives sourcesJar
@@ -101,18 +107,23 @@ project.publishing {
             artifactId = libName
             pom {
                 name = libName
-                description 'Unofficial DCInside API written in Kotlin'
+                description = 'Unofficial DCInside API written in Kotlin'
                 url = 'https://github.com/organization/KotlinInside'
                 inceptionYear = '2019'
                 packaging = 'jar'
                 groupId = 'be.zvz'
                 artifactId = libName
-                version libVersion
+                version = libVersion
                 licenses {
                     license {
                         name = 'GNU General Public License 3.0'
                         url = 'https://www.gnu.org/licenses/gpl-3.0.html'
                         distribution = 'repo'
+                    }
+                }
+                developers {
+                    developer {
+                        id = 'JellyBrick'
                     }
                 }
                 scm {
