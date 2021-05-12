@@ -1,27 +1,14 @@
-buildscript {
-    repositories {
-        maven {
-            url 'https://plugins.gradle.org/m2/'
-        }
-        mavenCentral()
-    }
-    dependencies {
-        classpath group: 'org.jetbrains.kotlin', name: 'kotlin-gradle-plugin', version: '1.5.0'
-        classpath group: 'com.jfrog.bintray.gradle', name: 'gradle-bintray-plugin', version: '1.8.5'
-        classpath group: 'com.github.dcendents', name: 'android-maven-gradle-plugin', version: '2.1'
-        classpath group: 'org.jetbrains.dokka', name: 'dokka-gradle-plugin', version: '1.4.32'
-    }
+plugins {
+    id 'java'
+    id 'org.jetbrains.kotlin.jvm' version '1.5.0'
+    id 'org.jetbrains.dokka' version '1.4.32'
+    id 'maven-publish'
+    id 'io.github.gradle-nexus.publish-plugin' version '1.1.0'
 }
-
-apply plugin: 'java'
-apply plugin: 'org.jetbrains.kotlin.jvm'
-apply plugin: 'com.jfrog.bintray'
-apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: 'org.jetbrains.dokka'
 
 def libName = 'KotlinInside'
 def libDevVersion = ''
-def libVersion = "1.9.0$libDevVersion"
+def libVersion = "1.9.1$libDevVersion"
 def libDesc = 'Unofficial DCInside API written in Kotlin'
 
 group = 'be.zvz'
@@ -89,72 +76,78 @@ dokkaJekyll {
     }
 }
 
-bintray {
-    def localProps = new Properties()
-    def propFile = project.file('local.properties')
-    if (propFile.exists()) {
-        localProps.load(propFile.newDataInputStream())
+project.publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from(components.java)
 
-        user = localProps.getProperty('bintrayUser')
-        key = localProps.getProperty('bintrayApiKey')
-
-        configurations = ['archives']
-
-        publish = true
-
-        pkg {
-            repo = group
-            name = libName
-            desc = libDesc
-            licenses = ['GPL-3.0']
-
-            vcsUrl = 'https://github.com/organization/KotlinInside'
-            websiteUrl = 'https://organization.github.io/KotlinInside/'
-            issueTrackerUrl = 'https://github.com/organization/KotlinInside/issues'
-
-            labels = ['dcinside', 'dc-api']
-            publicDownloadNumbers = true
-
-            githubRepo = 'organization/KotlinInside'
-
-            version {
-                name = libVersion
-                desc = 'Version ' + libVersion
-                released  = new Date()
-                vcsTag = libVersion
-            }
-        }
-    }
-}
-
-install {
-    repositories.mavenInstaller {
-        pom.project {
-            name libName
-            description 'Unofficial DCInside API written in Kotlin'
-            url 'https://github.com/organization/KotlinInside'
-            inceptionYear '2019'
-            packaging 'jar'
-            groupId 'be.zvz'
-            artifactId libName
-            version libVersion
-            licenses {
-                license {
-                    name 'GNU General Public License 3.0'
-                    url 'https://www.gnu.org/licenses/gpl-3.0.html'
-                    distribution 'repo'
+            artifactId = libName
+            pom {
+                name = libName
+                description 'Unofficial DCInside API written in Kotlin'
+                url = 'https://github.com/organization/KotlinInside'
+                inceptionYear = '2019'
+                packaging = 'jar'
+                groupId = 'be.zvz'
+                artifactId = libName
+                version libVersion
+                licenses {
+                    license {
+                        name = 'GNU General Public License 3.0'
+                        url = 'https://www.gnu.org/licenses/gpl-3.0.html'
+                        distribution = 'repo'
+                    }
+                }
+                scm {
+                    connection = 'scm:git:git://github.com/organization/KotlinInside.git'
+                    developerConnection = 'scm:git:ssh://git@github.com:organization/KotlinInside.git'
+                    url = 'https://github.com/organization/KotlinInside.git'
                 }
             }
         }
     }
 }
 
-// JCenter publish
-task sourcesJar(type: Jar) {
-    from sourceSets.main.java.srcDirs
-    from sourceSets.main.kotlin.srcDirs
-    archiveClassifier = 'sources'
+project.nexusPublishing {
+    packageGroup = group
+    repositories {
+        sonatype {
+            nexusUrl.set(uri("https://s01.oss.sonatype.org/service/local/"))
+            snapshotRepositoryUrl.set(uri("https://s01.oss.sonatype.org/content/repositories/snapshots/"))
+
+            def localProps = new Properties()
+            File propFile = project.file('local.properties')
+            if (propFile.exists()) {
+                localProps.load(propFile.newDataInputStream())
+
+                username = localProps.getProperty('centralUser')
+                password = localProps.getProperty('centralPassword')
+            }
+        }
+    }
 }
+
+// Maven-Central publish
+task javadocJar(type: Jar, dependsOn: dokkaJavadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+task sourcesJar(type: Jar, dependsOn: classes) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
 artifacts {
+    archives javadocJar
     archives sourcesJar
+}
+
+configurations {
+    archives {
+        outgoing {
+            artifact javadocJar
+            artifact sourcesJar
+        }
+    }
 }
