@@ -76,11 +76,28 @@ dokkaJekyll {
     }
 }
 
+// Maven-Central publish
+task javadocJar(type: Jar, dependsOn: dokkaJavadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+task sourcesJar(type: Jar, dependsOn: classes) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+artifacts {
+    archives javadocJar
+    archives sourcesJar
+}
+
 project.publishing {
     publications {
         mavenJava(MavenPublication) {
             from(components.java)
-
+            artifact sourcesJar
+            artifact javadocJar
             artifactId = libName
             pom {
                 name = libName
@@ -123,31 +140,6 @@ project.nexusPublishing {
                 username = localProps.getProperty('centralUser')
                 password = localProps.getProperty('centralPassword')
             }
-        }
-    }
-}
-
-// Maven-Central publish
-task javadocJar(type: Jar, dependsOn: dokkaJavadoc) {
-    classifier = 'javadoc'
-    from javadoc.destinationDir
-}
-
-task sourcesJar(type: Jar, dependsOn: classes) {
-    classifier = 'sources'
-    from sourceSets.main.allSource
-}
-
-artifacts {
-    archives javadocJar
-    archives sourcesJar
-}
-
-configurations {
-    archives {
-        outgoing {
-            artifact javadocJar
-            artifact sourcesJar
         }
     }
 }
