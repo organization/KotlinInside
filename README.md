@@ -1,4 +1,5 @@
-# *KotlinInside* [![Build Status](https://travis-ci.com/organization/KotlinInside.svg?branch=master)](https://travis-ci.com/organization/KotlinInside) [![Build Status](https://github.com/organization/KotlinInside/workflows/Java%20CI/badge.svg)](https://github.com/organization/KotlinInside/actions) [ ![Download](https://api.bintray.com/packages/jellybrick/be.zvz/KotlinInside/images/download.svg) ](https://bintray.com/jellybrick/be.zvz/KotlinInside/_latestVersion)
+# *KotlinInside* [![Build Status](https://github.com/organization/KotlinInside/workflows/Java%20CI/badge.svg)](https://github.com/organization/KotlinInside/actions) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/be.zvz/KotlinInside/badge.svg)](https://maven-badges.herokuapp.com/maven-central/be.zvz/KotlinInside)
+
 
 **Kotlin**으로 작성한 **디시인사이드 비공식 API**입니다.
 
@@ -7,7 +8,7 @@
 ### Gradle
 
 ```gradle
-compile 'be.zvz:KotlinInside:1.9.0'
+compile 'be.zvz:KotlinInside:1.9.1'
 ```
 
 ### Maven
@@ -16,15 +17,14 @@ compile 'be.zvz:KotlinInside:1.9.0'
 <dependency>
   <groupId>be.zvz</groupId>
   <artifactId>KotlinInside</artifactId>
-  <version>1.9.0</version>
-  <type>pom</type>
+  <version>1.9.1</version>
 </dependency>
 ```
 
 ### 라이브러리 사용
 
 - **Java 1.7 (Java 7)** 이상 필요
-- **Kotlin 1.3+** 권장
+- **Kotlin 1.4+** 권장
 - **Android에서 사용 가능**
 - **Java에서도 사용 가능 (타 JVM 계열 언어에서도 사용 가능)**
 
