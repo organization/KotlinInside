@@ -21,14 +21,14 @@ compile 'be.zvz:KotlinInside:1.9.1'
 </dependency>
 ```
 
-### 라이브러리 사용
+### 라이브러리 최소 요구사항
 
 - **Java 1.7 (Java 7)** 이상 필요
-- **Kotlin 1.4+** 권장
+- **Kotlin 1.5+** 권장
 - **Android에서 사용 가능**
 - **Java에서도 사용 가능 (타 JVM 계열 언어에서도 사용 가능)**
 
-### 라이브러리 컴파일
+### 라이브러리 컴파일 최소 요구사항
 
 - **Java 1.8 (Java 8)** 이상 필요
 
@@ -36,9 +36,20 @@ compile 'be.zvz:KotlinInside:1.9.1'
 
 ### Init
 
+유동 닉네임
+
 ```kotlin
 KotlinInside.createInstance(
-        Anonymous("ㅇㅇ", "1234"),
+        Anonymous("이름", "비밀번호"),
+        DefaultHttpClient(true, true)
+)
+```
+
+고정 닉네임
+
+```kotlin
+KotlinInside.createInstance(
+        LoginUser("아이디", "비밀번호"),
         DefaultHttpClient(true, true)
 )
 ```
@@ -54,7 +65,7 @@ val gallInfo = articleList.getGallInfo() // 갤러리 정보
 
 println(gallInfo)
 gallList.forEach {
-        println(it)
+    println(it)
 }
 ```
 
