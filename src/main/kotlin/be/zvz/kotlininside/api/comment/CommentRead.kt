@@ -86,6 +86,5 @@ class CommentRead(
                 }
             }
         )
-
     }
 }

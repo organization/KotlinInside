@@ -18,7 +18,6 @@ import org.apache.commons.codec.digest.DigestUtils
 import org.apache.commons.lang3.time.FastDateFormat
 import java.util.*
 
-
 class Auth {
     private val seoulTimeZone = TimeZone.getTimeZone("Asia/Seoul")
     private val refreshDateFormat = FastDateFormat.getInstance("yyyyMMddHH", seoulTimeZone)
@@ -94,11 +93,12 @@ class Auth {
 
         return FastDateFormat.getInstance(
             "E${dayOfYear - 1}d${getDayOfWeekMonday(dayOfWeek)}${dayOfWeek - 1}${
-                String.format(
-                    "%02d",
-                    weekOfYear
-                )
-            }MddMM", seoulTimeZone, Locale.US
+            String.format(
+                "%02d",
+                weekOfYear
+            )
+            }MddMM",
+            seoulTimeZone, Locale.US
         ).format(date)
     }
 

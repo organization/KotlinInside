@@ -58,6 +58,4 @@ class Recommend(
             state = json.get("state").text()
         )
     }
-
-
 }

@@ -99,7 +99,6 @@ class ArticleWrite internal constructor(
             option
         )!!.index(0)
 
-
         return WriteResult(
             result = json.get("result").asBoolean(),
             articleId = json.get("cause").asNullableInteger(),

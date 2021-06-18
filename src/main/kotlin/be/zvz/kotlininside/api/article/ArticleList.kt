@@ -120,24 +120,24 @@ class ArticleList @JvmOverloads constructor(
     @Throws(HttpException::class)
     fun request() {
         val url = "${ApiUrl.Article.LIST}?id=$gallId&page=$page&app_id=${KotlinInside.getInstance().auth.getAppId()}" +
-                StringBuilder().apply {
-                    if (searchKeyword.isNotEmpty()) {
-                        append("&s_type=")
-                        append(searchType.type)
-                        append("&serVal=").append(URLEncoder.encode(searchKeyword, "UTF-8").replace("+", "%20"))
+            StringBuilder().apply {
+                if (searchKeyword.isNotEmpty()) {
+                    append("&s_type=")
+                    append(searchType.type)
+                    append("&serVal=").append(URLEncoder.encode(searchKeyword, "UTF-8").replace("+", "%20"))
+                }
+                if (recommend)
+                    append("&recommend=1")
+                if (notice)
+                    append("&notice=1")
+                if (headId > 0)
+                    append("&headid=").append(headId)
+                session?.let {
+                    if (it.user !is Anonymous) {
+                        append("&confirm_id=").append(it.detail!!.userId)
                     }
-                    if (recommend)
-                        append("&recommend=1")
-                    if (notice)
-                        append("&notice=1")
-                    if (headId > 0)
-                        append("&headid=").append(headId)
-                    session?.let {
-                        if (it.user !is Anonymous) {
-                            append("&confirm_id=").append(it.detail!!.userId)
-                        }
-                    }
-                }.toString()
+                }
+            }.toString()
         json = KotlinInside.getInstance().httpInterface.get(Request.redirectUrl(url), Request.getDefaultOption())!!
     }
 

@@ -59,6 +59,4 @@ class Notice(
             state = json.get("state").safeText()
         )
     }
-
-
 }

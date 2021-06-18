@@ -69,13 +69,13 @@ class ArticleRead @JvmOverloads constructor(
     fun request() {
         val url =
             "${ApiUrl.Article.READ}?id=$gallId&no=$articleId&app_id=${KotlinInside.getInstance().auth.getAppId()}" +
-                    StringBuilder().apply {
-                        session?.let {
-                            if (it.user !is Anonymous) {
-                                append("&confirm_id=").append(it.detail!!.userId)
-                            }
+                StringBuilder().apply {
+                    session?.let {
+                        if (it.user !is Anonymous) {
+                            append("&confirm_id=").append(it.detail!!.userId)
                         }
-                    }.toString()
+                    }
+                }.toString()
 
         json = KotlinInside.getInstance().httpInterface.get(Request.redirectUrl(url), Request.getDefaultOption())!!
     }

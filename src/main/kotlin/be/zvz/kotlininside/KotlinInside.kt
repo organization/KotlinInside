@@ -26,18 +26,21 @@ class KotlinInside private constructor(
         if (sessionAutoRefresh) {
             val timer = Timer()
 
-            timer.schedule(object : TimerTask() {
-                override fun run() {
-                    if (user is LoginUser) {
-                        synchronized(instance) {
-                            instance.hashedAppKey = instance.auth.generateHashedAppKey()
-                            instance.app =
-                                App(instance.hashedAppKey, instance.auth.fetchAppId(getInstance().hashedAppKey))
-                            instance.session = instance.auth.login(user)
+            timer.schedule(
+                object : TimerTask() {
+                    override fun run() {
+                        if (user is LoginUser) {
+                            synchronized(instance) {
+                                instance.hashedAppKey = instance.auth.generateHashedAppKey()
+                                instance.app =
+                                    App(instance.hashedAppKey, instance.auth.fetchAppId(getInstance().hashedAppKey))
+                                instance.session = instance.auth.login(user)
+                            }
                         }
                     }
-                }
-            }, 43200 * 1000, 43200 * 1000)
+                },
+                43200 * 1000, 43200 * 1000
+            )
         }
     }
 
@@ -69,5 +72,4 @@ class KotlinInside private constructor(
             return instance
         }
     }
-
 }

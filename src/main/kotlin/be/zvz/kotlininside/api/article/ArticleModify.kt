@@ -14,7 +14,6 @@ import org.apache.commons.text.StringEscapeUtils
 import java.io.BufferedInputStream
 import java.net.URL
 
-
 class ArticleModify(
     private val gallId: String,
     private val articleId: Int,

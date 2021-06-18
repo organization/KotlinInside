@@ -11,7 +11,8 @@ class StringUtil {
     companion object {
         private val OPTIONS = MutableDataSet()
             .set(
-                Parser.EXTENSIONS, listOf(
+                Parser.EXTENSIONS,
+                listOf(
                     TablesExtension.create(),
                     StrikethroughExtension.create(),
                     TaskListExtension.create()

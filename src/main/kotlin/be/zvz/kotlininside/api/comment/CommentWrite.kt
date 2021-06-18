@@ -53,7 +53,6 @@ class CommentWrite @JvmOverloads constructor(
 
         val json = KotlinInside.getInstance().httpInterface.upload(ApiUrl.Comment.OK, option)!!.index(0)
 
-
         return WriteResult(
             result = json.get("result").asBoolean(),
             data = json.get("data").asNullableInteger(),
