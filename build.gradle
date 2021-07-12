@@ -12,7 +12,7 @@ plugins {
 
 def libName = 'KotlinInside'
 def libDevVersion = ''
-def libVersion = "1.9.2$libDevVersion"
+def libVersion = "2.0.0$libDevVersion"
 def libDesc = 'Unofficial DCInside API written in Kotlin'
 
 group = 'be.zvz'
@@ -37,6 +37,7 @@ dependencies {
     //Jackson
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.12.3'
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.12.3'
+    implementation group: 'com.fasterxml.jackson.module', name: 'jackson-module-kotlin', version: '2.12.3'
 
     //FlexMark
     implementation group: 'com.vladsch.flexmark', name: 'flexmark', version: '0.62.2'

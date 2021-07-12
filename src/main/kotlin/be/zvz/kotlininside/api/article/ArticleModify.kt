@@ -6,10 +6,17 @@ import be.zvz.kotlininside.api.type.HeadText
 import be.zvz.kotlininside.api.type.content.Content
 import be.zvz.kotlininside.api.type.content.HtmlContent
 import be.zvz.kotlininside.api.type.content.ImageContent
+import be.zvz.kotlininside.deserializer.HeadTextDeserializer
 import be.zvz.kotlininside.http.Request
+import be.zvz.kotlininside.session.LoggedSession
 import be.zvz.kotlininside.session.Session
 import be.zvz.kotlininside.session.user.Anonymous
 import be.zvz.kotlininside.value.ApiUrl
+import be.zvz.kotlininside.value.Const
+import com.fasterxml.jackson.annotation.JsonProperty
+import com.fasterxml.jackson.databind.ObjectMapper
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize
+import com.fasterxml.jackson.module.kotlin.readValue
 import org.apache.commons.text.StringEscapeUtils
 import java.io.BufferedInputStream
 import java.net.URL
@@ -17,7 +24,8 @@ import java.net.URL
 class ArticleModify(
     private val gallId: String,
     private val articleId: Int,
-    private val session: Session
+    private val session: Session,
+    private val mapper: ObjectMapper = Const.DEFAULT_JSON_MAPPER
 ) {
     data class FileData(
         val block: Int,
@@ -26,14 +34,20 @@ class ArticleModify(
 
     data class ModifyResult(
         val result: Boolean,
-        val gallId: String? = null,
+        @JsonProperty("gall_id")
+        val galleryId: String? = null,
+        @JsonProperty("gall_no")
         val articleId: Int = 0,
+        @JsonProperty("file_cnt")
         val fileCount: Int = 0,
         val fileSize: Int = 0,
         val subject: String? = null,
+        @JsonProperty("memo")
         val content: List<Content> = mutableListOf(),
         val file: List<FileData> = mutableListOf(),
+        @JsonDeserialize(using = HeadTextDeserializer::class)
         val headText: List<HeadText> = mutableListOf(),
+        @JsonProperty("headtext")
         val currentHeadText: String? = null,
         val cause: String? = null
     )
@@ -41,10 +55,10 @@ class ArticleModify(
     fun modifyInfo(): ModifyResult {
         val option = Request.getDefaultOption()
 
-        if (session.user is Anonymous) {
-            option.addMultipartParameter("password", session.user.password)
+        if (session is LoggedSession) {
+            option.addMultipartParameter("user_id", session.detail.userId)
         } else {
-            option.addMultipartParameter("user_id", session.detail!!.userId)
+            option.addMultipartParameter("password", session.user.password)
         }
 
         option
@@ -52,10 +66,10 @@ class ArticleModify(
             .addMultipartParameter("no", articleId.toString())
             .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
 
-        val json = KotlinInside.getInstance().httpInterface.upload(
+        return mapper.readValue<List<ModifyResult>>(KotlinInside.getInstance().httpInterface.upload(
             ApiUrl.Article.MODIFY,
             option
-        )!!.index(0)
+        ))[0]
 
         val result = json.get("result").asBoolean()
 
@@ -66,36 +80,7 @@ class ArticleModify(
             fileCount = json.get("file_cnt").asInteger(),
             fileSize = json.get("file_size").asInteger(),
             subject = json.get("subject").text(),
-            content = mutableListOf<Content>().apply {
-                json.get("memo").values().forEach {
-                    it.get("tag_value").let { tagValue ->
-                        when {
-                            tagValue.isNull -> {
-                                it.toMap<String, String>().forEach { (_, value) ->
-                                    add(
-                                        HtmlContent(
-                                            htmlString = StringEscapeUtils.unescapeHtml4(value)
-                                        )
-                                    )
-                                }
-                            }
-                            else -> {
-                                it.toMap<String, String>().forEach { (key, value) ->
-                                    if (key != "tag_value") {
-                                        val inputStream =
-                                            BufferedInputStream(URL(StringEscapeUtils.unescapeHtml4(value)).openStream())
-                                        add(
-                                            ImageContent(
-                                                stream = inputStream
-                                            )
-                                        )
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            },
+            content = ,
             file = mutableListOf<FileData>().apply {
                 json.get("file").values().forEach {
                     var block = 0

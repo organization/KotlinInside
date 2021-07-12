@@ -3,14 +3,18 @@ package be.zvz.kotlininside.api.article
 import be.zvz.kotlininside.KotlinInside
 import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.http.Request
+import be.zvz.kotlininside.session.LoggedSession
 import be.zvz.kotlininside.session.Session
-import be.zvz.kotlininside.session.user.Anonymous
 import be.zvz.kotlininside.value.ApiUrl
+import be.zvz.kotlininside.value.Const
+import com.fasterxml.jackson.databind.ObjectMapper
+import com.fasterxml.jackson.module.kotlin.readValue
 
-class ArticleHitUpvote(
+class ArticleHitUpvote @JvmOverloads constructor(
     private val gallId: String,
     private val articleId: Int,
-    private val session: Session
+    private val session: Session,
+    private val mapper: ObjectMapper = Const.DEFAULT_JSON_MAPPER
 ) {
     data class HitUpvoteResult(
         val result: Boolean,
@@ -28,16 +32,13 @@ class ArticleHitUpvote(
             .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
             .addMultipartParameter("no", articleId.toString())
 
-        if (session.user !is Anonymous) {
+        if (session is LoggedSession) {
             option
-                .addMultipartParameter("confirm_id", session.detail!!.userId)
+                .addMultipartParameter("confirm_id", session.detail.userId)
         }
 
-        val json = KotlinInside.getInstance().httpInterface.upload(ApiUrl.Article.HIT_UPVOTE, option)!!.index(0)
-
-        return HitUpvoteResult(
-            result = json.get("result").asBoolean(),
-            cause = json.get("cause").text()
-        )
+        return mapper.readValue<List<HitUpvoteResult>>(
+            KotlinInside.getInstance().httpInterface.upload(ApiUrl.Article.HIT_UPVOTE, option)
+        )[0]
     }
 }

@@ -1,6 +1,5 @@
 package be.zvz.kotlininside.http;
 
-import be.zvz.kotlininside.json.JsonBrowser;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -10,19 +9,61 @@ import java.util.List;
 import java.util.Map;
 
 public interface HttpInterface {
-    @Nullable JsonBrowser get(@NotNull String url, @Nullable Option option) throws HttpException;
+    /**
+     * @param url target URL
+     * @param option HTTP request option
+     * @return response body, must return an empty string if the response body is empty
+     * @throws HttpException wrapped exception
+     */
+    @NotNull String get(@NotNull String url, @Nullable Option option) throws HttpException;
 
-    @Nullable JsonBrowser post(@NotNull String url, @Nullable Option option) throws HttpException;
+    /**
+     * @param url target URL
+     * @param option HTTP request option
+     * @return response body, must return an empty string if the response body is empty
+     * @throws HttpException wrapped exception
+     */
+    @NotNull String post(@NotNull String url, @Nullable Option option) throws HttpException;
 
-    @Nullable JsonBrowser delete(@NotNull String url, @Nullable Option option) throws HttpException;
+    /**
+     * @param url target URL
+     * @param option HTTP request option
+     * @return response body, must return an empty string if the response body is empty
+     * @throws HttpException wrapped exception
+     */
+    @NotNull String delete(@NotNull String url, @Nullable Option option) throws HttpException;
 
-    @Nullable JsonBrowser head(@NotNull String url, @Nullable Option option) throws HttpException;
+    /**
+     * @param url target URL
+     * @param option HTTP request option
+     * @return response body, must return an empty string if the response body is empty
+     * @throws HttpException wrapped exception
+     */
+    @NotNull String head(@NotNull String url, @Nullable Option option) throws HttpException;
 
-    @Nullable JsonBrowser put(@NotNull String url, @Nullable Option option) throws HttpException;
+    /**
+     * @param url target URL
+     * @param option HTTP request option
+     * @return response body, must return an empty string if the response body is empty
+     * @throws HttpException wrapped exception
+     */
+    @NotNull String put(@NotNull String url, @Nullable Option option) throws HttpException;
 
-    @Nullable JsonBrowser patch(@NotNull String url, @Nullable Option option) throws HttpException;
+    /**
+     * @param url target URL
+     * @param option HTTP request option
+     * @return response body, must return an empty string if the response body is empty
+     * @throws HttpException wrapped exception
+     */
+    @NotNull String patch(@NotNull String url, @Nullable Option option) throws HttpException;
 
-    @Nullable JsonBrowser upload(@NotNull String url, @Nullable Option option) throws HttpException;
+    /**
+     * @param url target URL
+     * @param option HTTP request option
+     * @return response body, must return an empty string if the response body is empty
+     * @throws HttpException wrapped exception
+     */
+    @NotNull String upload(@NotNull String url, @Nullable Option option) throws HttpException;
 
     final class Option {
         @NotNull

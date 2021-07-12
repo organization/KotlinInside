@@ -3,16 +3,22 @@ package be.zvz.kotlininside.api.article
 import be.zvz.kotlininside.KotlinInside
 import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.http.Request
+import be.zvz.kotlininside.session.AnonymousSession
+import be.zvz.kotlininside.session.LoggedSession
 import be.zvz.kotlininside.session.Session
 import be.zvz.kotlininside.session.user.Anonymous
 import be.zvz.kotlininside.value.ApiUrl
 import be.zvz.kotlininside.value.Const
+import com.fasterxml.jackson.databind.ObjectMapper
+import com.fasterxml.jackson.databind.node.ArrayNode
+import com.fasterxml.jackson.module.kotlin.convertValue
 
 class ArticleDelete @JvmOverloads constructor(
     private val gallId: String,
     private val articleId: Int,
     private val session: Session,
-    private val fcmToken: String = Const.DEFAULT_FCM_TOKEN
+    private val fcmToken: String = Const.DEFAULT_FCM_TOKEN,
+    private val mapper: ObjectMapper = Const.DEFAULT_JSON_MAPPER
 ) {
     data class DeleteResult(
         val result: Boolean,
@@ -34,24 +40,20 @@ class ArticleDelete @JvmOverloads constructor(
             .addMultipartParameter("mode", "board_del")
             .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
 
-        if (session.user is Anonymous) {
+        if (session is LoggedSession) {
             option
-                .addMultipartParameter("write_pw", session.user.password)
+                .addMultipartParameter("user_id", session.detail.userId)
         } else {
             option
-                .addMultipartParameter("user_id", session.detail!!.userId)
+                .addMultipartParameter("write_pw", session.user.password)
         }
 
-        var json = KotlinInside.getInstance().httpInterface.upload(ApiUrl.Article.DELETE, option)!!
-
-        if (json.isList)
-            json = json.index(0)
-
-        return DeleteResult(
-            result = json.get("result").asBoolean(),
-            message = json.get("message").text(),
-            status = json.get("status").asNullableInteger(),
-            cause = json.get("cause").text()
-        )
+        mapper.readTree(KotlinInside.getInstance().httpInterface.upload(ApiUrl.Article.DELETE, option)).run {
+            return if (this is ArrayNode) {
+                mapper.convertValue(get(0))
+            } else {
+                mapper.convertValue(this)
+            }
+        }
     }
 }

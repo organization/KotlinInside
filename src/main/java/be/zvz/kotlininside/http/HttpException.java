@@ -4,27 +4,21 @@ import org.jetbrains.annotations.Nullable;
 
 public class HttpException extends RuntimeException {
     private final int statusCode;
-    private final String errorMessage;
     @Nullable
     private Throwable cause;
 
-    public HttpException(int statusCode, String errorMessage) {
-        super("Error Code : " + statusCode + ", Error Message : " + errorMessage);
-        this.errorMessage = errorMessage;
+    public HttpException(int statusCode, @Nullable Throwable cause) {
+        super(cause);
         this.statusCode = statusCode;
     }
 
-    public HttpException(Throwable cause) {
-        this(520, cause.getClass().getSimpleName());
+    public HttpException(@Nullable Throwable cause) {
+        this(520, cause);
         this.cause = cause;
     }
 
     public int getStatusCode() {
         return statusCode;
-    }
-
-    public String getErrorMessage() {
-        return errorMessage;
     }
 
     @Nullable

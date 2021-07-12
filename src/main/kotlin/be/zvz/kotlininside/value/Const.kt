@@ -1,5 +1,9 @@
 package be.zvz.kotlininside.value
 
+import com.fasterxml.jackson.core.JsonParser
+import com.fasterxml.jackson.databind.PropertyNamingStrategies
+import com.fasterxml.jackson.databind.json.JsonMapper
+import com.fasterxml.jackson.module.kotlin.kotlinModule
 import org.apache.commons.lang3.RandomStringUtils
 
 object Const {
@@ -8,6 +12,15 @@ object Const {
     const val DC_APP_VERSION_CODE = "30516"
     const val DC_APP_VERSION_NAME = "4.2.13"
     const val USER_AGENT = "dcinside.app"
+
+    @JvmStatic
+    val DEFAULT_JSON_MAPPER = JsonMapper
+        .builder()
+        .addModule(kotlinModule())
+        .enable(JsonParser.Feature.ALLOW_COMMENTS)
+        .enable(JsonParser.Feature.ALLOW_UNQUOTED_FIELD_NAMES)
+        .propertyNamingStrategy(PropertyNamingStrategies.SNAKE_CASE)
+        .build()
 
     @JvmStatic
     val DEFAULT_FCM_TOKEN =
