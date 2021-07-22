@@ -1,14 +1,14 @@
 ---
-title: StringUtil -
+title: StringUtil
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.utils](../index.md)/[StringUtil](index.md)/[StringUtil](-string-util.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.utils](../index.html)/[StringUtil](index.html)
+/[StringUtil](-string-util.html)
 
+# StringUtil
 
+[jvm]\
+fun [StringUtil](-string-util.html)()
 
-# StringUtil  
-[jvm]  
-Content  
-fun [StringUtil](-string-util.md)()  
 
 
 

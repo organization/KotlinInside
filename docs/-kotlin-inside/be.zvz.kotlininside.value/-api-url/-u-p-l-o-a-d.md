@@ -1,14 +1,14 @@
 ---
-title: UPLOAD -
+title: UPLOAD
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.value](../index.md)/[ApiUrl](index.md)/[UPLOAD](-u-p-l-o-a-d.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.value](../index.html)/[ApiUrl](index.html)
+/[UPLOAD](-u-p-l-o-a-d.html)
 
+# UPLOAD
 
+[jvm]\
+const val [UPLOAD](-u-p-l-o-a-d.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# UPLOAD  
-[jvm]  
-Content  
-val [UPLOAD](-u-p-l-o-a-d.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 

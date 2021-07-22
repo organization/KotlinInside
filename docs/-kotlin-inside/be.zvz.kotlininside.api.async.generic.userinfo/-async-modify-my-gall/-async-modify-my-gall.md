@@ -1,17 +1,17 @@
 ---
-title: AsyncModifyMyGall -
+title: AsyncModifyMyGall
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.async.generic.userinfo](../index.md)
-/[AsyncModifyMyGall](index.md)/[AsyncModifyMyGall](-async-modify-my-gall.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.generic.userinfo](../index.html)
+/[AsyncModifyMyGall](index.html)/[AsyncModifyMyGall](-async-modify-my-gall.html)
 
 # AsyncModifyMyGall
 
-[jvm]  
-Content  
-fun [AsyncModifyMyGall](-async-modify-my-gall.md)(
+[jvm]\
+fun [AsyncModifyMyGall](-async-modify-my-gall.html)(
 gallName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
 gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
-session: [Session](../../be.zvz.kotlininside.session/-session/index.md))  
+session: [Session](../../be.zvz.kotlininside.session/-session/index.html))
+
 
 
 

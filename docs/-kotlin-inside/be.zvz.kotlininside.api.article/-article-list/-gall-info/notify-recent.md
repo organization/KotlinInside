@@ -1,14 +1,14 @@
 ---
-title: notifyRecent -
+title: notifyRecent
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleList](../index.md)/[GallInfo](index.md)/[notifyRecent](notify-recent.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleList](../index.html)/[GallInfo](index.html)/[notifyRecent](notify-recent.html)
 
+# notifyRecent
 
+[jvm]\
+val [notifyRecent](notify-recent.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)?
 
-# notifyRecent  
-[jvm]  
-Content  
-val [notifyRecent](notify-recent.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)?  
 
 
 

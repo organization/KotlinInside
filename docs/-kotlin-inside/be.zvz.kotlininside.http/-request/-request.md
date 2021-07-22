@@ -1,14 +1,14 @@
 ---
-title: Request -
+title: Request
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[Request](index.md)/[Request](-request.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[Request](index.html)
+/[Request](-request.html)
 
+# Request
 
+[jvm]\
+fun [Request](-request.html)()
 
-# Request  
-[jvm]  
-Content  
-fun [Request](-request.md)()  
 
 
 

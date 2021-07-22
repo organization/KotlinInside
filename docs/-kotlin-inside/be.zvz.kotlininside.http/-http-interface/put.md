@@ -1,16 +1,20 @@
 ---
-title: put -
+title: put
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpInterface](index.md)/[put](put.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpInterface](index.html)
+/[put](put.html)
 
+# put
 
+[jvm]\
 
-# put  
-[jvm]  
-Content  
-@Nullable()  
-  
-abstract fun [put](put.md)(url: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), option: [HttpInterface.Option](-option/index.md)): [JsonBrowser](../../be.zvz.kotlininside.json/-json-browser/index.md)  
+@Nullable()
+
+abstract fun [put](put.html)(@NotNull()url:
+@NotNull()[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), @Nullable()option:
+@Nullable()[HttpInterface.Option](-option/index.html)):
+@Nullable()[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
+
 
 
 

@@ -1,14 +1,14 @@
 ---
-title: imgLink -
+title: imgLink
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.type](../index.md)/[DCCon](index.md)/[imgLink](img-link.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.type](../index.html)/[DCCon](index.html)
+/[imgLink](img-link.html)
 
+# imgLink
 
+[jvm]\
+val [imgLink](img-link.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# imgLink  
-[jvm]  
-Content  
-val [imgLink](img-link.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
 
 
 

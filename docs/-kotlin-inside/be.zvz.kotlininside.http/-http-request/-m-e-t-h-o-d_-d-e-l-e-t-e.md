@@ -1,20 +1,16 @@
 ---
-title: METHOD_DELETE -
+title: METHOD_DELETE
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[METHOD_DELETE](-m-e-t-h-o-d_-d-e-l-e-t-e.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[METHOD_DELETE](-m-e-t-h-o-d_-d-e-l-e-t-e.html)
 
+# METHOD_DELETE
 
-
-# METHOD_DELETE  
-[jvm]  
-Content  
-val [METHOD_DELETE](-m-e-t-h-o-d_-d-e-l-e-t-e.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
-More info  
-
+[jvm]\
+val [METHOD_DELETE](-m-e-t-h-o-d_-d-e-l-e-t-e.html): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
 
 'DELETE' request method
 
-  
 
 
 

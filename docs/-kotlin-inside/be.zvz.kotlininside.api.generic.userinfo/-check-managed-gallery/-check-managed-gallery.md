@@ -1,15 +1,15 @@
 ---
-title: CheckManagedGallery -
+title: CheckManagedGallery
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.generic.userinfo](../index.md)/[CheckManagedGallery](index.md)
-/[CheckManagedGallery](-check-managed-gallery.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.generic.userinfo](../index.html)
+/[CheckManagedGallery](index.html)/[CheckManagedGallery](-check-managed-gallery.html)
 
 # CheckManagedGallery
 
-[jvm]  
-Content  
-fun [CheckManagedGallery](-check-managed-gallery.md)(
-session: [Session](../../be.zvz.kotlininside.session/-session/index.md))  
+[jvm]\
+fun [CheckManagedGallery](-check-managed-gallery.html)(
+session: [Session](../../be.zvz.kotlininside.session/-session/index.html))
+
 
 
 

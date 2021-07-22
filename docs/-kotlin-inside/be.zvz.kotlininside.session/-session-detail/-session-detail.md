@@ -1,14 +1,13 @@
 ---
-title: SessionDetail -
+title: SessionDetail
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.session](../index.md)/[SessionDetail](index.md)/[SessionDetail](-session-detail.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.session](../index.html)/[SessionDetail](index.html)
+/[SessionDetail](-session-detail.html)
 
+# SessionDetail
 
-
-# SessionDetail  
-[jvm]  
-Content  
-fun [SessionDetail](-session-detail.md)(
+[jvm]\
+fun [SessionDetail](-session-detail.html)(
 result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html),
 userId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
 userNo: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
@@ -19,7 +18,8 @@ isDormancy: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index
 isOtp: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html),
 pwCampaign: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html),
 mailSend: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
-cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?)  
+cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?)
+
 
 
 

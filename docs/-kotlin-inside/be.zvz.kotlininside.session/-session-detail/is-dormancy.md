@@ -1,14 +1,14 @@
 ---
-title: isDormancy -
+title: isDormancy
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.session](../index.md)/[SessionDetail](index.md)
-/[isDormancy](is-dormancy.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.session](../index.html)/[SessionDetail](index.html)
+/[isDormancy](is-dormancy.html)
 
 # isDormancy
 
-[jvm]  
-Content  
-val [isDormancy](is-dormancy.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
+[jvm]\
+val [isDormancy](is-dormancy.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
+
 
 
 

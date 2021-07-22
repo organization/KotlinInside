@@ -1,14 +1,14 @@
 ---
-title: isManager -
+title: isManager
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleList](../index.md)/[GallInfo](index.md)/[isManager](is-manager.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleList](../index.html)/[GallInfo](index.html)/[isManager](is-manager.html)
 
+# isManager
 
+[jvm]\
+val [isManager](is-manager.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
 
-# isManager  
-[jvm]  
-Content  
-val [isManager](is-manager.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
 
 
 

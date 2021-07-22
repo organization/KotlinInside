@@ -1,22 +1,23 @@
 ---
-title: CommentDelete -
+title: CommentDelete
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.comment](../index.md)/[CommentDelete](index.md)/[CommentDelete](-comment-delete.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.comment](../index.html)/[CommentDelete](index.html)
+/[CommentDelete](-comment-delete.html)
 
+# CommentDelete
 
+[jvm]\
 
-# CommentDelete  
-[jvm]  
-Content  
 @[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)()
 
-fun [CommentDelete](-comment-delete.md)(
+fun [CommentDelete](-comment-delete.html)(
 gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
 articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html),
 commentId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html),
-session: [Session](../../be.zvz.kotlininside.session/-session/index.md),
+session: [Session](../../be.zvz.kotlininside.session/-session/index.html),
 fcmToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) = KotlinInside.getInstance()
-.auth.fcmToken)  
+.auth.fcmToken)
+
 
 
 

@@ -1,14 +1,14 @@
 ---
-title: LIST -
+title: LIST
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.value](../../index.md)/[ApiUrl](../index.md)/[Article](index.md)/[LIST](-l-i-s-t.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)
+/[Article](index.html)/[LIST](-l-i-s-t.html)
 
+# LIST
 
+[jvm]\
+const val [LIST](-l-i-s-t.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# LIST  
-[jvm]  
-Content  
-val [LIST](-l-i-s-t.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 

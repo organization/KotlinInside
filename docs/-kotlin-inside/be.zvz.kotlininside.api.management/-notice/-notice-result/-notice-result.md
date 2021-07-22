@@ -1,14 +1,17 @@
 ---
-title: NoticeResult -
+title: NoticeResult
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.management](../../index.md)/[Notice](../index.md)/[NoticeResult](index.md)/[NoticeResult](-notice-result.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.management](../../index.html)/[Notice](../index.html)
+/[NoticeResult](index.html)/[NoticeResult](-notice-result.html)
 
+# NoticeResult
 
+[jvm]\
+fun [NoticeResult](-notice-result.html)(
+result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html),
+cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
+state: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
 
-# NoticeResult  
-[jvm]  
-Content  
-fun [NoticeResult](-notice-result.md)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), state: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  
 
 
 

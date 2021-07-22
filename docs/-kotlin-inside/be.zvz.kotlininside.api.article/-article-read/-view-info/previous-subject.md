@@ -1,14 +1,14 @@
 ---
-title: previousSubject -
+title: previousSubject
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleRead](../index.md)/[ViewInfo](index.md)/[previousSubject](previous-subject.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleRead](../index.html)/[ViewInfo](index.html)/[previousSubject](previous-subject.html)
 
+# previousSubject
 
+[jvm]\
+val [previousSubject](previous-subject.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# previousSubject  
-[jvm]  
-Content  
-val [previousSubject](previous-subject.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
 
 
 

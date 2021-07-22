@@ -1,14 +1,14 @@
 ---
-title: headText -
+title: headText
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.type](../index.md)/[Article](index.md)/[headText](head-text.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.type](../index.html)/[Article](index.html)
+/[headText](head-text.html)
 
+# headText
 
+[jvm]\
+val [headText](head-text.html): [HeadText](../-head-text/index.html)? = null
 
-# headText  
-[jvm]  
-Content  
-val [headText](head-text.md): [HeadText](../-head-text/index.md)? = null  
 
 
 

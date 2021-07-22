@@ -1,16 +1,18 @@
 ---
-title: asNullableLong -
+title: asNullableLong
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.json](../index.md)/[JsonBrowser](index.md)/[asNullableLong](as-nullable-long.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.json](../index.html)/[JsonBrowser](index.html)
+/[asNullableLong](as-nullable-long.html)
 
+# asNullableLong
 
+[jvm]\
 
-# asNullableLong  
-[jvm]  
-Content  
-@Nullable()  
-  
-open fun [asNullableLong](as-nullable-long.md)(): [Long](https://docs.oracle.com/javase/7/docs/api/java/lang/Long.html)  
+@Nullable()
+
+open fun [asNullableLong](as-nullable-long.html)():
+@Nullable()[Long](https://docs.oracle.com/javase/7/docs/api/java/lang/Long.html)
+
 
 
 

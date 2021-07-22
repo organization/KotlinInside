@@ -1,14 +1,15 @@
 ---
-title: selected -
+title: selected
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.type](../index.md)/[HeadText](index.md)/[selected](selected.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.type](../index.html)/[HeadText](index.html)
+/[selected](selected.html)
 
+# selected
 
+[jvm]\
+val [selected](selected.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) =
+false
 
-# selected  
-[jvm]  
-Content  
-val [selected](selected.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = false  
 
 
 

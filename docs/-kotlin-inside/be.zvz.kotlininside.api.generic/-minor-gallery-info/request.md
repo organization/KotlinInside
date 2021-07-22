@@ -1,26 +1,20 @@
 ---
-title: request -
+title: request
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.generic](../index.md)/[MinorGalleryInfo](index.md)
-/[request](request.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.generic](../index.html)/[MinorGalleryInfo](index.html)
+/[request](request.html)
 
 # request
 
-[jvm]  
-Content  
-fun [request](request.md)(): [MinorGalleryInfo.InfoResult](-info-result/index.md)  
-More info
+[jvm]\
+fun [request](request.html)(): [MinorGalleryInfo.InfoResult](-info-result/index.html)
 
 갤러리 정보를 받아옵니다.
 
-
-
-#### Return  
-
+#### Return
 
 갤러리 정보를 반환합니다.
 
-  
 
 
 

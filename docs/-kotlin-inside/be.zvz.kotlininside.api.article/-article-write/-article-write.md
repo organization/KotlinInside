@@ -1,21 +1,22 @@
 ---
-title: ArticleWrite -
+title: ArticleWrite
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.article](../index.md)/[ArticleWrite](index.md)/[ArticleWrite](-article-write.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.article](../index.html)/[ArticleWrite](index.html)
+/[ArticleWrite](-article-write.html)
 
+# ArticleWrite
 
+[jvm]\
 
-# ArticleWrite  
-[jvm]  
-Content  
 @[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)()
 
-fun [ArticleWrite](-article-write.md)(
+fun [ArticleWrite](-article-write.html)(
 gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
-article: [Article](../../be.zvz.kotlininside.api.type/-article/index.md),
-session: [Session](../../be.zvz.kotlininside.session/-session/index.md),
+article: [Article](../../be.zvz.kotlininside.api.type/-article/index.html),
+session: [Session](../../be.zvz.kotlininside.session/-session/index.html),
 fcmToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) = KotlinInside.getInstance()
-.auth.fcmToken)  
+.auth.fcmToken)
+
 
 
 

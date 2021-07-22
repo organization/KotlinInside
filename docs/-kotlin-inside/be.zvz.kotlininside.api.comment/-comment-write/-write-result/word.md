@@ -1,14 +1,14 @@
 ---
-title: word -
+title: word
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.comment](../../index.md)/[CommentWrite](../index.md)/[WriteResult](index.md)/[word](word.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.comment](../../index.html)
+/[CommentWrite](../index.html)/[WriteResult](index.html)/[word](word.html)
 
+# word
 
+[jvm]\
+val [word](word.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null
 
-# word  
-[jvm]  
-Content  
-val [word](word.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null  
 
 
 

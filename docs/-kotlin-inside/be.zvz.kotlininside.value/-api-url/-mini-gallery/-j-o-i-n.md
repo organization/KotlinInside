@@ -1,14 +1,14 @@
 ---
-title: JOIN -
+title: JOIN
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.value](../../index.md)/[ApiUrl](../index.md)
-/[MiniGallery](index.md)/[JOIN](-j-o-i-n.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)
+/[MiniGallery](index.html)/[JOIN](-j-o-i-n.html)
 
 # JOIN
 
-[jvm]  
-Content  
-val [JOIN](-j-o-i-n.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+[jvm]\
+const val [JOIN](-j-o-i-n.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
+
 
 
 

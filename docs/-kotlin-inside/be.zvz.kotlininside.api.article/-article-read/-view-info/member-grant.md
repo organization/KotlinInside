@@ -1,14 +1,14 @@
 ---
-title: memberGrant -
+title: memberGrant
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleRead](../index.md)
-/[ViewInfo](index.md)/[memberGrant](member-grant.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleRead](../index.html)/[ViewInfo](index.html)/[memberGrant](member-grant.html)
 
 # memberGrant
 
-[jvm]  
-Content  
-val [memberGrant](member-grant.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)?  
+[jvm]\
+val [memberGrant](member-grant.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)?
+
 
 
 

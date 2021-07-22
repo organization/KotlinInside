@@ -1,14 +1,14 @@
 ---
-title: stream -
+title: stream
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.type.content](../index.md)/[ImageContent](index.md)/[stream](stream.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.type.content](../index.html)/[ImageContent](index.html)
+/[stream](stream.html)
 
+# stream
 
+[jvm]\
+val [stream](stream.html): [InputStream](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)
 
-# stream  
-[jvm]  
-Content  
-val [stream](stream.md): [InputStream](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)  
 
 
 

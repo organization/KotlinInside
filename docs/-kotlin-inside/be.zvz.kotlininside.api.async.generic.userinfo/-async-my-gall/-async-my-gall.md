@@ -1,14 +1,14 @@
 ---
-title: AsyncMyGall -
+title: AsyncMyGall
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.async.generic.userinfo](../index.md)/[AsyncMyGall](index.md)
-/[AsyncMyGall](-async-my-gall.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.generic.userinfo](../index.html)
+/[AsyncMyGall](index.html)/[AsyncMyGall](-async-my-gall.html)
 
 # AsyncMyGall
 
-[jvm]  
-Content  
-fun [AsyncMyGall](-async-my-gall.md)(session: [Session](../../be.zvz.kotlininside.session/-session/index.md))  
+[jvm]\
+fun [AsyncMyGall](-async-my-gall.html)(session: [Session](../../be.zvz.kotlininside.session/-session/index.html))
+
 
 
 

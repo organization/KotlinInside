@@ -1,14 +1,14 @@
 ---
-title: name -
+title: name
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.session.user](../../index.md)/[UserType](../index.md)/[ANONYMOUS](index.md)/[name](name.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.session.user](../../index.html)/[UserType](../index.html)
+/[ANONYMOUS](index.html)/[name](name.html)
 
+# name
 
+[jvm]\
+val [name](name.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# name  
-[jvm]  
-Content  
-val [name](name.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
 
 
 

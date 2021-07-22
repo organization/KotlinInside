@@ -1,15 +1,13 @@
 ---
-title: request -
+title: request
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.generic.userinfo](../index.md)/[MyGall](index.md)
-/[request](request.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.generic.userinfo](../index.html)/[MyGall](index.html)
+/[request](request.html)
 
 # request
 
-[jvm]  
-Content  
-fun [request](request.md)(): [MyGall.MyGallResult](-my-gall-result/index.md)  
-More info
+[jvm]\
+fun [request](request.html)(): [MyGall.MyGallResult](-my-gall-result/index.html)
 
 내 갤러리 정보를 받아옵니다.
 
@@ -17,7 +15,6 @@ More info
 
 내 갤러리 정보를 반환합니다.
 
-  
 
 
 

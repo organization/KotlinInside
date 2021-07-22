@@ -1,14 +1,14 @@
 ---
-title: result -
+title: result
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.dccon](../../index.md)/[DCConBuy](../index.md)/[BuyResult](index.md)/[result](result.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.dccon](../../index.html)/[DCConBuy](../index.html)
+/[BuyResult](index.html)/[result](result.html)
 
+# result
 
+[jvm]\
+val [result](result.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
 
-# result  
-[jvm]  
-Content  
-val [result](result.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
 
 
 

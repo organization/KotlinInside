@@ -1,14 +1,14 @@
 ---
-title: codeCount -
+title: codeCount
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleList](../index.md)/[GallInfo](index.md)/[codeCount](code-count.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleList](../index.html)/[GallInfo](index.html)/[codeCount](code-count.html)
 
+# codeCount
 
+[jvm]\
+val [codeCount](code-count.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)?
 
-# codeCount  
-[jvm]  
-Content  
-val [codeCount](code-count.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)?  
 
 
 

@@ -1,14 +1,14 @@
 ---
-title: blockHour -
+title: blockHour
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.management](../../index.md)/[UserBlock](../index.md)/[BlockOption](index.md)/[blockHour](block-hour.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.management](../../index.html)
+/[UserBlock](../index.html)/[BlockOption](index.html)/[blockHour](block-hour.html)
 
+# blockHour
 
+[jvm]\
+var [blockHour](block-hour.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) = 1
 
-# blockHour  
-[jvm]  
-Content  
-var [blockHour](block-hour.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) = 1  
 
 
 

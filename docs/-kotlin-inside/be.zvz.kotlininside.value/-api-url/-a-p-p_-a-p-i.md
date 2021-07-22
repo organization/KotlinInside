@@ -1,14 +1,15 @@
 ---
-title: APP_API -
+title: APP_API
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.value](../index.md)/[ApiUrl](index.md)/[APP_API](-a-p-p_-a-p-i.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.value](../index.html)/[ApiUrl](index.html)
+/[APP_API](-a-p-p_-a-p-i.html)
 
+# APP_API
 
+[jvm]\
+const
+val [APP_API](-a-p-p_-a-p-i.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# APP_API  
-[jvm]  
-Content  
-val [APP_API](-a-p-p_-a-p-i.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 

@@ -1,14 +1,15 @@
 ---
-title: getAsync -
+title: getAsync
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.async.generic](../index.md)/[AsyncMinorGalleryInfo](index.md)/[getAsync](get-async.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.generic](../index.html)
+/[AsyncMinorGalleryInfo](index.html)/[getAsync](get-async.html)
 
+# getAsync
 
+[jvm]\
+suspend fun [getAsync](get-async.html)():
+Deferred<[MinorGalleryInfo.InfoResult](../../be.zvz.kotlininside.api.generic/-minor-gallery-info/-info-result/index.html)>
 
-# getAsync  
-[jvm]  
-Content  
-suspend fun [getAsync](get-async.md)(): Deferred<[MinorGalleryInfo.InfoResult](../../be.zvz.kotlininside.api.generic/-minor-gallery-info/-info-result/index.md)>  
 
 
 

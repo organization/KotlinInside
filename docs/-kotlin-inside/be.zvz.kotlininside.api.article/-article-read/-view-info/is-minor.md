@@ -1,14 +1,14 @@
 ---
-title: isMinor -
+title: isMinor
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleRead](../index.md)/[ViewInfo](index.md)/[isMinor](is-minor.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleRead](../index.html)/[ViewInfo](index.html)/[isMinor](is-minor.html)
 
+# isMinor
 
+[jvm]\
+val [isMinor](is-minor.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
 
-# isMinor  
-[jvm]  
-Content  
-val [isMinor](is-minor.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
 
 
 

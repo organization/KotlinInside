@@ -1,14 +1,14 @@
 ---
-title: result -
+title: result
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.management](../../index.md)/[Recommend](../index.md)/[RecommendResult](index.md)/[result](result.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.management](../../index.html)
+/[Recommend](../index.html)/[RecommendResult](index.html)/[result](result.html)
 
+# result
 
+[jvm]\
+val [result](result.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
 
-# result  
-[jvm]  
-Content  
-val [result](result.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
 
 
 

@@ -1,14 +1,14 @@
 ---
-title: request -
+title: request
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.generic.userinfo](../index.md)/[ModifyMyGall](index.md)
-/[request](request.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.generic.userinfo](../index.html)
+/[ModifyMyGall](index.html)/[request](request.html)
 
 # request
 
-[jvm]  
-Content  
-fun [request](request.md)(): [ModifyMyGall.ModifyMyGallResult](-modify-my-gall-result/index.md)  
+[jvm]\
+fun [request](request.html)(): [ModifyMyGall.ModifyMyGallResult](-modify-my-gall-result/index.html)
+
 
 
 

@@ -1,14 +1,14 @@
 ---
-title: READ -
+title: READ
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.value](../../index.md)/[ApiUrl](../index.md)/[Article](index.md)/[READ](-r-e-a-d.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)
+/[Article](index.html)/[READ](-r-e-a-d.html)
 
+# READ
 
+[jvm]\
+const val [READ](-r-e-a-d.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# READ  
-[jvm]  
-Content  
-val [READ](-r-e-a-d.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 

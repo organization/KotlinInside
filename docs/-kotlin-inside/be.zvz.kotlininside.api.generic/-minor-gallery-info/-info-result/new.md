@@ -1,14 +1,14 @@
 ---
-title: new -
+title: new
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic](../../index.md)/[MinorGalleryInfo](../index.md)/[InfoResult](index.md)/[new](new.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)
+/[MinorGalleryInfo](../index.html)/[InfoResult](index.html)/[new](new.html)
 
+# new
 
+[jvm]\
+val [new](new.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
 
-# new  
-[jvm]  
-Content  
-val [new](new.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
 
 
 

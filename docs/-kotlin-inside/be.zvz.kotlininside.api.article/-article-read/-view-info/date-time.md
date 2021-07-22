@@ -1,14 +1,14 @@
 ---
-title: dateTime -
+title: dateTime
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleRead](../index.md)/[ViewInfo](index.md)/[dateTime](date-time.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleRead](../index.html)/[ViewInfo](index.html)/[dateTime](date-time.html)
 
+# dateTime
 
+[jvm]\
+val [dateTime](date-time.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# dateTime  
-[jvm]  
-Content  
-val [dateTime](date-time.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
 
 
 

@@ -1,83 +1,42 @@
 ---
-title: contentLength -
+title: contentLength
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[contentLength](content-length.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[contentLength](content-length.html)
 
+# contentLength
 
-
-# contentLength  
-[jvm]  
-Content  
-open fun [contentLength](content-length.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
-More info  
-
+[jvm]\
+open
+fun [contentLength](content-length.html)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
 
 Get the 'Content-Length' header from the response
 
+#### Return
 
+response header value
 
-#### Return  
+[jvm]\
+open fun [contentLength](content-length.html)(
+contentLength: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.html)
 
-
-header value
-
-  
-
-
-[jvm]  
-Content  
-open fun [contentLength](content-length.md)(contentLength: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
-More info  
-
+open fun [contentLength](content-length.html)(
+contentLength: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [HttpRequest](index.html)
 
 Set the 'Content-Length' request header to the given value
 
+#### Return
 
+this request
 
-#### Return  
+## Parameters
 
+jvm
 
-request
-
-
-
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
+| | |
 |---|---|
-| <a name="be.zvz.kotlininside.http/HttpRequest/contentLength/#java.lang.String/PointingToDeclaration/"></a>contentLength| <a name="be.zvz.kotlininside.http/HttpRequest/contentLength/#java.lang.String/PointingToDeclaration/"></a>
-  
-  
+| contentLength |  |
 
-
-[jvm]  
-Content  
-open fun [contentLength](content-length.md)(contentLength: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [HttpRequest](index.md)  
-More info  
-
-
-Set the 'Content-Length' request header to the given value
-
-
-
-#### Return  
-
-
-request
-
-
-
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
-|---|---|
-| <a name="be.zvz.kotlininside.http/HttpRequest/contentLength/#int/PointingToDeclaration/"></a>contentLength| <a name="be.zvz.kotlininside.http/HttpRequest/contentLength/#int/PointingToDeclaration/"></a>
-  
-  
 
 
 

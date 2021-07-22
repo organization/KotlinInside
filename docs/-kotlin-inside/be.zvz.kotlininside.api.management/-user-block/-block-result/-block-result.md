@@ -1,14 +1,16 @@
 ---
-title: BlockResult -
+title: BlockResult
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.management](../../index.md)/[UserBlock](../index.md)/[BlockResult](index.md)/[BlockResult](-block-result.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.management](../../index.html)
+/[UserBlock](../index.html)/[BlockResult](index.html)/[BlockResult](-block-result.html)
 
+# BlockResult
 
+[jvm]\
+fun [BlockResult](-block-result.html)(
+result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html),
+cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
 
-# BlockResult  
-[jvm]  
-Content  
-fun [BlockResult](-block-result.md)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  
 
 
 

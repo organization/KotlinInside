@@ -1,37 +1,29 @@
 ---
-title: progress -
+title: progress
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[progress](progress.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[progress](progress.html)
 
+# progress
 
-
-# progress  
-[jvm]  
-Content  
-open fun [progress](progress.md)(callback: [HttpRequest.UploadProgress](-upload-progress/index.md)): [HttpRequest](index.md)  
-More info  
-
+[jvm]\
+open fun [progress](progress.html)(
+callback: [HttpRequest.UploadProgress](-upload-progress/index.html)): [HttpRequest](index.html)
 
 Set the UploadProgress callback for this request
 
+#### Return
 
+this request
 
-#### Return  
+## Parameters
 
+jvm
 
-request
-
-
-
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
+| | |
 |---|---|
-| <a name="be.zvz.kotlininside.http/HttpRequest/progress/#be.zvz.kotlininside.http.HttpRequest.UploadProgress/PointingToDeclaration/"></a>callback| <a name="be.zvz.kotlininside.http/HttpRequest/progress/#be.zvz.kotlininside.http.HttpRequest.UploadProgress/PointingToDeclaration/"></a>
-  
-  
+| callback |  |
+
 
 
 

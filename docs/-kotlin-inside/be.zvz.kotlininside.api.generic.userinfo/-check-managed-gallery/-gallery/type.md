@@ -1,14 +1,14 @@
 ---
-title: type -
+title: type
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic.userinfo](../../index.md)
-/[CheckManagedGallery](../index.md)/[Gallery](index.md)/[type](type.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic.userinfo](../../index.html)
+/[CheckManagedGallery](../index.html)/[Gallery](index.html)/[type](type.html)
 
 # type
 
-[jvm]  
-Content  
-val [type](type.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
+[jvm]\
+val [type](type.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
+
 
 
 

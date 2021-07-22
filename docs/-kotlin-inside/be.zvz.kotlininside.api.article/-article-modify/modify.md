@@ -1,16 +1,19 @@
 ---
-title: modify -
+title: modify
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.article](../index.md)/[ArticleModify](index.md)/[modify](modify.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.article](../index.html)/[ArticleModify](index.html)
+/[modify](modify.html)
 
+# modify
 
+[jvm]\
 
-# modify  
-[jvm]  
-Content  
-@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)()  
-  
-fun [modify](modify.md)(article: [Article](../../be.zvz.kotlininside.api.type/-article/index.md), fcmToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) = "N"): [ArticleWrite.WriteResult](../-article-write/-write-result/index.md)  
+@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)()
+
+fun [modify](modify.html)(article: [Article](../../be.zvz.kotlininside.api.type/-article/index.html),
+fcmToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) = "
+N"): [ArticleWrite.WriteResult](../-article-write/-write-result/index.html)
+
 
 
 

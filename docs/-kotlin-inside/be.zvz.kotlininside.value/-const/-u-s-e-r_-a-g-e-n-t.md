@@ -1,14 +1,15 @@
 ---
-title: USER_AGENT -
+title: USER_AGENT
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.value](../index.md)/[Const](index.md)/[USER_AGENT](-u-s-e-r_-a-g-e-n-t.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.value](../index.html)/[Const](index.html)
+/[USER_AGENT](-u-s-e-r_-a-g-e-n-t.html)
 
+# USER_AGENT
 
+[jvm]\
+const
+val [USER_AGENT](-u-s-e-r_-a-g-e-n-t.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# USER_AGENT  
-[jvm]  
-Content  
-val [USER_AGENT](-u-s-e-r_-a-g-e-n-t.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 

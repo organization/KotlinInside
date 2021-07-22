@@ -1,14 +1,15 @@
 ---
-title: MY_MANAGE_GALL_CHECK -
+title: MY_MANAGE_GALL_CHECK
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.value](../../index.md)/[ApiUrl](../index.md)/[User](index.md)
-/[MY_MANAGE_GALL_CHECK](-m-y_-m-a-n-a-g-e_-g-a-l-l_-c-h-e-c-k.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)
+/[User](index.html)/[MY_MANAGE_GALL_CHECK](-m-y_-m-a-n-a-g-e_-g-a-l-l_-c-h-e-c-k.html)
 
 # MY_MANAGE_GALL_CHECK
 
-[jvm]  
-Content  
-val [MY_MANAGE_GALL_CHECK](-m-y_-m-a-n-a-g-e_-g-a-l-l_-c-h-e-c-k.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+[jvm]\
+const
+val [MY_MANAGE_GALL_CHECK](-m-y_-m-a-n-a-g-e_-g-a-l-l_-c-h-e-c-k.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
+
 
 
 

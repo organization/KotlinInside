@@ -1,20 +1,16 @@
 ---
-title: getLink -
+title: getLink
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.article](../index.md)/[ArticleReport](index.md)/[getLink](get-link.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.article](../index.html)/[ArticleReport](index.html)
+/[getLink](get-link.html)
 
+# getLink
 
-
-# getLink  
-[jvm]  
-Content  
-fun [getLink](get-link.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
-More info  
-
+[jvm]\
+fun [getLink](get-link.html)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
 글 신고 링크를 반환합니다.
 
-  
 
 
 

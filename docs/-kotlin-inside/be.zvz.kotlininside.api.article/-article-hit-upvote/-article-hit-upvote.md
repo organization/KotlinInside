@@ -1,14 +1,17 @@
 ---
-title: ArticleHitUpvote -
+title: ArticleHitUpvote
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.article](../index.md)/[ArticleHitUpvote](index.md)/[ArticleHitUpvote](-article-hit-upvote.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.article](../index.html)/[ArticleHitUpvote](index.html)
+/[ArticleHitUpvote](-article-hit-upvote.html)
 
+# ArticleHitUpvote
 
+[jvm]\
+fun [ArticleHitUpvote](-article-hit-upvote.html)(
+gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
+articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html),
+session: [Session](../../be.zvz.kotlininside.session/-session/index.html))
 
-# ArticleHitUpvote  
-[jvm]  
-Content  
-fun [ArticleHitUpvote](-article-hit-upvote.md)(gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), session: [Session](../../be.zvz.kotlininside.session/-session/index.md))  
 
 
 

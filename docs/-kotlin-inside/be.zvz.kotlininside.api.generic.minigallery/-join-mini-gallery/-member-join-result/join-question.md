@@ -1,14 +1,14 @@
 ---
-title: joinQuestion -
+title: joinQuestion
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic.minigallery](../../index.md)
-/[JoinMiniGallery](../index.md)/[MemberJoinResult](index.md)/[joinQuestion](join-question.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic.minigallery](../../index.html)
+/[JoinMiniGallery](../index.html)/[MemberJoinResult](index.html)/[joinQuestion](join-question.html)
 
 # joinQuestion
 
-[jvm]  
-Content  
-val [joinQuestion](join-question.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
+[jvm]\
+val [joinQuestion](join-question.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
+
 
 
 

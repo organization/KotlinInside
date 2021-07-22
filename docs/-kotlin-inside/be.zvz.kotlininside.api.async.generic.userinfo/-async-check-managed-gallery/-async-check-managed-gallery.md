@@ -1,15 +1,15 @@
 ---
-title: AsyncCheckManagedGallery -
+title: AsyncCheckManagedGallery
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.async.generic.userinfo](../index.md)
-/[AsyncCheckManagedGallery](index.md)/[AsyncCheckManagedGallery](-async-check-managed-gallery.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.generic.userinfo](../index.html)
+/[AsyncCheckManagedGallery](index.html)/[AsyncCheckManagedGallery](-async-check-managed-gallery.html)
 
 # AsyncCheckManagedGallery
 
-[jvm]  
-Content  
-fun [AsyncCheckManagedGallery](-async-check-managed-gallery.md)(
-session: [Session](../../be.zvz.kotlininside.session/-session/index.md))  
+[jvm]\
+fun [AsyncCheckManagedGallery](-async-check-managed-gallery.html)(
+session: [Session](../../be.zvz.kotlininside.session/-session/index.html))
+
 
 
 

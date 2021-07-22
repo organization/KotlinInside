@@ -1,14 +1,14 @@
 ---
-title: user -
+title: user
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.session](../index.md)/[Session](index.md)/[user](user.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.session](../index.html)/[Session](index.html)
+/[user](user.html)
 
+# user
 
+[jvm]\
+val [user](user.html): [User](../../be.zvz.kotlininside.session.user/-user/index.html)
 
-# user  
-[jvm]  
-Content  
-val [user](user.md): [User](../../be.zvz.kotlininside.session.user/-user/index.md)  
 
 
 

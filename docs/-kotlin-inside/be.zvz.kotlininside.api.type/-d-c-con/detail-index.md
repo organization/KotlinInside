@@ -1,14 +1,14 @@
 ---
-title: detailIndex -
+title: detailIndex
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.type](../index.md)/[DCCon](index.md)/[detailIndex](detail-index.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.type](../index.html)/[DCCon](index.html)
+/[detailIndex](detail-index.html)
 
+# detailIndex
 
+[jvm]\
+val [detailIndex](detail-index.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) = 0
 
-# detailIndex  
-[jvm]  
-Content  
-val [detailIndex](detail-index.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) = 0  
 
 
 

@@ -1,27 +1,26 @@
 ---
-title: bytes -
+title: bytes
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[bytes](bytes.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[bytes](bytes.html)
 
+# bytes
 
-
-# bytes  
-[jvm]  
-Content  
-open fun [bytes](bytes.md)(): [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)>  
-More info  
-
+[jvm]\
+open
+fun [bytes](bytes.html)(): [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)>
 
 Get response as byte array
 
+#### Return
 
+byte array
 
-#### Return  
+#### Throws
 
-
-array
-
-  
+| | |
+|---|---|
+| [be.zvz.kotlininside.http.HttpRequest.HttpRequestException](-http-request-exception/index.html) |  |
 
 
 

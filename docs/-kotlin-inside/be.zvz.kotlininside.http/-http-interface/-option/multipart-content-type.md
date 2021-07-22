@@ -1,16 +1,18 @@
 ---
-title: multipartContentType -
+title: multipartContentType
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.http](../../index.md)/[HttpInterface](../index.md)/[Option](index.md)/[multipartContentType](multipart-content-type.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.http](../../index.html)/[HttpInterface](../index.html)
+/[Option](index.html)/[multipartContentType](multipart-content-type.html)
 
+# multipartContentType
 
+[jvm]\
 
-# multipartContentType  
-[jvm]  
-Content  
-@Nullable()  
-  
-private open var [multipartContentType](multipart-content-type.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+@Nullable()
+
+private open var [multipartContentType](multipart-content-type.html):
+@Nullable()[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
+
 
 
 

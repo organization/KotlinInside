@@ -1,38 +1,28 @@
 ---
-title: DCConInfo -
+title: DCConInfo
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.dccon](../../index.md)/[DCConDetail](../index.md)/[DCConInfo](index.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.dccon](../../index.html)/[DCConDetail](../index.html)
+/[DCConInfo](index.html)
 
+# DCConInfo
 
+[jvm]\
+data class [DCConInfo](index.html)(**
+packageIndex**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **
+mainImg**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
+title**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
+description**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
+mandu**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **
+getState**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))
 
-# DCConInfo  
- [jvm] data class [DCConInfo](index.md)(**packageIndex**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **mainImg**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **title**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **description**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **mandu**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **getState**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))   
+## Properties
 
-
-## Functions  
-  
-|  Name|  Summary| 
+| Name | Summary |
 |---|---|
-| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DCConInfo/component1/#/PointingToDeclaration/"></a>[component1](component1.md)| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DCConInfo/component1/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component1](component1.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DCConInfo/component2/#/PointingToDeclaration/"></a>[component2](component2.md)| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DCConInfo/component2/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component2](component2.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DCConInfo/component3/#/PointingToDeclaration/"></a>[component3](component3.md)| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DCConInfo/component3/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component3](component3.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DCConInfo/component4/#/PointingToDeclaration/"></a>[component4](component4.md)| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DCConInfo/component4/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component4](component4.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DCConInfo/component5/#/PointingToDeclaration/"></a>[component5](component5.md)| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DCConInfo/component5/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component5](component5.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DCConInfo/component6/#/PointingToDeclaration/"></a>[component6](component6.md)| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DCConInfo/component6/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component6](component6.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DCConInfo/copy/#kotlin.Int#kotlin.String#kotlin.String#kotlin.String#kotlin.Int#kotlin.Boolean/PointingToDeclaration/"></a>[copy](copy.md)| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DCConInfo/copy/#kotlin.Int#kotlin.String#kotlin.String#kotlin.String#kotlin.Int#kotlin.Boolean/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>fun [copy](copy.md)(packageIndex: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), mainImg: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), description: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), mandu: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), getState: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)): [DCConDetail.DCConInfo](index.md)  <br><br><br>
-| <a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a>[equals](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)| <a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open operator override fun [equals](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)(other: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  <br><br><br>
-| <a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a>[hashCode](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)| <a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open override fun [hashCode](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  <br><br><br>
-| <a name="kotlin/Any/toString/#/PointingToDeclaration/"></a>[toString](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)| <a name="kotlin/Any/toString/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open override fun [toString](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
-
-
-## Properties  
-  
-|  Name|  Summary| 
-|---|---|
-| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DCConInfo/description/#/PointingToDeclaration/"></a>[description](description.md)| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DCConInfo/description/#/PointingToDeclaration/"></a> [jvm] val [description](description.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
-| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DCConInfo/getState/#/PointingToDeclaration/"></a>[getState](get-state.md)| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DCConInfo/getState/#/PointingToDeclaration/"></a> [jvm] val [getState](get-state.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)   <br>
-| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DCConInfo/mainImg/#/PointingToDeclaration/"></a>[mainImg](main-img.md)| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DCConInfo/mainImg/#/PointingToDeclaration/"></a> [jvm] val [mainImg](main-img.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
-| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DCConInfo/mandu/#/PointingToDeclaration/"></a>[mandu](mandu.md)| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DCConInfo/mandu/#/PointingToDeclaration/"></a> [jvm] val [mandu](mandu.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)   <br>
-| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DCConInfo/packageIndex/#/PointingToDeclaration/"></a>[packageIndex](package-index.md)| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DCConInfo/packageIndex/#/PointingToDeclaration/"></a> [jvm] val [packageIndex](package-index.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)   <br>
-| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DCConInfo/title/#/PointingToDeclaration/"></a>[title](title.md)| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DCConInfo/title/#/PointingToDeclaration/"></a> [jvm] val [title](title.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
+| [description](description.html) | [jvm]<br>val [description](description.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [getState](get-state.html) | [jvm]<br>val [getState](get-state.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
+| [mainImg](main-img.html) | [jvm]<br>val [mainImg](main-img.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [mandu](mandu.html) | [jvm]<br>val [mandu](mandu.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
+| [packageIndex](package-index.html) | [jvm]<br>val [packageIndex](package-index.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
+| [title](title.html) | [jvm]<br>val [title](title.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 

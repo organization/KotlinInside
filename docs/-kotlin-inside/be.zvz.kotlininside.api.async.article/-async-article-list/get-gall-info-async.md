@@ -1,14 +1,15 @@
 ---
-title: getGallInfoAsync -
+title: getGallInfoAsync
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.async.article](../index.md)/[AsyncArticleList](index.md)/[getGallInfoAsync](get-gall-info-async.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.article](../index.html)
+/[AsyncArticleList](index.html)/[getGallInfoAsync](get-gall-info-async.html)
 
+# getGallInfoAsync
 
+[jvm]\
+suspend fun [getGallInfoAsync](get-gall-info-async.html)():
+Deferred<[ArticleList.GallInfo](../../be.zvz.kotlininside.api.article/-article-list/-gall-info/index.html)>
 
-# getGallInfoAsync  
-[jvm]  
-Content  
-suspend fun [getGallInfoAsync](get-gall-info-async.md)(): Deferred<[ArticleList.GallInfo](../../be.zvz.kotlininside.api.article/-article-list/-gall-info/index.md)>  
 
 
 

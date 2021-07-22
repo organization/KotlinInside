@@ -1,23 +1,25 @@
 ---
-title: message -
+title: message
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[message](message.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[message](message.html)
 
+# message
 
-
-# message  
-[jvm]  
-Content  
-open fun [message](message.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
-More info  
-
+[jvm]\
+open fun [message](message.html)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
 
 Get status message of the response
 
+#### Return
 
+message
 
-#### Return  
-  
+#### Throws
+
+| | |
+|---|---|
+| [be.zvz.kotlininside.http.HttpRequest.HttpRequestException](-http-request-exception/index.html) |  |
 
 
 

@@ -1,16 +1,18 @@
 ---
-title: cause -
+title: cause
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpException](index.md)/[cause](cause.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpException](index.html)
+/[cause](cause.html)
 
+# cause
 
+[jvm]\
 
-# cause  
-[jvm]  
-Content  
-@Nullable()  
-  
-private open val [cause](cause.md): [Throwable](https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html)  
+@Nullable()
+
+private open val [cause](cause.html):
+@Nullable()[Throwable](https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html)
+
 
 
 

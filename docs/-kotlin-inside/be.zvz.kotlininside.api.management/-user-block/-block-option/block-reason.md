@@ -1,14 +1,14 @@
 ---
-title: blockReason -
+title: blockReason
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.management](../../index.md)/[UserBlock](../index.md)/[BlockOption](index.md)/[blockReason](block-reason.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.management](../../index.html)
+/[UserBlock](../index.html)/[BlockOption](index.html)/[blockReason](block-reason.html)
 
+# blockReason
 
+[jvm]\
+var [blockReason](block-reason.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# blockReason  
-[jvm]  
-Content  
-var [blockReason](block-reason.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
 
 
 

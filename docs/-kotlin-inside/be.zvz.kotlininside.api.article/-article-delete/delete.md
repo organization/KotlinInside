@@ -1,20 +1,21 @@
 ---
-title: delete -
+title: delete
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.article](../index.md)/[ArticleDelete](index.md)/[delete](delete.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.article](../index.html)/[ArticleDelete](index.html)
+/[delete](delete.html)
 
+# delete
 
-
-# delete  
-[jvm]  
-Content  
-fun [delete](delete.md)(): [ArticleDelete.DeleteResult](-delete-result/index.md)  
-More info  
-
+[jvm]\
+fun [delete](delete.html)(): [ArticleDelete.DeleteResult](-delete-result/index.html)
 
 글을 삭제합니다.
 
-  
+#### Throws
+
+| | |
+|---|---|
+| [be.zvz.kotlininside.http.HttpException](../../be.zvz.kotlininside.http/-http-exception/index.html) | 글을 삭제하지 못할 경우, HttpException 발생 |
 
 
 

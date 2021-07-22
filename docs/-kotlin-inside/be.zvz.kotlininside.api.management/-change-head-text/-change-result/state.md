@@ -1,14 +1,14 @@
 ---
-title: state -
+title: state
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.management](../../index.md)/[ChangeHeadText](../index.md)/[ChangeResult](index.md)/[state](state.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.management](../../index.html)
+/[ChangeHeadText](../index.html)/[ChangeResult](index.html)/[state](state.html)
 
+# state
 
+[jvm]\
+val [state](state.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# state  
-[jvm]  
-Content  
-val [state](state.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
 
 
 

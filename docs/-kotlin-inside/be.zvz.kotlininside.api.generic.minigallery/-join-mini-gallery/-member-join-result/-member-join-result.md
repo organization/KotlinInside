@@ -1,16 +1,16 @@
 ---
-title: MemberJoinResult -
+title: MemberJoinResult
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic.minigallery](../../index.md)
-/[JoinMiniGallery](../index.md)/[MemberJoinResult](index.md)/[MemberJoinResult](-member-join-result.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic.minigallery](../../index.html)
+/[JoinMiniGallery](../index.html)/[MemberJoinResult](index.html)/[MemberJoinResult](-member-join-result.html)
 
 # MemberJoinResult
 
-[jvm]  
-Content  
-fun [MemberJoinResult](-member-join-result.md)(
+[jvm]\
+fun [MemberJoinResult](-member-join-result.html)(
 result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html),
-joinQuestion: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  
+joinQuestion: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+
 
 
 

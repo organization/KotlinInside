@@ -1,14 +1,14 @@
 ---
-title: statusCode -
+title: statusCode
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpException](index.md)/[statusCode](status-code.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpException](index.html)
+/[statusCode](status-code.html)
 
+# statusCode
 
+[jvm]\
+private val [statusCode](status-code.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
 
-# statusCode  
-[jvm]  
-Content  
-private val [statusCode](status-code.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
 
 
 

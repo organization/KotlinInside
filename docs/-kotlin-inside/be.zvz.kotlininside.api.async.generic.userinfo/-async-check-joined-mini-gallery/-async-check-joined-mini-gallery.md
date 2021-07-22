@@ -1,15 +1,15 @@
 ---
-title: AsyncCheckJoinedMiniGallery -
+title: AsyncCheckJoinedMiniGallery
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.async.generic.userinfo](../index.md)
-/[AsyncCheckJoinedMiniGallery](index.md)/[AsyncCheckJoinedMiniGallery](-async-check-joined-mini-gallery.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.generic.userinfo](../index.html)
+/[AsyncCheckJoinedMiniGallery](index.html)/[AsyncCheckJoinedMiniGallery](-async-check-joined-mini-gallery.html)
 
 # AsyncCheckJoinedMiniGallery
 
-[jvm]  
-Content  
-fun [AsyncCheckJoinedMiniGallery](-async-check-joined-mini-gallery.md)(
-session: [Session](../../be.zvz.kotlininside.session/-session/index.md))  
+[jvm]\
+fun [AsyncCheckJoinedMiniGallery](-async-check-joined-mini-gallery.html)(
+session: [Session](../../be.zvz.kotlininside.session/-session/index.html))
+
 
 
 

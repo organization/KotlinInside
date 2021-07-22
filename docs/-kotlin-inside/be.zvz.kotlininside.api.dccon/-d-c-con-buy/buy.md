@@ -1,27 +1,20 @@
 ---
-title: buy -
+title: buy
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.dccon](../index.md)/[DCConBuy](index.md)/[buy](buy.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.dccon](../index.html)/[DCConBuy](index.html)
+/[buy](buy.html)
 
+# buy
 
-
-# buy  
-[jvm]  
-Content  
-fun [buy](buy.md)(): [DCConBuy.BuyResult](-buy-result/index.md)  
-More info  
-
+[jvm]\
+fun [buy](buy.html)(): [DCConBuy.BuyResult](-buy-result/index.html)
 
 디시콘을 구매합니다.
 
+#### Return
 
+[BuyResult](-buy-result/index.html) 구매 결과를 반환합니다.
 
-#### Return  
-
-
-[BuyResult](-buy-result/index.md) 구매 결과를 반환합니다.
-
-  
 
 
 

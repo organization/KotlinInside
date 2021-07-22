@@ -1,14 +1,14 @@
 ---
-title: DCCON -
+title: DCCON
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.value](../../index.md)/[ApiUrl](../index.md)/[DCCon](index.md)/[DCCON](-d-c-c-o-n.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)
+/[DCCon](index.html)/[DCCON](-d-c-c-o-n.html)
 
+# DCCON
 
+[jvm]\
+const val [DCCON](-d-c-c-o-n.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# DCCON  
-[jvm]  
-Content  
-val [DCCON](-d-c-c-o-n.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 

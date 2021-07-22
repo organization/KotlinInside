@@ -1,14 +1,14 @@
 ---
-title: requestMemberJoinOk -
+title: requestMemberJoinOk
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.generic.minigallery](../index.md)/[JoinMiniGallery](index.md)
-/[requestMemberJoinOk](request-member-join-ok.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.generic.minigallery](../index.html)
+/[JoinMiniGallery](index.html)/[requestMemberJoinOk](request-member-join-ok.html)
 
 # requestMemberJoinOk
 
-[jvm]  
-Content  
-fun [requestMemberJoinOk](request-member-join-ok.md)(): [JoinMiniGallery.MemberJoinOkResult](-member-join-ok-result/index.md)  
+[jvm]\
+fun [requestMemberJoinOk](request-member-join-ok.html)(): [JoinMiniGallery.MemberJoinOkResult](-member-join-ok-result/index.html)
+
 
 
 

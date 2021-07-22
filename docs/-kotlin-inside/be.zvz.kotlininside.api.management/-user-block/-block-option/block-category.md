@@ -1,14 +1,14 @@
 ---
-title: blockCategory -
+title: blockCategory
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.management](../../index.md)/[UserBlock](../index.md)/[BlockOption](index.md)/[blockCategory](block-category.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.management](../../index.html)
+/[UserBlock](../index.html)/[BlockOption](index.html)/[blockCategory](block-category.html)
 
+# blockCategory
 
+[jvm]\
+var [blockCategory](block-category.html): [UserBlock.BlockCategory](../-block-category/index.html)
 
-# blockCategory  
-[jvm]  
-Content  
-var [blockCategory](block-category.md): [UserBlock.BlockCategory](../-block-category/index.md)  
 
 
 

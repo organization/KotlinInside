@@ -1,39 +1,32 @@
 ---
-title: index -
+title: index
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.json](../index.md)/[JsonBrowser](index.md)/[index](--index--.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.json](../index.html)/[JsonBrowser](index.html)
+/[index](--index--.html)
 
+# index
 
+[jvm]\
 
-# index  
-[jvm]  
-Content  
-@NotNull()  
-  
-open fun [index](--index--.md)(index: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [JsonBrowser](index.md)  
-More info  
+@NotNull()
 
+open fun [index](--index--.html)(index: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)):
+@NotNull()[JsonBrowser](index.html)
 
 Get an element at an index for a list value
 
+#### Return
 
+JsonBrowser instance which wraps the value at the specified index
 
-#### Return  
+## Parameters
 
+jvm
 
-instance which wraps the value at the specified index
-
-
-
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
+| | |
 |---|---|
-| <a name="be.zvz.kotlininside.json/JsonBrowser/index/#int/PointingToDeclaration/"></a>index| <a name="be.zvz.kotlininside.json/JsonBrowser/index/#int/PointingToDeclaration/"></a><br><br>ArticleList index<br><br>
-  
-  
+| index | ArticleList index |
+
 
 
 

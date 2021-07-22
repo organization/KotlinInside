@@ -1,17 +1,16 @@
 ---
-title: be.zvz.kotlininside.security -
+title: be.zvz.kotlininside.security
 ---
-//[KotlinInside](../index.md)/[be.zvz.kotlininside.security](index.md)
+//[KotlinInside](../../index.html)/[be.zvz.kotlininside.security](index.html)
 
+# Package be.zvz.kotlininside.security
 
+## Types
 
-# Package be.zvz.kotlininside.security  
-
-
-## Types  
-  
-|  Name|  Summary| 
+| Name | Summary |
 |---|---|
-| <a name="be.zvz.kotlininside.security/App///PointingToDeclaration/"></a>[App](-app/index.md)| <a name="be.zvz.kotlininside.security/App///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>data class [App](-app/index.md)(**token**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **id**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  <br><br><br>
-| <a name="be.zvz.kotlininside.security/Auth///PointingToDeclaration/"></a>[Auth](-auth/index.md)| <a name="be.zvz.kotlininside.security/Auth///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [Auth](-auth/index.md)  <br><br><br>
+| [App](-app/index.html) | [jvm]<br>data class [App](-app/index.html)(**
+token**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
+id**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
+| [Auth](-auth/index.html) | [jvm]<br>class [Auth](-auth/index.html) |
 

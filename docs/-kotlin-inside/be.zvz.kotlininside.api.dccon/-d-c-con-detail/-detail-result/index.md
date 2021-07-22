@@ -1,30 +1,21 @@
 ---
-title: DetailResult -
+title: DetailResult
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.dccon](../../index.md)/[DCConDetail](../index.md)/[DetailResult](index.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.dccon](../../index.html)/[DCConDetail](../index.html)
+/[DetailResult](index.html)
 
+# DetailResult
 
+[jvm]\
+data class [DetailResult](index.html)(**
+info**: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[DCConDetail.DCConInfo](
+../-d-c-con-info/index.html)>, **
+detail**: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[DCCon](../../../be.zvz.kotlininside.api.type/-d-c-con/index.html)>)
 
-# DetailResult  
- [jvm] data class [DetailResult](index.md)(**info**: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[DCConDetail.DCConInfo](../-d-c-con-info/index.md)>, **detail**: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[DCCon](../../../be.zvz.kotlininside.api.type/-d-c-con/index.md)>)   
+## Properties
 
-
-## Functions  
-  
-|  Name|  Summary| 
+| Name | Summary |
 |---|---|
-| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DetailResult/component1/#/PointingToDeclaration/"></a>[component1](component1.md)| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DetailResult/component1/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component1](component1.md)(): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[DCConDetail.DCConInfo](../-d-c-con-info/index.md)>  <br><br><br>
-| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DetailResult/component2/#/PointingToDeclaration/"></a>[component2](component2.md)| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DetailResult/component2/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component2](component2.md)(): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[DCCon](../../../be.zvz.kotlininside.api.type/-d-c-con/index.md)>  <br><br><br>
-| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DetailResult/copy/#kotlin.collections.List[be.zvz.kotlininside.api.dccon.DCConDetail.DCConInfo]#kotlin.collections.List[be.zvz.kotlininside.api.type.DCCon]/PointingToDeclaration/"></a>[copy](copy.md)| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DetailResult/copy/#kotlin.collections.List[be.zvz.kotlininside.api.dccon.DCConDetail.DCConInfo]#kotlin.collections.List[be.zvz.kotlininside.api.type.DCCon]/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>fun [copy](copy.md)(info: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[DCConDetail.DCConInfo](../-d-c-con-info/index.md)> = listOf(), detail: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[DCCon](../../../be.zvz.kotlininside.api.type/-d-c-con/index.md)> = listOf()): [DCConDetail.DetailResult](index.md)  <br><br><br>
-| <a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a>[equals](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)| <a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open operator override fun [equals](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)(other: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  <br><br><br>
-| <a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a>[hashCode](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)| <a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open override fun [hashCode](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  <br><br><br>
-| <a name="kotlin/Any/toString/#/PointingToDeclaration/"></a>[toString](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)| <a name="kotlin/Any/toString/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open override fun [toString](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
-
-
-## Properties  
-  
-|  Name|  Summary| 
-|---|---|
-| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DetailResult/detail/#/PointingToDeclaration/"></a>[detail](detail.md)| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DetailResult/detail/#/PointingToDeclaration/"></a> [jvm] val [detail](detail.md): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[DCCon](../../../be.zvz.kotlininside.api.type/-d-c-con/index.md)>   <br>
-| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DetailResult/info/#/PointingToDeclaration/"></a>[info](info.md)| <a name="be.zvz.kotlininside.api.dccon/DCConDetail.DetailResult/info/#/PointingToDeclaration/"></a> [jvm] val [info](info.md): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[DCConDetail.DCConInfo](../-d-c-con-info/index.md)>   <br>
+| [detail](detail.html) | [jvm]<br>val [detail](detail.html): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[DCCon](../../../be.zvz.kotlininside.api.type/-d-c-con/index.html)> |
+| [info](info.html) | [jvm]<br>val [info](info.html): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[DCConDetail.DCConInfo](../-d-c-con-info/index.html)> |
 

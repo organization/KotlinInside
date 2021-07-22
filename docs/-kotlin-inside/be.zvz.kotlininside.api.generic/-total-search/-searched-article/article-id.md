@@ -1,14 +1,14 @@
 ---
-title: articleId -
+title: articleId
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic](../../index.md)/[TotalSearch](../index.md)/[SearchedArticle](index.md)/[articleId](article-id.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)
+/[TotalSearch](../index.html)/[SearchedArticle](index.html)/[articleId](article-id.html)
 
+# articleId
 
+[jvm]\
+val [articleId](article-id.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
 
-# articleId  
-[jvm]  
-Content  
-val [articleId](article-id.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
 
 
 

@@ -1,14 +1,14 @@
 ---
-title: useAutoDelete -
+title: useAutoDelete
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleRead](../index.md)
-/[ViewInfo](index.md)/[useAutoDelete](use-auto-delete.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleRead](../index.html)/[ViewInfo](index.html)/[useAutoDelete](use-auto-delete.html)
 
 # useAutoDelete
 
-[jvm]  
-Content  
-val [useAutoDelete](use-auto-delete.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)?  
+[jvm]\
+val [useAutoDelete](use-auto-delete.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)?
+
 
 
 

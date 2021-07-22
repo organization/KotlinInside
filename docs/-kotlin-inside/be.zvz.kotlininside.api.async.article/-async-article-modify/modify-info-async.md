@@ -1,14 +1,15 @@
 ---
-title: modifyInfoAsync -
+title: modifyInfoAsync
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.async.article](../index.md)/[AsyncArticleModify](index.md)/[modifyInfoAsync](modify-info-async.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.article](../index.html)
+/[AsyncArticleModify](index.html)/[modifyInfoAsync](modify-info-async.html)
 
+# modifyInfoAsync
 
+[jvm]\
+suspend fun [modifyInfoAsync](modify-info-async.html)():
+Deferred<[ArticleModify.ModifyResult](../../be.zvz.kotlininside.api.article/-article-modify/-modify-result/index.html)>
 
-# modifyInfoAsync  
-[jvm]  
-Content  
-suspend fun [modifyInfoAsync](modify-info-async.md)(): Deferred<[ArticleModify.ModifyResult](../../be.zvz.kotlininside.api.article/-article-modify/-modify-result/index.md)>  
 
 
 

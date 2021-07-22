@@ -1,37 +1,29 @@
 ---
-title: chunk -
+title: chunk
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[chunk](chunk.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[chunk](chunk.html)
 
+# chunk
 
-
-# chunk  
-[jvm]  
-Content  
-open fun [chunk](chunk.md)(size: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [HttpRequest](index.md)  
-More info  
-
+[jvm]\
+open fun [chunk](chunk.html)(
+size: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [HttpRequest](index.html)
 
 Set chunked streaming mode to the given size
 
+#### Return
 
+this request
 
-#### Return  
+## Parameters
 
+jvm
 
-request
-
-
-
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
+| | |
 |---|---|
-| <a name="be.zvz.kotlininside.http/HttpRequest/chunk/#int/PointingToDeclaration/"></a>size| <a name="be.zvz.kotlininside.http/HttpRequest/chunk/#int/PointingToDeclaration/"></a>
-  
-  
+| size |  |
+
 
 
 

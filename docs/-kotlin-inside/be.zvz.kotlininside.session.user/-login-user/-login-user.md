@@ -1,14 +1,15 @@
 ---
-title: LoginUser -
+title: LoginUser
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.session.user](../index.md)/[LoginUser](index.md)/[LoginUser](-login-user.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.session.user](../index.html)/[LoginUser](index.html)
+/[LoginUser](-login-user.html)
 
+# LoginUser
 
+[jvm]\
+fun [LoginUser](-login-user.html)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
+password: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
 
-# LoginUser  
-[jvm]  
-Content  
-fun [LoginUser](-login-user.md)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), password: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  
 
 
 

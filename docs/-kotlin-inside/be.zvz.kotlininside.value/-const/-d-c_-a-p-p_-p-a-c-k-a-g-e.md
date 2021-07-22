@@ -1,14 +1,15 @@
 ---
-title: DC_APP_PACKAGE -
+title: DC_APP_PACKAGE
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.value](../index.md)/[Const](index.md)/[DC_APP_PACKAGE](-d-c_-a-p-p_-p-a-c-k-a-g-e.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.value](../index.html)/[Const](index.html)
+/[DC_APP_PACKAGE](-d-c_-a-p-p_-p-a-c-k-a-g-e.html)
 
+# DC_APP_PACKAGE
 
+[jvm]\
+const
+val [DC_APP_PACKAGE](-d-c_-a-p-p_-p-a-c-k-a-g-e.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# DC_APP_PACKAGE  
-[jvm]  
-Content  
-val [DC_APP_PACKAGE](-d-c_-a-p-p_-p-a-c-k-a-g-e.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 

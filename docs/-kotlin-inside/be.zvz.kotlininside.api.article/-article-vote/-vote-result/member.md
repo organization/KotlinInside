@@ -1,14 +1,14 @@
 ---
-title: member -
+title: member
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleVote](../index.md)/[VoteResult](index.md)/[member](member.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleVote](../index.html)/[VoteResult](index.html)/[member](member.html)
 
+# member
 
+[jvm]\
+val [member](member.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)? = null
 
-# member  
-[jvm]  
-Content  
-val [member](member.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)? = null  
 
 
 

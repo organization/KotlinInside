@@ -1,14 +1,14 @@
 ---
-title: hotState -
+title: hotState
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic](../../index.md)/[MinorGalleryInfo](../index.md)/[InfoResult](index.md)/[hotState](hot-state.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)
+/[MinorGalleryInfo](../index.html)/[InfoResult](index.html)/[hotState](hot-state.html)
 
+# hotState
 
+[jvm]\
+val [hotState](hot-state.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# hotState  
-[jvm]  
-Content  
-val [hotState](hot-state.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
 
 
 

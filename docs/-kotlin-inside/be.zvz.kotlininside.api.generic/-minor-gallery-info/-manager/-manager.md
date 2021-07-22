@@ -1,14 +1,17 @@
 ---
-title: Manager -
+title: Manager
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic](../../index.md)/[MinorGalleryInfo](../index.md)/[Manager](index.md)/[Manager](-manager.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)
+/[MinorGalleryInfo](../index.html)/[Manager](index.html)/[Manager](-manager.html)
 
+# Manager
 
+[jvm]\
+fun [Manager](-manager.html)(
+isMaster: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html),
+id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
+name: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
 
-# Manager  
-[jvm]  
-Content  
-fun [Manager](-manager.md)(isMaster: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), name: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  
 
 
 

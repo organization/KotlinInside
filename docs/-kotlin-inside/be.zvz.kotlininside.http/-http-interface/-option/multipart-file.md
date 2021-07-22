@@ -1,16 +1,19 @@
 ---
-title: multipartFile -
+title: multipartFile
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.http](../../index.md)/[HttpInterface](../index.md)/[Option](index.md)/[multipartFile](multipart-file.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.http](../../index.html)/[HttpInterface](../index.html)
+/[Option](index.html)/[multipartFile](multipart-file.html)
 
+# multipartFile
 
+[jvm]\
 
-# multipartFile  
-[jvm]  
-Content  
-@NotNull()  
-  
-private val [multipartFile](multipart-file.md): [Map](https://docs.oracle.com/javase/7/docs/api/java/util/Map.html)<[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), [InputStream](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)>  
+@NotNull()
+
+private val [multipartFile](multipart-file.html):
+@NotNull()[Map](https://docs.oracle.com/javase/7/docs/api/java/util/Map.html)<[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
+, [InputStream](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)>
+
 
 
 

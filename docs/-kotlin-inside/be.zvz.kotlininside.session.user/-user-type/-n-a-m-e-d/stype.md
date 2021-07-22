@@ -1,14 +1,14 @@
 ---
-title: stype -
+title: stype
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.session.user](../../index.md)/[UserType](../index.md)/[NAMED](index.md)/[stype](stype.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.session.user](../../index.html)/[UserType](../index.html)
+/[NAMED](index.html)/[stype](stype.html)
 
+# stype
 
+[jvm]\
+val [stype](stype.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# stype  
-[jvm]  
-Content  
-val [stype](stype.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
 
 
 

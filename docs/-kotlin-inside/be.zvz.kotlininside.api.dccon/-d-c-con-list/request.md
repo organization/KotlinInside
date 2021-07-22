@@ -1,14 +1,14 @@
 ---
-title: request -
+title: request
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.dccon](../index.md)/[DCConList](index.md)/[request](request.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.dccon](../index.html)/[DCConList](index.html)
+/[request](request.html)
 
+# request
 
+[jvm]\
+fun [request](request.html)(): [DCConList.ListResult](-list-result/index.html)
 
-# request  
-[jvm]  
-Content  
-fun [request](request.md)(): [DCConList.ListResult](-list-result/index.md)  
 
 
 

@@ -1,14 +1,14 @@
 ---
-title: LOGIN -
+title: LOGIN
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.value](../../index.md)/[ApiUrl](../index.md)/[Auth](index.md)/[LOGIN](-l-o-g-i-n.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)
+/[Auth](index.html)/[LOGIN](-l-o-g-i-n.html)
 
+# LOGIN
 
+[jvm]\
+const val [LOGIN](-l-o-g-i-n.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# LOGIN  
-[jvm]  
-Content  
-val [LOGIN](-l-o-g-i-n.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 

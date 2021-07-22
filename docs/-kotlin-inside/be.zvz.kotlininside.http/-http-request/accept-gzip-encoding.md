@@ -1,37 +1,28 @@
 ---
-title: acceptGzipEncoding -
+title: acceptGzipEncoding
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[acceptGzipEncoding](accept-gzip-encoding.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[acceptGzipEncoding](accept-gzip-encoding.html)
 
+# acceptGzipEncoding
 
-
-# acceptGzipEncoding  
-[jvm]  
-Content  
-open fun [acceptGzipEncoding](accept-gzip-encoding.md)(): [HttpRequest](index.md)  
-More info  
-
+[jvm]\
+open fun [acceptGzipEncoding](accept-gzip-encoding.html)(): [HttpRequest](index.html)
 
 Set the 'Accept-Encoding' header to 'gzip'
 
+#### Return
 
+this request
 
-#### Return  
+## See also
 
+jvm
 
-request
-
-
-
-## See also  
-  
-jvm  
-  
-|  Name|  Summary| 
+| | |
 |---|---|
-| <a name="be.zvz.kotlininside.http/HttpRequest/acceptGzipEncoding/#/PointingToDeclaration/"></a>[#uncompress(boolean)](uncompress.md)| <a name="be.zvz.kotlininside.http/HttpRequest/acceptGzipEncoding/#/PointingToDeclaration/"></a>[uncompress](uncompress.md)
-  
-  
+| [#uncompress(boolean)](uncompress.html) | #uncompress(boolean) |
+
 
 
 

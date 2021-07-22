@@ -1,14 +1,15 @@
 ---
-title: relationGall -
+title: relationGall
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleList](../index.md)/[GallInfo](index.md)/[relationGall](relation-gall.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleList](../index.html)/[GallInfo](index.html)/[relationGall](relation-gall.html)
 
+# relationGall
 
+[jvm]\
+val [relationGall](relation-gall.html): [Map](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html)<[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
+, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)>
 
-# relationGall  
-[jvm]  
-Content  
-val [relationGall](relation-gall.md): [Map](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html)<[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)>  
 
 
 

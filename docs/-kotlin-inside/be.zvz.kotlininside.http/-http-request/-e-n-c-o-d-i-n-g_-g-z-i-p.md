@@ -1,20 +1,16 @@
 ---
-title: ENCODING_GZIP -
+title: ENCODING_GZIP
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[ENCODING_GZIP](-e-n-c-o-d-i-n-g_-g-z-i-p.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[ENCODING_GZIP](-e-n-c-o-d-i-n-g_-g-z-i-p.html)
 
+# ENCODING_GZIP
 
-
-# ENCODING_GZIP  
-[jvm]  
-Content  
-val [ENCODING_GZIP](-e-n-c-o-d-i-n-g_-g-z-i-p.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
-More info  
-
+[jvm]\
+val [ENCODING_GZIP](-e-n-c-o-d-i-n-g_-g-z-i-p.html): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
 
 'gzip' encoding header value
 
-  
 
 
 

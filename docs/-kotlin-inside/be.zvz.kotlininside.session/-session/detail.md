@@ -1,14 +1,14 @@
 ---
-title: detail -
+title: detail
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.session](../index.md)/[Session](index.md)/[detail](detail.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.session](../index.html)/[Session](index.html)
+/[detail](detail.html)
 
+# detail
 
+[jvm]\
+val [detail](detail.html): [SessionDetail](../-session-detail/index.html)?
 
-# detail  
-[jvm]  
-Content  
-val [detail](detail.md): [SessionDetail](../-session-detail/index.md)?  
 
 
 

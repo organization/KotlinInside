@@ -1,27 +1,26 @@
 ---
-title: badRequest -
+title: badRequest
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[badRequest](bad-request.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[badRequest](bad-request.html)
 
+# badRequest
 
-
-# badRequest  
-[jvm]  
-Content  
-open fun [badRequest](bad-request.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
-More info  
-
+[jvm]\
+open
+fun [badRequest](bad-request.html)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
 
 Is the response code a 400 Bad Request?
 
+#### Return
 
+true if 400, false otherwise
 
-#### Return  
+#### Throws
 
-
-if 400, false otherwise
-
-  
+| | |
+|---|---|
+| [be.zvz.kotlininside.http.HttpRequest.HttpRequestException](-http-request-exception/index.html) |  |
 
 
 

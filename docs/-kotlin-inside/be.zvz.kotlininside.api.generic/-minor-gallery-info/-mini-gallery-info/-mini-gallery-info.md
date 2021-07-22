@@ -1,18 +1,18 @@
 ---
-title: MiniGalleryInfo -
+title: MiniGalleryInfo
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic](../../index.md)/[MinorGalleryInfo](../index.md)
-/[MiniGalleryInfo](index.md)/[MiniGalleryInfo](-mini-gallery-info.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)
+/[MinorGalleryInfo](../index.html)/[MiniGalleryInfo](index.html)/[MiniGalleryInfo](-mini-gallery-info.html)
 
 # MiniGalleryInfo
 
-[jvm]  
-Content  
-fun [MiniGalleryInfo](-mini-gallery-info.md)(
+[jvm]\
+fun [MiniGalleryInfo](-mini-gallery-info.html)(
 hide: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html),
 totalMember: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html),
 memberLimit: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html),
-isMember: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))  
+isMember: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))
+
 
 
 

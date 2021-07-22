@@ -1,14 +1,14 @@
 ---
-title: ordinal -
+title: ordinal
 ---
-//[KotlinInside](../../../../index.md)/[be.zvz.kotlininside.api.generic](../../../index.md)/[GalleryRanking](../../index.md)/[RankType](../index.md)/[UP](index.md)/[ordinal](ordinal.md)
+//[KotlinInside](../../../../../index.html)/[be.zvz.kotlininside.api.generic](../../../index.html)
+/[GalleryRanking](../../index.html)/[RankType](../index.html)/[UP](index.html)/[ordinal](ordinal.html)
 
+# ordinal
 
+[jvm]\
+val [ordinal](ordinal.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
 
-# ordinal  
-[jvm]  
-Content  
-val [ordinal](ordinal.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
 
 
 

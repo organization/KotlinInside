@@ -1,14 +1,14 @@
 ---
-title: DEFAULT -
+title: DEFAULT
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.http](../../index.md)/[HttpRequest](../index.md)/[UploadProgress](index.md)/[DEFAULT](-d-e-f-a-u-l-t.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.http](../../index.html)/[HttpRequest](../index.html)
+/[UploadProgress](index.html)/[DEFAULT](-d-e-f-a-u-l-t.html)
 
+# DEFAULT
 
+[jvm]\
+val [DEFAULT](-d-e-f-a-u-l-t.html): [HttpRequest.UploadProgress](index.html)
 
-# DEFAULT  
-[jvm]  
-Content  
-val [DEFAULT](-d-e-f-a-u-l-t.md): [HttpRequest.UploadProgress](index.md)  
 
 
 

@@ -1,23 +1,18 @@
 ---
-title: isMap -
+title: isMap
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.json](../index.md)/[JsonBrowser](index.md)/[isMap](is-map.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.json](../index.html)/[JsonBrowser](index.html)
+/[isMap](is-map.html)
 
+# isMap
 
+[jvm]\
+open fun [isMap](is-map.html)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
 
-# isMap  
-[jvm]  
-Content  
-open fun [isMap](is-map.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
-More info  
+#### Return
 
+True if the value represents a map.
 
-#### Return  
-
-
-if the value represents a map.
-
-  
 
 
 

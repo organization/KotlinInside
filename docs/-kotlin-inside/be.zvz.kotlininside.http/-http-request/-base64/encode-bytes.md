@@ -1,67 +1,64 @@
 ---
-title: encodeBytes -
+title: encodeBytes
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.http](../../index.md)/[HttpRequest](../index.md)/[Base64](index.md)/[encodeBytes](encode-bytes.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.http](../../index.html)/[HttpRequest](../index.html)
+/[Base64](index.html)/[encodeBytes](encode-bytes.html)
 
+# encodeBytes
 
-
-# encodeBytes  
-[jvm]  
-Content  
-open fun [encodeBytes](encode-bytes.md)(source: [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)>): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
-More info  
-
+[jvm]\
+open fun [encodeBytes](encode-bytes.html)(
+source: [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)>): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
 
 Encodes a byte array into Base64 notation.
 
+#### Return
 
+The Base64-encoded data as a String
 
-#### Return  
+## Parameters
 
+jvm
 
-Base64-encoded data as a String
-
-
-
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
+| | |
 |---|---|
-| <a name="be.zvz.kotlininside.http/HttpRequest.Base64/encodeBytes/#byte[]/PointingToDeclaration/"></a>source| <a name="be.zvz.kotlininside.http/HttpRequest.Base64/encodeBytes/#byte[]/PointingToDeclaration/"></a><br><br>The data to convert<br><br>
-  
-  
+| source | The data to convert |
 
+#### Throws
 
-[jvm]  
-Content  
-open fun [encodeBytes](encode-bytes.md)(source: [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)>, off: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), len: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
-More info  
+| | |
+|---|---|
+| [java.lang.NullPointerException](https://docs.oracle.com/javase/7/docs/api/java/lang/NullPointerException.html) | if source array is null |
+| [java.lang.IllegalArgumentException](https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalArgumentException.html) | if source array, offset, or length are invalid |
 
+[jvm]\
+open fun [encodeBytes](encode-bytes.html)(
+source: [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)>
+, off: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html),
+len: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
 
 Encodes a byte array into Base64 notation.
 
+#### Return
 
+The Base64-encoded data as a String
 
-#### Return  
+## Parameters
 
+jvm
 
-Base64-encoded data as a String
-
-
-
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
+| | |
 |---|---|
-| <a name="be.zvz.kotlininside.http/HttpRequest.Base64/encodeBytes/#byte[]#int#int/PointingToDeclaration/"></a>len| <a name="be.zvz.kotlininside.http/HttpRequest.Base64/encodeBytes/#byte[]#int#int/PointingToDeclaration/"></a><br><br>Length of data to convert<br><br>
-| <a name="be.zvz.kotlininside.http/HttpRequest.Base64/encodeBytes/#byte[]#int#int/PointingToDeclaration/"></a>off| <a name="be.zvz.kotlininside.http/HttpRequest.Base64/encodeBytes/#byte[]#int#int/PointingToDeclaration/"></a><br><br>Offset in array where conversion should begin<br><br>
-| <a name="be.zvz.kotlininside.http/HttpRequest.Base64/encodeBytes/#byte[]#int#int/PointingToDeclaration/"></a>source| <a name="be.zvz.kotlininside.http/HttpRequest.Base64/encodeBytes/#byte[]#int#int/PointingToDeclaration/"></a><br><br>The data to convert<br><br>
-  
-  
+| source | The data to convert |
+| off | Offset in array where conversion should begin |
+| len | Length of data to convert |
+
+#### Throws
+
+| | |
+|---|---|
+| [java.lang.NullPointerException](https://docs.oracle.com/javase/7/docs/api/java/lang/NullPointerException.html) | if source array is null |
+| [java.lang.IllegalArgumentException](https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalArgumentException.html) | if source array, offset, or length are invalid |
 
 
 

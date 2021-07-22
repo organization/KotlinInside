@@ -1,14 +1,15 @@
 ---
-title: APP_CHECK -
+title: APP_CHECK
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.value](../../index.md)/[ApiUrl](../index.md)/[Auth](index.md)/[APP_CHECK](-a-p-p_-c-h-e-c-k.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)
+/[Auth](index.html)/[APP_CHECK](-a-p-p_-c-h-e-c-k.html)
 
+# APP_CHECK
 
+[jvm]\
+const
+val [APP_CHECK](-a-p-p_-c-h-e-c-k.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# APP_CHECK  
-[jvm]  
-Content  
-val [APP_CHECK](-a-p-p_-c-h-e-c-k.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 

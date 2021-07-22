@@ -1,14 +1,15 @@
 ---
-title: wiki -
+title: wiki
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic](../../index.md)/[TotalSearch](../index.md)/[TotalSearchResult](index.md)/[wiki](wiki.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)
+/[TotalSearch](../index.html)/[TotalSearchResult](index.html)/[wiki](wiki.html)
 
+# wiki
 
+[jvm]\
+val [wiki](wiki.html): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[TotalSearch.Wiki](
+../-wiki/index.html)>
 
-# wiki  
-[jvm]  
-Content  
-val [wiki](wiki.md): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[TotalSearch.Wiki](../-wiki/index.md)>  
 
 
 

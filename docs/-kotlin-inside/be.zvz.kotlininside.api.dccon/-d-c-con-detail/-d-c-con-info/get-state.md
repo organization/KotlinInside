@@ -1,14 +1,14 @@
 ---
-title: getState -
+title: getState
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.dccon](../../index.md)/[DCConDetail](../index.md)/[DCConInfo](index.md)/[getState](get-state.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.dccon](../../index.html)/[DCConDetail](../index.html)
+/[DCConInfo](index.html)/[getState](get-state.html)
 
+# getState
 
+[jvm]\
+val [getState](get-state.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
 
-# getState  
-[jvm]  
-Content  
-val [getState](get-state.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
 
 
 

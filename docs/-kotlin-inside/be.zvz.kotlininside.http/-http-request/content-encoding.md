@@ -1,27 +1,21 @@
 ---
-title: contentEncoding -
+title: contentEncoding
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[contentEncoding](content-encoding.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[contentEncoding](content-encoding.html)
 
+# contentEncoding
 
-
-# contentEncoding  
-[jvm]  
-Content  
-open fun [contentEncoding](content-encoding.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
-More info  
-
+[jvm]\
+open
+fun [contentEncoding](content-encoding.html)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
 
 Get the 'Content-Encoding' header from the response
 
+#### Return
 
+this request
 
-#### Return  
-
-
-request
-
-  
 
 
 

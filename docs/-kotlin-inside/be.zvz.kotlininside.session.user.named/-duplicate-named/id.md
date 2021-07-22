@@ -1,14 +1,14 @@
 ---
-title: id -
+title: id
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.session.user.named](../index.md)/[DuplicateNamed](index.md)/[id](id.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.session.user.named](../index.html)
+/[DuplicateNamed](index.html)/[id](id.html)
 
+# id
 
+[jvm]\
+open override val [id](id.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# id  
-[jvm]  
-Content  
-open override val [id](id.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
 
 
 

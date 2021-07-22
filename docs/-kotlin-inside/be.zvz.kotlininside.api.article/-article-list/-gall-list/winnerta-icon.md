@@ -1,14 +1,14 @@
 ---
-title: winnertaIcon -
+title: winnertaIcon
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleList](../index.md)/[GallList](index.md)/[winnertaIcon](winnerta-icon.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleList](../index.html)/[GallList](index.html)/[winnertaIcon](winnerta-icon.html)
 
+# winnertaIcon
 
+[jvm]\
+val [winnertaIcon](winnerta-icon.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
 
-# winnertaIcon  
-[jvm]  
-Content  
-val [winnertaIcon](winnerta-icon.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
 
 
 

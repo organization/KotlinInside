@@ -1,14 +1,14 @@
 ---
-title: gallId -
+title: gallId
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic](../../index.md)/[TotalSearch](../index.md)/[SearchedArticle](index.md)/[gallId](gall-id.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)
+/[TotalSearch](../index.html)/[SearchedArticle](index.html)/[gallId](gall-id.html)
 
+# gallId
 
+[jvm]\
+val [gallId](gall-id.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# gallId  
-[jvm]  
-Content  
-val [gallId](gall-id.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
 
 
 

@@ -1,14 +1,14 @@
 ---
-title: recommendCheck -
+title: recommendCheck
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleRead](../index.md)/[ViewInfo](index.md)/[recommendCheck](recommend-check.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleRead](../index.html)/[ViewInfo](index.html)/[recommendCheck](recommend-check.html)
 
+# recommendCheck
 
+[jvm]\
+val [recommendCheck](recommend-check.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
 
-# recommendCheck  
-[jvm]  
-Content  
-val [recommendCheck](recommend-check.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
 
 
 

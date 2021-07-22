@@ -1,14 +1,14 @@
 ---
-title: packageIndex -
+title: packageIndex
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.dccon](../../index.md)/[DCConDetail](../index.md)/[DCConInfo](index.md)/[packageIndex](package-index.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.dccon](../../index.html)/[DCConDetail](../index.html)
+/[DCConInfo](index.html)/[packageIndex](package-index.html)
 
+# packageIndex
 
+[jvm]\
+val [packageIndex](package-index.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
 
-# packageIndex  
-[jvm]  
-Content  
-val [packageIndex](package-index.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
 
 
 

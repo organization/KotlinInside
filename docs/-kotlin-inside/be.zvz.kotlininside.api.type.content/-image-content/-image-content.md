@@ -1,15 +1,17 @@
 ---
-title: ImageContent -
+title: ImageContent
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.type.content](../index.md)/[ImageContent](index.md)/[ImageContent](-image-content.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.type.content](../index.html)/[ImageContent](index.html)
+/[ImageContent](-image-content.html)
 
+# ImageContent
 
+[jvm]\
+fun [ImageContent](-image-content.html)(file: [File](https://docs.oracle.com/javase/7/docs/api/java/io/File.html))
 
-# ImageContent  
-[jvm]  
-Content  
-fun [ImageContent](-image-content.md)(file: [File](https://docs.oracle.com/javase/7/docs/api/java/io/File.html))  
-fun [ImageContent](-image-content.md)(stream: [InputStream](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html))  
+fun [ImageContent](-image-content.html)(
+stream: [InputStream](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html))
+
 
 
 

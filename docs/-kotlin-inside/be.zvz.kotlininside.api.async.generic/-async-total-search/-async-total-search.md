@@ -1,14 +1,15 @@
 ---
-title: AsyncTotalSearch -
+title: AsyncTotalSearch
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.async.generic](../index.md)/[AsyncTotalSearch](index.md)/[AsyncTotalSearch](-async-total-search.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.generic](../index.html)
+/[AsyncTotalSearch](index.html)/[AsyncTotalSearch](-async-total-search.html)
 
+# AsyncTotalSearch
 
+[jvm]\
+fun [AsyncTotalSearch](-async-total-search.html)(
+keyword: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
 
-# AsyncTotalSearch  
-[jvm]  
-Content  
-fun [AsyncTotalSearch](-async-total-search.md)(keyword: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  
 
 
 

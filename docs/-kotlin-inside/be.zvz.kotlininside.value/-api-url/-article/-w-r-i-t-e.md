@@ -1,14 +1,14 @@
 ---
-title: WRITE -
+title: WRITE
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.value](../../index.md)/[ApiUrl](../index.md)/[Article](index.md)/[WRITE](-w-r-i-t-e.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)
+/[Article](index.html)/[WRITE](-w-r-i-t-e.html)
 
+# WRITE
 
+[jvm]\
+const val [WRITE](-w-r-i-t-e.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# WRITE  
-[jvm]  
-Content  
-val [WRITE](-w-r-i-t-e.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 

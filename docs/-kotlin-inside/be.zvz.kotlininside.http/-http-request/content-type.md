@@ -1,84 +1,58 @@
 ---
-title: contentType -
+title: contentType
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[contentType](content-type.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[contentType](content-type.html)
 
+# contentType
 
-
-# contentType  
-[jvm]  
-Content  
-open fun [contentType](content-type.md)(contentType: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
-More info  
-
+[jvm]\
+open fun [contentType](content-type.html)(
+contentType: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.html)
 
 Set the 'Content-Type' request header to the given value
 
+#### Return
 
+this request
 
-#### Return  
+## Parameters
 
+jvm
 
-request
-
-
-
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
+| | |
 |---|---|
-| <a name="be.zvz.kotlininside.http/HttpRequest/contentType/#java.lang.String/PointingToDeclaration/"></a>contentType| <a name="be.zvz.kotlininside.http/HttpRequest/contentType/#java.lang.String/PointingToDeclaration/"></a>
-  
-  
+| contentType |  |
 
-
-[jvm]  
-Content  
-open fun [contentType](content-type.md)(contentType: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), charset: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
-More info  
-
+[jvm]\
+open fun [contentType](content-type.html)(
+contentType: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html),
+charset: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.html)
 
 Set the 'Content-Type' request header to the given value and charset
 
+#### Return
 
+this request
 
-#### Return  
+## Parameters
 
+jvm
 
-request
-
-
-
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
+| | |
 |---|---|
-| <a name="be.zvz.kotlininside.http/HttpRequest/contentType/#java.lang.String#java.lang.String/PointingToDeclaration/"></a>charset| <a name="be.zvz.kotlininside.http/HttpRequest/contentType/#java.lang.String#java.lang.String/PointingToDeclaration/"></a>
-| <a name="be.zvz.kotlininside.http/HttpRequest/contentType/#java.lang.String#java.lang.String/PointingToDeclaration/"></a>contentType| <a name="be.zvz.kotlininside.http/HttpRequest/contentType/#java.lang.String#java.lang.String/PointingToDeclaration/"></a>
-  
-  
+| contentType |  |
+| charset |  |
 
-
-[jvm]  
-Content  
-open fun [contentType](content-type.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
-More info  
-
+[jvm]\
+open fun [contentType](content-type.html)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
 
 Get the 'Content-Type' header from the response
 
+#### Return
 
+response header value
 
-#### Return  
-
-
-header value
-
-  
 
 
 

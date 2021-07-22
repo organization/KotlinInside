@@ -1,14 +1,15 @@
 ---
-title: buyAsync -
+title: buyAsync
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.async.dccon](../index.md)/[AsyncDCConBuy](index.md)/[buyAsync](buy-async.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.dccon](../index.html)/[AsyncDCConBuy](index.html)
+/[buyAsync](buy-async.html)
 
+# buyAsync
 
+[jvm]\
+suspend fun [buyAsync](buy-async.html)():
+Deferred<[DCConBuy.BuyResult](../../be.zvz.kotlininside.api.dccon/-d-c-con-buy/-buy-result/index.html)>
 
-# buyAsync  
-[jvm]  
-Content  
-suspend fun [buyAsync](buy-async.md)(): Deferred<[DCConBuy.BuyResult](../../be.zvz.kotlininside.api.dccon/-d-c-con-buy/-buy-result/index.md)>  
 
 
 

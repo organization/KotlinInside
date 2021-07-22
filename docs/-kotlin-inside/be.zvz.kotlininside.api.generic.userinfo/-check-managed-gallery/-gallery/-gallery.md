@@ -1,18 +1,18 @@
 ---
-title: Gallery -
+title: Gallery
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic.userinfo](../../index.md)
-/[CheckManagedGallery](../index.md)/[Gallery](index.md)/[Gallery](-gallery.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic.userinfo](../../index.html)
+/[CheckManagedGallery](../index.html)/[Gallery](index.html)/[Gallery](-gallery.html)
 
 # Gallery
 
-[jvm]  
-Content  
-fun [Gallery](-gallery.md)(hide: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html),
+[jvm]\
+fun [Gallery](-gallery.html)(hide: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html),
 id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
 title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
 type: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
-managerType: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  
+managerType: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+
 
 
 

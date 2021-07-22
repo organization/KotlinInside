@@ -1,14 +1,17 @@
 ---
-title: CommentRead -
+title: CommentRead
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.comment](../index.md)/[CommentRead](index.md)/[CommentRead](-comment-read.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.comment](../index.html)/[CommentRead](index.html)
+/[CommentRead](-comment-read.html)
 
+# CommentRead
 
+[jvm]\
+fun [CommentRead](-comment-read.html)(
+gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
+articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html),
+rePage: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))
 
-# CommentRead  
-[jvm]  
-Content  
-fun [CommentRead](-comment-read.md)(gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), rePage: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))  
 
 
 

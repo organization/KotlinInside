@@ -1,17 +1,17 @@
 ---
-title: ModifyMyGall -
+title: ModifyMyGall
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.generic.userinfo](../index.md)/[ModifyMyGall](index.md)
-/[ModifyMyGall](-modify-my-gall.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.generic.userinfo](../index.html)
+/[ModifyMyGall](index.html)/[ModifyMyGall](-modify-my-gall.html)
 
 # ModifyMyGall
 
-[jvm]  
-Content  
-fun [ModifyMyGall](-modify-my-gall.md)(
+[jvm]\
+fun [ModifyMyGall](-modify-my-gall.html)(
 gallName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
 gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
-session: [Session](../../be.zvz.kotlininside.session/-session/index.md))  
+session: [Session](../../be.zvz.kotlininside.session/-session/index.html))
+
 
 
 

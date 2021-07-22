@@ -1,14 +1,15 @@
 ---
-title: MY_GALL -
+title: MY_GALL
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.value](../../index.md)/[ApiUrl](../index.md)/[User](index.md)
-/[MY_GALL](-m-y_-g-a-l-l.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)
+/[User](index.html)/[MY_GALL](-m-y_-g-a-l-l.html)
 
 # MY_GALL
 
-[jvm]  
-Content  
-val [MY_GALL](-m-y_-g-a-l-l.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+[jvm]\
+const
+val [MY_GALL](-m-y_-g-a-l-l.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
+
 
 
 

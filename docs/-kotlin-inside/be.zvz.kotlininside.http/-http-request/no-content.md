@@ -1,27 +1,26 @@
 ---
-title: noContent -
+title: noContent
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[noContent](no-content.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[noContent](no-content.html)
 
+# noContent
 
-
-# noContent  
-[jvm]  
-Content  
-open fun [noContent](no-content.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
-More info  
-
+[jvm]\
+open
+fun [noContent](no-content.html)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
 
 Is the response code a 204 No Content?
 
+#### Return
 
+true if 204, false otherwise
 
-#### Return  
+#### Throws
 
-
-if 204, false otherwise
-
-  
+| | |
+|---|---|
+| [be.zvz.kotlininside.http.HttpRequest.HttpRequestException](-http-request-exception/index.html) |  |
 
 
 

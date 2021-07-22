@@ -1,14 +1,15 @@
 ---
-title: isDeleteFlag -
+title: isDeleteFlag
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.comment](../../index.md)/[CommentRead](../index.md)/[CommentData](index.md)/[isDeleteFlag](is-delete-flag.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.comment](../../index.html)
+/[CommentRead](../index.html)/[CommentData](index.html)/[isDeleteFlag](is-delete-flag.html)
 
+# isDeleteFlag
 
+[jvm]\
+val [isDeleteFlag](is-delete-flag.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
+?
 
-# isDeleteFlag  
-[jvm]  
-Content  
-val [isDeleteFlag](is-delete-flag.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?  
 
 
 

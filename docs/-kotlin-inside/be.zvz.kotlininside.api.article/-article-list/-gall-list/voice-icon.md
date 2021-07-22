@@ -1,14 +1,14 @@
 ---
-title: voiceIcon -
+title: voiceIcon
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleList](../index.md)/[GallList](index.md)/[voiceIcon](voice-icon.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleList](../index.html)/[GallList](index.html)/[voiceIcon](voice-icon.html)
 
+# voiceIcon
 
+[jvm]\
+val [voiceIcon](voice-icon.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
 
-# voiceIcon  
-[jvm]  
-Content  
-val [voiceIcon](voice-icon.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
 
 
 

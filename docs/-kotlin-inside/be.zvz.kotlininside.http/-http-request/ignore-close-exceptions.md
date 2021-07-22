@@ -1,59 +1,43 @@
 ---
-title: ignoreCloseExceptions -
+title: ignoreCloseExceptions
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[ignoreCloseExceptions](ignore-close-exceptions.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[ignoreCloseExceptions](ignore-close-exceptions.html)
 
+# ignoreCloseExceptions
 
+[jvm]\
+open fun [ignoreCloseExceptions](ignore-close-exceptions.html)(
+ignore: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)): [HttpRequest](index.html)
 
-# ignoreCloseExceptions  
-[jvm]  
-Content  
-open fun [ignoreCloseExceptions](ignore-close-exceptions.md)(ignore: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)): [HttpRequest](index.md)  
-More info  
+Set whether or not to ignore exceptions that occur from
+calling [close](https://docs.oracle.com/javase/7/docs/api/java/io/Closeable.html#close())
 
+The default value of this setting is true
 
-Set whether or not to ignore exceptions that occur from calling [close](https://docs.oracle.com/javase/7/docs/api/java/io/Closeable.html#close())
+#### Return
 
+this request
 
+## Parameters
 
- The default value of this setting is true
+jvm
 
-
-
-#### Return  
-
-
-request
-
-
-
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
+| | |
 |---|---|
-| <a name="be.zvz.kotlininside.http/HttpRequest/ignoreCloseExceptions/#boolean/PointingToDeclaration/"></a>ignore| <a name="be.zvz.kotlininside.http/HttpRequest/ignoreCloseExceptions/#boolean/PointingToDeclaration/"></a>
-  
-  
+| ignore |  |
 
+[jvm]\
+open
+fun [ignoreCloseExceptions](ignore-close-exceptions.html)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
 
-[jvm]  
-Content  
-open fun [ignoreCloseExceptions](ignore-close-exceptions.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
-More info  
+Get whether or not exceptions thrown
+by [close](https://docs.oracle.com/javase/7/docs/api/java/io/Closeable.html#close()) are ignored
 
+#### Return
 
-Get whether or not exceptions thrown by [close](https://docs.oracle.com/javase/7/docs/api/java/io/Closeable.html#close()) are ignored
+true if ignoring, false if throwing
 
-
-
-#### Return  
-
-
-if ignoring, false if throwing
-
-  
 
 
 

@@ -1,14 +1,14 @@
 ---
-title: identifier -
+title: identifier
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.type](../index.md)/[HeadText](index.md)/[identifier](identifier.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.type](../index.html)/[HeadText](index.html)
+/[identifier](identifier.html)
 
+# identifier
 
+[jvm]\
+val [identifier](identifier.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
 
-# identifier  
-[jvm]  
-Content  
-val [identifier](identifier.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
 
 
 

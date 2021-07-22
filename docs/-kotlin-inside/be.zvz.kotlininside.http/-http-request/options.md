@@ -1,57 +1,37 @@
 ---
-title: options -
+title: options
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[options](options.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[options](options.html)
 
+# options
 
+[jvm]\
+open fun [options](options.html)(
+url: [CharSequence](https://docs.oracle.com/javase/7/docs/api/java/lang/CharSequence.html)): [HttpRequest](index.html)
 
-# options  
-[jvm]  
-Content  
-open fun [options](options.md)(url: [CharSequence](https://docs.oracle.com/javase/7/docs/api/java/lang/CharSequence.html)): [HttpRequest](index.md)  
-More info  
-
-
-Start an 'OPTIONS' request to the given URL
-
-
-
-#### Return  
-
-
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
-|---|---|
-| <a name="be.zvz.kotlininside.http/HttpRequest/options/#java.lang.CharSequence/PointingToDeclaration/"></a>url| <a name="be.zvz.kotlininside.http/HttpRequest/options/#java.lang.CharSequence/PointingToDeclaration/"></a>
-  
-  
-
-
-[jvm]  
-Content  
-open fun [options](options.md)(url: [URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html)): [HttpRequest](index.md)  
-More info  
-
+open fun [options](options.html)(
+url: [URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html)): [HttpRequest](index.html)
 
 Start an 'OPTIONS' request to the given URL
 
+#### Return
 
+request
 
-#### Return  
+## Parameters
 
+jvm
 
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
+| | |
 |---|---|
-| <a name="be.zvz.kotlininside.http/HttpRequest/options/#java.net.URL/PointingToDeclaration/"></a>url| <a name="be.zvz.kotlininside.http/HttpRequest/options/#java.net.URL/PointingToDeclaration/"></a>
-  
-  
+| url |  |
+
+#### Throws
+
+| | |
+|---|---|
+| [be.zvz.kotlininside.http.HttpRequest.HttpRequestException](-http-request-exception/index.html) |  |
 
 
 

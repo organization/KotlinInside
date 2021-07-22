@@ -1,14 +1,13 @@
 ---
-title: GallInfo -
+title: GallInfo
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleList](../index.md)/[GallInfo](index.md)/[GallInfo](-gall-info.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleList](../index.html)/[GallInfo](index.html)/[GallInfo](-gall-info.html)
 
+# GallInfo
 
-
-# GallInfo  
-[jvm]  
-Content  
-fun [GallInfo](-gall-info.md)(title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
+[jvm]\
+fun [GallInfo](-gall-info.html)(title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
 category: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html),
 fileCount: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html),
 fileSize: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html),
@@ -27,7 +26,8 @@ useListFix: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boole
 notifyRecent: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)?,
 relationGall: [Map](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html)<[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 , [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)>,
-headText: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[HeadText](../../../be.zvz.kotlininside.api.type/-head-text/index.md)>)  
+headText: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[HeadText](../../../be.zvz.kotlininside.api.type/-head-text/index.html)>)
+
 
 
 

@@ -1,14 +1,17 @@
 ---
-title: VoteResult -
+title: VoteResult
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleVote](../index.md)/[VoteResult](index.md)/[VoteResult](-vote-result.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleVote](../index.html)/[VoteResult](index.html)/[VoteResult](-vote-result.html)
 
+# VoteResult
 
+[jvm]\
+fun [VoteResult](-vote-result.html)(
+result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html),
+cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
+member: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)? = null)
 
-# VoteResult  
-[jvm]  
-Content  
-fun [VoteResult](-vote-result.md)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), member: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)? = null)  
 
 
 

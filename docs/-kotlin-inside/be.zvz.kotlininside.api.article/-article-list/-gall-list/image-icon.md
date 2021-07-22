@@ -1,14 +1,14 @@
 ---
-title: imageIcon -
+title: imageIcon
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleList](../index.md)/[GallList](index.md)/[imageIcon](image-icon.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleList](../index.html)/[GallList](index.html)/[imageIcon](image-icon.html)
 
+# imageIcon
 
+[jvm]\
+val [imageIcon](image-icon.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
 
-# imageIcon  
-[jvm]  
-Content  
-val [imageIcon](image-icon.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
 
 
 

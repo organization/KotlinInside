@@ -1,17 +1,14 @@
 ---
-title: be.zvz.kotlininside.value -
+title: be.zvz.kotlininside.value
 ---
-//[KotlinInside](../index.md)/[be.zvz.kotlininside.value](index.md)
+//[KotlinInside](../../index.html)/[be.zvz.kotlininside.value](index.html)
 
+# Package be.zvz.kotlininside.value
 
+## Types
 
-# Package be.zvz.kotlininside.value  
-
-
-## Types  
-  
-|  Name|  Summary| 
+| Name | Summary |
 |---|---|
-| <a name="be.zvz.kotlininside.value/ApiUrl///PointingToDeclaration/"></a>[ApiUrl](-api-url/index.md)| <a name="be.zvz.kotlininside.value/ApiUrl///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [ApiUrl](-api-url/index.md)  <br><br><br>
-| <a name="be.zvz.kotlininside.value/Const///PointingToDeclaration/"></a>[Const](-const/index.md)| <a name="be.zvz.kotlininside.value/Const///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [Const](-const/index.md)  <br><br><br>
+| [ApiUrl](-api-url/index.html) | [jvm]<br>object [ApiUrl](-api-url/index.html) |
+| [Const](-const/index.html) | [jvm]<br>object [Const](-const/index.html) |
 

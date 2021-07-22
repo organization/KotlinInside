@@ -1,20 +1,21 @@
 ---
-title: write -
+title: write
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.article](../index.md)/[ArticleWrite](index.md)/[write](write.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.article](../index.html)/[ArticleWrite](index.html)
+/[write](write.html)
 
+# write
 
-
-# write  
-[jvm]  
-Content  
-fun [write](write.md)(): [ArticleWrite.WriteResult](-write-result/index.md)  
-More info  
-
+[jvm]\
+fun [write](write.html)(): [ArticleWrite.WriteResult](-write-result/index.html)
 
 글을 작성합니다.
 
-  
+#### Throws
+
+| | |
+|---|---|
+| [be.zvz.kotlininside.http.HttpException](../../be.zvz.kotlininside.http/-http-exception/index.html) | 글을 작성하지 못할 경우, HttpException 발생 |
 
 
 

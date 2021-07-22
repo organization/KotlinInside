@@ -1,14 +1,15 @@
 ---
-title: subManager -
+title: subManager
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic](../../index.md)/[MinorGalleryInfo](../index.md)/[InfoResult](index.md)/[subManager](sub-manager.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)
+/[MinorGalleryInfo](../index.html)/[InfoResult](index.html)/[subManager](sub-manager.html)
 
+# subManager
 
+[jvm]\
+val [subManager](sub-manager.html): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[MinorGalleryInfo.Manager](
+../-manager/index.html)>
 
-# subManager  
-[jvm]  
-Content  
-val [subManager](sub-manager.md): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[MinorGalleryInfo.Manager](../-manager/index.md)>  
 
 
 

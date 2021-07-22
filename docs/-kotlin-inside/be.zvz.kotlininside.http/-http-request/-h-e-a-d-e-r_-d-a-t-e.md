@@ -1,20 +1,16 @@
 ---
-title: HEADER_DATE -
+title: HEADER_DATE
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[HEADER_DATE](-h-e-a-d-e-r_-d-a-t-e.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[HEADER_DATE](-h-e-a-d-e-r_-d-a-t-e.html)
 
+# HEADER_DATE
 
-
-# HEADER_DATE  
-[jvm]  
-Content  
-val [HEADER_DATE](-h-e-a-d-e-r_-d-a-t-e.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
-More info  
-
+[jvm]\
+val [HEADER_DATE](-h-e-a-d-e-r_-d-a-t-e.html): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
 
 'Date' header name
 
-  
 
 
 

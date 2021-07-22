@@ -1,14 +1,15 @@
 ---
-title: requestAsync -
+title: requestAsync
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.async.article](../index.md)/[AsyncArticleRead](index.md)/[requestAsync](request-async.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.article](../index.html)
+/[AsyncArticleRead](index.html)/[requestAsync](request-async.html)
 
+# requestAsync
 
+[jvm]\
+suspend fun [requestAsync](request-async.html)():
+Deferred<[Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)>
 
-# requestAsync  
-[jvm]  
-Content  
-suspend fun [requestAsync](request-async.md)(): Deferred<[Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)>  
 
 
 

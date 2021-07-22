@@ -1,16 +1,13 @@
 ---
-title: be.zvz.kotlininside -
+title: be.zvz.kotlininside
 ---
-//[KotlinInside](../index.md)/[be.zvz.kotlininside](index.md)
+//[KotlinInside](../../index.html)/[be.zvz.kotlininside](index.html)
 
+# Package be.zvz.kotlininside
 
+## Types
 
-# Package be.zvz.kotlininside  
-
-
-## Types  
-  
-|  Name|  Summary| 
+| Name | Summary |
 |---|---|
-| <a name="be.zvz.kotlininside/KotlinInside///PointingToDeclaration/"></a>[KotlinInside](-kotlin-inside/index.md)| <a name="be.zvz.kotlininside/KotlinInside///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [KotlinInside](-kotlin-inside/index.md)  <br><br><br>
+| [KotlinInside](-kotlin-inside/index.html) | [jvm]<br>class [KotlinInside](-kotlin-inside/index.html) |
 

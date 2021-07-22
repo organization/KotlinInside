@@ -1,20 +1,16 @@
 ---
-title: METHOD_HEAD -
+title: METHOD_HEAD
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[METHOD_HEAD](-m-e-t-h-o-d_-h-e-a-d.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[METHOD_HEAD](-m-e-t-h-o-d_-h-e-a-d.html)
 
+# METHOD_HEAD
 
-
-# METHOD_HEAD  
-[jvm]  
-Content  
-val [METHOD_HEAD](-m-e-t-h-o-d_-h-e-a-d.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
-More info  
-
+[jvm]\
+val [METHOD_HEAD](-m-e-t-h-o-d_-h-e-a-d.html): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
 
 'HEAD' request method
 
-  
 
 
 

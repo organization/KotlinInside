@@ -1,14 +1,14 @@
 ---
-title: MainPage -
+title: MainPage
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.generic](../index.md)/[MainPage](index.md)/[MainPage](-main-page.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.generic](../index.html)/[MainPage](index.html)
+/[MainPage](-main-page.html)
 
+# MainPage
 
+[jvm]\
+fun [MainPage](-main-page.html)()
 
-# MainPage  
-[jvm]  
-Content  
-fun [MainPage](-main-page.md)()  
 
 
 

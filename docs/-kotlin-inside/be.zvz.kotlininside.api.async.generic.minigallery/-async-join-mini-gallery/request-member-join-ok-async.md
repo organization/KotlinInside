@@ -1,15 +1,15 @@
 ---
-title: requestMemberJoinOkAsync -
+title: requestMemberJoinOkAsync
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.async.generic.minigallery](../index.md)
-/[AsyncJoinMiniGallery](index.md)/[requestMemberJoinOkAsync](request-member-join-ok-async.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.generic.minigallery](../index.html)
+/[AsyncJoinMiniGallery](index.html)/[requestMemberJoinOkAsync](request-member-join-ok-async.html)
 
 # requestMemberJoinOkAsync
 
-[jvm]  
-Content  
-suspend fun [requestMemberJoinOkAsync](request-member-join-ok-async.md)():
-Deferred<[JoinMiniGallery.MemberJoinOkResult](../../be.zvz.kotlininside.api.generic.minigallery/-join-mini-gallery/-member-join-ok-result/index.md)>  
+[jvm]\
+suspend fun [requestMemberJoinOkAsync](request-member-join-ok-async.html)():
+Deferred<[JoinMiniGallery.MemberJoinOkResult](../../be.zvz.kotlininside.api.generic.minigallery/-join-mini-gallery/-member-join-ok-result/index.html)>
+
 
 
 

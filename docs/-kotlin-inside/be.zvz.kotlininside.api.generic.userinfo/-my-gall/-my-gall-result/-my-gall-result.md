@@ -1,17 +1,17 @@
 ---
-title: MyGallResult -
+title: MyGallResult
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic.userinfo](../../index.md)/[MyGall](../index.md)
-/[MyGallResult](index.md)/[MyGallResult](-my-gall-result.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic.userinfo](../../index.html)
+/[MyGall](../index.html)/[MyGallResult](index.html)/[MyGallResult](-my-gall-result.html)
 
 # MyGallResult
 
-[jvm]  
-Content  
-fun [MyGallResult](-my-gall-result.md)(
+[jvm]\
+fun [MyGallResult](-my-gall-result.html)(
 myGall: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[Gallery](
-../../../be.zvz.kotlininside.api.type/-gallery/index.md)>,
-favorite: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[Gallery](../../../be.zvz.kotlininside.api.type/-gallery/index.md)>)  
+../../../be.zvz.kotlininside.api.type/-gallery/index.html)>,
+favorite: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[Gallery](../../../be.zvz.kotlininside.api.type/-gallery/index.html)>)
+
 
 
 

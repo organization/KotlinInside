@@ -1,37 +1,29 @@
 ---
-title: authorization -
+title: authorization
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[authorization](authorization.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[authorization](authorization.html)
 
+# authorization
 
-
-# authorization  
-[jvm]  
-Content  
-open fun [authorization](authorization.md)(authorization: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
-More info  
-
+[jvm]\
+open fun [authorization](authorization.html)(
+authorization: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.html)
 
 Set the 'Authorization' header to given value
 
+#### Return
 
+this request
 
-#### Return  
+## Parameters
 
+jvm
 
-request
-
-
-
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
+| | |
 |---|---|
-| <a name="be.zvz.kotlininside.http/HttpRequest/authorization/#java.lang.String/PointingToDeclaration/"></a>authorization| <a name="be.zvz.kotlininside.http/HttpRequest/authorization/#java.lang.String/PointingToDeclaration/"></a>
-  
-  
+| authorization |  |
+
 
 
 

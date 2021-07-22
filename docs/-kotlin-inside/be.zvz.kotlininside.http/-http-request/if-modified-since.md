@@ -1,37 +1,29 @@
 ---
-title: ifModifiedSince -
+title: ifModifiedSince
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[ifModifiedSince](if-modified-since.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[ifModifiedSince](if-modified-since.html)
 
+# ifModifiedSince
 
-
-# ifModifiedSince  
-[jvm]  
-Content  
-open fun [ifModifiedSince](if-modified-since.md)(ifModifiedSince: [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)): [HttpRequest](index.md)  
-More info  
-
+[jvm]\
+open fun [ifModifiedSince](if-modified-since.html)(
+ifModifiedSince: [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)): [HttpRequest](index.html)
 
 Set the 'If-Modified-Since' request header to the given value
 
+#### Return
 
+this request
 
-#### Return  
+## Parameters
 
+jvm
 
-request
-
-
-
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
+| | |
 |---|---|
-| <a name="be.zvz.kotlininside.http/HttpRequest/ifModifiedSince/#long/PointingToDeclaration/"></a>ifModifiedSince| <a name="be.zvz.kotlininside.http/HttpRequest/ifModifiedSince/#long/PointingToDeclaration/"></a>
-  
-  
+| ifModifiedSince |  |
+
 
 
 

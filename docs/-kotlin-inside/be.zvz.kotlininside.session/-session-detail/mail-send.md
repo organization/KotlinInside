@@ -1,14 +1,14 @@
 ---
-title: mailSend -
+title: mailSend
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.session](../index.md)/[SessionDetail](index.md)
-/[mailSend](mail-send.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.session](../index.html)/[SessionDetail](index.html)
+/[mailSend](mail-send.html)
 
 # mailSend
 
-[jvm]  
-Content  
-val [mailSend](mail-send.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
+[jvm]\
+val [mailSend](mail-send.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
+
 
 
 

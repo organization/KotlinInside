@@ -1,20 +1,21 @@
 ---
-title: upvote -
+title: upvote
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.article](../index.md)/[ArticleVote](index.md)/[upvote](upvote.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.article](../index.html)/[ArticleVote](index.html)
+/[upvote](upvote.html)
 
+# upvote
 
-
-# upvote  
-[jvm]  
-Content  
-fun [upvote](upvote.md)(): [ArticleVote.VoteResult](-vote-result/index.md)  
-More info  
-
+[jvm]\
+fun [upvote](upvote.html)(): [ArticleVote.VoteResult](-vote-result/index.html)
 
 글을 추천합니다.
 
-  
+#### Throws
+
+| | |
+|---|---|
+| [be.zvz.kotlininside.http.HttpException](../../be.zvz.kotlininside.http/-http-exception/index.html) | 추천이 실패할 경우, HttpException 발생 |
 
 
 

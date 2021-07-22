@@ -1,18 +1,26 @@
 ---
-title: be.zvz.kotlininside.api.async.comment -
+title: be.zvz.kotlininside.api.async.comment
 ---
-//[KotlinInside](../index.md)/[be.zvz.kotlininside.api.async.comment](index.md)
+//[KotlinInside](../../index.html)/[be.zvz.kotlininside.api.async.comment](index.html)
 
+# Package be.zvz.kotlininside.api.async.comment
 
+## Types
 
-# Package be.zvz.kotlininside.api.async.comment  
-
-
-## Types  
-  
-|  Name|  Summary| 
+| Name | Summary |
 |---|---|
-| <a name="be.zvz.kotlininside.api.async.comment/AsyncCommentDelete///PointingToDeclaration/"></a>[AsyncCommentDelete](-async-comment-delete/index.md)| <a name="be.zvz.kotlininside.api.async.comment/AsyncCommentDelete///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [AsyncCommentDelete](-async-comment-delete/index.md)@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)()constructor(**gallId**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **articleId**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **commentId**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **session**: [Session](../be.zvz.kotlininside.session/-session/index.md), **fcmToken**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  <br><br><br>
-| <a name="be.zvz.kotlininside.api.async.comment/AsyncCommentRead///PointingToDeclaration/"></a>[AsyncCommentRead](-async-comment-read/index.md)| <a name="be.zvz.kotlininside.api.async.comment/AsyncCommentRead///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [AsyncCommentRead](-async-comment-read/index.md)(**gallId**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **articleId**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **rePage**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))  <br><br><br>
-| <a name="be.zvz.kotlininside.api.async.comment/AsyncCommentWrite///PointingToDeclaration/"></a>[AsyncCommentWrite](-async-comment-write/index.md)| <a name="be.zvz.kotlininside.api.async.comment/AsyncCommentWrite///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [AsyncCommentWrite](-async-comment-write/index.md)@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)()constructor(**gallId**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **articleId**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **comment**: [Comment](../be.zvz.kotlininside.api.type.comment/-comment/index.md), **session**: [Session](../be.zvz.kotlininside.session/-session/index.md), **fcmToken**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  <br><br><br>
+| [AsyncCommentDelete](-async-comment-delete/index.html) | [jvm]<br>class [AsyncCommentDelete](-async-comment-delete/index.html)@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)()constructor(**gallId**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
+articleId**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **
+commentId**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **
+session**: [Session](../be.zvz.kotlininside.session/-session/index.html), **
+fcmToken**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
+| [AsyncCommentRead](-async-comment-read/index.html) | [jvm]<br>class [AsyncCommentRead](-async-comment-read/index.html)(**
+gallId**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
+articleId**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **
+rePage**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)) |
+| [AsyncCommentWrite](-async-comment-write/index.html) | [jvm]<br>class [AsyncCommentWrite](-async-comment-write/index.html)@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)()constructor(**gallId**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
+articleId**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **
+comment**: [Comment](../be.zvz.kotlininside.api.type.comment/-comment/index.html), **
+session**: [Session](../be.zvz.kotlininside.session/-session/index.html), **
+fcmToken**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
 

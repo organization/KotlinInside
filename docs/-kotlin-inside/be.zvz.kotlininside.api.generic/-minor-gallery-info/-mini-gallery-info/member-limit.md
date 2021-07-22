@@ -1,14 +1,14 @@
 ---
-title: memberLimit -
+title: memberLimit
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic](../../index.md)/[MinorGalleryInfo](../index.md)
-/[MiniGalleryInfo](index.md)/[memberLimit](member-limit.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)
+/[MinorGalleryInfo](../index.html)/[MiniGalleryInfo](index.html)/[memberLimit](member-limit.html)
 
 # memberLimit
 
-[jvm]  
-Content  
-val [memberLimit](member-limit.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
+[jvm]\
+val [memberLimit](member-limit.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
+
 
 
 

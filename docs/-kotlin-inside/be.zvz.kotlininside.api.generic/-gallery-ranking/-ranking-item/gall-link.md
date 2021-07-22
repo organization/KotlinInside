@@ -1,14 +1,14 @@
 ---
-title: gallLink -
+title: gallLink
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic](../../index.md)/[GalleryRanking](../index.md)/[RankingItem](index.md)/[gallLink](gall-link.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)
+/[GalleryRanking](../index.html)/[RankingItem](index.html)/[gallLink](gall-link.html)
 
+# gallLink
 
+[jvm]\
+val [gallLink](gall-link.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# gallLink  
-[jvm]  
-Content  
-val [gallLink](gall-link.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
 
 
 

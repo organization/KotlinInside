@@ -1,14 +1,15 @@
 ---
-title: getLinkAsync -
+title: getLinkAsync
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.async.management](../index.md)/[AsyncGallerySetting](index.md)/[getLinkAsync](get-link-async.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.management](../index.html)
+/[AsyncGallerySetting](index.html)/[getLinkAsync](get-link-async.html)
 
+# getLinkAsync
 
+[jvm]\
+suspend fun [getLinkAsync](get-link-async.html)():
+Deferred<[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)>
 
-# getLinkAsync  
-[jvm]  
-Content  
-suspend fun [getLinkAsync](get-link-async.md)(): Deferred<[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)>  
 
 
 

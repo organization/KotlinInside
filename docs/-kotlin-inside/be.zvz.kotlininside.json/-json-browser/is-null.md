@@ -1,23 +1,18 @@
 ---
-title: isNull -
+title: isNull
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.json](../index.md)/[JsonBrowser](index.md)/[isNull](is-null.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.json](../index.html)/[JsonBrowser](index.html)
+/[isNull](is-null.html)
 
+# isNull
 
+[jvm]\
+open fun [isNull](is-null.html)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
 
-# isNull  
-[jvm]  
-Content  
-open fun [isNull](is-null.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
-More info  
+#### Return
 
+The value of the element as text
 
-#### Return  
-
-
-value of the element as text
-
-  
 
 
 

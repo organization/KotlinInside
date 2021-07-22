@@ -1,14 +1,14 @@
 ---
-title: fileSize -
+title: fileSize
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleModify](../index.md)/[ModifyResult](index.md)/[fileSize](file-size.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleModify](../index.html)/[ModifyResult](index.html)/[fileSize](file-size.html)
 
+# fileSize
 
+[jvm]\
+val [fileSize](file-size.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) = 0
 
-# fileSize  
-[jvm]  
-Content  
-val [fileSize](file-size.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) = 0  
 
 
 

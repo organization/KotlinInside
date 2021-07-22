@@ -1,38 +1,27 @@
 ---
-title: KotlinInside -
+title: KotlinInside
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside](../index.md)/[KotlinInside](index.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside](../index.html)/[KotlinInside](index.html)
 
+# KotlinInside
 
+[jvm]\
+class [KotlinInside](index.html)
 
-# KotlinInside  
- [jvm] class [KotlinInside](index.md)   
+## Types
 
-
-## Types  
-  
-|  Name|  Summary| 
+| Name | Summary |
 |---|---|
-| <a name="be.zvz.kotlininside/KotlinInside.Companion///PointingToDeclaration/"></a>[Companion](-companion/index.md)| <a name="be.zvz.kotlininside/KotlinInside.Companion///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>object [Companion](-companion/index.md)  <br><br><br>
+| [Companion](-companion/index.html) | [jvm]<br>object [Companion](-companion/index.html) |
 
+## Properties
 
-## Functions  
-  
-|  Name|  Summary| 
+| Name | Summary |
 |---|---|
-| <a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a>[equals](../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)| <a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open operator fun [equals](../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)(other: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  <br><br><br>
-| <a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a>[hashCode](../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)| <a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open fun [hashCode](../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  <br><br><br>
-| <a name="kotlin/Any/toString/#/PointingToDeclaration/"></a>[toString](../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)| <a name="kotlin/Any/toString/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open fun [toString](../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
-
-
-## Properties  
-  
-|  Name|  Summary| 
-|---|---|
-| <a name="be.zvz.kotlininside/KotlinInside/app/#/PointingToDeclaration/"></a>[app](app.md)| <a name="be.zvz.kotlininside/KotlinInside/app/#/PointingToDeclaration/"></a> [jvm] lateinit var [app](app.md): [App](../../be.zvz.kotlininside.security/-app/index.md)   <br>
-| <a name="be.zvz.kotlininside/KotlinInside/auth/#/PointingToDeclaration/"></a>[auth](auth.md)| <a name="be.zvz.kotlininside/KotlinInside/auth/#/PointingToDeclaration/"></a> [jvm] val [auth](auth.md): [Auth](../../be.zvz.kotlininside.security/-auth/index.md)   <br>
-| <a name="be.zvz.kotlininside/KotlinInside/hashedAppKey/#/PointingToDeclaration/"></a>[hashedAppKey](hashed-app-key.md)| <a name="be.zvz.kotlininside/KotlinInside/hashedAppKey/#/PointingToDeclaration/"></a> [jvm] lateinit var [hashedAppKey](hashed-app-key.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
-| <a name="be.zvz.kotlininside/KotlinInside/httpInterface/#/PointingToDeclaration/"></a>[httpInterface](http-interface.md)| <a name="be.zvz.kotlininside/KotlinInside/httpInterface/#/PointingToDeclaration/"></a> [jvm] val [httpInterface](http-interface.md): [HttpInterface](../../be.zvz.kotlininside.http/-http-interface/index.md)   <br>
-| <a name="be.zvz.kotlininside/KotlinInside/session/#/PointingToDeclaration/"></a>[session](session.md)| <a name="be.zvz.kotlininside/KotlinInside/session/#/PointingToDeclaration/"></a> [jvm] lateinit var [session](session.md): [Session](../../be.zvz.kotlininside.session/-session/index.md)   <br>
-| <a name="be.zvz.kotlininside/KotlinInside/user/#/PointingToDeclaration/"></a>[user](user.md)| <a name="be.zvz.kotlininside/KotlinInside/user/#/PointingToDeclaration/"></a> [jvm] val [user](user.md): [User](../../be.zvz.kotlininside.session.user/-user/index.md)   <br>
+| [app](app.html) | [jvm]<br>lateinit var [app](app.html): [App](../../be.zvz.kotlininside.security/-app/index.html) |
+| [auth](auth.html) | [jvm]<br>val [auth](auth.html): [Auth](../../be.zvz.kotlininside.security/-auth/index.html) |
+| [hashedAppKey](hashed-app-key.html) | [jvm]<br>lateinit var [hashedAppKey](hashed-app-key.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [httpInterface](http-interface.html) | [jvm]<br>val [httpInterface](http-interface.html): [HttpInterface](../../be.zvz.kotlininside.http/-http-interface/index.html) |
+| [session](session.html) | [jvm]<br>lateinit var [session](session.html): [Session](../../be.zvz.kotlininside.session/-session/index.html) |
+| [user](user.html) | [jvm]<br>val [user](user.html): [User](../../be.zvz.kotlininside.session.user/-user/index.html) |
 

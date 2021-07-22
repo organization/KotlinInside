@@ -1,14 +1,14 @@
 ---
-title: gallTitle -
+title: gallTitle
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleRead](../index.md)/[ViewInfo](index.md)/[gallTitle](gall-title.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleRead](../index.html)/[ViewInfo](index.html)/[gallTitle](gall-title.html)
 
+# gallTitle
 
+[jvm]\
+val [gallTitle](gall-title.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# gallTitle  
-[jvm]  
-Content  
-val [gallTitle](gall-title.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
 
 
 

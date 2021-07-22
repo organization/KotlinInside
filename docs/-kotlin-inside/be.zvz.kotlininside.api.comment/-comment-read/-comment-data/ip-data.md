@@ -1,14 +1,14 @@
 ---
-title: ipData -
+title: ipData
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.comment](../../index.md)/[CommentRead](../index.md)/[CommentData](index.md)/[ipData](ip-data.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.comment](../../index.html)
+/[CommentRead](../index.html)/[CommentData](index.html)/[ipData](ip-data.html)
 
+# ipData
 
+[jvm]\
+val [ipData](ip-data.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?
 
-# ipData  
-[jvm]  
-Content  
-val [ipData](ip-data.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?  
 
 
 
