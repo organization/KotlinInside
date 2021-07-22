@@ -1,7 +1,6 @@
 package be.zvz.kotlininside.api.management
 
 import be.zvz.kotlininside.KotlinInside
-import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.http.Request
 import be.zvz.kotlininside.json.JsonBrowser
 import be.zvz.kotlininside.session.Session
@@ -67,17 +66,17 @@ class UserBlock @JvmOverloads constructor(
         lateinit var json: JsonBrowser
 
         try {
-            json = KotlinInside.getInstance().httpInterface.post(
-                ApiUrl.Gallery.MINOR_BLOCK_ADD,
-                requestOption
-            )!!
-        } catch (e: HttpException) {
-            if (e.cause is IOException) {
-                return BlockResult(
-                    result = false,
-                    cause = "권한이 없습니다."
+            json = JsonBrowser.parse(
+                KotlinInside.getInstance().httpInterface.post(
+                    ApiUrl.Gallery.MINOR_BLOCK_ADD,
+                    requestOption
                 )
-            }
+            )
+        } catch (e: IOException) {
+            return BlockResult(
+                result = false,
+                cause = "권한이 없습니다."
+            )
         }
 
         return BlockResult(

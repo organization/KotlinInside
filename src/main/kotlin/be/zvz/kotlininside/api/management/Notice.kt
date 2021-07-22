@@ -39,10 +39,12 @@ class Notice(
         lateinit var json: JsonBrowser
 
         try {
-            json = KotlinInside.getInstance().httpInterface.upload(
-                ApiUrl.Gallery.MINOR_MANAGER_REQUEST,
-                option
-            )!!.index(0)
+            json = JsonBrowser.parse(
+                KotlinInside.getInstance().httpInterface.upload(
+                    ApiUrl.Gallery.MINOR_MANAGER_REQUEST,
+                    option
+                )
+            ).index(0)
         } catch (e: HttpException) {
             if (e.cause is IOException) {
                 return NoticeResult(

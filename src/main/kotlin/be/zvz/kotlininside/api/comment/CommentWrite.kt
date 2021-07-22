@@ -7,17 +7,17 @@ import be.zvz.kotlininside.api.type.comment.StringComment
 import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.http.HttpInterface
 import be.zvz.kotlininside.http.Request
+import be.zvz.kotlininside.json.JsonBrowser
 import be.zvz.kotlininside.session.Session
 import be.zvz.kotlininside.session.user.Anonymous
 import be.zvz.kotlininside.value.ApiUrl
-import be.zvz.kotlininside.value.Const
 
 class CommentWrite @JvmOverloads constructor(
     private val gallId: String,
     private val articleId: Int,
     private val comment: Comment,
     private val session: Session,
-    private val fcmToken: String = Const.DEFAULT_FCM_TOKEN
+    private val fcmToken: String = KotlinInside.getInstance().auth.fcmToken
 ) {
     data class WriteResult(
         val result: Boolean,
@@ -51,7 +51,8 @@ class CommentWrite @JvmOverloads constructor(
                 .addMultipartParameter("user_id", session.detail!!.userId)
         }
 
-        val json = KotlinInside.getInstance().httpInterface.upload(ApiUrl.Comment.OK, option)!!.index(0)
+        val json =
+            JsonBrowser.parse(KotlinInside.getInstance().httpInterface.upload(ApiUrl.Comment.OK, option)).index(0)
 
         return WriteResult(
             result = json.get("result").asBoolean(),
@@ -89,7 +90,8 @@ class CommentWrite @JvmOverloads constructor(
                 .addMultipartParameter("user_id", session.detail!!.userId)
         }
 
-        val json = KotlinInside.getInstance().httpInterface.upload(ApiUrl.Comment.OK, option)!!.index(0)
+        val json =
+            JsonBrowser.parse(KotlinInside.getInstance().httpInterface.upload(ApiUrl.Comment.OK, option)).index(0)
 
         return WriteResult(
             result = json.get("result").asBoolean(),
@@ -116,7 +118,12 @@ class CommentWrite @JvmOverloads constructor(
                     .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
 
                 val dcConJson =
-                    KotlinInside.getInstance().httpInterface.upload(ApiUrl.DCCon.DCCON, dcConRequestOption)!!
+                    JsonBrowser.parse(
+                        KotlinInside.getInstance().httpInterface.upload(
+                            ApiUrl.DCCon.DCCON,
+                            dcConRequestOption
+                        )
+                    )
 
                 when (dcConJson.get("result").asBoolean()) {
                     true -> {

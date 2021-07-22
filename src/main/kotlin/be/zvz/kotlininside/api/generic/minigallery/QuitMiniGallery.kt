@@ -2,6 +2,7 @@ package be.zvz.kotlininside.api.generic.minigallery
 
 import be.zvz.kotlininside.KotlinInside
 import be.zvz.kotlininside.http.Request
+import be.zvz.kotlininside.json.JsonBrowser
 import be.zvz.kotlininside.session.Session
 import be.zvz.kotlininside.session.user.Anonymous
 import be.zvz.kotlininside.value.ApiUrl
@@ -24,10 +25,12 @@ class QuitMiniGallery(
             .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
             .addMultipartParameter("id", gallId)
 
-        val json = KotlinInside.getInstance().httpInterface.upload(
-            ApiUrl.MiniGallery.QUIT,
-            option
-        )!!.index(0)
+        val json = JsonBrowser.parse(
+            KotlinInside.getInstance().httpInterface.upload(
+                ApiUrl.MiniGallery.QUIT,
+                option
+            )
+        ).index(0)
 
         return MemberQuitResult(
             result = json.get("result").asBoolean()

@@ -7,6 +7,7 @@ import be.zvz.kotlininside.api.type.comment.DCConComment
 import be.zvz.kotlininside.api.type.comment.StringComment
 import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.http.Request
+import be.zvz.kotlininside.json.JsonBrowser
 import be.zvz.kotlininside.value.ApiUrl
 
 class CommentRead(
@@ -43,7 +44,12 @@ class CommentRead(
         val url =
             "${ApiUrl.Comment.READ}?id=$gallId&no=$articleId&re_page=$rePage&app_id=${KotlinInside.getInstance().auth.getAppId()}"
 
-        val json = KotlinInside.getInstance().httpInterface.get(Request.redirectUrl(url), Request.getDefaultOption())!!
+        val json = JsonBrowser.parse(
+            KotlinInside.getInstance().httpInterface.get(
+                Request.redirectUrl(url),
+                Request.getDefaultOption()
+            )
+        )
             .index(0)
 
         return ReadResult(

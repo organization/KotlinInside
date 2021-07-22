@@ -3,6 +3,7 @@ package be.zvz.kotlininside.api.generic
 import be.zvz.kotlininside.KotlinInside
 import be.zvz.kotlininside.api.type.Gallery
 import be.zvz.kotlininside.http.Request
+import be.zvz.kotlininside.json.JsonBrowser
 import be.zvz.kotlininside.value.ApiUrl
 
 class GallerySearch(
@@ -25,10 +26,12 @@ class GallerySearch(
             .addMultipartParameter("keyword", keyword)
             .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
 
-        val json = KotlinInside.getInstance().httpInterface.upload(
-            ApiUrl.Search.SEARCH,
-            option
-        )!!
+        val json = JsonBrowser.parse(
+            KotlinInside.getInstance().httpInterface.upload(
+                ApiUrl.Search.SEARCH,
+                option
+            )
+        )
 
         return GallerySearchResult(
             mainGallery = mutableListOf<Gallery>().apply {

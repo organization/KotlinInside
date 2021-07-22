@@ -3,6 +3,7 @@ package be.zvz.kotlininside.api.dccon
 import be.zvz.kotlininside.KotlinInside
 import be.zvz.kotlininside.api.type.DCCon
 import be.zvz.kotlininside.http.Request
+import be.zvz.kotlininside.json.JsonBrowser
 import be.zvz.kotlininside.utils.StringUtil
 import be.zvz.kotlininside.value.ApiUrl
 
@@ -33,10 +34,12 @@ class DCConDetail(
             .addMultipartParameter("type", "package_detail")
             .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
 
-        val json = KotlinInside.getInstance().httpInterface.upload(
-            ApiUrl.DCCon.DCCON,
-            option
-        )!!
+        val json = JsonBrowser.parse(
+            KotlinInside.getInstance().httpInterface.upload(
+                ApiUrl.DCCon.DCCON,
+                option
+            )
+        )
 
         return when {
             json.isList -> {

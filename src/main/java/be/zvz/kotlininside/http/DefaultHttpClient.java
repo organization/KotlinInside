@@ -1,6 +1,5 @@
 package be.zvz.kotlininside.http;
 
-import be.zvz.kotlininside.json.JsonBrowser;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -121,20 +120,26 @@ public class DefaultHttpClient implements HttpInterface {
         if (option.getUserAgent() != null)
             request.header("User-Agent", option.getUserAgent());
 
-        boolean firstKey = false;
-        for (Map.Entry<String, String> entry : option.getBodyParameter().entrySet()) {
-            if (!firstKey) {
-                bodyData.append(urlEncode(entry.getKey())).append("=").append(urlEncode(entry.getValue()));
-                firstKey = true;
-            } else {
-                bodyData.append("&").append(urlEncode(entry.getKey())).append("=").append(urlEncode(entry.getValue()));
+        if (option.getBody() != null && option.getContentType() != null) {
+            request.header("Content-Type", option.getContentType());
+            bodyData.append(option.getBody());
+        } else {
+            request.header("Content-Type", "application/x-www-form-urlencoded");
+            boolean firstKey = false;
+            for (Map.Entry<String, String> entry : option.getBodyParameter().entrySet()) {
+                if (!firstKey) {
+                    bodyData.append(urlEncode(entry.getKey())).append("=").append(urlEncode(entry.getValue()));
+                    firstKey = true;
+                } else {
+                    bodyData.append("&").append(urlEncode(entry.getKey())).append("=").append(urlEncode(entry.getValue()));
+                }
             }
         }
     }
 
     @Nullable
     @Override
-    public JsonBrowser get(@NotNull String url, @Nullable Option option) throws HttpException {
+    public String get(@NotNull String url, @Nullable Option option) throws HttpException {
         HttpRequest request = useCache(
                 useGzipEncoding(
                         useProxy(
@@ -154,51 +159,16 @@ public class DefaultHttpClient implements HttpInterface {
 
         try {
             // HTTP API로 변경될 경우 필요한 코드
-            /*
-            int requestCode = request.code();
 
-            if (requestCode == HttpURLConnection.HTTP_MOVED_TEMP ||
-                    requestCode == HttpURLConnection.HTTP_MOVED_PERM ||
-                    requestCode == HttpURLConnection.HTTP_SEE_OTHER) {
-
-                String redirectUrl = request.header("Location");
-
-                HttpRequest temp = gzipEncode(HttpRequest.get(redirectUrl))
-                        .acceptJson()
-                        .followRedirects(true);
-
-                if (option != null) {
-                    temp.headers(option.getHeaders());
-
-                    if (option.getUserAgent() != null)
-                        temp.header("User-Agent", option.getUserAgent());
-                }
-
-                JsonBrowser json = JsonBrowser.parse(
-                        temp.body()
-                );
-
-                return json;
-            } else {
-                return JsonBrowser.parse(
-                        request.body()
-                );
-            }
-            */
-
-            return JsonBrowser.parse(
-                    request.body()
-            );
+            return request.body();
         } catch (HttpRequest.HttpRequestException e) {
             throw new HttpException(request.code(), e.getMessage());
-        } catch (IOException e) {
-            throw new HttpException(e);
         }
     }
 
     @Nullable
     @Override
-    public JsonBrowser post(@NotNull String url, @Nullable Option option) throws HttpException {
+    public String post(@NotNull String url, @Nullable Option option) throws HttpException {
         HttpRequest request = useCache(
                 useGzipEncoding(
                         useProxy(
@@ -216,45 +186,41 @@ public class DefaultHttpClient implements HttpInterface {
         }
 
         try {
-            return JsonBrowser.parse(
-                    request
-                            .send(bodyData.toString())
-                            .body()
-            );
+            return request
+                    .send(bodyData.toString())
+                    .body();
         } catch (HttpRequest.HttpRequestException e) {
             throw new HttpException(request.code(), e.getMessage());
-        } catch (IOException e) {
-            throw new HttpException(e);
         }
     }
 
     @Nullable
     @Override
-    public JsonBrowser delete(@NotNull String url, @Nullable Option option) throws HttpException {
+    public String delete(@NotNull String url, @Nullable Option option) throws HttpException {
         throw new UnsupportedOperationException("Not implemented yet");
     }
 
     @Nullable
     @Override
-    public JsonBrowser head(@NotNull String url, @Nullable Option option) throws HttpException {
+    public String head(@NotNull String url, @Nullable Option option) throws HttpException {
         throw new UnsupportedOperationException("Not implemented yet");
     }
 
     @Nullable
     @Override
-    public JsonBrowser put(@NotNull String url, @Nullable Option option) throws HttpException {
+    public String put(@NotNull String url, @Nullable Option option) throws HttpException {
         throw new UnsupportedOperationException("Not implemented yet");
     }
 
     @Nullable
     @Override
-    public JsonBrowser patch(@NotNull String url, @Nullable Option option) throws HttpException {
+    public String patch(@NotNull String url, @Nullable Option option) throws HttpException {
         throw new UnsupportedOperationException("Not implemented yet");
     }
 
     @Nullable
     @Override
-    public JsonBrowser upload(@NotNull String url, @Nullable Option option) throws HttpException {
+    public String upload(@NotNull String url, @Nullable Option option) throws HttpException {
         HttpRequest request = useCache(
                 useGzipEncoding(
                         useProxy(
@@ -292,15 +258,11 @@ public class DefaultHttpClient implements HttpInterface {
         }
 
         try {
-            return JsonBrowser.parse(
-                    request
-                            .send(bodyData.toString())
-                            .body()
-            );
+            return request
+                    .send(bodyData.toString())
+                    .body();
         } catch (HttpRequest.HttpRequestException e) {
             throw new HttpException(request.code(), e.getMessage());
-        } catch (IOException e) {
-            throw new HttpException(e);
         }
     }
 

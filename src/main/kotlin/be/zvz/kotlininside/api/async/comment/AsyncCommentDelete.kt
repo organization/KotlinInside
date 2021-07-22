@@ -1,8 +1,8 @@
 package be.zvz.kotlininside.api.async.comment
 
+import be.zvz.kotlininside.KotlinInside
 import be.zvz.kotlininside.api.comment.CommentDelete
 import be.zvz.kotlininside.session.Session
-import be.zvz.kotlininside.value.Const
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
@@ -12,7 +12,7 @@ class AsyncCommentDelete @JvmOverloads constructor(
     articleId: Int,
     commentId: Int,
     session: Session,
-    fcmToken: String = Const.DEFAULT_FCM_TOKEN
+    fcmToken: String = KotlinInside.getInstance().auth.fcmToken
 ) {
     private val commentDelete = CommentDelete(gallId, articleId, commentId, session, fcmToken)
 

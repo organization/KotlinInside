@@ -3,6 +3,7 @@ package be.zvz.kotlininside.api.generic
 import be.zvz.kotlininside.KotlinInside
 import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.http.Request
+import be.zvz.kotlininside.json.JsonBrowser
 import be.zvz.kotlininside.value.ApiUrl
 
 class GalleryRanking {
@@ -30,10 +31,12 @@ class GalleryRanking {
     @Throws(HttpException::class)
     fun request(): List<RankingItem> {
         return mutableListOf<RankingItem>().apply {
-            val json = KotlinInside.getInstance().httpInterface.get(
-                ApiUrl.MainInfo.GALLERY_RANKING,
-                Request.getDefaultOption()
-            )!!
+            val json = JsonBrowser.parse(
+                KotlinInside.getInstance().httpInterface.get(
+                    ApiUrl.MainInfo.GALLERY_RANKING,
+                    Request.getDefaultOption()
+                )
+            )
             json.values().forEach {
                 add(
                     RankingItem(

@@ -1,7 +1,6 @@
 package be.zvz.kotlininside.api.management
 
 import be.zvz.kotlininside.KotlinInside
-import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.http.Request
 import be.zvz.kotlininside.json.JsonBrowser
 import be.zvz.kotlininside.session.Session
@@ -41,18 +40,18 @@ class ChangeHeadText(
         lateinit var json: JsonBrowser
 
         try {
-            json = KotlinInside.getInstance().httpInterface.upload(
-                ApiUrl.Gallery.MINOR_MANAGER_REQUEST,
-                option
-            )!!.index(0)
-        } catch (e: HttpException) {
-            if (e.cause is IOException) {
-                return ChangeResult(
-                    result = false,
-                    cause = "권한이 없습니다.",
-                    state = ""
+            json = JsonBrowser.parse(
+                KotlinInside.getInstance().httpInterface.upload(
+                    ApiUrl.Gallery.MINOR_MANAGER_REQUEST,
+                    option
                 )
-            }
+            ).index(0)
+        } catch (e: IOException) {
+            return ChangeResult(
+                result = false,
+                cause = "권한이 없습니다.",
+                state = ""
+            )
         }
 
         return ChangeResult(

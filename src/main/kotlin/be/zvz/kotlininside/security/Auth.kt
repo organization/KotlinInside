@@ -4,6 +4,7 @@ import be.zvz.kotlininside.KotlinInside
 import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.http.HttpInterface
 import be.zvz.kotlininside.http.Request
+import be.zvz.kotlininside.json.JsonBrowser
 import be.zvz.kotlininside.session.Session
 import be.zvz.kotlininside.session.SessionDetail
 import be.zvz.kotlininside.session.user.Anonymous
@@ -24,7 +25,9 @@ class Auth {
     private lateinit var time: String
     private lateinit var formattedTime: String
 
-    var fcmToken: String = Const.DEFAULT_FCM_TOKEN
+    lateinit var fcmToken: String
+    lateinit var fid: String
+    lateinit var refreshToken: String
 
     data class AppCheck(
         val result: Boolean,
@@ -34,35 +37,83 @@ class Auth {
         val date: String? = null
     )
 
+    @JvmOverloads
+    fun fetchFcmToken(argFid: String? = null, argRefreshToken: String? = null): String {
+        val firebaseInstallations = JsonBrowser.parse(
+            KotlinInside.getInstance().httpInterface.post(
+                ApiUrl.Firebase.INSTALLATIONS,
+                HttpInterface.Option()
+                    .addHeader("X-Android-Package", Const.Installations.X_ANDROID_PACKAGE)
+                    .addHeader("X-Android-Cert", Const.Installations.X_ANDROID_CERT)
+                    .addHeader("x-goog-api-key", Const.Installations.X_GOOG_API_KEY)
+                    .setContentTypeAndBody(
+                        "application/json",
+                        JsonBrowser.getMapper().writeValueAsString(
+                            JsonBrowser.getMapper().createObjectNode().apply {
+                                argFid?.let {
+                                    put("fid", it)
+                                }
+                                argRefreshToken?.let {
+                                    put("refreshToken", it)
+                                }
+                                put("appId", Const.Firebase.APP_ID)
+                                put("authVersion", Const.Firebase.AUTH_VERSION)
+                                put("sdkVersion", Const.Firebase.SDK_VERSION)
+                            }
+                        )
+                    )
+            )
+        )
+
+        fid = firebaseInstallations.get("fid").safeText()
+        refreshToken = firebaseInstallations.get("refreshToken").safeText()
+        val token = firebaseInstallations.get("authToken").get("token").safeText()
+        val register3 = KotlinInside.getInstance().httpInterface.post(
+            ApiUrl.PlayService.REGISTER3,
+            HttpInterface.Option()
+                .addHeader("Authorization", Const.Register3.AUTHORIZATION)
+                .setUserAgent(Const.Register3.USER_AGENT)
+                .addBodyParameter("sender", Const.Register3.SENDER)
+                .addBodyParameter("X-appid", fid)
+                .addBodyParameter("X-scope", Const.Register3.X_SCOPE)
+                .addBodyParameter("X-Goog-Firebase-Installations-Auth", token)
+                .addBodyParameter("X-gmp_app_id", Const.Firebase.APP_ID)
+                .addBodyParameter("X-firebase-app-name-hash", Const.Register3.X_FIREBASE_APP_NAME_HASH)
+                .addBodyParameter("app", Const.Register3.APP)
+                .addBodyParameter("device", Const.Register3.DEVICE)
+                .addBodyParameter("app_ver", Const.DC_APP_VERSION_CODE)
+                .addBodyParameter("cert", Const.Register3.CERT)
+        )!!
+        return register3.split("=")[1]
+    }
+
     /**
      * app_check에서 정보를 얻어오는 메소드입니다.
      * @return [AppCheck] AppCheck 또는 null을 반환합니다.
      * @exception [HttpException] app_check에 접근 할 수 없는 경우, HttpException이 발생합니다.
      */
     fun getAppCheck(): AppCheck {
-        val appCheck = KotlinInside.getInstance().httpInterface.get(ApiUrl.Auth.APP_CHECK, Request.getDefaultOption())
-
-        when {
-            appCheck !== null -> {
-                if (!appCheck.get("result").isNull)
-                    return AppCheck(
-                        result = appCheck.get("result").asBoolean()
-                    )
-
-                val json = appCheck.index(0)
-
-                return AppCheck(
-                    result = json.get("result").asBoolean(),
-                    version = json.get("ver").text(),
-                    notice = json.get("notice").asBoolean(),
-                    noticeUpdate = json.get("notice_update").asBoolean(),
-                    date = json.get("date").text()
-                )
-            }
-            else -> return AppCheck(
-                result = false
+        val appCheck = JsonBrowser.parse(
+            KotlinInside.getInstance().httpInterface.get(
+                ApiUrl.Auth.APP_CHECK,
+                Request.getDefaultOption()
             )
-        }
+        )
+
+        if (!appCheck.get("result").isNull)
+            return AppCheck(
+                result = appCheck.get("result").asBoolean()
+            )
+
+        val json = appCheck.index(0)
+
+        return AppCheck(
+            result = json.get("result").asBoolean(),
+            version = json.get("ver").text(),
+            notice = json.get("notice").asBoolean(),
+            noticeUpdate = json.get("notice_update").asBoolean(),
+            date = json.get("date").text()
+        )
     }
 
     private fun getDayOfWeekMonday(day: Int): Int {
@@ -154,20 +205,25 @@ class Auth {
      * @return [java.lang.String] app_id를 반환합니다.
      */
     fun fetchAppId(hashedAppKey: String): String {
+        if (!::fcmToken.isInitialized) {
+            fcmToken = fetchFcmToken()
+        }
+
         val appId = try {
             val option = Request.getDefaultOption()
                 .addMultipartParameter("value_token", hashedAppKey)
                 .addMultipartParameter("signature", Const.DC_APP_SIGNATURE)
+                .addMultipartParameter("pkg", Const.DC_APP_PACKAGE)
                 .addMultipartParameter("vCode", Const.DC_APP_VERSION_CODE)
                 .addMultipartParameter("vName", Const.DC_APP_VERSION_NAME)
                 .addMultipartParameter("client_token", fcmToken)
 
-            KotlinInside.getInstance().httpInterface.upload(ApiUrl.Auth.APP_ID, option)
+            JsonBrowser.parse(KotlinInside.getInstance().httpInterface.upload(ApiUrl.Auth.APP_ID, option))
         } catch (e: HttpException) {
             return ""
         }
 
-        return appId!!.index(0).get("app_id").text()!!
+        return appId.index(0).get("app_id").text()!!
     }
 
     /**
@@ -186,7 +242,8 @@ class Auth {
                 .addBodyParameter("mode", "login_normal")
                 .addBodyParameter("client_token", fcmToken)
 
-            val json = KotlinInside.getInstance().httpInterface.post(ApiUrl.Auth.LOGIN, option)!!.index(0)
+            val json =
+                JsonBrowser.parse(KotlinInside.getInstance().httpInterface.post(ApiUrl.Auth.LOGIN, option)).index(0)
 
             val detail = SessionDetail(
                 result = json.get("result").asBoolean(),

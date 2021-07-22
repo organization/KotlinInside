@@ -2,6 +2,7 @@ package be.zvz.kotlininside.api.generic
 
 import be.zvz.kotlininside.KotlinInside
 import be.zvz.kotlininside.http.Request
+import be.zvz.kotlininside.json.JsonBrowser
 import be.zvz.kotlininside.value.ApiUrl
 
 class MinorGalleryInfo(
@@ -45,10 +46,12 @@ class MinorGalleryInfo(
             .addMultipartParameter("id", gallId)
             .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
 
-        val json = KotlinInside.getInstance().httpInterface.upload(
-            ApiUrl.Gallery.MINOR_INFO,
-            option
-        )!!.index(0)
+        val json = JsonBrowser.parse(
+            KotlinInside.getInstance().httpInterface.upload(
+                ApiUrl.Gallery.MINOR_INFO,
+                option
+            )
+        ).index(0)
 
         val miniGalleryInfo = json.get("mini")
         return InfoResult(

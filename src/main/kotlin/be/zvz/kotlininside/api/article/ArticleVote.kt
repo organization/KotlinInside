@@ -3,6 +3,7 @@ package be.zvz.kotlininside.api.article
 import be.zvz.kotlininside.KotlinInside
 import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.http.Request
+import be.zvz.kotlininside.json.JsonBrowser
 import be.zvz.kotlininside.session.Session
 import be.zvz.kotlininside.session.user.LoginUser
 import be.zvz.kotlininside.value.ApiUrl
@@ -33,10 +34,12 @@ class ArticleVote(
             option.addMultipartParameter("confirm_id", session.detail!!.userId)
         }
 
-        var json = KotlinInside.getInstance().httpInterface.upload(
-            ApiUrl.Article.UPVOTE,
-            option
-        )!!
+        var json = JsonBrowser.parse(
+            KotlinInside.getInstance().httpInterface.upload(
+                ApiUrl.Article.UPVOTE,
+                option
+            )
+        )
 
         if (json.isList)
             json = json.index(0)
@@ -63,10 +66,12 @@ class ArticleVote(
             option.addMultipartParameter("confirm_id", session.detail!!.userId)
         }
 
-        val json = KotlinInside.getInstance().httpInterface.upload(
-            ApiUrl.Article.DOWNVOTE,
-            option
-        )!!.index(0)
+        val json = JsonBrowser.parse(
+            KotlinInside.getInstance().httpInterface.upload(
+                ApiUrl.Article.DOWNVOTE,
+                option
+            )
+        ).index(0)
 
         return VoteResult(
             result = json.get("result").asBoolean(),
