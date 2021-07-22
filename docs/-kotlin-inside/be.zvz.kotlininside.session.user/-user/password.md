@@ -1,14 +1,14 @@
 ---
-title: password -
+title: password
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.session.user](../index.md)/[User](index.md)/[password](password.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.session.user](../index.html)/[User](index.html)
+/[password](password.html)
 
+# password
 
+[jvm]\
+abstract val [password](password.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# password  
-[jvm]  
-Content  
-abstract val [password](password.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
 
 
 

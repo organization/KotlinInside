@@ -1,31 +1,37 @@
 ---
-title: create -
+title: create
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.http](../../index.md)/[HttpRequest](../index.md)/[ConnectionFactory](index.md)/[create](create.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.http](../../index.html)/[HttpRequest](../index.html)
+/[ConnectionFactory](index.html)/[create](create.html)
 
+# create
 
+[jvm]\
+abstract fun [create](create.html)(
+url: [URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html)): [HttpURLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/HttpURLConnection.html)
 
-# create  
-[jvm]  
-Content  
-abstract fun [create](create.md)(url: [URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html)): [HttpURLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/HttpURLConnection.html)  
-More info  
+Open an [HttpURLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/HttpURLConnection.html) for the
+specified [URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html).
 
+#### Throws
 
-Open an [HttpURLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/HttpURLConnection.html) for the specified [URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html).
+| | |
+|---|---|
+| [java.io.IOException](https://docs.oracle.com/javase/7/docs/api/java/io/IOException.html) |  |
 
-  
+[jvm]\
+abstract fun [create](create.html)(url: [URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html),
+proxy: [Proxy](https://docs.oracle.com/javase/7/docs/api/java/net/Proxy.html)): [HttpURLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/HttpURLConnection.html)
 
+Open an [HttpURLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/HttpURLConnection.html) for the
+specified [URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html)
+and [Proxy](https://docs.oracle.com/javase/7/docs/api/java/net/Proxy.html).
 
-[jvm]  
-Content  
-abstract fun [create](create.md)(url: [URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html), proxy: [Proxy](https://docs.oracle.com/javase/7/docs/api/java/net/Proxy.html)): [HttpURLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/HttpURLConnection.html)  
-More info  
+#### Throws
 
-
-Open an [HttpURLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/HttpURLConnection.html) for the specified [URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) and [Proxy](https://docs.oracle.com/javase/7/docs/api/java/net/Proxy.html).
-
-  
+| | |
+|---|---|
+| [java.io.IOException](https://docs.oracle.com/javase/7/docs/api/java/io/IOException.html) |  |
 
 
 

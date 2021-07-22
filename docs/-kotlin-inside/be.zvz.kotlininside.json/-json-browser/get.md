@@ -1,39 +1,32 @@
 ---
-title: get -
+title: get
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.json](../index.md)/[JsonBrowser](index.md)/[get](get.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.json](../index.html)/[JsonBrowser](index.html)
+/[get](get.html)
 
+# get
 
+[jvm]\
 
-# get  
-[jvm]  
-Content  
-@NotNull()  
-  
-open fun [get](get.md)(key: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [JsonBrowser](index.md)  
-More info  
+@NotNull()
 
+open fun [get](get.html)(key: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)):
+@NotNull()[JsonBrowser](index.html)
 
 Get an element by key from a map value
 
+#### Return
 
+JsonBrowser instance which wraps the value with the specified key
 
-#### Return  
+## Parameters
 
+jvm
 
-instance which wraps the value with the specified key
-
-
-
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
+| | |
 |---|---|
-| <a name="be.zvz.kotlininside.json/JsonBrowser/get/#java.lang.String/PointingToDeclaration/"></a>key| <a name="be.zvz.kotlininside.json/JsonBrowser/get/#java.lang.String/PointingToDeclaration/"></a><br><br>Map key<br><br>
-  
-  
+| key | Map key |
+
 
 
 

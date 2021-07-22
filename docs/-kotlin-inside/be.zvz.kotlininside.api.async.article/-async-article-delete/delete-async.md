@@ -1,14 +1,15 @@
 ---
-title: deleteAsync -
+title: deleteAsync
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.async.article](../index.md)/[AsyncArticleDelete](index.md)/[deleteAsync](delete-async.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.article](../index.html)
+/[AsyncArticleDelete](index.html)/[deleteAsync](delete-async.html)
 
+# deleteAsync
 
+[jvm]\
+suspend fun [deleteAsync](delete-async.html)():
+Deferred<[ArticleDelete.DeleteResult](../../be.zvz.kotlininside.api.article/-article-delete/-delete-result/index.html)>
 
-# deleteAsync  
-[jvm]  
-Content  
-suspend fun [deleteAsync](delete-async.md)(): Deferred<[ArticleDelete.DeleteResult](../../be.zvz.kotlininside.api.article/-article-delete/-delete-result/index.md)>  
 
 
 

@@ -1,23 +1,20 @@
 ---
-title: server -
+title: server
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[server](server.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[server](server.html)
 
+# server
 
-
-# server  
-[jvm]  
-Content  
-open fun [server](server.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
-More info  
-
+[jvm]\
+open fun [server](server.html)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
 
 Get the 'Server' header from the response
 
+#### Return
 
+server
 
-#### Return  
-  
 
 
 

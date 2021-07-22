@@ -1,27 +1,26 @@
 ---
-title: notModified -
+title: notModified
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[notModified](not-modified.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[notModified](not-modified.html)
 
+# notModified
 
-
-# notModified  
-[jvm]  
-Content  
-open fun [notModified](not-modified.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
-More info  
-
+[jvm]\
+open
+fun [notModified](not-modified.html)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
 
 Is the response code a 304 Not Modified?
 
+#### Return
 
+true if 304, false otherwise
 
-#### Return  
+#### Throws
 
-
-if 304, false otherwise
-
-  
+| | |
+|---|---|
+| [be.zvz.kotlininside.http.HttpRequest.HttpRequestException](-http-request-exception/index.html) |  |
 
 
 

@@ -1,14 +1,14 @@
 ---
-title: DCConComment -
+title: DCConComment
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.type.comment](../index.md)/[DCConComment](index.md)/[DCConComment](-d-c-con-comment.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.type.comment](../index.html)/[DCConComment](index.html)
+/[DCConComment](-d-c-con-comment.html)
 
+# DCConComment
 
+[jvm]\
+fun [DCConComment](-d-c-con-comment.html)(dcCon: [DCCon](../../be.zvz.kotlininside.api.type/-d-c-con/index.html))
 
-# DCConComment  
-[jvm]  
-Content  
-fun [DCConComment](-d-c-con-comment.md)(dcCon: [DCCon](../../be.zvz.kotlininside.api.type/-d-c-con/index.md))  
 
 
 

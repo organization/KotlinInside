@@ -1,15 +1,15 @@
 ---
-title: requestAsync -
+title: requestAsync
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.async.generic.userinfo](../index.md)
-/[AsyncCheckManagedGallery](index.md)/[requestAsync](request-async.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.generic.userinfo](../index.html)
+/[AsyncCheckManagedGallery](index.html)/[requestAsync](request-async.html)
 
 # requestAsync
 
-[jvm]  
-Content  
-suspend fun [requestAsync](request-async.md)():
-Deferred<[CheckManagedGallery.CheckResult](../../be.zvz.kotlininside.api.generic.userinfo/-check-managed-gallery/-check-result/index.md)>  
+[jvm]\
+suspend fun [requestAsync](request-async.html)():
+Deferred<[CheckManagedGallery.CheckResult](../../be.zvz.kotlininside.api.generic.userinfo/-check-managed-gallery/-check-result/index.html)>
+
 
 
 

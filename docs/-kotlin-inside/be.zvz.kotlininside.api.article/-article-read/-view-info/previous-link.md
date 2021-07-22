@@ -1,14 +1,14 @@
 ---
-title: previousLink -
+title: previousLink
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleRead](../index.md)/[ViewInfo](index.md)/[previousLink](previous-link.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleRead](../index.html)/[ViewInfo](index.html)/[previousLink](previous-link.html)
 
+# previousLink
 
+[jvm]\
+val [previousLink](previous-link.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
 
-# previousLink  
-[jvm]  
-Content  
-val [previousLink](previous-link.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
 
 
 

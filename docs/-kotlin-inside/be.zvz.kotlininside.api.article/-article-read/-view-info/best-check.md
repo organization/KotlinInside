@@ -1,14 +1,14 @@
 ---
-title: bestCheck -
+title: bestCheck
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleRead](../index.md)/[ViewInfo](index.md)/[bestCheck](best-check.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleRead](../index.html)/[ViewInfo](index.html)/[bestCheck](best-check.html)
 
+# bestCheck
 
+[jvm]\
+val [bestCheck](best-check.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
 
-# bestCheck  
-[jvm]  
-Content  
-val [bestCheck](best-check.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
 
 
 

@@ -1,14 +1,14 @@
 ---
-title: hide -
+title: hide
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic](../../index.md)/[MinorGalleryInfo](../index.md)
-/[MiniGalleryInfo](index.md)/[hide](hide.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)
+/[MinorGalleryInfo](../index.html)/[MiniGalleryInfo](index.html)/[hide](hide.html)
 
 # hide
 
-[jvm]  
-Content  
-val [hide](hide.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
+[jvm]\
+val [hide](hide.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
+
 
 
 

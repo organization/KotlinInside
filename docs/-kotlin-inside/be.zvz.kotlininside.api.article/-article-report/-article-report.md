@@ -1,14 +1,17 @@
 ---
-title: ArticleReport -
+title: ArticleReport
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.article](../index.md)/[ArticleReport](index.md)/[ArticleReport](-article-report.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.article](../index.html)/[ArticleReport](index.html)
+/[ArticleReport](-article-report.html)
 
+# ArticleReport
 
+[jvm]\
+fun [ArticleReport](-article-report.html)(
+gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
+articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html),
+session: [Session](../../be.zvz.kotlininside.session/-session/index.html))
 
-# ArticleReport  
-[jvm]  
-Content  
-fun [ArticleReport](-article-report.md)(gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), session: [Session](../../be.zvz.kotlininside.session/-session/index.md))  
 
 
 

@@ -1,14 +1,14 @@
 ---
-title: memberIcon -
+title: memberIcon
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleList](../index.md)/[GallList](index.md)/[memberIcon](member-icon.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleList](../index.html)/[GallList](index.html)/[memberIcon](member-icon.html)
 
+# memberIcon
 
+[jvm]\
+val [memberIcon](member-icon.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
 
-# memberIcon  
-[jvm]  
-Content  
-val [memberIcon](member-icon.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
 
 
 

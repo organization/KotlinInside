@@ -1,14 +1,14 @@
 ---
-title: rank -
+title: rank
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic](../../index.md)/[GalleryRanking](../index.md)/[RankingItem](index.md)/[rank](rank.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)
+/[GalleryRanking](../index.html)/[RankingItem](index.html)/[rank](rank.html)
 
+# rank
 
+[jvm]\
+val [rank](rank.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
 
-# rank  
-[jvm]  
-Content  
-val [rank](rank.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
 
 
 

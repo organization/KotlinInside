@@ -1,14 +1,14 @@
 ---
-title: mini -
+title: mini
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic](../../index.md)/[MinorGalleryInfo](../index.md)
-/[InfoResult](index.md)/[mini](mini.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)
+/[MinorGalleryInfo](../index.html)/[InfoResult](index.html)/[mini](mini.html)
 
 # mini
 
-[jvm]  
-Content  
-val [mini](mini.md): [MinorGalleryInfo.MiniGalleryInfo](../-mini-gallery-info/index.md)? = null  
+[jvm]\
+val [mini](mini.html): [MinorGalleryInfo.MiniGalleryInfo](../-mini-gallery-info/index.html)? = null
+
 
 
 

@@ -1,14 +1,15 @@
 ---
-title: HtmlContent -
+title: HtmlContent
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.type.content](../index.md)/[HtmlContent](index.md)/[HtmlContent](-html-content.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.type.content](../index.html)/[HtmlContent](index.html)
+/[HtmlContent](-html-content.html)
 
+# HtmlContent
 
+[jvm]\
+fun [HtmlContent](-html-content.html)(
+htmlString: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
 
-# HtmlContent  
-[jvm]  
-Content  
-fun [HtmlContent](-html-content.md)(htmlString: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  
 
 
 

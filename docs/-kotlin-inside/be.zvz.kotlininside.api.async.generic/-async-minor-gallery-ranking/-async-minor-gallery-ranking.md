@@ -1,14 +1,14 @@
 ---
-title: AsyncMinorGalleryRanking -
+title: AsyncMinorGalleryRanking
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.async.generic](../index.md)/[AsyncMinorGalleryRanking](index.md)/[AsyncMinorGalleryRanking](-async-minor-gallery-ranking.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.generic](../index.html)
+/[AsyncMinorGalleryRanking](index.html)/[AsyncMinorGalleryRanking](-async-minor-gallery-ranking.html)
 
+# AsyncMinorGalleryRanking
 
+[jvm]\
+fun [AsyncMinorGalleryRanking](-async-minor-gallery-ranking.html)()
 
-# AsyncMinorGalleryRanking  
-[jvm]  
-Content  
-fun [AsyncMinorGalleryRanking](-async-minor-gallery-ranking.md)()  
 
 
 

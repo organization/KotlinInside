@@ -1,14 +1,14 @@
 ---
-title: name -
+title: name
 ---
-//[KotlinInside](../../../../index.md)/[be.zvz.kotlininside.api.generic](../../../index.md)/[GalleryRanking](../../index.md)/[RankType](../index.md)/[DOWN](index.md)/[name](name.md)
+//[KotlinInside](../../../../../index.html)/[be.zvz.kotlininside.api.generic](../../../index.html)
+/[GalleryRanking](../../index.html)/[RankType](../index.html)/[DOWN](index.html)/[name](name.html)
 
+# name
 
+[jvm]\
+val [name](name.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# name  
-[jvm]  
-Content  
-val [name](name.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
 
 
 

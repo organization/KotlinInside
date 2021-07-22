@@ -1,14 +1,15 @@
 ---
-title: file -
+title: file
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleModify](../index.md)/[ModifyResult](index.md)/[file](file.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleModify](../index.html)/[ModifyResult](index.html)/[file](file.html)
 
+# file
 
+[jvm]\
+val [file](file.html): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[ArticleModify.FileData](
+../-file-data/index.html)>
 
-# file  
-[jvm]  
-Content  
-val [file](file.md): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[ArticleModify.FileData](../-file-data/index.md)>  
 
 
 

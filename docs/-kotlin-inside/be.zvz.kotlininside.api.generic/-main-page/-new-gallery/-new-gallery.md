@@ -1,14 +1,15 @@
 ---
-title: NewGallery -
+title: NewGallery
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic](../../index.md)/[MainPage](../index.md)/[NewGallery](index.md)/[NewGallery](-new-gallery.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)/[MainPage](../index.html)
+/[NewGallery](index.html)/[NewGallery](-new-gallery.html)
 
+# NewGallery
 
+[jvm]\
+fun [NewGallery](-new-gallery.html)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
+, title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
 
-# NewGallery  
-[jvm]  
-Content  
-fun [NewGallery](-new-gallery.md)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  
 
 
 

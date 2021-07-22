@@ -1,14 +1,14 @@
 ---
-title: MyGall -
+title: MyGall
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.generic.userinfo](../index.md)/[MyGall](index.md)
-/[MyGall](-my-gall.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.generic.userinfo](../index.html)/[MyGall](index.html)
+/[MyGall](-my-gall.html)
 
 # MyGall
 
-[jvm]  
-Content  
-fun [MyGall](-my-gall.md)(session: [Session](../../be.zvz.kotlininside.session/-session/index.md))  
+[jvm]\
+fun [MyGall](-my-gall.html)(session: [Session](../../be.zvz.kotlininside.session/-session/index.html))
+
 
 
 

@@ -1,14 +1,14 @@
 ---
-title: DELETE -
+title: DELETE
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.value](../../index.md)/[ApiUrl](../index.md)/[Comment](index.md)/[DELETE](-d-e-l-e-t-e.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)
+/[Comment](index.html)/[DELETE](-d-e-l-e-t-e.html)
 
+# DELETE
 
+[jvm]\
+const val [DELETE](-d-e-l-e-t-e.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# DELETE  
-[jvm]  
-Content  
-val [DELETE](-d-e-l-e-t-e.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 

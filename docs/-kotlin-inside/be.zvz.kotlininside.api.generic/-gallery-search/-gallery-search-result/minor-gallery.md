@@ -1,14 +1,15 @@
 ---
-title: minorGallery -
+title: minorGallery
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic](../../index.md)/[GallerySearch](../index.md)/[GallerySearchResult](index.md)/[minorGallery](minor-gallery.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)
+/[GallerySearch](../index.html)/[GallerySearchResult](index.html)/[minorGallery](minor-gallery.html)
 
+# minorGallery
 
+[jvm]\
+val [minorGallery](minor-gallery.html): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[Gallery](
+../../../be.zvz.kotlininside.api.type/-gallery/index.html)>
 
-# minorGallery  
-[jvm]  
-Content  
-val [minorGallery](minor-gallery.md): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[Gallery](../../../be.zvz.kotlininside.api.type/-gallery/index.md)>  
 
 
 

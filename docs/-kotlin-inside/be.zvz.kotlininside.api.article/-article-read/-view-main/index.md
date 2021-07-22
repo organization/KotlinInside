@@ -1,36 +1,26 @@
 ---
-title: ViewMain -
+title: ViewMain
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleRead](../index.md)/[ViewMain](index.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleRead](../index.html)/[ViewMain](index.html)
 
+# ViewMain
 
+[jvm]\
+data class [ViewMain](index.html)(**
+content**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
+upvote**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **
+upvoteMember**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **
+downvote**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **
+isManager**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))
 
-# ViewMain  
- [jvm] data class [ViewMain](index.md)(**content**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **upvote**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **upvoteMember**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **downvote**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **isManager**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))   
+## Properties
 
-
-## Functions  
-  
-|  Name|  Summary| 
+| Name | Summary |
 |---|---|
-| <a name="be.zvz.kotlininside.api.article/ArticleRead.ViewMain/component1/#/PointingToDeclaration/"></a>[component1](component1.md)| <a name="be.zvz.kotlininside.api.article/ArticleRead.ViewMain/component1/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component1](component1.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.api.article/ArticleRead.ViewMain/component2/#/PointingToDeclaration/"></a>[component2](component2.md)| <a name="be.zvz.kotlininside.api.article/ArticleRead.ViewMain/component2/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component2](component2.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.api.article/ArticleRead.ViewMain/component3/#/PointingToDeclaration/"></a>[component3](component3.md)| <a name="be.zvz.kotlininside.api.article/ArticleRead.ViewMain/component3/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component3](component3.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.api.article/ArticleRead.ViewMain/component4/#/PointingToDeclaration/"></a>[component4](component4.md)| <a name="be.zvz.kotlininside.api.article/ArticleRead.ViewMain/component4/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component4](component4.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.api.article/ArticleRead.ViewMain/component5/#/PointingToDeclaration/"></a>[component5](component5.md)| <a name="be.zvz.kotlininside.api.article/ArticleRead.ViewMain/component5/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component5](component5.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.api.article/ArticleRead.ViewMain/copy/#kotlin.String#kotlin.Int#kotlin.Int#kotlin.Int#kotlin.Boolean/PointingToDeclaration/"></a>[copy](copy.md)| <a name="be.zvz.kotlininside.api.article/ArticleRead.ViewMain/copy/#kotlin.String#kotlin.Int#kotlin.Int#kotlin.Int#kotlin.Boolean/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>fun [copy](copy.md)(content: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), upvote: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), upvoteMember: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), downvote: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), isManager: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)): [ArticleRead.ViewMain](index.md)  <br><br><br>
-| <a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a>[equals](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)| <a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open operator override fun [equals](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)(other: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  <br><br><br>
-| <a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a>[hashCode](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)| <a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open override fun [hashCode](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  <br><br><br>
-| <a name="kotlin/Any/toString/#/PointingToDeclaration/"></a>[toString](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)| <a name="kotlin/Any/toString/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open override fun [toString](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
-
-
-## Properties  
-  
-|  Name|  Summary| 
-|---|---|
-| <a name="be.zvz.kotlininside.api.article/ArticleRead.ViewMain/content/#/PointingToDeclaration/"></a>[content](content.md)| <a name="be.zvz.kotlininside.api.article/ArticleRead.ViewMain/content/#/PointingToDeclaration/"></a> [jvm] val [content](content.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
-| <a name="be.zvz.kotlininside.api.article/ArticleRead.ViewMain/downvote/#/PointingToDeclaration/"></a>[downvote](downvote.md)| <a name="be.zvz.kotlininside.api.article/ArticleRead.ViewMain/downvote/#/PointingToDeclaration/"></a> [jvm] val [downvote](downvote.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)   <br>
-| <a name="be.zvz.kotlininside.api.article/ArticleRead.ViewMain/isManager/#/PointingToDeclaration/"></a>[isManager](is-manager.md)| <a name="be.zvz.kotlininside.api.article/ArticleRead.ViewMain/isManager/#/PointingToDeclaration/"></a> [jvm] val [isManager](is-manager.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)   <br>
-| <a name="be.zvz.kotlininside.api.article/ArticleRead.ViewMain/upvote/#/PointingToDeclaration/"></a>[upvote](upvote.md)| <a name="be.zvz.kotlininside.api.article/ArticleRead.ViewMain/upvote/#/PointingToDeclaration/"></a> [jvm] val [upvote](upvote.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)   <br>
-| <a name="be.zvz.kotlininside.api.article/ArticleRead.ViewMain/upvoteMember/#/PointingToDeclaration/"></a>[upvoteMember](upvote-member.md)| <a name="be.zvz.kotlininside.api.article/ArticleRead.ViewMain/upvoteMember/#/PointingToDeclaration/"></a> [jvm] val [upvoteMember](upvote-member.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)   <br>
+| [content](content.html) | [jvm]<br>val [content](content.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [downvote](downvote.html) | [jvm]<br>val [downvote](downvote.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
+| [isManager](is-manager.html) | [jvm]<br>val [isManager](is-manager.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
+| [upvote](upvote.html) | [jvm]<br>val [upvote](upvote.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
+| [upvoteMember](upvote-member.html) | [jvm]<br>val [upvoteMember](upvote-member.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
 

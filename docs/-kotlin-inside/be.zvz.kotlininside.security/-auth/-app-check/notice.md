@@ -1,14 +1,14 @@
 ---
-title: notice -
+title: notice
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.security](../../index.md)/[Auth](../index.md)/[AppCheck](index.md)/[notice](notice.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.security](../../index.html)/[Auth](../index.html)
+/[AppCheck](index.html)/[notice](notice.html)
 
+# notice
 
+[jvm]\
+val [notice](notice.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)? = null
 
-# notice  
-[jvm]  
-Content  
-val [notice](notice.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)? = null  
 
 
 

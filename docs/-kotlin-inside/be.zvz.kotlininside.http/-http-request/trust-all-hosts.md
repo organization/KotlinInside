@@ -1,31 +1,24 @@
 ---
-title: trustAllHosts -
+title: trustAllHosts
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[trustAllHosts](trust-all-hosts.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[trustAllHosts](trust-all-hosts.html)
 
+# trustAllHosts
 
+[jvm]\
+open fun [trustAllHosts](trust-all-hosts.html)(): [HttpRequest](index.html)
 
-# trustAllHosts  
-[jvm]  
-Content  
-open fun [trustAllHosts](trust-all-hosts.md)(): [HttpRequest](index.md)  
-More info  
+Configure HTTPS connection to trust all hosts using a
+custom [HostnameVerifier](https://docs.oracle.com/javase/7/docs/api/javax/net/ssl/HostnameVerifier.html) that always
+returns true for each host verified
 
+This method does nothing if the current request is not a HTTPS request
 
-Configure HTTPS connection to trust all hosts using a custom [HostnameVerifier](https://docs.oracle.com/javase/7/docs/api/javax/net/ssl/HostnameVerifier.html) that always returns true for each host verified 
+#### Return
 
+this request
 
-
- This method does nothing if the current request is not a HTTPS request
-
-
-
-#### Return  
-
-
-request
-
-  
 
 
 

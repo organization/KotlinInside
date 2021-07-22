@@ -1,14 +1,14 @@
 ---
-title: mainImg -
+title: mainImg
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.dccon](../../index.md)/[DCConDetail](../index.md)/[DCConInfo](index.md)/[mainImg](main-img.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.dccon](../../index.html)/[DCConDetail](../index.html)
+/[DCConInfo](index.html)/[mainImg](main-img.html)
 
+# mainImg
 
+[jvm]\
+val [mainImg](main-img.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# mainImg  
-[jvm]  
-Content  
-val [mainImg](main-img.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
 
 
 

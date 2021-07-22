@@ -1,38 +1,40 @@
 ---
-title: Auth -
+title: Auth
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.security](../index.md)/[Auth](index.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.security](../index.html)/[Auth](index.html)
 
+# Auth
 
+[jvm]\
+class [Auth](index.html)
 
-# Auth  
- [jvm] class [Auth](index.md)   
+## Types
 
-
-## Types  
-  
-|  Name|  Summary| 
+| Name | Summary |
 |---|---|
-| <a name="be.zvz.kotlininside.security/Auth.AppCheck///PointingToDeclaration/"></a>[AppCheck](-app-check/index.md)| <a name="be.zvz.kotlininside.security/Auth.AppCheck///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>data class [AppCheck](-app-check/index.md)(**result**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), **version**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, **notice**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)?, **noticeUpdate**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)?, **date**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?)  <br><br><br>
+| [AppCheck](-app-check/index.html) | [jvm]<br>data class [AppCheck](-app-check/index.html)(**
+result**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), **
+version**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, **
+notice**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)?, **
+noticeUpdate**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)?, **
+date**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?) |
 
+## Functions
 
-## Functions  
-  
-|  Name|  Summary| 
+| Name | Summary |
 |---|---|
-| <a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a>[equals](../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)| <a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open operator fun [equals](../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)(other: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.security/Auth/fetchAppId/#kotlin.String/PointingToDeclaration/"></a>[fetchAppId](fetch-app-id.md)| <a name="be.zvz.kotlininside.security/Auth/fetchAppId/#kotlin.String/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>fun [fetchAppId](fetch-app-id.md)(hashedAppKey: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br>More info  <br>app_id를 서버로부터 얻어오는 메소드입니다.  <br><br><br>
-| <a name="be.zvz.kotlininside.security/Auth/generateHashedAppKey/#/PointingToDeclaration/"></a>[generateHashedAppKey](generate-hashed-app-key.md)| <a name="be.zvz.kotlininside.security/Auth/generateHashedAppKey/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>fun [generateHashedAppKey](generate-hashed-app-key.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br>More info  <br>SHA256 단방향 암호화된 value_token을 서버로부터 얻어오거나, 생성하는 메소드입니다.  <br><br><br>
-| <a name="be.zvz.kotlininside.security/Auth/getAppCheck/#/PointingToDeclaration/"></a>[getAppCheck](get-app-check.md)| <a name="be.zvz.kotlininside.security/Auth/getAppCheck/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>fun [getAppCheck](get-app-check.md)(): [Auth.AppCheck](-app-check/index.md)  <br>More info  <br>app_check에서 정보를 얻어오는 메소드입니다.  <br><br><br>
-| <a name="be.zvz.kotlininside.security/Auth/getAppId/#/PointingToDeclaration/"></a>[getAppId](get-app-id.md)| <a name="be.zvz.kotlininside.security/Auth/getAppId/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>fun [getAppId](get-app-id.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br>More info  <br>캐시된 app_id를 얻어오는 메소드입니다.  <br><br><br>
-| <a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a>[hashCode](../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)| <a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open fun [hashCode](../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.security/Auth/login/#be.zvz.kotlininside.session.user.User/PointingToDeclaration/"></a>[login](login.md)| <a name="be.zvz.kotlininside.security/Auth/login/#be.zvz.kotlininside.session.user.User/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>fun [login](login.md)(user: [User](../../be.zvz.kotlininside.session.user/-user/index.md)): [Session](../../be.zvz.kotlininside.session/-session/index.md)  <br>More info  <br>로그인하기 위해 필요한 메소드  <br><br><br>
-| <a name="kotlin/Any/toString/#/PointingToDeclaration/"></a>[toString](../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)| <a name="kotlin/Any/toString/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open fun [toString](../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
+| [fetchAppId](fetch-app-id.html) | [jvm]<br>fun [fetchAppId](fetch-app-id.html)(hashedAppKey: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>app_id를 서버로부터 얻어오는 메소드입니다. |
+| [fetchFcmToken](fetch-fcm-token.html) | [jvm]<br>@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)()<br>fun [fetchFcmToken](fetch-fcm-token.html)(argFid: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null, argRefreshToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [generateHashedAppKey](generate-hashed-app-key.html) | [jvm]<br>fun [generateHashedAppKey](generate-hashed-app-key.html)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>SHA256 단방향 암호화된 value_token을 서버로부터 얻어오거나, 생성하는 메소드입니다. |
+| [getAppCheck](get-app-check.html) | [jvm]<br>fun [getAppCheck](get-app-check.html)(): [Auth.AppCheck](-app-check/index.html)<br>app_check에서 정보를 얻어오는 메소드입니다. |
+| [getAppId](get-app-id.html) | [jvm]<br>fun [getAppId](get-app-id.html)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>캐시된 app_id를 얻어오는 메소드입니다. |
+| [login](login.html) | [jvm]<br>fun [login](login.html)(user: [User](../../be.zvz.kotlininside.session.user/-user/index.html)): [Session](../../be.zvz.kotlininside.session/-session/index.html)<br>로그인하기 위해 필요한 메소드 |
 
+## Properties
 
-## Properties  
-  
-|  Name|  Summary| 
+| Name | Summary |
 |---|---|
-| <a name="be.zvz.kotlininside.security/Auth/fcmToken/#/PointingToDeclaration/"></a>[fcmToken](fcm-token.md)| <a name="be.zvz.kotlininside.security/Auth/fcmToken/#/PointingToDeclaration/"></a> [jvm] var [fcmToken](fcm-token.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
+| [fcmToken](fcm-token.html) | [jvm]<br>lateinit var [fcmToken](fcm-token.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [fid](fid.html) | [jvm]<br>lateinit var [fid](fid.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [refreshToken](refresh-token.html) | [jvm]<br>lateinit var [refreshToken](refresh-token.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 

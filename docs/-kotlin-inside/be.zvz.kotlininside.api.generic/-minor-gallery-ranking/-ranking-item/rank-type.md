@@ -1,14 +1,14 @@
 ---
-title: rankType -
+title: rankType
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic](../../index.md)/[MinorGalleryRanking](../index.md)/[RankingItem](index.md)/[rankType](rank-type.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)
+/[MinorGalleryRanking](../index.html)/[RankingItem](index.html)/[rankType](rank-type.html)
 
+# rankType
 
+[jvm]\
+val [rankType](rank-type.html): [MinorGalleryRanking.RankType](../-rank-type/index.html)
 
-# rankType  
-[jvm]  
-Content  
-val [rankType](rank-type.md): [MinorGalleryRanking.RankType](../-rank-type/index.md)  
 
 
 

@@ -1,14 +1,14 @@
 ---
-title: headTitle -
+title: headTitle
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleRead](../index.md)/[ViewInfo](index.md)/[headTitle](head-title.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleRead](../index.html)/[ViewInfo](index.html)/[headTitle](head-title.html)
 
+# headTitle
 
+[jvm]\
+val [headTitle](head-title.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# headTitle  
-[jvm]  
-Content  
-val [headTitle](head-title.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
 
 
 

@@ -1,14 +1,14 @@
 ---
-title: ip -
+title: ip
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleRead](../index.md)/[ViewInfo](index.md)/[ip](ip.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleRead](../index.html)/[ViewInfo](index.html)/[ip](ip.html)
 
+# ip
 
+[jvm]\
+val [ip](ip.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# ip  
-[jvm]  
-Content  
-val [ip](ip.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
 
 
 

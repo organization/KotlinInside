@@ -1,30 +1,30 @@
 ---
-title: reply -
+title: reply
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.comment](../index.md)/[CommentWrite](index.md)/[reply](reply.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.comment](../index.html)/[CommentWrite](index.html)
+/[reply](reply.html)
 
+# reply
 
-
-# reply  
-[jvm]  
-Content  
-fun [reply](reply.md)(commentId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [CommentWrite.WriteResult](-write-result/index.md)  
-More info  
-
+[jvm]\
+fun [reply](reply.html)(
+commentId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [CommentWrite.WriteResult](-write-result/index.html)
 
 대댓글을 작성합니다.
 
+## Parameters
 
+jvm
 
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
+| | |
 |---|---|
-| <a name="be.zvz.kotlininside.api.comment/CommentWrite/reply/#kotlin.Int/PointingToDeclaration/"></a>commentId| <a name="be.zvz.kotlininside.api.comment/CommentWrite/reply/#kotlin.Int/PointingToDeclaration/"></a><br><br>대댓글을 작성할 코멘트 ID입니다.<br><br>
-  
-  
+| commentId | 대댓글을 작성할 코멘트 ID입니다. |
+
+#### Throws
+
+| | |
+|---|---|
+| [be.zvz.kotlininside.http.HttpException](../../be.zvz.kotlininside.http/-http-exception/index.html) | 대댓글을 작성하지 못할 경우, HttpException 발생 |
 
 
 

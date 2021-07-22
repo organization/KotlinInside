@@ -1,23 +1,44 @@
 ---
-title: be.zvz.kotlininside.api.article -
+title: be.zvz.kotlininside.api.article
 ---
-//[KotlinInside](../index.md)/[be.zvz.kotlininside.api.article](index.md)
+//[KotlinInside](../../index.html)/[be.zvz.kotlininside.api.article](index.html)
 
+# Package be.zvz.kotlininside.api.article
 
+## Types
 
-# Package be.zvz.kotlininside.api.article  
-
-
-## Types  
-  
-|  Name|  Summary| 
+| Name | Summary |
 |---|---|
-| <a name="be.zvz.kotlininside.api.article/ArticleDelete///PointingToDeclaration/"></a>[ArticleDelete](-article-delete/index.md)| <a name="be.zvz.kotlininside.api.article/ArticleDelete///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [ArticleDelete](-article-delete/index.md)@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)()constructor(**gallId**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **articleId**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **session**: [Session](../be.zvz.kotlininside.session/-session/index.md), **fcmToken**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  <br><br><br>
-| <a name="be.zvz.kotlininside.api.article/ArticleHitUpvote///PointingToDeclaration/"></a>[ArticleHitUpvote](-article-hit-upvote/index.md)| <a name="be.zvz.kotlininside.api.article/ArticleHitUpvote///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [ArticleHitUpvote](-article-hit-upvote/index.md)(**gallId**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **articleId**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **session**: [Session](../be.zvz.kotlininside.session/-session/index.md))  <br><br><br>
-| <a name="be.zvz.kotlininside.api.article/ArticleList///PointingToDeclaration/"></a>[ArticleList](-article-list/index.md)| <a name="be.zvz.kotlininside.api.article/ArticleList///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [ArticleList](-article-list/index.md)@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)()constructor(**gallId**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **searchKeyword**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **searchType**: [ArticleList.SearchType](-article-list/-search-type/index.md), **page**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **recommend**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), **notice**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), **headId**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **session**: [Session](../be.zvz.kotlininside.session/-session/index.md)?)  <br><br><br>
-| <a name="be.zvz.kotlininside.api.article/ArticleModify///PointingToDeclaration/"></a>[ArticleModify](-article-modify/index.md)| <a name="be.zvz.kotlininside.api.article/ArticleModify///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [ArticleModify](-article-modify/index.md)(**gallId**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **articleId**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **session**: [Session](../be.zvz.kotlininside.session/-session/index.md))  <br><br><br>
-| <a name="be.zvz.kotlininside.api.article/ArticleRead///PointingToDeclaration/"></a>[ArticleRead](-article-read/index.md)| <a name="be.zvz.kotlininside.api.article/ArticleRead///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [ArticleRead](-article-read/index.md)@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)()constructor(**gallId**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **articleId**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **session**: [Session](../be.zvz.kotlininside.session/-session/index.md)?)  <br><br><br>
-| <a name="be.zvz.kotlininside.api.article/ArticleReport///PointingToDeclaration/"></a>[ArticleReport](-article-report/index.md)| <a name="be.zvz.kotlininside.api.article/ArticleReport///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [ArticleReport](-article-report/index.md)(**gallId**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **articleId**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **session**: [Session](../be.zvz.kotlininside.session/-session/index.md))  <br><br><br>
-| <a name="be.zvz.kotlininside.api.article/ArticleVote///PointingToDeclaration/"></a>[ArticleVote](-article-vote/index.md)| <a name="be.zvz.kotlininside.api.article/ArticleVote///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [ArticleVote](-article-vote/index.md)(**gallId**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **articleId**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **session**: [Session](../be.zvz.kotlininside.session/-session/index.md))  <br><br><br>
-| <a name="be.zvz.kotlininside.api.article/ArticleWrite///PointingToDeclaration/"></a>[ArticleWrite](-article-write/index.md)| <a name="be.zvz.kotlininside.api.article/ArticleWrite///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [ArticleWrite](-article-write/index.md)  <br><br><br>
+| [ArticleDelete](-article-delete/index.html) | [jvm]<br>class [ArticleDelete](-article-delete/index.html)@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)()constructor(**gallId**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
+articleId**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **
+session**: [Session](../be.zvz.kotlininside.session/-session/index.html), **
+fcmToken**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
+| [ArticleHitUpvote](-article-hit-upvote/index.html) | [jvm]<br>class [ArticleHitUpvote](-article-hit-upvote/index.html)(**
+gallId**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
+articleId**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **
+session**: [Session](../be.zvz.kotlininside.session/-session/index.html)) |
+| [ArticleList](-article-list/index.html) | [jvm]<br>class [ArticleList](-article-list/index.html)@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)()constructor(**gallId**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
+searchKeyword**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
+searchType**: [ArticleList.SearchType](-article-list/-search-type/index.html), **
+page**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **
+recommend**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), **
+notice**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), **
+headId**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **
+session**: [Session](../be.zvz.kotlininside.session/-session/index.html)?) |
+| [ArticleModify](-article-modify/index.html) | [jvm]<br>class [ArticleModify](-article-modify/index.html)(**
+gallId**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
+articleId**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **
+session**: [Session](../be.zvz.kotlininside.session/-session/index.html)) |
+| [ArticleRead](-article-read/index.html) | [jvm]<br>class [ArticleRead](-article-read/index.html)@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)()constructor(**gallId**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
+articleId**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **
+session**: [Session](../be.zvz.kotlininside.session/-session/index.html)?) |
+| [ArticleReport](-article-report/index.html) | [jvm]<br>class [ArticleReport](-article-report/index.html)(**
+gallId**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
+articleId**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **
+session**: [Session](../be.zvz.kotlininside.session/-session/index.html)) |
+| [ArticleVote](-article-vote/index.html) | [jvm]<br>class [ArticleVote](-article-vote/index.html)(**
+gallId**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
+articleId**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **
+session**: [Session](../be.zvz.kotlininside.session/-session/index.html)) |
+| [ArticleWrite](-article-write/index.html) | [jvm]<br>class [ArticleWrite](-article-write/index.html) |
 

@@ -1,14 +1,14 @@
 ---
-title: data -
+title: data
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.comment](../../index.md)/[CommentWrite](../index.md)/[WriteResult](index.md)/[data](data.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.comment](../../index.html)
+/[CommentWrite](../index.html)/[WriteResult](index.html)/[data](data.html)
 
+# data
 
+[jvm]\
+val [data](data.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)? = null
 
-# data  
-[jvm]  
-Content  
-val [data](data.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)? = null  
 
 
 

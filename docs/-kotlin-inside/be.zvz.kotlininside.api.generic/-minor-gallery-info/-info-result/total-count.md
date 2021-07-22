@@ -1,14 +1,14 @@
 ---
-title: totalCount -
+title: totalCount
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic](../../index.md)/[MinorGalleryInfo](../index.md)
-/[InfoResult](index.md)/[totalCount](total-count.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)
+/[MinorGalleryInfo](../index.html)/[InfoResult](index.html)/[totalCount](total-count.html)
 
 # totalCount
 
-[jvm]  
-Content  
-val [totalCount](total-count.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
+[jvm]\
+val [totalCount](total-count.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
+
 
 
 

@@ -1,14 +1,15 @@
 ---
-title: AUTH_API -
+title: AUTH_API
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.value](../index.md)/[ApiUrl](index.md)/[AUTH_API](-a-u-t-h_-a-p-i.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.value](../index.html)/[ApiUrl](index.html)
+/[AUTH_API](-a-u-t-h_-a-p-i.html)
 
+# AUTH_API
 
+[jvm]\
+const
+val [AUTH_API](-a-u-t-h_-a-p-i.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# AUTH_API  
-[jvm]  
-Content  
-val [AUTH_API](-a-u-t-h_-a-p-i.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 

@@ -1,27 +1,26 @@
 ---
-title: serverError -
+title: serverError
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[serverError](server-error.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[serverError](server-error.html)
 
+# serverError
 
-
-# serverError  
-[jvm]  
-Content  
-open fun [serverError](server-error.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
-More info  
-
+[jvm]\
+open
+fun [serverError](server-error.html)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
 
 Is the response code a 500 Internal Server Error?
 
+#### Return
 
+true if 500, false otherwise
 
-#### Return  
+#### Throws
 
-
-if 500, false otherwise
-
-  
+| | |
+|---|---|
+| [be.zvz.kotlininside.http.HttpRequest.HttpRequestException](-http-request-exception/index.html) |  |
 
 
 

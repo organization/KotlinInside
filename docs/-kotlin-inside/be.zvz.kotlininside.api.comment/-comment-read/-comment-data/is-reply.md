@@ -1,14 +1,14 @@
 ---
-title: isReply -
+title: isReply
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.comment](../../index.md)/[CommentRead](../index.md)/[CommentData](index.md)/[isReply](is-reply.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.comment](../../index.html)
+/[CommentRead](../index.html)/[CommentData](index.html)/[isReply](is-reply.html)
 
+# isReply
 
+[jvm]\
+val [isReply](is-reply.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
 
-# isReply  
-[jvm]  
-Content  
-val [isReply](is-reply.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
 
 
 

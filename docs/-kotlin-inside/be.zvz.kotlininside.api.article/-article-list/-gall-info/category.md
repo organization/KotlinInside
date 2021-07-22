@@ -1,14 +1,14 @@
 ---
-title: category -
+title: category
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleList](../index.md)/[GallInfo](index.md)/[category](category.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleList](../index.html)/[GallInfo](index.html)/[category](category.html)
 
+# category
 
+[jvm]\
+val [category](category.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
 
-# category  
-[jvm]  
-Content  
-val [category](category.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
 
 
 

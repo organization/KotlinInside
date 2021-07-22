@@ -1,14 +1,14 @@
 ---
-title: level -
+title: level
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleList](../index.md)/[GallList](index.md)/[level](level.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleList](../index.html)/[GallList](index.html)/[level](level.html)
 
+# level
 
+[jvm]\
+val [level](level.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
 
-# level  
-[jvm]  
-Content  
-val [level](level.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
 
 
 

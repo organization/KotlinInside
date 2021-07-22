@@ -1,27 +1,20 @@
 ---
-title: date -
+title: date
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[date](date.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[date](date.html)
 
+# date
 
-
-# date  
-[jvm]  
-Content  
-open fun [date](date.md)(): [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)  
-More info  
-
+[jvm]\
+open fun [date](date.html)(): [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)
 
 Get the 'Date' header from the response
 
+#### Return
 
+date value, -1 on failures
 
-#### Return  
-
-
-value, -1 on failures
-
-  
 
 
 

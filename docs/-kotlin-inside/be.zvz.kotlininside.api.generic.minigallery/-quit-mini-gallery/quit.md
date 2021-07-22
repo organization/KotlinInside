@@ -1,14 +1,14 @@
 ---
-title: quit -
+title: quit
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.generic.minigallery](../index.md)/[QuitMiniGallery](index.md)
-/[quit](quit.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.generic.minigallery](../index.html)
+/[QuitMiniGallery](index.html)/[quit](quit.html)
 
 # quit
 
-[jvm]  
-Content  
-fun [quit](quit.md)(): [QuitMiniGallery.MemberQuitResult](-member-quit-result/index.md)  
+[jvm]\
+fun [quit](quit.html)(): [QuitMiniGallery.MemberQuitResult](-member-quit-result/index.html)
+
 
 
 

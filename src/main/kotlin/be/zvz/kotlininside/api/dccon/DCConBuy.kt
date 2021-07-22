@@ -4,6 +4,7 @@ import be.zvz.kotlininside.KotlinInside
 import be.zvz.kotlininside.api.type.DCCon
 import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.http.Request
+import be.zvz.kotlininside.json.JsonBrowser
 import be.zvz.kotlininside.session.Session
 import be.zvz.kotlininside.session.user.Anonymous
 import be.zvz.kotlininside.value.ApiUrl
@@ -34,10 +35,12 @@ class DCConBuy(
             .addMultipartParameter("type", "buy_dccon")
             .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
 
-        val json = KotlinInside.getInstance().httpInterface.upload(
-            ApiUrl.DCCon.DCCON,
-            option
-        )!!
+        val json = JsonBrowser.parse(
+            KotlinInside.getInstance().httpInterface.upload(
+                ApiUrl.DCCon.DCCON,
+                option
+            )
+        )
 
         return BuyResult(
             result = json.get("result").asInteger(),

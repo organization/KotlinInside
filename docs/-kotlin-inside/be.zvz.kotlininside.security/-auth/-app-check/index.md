@@ -1,36 +1,26 @@
 ---
-title: AppCheck -
+title: AppCheck
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.security](../../index.md)/[Auth](../index.md)/[AppCheck](index.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.security](../../index.html)/[Auth](../index.html)
+/[AppCheck](index.html)
 
+# AppCheck
 
+[jvm]\
+data class [AppCheck](index.html)(**
+result**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), **
+version**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, **
+notice**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)?, **
+noticeUpdate**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)?, **
+date**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?)
 
-# AppCheck  
- [jvm] data class [AppCheck](index.md)(**result**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), **version**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, **notice**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)?, **noticeUpdate**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)?, **date**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?)   
+## Properties
 
-
-## Functions  
-  
-|  Name|  Summary| 
+| Name | Summary |
 |---|---|
-| <a name="be.zvz.kotlininside.security/Auth.AppCheck/component1/#/PointingToDeclaration/"></a>[component1](component1.md)| <a name="be.zvz.kotlininside.security/Auth.AppCheck/component1/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component1](component1.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.security/Auth.AppCheck/component2/#/PointingToDeclaration/"></a>[component2](component2.md)| <a name="be.zvz.kotlininside.security/Auth.AppCheck/component2/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component2](component2.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?  <br><br><br>
-| <a name="be.zvz.kotlininside.security/Auth.AppCheck/component3/#/PointingToDeclaration/"></a>[component3](component3.md)| <a name="be.zvz.kotlininside.security/Auth.AppCheck/component3/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component3](component3.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)?  <br><br><br>
-| <a name="be.zvz.kotlininside.security/Auth.AppCheck/component4/#/PointingToDeclaration/"></a>[component4](component4.md)| <a name="be.zvz.kotlininside.security/Auth.AppCheck/component4/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component4](component4.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)?  <br><br><br>
-| <a name="be.zvz.kotlininside.security/Auth.AppCheck/component5/#/PointingToDeclaration/"></a>[component5](component5.md)| <a name="be.zvz.kotlininside.security/Auth.AppCheck/component5/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component5](component5.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?  <br><br><br>
-| <a name="be.zvz.kotlininside.security/Auth.AppCheck/copy/#kotlin.Boolean#kotlin.String?#kotlin.Boolean?#kotlin.Boolean?#kotlin.String?/PointingToDeclaration/"></a>[copy](copy.md)| <a name="be.zvz.kotlininside.security/Auth.AppCheck/copy/#kotlin.Boolean#kotlin.String?#kotlin.Boolean?#kotlin.Boolean?#kotlin.String?/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>fun [copy](copy.md)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), version: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null, notice: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)? = null, noticeUpdate: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)? = null, date: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null): [Auth.AppCheck](index.md)  <br><br><br>
-| <a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a>[equals](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)| <a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open operator override fun [equals](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)(other: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  <br><br><br>
-| <a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a>[hashCode](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)| <a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open override fun [hashCode](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  <br><br><br>
-| <a name="kotlin/Any/toString/#/PointingToDeclaration/"></a>[toString](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)| <a name="kotlin/Any/toString/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open override fun [toString](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
-
-
-## Properties  
-  
-|  Name|  Summary| 
-|---|---|
-| <a name="be.zvz.kotlininside.security/Auth.AppCheck/date/#/PointingToDeclaration/"></a>[date](date.md)| <a name="be.zvz.kotlininside.security/Auth.AppCheck/date/#/PointingToDeclaration/"></a> [jvm] val [date](date.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null   <br>
-| <a name="be.zvz.kotlininside.security/Auth.AppCheck/notice/#/PointingToDeclaration/"></a>[notice](notice.md)| <a name="be.zvz.kotlininside.security/Auth.AppCheck/notice/#/PointingToDeclaration/"></a> [jvm] val [notice](notice.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)? = null   <br>
-| <a name="be.zvz.kotlininside.security/Auth.AppCheck/noticeUpdate/#/PointingToDeclaration/"></a>[noticeUpdate](notice-update.md)| <a name="be.zvz.kotlininside.security/Auth.AppCheck/noticeUpdate/#/PointingToDeclaration/"></a> [jvm] val [noticeUpdate](notice-update.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)? = null   <br>
-| <a name="be.zvz.kotlininside.security/Auth.AppCheck/result/#/PointingToDeclaration/"></a>[result](result.md)| <a name="be.zvz.kotlininside.security/Auth.AppCheck/result/#/PointingToDeclaration/"></a> [jvm] val [result](result.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)   <br>
-| <a name="be.zvz.kotlininside.security/Auth.AppCheck/version/#/PointingToDeclaration/"></a>[version](version.md)| <a name="be.zvz.kotlininside.security/Auth.AppCheck/version/#/PointingToDeclaration/"></a> [jvm] val [version](version.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null   <br>
+| [date](date.html) | [jvm]<br>val [date](date.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null |
+| [notice](notice.html) | [jvm]<br>val [notice](notice.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)? = null |
+| [noticeUpdate](notice-update.html) | [jvm]<br>val [noticeUpdate](notice-update.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)? = null |
+| [result](result.html) | [jvm]<br>val [result](result.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
+| [version](version.html) | [jvm]<br>val [version](version.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null |
 

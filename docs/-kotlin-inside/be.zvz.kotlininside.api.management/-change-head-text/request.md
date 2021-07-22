@@ -1,20 +1,16 @@
 ---
-title: request -
+title: request
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.management](../index.md)/[ChangeHeadText](index.md)/[request](request.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.management](../index.html)/[ChangeHeadText](index.html)
+/[request](request.html)
 
+# request
 
-
-# request  
-[jvm]  
-Content  
-fun [request](request.md)(): [ChangeHeadText.ChangeResult](-change-result/index.md)  
-More info  
-
+[jvm]\
+fun [request](request.html)(): [ChangeHeadText.ChangeResult](-change-result/index.html)
 
 말머리 변경 요청을 전송합니다.
 
-  
 
 
 

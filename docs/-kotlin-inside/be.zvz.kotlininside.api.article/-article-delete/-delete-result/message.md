@@ -1,14 +1,14 @@
 ---
-title: message -
+title: message
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleDelete](../index.md)/[DeleteResult](index.md)/[message](message.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleDelete](../index.html)/[DeleteResult](index.html)/[message](message.html)
 
+# message
 
+[jvm]\
+val [message](message.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null
 
-# message  
-[jvm]  
-Content  
-val [message](message.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null  
 
 
 

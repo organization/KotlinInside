@@ -1,14 +1,14 @@
 ---
-title: upvote -
+title: upvote
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleRead](../index.md)/[ViewMain](index.md)/[upvote](upvote.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleRead](../index.html)/[ViewMain](index.html)/[upvote](upvote.html)
 
+# upvote
 
+[jvm]\
+val [upvote](upvote.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
 
-# upvote  
-[jvm]  
-Content  
-val [upvote](upvote.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
 
 
 

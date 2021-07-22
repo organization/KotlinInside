@@ -1,62 +1,41 @@
 ---
-title: InfoResult -
+title: InfoResult
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic](../../index.md)/[MinorGalleryInfo](../index.md)/[InfoResult](index.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)
+/[MinorGalleryInfo](../index.html)/[InfoResult](index.html)
 
+# InfoResult
 
-
-# InfoResult  
-
-[jvm] data class [InfoResult](index.md)(**
+[jvm]\
+data class [InfoResult](index.html)(**
 id**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
 koName**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
 image**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, **
 description**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, **
-manager**: [MinorGalleryInfo.Manager](../-manager/index.md), **
+manager**: [MinorGalleryInfo.Manager](../-manager/index.html), **
 subManager**: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[MinorGalleryInfo.Manager](
-../-manager/index.md)>, **createDate**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
-, **new**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), **
+../-manager/index.html)>, **
+createDate**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
+new**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), **
 hotState**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
 totalCount**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
 categoryName**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
-mini**: [MinorGalleryInfo.MiniGalleryInfo](../-mini-gallery-info/index.md)?)
+mini**: [MinorGalleryInfo.MiniGalleryInfo](../-mini-gallery-info/index.html)?)
 
-## Functions  
+## Properties
 
-|  Name|  Summary| 
+| Name | Summary |
 |---|---|
-| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/component1/#/PointingToDeclaration/"></a>[component1](component1.md)| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/component1/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component1](component1.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/component10/#/PointingToDeclaration/"></a>[component10](component10.md)| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/component10/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component10](component10.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/component11/#/PointingToDeclaration/"></a>[component11](component11.md)| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/component11/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component11](component11.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/component12/#/PointingToDeclaration/"></a>[component12](component12.md)| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/component12/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component12](component12.md)(): [MinorGalleryInfo.MiniGalleryInfo](../-mini-gallery-info/index.md)?  <br><br><br>
-| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/component2/#/PointingToDeclaration/"></a>[component2](component2.md)| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/component2/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component2](component2.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/component3/#/PointingToDeclaration/"></a>[component3](component3.md)| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/component3/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component3](component3.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?  <br><br><br>
-| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/component4/#/PointingToDeclaration/"></a>[component4](component4.md)| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/component4/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component4](component4.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?  <br><br><br>
-| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/component5/#/PointingToDeclaration/"></a>[component5](component5.md)| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/component5/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component5](component5.md)(): [MinorGalleryInfo.Manager](../-manager/index.md)  <br><br><br>
-| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/component6/#/PointingToDeclaration/"></a>[component6](component6.md)| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/component6/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component6](component6.md)(): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[MinorGalleryInfo.Manager](../-manager/index.md)>  <br><br><br>
-| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/component7/#/PointingToDeclaration/"></a>[component7](component7.md)| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/component7/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component7](component7.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/component8/#/PointingToDeclaration/"></a>[component8](component8.md)| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/component8/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component8](component8.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/component9/#/PointingToDeclaration/"></a>[component9](component9.md)| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/component9/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component9](component9.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/copy/#kotlin.String#kotlin.String#kotlin.String?#kotlin.String?#be.zvz.kotlininside.api.generic.MinorGalleryInfo.Manager#kotlin.collections.List[be.zvz.kotlininside.api.generic.MinorGalleryInfo.Manager]#kotlin.String#kotlin.Boolean#kotlin.String#kotlin.String#kotlin.String#be.zvz.kotlininside.api.generic.MinorGalleryInfo.MiniGalleryInfo?/PointingToDeclaration/"></a>[copy](copy.md)| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/copy/#kotlin.String#kotlin.String#kotlin.String?#kotlin.String?#be.zvz.kotlininside.api.generic.MinorGalleryInfo.Manager#kotlin.collections.List[be.zvz.kotlininside.api.generic.MinorGalleryInfo.Manager]#kotlin.String#kotlin.Boolean#kotlin.String#kotlin.String#kotlin.String#be.zvz.kotlininside.api.generic.MinorGalleryInfo.MiniGalleryInfo?/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>fun [copy](copy.md)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), koName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), image: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null, description: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null, manager: [MinorGalleryInfo.Manager](../-manager/index.md), subManager: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[MinorGalleryInfo.Manager](../-manager/index.md)>, createDate: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), new: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), hotState: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), totalCount: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), categoryName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), mini: [MinorGalleryInfo.MiniGalleryInfo](../-mini-gallery-info/index.md)? = null): [MinorGalleryInfo.InfoResult](index.md)  <br><br><br>
-| <a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a>[equals](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)| <a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open operator override fun [equals](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)(other: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  <br><br><br>
-| <a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a>[hashCode](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)| <a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open override fun [hashCode](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  <br><br><br>
-| <a name="kotlin/Any/toString/#/PointingToDeclaration/"></a>[toString](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)| <a name="kotlin/Any/toString/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open override fun [toString](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
-
-
-## Properties  
-  
-|  Name|  Summary| 
-|---|---|
-| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/categoryName/#/PointingToDeclaration/"></a>[categoryName](category-name.md)| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/categoryName/#/PointingToDeclaration/"></a> [jvm] val [categoryName](category-name.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
-| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/createDate/#/PointingToDeclaration/"></a>[createDate](create-date.md)| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/createDate/#/PointingToDeclaration/"></a> [jvm] val [createDate](create-date.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
-| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/description/#/PointingToDeclaration/"></a>[description](description.md)| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/description/#/PointingToDeclaration/"></a> [jvm] val [description](description.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null   <br>
-| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/hotState/#/PointingToDeclaration/"></a>[hotState](hot-state.md)| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/hotState/#/PointingToDeclaration/"></a> [jvm] val [hotState](hot-state.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
-| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/id/#/PointingToDeclaration/"></a>[id](id.md)| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/id/#/PointingToDeclaration/"></a> [jvm] val [id](id.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
-| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/image/#/PointingToDeclaration/"></a>[image](image.md)| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/image/#/PointingToDeclaration/"></a> [jvm] val [image](image.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null   <br>
-| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/koName/#/PointingToDeclaration/"></a>[koName](ko-name.md)| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/koName/#/PointingToDeclaration/"></a> [jvm] val [koName](ko-name.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
-| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/manager/#/PointingToDeclaration/"></a>[manager](manager.md)| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/manager/#/PointingToDeclaration/"></a> [jvm] val [manager](manager.md): [MinorGalleryInfo.Manager](../-manager/index.md)   <br>
-| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/mini/#/PointingToDeclaration/"></a>[mini](mini.md)| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/mini/#/PointingToDeclaration/"></a> [jvm] val [mini](mini.md): [MinorGalleryInfo.MiniGalleryInfo](../-mini-gallery-info/index.md)? = null   <br>
-| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/new/#/PointingToDeclaration/"></a>[new](new.md)| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/new/#/PointingToDeclaration/"></a> [jvm] val [new](new.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)   <br>
-| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/subManager/#/PointingToDeclaration/"></a>[subManager](sub-manager.md)| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/subManager/#/PointingToDeclaration/"></a> [jvm] val [subManager](sub-manager.md): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[MinorGalleryInfo.Manager](../-manager/index.md)>   <br>
-| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/totalCount/#/PointingToDeclaration/"></a>[totalCount](total-count.md)| <a name="be.zvz.kotlininside.api.generic/MinorGalleryInfo.InfoResult/totalCount/#/PointingToDeclaration/"></a> [jvm] val [totalCount](total-count.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
+| [categoryName](category-name.html) | [jvm]<br>val [categoryName](category-name.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [createDate](create-date.html) | [jvm]<br>val [createDate](create-date.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [description](description.html) | [jvm]<br>val [description](description.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null |
+| [hotState](hot-state.html) | [jvm]<br>val [hotState](hot-state.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [id](id.html) | [jvm]<br>val [id](id.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [image](image.html) | [jvm]<br>val [image](image.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null |
+| [koName](ko-name.html) | [jvm]<br>val [koName](ko-name.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [manager](manager.html) | [jvm]<br>val [manager](manager.html): [MinorGalleryInfo.Manager](../-manager/index.html) |
+| [mini](mini.html) | [jvm]<br>val [mini](mini.html): [MinorGalleryInfo.MiniGalleryInfo](../-mini-gallery-info/index.html)? = null |
+| [new](new.html) | [jvm]<br>val [new](new.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
+| [subManager](sub-manager.html) | [jvm]<br>val [subManager](sub-manager.html): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[MinorGalleryInfo.Manager](../-manager/index.html)> |
+| [totalCount](total-count.html) | [jvm]<br>val [totalCount](total-count.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 

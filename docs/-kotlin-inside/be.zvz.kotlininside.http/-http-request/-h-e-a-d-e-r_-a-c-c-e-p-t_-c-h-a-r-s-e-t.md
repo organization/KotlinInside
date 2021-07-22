@@ -1,20 +1,16 @@
 ---
-title: HEADER_ACCEPT_CHARSET -
+title: HEADER_ACCEPT_CHARSET
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[HEADER_ACCEPT_CHARSET](-h-e-a-d-e-r_-a-c-c-e-p-t_-c-h-a-r-s-e-t.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[HEADER_ACCEPT_CHARSET](-h-e-a-d-e-r_-a-c-c-e-p-t_-c-h-a-r-s-e-t.html)
 
+# HEADER_ACCEPT_CHARSET
 
-
-# HEADER_ACCEPT_CHARSET  
-[jvm]  
-Content  
-val [HEADER_ACCEPT_CHARSET](-h-e-a-d-e-r_-a-c-c-e-p-t_-c-h-a-r-s-e-t.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
-More info  
-
+[jvm]\
+val [HEADER_ACCEPT_CHARSET](-h-e-a-d-e-r_-a-c-c-e-p-t_-c-h-a-r-s-e-t.html): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
 
 'Accept-Charset' header name
 
-  
 
 
 

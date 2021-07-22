@@ -1,14 +1,14 @@
 ---
-title: GalleryRanking -
+title: GalleryRanking
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.generic](../index.md)/[GalleryRanking](index.md)/[GalleryRanking](-gallery-ranking.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.generic](../index.html)/[GalleryRanking](index.html)
+/[GalleryRanking](-gallery-ranking.html)
 
+# GalleryRanking
 
+[jvm]\
+fun [GalleryRanking](-gallery-ranking.html)()
 
-# GalleryRanking  
-[jvm]  
-Content  
-fun [GalleryRanking](-gallery-ranking.md)()  
 
 
 

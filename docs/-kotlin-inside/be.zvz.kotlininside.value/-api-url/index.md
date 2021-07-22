@@ -1,38 +1,38 @@
 ---
-title: ApiUrl -
+title: ApiUrl
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.value](../index.md)/[ApiUrl](index.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.value](../index.html)/[ApiUrl](index.html)
 
+# ApiUrl
 
+[jvm]\
+object [ApiUrl](index.html)
 
-# ApiUrl  
- [jvm] class [ApiUrl](index.md)   
+## Types
 
-
-## Types  
-  
-|  Name|  Summary| 
+| Name | Summary |
 |---|---|
-| <a name="be.zvz.kotlininside.value/ApiUrl.Article///PointingToDeclaration/"></a>[Article](-article/index.md)| <a name="be.zvz.kotlininside.value/ApiUrl.Article///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [Article](-article/index.md)  <br><br><br>
-| <a name="be.zvz.kotlininside.value/ApiUrl.Auth///PointingToDeclaration/"></a>[Auth](-auth/index.md)| <a name="be.zvz.kotlininside.value/ApiUrl.Auth///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [Auth](-auth/index.md)  <br><br><br>
-| <a name="be.zvz.kotlininside.value/ApiUrl.Comment///PointingToDeclaration/"></a>[Comment](-comment/index.md)| <a name="be.zvz.kotlininside.value/ApiUrl.Comment///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [Comment](-comment/index.md)  <br><br><br>
-| <a name="be.zvz.kotlininside.value/ApiUrl.DCCon///PointingToDeclaration/"></a>[DCCon](-d-c-con/index.md)| <a name="be.zvz.kotlininside.value/ApiUrl.DCCon///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [DCCon](-d-c-con/index.md)  <br><br><br>
-| <a name="be.zvz.kotlininside.value/ApiUrl.Gallery///PointingToDeclaration/"></a>[Gallery](-gallery/index.md)| <a name="be.zvz.kotlininside.value/ApiUrl.Gallery///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [Gallery](-gallery/index.md)  <br><br><br>
-| <a name="be.zvz.kotlininside.value/ApiUrl.MainInfo///PointingToDeclaration/"></a>[MainInfo](-main-info/index.md)| <a name="be.zvz.kotlininside.value/ApiUrl.MainInfo///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [MainInfo](-main-info/index.md)  <br><br><br>
-| <a name="be.zvz.kotlininside.value/ApiUrl.MiniGallery///PointingToDeclaration/"></a>[MiniGallery](-mini-gallery/index.md)| <a name="be.zvz.kotlininside.value/ApiUrl.MiniGallery///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [MiniGallery](-mini-gallery/index.md)  <br><br><br>
-| <a name="be.zvz.kotlininside.value/ApiUrl.Search///PointingToDeclaration/"></a>[Search](-search/index.md)| <a name="be.zvz.kotlininside.value/ApiUrl.Search///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [Search](-search/index.md)  <br><br><br>
-| <a name="be.zvz.kotlininside.value/ApiUrl.User///PointingToDeclaration/"></a>[User](-user/index.md)| <a name="be.zvz.kotlininside.value/ApiUrl.User///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [User](-user/index.md)  <br><br><br>
+| [Article](-article/index.html) | [jvm]<br>object [Article](-article/index.html) |
+| [Auth](-auth/index.html) | [jvm]<br>object [Auth](-auth/index.html) |
+| [Comment](-comment/index.html) | [jvm]<br>object [Comment](-comment/index.html) |
+| [DCCon](-d-c-con/index.html) | [jvm]<br>object [DCCon](-d-c-con/index.html) |
+| [Firebase](-firebase/index.html) | [jvm]<br>object [Firebase](-firebase/index.html) |
+| [Gallery](-gallery/index.html) | [jvm]<br>object [Gallery](-gallery/index.html) |
+| [MainInfo](-main-info/index.html) | [jvm]<br>object [MainInfo](-main-info/index.html) |
+| [MiniGallery](-mini-gallery/index.html) | [jvm]<br>object [MiniGallery](-mini-gallery/index.html) |
+| [PlayService](-play-service/index.html) | [jvm]<br>object [PlayService](-play-service/index.html) |
+| [Search](-search/index.html) | [jvm]<br>object [Search](-search/index.html) |
+| [User](-user/index.html) | [jvm]<br>object [User](-user/index.html) |
 
+## Properties
 
-## Properties  
-  
-|  Name|  Summary| 
+| Name | Summary |
 |---|---|
-| <a name="be.zvz.kotlininside.value/ApiUrl/APP_API/#/PointingToDeclaration/"></a>[APP_API](-a-p-p_-a-p-i.md)| <a name="be.zvz.kotlininside.value/ApiUrl/APP_API/#/PointingToDeclaration/"></a> [jvm] val [APP_API](-a-p-p_-a-p-i.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
-| <a name="be.zvz.kotlininside.value/ApiUrl/AUTH_API/#/PointingToDeclaration/"></a>[AUTH_API](-a-u-t-h_-a-p-i.md)| <a name="be.zvz.kotlininside.value/ApiUrl/AUTH_API/#/PointingToDeclaration/"></a> [jvm] val [AUTH_API](-a-u-t-h_-a-p-i.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
-| <a name="be.zvz.kotlininside.value/ApiUrl/MAIN_API/#/PointingToDeclaration/"></a>[MAIN_API](-m-a-i-n_-a-p-i.md)| <a name="be.zvz.kotlininside.value/ApiUrl/MAIN_API/#/PointingToDeclaration/"></a> [jvm] val [MAIN_API](-m-a-i-n_-a-p-i.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
-| <a name="be.zvz.kotlininside.value/ApiUrl/MOBILE_WEB/#/PointingToDeclaration/"></a>[MOBILE_WEB](-m-o-b-i-l-e_-w-e-b.md)| <a name="be.zvz.kotlininside.value/ApiUrl/MOBILE_WEB/#/PointingToDeclaration/"></a> [jvm] val [MOBILE_WEB](-m-o-b-i-l-e_-w-e-b.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
-| <a name="be.zvz.kotlininside.value/ApiUrl/PC_WEB/#/PointingToDeclaration/"></a>[PC_WEB](-p-c_-w-e-b.md)| <a name="be.zvz.kotlininside.value/ApiUrl/PC_WEB/#/PointingToDeclaration/"></a> [jvm] val [PC_WEB](-p-c_-w-e-b.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
-| <a name="be.zvz.kotlininside.value/ApiUrl/REDIRECT/#/PointingToDeclaration/"></a>[REDIRECT](-r-e-d-i-r-e-c-t.md)| <a name="be.zvz.kotlininside.value/ApiUrl/REDIRECT/#/PointingToDeclaration/"></a> [jvm] val [REDIRECT](-r-e-d-i-r-e-c-t.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
-| <a name="be.zvz.kotlininside.value/ApiUrl/UPLOAD/#/PointingToDeclaration/"></a>[UPLOAD](-u-p-l-o-a-d.md)| <a name="be.zvz.kotlininside.value/ApiUrl/UPLOAD/#/PointingToDeclaration/"></a> [jvm] val [UPLOAD](-u-p-l-o-a-d.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
+| [APP_API](-a-p-p_-a-p-i.html) | [jvm]<br>const val [APP_API](-a-p-p_-a-p-i.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [AUTH_API](-a-u-t-h_-a-p-i.html) | [jvm]<br>const val [AUTH_API](-a-u-t-h_-a-p-i.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [MAIN_API](-m-a-i-n_-a-p-i.html) | [jvm]<br>const val [MAIN_API](-m-a-i-n_-a-p-i.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [MOBILE_WEB](-m-o-b-i-l-e_-w-e-b.html) | [jvm]<br>const val [MOBILE_WEB](-m-o-b-i-l-e_-w-e-b.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [PC_WEB](-p-c_-w-e-b.html) | [jvm]<br>const val [PC_WEB](-p-c_-w-e-b.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [REDIRECT](-r-e-d-i-r-e-c-t.html) | [jvm]<br>const val [REDIRECT](-r-e-d-i-r-e-c-t.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [UPLOAD](-u-p-l-o-a-d.html) | [jvm]<br>const val [UPLOAD](-u-p-l-o-a-d.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 

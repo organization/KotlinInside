@@ -1,14 +1,14 @@
 ---
-title: dcCon -
+title: dcCon
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.type.comment](../index.md)/[DCConComment](index.md)/[dcCon](dc-con.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.type.comment](../index.html)/[DCConComment](index.html)
+/[dcCon](dc-con.html)
 
+# dcCon
 
+[jvm]\
+val [dcCon](dc-con.html): [DCCon](../../be.zvz.kotlininside.api.type/-d-c-con/index.html)
 
-# dcCon  
-[jvm]  
-Content  
-val [dcCon](dc-con.md): [DCCon](../../be.zvz.kotlininside.api.type/-d-c-con/index.md)  
 
 
 

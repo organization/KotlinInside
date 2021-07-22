@@ -1,19 +1,19 @@
 ---
-title: Auth -
+title: Auth
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.value](../../index.md)/[ApiUrl](../index.md)/[Auth](index.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)
+/[Auth](index.html)
 
+# Auth
 
+[jvm]\
+object [Auth](index.html)
 
-# Auth  
- [jvm] class [Auth](index.md)   
+## Properties
 
-
-## Properties  
-  
-|  Name|  Summary| 
+| Name | Summary |
 |---|---|
-| <a name="be.zvz.kotlininside.value/ApiUrl.Auth/APP_CHECK/#/PointingToDeclaration/"></a>[APP_CHECK](-a-p-p_-c-h-e-c-k.md)| <a name="be.zvz.kotlininside.value/ApiUrl.Auth/APP_CHECK/#/PointingToDeclaration/"></a> [jvm] val [APP_CHECK](-a-p-p_-c-h-e-c-k.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
-| <a name="be.zvz.kotlininside.value/ApiUrl.Auth/APP_ID/#/PointingToDeclaration/"></a>[APP_ID](-a-p-p_-i-d.md)| <a name="be.zvz.kotlininside.value/ApiUrl.Auth/APP_ID/#/PointingToDeclaration/"></a> [jvm] val [APP_ID](-a-p-p_-i-d.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
-| <a name="be.zvz.kotlininside.value/ApiUrl.Auth/LOGIN/#/PointingToDeclaration/"></a>[LOGIN](-l-o-g-i-n.md)| <a name="be.zvz.kotlininside.value/ApiUrl.Auth/LOGIN/#/PointingToDeclaration/"></a> [jvm] val [LOGIN](-l-o-g-i-n.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
+| [APP_CHECK](-a-p-p_-c-h-e-c-k.html) | [jvm]<br>const val [APP_CHECK](-a-p-p_-c-h-e-c-k.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [APP_ID](-a-p-p_-i-d.html) | [jvm]<br>const val [APP_ID](-a-p-p_-i-d.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [LOGIN](-l-o-g-i-n.html) | [jvm]<br>const val [LOGIN](-l-o-g-i-n.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 

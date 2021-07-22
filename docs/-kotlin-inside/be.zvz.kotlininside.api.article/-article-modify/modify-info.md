@@ -1,14 +1,14 @@
 ---
-title: modifyInfo -
+title: modifyInfo
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.article](../index.md)/[ArticleModify](index.md)/[modifyInfo](modify-info.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.article](../index.html)/[ArticleModify](index.html)
+/[modifyInfo](modify-info.html)
 
+# modifyInfo
 
+[jvm]\
+fun [modifyInfo](modify-info.html)(): [ArticleModify.ModifyResult](-modify-result/index.html)
 
-# modifyInfo  
-[jvm]  
-Content  
-fun [modifyInfo](modify-info.md)(): [ArticleModify.ModifyResult](-modify-result/index.md)  
 
 
 

@@ -1,14 +1,15 @@
 ---
-title: upvoteAsync -
+title: upvoteAsync
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.async.article](../index.md)/[AsyncArticleHitUpvote](index.md)/[upvoteAsync](upvote-async.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.article](../index.html)
+/[AsyncArticleHitUpvote](index.html)/[upvoteAsync](upvote-async.html)
 
+# upvoteAsync
 
+[jvm]\
+suspend fun [upvoteAsync](upvote-async.html)():
+Deferred<[ArticleHitUpvote.HitUpvoteResult](../../be.zvz.kotlininside.api.article/-article-hit-upvote/-hit-upvote-result/index.html)>
 
-# upvoteAsync  
-[jvm]  
-Content  
-suspend fun [upvoteAsync](upvote-async.md)(): Deferred<[ArticleHitUpvote.HitUpvoteResult](../../be.zvz.kotlininside.api.article/-article-hit-upvote/-hit-upvote-result/index.md)>  
 
 
 

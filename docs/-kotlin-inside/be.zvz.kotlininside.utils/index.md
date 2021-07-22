@@ -1,16 +1,13 @@
 ---
-title: be.zvz.kotlininside.utils -
+title: be.zvz.kotlininside.utils
 ---
-//[KotlinInside](../index.md)/[be.zvz.kotlininside.utils](index.md)
+//[KotlinInside](../../index.html)/[be.zvz.kotlininside.utils](index.html)
 
+# Package be.zvz.kotlininside.utils
 
+## Types
 
-# Package be.zvz.kotlininside.utils  
-
-
-## Types  
-  
-|  Name|  Summary| 
+| Name | Summary |
 |---|---|
-| <a name="be.zvz.kotlininside.utils/StringUtil///PointingToDeclaration/"></a>[StringUtil](-string-util/index.md)| <a name="be.zvz.kotlininside.utils/StringUtil///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>class [StringUtil](-string-util/index.md)  <br><br><br>
+| [StringUtil](-string-util/index.html) | [jvm]<br>class [StringUtil](-string-util/index.html) |
 

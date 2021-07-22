@@ -1,23 +1,23 @@
 ---
-title: getViewInfo -
+title: getViewInfo
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.article](../index.md)/[ArticleRead](index.md)/[getViewInfo](get-view-info.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.article](../index.html)/[ArticleRead](index.html)
+/[getViewInfo](get-view-info.html)
 
+# getViewInfo
 
+[jvm]\
+fun [getViewInfo](get-view-info.html)(): [ArticleRead.ViewInfo](-view-info/index.html)
 
-# getViewInfo  
-[jvm]  
-Content  
-fun [getViewInfo](get-view-info.md)(): [ArticleRead.ViewInfo](-view-info/index.md)  
-More info  
+#### Return
 
+[be.zvz.kotlininside.api.article.ArticleRead.ViewInfo](-view-info/index.html) view_info 객체를 반환합니다.
 
-#### Return  
+#### Throws
 
-
-[be.zvz.kotlininside.api.article.ArticleRead.ViewInfo](-view-info/index.md) view_info 객체를 반환합니다.
-
-  
+| | |
+|---|---|
+| [be.zvz.kotlininside.http.HttpException](../../be.zvz.kotlininside.http/-http-exception/index.html) | 글을 불러오지 못할 경우, HttpException 발생 |
 
 
 

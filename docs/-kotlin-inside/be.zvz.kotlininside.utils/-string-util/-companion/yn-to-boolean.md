@@ -1,16 +1,18 @@
 ---
-title: ynToBoolean -
+title: ynToBoolean
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.utils](../../index.md)/[StringUtil](../index.md)/[Companion](index.md)/[ynToBoolean](yn-to-boolean.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.utils](../../index.html)/[StringUtil](../index.html)
+/[Companion](index.html)/[ynToBoolean](yn-to-boolean.html)
 
+# ynToBoolean
 
+[jvm]\
 
-# ynToBoolean  
-[jvm]  
-Content  
-@[JvmStatic](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-static/index.html)()  
-  
-fun [ynToBoolean](yn-to-boolean.md)(s: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
+@[JvmStatic](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-static/index.html)()
+
+fun [ynToBoolean](yn-to-boolean.html)(
+s: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
+
 
 
 

@@ -1,14 +1,14 @@
 ---
-title: status -
+title: status
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic.minigallery](../../index.md)
-/[JoinMiniGallery](../index.md)/[MemberJoinOkResult](index.md)/[status](status.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic.minigallery](../../index.html)
+/[JoinMiniGallery](../index.html)/[MemberJoinOkResult](index.html)/[status](status.html)
 
 # status
 
-[jvm]  
-Content  
-val [status](status.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
+[jvm]\
+val [status](status.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
+
 
 
 

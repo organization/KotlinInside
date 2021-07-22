@@ -138,7 +138,12 @@ class ArticleList @JvmOverloads constructor(
                     }
                 }
             }.toString()
-        json = KotlinInside.getInstance().httpInterface.get(Request.redirectUrl(url), Request.getDefaultOption())!!
+        json = JsonBrowser.parse(
+            KotlinInside.getInstance().httpInterface.get(
+                Request.redirectUrl(url),
+                Request.getDefaultOption()
+            )
+        )
     }
 
     /**

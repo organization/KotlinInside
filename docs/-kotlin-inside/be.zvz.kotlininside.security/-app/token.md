@@ -1,14 +1,14 @@
 ---
-title: token -
+title: token
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.security](../index.md)/[App](index.md)/[token](token.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.security](../index.html)/[App](index.html)
+/[token](token.html)
 
+# token
 
+[jvm]\
+val [token](token.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# token  
-[jvm]  
-Content  
-val [token](token.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
 
 
 

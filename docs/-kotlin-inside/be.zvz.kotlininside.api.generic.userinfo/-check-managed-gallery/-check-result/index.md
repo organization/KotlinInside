@@ -1,27 +1,18 @@
 ---
-title: CheckResult -
+title: CheckResult
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic.userinfo](../../index.md)
-/[CheckManagedGallery](../index.md)/[CheckResult](index.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic.userinfo](../../index.html)
+/[CheckManagedGallery](../index.html)/[CheckResult](index.html)
 
 # CheckResult
 
-[jvm] data class [CheckResult](index.md)(**
-myManageList**: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[CheckManagedGallery.Gallery](../-gallery/index.md)>)
-
-## Functions
-
-|  Name|  Summary| 
-|---|---|
-| <a name="be.zvz.kotlininside.api.generic.userinfo/CheckManagedGallery.CheckResult/component1/#/PointingToDeclaration/"></a>[component1](component1.md)| <a name="be.zvz.kotlininside.api.generic.userinfo/CheckManagedGallery.CheckResult/component1/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component1](component1.md)(): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[CheckManagedGallery.Gallery](../-gallery/index.md)>  <br><br><br>
-| <a name="be.zvz.kotlininside.api.generic.userinfo/CheckManagedGallery.CheckResult/copy/#kotlin.collections.List[be.zvz.kotlininside.api.generic.userinfo.CheckManagedGallery.Gallery]/PointingToDeclaration/"></a>[copy](copy.md)| <a name="be.zvz.kotlininside.api.generic.userinfo/CheckManagedGallery.CheckResult/copy/#kotlin.collections.List[be.zvz.kotlininside.api.generic.userinfo.CheckManagedGallery.Gallery]/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>fun [copy](copy.md)(myManageList: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[CheckManagedGallery.Gallery](../-gallery/index.md)>): [CheckManagedGallery.CheckResult](index.md)  <br><br><br>
-| <a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a>[equals](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)| <a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open operator override fun [equals](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)(other: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  <br><br><br>
-| <a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a>[hashCode](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)| <a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open override fun [hashCode](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  <br><br><br>
-| <a name="kotlin/Any/toString/#/PointingToDeclaration/"></a>[toString](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)| <a name="kotlin/Any/toString/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open override fun [toString](../../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
+[jvm]\
+data class [CheckResult](index.html)(**
+myManageList**: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[CheckManagedGallery.Gallery](../-gallery/index.html)>)
 
 ## Properties
 
-|  Name|  Summary| 
+| Name | Summary |
 |---|---|
-| <a name="be.zvz.kotlininside.api.generic.userinfo/CheckManagedGallery.CheckResult/myManageList/#/PointingToDeclaration/"></a>[myManageList](my-manage-list.md)| <a name="be.zvz.kotlininside.api.generic.userinfo/CheckManagedGallery.CheckResult/myManageList/#/PointingToDeclaration/"></a> [jvm] val [myManageList](my-manage-list.md): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[CheckManagedGallery.Gallery](../-gallery/index.md)>   <br>
+| [myManageList](my-manage-list.html) | [jvm]<br>val [myManageList](my-manage-list.html): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[CheckManagedGallery.Gallery](../-gallery/index.html)> |
 

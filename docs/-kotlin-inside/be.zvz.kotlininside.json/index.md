@@ -1,16 +1,13 @@
 ---
-title: be.zvz.kotlininside.json -
+title: be.zvz.kotlininside.json
 ---
-//[KotlinInside](../index.md)/[be.zvz.kotlininside.json](index.md)
+//[KotlinInside](../../index.html)/[be.zvz.kotlininside.json](index.html)
 
+# Package be.zvz.kotlininside.json
 
+## Types
 
-# Package be.zvz.kotlininside.json  
-
-
-## Types  
-  
-|  Name|  Summary| 
+| Name | Summary |
 |---|---|
-| <a name="be.zvz.kotlininside.json/JsonBrowser///PointingToDeclaration/"></a>[JsonBrowser](-json-browser/index.md)| <a name="be.zvz.kotlininside.json/JsonBrowser///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open class [JsonBrowser](-json-browser/index.md)  <br>More info  <br>Allows to easily navigate in decoded JSON data  <br><br><br>
+| [JsonBrowser](-json-browser/index.html) | [jvm]<br>open class [JsonBrowser](-json-browser/index.html)<br>Allows to easily navigate in decoded JSON data |
 

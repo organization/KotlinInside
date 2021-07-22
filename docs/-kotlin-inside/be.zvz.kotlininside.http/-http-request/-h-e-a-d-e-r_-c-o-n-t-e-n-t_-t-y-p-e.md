@@ -1,20 +1,16 @@
 ---
-title: HEADER_CONTENT_TYPE -
+title: HEADER_CONTENT_TYPE
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[HEADER_CONTENT_TYPE](-h-e-a-d-e-r_-c-o-n-t-e-n-t_-t-y-p-e.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[HEADER_CONTENT_TYPE](-h-e-a-d-e-r_-c-o-n-t-e-n-t_-t-y-p-e.html)
 
+# HEADER_CONTENT_TYPE
 
-
-# HEADER_CONTENT_TYPE  
-[jvm]  
-Content  
-val [HEADER_CONTENT_TYPE](-h-e-a-d-e-r_-c-o-n-t-e-n-t_-t-y-p-e.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
-More info  
-
+[jvm]\
+val [HEADER_CONTENT_TYPE](-h-e-a-d-e-r_-c-o-n-t-e-n-t_-t-y-p-e.html): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
 
 'Content-Type' header name
 
-  
 
 
 

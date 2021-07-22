@@ -1,14 +1,15 @@
 ---
-title: Session -
+title: Session
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.session](../index.md)/[Session](index.md)/[Session](-session.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.session](../index.html)/[Session](index.html)
+/[Session](-session.html)
 
+# Session
 
+[jvm]\
+fun [Session](-session.html)(user: [User](../../be.zvz.kotlininside.session.user/-user/index.html),
+detail: [SessionDetail](../-session-detail/index.html)?)
 
-# Session  
-[jvm]  
-Content  
-fun [Session](-session.md)(user: [User](../../be.zvz.kotlininside.session.user/-user/index.md), detail: [SessionDetail](../-session-detail/index.md)?)  
 
 
 

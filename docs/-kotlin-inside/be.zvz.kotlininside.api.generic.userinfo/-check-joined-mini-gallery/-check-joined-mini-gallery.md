@@ -1,15 +1,15 @@
 ---
-title: CheckJoinedMiniGallery -
+title: CheckJoinedMiniGallery
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.generic.userinfo](../index.md)
-/[CheckJoinedMiniGallery](index.md)/[CheckJoinedMiniGallery](-check-joined-mini-gallery.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.generic.userinfo](../index.html)
+/[CheckJoinedMiniGallery](index.html)/[CheckJoinedMiniGallery](-check-joined-mini-gallery.html)
 
 # CheckJoinedMiniGallery
 
-[jvm]  
-Content  
-fun [CheckJoinedMiniGallery](-check-joined-mini-gallery.md)(
-session: [Session](../../be.zvz.kotlininside.session/-session/index.md))  
+[jvm]\
+fun [CheckJoinedMiniGallery](-check-joined-mini-gallery.html)(
+session: [Session](../../be.zvz.kotlininside.session/-session/index.html))
+
 
 
 

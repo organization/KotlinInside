@@ -1,14 +1,14 @@
 ---
-title: isMini -
+title: isMini
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleRead](../index.md)
-/[ViewInfo](index.md)/[isMini](is-mini.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleRead](../index.html)/[ViewInfo](index.html)/[isMini](is-mini.html)
 
 # isMini
 
-[jvm]  
-Content  
-val [isMini](is-mini.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
+[jvm]\
+val [isMini](is-mini.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
+
 
 
 

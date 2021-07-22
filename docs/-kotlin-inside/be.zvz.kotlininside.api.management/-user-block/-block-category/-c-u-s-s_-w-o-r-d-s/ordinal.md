@@ -1,14 +1,14 @@
 ---
-title: ordinal -
+title: ordinal
 ---
-//[KotlinInside](../../../../index.md)/[be.zvz.kotlininside.api.management](../../../index.md)/[UserBlock](../../index.md)/[BlockCategory](../index.md)/[CUSS_WORDS](index.md)/[ordinal](ordinal.md)
+//[KotlinInside](../../../../../index.html)/[be.zvz.kotlininside.api.management](../../../index.html)
+/[UserBlock](../../index.html)/[BlockCategory](../index.html)/[CUSS_WORDS](index.html)/[ordinal](ordinal.html)
 
+# ordinal
 
+[jvm]\
+val [ordinal](ordinal.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
 
-# ordinal  
-[jvm]  
-Content  
-val [ordinal](ordinal.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
 
 
 

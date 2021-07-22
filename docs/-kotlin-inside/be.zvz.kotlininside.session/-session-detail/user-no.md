@@ -1,14 +1,14 @@
 ---
-title: userNo -
+title: userNo
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.session](../index.md)/[SessionDetail](index.md)/[userNo](user-no.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.session](../index.html)/[SessionDetail](index.html)
+/[userNo](user-no.html)
 
+# userNo
 
+[jvm]\
+val [userNo](user-no.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# userNo  
-[jvm]  
-Content  
-val [userNo](user-no.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
 
 
 

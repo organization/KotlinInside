@@ -1,16 +1,21 @@
 ---
-title: UserBlock -
+title: UserBlock
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.management](../index.md)/[UserBlock](index.md)/[UserBlock](-user-block.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.management](../index.html)/[UserBlock](index.html)
+/[UserBlock](-user-block.html)
 
+# UserBlock
 
+[jvm]\
 
-# UserBlock  
-[jvm]  
-Content  
-@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)()  
-  
-fun [UserBlock](-user-block.md)(gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), session: [Session](../../be.zvz.kotlininside.session/-session/index.md), option: [UserBlock.BlockOption](-block-option/index.md) = BlockOption())  
+@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)()
+
+fun [UserBlock](-user-block.html)(
+gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
+articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html),
+session: [Session](../../be.zvz.kotlininside.session/-session/index.html),
+option: [UserBlock.BlockOption](-block-option/index.html) = BlockOption())
+
 
 
 

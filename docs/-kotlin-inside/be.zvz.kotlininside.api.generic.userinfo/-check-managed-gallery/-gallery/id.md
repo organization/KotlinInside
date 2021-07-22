@@ -1,14 +1,14 @@
 ---
-title: id -
+title: id
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic.userinfo](../../index.md)
-/[CheckManagedGallery](../index.md)/[Gallery](index.md)/[id](id.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic.userinfo](../../index.html)
+/[CheckManagedGallery](../index.html)/[Gallery](index.html)/[id](id.html)
 
 # id
 
-[jvm]  
-Content  
-val [id](id.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
+[jvm]\
+val [id](id.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
+
 
 
 

@@ -1,14 +1,14 @@
 ---
-title: block -
+title: block
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleModify](../index.md)/[FileData](index.md)/[block](block.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleModify](../index.html)/[FileData](index.html)/[block](block.html)
 
+# block
 
+[jvm]\
+val [block](block.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
 
-# block  
-[jvm]  
-Content  
-val [block](block.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
 
 
 

@@ -1,14 +1,15 @@
 ---
-title: Anonymous -
+title: Anonymous
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.session.user](../index.md)/[Anonymous](index.md)/[Anonymous](-anonymous.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.session.user](../index.html)/[Anonymous](index.html)
+/[Anonymous](-anonymous.html)
 
+# Anonymous
 
+[jvm]\
+fun [Anonymous](-anonymous.html)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
+password: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
 
-# Anonymous  
-[jvm]  
-Content  
-fun [Anonymous](-anonymous.md)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), password: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  
 
 
 

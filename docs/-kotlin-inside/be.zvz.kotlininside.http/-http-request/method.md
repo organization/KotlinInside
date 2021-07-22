@@ -1,23 +1,20 @@
 ---
-title: method -
+title: method
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[method](method.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[method](method.html)
 
+# method
 
-
-# method  
-[jvm]  
-Content  
-open fun [method](method.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
-More info  
-
+[jvm]\
+open fun [method](method.html)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
 
 Get the HTTP method of this request
 
+#### Return
 
+method
 
-#### Return  
-  
 
 
 

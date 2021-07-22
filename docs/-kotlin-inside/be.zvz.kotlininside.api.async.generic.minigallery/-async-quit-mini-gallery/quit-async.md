@@ -1,15 +1,15 @@
 ---
-title: quitAsync -
+title: quitAsync
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.async.generic.minigallery](../index.md)
-/[AsyncQuitMiniGallery](index.md)/[quitAsync](quit-async.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.generic.minigallery](../index.html)
+/[AsyncQuitMiniGallery](index.html)/[quitAsync](quit-async.html)
 
 # quitAsync
 
-[jvm]  
-Content  
-suspend fun [quitAsync](quit-async.md)():
-Deferred<[QuitMiniGallery.MemberQuitResult](../../be.zvz.kotlininside.api.generic.minigallery/-quit-mini-gallery/-member-quit-result/index.md)>  
+[jvm]\
+suspend fun [quitAsync](quit-async.html)():
+Deferred<[QuitMiniGallery.MemberQuitResult](../../be.zvz.kotlininside.api.generic.minigallery/-quit-mini-gallery/-member-quit-result/index.html)>
+
 
 
 

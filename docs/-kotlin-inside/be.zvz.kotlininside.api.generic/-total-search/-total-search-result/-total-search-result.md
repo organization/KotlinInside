@@ -1,14 +1,25 @@
 ---
-title: TotalSearchResult -
+title: TotalSearchResult
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic](../../index.md)/[TotalSearch](../index.md)/[TotalSearchResult](index.md)/[TotalSearchResult](-total-search-result.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)
+/[TotalSearch](../index.html)/[TotalSearchResult](index.html)/[TotalSearchResult](-total-search-result.html)
 
+# TotalSearchResult
 
+[jvm]\
+fun [TotalSearchResult](-total-search-result.html)(
+mainGallery: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[Gallery](
+../../../be.zvz.kotlininside.api.type/-gallery/index.html)>,
+minorGallery: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[Gallery](
+../../../be.zvz.kotlininside.api.type/-gallery/index.html)>,
+wiki: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[TotalSearch.Wiki](
+../-wiki/index.html)>,
+board: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[TotalSearch.SearchedArticle](
+../-searched-article/index.html)>,
+todayIssue: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[TotalSearch.SearchedArticle](
+../-searched-article/index.html)>,
+realTime: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[TotalSearch.RealTime](../-real-time/index.html)>)
 
-# TotalSearchResult  
-[jvm]  
-Content  
-fun [TotalSearchResult](-total-search-result.md)(mainGallery: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[Gallery](../../../be.zvz.kotlininside.api.type/-gallery/index.md)>, minorGallery: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[Gallery](../../../be.zvz.kotlininside.api.type/-gallery/index.md)>, wiki: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[TotalSearch.Wiki](../-wiki/index.md)>, board: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[TotalSearch.SearchedArticle](../-searched-article/index.md)>, todayIssue: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[TotalSearch.SearchedArticle](../-searched-article/index.md)>, realTime: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[TotalSearch.RealTime](../-real-time/index.md)>)  
 
 
 

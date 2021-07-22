@@ -1,14 +1,13 @@
 ---
-title: app -
+title: app
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside](../index.md)/[KotlinInside](index.md)/[app](app.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside](../index.html)/[KotlinInside](index.html)/[app](app.html)
 
+# app
 
+[jvm]\
+lateinit var [app](app.html): [App](../../be.zvz.kotlininside.security/-app/index.html)
 
-# app  
-[jvm]  
-Content  
-lateinit var [app](app.md): [App](../../be.zvz.kotlininside.security/-app/index.md)  
 
 
 

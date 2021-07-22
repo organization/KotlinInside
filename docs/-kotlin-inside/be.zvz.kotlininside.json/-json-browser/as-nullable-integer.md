@@ -1,16 +1,18 @@
 ---
-title: asNullableInteger -
+title: asNullableInteger
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.json](../index.md)/[JsonBrowser](index.md)/[asNullableInteger](as-nullable-integer.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.json](../index.html)/[JsonBrowser](index.html)
+/[asNullableInteger](as-nullable-integer.html)
 
+# asNullableInteger
 
+[jvm]\
 
-# asNullableInteger  
-[jvm]  
-Content  
-@Nullable()  
-  
-open fun [asNullableInteger](as-nullable-integer.md)(): [Integer](https://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html)  
+@Nullable()
+
+open fun [asNullableInteger](as-nullable-integer.html)():
+@Nullable()[Integer](https://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html)
+
 
 
 

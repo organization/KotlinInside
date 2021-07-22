@@ -1,14 +1,15 @@
 ---
-title: GallerySearch -
+title: GallerySearch
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.generic](../index.md)/[GallerySearch](index.md)/[GallerySearch](-gallery-search.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.generic](../index.html)/[GallerySearch](index.html)
+/[GallerySearch](-gallery-search.html)
 
+# GallerySearch
 
+[jvm]\
+fun [GallerySearch](-gallery-search.html)(
+keyword: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
 
-# GallerySearch  
-[jvm]  
-Content  
-fun [GallerySearch](-gallery-search.md)(keyword: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  
 
 
 

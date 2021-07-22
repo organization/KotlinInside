@@ -1,37 +1,29 @@
 ---
-title: userAgent -
+title: userAgent
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[userAgent](user-agent.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[userAgent](user-agent.html)
 
+# userAgent
 
-
-# userAgent  
-[jvm]  
-Content  
-open fun [userAgent](user-agent.md)(userAgent: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
-More info  
-
+[jvm]\
+open fun [userAgent](user-agent.html)(
+userAgent: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.html)
 
 Set the 'User-Agent' header to given value
 
+#### Return
 
+this request
 
-#### Return  
+## Parameters
 
+jvm
 
-request
-
-
-
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
+| | |
 |---|---|
-| <a name="be.zvz.kotlininside.http/HttpRequest/userAgent/#java.lang.String/PointingToDeclaration/"></a>userAgent| <a name="be.zvz.kotlininside.http/HttpRequest/userAgent/#java.lang.String/PointingToDeclaration/"></a>
-  
-  
+| userAgent |  |
+
 
 
 

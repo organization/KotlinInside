@@ -14,6 +14,15 @@ object ApiUrl {
         const val HTTPS = "https://"
     }
 
+    object Firebase {
+        const val INSTALLATIONS =
+            Protocol.HTTPS + "firebaseinstallations.googleapis.com/v1/projects/dcinside-b3f40/installations"
+    }
+
+    object PlayService {
+        const val REGISTER3 = Protocol.HTTPS + "android.clients.google.com/c2dm/register3"
+    }
+
     object Article {
         const val LIST = APP_API + "gall_list_new.php"
         const val READ = APP_API + "gall_view_new.php"

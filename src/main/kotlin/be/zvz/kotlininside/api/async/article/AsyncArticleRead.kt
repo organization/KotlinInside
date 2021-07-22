@@ -7,9 +7,9 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 
 class AsyncArticleRead @JvmOverloads constructor(
-    private val gallId: String,
-    private val articleId: Int,
-    private val session: Session? = null
+    gallId: String,
+    articleId: Int,
+    session: Session? = null
 ) {
     private val articleRead = ArticleRead(gallId, articleId, session)
 

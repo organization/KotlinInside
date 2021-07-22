@@ -1,14 +1,14 @@
 ---
-title: mandu -
+title: mandu
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.dccon](../../index.md)/[DCConDetail](../index.md)/[DCConInfo](index.md)/[mandu](mandu.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.dccon](../../index.html)/[DCConDetail](../index.html)
+/[DCConInfo](index.html)/[mandu](mandu.html)
 
+# mandu
 
+[jvm]\
+val [mandu](mandu.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
 
-# mandu  
-[jvm]  
-Content  
-val [mandu](mandu.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
 
 
 

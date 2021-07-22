@@ -1,14 +1,14 @@
 ---
-title: createDate -
+title: createDate
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic](../../index.md)/[MinorGalleryInfo](../index.md)/[InfoResult](index.md)/[createDate](create-date.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)
+/[MinorGalleryInfo](../index.html)/[InfoResult](index.html)/[createDate](create-date.html)
 
+# createDate
 
+[jvm]\
+val [createDate](create-date.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# createDate  
-[jvm]  
-Content  
-val [createDate](create-date.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
 
 
 

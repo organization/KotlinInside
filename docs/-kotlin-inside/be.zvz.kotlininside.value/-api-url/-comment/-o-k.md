@@ -1,14 +1,14 @@
 ---
-title: OK -
+title: OK
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.value](../../index.md)/[ApiUrl](../index.md)/[Comment](index.md)/[OK](-o-k.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)
+/[Comment](index.html)/[OK](-o-k.html)
 
+# OK
 
+[jvm]\
+const val [OK](-o-k.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# OK  
-[jvm]  
-Content  
-val [OK](-o-k.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 

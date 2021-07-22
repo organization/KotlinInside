@@ -1,14 +1,15 @@
 ---
-title: realTime -
+title: realTime
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic](../../index.md)/[TotalSearch](../index.md)/[TotalSearchResult](index.md)/[realTime](real-time.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)
+/[TotalSearch](../index.html)/[TotalSearchResult](index.html)/[realTime](real-time.html)
 
+# realTime
 
+[jvm]\
+val [realTime](real-time.html): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[TotalSearch.RealTime](
+../-real-time/index.html)>
 
-# realTime  
-[jvm]  
-Content  
-val [realTime](real-time.md): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[TotalSearch.RealTime](../-real-time/index.md)>  
 
 
 

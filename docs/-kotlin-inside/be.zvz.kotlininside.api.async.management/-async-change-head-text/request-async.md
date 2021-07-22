@@ -1,14 +1,15 @@
 ---
-title: requestAsync -
+title: requestAsync
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.async.management](../index.md)/[AsyncChangeHeadText](index.md)/[requestAsync](request-async.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.management](../index.html)
+/[AsyncChangeHeadText](index.html)/[requestAsync](request-async.html)
 
+# requestAsync
 
+[jvm]\
+suspend fun [requestAsync](request-async.html)():
+Deferred<[ChangeHeadText.ChangeResult](../../be.zvz.kotlininside.api.management/-change-head-text/-change-result/index.html)>
 
-# requestAsync  
-[jvm]  
-Content  
-suspend fun [requestAsync](request-async.md)(): Deferred<[ChangeHeadText.ChangeResult](../../be.zvz.kotlininside.api.management/-change-head-text/-change-result/index.md)>  
 
 
 

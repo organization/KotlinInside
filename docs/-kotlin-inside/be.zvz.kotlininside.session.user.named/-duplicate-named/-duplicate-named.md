@@ -1,14 +1,16 @@
 ---
-title: DuplicateNamed -
+title: DuplicateNamed
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.session.user.named](../index.md)/[DuplicateNamed](index.md)/[DuplicateNamed](-duplicate-named.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.session.user.named](../index.html)
+/[DuplicateNamed](index.html)/[DuplicateNamed](-duplicate-named.html)
 
+# DuplicateNamed
 
+[jvm]\
+fun [DuplicateNamed](-duplicate-named.html)(
+id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
+password: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
 
-# DuplicateNamed  
-[jvm]  
-Content  
-fun [DuplicateNamed](-duplicate-named.md)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), password: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  
 
 
 

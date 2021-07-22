@@ -1,18 +1,19 @@
 ---
-title: MiniGallery -
+title: MiniGallery
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.value](../../index.md)/[ApiUrl](../index.md)
-/[MiniGallery](index.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)
+/[MiniGallery](index.html)
 
 # MiniGallery
 
-[jvm] class [MiniGallery](index.md)
+[jvm]\
+object [MiniGallery](index.html)
 
 ## Properties
 
-|  Name|  Summary| 
+| Name | Summary |
 |---|---|
-| <a name="be.zvz.kotlininside.value/ApiUrl.MiniGallery/JOIN/#/PointingToDeclaration/"></a>[JOIN](-j-o-i-n.md)| <a name="be.zvz.kotlininside.value/ApiUrl.MiniGallery/JOIN/#/PointingToDeclaration/"></a> [jvm] val [JOIN](-j-o-i-n.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
-| <a name="be.zvz.kotlininside.value/ApiUrl.MiniGallery/JOIN_OK/#/PointingToDeclaration/"></a>[JOIN_OK](-j-o-i-n_-o-k.md)| <a name="be.zvz.kotlininside.value/ApiUrl.MiniGallery/JOIN_OK/#/PointingToDeclaration/"></a> [jvm] val [JOIN_OK](-j-o-i-n_-o-k.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
-| <a name="be.zvz.kotlininside.value/ApiUrl.MiniGallery/QUIT/#/PointingToDeclaration/"></a>[QUIT](-q-u-i-t.md)| <a name="be.zvz.kotlininside.value/ApiUrl.MiniGallery/QUIT/#/PointingToDeclaration/"></a> [jvm] val [QUIT](-q-u-i-t.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
+| [JOIN](-j-o-i-n.html) | [jvm]<br>const val [JOIN](-j-o-i-n.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [JOIN_OK](-j-o-i-n_-o-k.html) | [jvm]<br>const val [JOIN_OK](-j-o-i-n_-o-k.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [QUIT](-q-u-i-t.html) | [jvm]<br>const val [QUIT](-q-u-i-t.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 

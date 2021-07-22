@@ -1,14 +1,14 @@
 ---
-title: views -
+title: views
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleList](../index.md)/[GallList](index.md)/[views](views.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleList](../index.html)/[GallList](index.html)/[views](views.html)
 
+# views
 
+[jvm]\
+val [views](views.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
 
-# views  
-[jvm]  
-Content  
-val [views](views.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
 
 
 

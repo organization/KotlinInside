@@ -1,14 +1,15 @@
 ---
-title: commentList -
+title: commentList
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.comment](../../index.md)/[CommentRead](../index.md)/[ReadResult](index.md)/[commentList](comment-list.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.comment](../../index.html)
+/[CommentRead](../index.html)/[ReadResult](index.html)/[commentList](comment-list.html)
 
+# commentList
 
+[jvm]\
+val [commentList](comment-list.html): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[CommentRead.CommentData](
+../-comment-data/index.html)>
 
-# commentList  
-[jvm]  
-Content  
-val [commentList](comment-list.md): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[CommentRead.CommentData](../-comment-data/index.md)>  
 
 
 

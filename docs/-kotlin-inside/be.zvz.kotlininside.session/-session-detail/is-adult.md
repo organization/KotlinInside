@@ -1,14 +1,14 @@
 ---
-title: isAdult -
+title: isAdult
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.session](../index.md)/[SessionDetail](index.md)
-/[isAdult](is-adult.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.session](../index.html)/[SessionDetail](index.html)
+/[isAdult](is-adult.html)
 
 # isAdult
 
-[jvm]  
-Content  
-val [isAdult](is-adult.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
+[jvm]\
+val [isAdult](is-adult.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
+
 
 
 

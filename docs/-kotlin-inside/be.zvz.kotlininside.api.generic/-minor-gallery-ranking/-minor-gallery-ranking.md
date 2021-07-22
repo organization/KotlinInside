@@ -1,14 +1,14 @@
 ---
-title: MinorGalleryRanking -
+title: MinorGalleryRanking
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.generic](../index.md)/[MinorGalleryRanking](index.md)/[MinorGalleryRanking](-minor-gallery-ranking.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.generic](../index.html)/[MinorGalleryRanking](index.html)
+/[MinorGalleryRanking](-minor-gallery-ranking.html)
 
+# MinorGalleryRanking
 
+[jvm]\
+fun [MinorGalleryRanking](-minor-gallery-ranking.html)()
 
-# MinorGalleryRanking  
-[jvm]  
-Content  
-fun [MinorGalleryRanking](-minor-gallery-ranking.md)()  
 
 
 

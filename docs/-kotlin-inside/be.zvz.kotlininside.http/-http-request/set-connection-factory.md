@@ -1,20 +1,17 @@
 ---
-title: setConnectionFactory -
+title: setConnectionFactory
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[setConnectionFactory](set-connection-factory.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[setConnectionFactory](set-connection-factory.html)
 
+# setConnectionFactory
 
+[jvm]\
+open fun [setConnectionFactory](set-connection-factory.html)(
+connectionFactory: [HttpRequest.ConnectionFactory](-connection-factory/index.html))
 
-# setConnectionFactory  
-[jvm]  
-Content  
-open fun [setConnectionFactory](set-connection-factory.md)(connectionFactory: [HttpRequest.ConnectionFactory](-connection-factory/index.md))  
-More info  
+Specify the [ConnectionFactory](-connection-factory/index.html) used to create new requests.
 
-
-Specify the [ConnectionFactory](-connection-factory/index.md) used to create new requests.
-
-  
 
 
 

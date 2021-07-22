@@ -1,27 +1,20 @@
 ---
-title: disconnect -
+title: disconnect
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[disconnect](disconnect.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[disconnect](disconnect.html)
 
+# disconnect
 
-
-# disconnect  
-[jvm]  
-Content  
-open fun [disconnect](disconnect.md)(): [HttpRequest](index.md)  
-More info  
-
+[jvm]\
+open fun [disconnect](disconnect.html)(): [HttpRequest](index.html)
 
 Disconnect the connection
 
+#### Return
 
+this request
 
-#### Return  
-
-
-request
-
-  
 
 
 

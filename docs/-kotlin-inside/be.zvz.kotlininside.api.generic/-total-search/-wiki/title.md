@@ -1,14 +1,14 @@
 ---
-title: title -
+title: title
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic](../../index.md)/[TotalSearch](../index.md)/[Wiki](index.md)/[title](title.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)
+/[TotalSearch](../index.html)/[Wiki](index.html)/[title](title.html)
 
+# title
 
+[jvm]\
+val [title](title.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# title  
-[jvm]  
-Content  
-val [title](title.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
 
 
 

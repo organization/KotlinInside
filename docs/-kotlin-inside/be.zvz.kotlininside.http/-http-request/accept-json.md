@@ -1,27 +1,20 @@
 ---
-title: acceptJson -
+title: acceptJson
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[acceptJson](accept-json.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[acceptJson](accept-json.html)
 
+# acceptJson
 
-
-# acceptJson  
-[jvm]  
-Content  
-open fun [acceptJson](accept-json.md)(): [HttpRequest](index.md)  
-More info  
-
+[jvm]\
+open fun [acceptJson](accept-json.html)(): [HttpRequest](index.html)
 
 Set the 'Accept' header to 'application/json'
 
+#### Return
 
+this request
 
-#### Return  
-
-
-request
-
-  
 
 
 

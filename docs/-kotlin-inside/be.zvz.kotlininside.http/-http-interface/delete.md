@@ -1,16 +1,20 @@
 ---
-title: delete -
+title: delete
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpInterface](index.md)/[delete](delete.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpInterface](index.html)
+/[delete](delete.html)
 
+# delete
 
+[jvm]\
 
-# delete  
-[jvm]  
-Content  
-@Nullable()  
-  
-abstract fun [delete](delete.md)(url: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), option: [HttpInterface.Option](-option/index.md)): [JsonBrowser](../../be.zvz.kotlininside.json/-json-browser/index.md)  
+@Nullable()
+
+abstract fun [delete](delete.html)(@NotNull()url:
+@NotNull()[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), @Nullable()option:
+@Nullable()[HttpInterface.Option](-option/index.html)):
+@Nullable()[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
+
 
 
 

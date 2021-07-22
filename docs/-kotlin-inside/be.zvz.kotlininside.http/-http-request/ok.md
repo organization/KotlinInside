@@ -1,27 +1,24 @@
 ---
-title: ok -
+title: ok
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[ok](ok.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)/[ok](ok.html)
 
+# ok
 
-
-# ok  
-[jvm]  
-Content  
-open fun [ok](ok.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
-More info  
-
+[jvm]\
+open fun [ok](ok.html)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
 
 Is the response code a 200 OK?
 
+#### Return
 
+true if 200, false otherwise
 
-#### Return  
+#### Throws
 
-
-if 200, false otherwise
-
-  
+| | |
+|---|---|
+| [be.zvz.kotlininside.http.HttpRequest.HttpRequestException](-http-request-exception/index.html) |  |
 
 
 

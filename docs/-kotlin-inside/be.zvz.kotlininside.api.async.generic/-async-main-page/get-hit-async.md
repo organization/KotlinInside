@@ -1,14 +1,16 @@
 ---
-title: getHitAsync -
+title: getHitAsync
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.async.generic](../index.md)/[AsyncMainPage](index.md)/[getHitAsync](get-hit-async.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.generic](../index.html)/[AsyncMainPage](index.html)
+/[getHitAsync](get-hit-async.html)
 
+# getHitAsync
 
+[jvm]\
+suspend fun [getHitAsync](get-hit-async.html)():
+Deferred<[List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[MainPage.Article](
+../../be.zvz.kotlininside.api.generic/-main-page/-article/index.html)>>
 
-# getHitAsync  
-[jvm]  
-Content  
-suspend fun [getHitAsync](get-hit-async.md)(): Deferred<[List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[MainPage.Article](../../be.zvz.kotlininside.api.generic/-main-page/-article/index.md)>>  
 
 
 

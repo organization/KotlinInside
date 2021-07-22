@@ -1,14 +1,16 @@
 ---
-title: replyAsync -
+title: replyAsync
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.async.comment](../index.md)/[AsyncCommentWrite](index.md)/[replyAsync](reply-async.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.comment](../index.html)
+/[AsyncCommentWrite](index.html)/[replyAsync](reply-async.html)
 
+# replyAsync
 
+[jvm]\
+suspend fun [replyAsync](reply-async.html)(
+commentId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)):
+Deferred<[CommentWrite.WriteResult](../../be.zvz.kotlininside.api.comment/-comment-write/-write-result/index.html)>
 
-# replyAsync  
-[jvm]  
-Content  
-suspend fun [replyAsync](reply-async.md)(commentId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): Deferred<[CommentWrite.WriteResult](../../be.zvz.kotlininside.api.comment/-comment-write/-write-result/index.md)>  
 
 
 

@@ -1,14 +1,17 @@
 ---
-title: ArticleModify -
+title: ArticleModify
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.article](../index.md)/[ArticleModify](index.md)/[ArticleModify](-article-modify.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.article](../index.html)/[ArticleModify](index.html)
+/[ArticleModify](-article-modify.html)
 
+# ArticleModify
 
+[jvm]\
+fun [ArticleModify](-article-modify.html)(
+gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
+articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html),
+session: [Session](../../be.zvz.kotlininside.session/-session/index.html))
 
-# ArticleModify  
-[jvm]  
-Content  
-fun [ArticleModify](-article-modify.md)(gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), session: [Session](../../be.zvz.kotlininside.session/-session/index.md))  
 
 
 

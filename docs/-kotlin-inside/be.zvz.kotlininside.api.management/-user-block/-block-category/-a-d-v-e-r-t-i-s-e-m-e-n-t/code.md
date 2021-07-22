@@ -1,14 +1,14 @@
 ---
-title: code -
+title: code
 ---
-//[KotlinInside](../../../../index.md)/[be.zvz.kotlininside.api.management](../../../index.md)/[UserBlock](../../index.md)/[BlockCategory](../index.md)/[ADVERTISEMENT](index.md)/[code](code.md)
+//[KotlinInside](../../../../../index.html)/[be.zvz.kotlininside.api.management](../../../index.html)
+/[UserBlock](../../index.html)/[BlockCategory](../index.html)/[ADVERTISEMENT](index.html)/[code](code.html)
 
+# code
 
+[jvm]\
+val [code](code.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
 
-# code  
-[jvm]  
-Content  
-val [code](code.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
 
 
 

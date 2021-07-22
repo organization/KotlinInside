@@ -1,14 +1,15 @@
 ---
-title: requestAsync -
+title: requestAsync
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.async.dccon](../index.md)/[AsyncDCConList](index.md)/[requestAsync](request-async.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.dccon](../index.html)/[AsyncDCConList](index.html)
+/[requestAsync](request-async.html)
 
+# requestAsync
 
+[jvm]\
+suspend fun [requestAsync](request-async.html)():
+Deferred<[DCConList.ListResult](../../be.zvz.kotlininside.api.dccon/-d-c-con-list/-list-result/index.html)>
 
-# requestAsync  
-[jvm]  
-Content  
-suspend fun [requestAsync](request-async.md)(): Deferred<[DCConList.ListResult](../../be.zvz.kotlininside.api.dccon/-d-c-con-list/-list-result/index.md)>  
 
 
 

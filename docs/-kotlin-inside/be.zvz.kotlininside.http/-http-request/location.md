@@ -1,23 +1,20 @@
 ---
-title: location -
+title: location
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[location](location.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[location](location.html)
 
+# location
 
-
-# location  
-[jvm]  
-Content  
-open fun [location](location.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
-More info  
-
+[jvm]\
+open fun [location](location.html)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
 
 Get the 'Location' header from the response
 
+#### Return
 
+location
 
-#### Return  
-  
 
 
 

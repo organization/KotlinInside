@@ -1,14 +1,14 @@
 ---
-title: rankUpdown -
+title: rankUpdown
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic](../../index.md)/[GalleryRanking](../index.md)/[RankingItem](index.md)/[rankUpdown](rank-updown.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)
+/[GalleryRanking](../index.html)/[RankingItem](index.html)/[rankUpdown](rank-updown.html)
 
+# rankUpdown
 
+[jvm]\
+val [rankUpdown](rank-updown.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
 
-# rankUpdown  
-[jvm]  
-Content  
-val [rankUpdown](rank-updown.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
 
 
 

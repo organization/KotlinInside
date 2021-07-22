@@ -1,14 +1,15 @@
 ---
-title: MarkdownContent -
+title: MarkdownContent
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.type.content](../index.md)/[MarkdownContent](index.md)/[MarkdownContent](-markdown-content.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.type.content](../index.html)
+/[MarkdownContent](index.html)/[MarkdownContent](-markdown-content.html)
 
+# MarkdownContent
 
+[jvm]\
+fun [MarkdownContent](-markdown-content.html)(
+markdownString: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
 
-# MarkdownContent  
-[jvm]  
-Content  
-fun [MarkdownContent](-markdown-content.md)(markdownString: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  
 
 
 

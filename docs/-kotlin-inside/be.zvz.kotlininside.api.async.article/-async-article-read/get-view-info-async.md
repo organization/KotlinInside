@@ -1,14 +1,15 @@
 ---
-title: getViewInfoAsync -
+title: getViewInfoAsync
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.async.article](../index.md)/[AsyncArticleRead](index.md)/[getViewInfoAsync](get-view-info-async.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.article](../index.html)
+/[AsyncArticleRead](index.html)/[getViewInfoAsync](get-view-info-async.html)
 
+# getViewInfoAsync
 
+[jvm]\
+suspend fun [getViewInfoAsync](get-view-info-async.html)():
+Deferred<[ArticleRead.ViewInfo](../../be.zvz.kotlininside.api.article/-article-read/-view-info/index.html)>
 
-# getViewInfoAsync  
-[jvm]  
-Content  
-suspend fun [getViewInfoAsync](get-view-info-async.md)(): Deferred<[ArticleRead.ViewInfo](../../be.zvz.kotlininside.api.article/-article-read/-view-info/index.md)>  
 
 
 

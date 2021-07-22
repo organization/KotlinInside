@@ -1,14 +1,14 @@
 ---
-title: UPVOTE -
+title: UPVOTE
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.value](../../index.md)/[ApiUrl](../index.md)/[Article](index.md)/[UPVOTE](-u-p-v-o-t-e.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)
+/[Article](index.html)/[UPVOTE](-u-p-v-o-t-e.html)
 
+# UPVOTE
 
+[jvm]\
+const val [UPVOTE](-u-p-v-o-t-e.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# UPVOTE  
-[jvm]  
-Content  
-val [UPVOTE](-u-p-v-o-t-e.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 

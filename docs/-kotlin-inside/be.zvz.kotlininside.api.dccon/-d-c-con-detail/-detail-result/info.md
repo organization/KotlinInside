@@ -1,14 +1,15 @@
 ---
-title: info -
+title: info
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.dccon](../../index.md)/[DCConDetail](../index.md)/[DetailResult](index.md)/[info](info.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.dccon](../../index.html)/[DCConDetail](../index.html)
+/[DetailResult](index.html)/[info](info.html)
 
+# info
 
+[jvm]\
+val [info](info.html): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[DCConDetail.DCConInfo](
+../-d-c-con-info/index.html)>
 
-# info  
-[jvm]  
-Content  
-val [info](info.md): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[DCConDetail.DCConInfo](../-d-c-con-info/index.md)>  
 
 
 

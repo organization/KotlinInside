@@ -1,14 +1,14 @@
 ---
-title: cause -
+title: cause
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic.userinfo](../../index.md)
-/[ModifyMyGall](../index.md)/[ModifyMyGallResult](index.md)/[cause](cause.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic.userinfo](../../index.html)
+/[ModifyMyGall](../index.html)/[ModifyMyGallResult](index.html)/[cause](cause.html)
 
 # cause
 
-[jvm]  
-Content  
-val [cause](cause.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
+[jvm]\
+val [cause](cause.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
+
 
 
 

@@ -1,16 +1,16 @@
 ---
-title: AsyncJoinMiniGallery -
+title: AsyncJoinMiniGallery
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.async.generic.minigallery](../index.md)
-/[AsyncJoinMiniGallery](index.md)/[AsyncJoinMiniGallery](-async-join-mini-gallery.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.generic.minigallery](../index.html)
+/[AsyncJoinMiniGallery](index.html)/[AsyncJoinMiniGallery](-async-join-mini-gallery.html)
 
 # AsyncJoinMiniGallery
 
-[jvm]  
-Content  
-fun [AsyncJoinMiniGallery](-async-join-mini-gallery.md)(
+[jvm]\
+fun [AsyncJoinMiniGallery](-async-join-mini-gallery.html)(
 gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
-session: [Session](../../be.zvz.kotlininside.session/-session/index.md))  
+session: [Session](../../be.zvz.kotlininside.session/-session/index.html))
+
 
 
 

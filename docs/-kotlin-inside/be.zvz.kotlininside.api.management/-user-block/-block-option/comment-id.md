@@ -1,14 +1,14 @@
 ---
-title: commentId -
+title: commentId
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.management](../../index.md)/[UserBlock](../index.md)/[BlockOption](index.md)/[commentId](comment-id.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.management](../../index.html)
+/[UserBlock](../index.html)/[BlockOption](index.html)/[commentId](comment-id.html)
 
+# commentId
 
+[jvm]\
+var [commentId](comment-id.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) = 0
 
-# commentId  
-[jvm]  
-Content  
-var [commentId](comment-id.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) = 0  
 
 
 

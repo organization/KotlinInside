@@ -1,16 +1,16 @@
 ---
-title: JoinMiniGallery -
+title: JoinMiniGallery
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.generic.minigallery](../index.md)/[JoinMiniGallery](index.md)
-/[JoinMiniGallery](-join-mini-gallery.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.generic.minigallery](../index.html)
+/[JoinMiniGallery](index.html)/[JoinMiniGallery](-join-mini-gallery.html)
 
 # JoinMiniGallery
 
-[jvm]  
-Content  
-fun [JoinMiniGallery](-join-mini-gallery.md)(
+[jvm]\
+fun [JoinMiniGallery](-join-mini-gallery.html)(
 gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
-session: [Session](../../be.zvz.kotlininside.session/-session/index.md))  
+session: [Session](../../be.zvz.kotlininside.session/-session/index.html))
+
 
 
 

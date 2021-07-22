@@ -1,27 +1,20 @@
 ---
-title: eTag -
+title: eTag
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[eTag](e-tag.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[eTag](e-tag.html)
 
+# eTag
 
-
-# eTag  
-[jvm]  
-Content  
-open fun [eTag](e-tag.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
-More info  
-
+[jvm]\
+open fun [eTag](e-tag.html)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
 
 Get the 'ETag' header from the response
 
+#### Return
 
+entity tag
 
-#### Return  
-
-
-tag
-
-  
 
 
 

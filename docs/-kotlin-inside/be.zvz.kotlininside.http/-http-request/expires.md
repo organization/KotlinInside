@@ -1,27 +1,20 @@
 ---
-title: expires -
+title: expires
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[expires](expires.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[expires](expires.html)
 
+# expires
 
-
-# expires  
-[jvm]  
-Content  
-open fun [expires](expires.md)(): [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)  
-More info  
-
+[jvm]\
+open fun [expires](expires.html)(): [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)
 
 Get the 'Expires' header from the response
 
+#### Return
 
+expires value, -1 on failures
 
-#### Return  
-
-
-value, -1 on failures
-
-  
 
 
 

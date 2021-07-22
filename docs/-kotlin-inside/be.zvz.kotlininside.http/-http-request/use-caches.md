@@ -1,37 +1,29 @@
 ---
-title: useCaches -
+title: useCaches
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[useCaches](use-caches.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[useCaches](use-caches.html)
 
+# useCaches
 
-
-# useCaches  
-[jvm]  
-Content  
-open fun [useCaches](use-caches.md)(useCaches: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)): [HttpRequest](index.md)  
-More info  
-
+[jvm]\
+open fun [useCaches](use-caches.html)(
+useCaches: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)): [HttpRequest](index.html)
 
 Set value of [setUseCaches](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html#setUseCaches(boolean))
 
+#### Return
 
+this request
 
-#### Return  
+## Parameters
 
+jvm
 
-request
-
-
-
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
+| | |
 |---|---|
-| <a name="be.zvz.kotlininside.http/HttpRequest/useCaches/#boolean/PointingToDeclaration/"></a>useCaches| <a name="be.zvz.kotlininside.http/HttpRequest/useCaches/#boolean/PointingToDeclaration/"></a>
-  
-  
+| useCaches |  |
+
 
 
 

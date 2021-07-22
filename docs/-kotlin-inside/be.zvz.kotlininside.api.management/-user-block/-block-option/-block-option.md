@@ -1,14 +1,14 @@
 ---
-title: BlockOption -
+title: BlockOption
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.management](../../index.md)/[UserBlock](../index.md)/[BlockOption](index.md)/[BlockOption](-block-option.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.management](../../index.html)
+/[UserBlock](../index.html)/[BlockOption](index.html)/[BlockOption](-block-option.html)
 
+# BlockOption
 
+[jvm]\
+fun [BlockOption](-block-option.html)()
 
-# BlockOption  
-[jvm]  
-Content  
-fun [BlockOption](-block-option.md)()  
 
 
 

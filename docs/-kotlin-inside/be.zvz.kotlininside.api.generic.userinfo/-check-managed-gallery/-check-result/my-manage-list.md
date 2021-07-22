@@ -1,15 +1,15 @@
 ---
-title: myManageList -
+title: myManageList
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic.userinfo](../../index.md)
-/[CheckManagedGallery](../index.md)/[CheckResult](index.md)/[myManageList](my-manage-list.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic.userinfo](../../index.html)
+/[CheckManagedGallery](../index.html)/[CheckResult](index.html)/[myManageList](my-manage-list.html)
 
 # myManageList
 
-[jvm]  
-Content  
-val [myManageList](my-manage-list.md): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[CheckManagedGallery.Gallery](
-../-gallery/index.md)>  
+[jvm]\
+val [myManageList](my-manage-list.html): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[CheckManagedGallery.Gallery](
+../-gallery/index.html)>
+
 
 
 

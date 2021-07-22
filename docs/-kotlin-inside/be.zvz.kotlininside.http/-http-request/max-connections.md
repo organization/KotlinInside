@@ -1,34 +1,27 @@
 ---
-title: maxConnections -
+title: maxConnections
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[maxConnections](max-connections.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[maxConnections](max-connections.html)
 
+# maxConnections
 
+[jvm]\
+open fun [maxConnections](max-connections.html)(
+maxConnections: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))
 
-# maxConnections  
-[jvm]  
-Content  
-open fun [maxConnections](max-connections.md)(maxConnections: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))  
-More info  
+Set the 'http.maxConnections' property to the given value.
 
+This setting will apply to all requests.
 
-Set the 'http.maxConnections' property to the given value. 
+## Parameters
 
+jvm
 
-
- This setting will apply to all requests.
-
-
-
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
+| | |
 |---|---|
-| <a name="be.zvz.kotlininside.http/HttpRequest/maxConnections/#int/PointingToDeclaration/"></a>maxConnections| <a name="be.zvz.kotlininside.http/HttpRequest/maxConnections/#int/PointingToDeclaration/"></a>
-  
-  
+| maxConnections |  |
+
 
 
 

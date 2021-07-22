@@ -1,14 +1,14 @@
 ---
-title: totalMember -
+title: totalMember
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic](../../index.md)/[MinorGalleryInfo](../index.md)
-/[MiniGalleryInfo](index.md)/[totalMember](total-member.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)
+/[MinorGalleryInfo](../index.html)/[MiniGalleryInfo](index.html)/[totalMember](total-member.html)
 
 # totalMember
 
-[jvm]  
-Content  
-val [totalMember](total-member.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
+[jvm]\
+val [totalMember](total-member.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
+
 
 
 

@@ -1,14 +1,14 @@
 ---
-title: msg -
+title: msg
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.dccon](../../index.md)/[DCConBuy](../index.md)/[BuyResult](index.md)/[msg](msg.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.dccon](../../index.html)/[DCConBuy](../index.html)
+/[BuyResult](index.html)/[msg](msg.html)
 
+# msg
 
+[jvm]\
+val [msg](msg.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# msg  
-[jvm]  
-Content  
-val [msg](msg.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
 
 
 

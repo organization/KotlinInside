@@ -1,17 +1,17 @@
 ---
-title: DCCon -
+title: DCCon
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.value](../../index.md)/[ApiUrl](../index.md)/[DCCon](index.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)
+/[DCCon](index.html)
 
+# DCCon
 
+[jvm]\
+object [DCCon](index.html)
 
-# DCCon  
- [jvm] class [DCCon](index.md)   
+## Properties
 
-
-## Properties  
-  
-|  Name|  Summary| 
+| Name | Summary |
 |---|---|
-| <a name="be.zvz.kotlininside.value/ApiUrl.DCCon/DCCON/#/PointingToDeclaration/"></a>[DCCON](-d-c-c-o-n.md)| <a name="be.zvz.kotlininside.value/ApiUrl.DCCon/DCCON/#/PointingToDeclaration/"></a> [jvm] val [DCCON](-d-c-c-o-n.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)   <br>
+| [DCCON](-d-c-c-o-n.html) | [jvm]<br>const val [DCCON](-d-c-c-o-n.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 

@@ -1,14 +1,14 @@
 ---
-title: NULL_BROWSER -
+title: NULL_BROWSER
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.json](../index.md)/[JsonBrowser](index.md)/[NULL_BROWSER](-n-u-l-l_-b-r-o-w-s-e-r.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.json](../index.html)/[JsonBrowser](index.html)
+/[NULL_BROWSER](-n-u-l-l_-b-r-o-w-s-e-r.html)
 
+# NULL_BROWSER
 
+[jvm]\
+val [NULL_BROWSER](-n-u-l-l_-b-r-o-w-s-e-r.html): [JsonBrowser](index.html)
 
-# NULL_BROWSER  
-[jvm]  
-Content  
-val [NULL_BROWSER](-n-u-l-l_-b-r-o-w-s-e-r.md): [JsonBrowser](index.md)  
 
 
 

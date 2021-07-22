@@ -1,25 +1,21 @@
 ---
-title: text -
+title: text
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.json](../index.md)/[JsonBrowser](index.md)/[text](text.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.json](../index.html)/[JsonBrowser](index.html)
+/[text](text.html)
 
+# text
 
+[jvm]\
 
-# text  
-[jvm]  
-Content  
-@Nullable()  
-  
-open fun [text](text.md)(): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
-More info  
+@Nullable()
 
+open fun [text](text.html)(): @Nullable()[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
 
-#### Return  
+#### Return
 
+The value of the element as text
 
-value of the element as text
-
-  
 
 
 

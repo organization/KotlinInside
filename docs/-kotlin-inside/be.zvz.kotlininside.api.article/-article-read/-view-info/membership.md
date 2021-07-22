@@ -1,14 +1,14 @@
 ---
-title: membership -
+title: membership
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleRead](../index.md)
-/[ViewInfo](index.md)/[membership](membership.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleRead](../index.html)/[ViewInfo](index.html)/[membership](membership.html)
 
 # membership
 
-[jvm]  
-Content  
-val [membership](membership.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)?  
+[jvm]\
+val [membership](membership.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)?
+
 
 
 

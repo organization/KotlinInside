@@ -1,14 +1,14 @@
 ---
-title: state -
+title: state
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.management](../../index.md)/[Recommend](../index.md)/[RecommendResult](index.md)/[state](state.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.management](../../index.html)
+/[Recommend](../index.html)/[RecommendResult](index.html)/[state](state.html)
 
+# state
 
+[jvm]\
+val [state](state.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null
 
-# state  
-[jvm]  
-Content  
-val [state](state.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null  
 
 
 

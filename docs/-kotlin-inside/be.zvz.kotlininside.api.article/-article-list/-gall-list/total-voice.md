@@ -1,14 +1,14 @@
 ---
-title: totalVoice -
+title: totalVoice
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleList](../index.md)/[GallList](index.md)/[totalVoice](total-voice.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleList](../index.html)/[GallList](index.html)/[totalVoice](total-voice.html)
 
+# totalVoice
 
+[jvm]\
+val [totalVoice](total-voice.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
 
-# totalVoice  
-[jvm]  
-Content  
-val [totalVoice](total-voice.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
 
 
 

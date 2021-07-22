@@ -1,14 +1,13 @@
 ---
-title: ViewInfo -
+title: ViewInfo
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleRead](../index.md)/[ViewInfo](index.md)/[ViewInfo](-view-info.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleRead](../index.html)/[ViewInfo](index.html)/[ViewInfo](-view-info.html)
 
+# ViewInfo
 
-
-# ViewInfo  
-[jvm]  
-Content  
-fun [ViewInfo](-view-info.md)(
+[jvm]\
+fun [ViewInfo](-view-info.html)(
 gallTitle: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
 category: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html),
 subject: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
@@ -41,8 +40,9 @@ useListFix: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boole
 membership: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)?,
 memberGrant: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)?,
 headText: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[HeadText](
-../../../be.zvz.kotlininside.api.type/-head-text/index.md)>,
-commentDeleteScope: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))  
+../../../be.zvz.kotlininside.api.type/-head-text/index.html)>,
+commentDeleteScope: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))
+
 
 
 

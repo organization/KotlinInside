@@ -1,14 +1,14 @@
 ---
-title: isMember -
+title: isMember
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic](../../index.md)/[MinorGalleryInfo](../index.md)
-/[MiniGalleryInfo](index.md)/[isMember](is-member.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)
+/[MinorGalleryInfo](../index.html)/[MiniGalleryInfo](index.html)/[isMember](is-member.html)
 
 # isMember
 
-[jvm]  
-Content  
-val [isMember](is-member.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
+[jvm]\
+val [isMember](is-member.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
+
 
 
 

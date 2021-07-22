@@ -1,17 +1,18 @@
 ---
-title: be.zvz.kotlininside.session.user.named -
+title: be.zvz.kotlininside.session.user.named
 ---
-//[KotlinInside](../index.md)/[be.zvz.kotlininside.session.user.named](index.md)
+//[KotlinInside](../../index.html)/[be.zvz.kotlininside.session.user.named](index.html)
 
+# Package be.zvz.kotlininside.session.user.named
 
+## Types
 
-# Package be.zvz.kotlininside.session.user.named  
-
-
-## Types  
-  
-|  Name|  Summary| 
+| Name | Summary |
 |---|---|
-| <a name="be.zvz.kotlininside.session.user.named/DuplicateNamed///PointingToDeclaration/"></a>[DuplicateNamed](-duplicate-named/index.md)| <a name="be.zvz.kotlininside.session.user.named/DuplicateNamed///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>data class [DuplicateNamed](-duplicate-named/index.md)(**id**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **password**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [LoginUser](../be.zvz.kotlininside.session.user/-login-user/index.md)  <br><br><br>
-| <a name="be.zvz.kotlininside.session.user.named/Named///PointingToDeclaration/"></a>[Named](-named/index.md)| <a name="be.zvz.kotlininside.session.user.named/Named///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>data class [Named](-named/index.md)(**id**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **password**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [LoginUser](../be.zvz.kotlininside.session.user/-login-user/index.md)  <br><br><br>
+| [DuplicateNamed](-duplicate-named/index.html) | [jvm]<br>data class [DuplicateNamed](-duplicate-named/index.html)(**
+id**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
+password**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [LoginUser](../be.zvz.kotlininside.session.user/-login-user/index.html) |
+| [Named](-named/index.html) | [jvm]<br>data class [Named](-named/index.html)(**
+id**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
+password**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [LoginUser](../be.zvz.kotlininside.session.user/-login-user/index.html) |
 

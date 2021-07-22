@@ -1,14 +1,18 @@
 ---
-title: Article -
+title: Article
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.generic](../../index.md)/[MainPage](../index.md)/[Article](index.md)/[Article](-article.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)/[MainPage](../index.html)
+/[Article](index.html)/[Article](-article.html)
 
+# Article
 
+[jvm]\
+fun [Article](-article.html)(gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
+articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html),
+gallName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null,
+title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
+thumbnail: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
 
-# Article  
-[jvm]  
-Content  
-fun [Article](-article.md)(gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), gallName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null, title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), thumbnail: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  
 
 
 

@@ -1,14 +1,15 @@
 ---
-title: MINOR_INFO -
+title: MINOR_INFO
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.value](../../index.md)/[ApiUrl](../index.md)/[Gallery](index.md)/[MINOR_INFO](-m-i-n-o-r_-i-n-f-o.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)
+/[Gallery](index.html)/[MINOR_INFO](-m-i-n-o-r_-i-n-f-o.html)
 
+# MINOR_INFO
 
+[jvm]\
+const
+val [MINOR_INFO](-m-i-n-o-r_-i-n-f-o.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# MINOR_INFO  
-[jvm]  
-Content  
-val [MINOR_INFO](-m-i-n-o-r_-i-n-f-o.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 

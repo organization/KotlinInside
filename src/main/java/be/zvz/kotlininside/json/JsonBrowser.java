@@ -20,6 +20,7 @@ package be.zvz.kotlininside.json;
 
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -41,7 +42,16 @@ import java.util.Map;
 public class JsonBrowser {
     public static final JsonBrowser NULL_BROWSER = new JsonBrowser(null);
 
-    private static final ObjectMapper mapper = setupMapper();
+    private static ObjectMapper mapper = setupMapper();
+
+    @NotNull
+    public static ObjectMapper getMapper() {
+        return mapper;
+    }
+
+    public static void setMapper(@NotNull ObjectMapper objectMapper) {
+        mapper = objectMapper;
+    }
 
     private final JsonNode node;
 
@@ -83,8 +93,17 @@ public class JsonBrowser {
     }
 
     @NotNull
-    private static JsonBrowser create(JsonNode node) {
+    public static JsonBrowser create(JsonNode node) {
         return node != null ? new JsonBrowser(node) : NULL_BROWSER;
+    }
+
+    @Nullable
+    public String stringify() {
+        try {
+            return mapper.writeValueAsString(node);
+        } catch (JsonProcessingException ignored) {
+            return null;
+        }
     }
 
     /**

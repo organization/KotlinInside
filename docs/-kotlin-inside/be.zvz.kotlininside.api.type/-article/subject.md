@@ -1,14 +1,14 @@
 ---
-title: subject -
+title: subject
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.type](../index.md)/[Article](index.md)/[subject](subject.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.type](../index.html)/[Article](index.html)
+/[subject](subject.html)
 
+# subject
 
+[jvm]\
+val [subject](subject.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# subject  
-[jvm]  
-Content  
-val [subject](subject.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
 
 
 

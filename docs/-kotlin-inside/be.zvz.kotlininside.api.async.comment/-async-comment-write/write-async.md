@@ -1,14 +1,15 @@
 ---
-title: writeAsync -
+title: writeAsync
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.async.comment](../index.md)/[AsyncCommentWrite](index.md)/[writeAsync](write-async.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.comment](../index.html)
+/[AsyncCommentWrite](index.html)/[writeAsync](write-async.html)
 
+# writeAsync
 
+[jvm]\
+suspend fun [writeAsync](write-async.html)():
+Deferred<[CommentWrite.WriteResult](../../be.zvz.kotlininside.api.comment/-comment-write/-write-result/index.html)>
 
-# writeAsync  
-[jvm]  
-Content  
-suspend fun [writeAsync](write-async.md)(): Deferred<[CommentWrite.WriteResult](../../be.zvz.kotlininside.api.comment/-comment-write/-write-result/index.md)>  
 
 
 

@@ -1,14 +1,16 @@
 ---
-title: getNewGalleryAsync -
+title: getNewGalleryAsync
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.async.generic](../index.md)/[AsyncMainPage](index.md)/[getNewGalleryAsync](get-new-gallery-async.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.generic](../index.html)/[AsyncMainPage](index.html)
+/[getNewGalleryAsync](get-new-gallery-async.html)
 
+# getNewGalleryAsync
 
+[jvm]\
+suspend fun [getNewGalleryAsync](get-new-gallery-async.html)():
+Deferred<[List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[MainPage.NewGallery](
+../../be.zvz.kotlininside.api.generic/-main-page/-new-gallery/index.html)>>
 
-# getNewGalleryAsync  
-[jvm]  
-Content  
-suspend fun [getNewGalleryAsync](get-new-gallery-async.md)(): Deferred<[List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[MainPage.NewGallery](../../be.zvz.kotlininside.api.generic/-main-page/-new-gallery/index.md)>>  
 
 
 

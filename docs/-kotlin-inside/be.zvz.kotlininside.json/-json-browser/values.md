@@ -1,29 +1,24 @@
 ---
-title: values -
+title: values
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.json](../index.md)/[JsonBrowser](index.md)/[values](values.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.json](../index.html)/[JsonBrowser](index.html)
+/[values](values.html)
 
+# values
 
+[jvm]\
 
-# values  
-[jvm]  
-Content  
-@NotNull()  
-  
-open fun [values](values.md)(): [List](https://docs.oracle.com/javase/7/docs/api/java/util/List.html)<[JsonBrowser](index.md)>  
-More info  
+@NotNull()
 
+open fun [values](values.html)():
+@NotNull()[List](https://docs.oracle.com/javase/7/docs/api/java/util/List.html)<[JsonBrowser](index.html)>
 
 Returns a list of all the values in this element
 
+#### Return
 
+The list of values as JsonBrowser elements
 
-#### Return  
-
-
-list of values as JsonBrowser elements
-
-  
 
 
 

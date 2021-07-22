@@ -1,13 +1,14 @@
 ---
-title: isOtp -
+title: isOtp
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.session](../index.md)/[SessionDetail](index.md)/[isOtp](is-otp.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.session](../index.html)/[SessionDetail](index.html)
+/[isOtp](is-otp.html)
 
 # isOtp
 
-[jvm]  
-Content  
-val [isOtp](is-otp.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
+[jvm]\
+val [isOtp](is-otp.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
+
 
 
 

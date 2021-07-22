@@ -1,14 +1,14 @@
 ---
-title: downvote -
+title: downvote
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleRead](../index.md)/[ViewMain](index.md)/[downvote](downvote.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleRead](../index.html)/[ViewMain](index.html)/[downvote](downvote.html)
 
+# downvote
 
+[jvm]\
+val [downvote](downvote.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
 
-# downvote  
-[jvm]  
-Content  
-val [downvote](downvote.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
 
 
 

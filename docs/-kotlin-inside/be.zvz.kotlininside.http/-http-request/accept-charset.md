@@ -1,37 +1,29 @@
 ---
-title: acceptCharset -
+title: acceptCharset
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[acceptCharset](accept-charset.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[acceptCharset](accept-charset.html)
 
+# acceptCharset
 
-
-# acceptCharset  
-[jvm]  
-Content  
-open fun [acceptCharset](accept-charset.md)(acceptCharset: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
-More info  
-
+[jvm]\
+open fun [acceptCharset](accept-charset.html)(
+acceptCharset: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.html)
 
 Set the 'Accept-Charset' header to given value
 
+#### Return
 
+this request
 
-#### Return  
+## Parameters
 
+jvm
 
-request
-
-
-
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
+| | |
 |---|---|
-| <a name="be.zvz.kotlininside.http/HttpRequest/acceptCharset/#java.lang.String/PointingToDeclaration/"></a>acceptCharset| <a name="be.zvz.kotlininside.http/HttpRequest/acceptCharset/#java.lang.String/PointingToDeclaration/"></a>
-  
-  
+| acceptCharset |  |
+
 
 
 

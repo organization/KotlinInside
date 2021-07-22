@@ -1,131 +1,99 @@
 ---
-title: get -
+title: get
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[get](get.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[get](get.html)
 
+# get
 
+[jvm]\
+open fun [get](get.html)(
+url: [CharSequence](https://docs.oracle.com/javase/7/docs/api/java/lang/CharSequence.html)): [HttpRequest](index.html)
 
-# get  
-[jvm]  
-Content  
-open fun [get](get.md)(url: [CharSequence](https://docs.oracle.com/javase/7/docs/api/java/lang/CharSequence.html)): [HttpRequest](index.md)  
-More info  
-
-
-Start a 'GET' request to the given URL
-
-
-
-#### Return  
-
-
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
-|---|---|
-| <a name="be.zvz.kotlininside.http/HttpRequest/get/#java.lang.CharSequence/PointingToDeclaration/"></a>url| <a name="be.zvz.kotlininside.http/HttpRequest/get/#java.lang.CharSequence/PointingToDeclaration/"></a>
-  
-  
-
-
-[jvm]  
-Content  
-open fun [get](get.md)(url: [URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html)): [HttpRequest](index.md)  
-More info  
-
+open fun [get](get.html)(
+url: [URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html)): [HttpRequest](index.html)
 
 Start a 'GET' request to the given URL
 
+#### Return
 
+request
 
-#### Return  
+## Parameters
 
+jvm
 
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
+| | |
 |---|---|
-| <a name="be.zvz.kotlininside.http/HttpRequest/get/#java.net.URL/PointingToDeclaration/"></a>url| <a name="be.zvz.kotlininside.http/HttpRequest/get/#java.net.URL/PointingToDeclaration/"></a>
-  
-  
+| url |  |
 
+#### Throws
 
-[jvm]  
-Content  
-open fun [get](get.md)(baseUrl: [CharSequence](https://docs.oracle.com/javase/7/docs/api/java/lang/CharSequence.html), params: [Map](https://docs.oracle.com/javase/7/docs/api/java/util/Map.html)<out [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), out [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)>, encode: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)): [HttpRequest](index.md)  
-More info  
+| | |
+|---|---|
+| [be.zvz.kotlininside.http.HttpRequest.HttpRequestException](-http-request-exception/index.html) |  |
 
+[jvm]\
+open fun [get](get.html)(baseUrl: [CharSequence](https://docs.oracle.com/javase/7/docs/api/java/lang/CharSequence.html),
+params: [Map](https://docs.oracle.com/javase/7/docs/api/java/util/Map.html)<out [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)
+, out [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)>,
+encode: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)): [HttpRequest](index.html)
 
 Start a 'GET' request to the given URL along with the query params
 
+#### Return
 
+request
 
-#### Return  
+## See also
 
+jvm
 
-## See also  
-  
-jvm  
-  
-|  Name|  Summary| 
+| | |
 |---|---|
-| <a name="be.zvz.kotlininside.http/HttpRequest/get/#java.lang.CharSequence#java.util.Map<?,?>#boolean/PointingToDeclaration/"></a>[#append(CharSequence, Map)](append.md)| <a name="be.zvz.kotlininside.http/HttpRequest/get/#java.lang.CharSequence#java.util.Map<?,?>#boolean/PointingToDeclaration/"></a>[append](append.md)
-| <a name="be.zvz.kotlininside.http/HttpRequest/get/#java.lang.CharSequence#java.util.Map<?,?>#boolean/PointingToDeclaration/"></a>[#encode(CharSequence)](encode.md)| <a name="be.zvz.kotlininside.http/HttpRequest/get/#java.lang.CharSequence#java.util.Map<?,?>#boolean/PointingToDeclaration/"></a>[encode](encode.md)
-  
+| [#append(CharSequence, Map)](append.html) | #append(CharSequence, Map) |
+| [#encode(CharSequence)](encode.html) | #encode(CharSequence) |
 
+## Parameters
 
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
+jvm
+
+| | |
 |---|---|
-| <a name="be.zvz.kotlininside.http/HttpRequest/get/#java.lang.CharSequence#java.util.Map<?,?>#boolean/PointingToDeclaration/"></a>baseUrl| <a name="be.zvz.kotlininside.http/HttpRequest/get/#java.lang.CharSequence#java.util.Map<?,?>#boolean/PointingToDeclaration/"></a>
-| <a name="be.zvz.kotlininside.http/HttpRequest/get/#java.lang.CharSequence#java.util.Map<?,?>#boolean/PointingToDeclaration/"></a>encode| <a name="be.zvz.kotlininside.http/HttpRequest/get/#java.lang.CharSequence#java.util.Map<?,?>#boolean/PointingToDeclaration/"></a><br><br>true to encode the full URL<br><br>
-| <a name="be.zvz.kotlininside.http/HttpRequest/get/#java.lang.CharSequence#java.util.Map<?,?>#boolean/PointingToDeclaration/"></a>params| <a name="be.zvz.kotlininside.http/HttpRequest/get/#java.lang.CharSequence#java.util.Map<?,?>#boolean/PointingToDeclaration/"></a><br><br>The query parameters to include as part of the baseUrl<br><br>
-  
-  
+| baseUrl |  |
+| params | The query parameters to include as part of the baseUrl |
+| encode | true to encode the full URL |
 
-
-[jvm]  
-Content  
-open fun [get](get.md)(baseUrl: [CharSequence](https://docs.oracle.com/javase/7/docs/api/java/lang/CharSequence.html), encode: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), params: [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)>): [HttpRequest](index.md)  
-More info  
-
+[jvm]\
+open fun [get](get.html)(baseUrl: [CharSequence](https://docs.oracle.com/javase/7/docs/api/java/lang/CharSequence.html),
+encode: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html),
+params: [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)>): [HttpRequest](index.html)
 
 Start a 'GET' request to the given URL along with the query params
 
+#### Return
 
+request
 
-#### Return  
+## See also
 
+jvm
 
-## See also  
-  
-jvm  
-  
-|  Name|  Summary| 
+| | |
 |---|---|
-| <a name="be.zvz.kotlininside.http/HttpRequest/get/#java.lang.CharSequence#boolean#java.lang.Object.../PointingToDeclaration/"></a>[#append(CharSequence, Object...)](append.md)| <a name="be.zvz.kotlininside.http/HttpRequest/get/#java.lang.CharSequence#boolean#java.lang.Object.../PointingToDeclaration/"></a>[append](append.md)
-| <a name="be.zvz.kotlininside.http/HttpRequest/get/#java.lang.CharSequence#boolean#java.lang.Object.../PointingToDeclaration/"></a>[#encode(CharSequence)](encode.md)| <a name="be.zvz.kotlininside.http/HttpRequest/get/#java.lang.CharSequence#boolean#java.lang.Object.../PointingToDeclaration/"></a>[encode](encode.md)
-  
+| [#append(CharSequence, Object...)](append.html) | #append(CharSequence, Object...) |
+| [#encode(CharSequence)](encode.html) | #encode(CharSequence) |
 
+## Parameters
 
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
+jvm
+
+| | |
 |---|---|
-| <a name="be.zvz.kotlininside.http/HttpRequest/get/#java.lang.CharSequence#boolean#java.lang.Object.../PointingToDeclaration/"></a>baseUrl| <a name="be.zvz.kotlininside.http/HttpRequest/get/#java.lang.CharSequence#boolean#java.lang.Object.../PointingToDeclaration/"></a>
-| <a name="be.zvz.kotlininside.http/HttpRequest/get/#java.lang.CharSequence#boolean#java.lang.Object.../PointingToDeclaration/"></a>encode| <a name="be.zvz.kotlininside.http/HttpRequest/get/#java.lang.CharSequence#boolean#java.lang.Object.../PointingToDeclaration/"></a><br><br>true to encode the full URL<br><br>
-| <a name="be.zvz.kotlininside.http/HttpRequest/get/#java.lang.CharSequence#boolean#java.lang.Object.../PointingToDeclaration/"></a>params| <a name="be.zvz.kotlininside.http/HttpRequest/get/#java.lang.CharSequence#boolean#java.lang.Object.../PointingToDeclaration/"></a><br><br>the name/value query parameter pairs to include as part of the baseUrl<br><br>
-  
-  
+| baseUrl |  |
+| encode | true to encode the full URL |
+| params | the name/value query parameter pairs to include as part of the baseUrl |
+
 
 
 

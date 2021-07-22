@@ -1,14 +1,13 @@
 ---
-title: auth -
+title: auth
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside](../index.md)/[KotlinInside](index.md)/[auth](auth.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside](../index.html)/[KotlinInside](index.html)/[auth](auth.html)
 
+# auth
 
+[jvm]\
+val [auth](auth.html): [Auth](../../be.zvz.kotlininside.security/-auth/index.html)
 
-# auth  
-[jvm]  
-Content  
-val [auth](auth.md): [Auth](../../be.zvz.kotlininside.security/-auth/index.md)  
 
 
 

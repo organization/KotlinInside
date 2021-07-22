@@ -1,14 +1,14 @@
 ---
-title: fileCount -
+title: fileCount
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.article](../../index.md)/[ArticleModify](../index.md)/[ModifyResult](index.md)/[fileCount](file-count.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
+/[ArticleModify](../index.html)/[ModifyResult](index.html)/[fileCount](file-count.html)
 
+# fileCount
 
+[jvm]\
+val [fileCount](file-count.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) = 0
 
-# fileCount  
-[jvm]  
-Content  
-val [fileCount](file-count.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) = 0  
 
 
 

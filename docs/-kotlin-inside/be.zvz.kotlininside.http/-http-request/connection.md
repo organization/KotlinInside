@@ -1,14 +1,15 @@
 ---
-title: connection -
+title: connection
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[connection](connection.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[connection](connection.html)
 
+# connection
 
+[jvm]\
+private open
+val [connection](connection.html): [HttpURLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/HttpURLConnection.html)
 
-# connection  
-[jvm]  
-Content  
-private open val [connection](connection.md): [HttpURLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/HttpURLConnection.html)  
 
 
 

@@ -1,37 +1,29 @@
 ---
-title: readTimeout -
+title: readTimeout
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[readTimeout](read-timeout.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[readTimeout](read-timeout.html)
 
+# readTimeout
 
-
-# readTimeout  
-[jvm]  
-Content  
-open fun [readTimeout](read-timeout.md)(timeout: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [HttpRequest](index.md)  
-More info  
-
+[jvm]\
+open fun [readTimeout](read-timeout.html)(
+timeout: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [HttpRequest](index.html)
 
 Set read timeout on connection to given value
 
+#### Return
 
+this request
 
-#### Return  
+## Parameters
 
+jvm
 
-request
-
-
-
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
+| | |
 |---|---|
-| <a name="be.zvz.kotlininside.http/HttpRequest/readTimeout/#int/PointingToDeclaration/"></a>timeout| <a name="be.zvz.kotlininside.http/HttpRequest/readTimeout/#int/PointingToDeclaration/"></a>
-  
-  
+| timeout |  |
+
 
 
 

@@ -1,16 +1,20 @@
 ---
-title: HeadText -
+title: HeadText
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.type](../index.md)/[HeadText](index.md)/[HeadText](-head-text.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.type](../index.html)/[HeadText](index.html)
+/[HeadText](-head-text.html)
 
+# HeadText
 
+[jvm]\
 
-# HeadText  
-[jvm]  
-Content  
-@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)()  
-  
-fun [HeadText](-head-text.md)(identifier: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), name: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), level: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) = 0, selected: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = false)  
+@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)()
+
+fun [HeadText](-head-text.html)(identifier: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html),
+name: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
+level: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) = 0,
+selected: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = false)
+
 
 
 

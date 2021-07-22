@@ -1,14 +1,14 @@
 ---
-title: cause -
+title: cause
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.management](../../index.md)/[Recommend](../index.md)/[RecommendResult](index.md)/[cause](cause.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.management](../../index.html)
+/[Recommend](../index.html)/[RecommendResult](index.html)/[cause](cause.html)
 
+# cause
 
+[jvm]\
+val [cause](cause.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# cause  
-[jvm]  
-Content  
-val [cause](cause.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
 
 
 

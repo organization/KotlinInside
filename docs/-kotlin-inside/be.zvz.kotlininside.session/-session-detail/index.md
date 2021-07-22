@@ -1,13 +1,12 @@
 ---
-title: SessionDetail -
+title: SessionDetail
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.session](../index.md)/[SessionDetail](index.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.session](../index.html)/[SessionDetail](index.html)
 
+# SessionDetail
 
-
-# SessionDetail  
-
-[jvm] data class [SessionDetail](index.md)(**
+[jvm]\
+data class [SessionDetail](index.html)(**
 result**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), **
 userId**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
 userNo**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
@@ -20,40 +19,19 @@ pwCampaign**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/ind
 mailSend**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
 cause**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?)
 
-## Functions  
+## Properties
 
-|  Name|  Summary| 
+| Name | Summary |
 |---|---|
-| <a name="be.zvz.kotlininside.session/SessionDetail/component1/#/PointingToDeclaration/"></a>[component1](component1.md)| <a name="be.zvz.kotlininside.session/SessionDetail/component1/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component1](component1.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.session/SessionDetail/component10/#/PointingToDeclaration/"></a>[component10](component10.md)| <a name="be.zvz.kotlininside.session/SessionDetail/component10/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component10](component10.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.session/SessionDetail/component11/#/PointingToDeclaration/"></a>[component11](component11.md)| <a name="be.zvz.kotlininside.session/SessionDetail/component11/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component11](component11.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?  <br><br><br>
-| <a name="be.zvz.kotlininside.session/SessionDetail/component2/#/PointingToDeclaration/"></a>[component2](component2.md)| <a name="be.zvz.kotlininside.session/SessionDetail/component2/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component2](component2.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.session/SessionDetail/component3/#/PointingToDeclaration/"></a>[component3](component3.md)| <a name="be.zvz.kotlininside.session/SessionDetail/component3/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component3](component3.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.session/SessionDetail/component4/#/PointingToDeclaration/"></a>[component4](component4.md)| <a name="be.zvz.kotlininside.session/SessionDetail/component4/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component4](component4.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.session/SessionDetail/component5/#/PointingToDeclaration/"></a>[component5](component5.md)| <a name="be.zvz.kotlininside.session/SessionDetail/component5/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component5](component5.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.session/SessionDetail/component6/#/PointingToDeclaration/"></a>[component6](component6.md)| <a name="be.zvz.kotlininside.session/SessionDetail/component6/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component6](component6.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.session/SessionDetail/component7/#/PointingToDeclaration/"></a>[component7](component7.md)| <a name="be.zvz.kotlininside.session/SessionDetail/component7/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component7](component7.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.session/SessionDetail/component8/#/PointingToDeclaration/"></a>[component8](component8.md)| <a name="be.zvz.kotlininside.session/SessionDetail/component8/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component8](component8.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.session/SessionDetail/component9/#/PointingToDeclaration/"></a>[component9](component9.md)| <a name="be.zvz.kotlininside.session/SessionDetail/component9/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>operator fun [component9](component9.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  <br><br><br>
-| <a name="be.zvz.kotlininside.session/SessionDetail/copy/#kotlin.Boolean#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.Int#kotlin.Int#kotlin.Int#kotlin.Int#kotlin.String#kotlin.String?/PointingToDeclaration/"></a>[copy](copy.md)| <a name="be.zvz.kotlininside.session/SessionDetail/copy/#kotlin.Boolean#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.Int#kotlin.Int#kotlin.Int#kotlin.Int#kotlin.String#kotlin.String?/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>fun [copy](copy.md)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), userId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), userNo: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), name: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), stype: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), isAdult: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), isDormancy: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), isOtp: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), pwCampaign: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), mailSend: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?): [SessionDetail](index.md)  <br><br><br>
-| <a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a>[equals](../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)| <a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open operator override fun [equals](../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)(other: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  <br><br><br>
-| <a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a>[hashCode](../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)| <a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open override fun [hashCode](../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  <br><br><br>
-| <a name="kotlin/Any/toString/#/PointingToDeclaration/"></a>[toString](../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)| <a name="kotlin/Any/toString/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open override fun [toString](../../be.zvz.kotlininside.utils/-string-util/-companion/index.md#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F49489957)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
-
-
-## Properties  
-
-|  Name|  Summary| 
-|---|---|
-| <a name="be.zvz.kotlininside.session/SessionDetail/cause/#/PointingToDeclaration/"></a>[cause](cause.md)| <a name="be.zvz.kotlininside.session/SessionDetail/cause/#/PointingToDeclaration/"></a> [jvm] val [cause](cause.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?   <br>
-| <a name="be.zvz.kotlininside.session/SessionDetail/isAdult/#/PointingToDeclaration/"></a>[isAdult](is-adult.md)| <a name="be.zvz.kotlininside.session/SessionDetail/isAdult/#/PointingToDeclaration/"></a> [jvm] val [isAdult](is-adult.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)   <br>
-| <a name="be.zvz.kotlininside.session/SessionDetail/isDormancy/#/PointingToDeclaration/"></a>[isDormancy](is-dormancy.md)| <a name="be.zvz.kotlininside.session/SessionDetail/isDormancy/#/PointingToDeclaration/"></a> [jvm] val [isDormancy](is-dormancy.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)   <br>
-| <a name="be.zvz.kotlininside.session/SessionDetail/isOtp/#/PointingToDeclaration/"></a>[isOtp](is-otp.md)| <a name="be.zvz.kotlininside.session/SessionDetail/isOtp/#/PointingToDeclaration/"></a> [jvm] val [isOtp](is-otp.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)   <br>
-| <a name="be.zvz.kotlininside.session/SessionDetail/mailSend/#/PointingToDeclaration/"></a>[mailSend](mail-send.md)| <a name="be.zvz.kotlininside.session/SessionDetail/mailSend/#/PointingToDeclaration/"></a> [jvm] val [mailSend](mail-send.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
-| <a name="be.zvz.kotlininside.session/SessionDetail/name/#/PointingToDeclaration/"></a>[name](name.md)| <a name="be.zvz.kotlininside.session/SessionDetail/name/#/PointingToDeclaration/"></a> [jvm] val [name](name.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
-| <a name="be.zvz.kotlininside.session/SessionDetail/pwCampaign/#/PointingToDeclaration/"></a>[pwCampaign](pw-campaign.md)| <a name="be.zvz.kotlininside.session/SessionDetail/pwCampaign/#/PointingToDeclaration/"></a> [jvm] val [pwCampaign](pw-campaign.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)   <br>
-| <a name="be.zvz.kotlininside.session/SessionDetail/result/#/PointingToDeclaration/"></a>[result](result.md)| <a name="be.zvz.kotlininside.session/SessionDetail/result/#/PointingToDeclaration/"></a> [jvm] val [result](result.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)   <br>
-| <a name="be.zvz.kotlininside.session/SessionDetail/stype/#/PointingToDeclaration/"></a>[stype](stype.md)| <a name="be.zvz.kotlininside.session/SessionDetail/stype/#/PointingToDeclaration/"></a> [jvm] val [stype](stype.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
-| <a name="be.zvz.kotlininside.session/SessionDetail/userId/#/PointingToDeclaration/"></a>[userId](user-id.md)| <a name="be.zvz.kotlininside.session/SessionDetail/userId/#/PointingToDeclaration/"></a> [jvm] val [userId](user-id.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
-| <a name="be.zvz.kotlininside.session/SessionDetail/userNo/#/PointingToDeclaration/"></a>[userNo](user-no.md)| <a name="be.zvz.kotlininside.session/SessionDetail/userNo/#/PointingToDeclaration/"></a> [jvm] val [userNo](user-no.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
+| [cause](cause.html) | [jvm]<br>val [cause](cause.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? |
+| [isAdult](is-adult.html) | [jvm]<br>val [isAdult](is-adult.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
+| [isDormancy](is-dormancy.html) | [jvm]<br>val [isDormancy](is-dormancy.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
+| [isOtp](is-otp.html) | [jvm]<br>val [isOtp](is-otp.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
+| [mailSend](mail-send.html) | [jvm]<br>val [mailSend](mail-send.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [name](name.html) | [jvm]<br>val [name](name.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [pwCampaign](pw-campaign.html) | [jvm]<br>val [pwCampaign](pw-campaign.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
+| [result](result.html) | [jvm]<br>val [result](result.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
+| [stype](stype.html) | [jvm]<br>val [stype](stype.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [userId](user-id.html) | [jvm]<br>val [userId](user-id.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [userNo](user-no.html) | [jvm]<br>val [userNo](user-no.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 

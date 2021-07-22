@@ -1,27 +1,20 @@
 ---
-title: url -
+title: url
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[url](url.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[url](url.html)
 
+# url
 
-
-# url  
-[jvm]  
-Content  
-open fun [url](url.md)(): [URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html)  
-More info  
-
+[jvm]\
+open fun [url](url.html)(): [URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html)
 
 Get the [URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) of this request's connection
 
+#### Return
 
+request URL
 
-#### Return  
-
-
-URL
-
-  
 
 
 

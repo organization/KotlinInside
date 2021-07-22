@@ -1,14 +1,14 @@
 ---
-title: block -
+title: block
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.management](../index.md)/[UserBlock](index.md)/[block](block.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.management](../index.html)/[UserBlock](index.html)
+/[block](block.html)
 
+# block
 
+[jvm]\
+fun [block](block.html)(): [UserBlock.BlockResult](-block-result/index.html)
 
-# block  
-[jvm]  
-Content  
-fun [block](block.md)(): [UserBlock.BlockResult](-block-result/index.md)  
 
 
 

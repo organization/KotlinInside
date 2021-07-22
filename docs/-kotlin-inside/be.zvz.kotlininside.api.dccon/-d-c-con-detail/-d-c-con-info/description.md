@@ -1,14 +1,14 @@
 ---
-title: description -
+title: description
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.dccon](../../index.md)/[DCConDetail](../index.md)/[DCConInfo](index.md)/[description](description.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.dccon](../../index.html)/[DCConDetail](../index.html)
+/[DCConInfo](index.html)/[description](description.html)
 
+# description
 
+[jvm]\
+val [description](description.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# description  
-[jvm]  
-Content  
-val [description](description.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
 
 
 

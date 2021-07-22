@@ -1,123 +1,75 @@
 ---
-title: header -
+title: header
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.http](../index.md)/[HttpRequest](index.md)/[header](header.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.http](../index.html)/[HttpRequest](index.html)
+/[header](header.html)
 
+# header
 
+[jvm]\
+open fun [header](header.html)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html),
+value: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.html)
 
-# header  
-[jvm]  
-Content  
-open fun [header](header.md)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), value: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [HttpRequest](index.md)  
-More info  
-
-
-Set header name to given value
-
-
-
-#### Return  
-
-
-request
-
-
-
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
-|---|---|
-| <a name="be.zvz.kotlininside.http/HttpRequest/header/#java.lang.String#java.lang.String/PointingToDeclaration/"></a>name| <a name="be.zvz.kotlininside.http/HttpRequest/header/#java.lang.String#java.lang.String/PointingToDeclaration/"></a>
-| <a name="be.zvz.kotlininside.http/HttpRequest/header/#java.lang.String#java.lang.String/PointingToDeclaration/"></a>value| <a name="be.zvz.kotlininside.http/HttpRequest/header/#java.lang.String#java.lang.String/PointingToDeclaration/"></a>
-  
-  
-
-
-[jvm]  
-Content  
-open fun [header](header.md)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), value: [Number](https://docs.oracle.com/javase/7/docs/api/java/lang/Number.html)): [HttpRequest](index.md)  
-More info  
-
+open fun [header](header.html)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html),
+value: [Number](https://docs.oracle.com/javase/7/docs/api/java/lang/Number.html)): [HttpRequest](index.html)
 
 Set header name to given value
 
+#### Return
 
+this request
 
-#### Return  
+## Parameters
 
+jvm
 
-request
-
-
-
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
+| | |
 |---|---|
-| <a name="be.zvz.kotlininside.http/HttpRequest/header/#java.lang.String#java.lang.Number/PointingToDeclaration/"></a>name| <a name="be.zvz.kotlininside.http/HttpRequest/header/#java.lang.String#java.lang.Number/PointingToDeclaration/"></a>
-| <a name="be.zvz.kotlininside.http/HttpRequest/header/#java.lang.String#java.lang.Number/PointingToDeclaration/"></a>value| <a name="be.zvz.kotlininside.http/HttpRequest/header/#java.lang.String#java.lang.Number/PointingToDeclaration/"></a>
-  
-  
+| name |  |
+| value |  |
 
-
-[jvm]  
-Content  
-open fun [header](header.md)(header: [Map.Entry](https://docs.oracle.com/javase/7/docs/api/java/util/Map.Entry.html)<[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)>): [HttpRequest](index.md)  
-More info  
-
+[jvm]\
+open fun [header](header.html)(
+header: [Map.Entry](https://docs.oracle.com/javase/7/docs/api/java/util/Map.Entry.html)<[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
+, [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)>): [HttpRequest](index.html)
 
 Set header to have given entry's key as the name and value as the value
 
+#### Return
 
+this request
 
-#### Return  
+## Parameters
 
+jvm
 
-request
-
-
-
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
+| | |
 |---|---|
-| <a name="be.zvz.kotlininside.http/HttpRequest/header/#java.util.Map.Entry<java.lang.String,java.lang.String>/PointingToDeclaration/"></a>header| <a name="be.zvz.kotlininside.http/HttpRequest/header/#java.util.Map.Entry<java.lang.String,java.lang.String>/PointingToDeclaration/"></a>
-  
-  
+| header |  |
 
-
-[jvm]  
-Content  
-open fun [header](header.md)(name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
-More info  
-
+[jvm]\
+open fun [header](header.html)(
+name: [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
 
 Get a response header
 
+#### Return
 
+response header
 
-#### Return  
+## Parameters
 
+jvm
 
-header
-
-
-
-## Parameters  
-  
-jvm  
-  
-|  Name|  Summary| 
+| | |
 |---|---|
-| <a name="be.zvz.kotlininside.http/HttpRequest/header/#java.lang.String/PointingToDeclaration/"></a>name| <a name="be.zvz.kotlininside.http/HttpRequest/header/#java.lang.String/PointingToDeclaration/"></a>
-  
-  
+| name |  |
+
+#### Throws
+
+| | |
+|---|---|
+| [be.zvz.kotlininside.http.HttpRequest.HttpRequestException](-http-request-exception/index.html) |  |
 
 
 

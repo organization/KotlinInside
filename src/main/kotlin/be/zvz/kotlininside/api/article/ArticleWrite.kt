@@ -8,11 +8,11 @@ import be.zvz.kotlininside.api.type.content.MarkdownContent
 import be.zvz.kotlininside.api.type.content.StringContent
 import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.http.Request
+import be.zvz.kotlininside.json.JsonBrowser
 import be.zvz.kotlininside.session.Session
 import be.zvz.kotlininside.session.user.Anonymous
 import be.zvz.kotlininside.utils.StringUtil
 import be.zvz.kotlininside.value.ApiUrl
-import be.zvz.kotlininside.value.Const
 import java.net.URLEncoder
 
 class ArticleWrite internal constructor(
@@ -20,14 +20,14 @@ class ArticleWrite internal constructor(
     private val article: Article,
     private val session: Session,
     private val mode: String,
-    private val fcmToken: String = Const.DEFAULT_FCM_TOKEN
+    private val fcmToken: String = KotlinInside.getInstance().auth.fcmToken
 ) {
     @JvmOverloads
     constructor(
         gallId: String,
         article: Article,
         session: Session,
-        fcmToken: String = Const.DEFAULT_FCM_TOKEN
+        fcmToken: String = KotlinInside.getInstance().auth.fcmToken
     ) : this(
         gallId = gallId,
         article = article,
@@ -94,10 +94,12 @@ class ArticleWrite internal constructor(
             }
         }
 
-        val json = KotlinInside.getInstance().httpInterface.upload(
-            ApiUrl.Article.WRITE,
-            option
-        )!!.index(0)
+        val json = JsonBrowser.parse(
+            KotlinInside.getInstance().httpInterface.upload(
+                ApiUrl.Article.WRITE,
+                option
+            )
+        ).index(0)
 
         return WriteResult(
             result = json.get("result").asBoolean(),

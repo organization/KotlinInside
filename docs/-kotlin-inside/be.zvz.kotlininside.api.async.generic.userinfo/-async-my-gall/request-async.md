@@ -1,15 +1,15 @@
 ---
-title: requestAsync -
+title: requestAsync
 ---
-//[KotlinInside](../../index.md)/[be.zvz.kotlininside.api.async.generic.userinfo](../index.md)/[AsyncMyGall](index.md)
-/[requestAsync](request-async.md)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.generic.userinfo](../index.html)
+/[AsyncMyGall](index.html)/[requestAsync](request-async.html)
 
 # requestAsync
 
-[jvm]  
-Content  
-suspend fun [requestAsync](request-async.md)():
-Deferred<[MyGall.MyGallResult](../../be.zvz.kotlininside.api.generic.userinfo/-my-gall/-my-gall-result/index.md)>  
+[jvm]\
+suspend fun [requestAsync](request-async.html)():
+Deferred<[MyGall.MyGallResult](../../be.zvz.kotlininside.api.generic.userinfo/-my-gall/-my-gall-result/index.html)>
+
 
 
 

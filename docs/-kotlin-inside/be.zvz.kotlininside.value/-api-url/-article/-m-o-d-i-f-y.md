@@ -1,14 +1,14 @@
 ---
-title: MODIFY -
+title: MODIFY
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.value](../../index.md)/[ApiUrl](../index.md)/[Article](index.md)/[MODIFY](-m-o-d-i-f-y.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)
+/[Article](index.html)/[MODIFY](-m-o-d-i-f-y.html)
 
+# MODIFY
 
+[jvm]\
+const val [MODIFY](-m-o-d-i-f-y.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# MODIFY  
-[jvm]  
-Content  
-val [MODIFY](-m-o-d-i-f-y.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
 
 
 

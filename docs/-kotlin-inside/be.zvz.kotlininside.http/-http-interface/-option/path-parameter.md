@@ -1,16 +1,19 @@
 ---
-title: pathParameter -
+title: pathParameter
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.http](../../index.md)/[HttpInterface](../index.md)/[Option](index.md)/[pathParameter](path-parameter.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.http](../../index.html)/[HttpInterface](../index.html)
+/[Option](index.html)/[pathParameter](path-parameter.html)
 
+# pathParameter
 
+[jvm]\
 
-# pathParameter  
-[jvm]  
-Content  
-@NotNull()  
-  
-private val [pathParameter](path-parameter.md): [Map](https://docs.oracle.com/javase/7/docs/api/java/util/Map.html)<[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)>  
+@NotNull()
+
+private val [pathParameter](path-parameter.html):
+@NotNull()[Map](https://docs.oracle.com/javase/7/docs/api/java/util/Map.html)<[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
+, [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)>
+
 
 
 

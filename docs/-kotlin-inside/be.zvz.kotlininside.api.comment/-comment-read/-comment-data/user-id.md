@@ -1,14 +1,14 @@
 ---
-title: userId -
+title: userId
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.api.comment](../../index.md)/[CommentRead](../index.md)/[CommentData](index.md)/[userId](user-id.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.comment](../../index.html)
+/[CommentRead](../index.html)/[CommentData](index.html)/[userId](user-id.html)
 
+# userId
 
+[jvm]\
+val [userId](user-id.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
-# userId  
-[jvm]  
-Content  
-val [userId](user-id.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
 
 
 
