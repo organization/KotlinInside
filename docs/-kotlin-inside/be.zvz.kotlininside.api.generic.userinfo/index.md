@@ -3,6 +3,8 @@ title: be.zvz.kotlininside.api.generic.userinfo
 ---
 //[KotlinInside](../../index.html)/[be.zvz.kotlininside.api.generic.userinfo](index.html)
 
+
+
 # Package be.zvz.kotlininside.api.generic.userinfo
 
 ## Types

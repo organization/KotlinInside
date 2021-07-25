@@ -3,6 +3,8 @@ title: be.zvz.kotlininside.api.generic.minigallery
 ---
 //[KotlinInside](../../index.html)/[be.zvz.kotlininside.api.generic.minigallery](index.html)
 
+
+
 # Package be.zvz.kotlininside.api.generic.minigallery
 
 ## Types

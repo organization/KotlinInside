@@ -3,6 +3,8 @@ title: be.zvz.kotlininside.api.generic
 ---
 //[KotlinInside](../../index.html)/[be.zvz.kotlininside.api.generic](index.html)
 
+
+
 # Package be.zvz.kotlininside.api.generic
 
 ## Types

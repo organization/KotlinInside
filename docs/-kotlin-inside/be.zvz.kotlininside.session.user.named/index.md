@@ -3,6 +3,8 @@ title: be.zvz.kotlininside.session.user.named
 ---
 //[KotlinInside](../../index.html)/[be.zvz.kotlininside.session.user.named](index.html)
 
+
+
 # Package be.zvz.kotlininside.session.user.named
 
 ## Types

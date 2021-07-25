@@ -3,6 +3,8 @@ title: be.zvz.kotlininside.api.async.generic.userinfo
 ---
 //[KotlinInside](../../index.html)/[be.zvz.kotlininside.api.async.generic.userinfo](index.html)
 
+
+
 # Package be.zvz.kotlininside.api.async.generic.userinfo
 
 ## Types

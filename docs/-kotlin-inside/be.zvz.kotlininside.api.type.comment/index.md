@@ -3,6 +3,8 @@ title: be.zvz.kotlininside.api.type.comment
 ---
 //[KotlinInside](../../index.html)/[be.zvz.kotlininside.api.type.comment](index.html)
 
+
+
 # Package be.zvz.kotlininside.api.type.comment
 
 ## Types

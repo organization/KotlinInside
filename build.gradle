@@ -12,7 +12,7 @@ plugins {
 
 def libName = 'KotlinInside'
 def libDevVersion = ''
-def libVersion = "1.10.0$libDevVersion"
+def libVersion = "1.10.1$libDevVersion"
 def libDesc = 'Unofficial DCInside API written in Kotlin'
 
 group = 'be.zvz'

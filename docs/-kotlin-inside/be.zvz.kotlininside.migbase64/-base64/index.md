@@ -22,29 +22,29 @@ resulting array. This produces less garbage and it is possible to handle arrays 
 a temporary array. (E.g. Jakarta Commons Codec). It is unknown whether Sun's sun.misc.Encoder()/Decoder() produce
 temporary arrays but since performance is quite low it probably does.
 
+The encoder produces the same output as the Sun one except that the Sun's encoder appends a trailing line separator if
+the last character isn't a pad. Unclear why but it only adds to the length and is probably a side effect. Both are in
+conformance with RFC 2045 though. Commons codec seem to always att a trailing line separator.**Note!** The encode/decode
+method pairs (types) come in three versions with the **exact** same algorithm and thus a lot of code redundancy. This is
+to not create any temporary arrays for transcoding to/from different format types. The methods not used can simply be
+commented out.
 
+There is also a "fast" version of all decode methods that works the same way as the normal ones, but har a few demands
+on the decoded input. Normally though, these fast verions should be used if the source if the input is known and it
+hasn't bee tampered with.
 
- The encoder produces the same output as the Sun one except that the Sun's encoder appends a trailing line separator if the last character isn't a pad. Unclear why but it only adds to the length and is probably a side effect. Both are in conformance with RFC 2045 though. Commons codec seem to always att a trailing line separator.**Note!** The encode/decode method pairs (types) come in three versions with the **exact** same algorithm and thus a lot of code redundancy. This is to not create any temporary arrays for transcoding to/from different format types. The methods not used can simply be commented out.
+If you find the code useful or you find a bug, please send me a note at base64 @ miginfocom . com.
 
+Licence (BSD): ==============
 
+Copyright (c) 2004, Mikael Grev, MiG InfoCom AB. (base64 @ miginfocom . com) All rights reserved.
 
- There is also a "fast" version of all decode methods that works the same way as the normal ones, but har a few demands on the decoded input. Normally though, these fast verions should be used if the source if the input is known and it hasn't bee tampered with.
-
-
-
- If you find the code useful or you find a bug, please send me a note at base64 @ miginfocom . com. 
-
-
-
- Licence (BSD): ============== 
-
-
-
- Copyright (c) 2004, Mikael Grev, MiG InfoCom AB. (base64 @ miginfocom . com) All rights reserved. 
-
-
-
- Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. Neither the name of the MiG InfoCom AB nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the
+following conditions are met: Redistributions of source code must retain the above copyright notice, this list of
+conditions and the following disclaimer. Redistributions in binary form must reproduce the above copyright notice, this
+list of conditions and the following disclaimer in the documentation and/or other materials provided with the
+distribution. Neither the name of the MiG InfoCom AB nor the names of its contributors may be used to endorse or promote
+products derived from this software without specific prior written permission.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
 INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE

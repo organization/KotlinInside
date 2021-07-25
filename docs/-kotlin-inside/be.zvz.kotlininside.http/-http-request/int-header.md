@@ -16,6 +16,8 @@ Get an integer header from the response falling back to returning -1 if the head
 
 header value as an integer, -1 when missing or parsing fails
 
+
+
 ## Parameters
 
 jvm

@@ -16,6 +16,8 @@ Encodes a byte array into Base64 notation.
 
 The Base64-encoded data as a String
 
+
+
 ## Parameters
 
 jvm

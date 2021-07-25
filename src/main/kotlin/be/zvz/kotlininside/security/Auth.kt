@@ -26,6 +26,7 @@ class Auth {
     private lateinit var formattedTime: String
 
     lateinit var fcmToken: String
+        private set
     lateinit var fid: String
     lateinit var refreshToken: String
 
@@ -205,9 +206,7 @@ class Auth {
      * @return [java.lang.String] app_id를 반환합니다.
      */
     fun fetchAppId(hashedAppKey: String): String {
-        if (!::fcmToken.isInitialized) {
-            fcmToken = fetchFcmToken()
-        }
+        fcmToken = fetchFcmToken()
 
         val appId = try {
             val option = Request.getDefaultOption()
