@@ -7,6 +7,8 @@ title: be.zvz.kotlininside.session.user.named
 
 # Package be.zvz.kotlininside.session.user.named
 
+
+
 ## Types
 
 | Name | Summary |

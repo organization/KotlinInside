@@ -15,6 +15,8 @@ Get the status code of the response
 
 #### Return
 
+
+
 the response code
 
 #### Throws

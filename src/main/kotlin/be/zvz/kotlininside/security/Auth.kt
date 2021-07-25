@@ -137,6 +137,7 @@ class Auth {
     private fun dateToString(date: Date): String {
         val calendar = Calendar.getInstance(seoulTimeZone, Locale.US)
         calendar.minimalDaysInFirstWeek = 4
+        calendar.firstDayOfWeek = Calendar.MONDAY
         calendar.time = date
 
         val dayOfYear = calendar[Calendar.DAY_OF_YEAR]
