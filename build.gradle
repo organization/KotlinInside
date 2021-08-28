@@ -35,7 +35,7 @@ dependencies {
     implementation group: 'org.apache.commons', name: 'commons-text', version: '1.9'
 
     //Jackson
-    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.12.4'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.12.5'
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.12.4'
 
     //FlexMark
