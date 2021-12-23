@@ -1,15 +1,21 @@
 ---
 title: SUBJECT_AND_CONTENT
 ---
-//[KotlinInside](../../../../../index.html)/[be.zvz.kotlininside.api.article](../../../index.html)
-/[ArticleList](../../index.html)/[SearchType](../index.html)/[SUBJECT_AND_CONTENT](index.html)
+//[KotlinInside](../../../../../index.html)/[be.zvz.kotlininside.api.article](../../../index.html)/[ArticleList](../../index.html)/[SearchType](../index.html)/[SUBJECT_AND_CONTENT](index.html)
+
+
 
 # SUBJECT_AND_CONTENT
+
+
 
 [jvm]\
 [SUBJECT_AND_CONTENT](index.html)("subject_m")
 
+
+
 ## Properties
+
 
 | Name | Summary |
 |---|---|

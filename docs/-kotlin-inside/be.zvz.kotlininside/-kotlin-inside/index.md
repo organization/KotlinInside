@@ -3,18 +3,27 @@ title: KotlinInside
 ---
 //[KotlinInside](../../../index.html)/[be.zvz.kotlininside](../index.html)/[KotlinInside](index.html)
 
+
+
 # KotlinInside
+
+
 
 [jvm]\
 class [KotlinInside](index.html)
 
+
+
 ## Types
+
 
 | Name | Summary |
 |---|---|
 | [Companion](-companion/index.html) | [jvm]<br>object [Companion](-companion/index.html) |
 
+
 ## Properties
+
 
 | Name | Summary |
 |---|---|

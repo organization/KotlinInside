@@ -11,6 +11,7 @@ title: be.zvz.kotlininside.api.async.comment
 
 ## Types
 
+
 | Name | Summary |
 |---|---|
 | [AsyncCommentDelete](-async-comment-delete/index.html) | [jvm]<br>class [AsyncCommentDelete](-async-comment-delete/index.html)@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)constructor(gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), commentId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), session: [Session](../be.zvz.kotlininside.session/-session/index.html), fcmToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |

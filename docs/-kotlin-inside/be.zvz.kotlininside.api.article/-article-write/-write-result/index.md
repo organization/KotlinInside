@@ -1,19 +1,21 @@
 ---
 title: WriteResult
 ---
-//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
-/[ArticleWrite](../index.html)/[WriteResult](index.html)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)/[ArticleWrite](../index.html)/[WriteResult](index.html)
+
+
 
 # WriteResult
 
+
+
 [jvm]\
-data class [WriteResult](index.html)(
-result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html),
-articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)?,
-cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?,
-id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?)
+data class [WriteResult](index.html)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)?, cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?)
+
+
 
 ## Properties
+
 
 | Name | Summary |
 |---|---|

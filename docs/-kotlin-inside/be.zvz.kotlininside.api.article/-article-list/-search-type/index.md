@@ -1,16 +1,21 @@
 ---
 title: SearchType
 ---
-//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
-/[ArticleList](../index.html)/[SearchType](index.html)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)/[ArticleList](../index.html)/[SearchType](index.html)
+
+
 
 # SearchType
 
+
+
 [jvm]\
-enum [SearchType](index.html) : [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)&lt;[ArticleList.SearchType](
-index.html)&gt;
+enum [SearchType](index.html) : [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)&lt;[ArticleList.SearchType](index.html)&gt;
+
+
 
 ## Entries
+
 
 | | |
 |---|---|
@@ -22,6 +27,7 @@ index.html)&gt;
 
 
 ## Properties
+
 
 | Name | Summary |
 |---|---|

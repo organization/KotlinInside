@@ -1,15 +1,21 @@
 ---
 title: SUBJECT
 ---
-//[KotlinInside](../../../../../index.html)/[be.zvz.kotlininside.api.article](../../../index.html)
-/[ArticleList](../../index.html)/[SearchType](../index.html)/[SUBJECT](index.html)
+//[KotlinInside](../../../../../index.html)/[be.zvz.kotlininside.api.article](../../../index.html)/[ArticleList](../../index.html)/[SearchType](../index.html)/[SUBJECT](index.html)
+
+
 
 # SUBJECT
+
+
 
 [jvm]\
 [SUBJECT](index.html)("subject")
 
+
+
 ## Properties
+
 
 | Name | Summary |
 |---|---|

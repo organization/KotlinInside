@@ -1,17 +1,25 @@
 ---
 title: delete
 ---
-//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.article](../index.html)/[ArticleDelete](index.html)
-/[delete](delete.html)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.article](../index.html)/[ArticleDelete](index.html)/[delete](delete.html)
+
+
 
 # delete
+
+
 
 [jvm]\
 fun [delete](delete.html)(): [ArticleDelete.DeleteResult](-delete-result/index.html)
 
+
+
 글을 삭제합니다.
 
+
+
 ## Throws
+
 
 | | |
 |---|---|

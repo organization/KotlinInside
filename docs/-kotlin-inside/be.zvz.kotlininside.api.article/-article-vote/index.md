@@ -3,20 +3,27 @@ title: ArticleVote
 ---
 //[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.article](../index.html)/[ArticleVote](index.html)
 
+
+
 # ArticleVote
 
+
+
 [jvm]\
-class [ArticleVote](index.html)(gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
-, articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html),
-session: [Session](../../be.zvz.kotlininside.session/-session/index.html))
+class [ArticleVote](index.html)(gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), session: [Session](../../be.zvz.kotlininside.session/-session/index.html))
+
+
 
 ## Types
+
 
 | Name | Summary |
 |---|---|
 | [VoteResult](-vote-result/index.html) | [jvm]<br>data class [VoteResult](-vote-result/index.html)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), member: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)?) |
 
+
 ## Functions
+
 
 | Name | Summary |
 |---|---|

@@ -1,17 +1,25 @@
 ---
 title: write
 ---
-//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.article](../index.html)/[ArticleWrite](index.html)
-/[write](write.html)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.article](../index.html)/[ArticleWrite](index.html)/[write](write.html)
+
+
 
 # write
+
+
 
 [jvm]\
 fun [write](write.html)(): [ArticleWrite.WriteResult](-write-result/index.html)
 
+
+
 글을 작성합니다.
 
+
+
 ## Throws
+
 
 | | |
 |---|---|

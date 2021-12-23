@@ -1,15 +1,21 @@
 ---
 title: Companion
 ---
-//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside](../../index.html)/[KotlinInside](../index.html)
-/[Companion](index.html)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside](../../index.html)/[KotlinInside](../index.html)/[Companion](index.html)
+
+
 
 # Companion
+
+
 
 [jvm]\
 object [Companion](index.html)
 
+
+
 ## Functions
+
 
 | Name | Summary |
 |---|---|

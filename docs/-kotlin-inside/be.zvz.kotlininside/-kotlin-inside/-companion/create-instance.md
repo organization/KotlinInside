@@ -1,26 +1,41 @@
 ---
 title: createInstance
 ---
-//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside](../../index.html)/[KotlinInside](../index.html)
-/[Companion](index.html)/[createInstance](create-instance.html)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside](../../index.html)/[KotlinInside](../index.html)/[Companion](index.html)/[createInstance](create-instance.html)
+
+
 
 # createInstance
 
+
+
 [jvm]\
+
+
+
 
 @[JvmStatic](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-static/index.html)
 
+
+
 @[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)
+
+
 
 @[Synchronized](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-synchronized/index.html)
 
-fun [createInstance](create-instance.html)(user: [User](../../../be.zvz.kotlininside.session.user/-user/index.html),
-httpInterface: [HttpInterface](../../../be.zvz.kotlininside.http/-http-interface/index.html),
-sessionAutoRefresh: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = false)
+
+
+fun [createInstance](create-instance.html)(user: [User](../../../be.zvz.kotlininside.session.user/-user/index.html), httpInterface: [HttpInterface](../../../be.zvz.kotlininside.http/-http-interface/index.html), sessionAutoRefresh: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = false)
+
+
 
 [KotlinInside](../index.html) 인스턴스를 생성합니다.
 
+
+
 ## Parameters
+
 
 jvm
 

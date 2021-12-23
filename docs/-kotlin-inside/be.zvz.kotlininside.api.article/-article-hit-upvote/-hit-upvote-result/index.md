@@ -1,17 +1,21 @@
 ---
 title: HitUpvoteResult
 ---
-//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)
-/[ArticleHitUpvote](../index.html)/[HitUpvoteResult](index.html)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.article](../../index.html)/[ArticleHitUpvote](../index.html)/[HitUpvoteResult](index.html)
+
+
 
 # HitUpvoteResult
 
+
+
 [jvm]\
-data class [HitUpvoteResult](index.html)(
-result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html),
-cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?)
+data class [HitUpvoteResult](index.html)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?)
+
+
 
 ## Properties
+
 
 | Name | Summary |
 |---|---|

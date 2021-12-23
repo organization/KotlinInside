@@ -1,15 +1,21 @@
 ---
 title: NAME
 ---
-//[KotlinInside](../../../../../index.html)/[be.zvz.kotlininside.api.article](../../../index.html)
-/[ArticleList](../../index.html)/[SearchType](../index.html)/[NAME](index.html)
+//[KotlinInside](../../../../../index.html)/[be.zvz.kotlininside.api.article](../../../index.html)/[ArticleList](../../index.html)/[SearchType](../index.html)/[NAME](index.html)
+
+
 
 # NAME
+
+
 
 [jvm]\
 [NAME](index.html)("name")
 
+
+
 ## Properties
+
 
 | Name | Summary |
 |---|---|

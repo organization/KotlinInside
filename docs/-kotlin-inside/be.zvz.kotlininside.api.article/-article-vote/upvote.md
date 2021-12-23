@@ -1,17 +1,25 @@
 ---
 title: upvote
 ---
-//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.article](../index.html)/[ArticleVote](index.html)
-/[upvote](upvote.html)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.article](../index.html)/[ArticleVote](index.html)/[upvote](upvote.html)
+
+
 
 # upvote
+
+
 
 [jvm]\
 fun [upvote](upvote.html)(): [ArticleVote.VoteResult](-vote-result/index.html)
 
+
+
 글을 추천합니다.
 
+
+
 ## Throws
+
 
 | | |
 |---|---|

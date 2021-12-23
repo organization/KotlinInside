@@ -1,15 +1,21 @@
 ---
 title: CONTENT
 ---
-//[KotlinInside](../../../../../index.html)/[be.zvz.kotlininside.api.article](../../../index.html)
-/[ArticleList](../../index.html)/[SearchType](../index.html)/[CONTENT](index.html)
+//[KotlinInside](../../../../../index.html)/[be.zvz.kotlininside.api.article](../../../index.html)/[ArticleList](../../index.html)/[SearchType](../index.html)/[CONTENT](index.html)
+
+
 
 # CONTENT
+
+
 
 [jvm]\
 [CONTENT](index.html)("memo")
 
+
+
 ## Properties
+
 
 | Name | Summary |
 |---|---|

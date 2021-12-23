@@ -1,15 +1,21 @@
 ---
 title: AsyncDCConDetail
 ---
-//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.dccon](../index.html)
-/[AsyncDCConDetail](index.html)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.dccon](../index.html)/[AsyncDCConDetail](index.html)
+
+
 
 # AsyncDCConDetail
+
+
 
 [jvm]\
 class [AsyncDCConDetail](index.html)(dcCon: [DCCon](../../be.zvz.kotlininside.api.type/-d-c-con/index.html))
 
+
+
 ## Functions
+
 
 | Name | Summary |
 |---|---|

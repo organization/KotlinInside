@@ -1,16 +1,21 @@
 ---
 title: AsyncMinorGalleryInfo
 ---
-//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.generic](../index.html)
-/[AsyncMinorGalleryInfo](index.html)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.generic](../index.html)/[AsyncMinorGalleryInfo](index.html)
+
+
 
 # AsyncMinorGalleryInfo
 
+
+
 [jvm]\
-class [AsyncMinorGalleryInfo](index.html)(
-gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+class [AsyncMinorGalleryInfo](index.html)(gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+
+
 
 ## Functions
+
 
 | Name | Summary |
 |---|---|

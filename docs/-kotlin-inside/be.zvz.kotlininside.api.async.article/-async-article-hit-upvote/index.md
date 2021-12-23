@@ -1,18 +1,21 @@
 ---
 title: AsyncArticleHitUpvote
 ---
-//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.article](../index.html)
-/[AsyncArticleHitUpvote](index.html)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.article](../index.html)/[AsyncArticleHitUpvote](index.html)
+
+
 
 # AsyncArticleHitUpvote
 
+
+
 [jvm]\
-class [AsyncArticleHitUpvote](index.html)(
-gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
-articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html),
-session: [Session](../../be.zvz.kotlininside.session/-session/index.html))
+class [AsyncArticleHitUpvote](index.html)(gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), session: [Session](../../be.zvz.kotlininside.session/-session/index.html))
+
+
 
 ## Functions
+
 
 | Name | Summary |
 |---|---|

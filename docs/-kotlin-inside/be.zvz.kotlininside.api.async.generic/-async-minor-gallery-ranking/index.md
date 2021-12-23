@@ -1,13 +1,18 @@
 ---
 title: AsyncMinorGalleryRanking
 ---
-//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.generic](../index.html)
-/[AsyncMinorGalleryRanking](index.html)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.async.generic](../index.html)/[AsyncMinorGalleryRanking](index.html)
+
+
 
 # AsyncMinorGalleryRanking
 
+
+
 [jvm]\
 class [AsyncMinorGalleryRanking](index.html)
+
+
 
 ## Functions
 
