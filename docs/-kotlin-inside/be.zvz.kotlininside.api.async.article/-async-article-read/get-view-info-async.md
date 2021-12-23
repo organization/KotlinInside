@@ -8,7 +8,7 @@ title: getViewInfoAsync
 
 [jvm]\
 suspend fun [getViewInfoAsync](get-view-info-async.html)():
-Deferred<[ArticleRead.ViewInfo](../../be.zvz.kotlininside.api.article/-article-read/-view-info/index.html)>
+Deferred&lt;[ArticleRead.ViewInfo](../../be.zvz.kotlininside.api.article/-article-read/-view-info/index.html)&gt;
 
 
 

@@ -11,7 +11,7 @@ fun [upvote](upvote.html)(): [ArticleHitUpvote.HitUpvoteResult](-hit-upvote-resu
 
 글을 힛갤 추천합니다.
 
-#### Throws
+## Throws
 
 | | |
 |---|---|

@@ -1,18 +1,21 @@
 ---
 title: MemberJoinOkResult
 ---
-//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic.minigallery](../../index.html)
-/[JoinMiniGallery](../index.html)/[MemberJoinOkResult](index.html)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic.minigallery](../../index.html)/[JoinMiniGallery](../index.html)/[MemberJoinOkResult](index.html)
+
+
 
 # MemberJoinOkResult
 
+
+
 [jvm]\
-data class [MemberJoinOkResult](index.html)(**
-result**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), **
-cause**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
-status**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+data class [MemberJoinOkResult](index.html)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), status: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+
+
 
 ## Properties
+
 
 | Name | Summary |
 |---|---|

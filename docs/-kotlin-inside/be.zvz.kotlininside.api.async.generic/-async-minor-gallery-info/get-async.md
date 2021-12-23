@@ -8,7 +8,8 @@ title: getAsync
 
 [jvm]\
 suspend fun [getAsync](get-async.html)():
-Deferred<[MinorGalleryInfo.InfoResult](../../be.zvz.kotlininside.api.generic/-minor-gallery-info/-info-result/index.html)>
+Deferred&lt;[MinorGalleryInfo.InfoResult](../../be.zvz.kotlininside.api.generic/-minor-gallery-info/-info-result/index.html)
+&gt;
 
 
 

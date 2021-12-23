@@ -3,12 +3,19 @@ title: Const
 ---
 //[KotlinInside](../../../index.html)/[be.zvz.kotlininside.value](../index.html)/[Const](index.html)
 
+
+
 # Const
+
+
 
 [jvm]\
 object [Const](index.html)
 
+
+
 ## Types
+
 
 | Name | Summary |
 |---|---|
@@ -16,7 +23,9 @@ object [Const](index.html)
 | [Installations](-installations/index.html) | [jvm]<br>object [Installations](-installations/index.html) |
 | [Register3](-register3/index.html) | [jvm]<br>object [Register3](-register3/index.html) |
 
+
 ## Properties
+
 
 | Name | Summary |
 |---|---|

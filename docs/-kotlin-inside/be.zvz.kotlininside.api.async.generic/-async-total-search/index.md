@@ -7,12 +7,12 @@ title: AsyncTotalSearch
 # AsyncTotalSearch
 
 [jvm]\
-class [AsyncTotalSearch](index.html)(**
-keyword**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+class [AsyncTotalSearch](index.html)(
+keyword: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
 
 ## Functions
 
 | Name | Summary |
 |---|---|
-| [searchAsync](search-async.html) | [jvm]<br>suspend fun [searchAsync](search-async.html)(): Deferred<[TotalSearch.TotalSearchResult](../../be.zvz.kotlininside.api.generic/-total-search/-total-search-result/index.html)> |
+| [searchAsync](search-async.html) | [jvm]<br>suspend fun [searchAsync](search-async.html)(): Deferred&lt;[TotalSearch.TotalSearchResult](../../be.zvz.kotlininside.api.generic/-total-search/-total-search-result/index.html)&gt; |
 

@@ -13,7 +13,7 @@ fun [getViewInfo](get-view-info.html)(): [ArticleRead.ViewInfo](-view-info/index
 
 [be.zvz.kotlininside.api.article.ArticleRead.ViewInfo](-view-info/index.html) view_info 객체를 반환합니다.
 
-#### Throws
+## Throws
 
 | | |
 |---|---|

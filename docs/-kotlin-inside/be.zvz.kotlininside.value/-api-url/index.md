@@ -3,12 +3,19 @@ title: ApiUrl
 ---
 //[KotlinInside](../../../index.html)/[be.zvz.kotlininside.value](../index.html)/[ApiUrl](index.html)
 
+
+
 # ApiUrl
+
+
 
 [jvm]\
 object [ApiUrl](index.html)
 
+
+
 ## Types
+
 
 | Name | Summary |
 |---|---|
@@ -24,7 +31,9 @@ object [ApiUrl](index.html)
 | [Search](-search/index.html) | [jvm]<br>object [Search](-search/index.html) |
 | [User](-user/index.html) | [jvm]<br>object [User](-user/index.html) |
 
+
 ## Properties
+
 
 | Name | Summary |
 |---|---|

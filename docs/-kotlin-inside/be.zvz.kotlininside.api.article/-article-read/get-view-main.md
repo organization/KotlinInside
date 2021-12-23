@@ -13,7 +13,7 @@ fun [getViewMain](get-view-main.html)(): [ArticleRead.ViewMain](-view-main/index
 
 [be.zvz.kotlininside.api.article.ArticleRead.ViewMain](-view-main/index.html) view_main 객체를 반환합니다.
 
-#### Throws
+## Throws
 
 | | |
 |---|---|

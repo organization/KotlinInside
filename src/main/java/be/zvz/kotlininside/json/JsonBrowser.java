@@ -67,8 +67,8 @@ public class JsonBrowser {
      * @throws IOException When parsing the JSON failed
      */
     @NotNull
-    public static JsonBrowser parse(String json) throws IOException {
-        if (json.charAt(0) == '(')
+    public static JsonBrowser parse(@Nullable String json) throws IOException {
+        if (json != null && !json.equals("") && json.charAt(0) == '(')
             json = json.substring(1);
         return create(mapper.readTree(json));
     }

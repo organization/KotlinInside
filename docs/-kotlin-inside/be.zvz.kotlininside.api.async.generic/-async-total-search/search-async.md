@@ -8,7 +8,8 @@ title: searchAsync
 
 [jvm]\
 suspend fun [searchAsync](search-async.html)():
-Deferred<[TotalSearch.TotalSearchResult](../../be.zvz.kotlininside.api.generic/-total-search/-total-search-result/index.html)>
+Deferred&lt;[TotalSearch.TotalSearchResult](../../be.zvz.kotlininside.api.generic/-total-search/-total-search-result/index.html)
+&gt;
 
 
 

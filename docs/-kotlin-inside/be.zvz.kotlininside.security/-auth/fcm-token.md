@@ -1,14 +1,16 @@
 ---
 title: fcmToken
 ---
-//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.security](../index.html)/[Auth](index.html)
-/[fcmToken](fcm-token.html)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.security](../index.html)/[Auth](index.html)/[fcmToken](fcm-token.html)
+
+
 
 # fcmToken
 
+
+
 [jvm]\
-lateinit
-var [fcmToken](fcm-token.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
+lateinit var [fcmToken](fcm-token.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
 
 

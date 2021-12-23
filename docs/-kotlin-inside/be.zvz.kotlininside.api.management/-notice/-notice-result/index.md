@@ -1,18 +1,21 @@
 ---
 title: NoticeResult
 ---
-//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.management](../../index.html)/[Notice](../index.html)
-/[NoticeResult](index.html)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.management](../../index.html)/[Notice](../index.html)/[NoticeResult](index.html)
+
+
 
 # NoticeResult
 
+
+
 [jvm]\
-data class [NoticeResult](index.html)(**
-result**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), **
-cause**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
-state**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+data class [NoticeResult](index.html)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), state: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+
+
 
 ## Properties
+
 
 | Name | Summary |
 |---|---|

@@ -1,21 +1,21 @@
 ---
 title: RankingItem
 ---
-//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)
-/[GalleryRanking](../index.html)/[RankingItem](index.html)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)/[GalleryRanking](../index.html)/[RankingItem](index.html)
+
+
 
 # RankingItem
 
+
+
 [jvm]\
-data class [RankingItem](index.html)(**
-gallLink**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
-gallId**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
-gallName**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
-rankType**: [GalleryRanking.RankType](../-rank-type/index.html), **
-rank**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **
-rankUpdown**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))
+data class [RankingItem](index.html)(gallLink: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), gallName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), rankType: [GalleryRanking.RankType](../-rank-type/index.html), rank: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), rankUpdown: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))
+
+
 
 ## Properties
+
 
 | Name | Summary |
 |---|---|

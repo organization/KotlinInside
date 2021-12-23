@@ -8,9 +8,10 @@ title: joinAsync
 
 [jvm]\
 suspend fun [joinAsync](join-async.html)():
-Deferred<[Pair](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html)<[JoinMiniGallery.MemberJoinResult](
+Deferred&lt;[Pair](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html)&lt;[JoinMiniGallery.MemberJoinResult](
 ../../be.zvz.kotlininside.api.generic.minigallery/-join-mini-gallery/-member-join-result/index.html)
-, [JoinMiniGallery.MemberJoinOkResult](../../be.zvz.kotlininside.api.generic.minigallery/-join-mini-gallery/-member-join-ok-result/index.html)>>
+, [JoinMiniGallery.MemberJoinOkResult](../../be.zvz.kotlininside.api.generic.minigallery/-join-mini-gallery/-member-join-ok-result/index.html)
+&gt;&gt;
 
 
 

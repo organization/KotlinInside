@@ -1,21 +1,33 @@
 ---
 title: getLink
 ---
-//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.management](../index.html)/[UserBlock](index.html)
-/[getLink](get-link.html)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.management](../index.html)/[UserBlock](index.html)/[getLink](get-link.html)
+
+
 
 # getLink
+
+
 
 [jvm]\
 fun [getLink](get-link.html)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
+
+
 갤러리 유저 차단 링크를 반환합니다.
+
+
 
 #### Return
 
+
+
 갤러리 유저 차단 URL을 반환합니다.
 
-#### Throws
+
+
+## Throws
+
 
 | | |
 |---|---|

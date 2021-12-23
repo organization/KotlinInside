@@ -1,20 +1,21 @@
 ---
 title: AppCheck
 ---
-//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.security](../../index.html)/[Auth](../index.html)
-/[AppCheck](index.html)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.security](../../index.html)/[Auth](../index.html)/[AppCheck](index.html)
+
+
 
 # AppCheck
 
+
+
 [jvm]\
-data class [AppCheck](index.html)(**
-result**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), **
-version**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, **
-notice**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)?, **
-noticeUpdate**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)?, **
-date**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?)
+data class [AppCheck](index.html)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), version: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, notice: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)?, noticeUpdate: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)?, date: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?)
+
+
 
 ## Properties
+
 
 | Name | Summary |
 |---|---|

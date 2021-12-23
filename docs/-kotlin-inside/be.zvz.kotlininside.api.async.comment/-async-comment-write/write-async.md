@@ -8,7 +8,8 @@ title: writeAsync
 
 [jvm]\
 suspend fun [writeAsync](write-async.html)():
-Deferred<[CommentWrite.WriteResult](../../be.zvz.kotlininside.api.comment/-comment-write/-write-result/index.html)>
+Deferred&lt;[CommentWrite.WriteResult](../../be.zvz.kotlininside.api.comment/-comment-write/-write-result/index.html)
+&gt;
 
 
 

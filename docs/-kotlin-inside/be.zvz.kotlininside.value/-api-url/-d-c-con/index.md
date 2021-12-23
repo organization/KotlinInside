@@ -1,15 +1,21 @@
 ---
 title: DCCon
 ---
-//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)
-/[DCCon](index.html)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)/[DCCon](index.html)
+
+
 
 # DCCon
+
+
 
 [jvm]\
 object [DCCon](index.html)
 
+
+
 ## Properties
+
 
 | Name | Summary |
 |---|---|

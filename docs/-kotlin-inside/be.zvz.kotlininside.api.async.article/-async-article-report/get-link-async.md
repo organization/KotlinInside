@@ -8,7 +8,7 @@ title: getLinkAsync
 
 [jvm]\
 suspend fun [getLinkAsync](get-link-async.html)():
-Deferred<[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)>
+Deferred&lt;[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)&gt;
 
 
 

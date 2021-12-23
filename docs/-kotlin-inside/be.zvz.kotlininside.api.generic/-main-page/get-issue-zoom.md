@@ -1,18 +1,25 @@
 ---
 title: getIssueZoom
 ---
-//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.generic](../index.html)/[MainPage](index.html)
-/[getIssueZoom](get-issue-zoom.html)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.generic](../index.html)/[MainPage](index.html)/[getIssueZoom](get-issue-zoom.html)
+
+
 
 # getIssueZoom
 
+
+
 [jvm]\
-fun [getIssueZoom](get-issue-zoom.html)(): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[MainPage.Article](
--article/index.html)>
+fun [getIssueZoom](get-issue-zoom.html)(): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[MainPage.Article](-article/index.html)&gt;
+
+
 
 메인 화면에 표시되어 있는 이슈줌갤 게시물 목록을 가져옵니다.
 
-#### Throws
+
+
+## Throws
+
 
 | | |
 |---|---|

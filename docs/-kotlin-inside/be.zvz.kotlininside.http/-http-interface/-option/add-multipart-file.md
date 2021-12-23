@@ -1,25 +1,37 @@
 ---
 title: addMultipartFile
 ---
-//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.http](../../index.html)/[HttpInterface](../index.html)
-/[Option](index.html)/[addMultipartFile](add-multipart-file.html)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.http](../../index.html)/[HttpInterface](../index.html)/[Option](index.html)/[addMultipartFile](add-multipart-file.html)
+
+
 
 # addMultipartFile
 
+
+
 [jvm]\
 
-@NotNull()
 
-open fun [addMultipartFile](add-multipart-file.html)(@NotNull()key:
-@NotNull()[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), @NotNull()value:
-@NotNull()[InputStream](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)):
-@NotNull()[HttpInterface.Option](index.html)
+
+
+@NotNull
+
+
+
+open fun [addMultipartFile](add-multipart-file.html)(@NotNullkey: @NotNull[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), @NotNullvalue: @NotNull[InputStream](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)): @NotNull[HttpInterface.Option](index.html)
+
+
 
 #### Return
 
+
+
 this
 
+
+
 ## Parameters
+
 
 jvm
 

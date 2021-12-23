@@ -1,17 +1,21 @@
 ---
 title: DuplicateNamed
 ---
-//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.session.user.named](../index.html)
-/[DuplicateNamed](index.html)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.session.user.named](../index.html)/[DuplicateNamed](index.html)
+
+
 
 # DuplicateNamed
 
+
+
 [jvm]\
-data class [DuplicateNamed](index.html)(**
-id**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
-password**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [LoginUser](../../be.zvz.kotlininside.session.user/-login-user/index.html)
+data class [DuplicateNamed](index.html)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), password: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [LoginUser](../../be.zvz.kotlininside.session.user/-login-user/index.html)
+
+
 
 ## Properties
+
 
 | Name | Summary |
 |---|---|

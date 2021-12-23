@@ -3,17 +3,19 @@ title: DCCon
 ---
 //[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.type](../index.html)/[DCCon](index.html)
 
+
+
 # DCCon
 
+
+
 [jvm]\
-data class [DCCon](index.html)
-@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)()constructor(**packageIndex**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
-, **detailIndex**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **
-imgLink**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
-memo**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
-title**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+data class [DCCon](index.html)@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)constructor(packageIndex: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), detailIndex: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), imgLink: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), memo: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+
+
 
 ## Properties
+
 
 | Name | Summary |
 |---|---|

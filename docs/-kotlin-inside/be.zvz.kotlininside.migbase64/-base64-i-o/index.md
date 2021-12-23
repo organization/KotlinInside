@@ -3,18 +3,29 @@ title: Base64IO
 ---
 //[KotlinInside](../../../index.html)/[be.zvz.kotlininside.migbase64](../index.html)/[Base64IO](index.html)
 
+
+
 # Base64IO
+
+
 
 [jvm]\
 open class [Base64IO](index.html)
 
 Base64 for InputStream Licence = BSD
 
+
+
 #### Author
+
+
 
 shamilbi shamilbi@users.sourceforge.net
 
+
+
 ## See also
+
 
 jvm
 
@@ -22,7 +33,10 @@ jvm
 |---|---|
 | [be.zvz.kotlininside.migbase64.Base64](../-base64/index.html) |  |
 
+
+
 ## Functions
+
 
 | Name | Summary |
 |---|---|

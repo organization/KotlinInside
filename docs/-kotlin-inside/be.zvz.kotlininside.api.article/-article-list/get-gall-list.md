@@ -7,14 +7,14 @@ title: getGallList
 # getGallList
 
 [jvm]\
-fun [getGallList](get-gall-list.html)(): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[ArticleList.GallList](
--gall-list/index.html)>
+fun [getGallList](get-gall-list.html)(): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[ArticleList.GallList](
+-gall-list/index.html)&gt;
 
 #### Return
 
 [be.zvz.kotlininside.api.article.ArticleList.GallList](-gall-list/index.html) 목록들을 반환합니다.
 
-#### Throws
+## Throws
 
 | | |
 |---|---|

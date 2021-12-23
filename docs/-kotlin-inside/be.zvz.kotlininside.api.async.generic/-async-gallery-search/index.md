@@ -7,12 +7,12 @@ title: AsyncGallerySearch
 # AsyncGallerySearch
 
 [jvm]\
-class [AsyncGallerySearch](index.html)(**
-keyword**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+class [AsyncGallerySearch](index.html)(
+keyword: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
 
 ## Functions
 
 | Name | Summary |
 |---|---|
-| [searchAsync](search-async.html) | [jvm]<br>suspend fun [searchAsync](search-async.html)(): Deferred<[GallerySearch.GallerySearchResult](../../be.zvz.kotlininside.api.generic/-gallery-search/-gallery-search-result/index.html)> |
+| [searchAsync](search-async.html) | [jvm]<br>suspend fun [searchAsync](search-async.html)(): Deferred&lt;[GallerySearch.GallerySearchResult](../../be.zvz.kotlininside.api.generic/-gallery-search/-gallery-search-result/index.html)&gt; |
 

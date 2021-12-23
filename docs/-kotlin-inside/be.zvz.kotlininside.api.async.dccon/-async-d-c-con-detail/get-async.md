@@ -8,7 +8,8 @@ title: getAsync
 
 [jvm]\
 suspend fun [getAsync](get-async.html)():
-Deferred<[DCConDetail.DetailResult](../../be.zvz.kotlininside.api.dccon/-d-c-con-detail/-detail-result/index.html)>
+Deferred&lt;[DCConDetail.DetailResult](../../be.zvz.kotlininside.api.dccon/-d-c-con-detail/-detail-result/index.html)
+&gt;
 
 
 

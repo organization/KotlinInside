@@ -3,13 +3,19 @@ title: App
 ---
 //[KotlinInside](../../../index.html)/[be.zvz.kotlininside.security](../index.html)/[App](index.html)
 
+
+
 # App
 
+
+
 [jvm]\
-data class [App](index.html)(**token**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
-, **id**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+data class [App](index.html)(token: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+
+
 
 ## Properties
+
 
 | Name | Summary |
 |---|---|

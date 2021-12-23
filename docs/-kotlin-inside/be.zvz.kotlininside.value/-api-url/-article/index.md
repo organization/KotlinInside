@@ -1,15 +1,21 @@
 ---
 title: Article
 ---
-//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)
-/[Article](index.html)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)/[Article](index.html)
+
+
 
 # Article
+
+
 
 [jvm]\
 object [Article](index.html)
 
+
+
 ## Properties
+
 
 | Name | Summary |
 |---|---|

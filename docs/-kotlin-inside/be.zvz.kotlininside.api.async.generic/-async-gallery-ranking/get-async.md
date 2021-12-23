@@ -8,8 +8,8 @@ title: getAsync
 
 [jvm]\
 suspend fun [getAsync](get-async.html)():
-Deferred<[List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[GalleryRanking.RankingItem](
-../../be.zvz.kotlininside.api.generic/-gallery-ranking/-ranking-item/index.html)>>
+Deferred&lt;[List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[GalleryRanking.RankingItem](
+../../be.zvz.kotlininside.api.generic/-gallery-ranking/-ranking-item/index.html)&gt;&gt;
 
 
 

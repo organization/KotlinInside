@@ -7,8 +7,8 @@ title: content
 # content
 
 [jvm]\
-val [content](content.html): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[Content](
-../../../be.zvz.kotlininside.api.type.content/-content/index.html)>
+val [content](content.html): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Content](
+../../../be.zvz.kotlininside.api.type.content/-content/index.html)&gt;
 
 
 

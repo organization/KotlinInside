@@ -8,7 +8,7 @@ title: getAsync
 
 [jvm]\
 suspend fun [getAsync](get-async.html)():
-Deferred<[CommentRead.ReadResult](../../be.zvz.kotlininside.api.comment/-comment-read/-read-result/index.html)>
+Deferred&lt;[CommentRead.ReadResult](../../be.zvz.kotlininside.api.comment/-comment-read/-read-result/index.html)&gt;
 
 
 

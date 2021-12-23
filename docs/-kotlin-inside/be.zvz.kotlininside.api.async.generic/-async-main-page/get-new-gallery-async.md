@@ -8,8 +8,8 @@ title: getNewGalleryAsync
 
 [jvm]\
 suspend fun [getNewGalleryAsync](get-new-gallery-async.html)():
-Deferred<[List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[MainPage.NewGallery](
-../../be.zvz.kotlininside.api.generic/-main-page/-new-gallery/index.html)>>
+Deferred&lt;[List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[MainPage.NewGallery](
+../../be.zvz.kotlininside.api.generic/-main-page/-new-gallery/index.html)&gt;&gt;
 
 
 

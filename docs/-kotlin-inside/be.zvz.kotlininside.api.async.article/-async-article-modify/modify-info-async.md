@@ -8,7 +8,8 @@ title: modifyInfoAsync
 
 [jvm]\
 suspend fun [modifyInfoAsync](modify-info-async.html)():
-Deferred<[ArticleModify.ModifyResult](../../be.zvz.kotlininside.api.article/-article-modify/-modify-result/index.html)>
+Deferred&lt;[ArticleModify.ModifyResult](../../be.zvz.kotlininside.api.article/-article-modify/-modify-result/index.html)
+&gt;
 
 
 

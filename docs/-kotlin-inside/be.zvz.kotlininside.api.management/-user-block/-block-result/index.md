@@ -1,17 +1,21 @@
 ---
 title: BlockResult
 ---
-//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.management](../../index.html)
-/[UserBlock](../index.html)/[BlockResult](index.html)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.management](../../index.html)/[UserBlock](../index.html)/[BlockResult](index.html)
+
+
 
 # BlockResult
 
+
+
 [jvm]\
-data class [BlockResult](index.html)(**
-result**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), **
-cause**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+data class [BlockResult](index.html)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+
+
 
 ## Properties
+
 
 | Name | Summary |
 |---|---|

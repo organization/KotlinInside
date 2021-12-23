@@ -1,15 +1,21 @@
 ---
 title: Comment
 ---
-//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)
-/[Comment](index.html)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)/[Comment](index.html)
+
+
 
 # Comment
+
+
 
 [jvm]\
 object [Comment](index.html)
 
+
+
 ## Properties
+
 
 | Name | Summary |
 |---|---|

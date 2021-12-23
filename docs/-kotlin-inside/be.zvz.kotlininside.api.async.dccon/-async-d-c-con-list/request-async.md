@@ -8,7 +8,7 @@ title: requestAsync
 
 [jvm]\
 suspend fun [requestAsync](request-async.html)():
-Deferred<[DCConList.ListResult](../../be.zvz.kotlininside.api.dccon/-d-c-con-list/-list-result/index.html)>
+Deferred&lt;[DCConList.ListResult](../../be.zvz.kotlininside.api.dccon/-d-c-con-list/-list-result/index.html)&gt;
 
 
 

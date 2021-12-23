@@ -1,25 +1,33 @@
 ---
 title: encodeBytesToBytes
 ---
-//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.http](../../index.html)/[HttpRequest](../index.html)
-/[Base64](index.html)/[encodeBytesToBytes](encode-bytes-to-bytes.html)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.http](../../index.html)/[HttpRequest](../index.html)/[Base64](index.html)/[encodeBytesToBytes](encode-bytes-to-bytes.html)
+
+
 
 # encodeBytesToBytes
 
-[jvm]\
-open fun [encodeBytesToBytes](encode-bytes-to-bytes.html)(
-source: [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)>
-, off: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html),
-len: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)>
 
-Similar to [encodeBytes](encode-bytes.html) but returns a byte array instead of instantiating a String. This is more
-efficient if you're working with I/O streams and have large data sets to encode.
+
+[jvm]\
+open fun [encodeBytesToBytes](encode-bytes-to-bytes.html)(source: [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)&lt;[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)&gt;, off: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), len: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)&lt;[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)&gt;
+
+
+
+Similar to [encodeBytes](encode-bytes.html) but returns a byte array instead of instantiating a String. This is more efficient if you're working with I/O streams and have large data sets to encode.
+
+
 
 #### Return
 
+
+
 The Base64-encoded data as a String if there is an error
 
+
+
 ## Parameters
+
 
 jvm
 
@@ -29,7 +37,10 @@ jvm
 | off | Offset in array where conversion should begin |
 | len | Length of data to convert |
 
-#### Throws
+
+
+## Throws
+
 
 | | |
 |---|---|

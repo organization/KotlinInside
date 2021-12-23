@@ -7,14 +7,14 @@ title: AsyncArticleHitUpvote
 # AsyncArticleHitUpvote
 
 [jvm]\
-class [AsyncArticleHitUpvote](index.html)(**
-gallId**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
-articleId**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **
-session**: [Session](../../be.zvz.kotlininside.session/-session/index.html))
+class [AsyncArticleHitUpvote](index.html)(
+gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
+articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html),
+session: [Session](../../be.zvz.kotlininside.session/-session/index.html))
 
 ## Functions
 
 | Name | Summary |
 |---|---|
-| [upvoteAsync](upvote-async.html) | [jvm]<br>suspend fun [upvoteAsync](upvote-async.html)(): Deferred<[ArticleHitUpvote.HitUpvoteResult](../../be.zvz.kotlininside.api.article/-article-hit-upvote/-hit-upvote-result/index.html)> |
+| [upvoteAsync](upvote-async.html) | [jvm]<br>suspend fun [upvoteAsync](upvote-async.html)(): Deferred&lt;[ArticleHitUpvote.HitUpvoteResult](../../be.zvz.kotlininside.api.article/-article-hit-upvote/-hit-upvote-result/index.html)&gt; |
 

@@ -1,18 +1,21 @@
 ---
 title: Gallery
 ---
-//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic.userinfo](../../index.html)
-/[CheckJoinedMiniGallery](../index.html)/[Gallery](index.html)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic.userinfo](../../index.html)/[CheckJoinedMiniGallery](../index.html)/[Gallery](index.html)
+
+
 
 # Gallery
 
+
+
 [jvm]\
-data class [Gallery](index.html)(**
-title**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
-id**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
-hide**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))
+data class [Gallery](index.html)(title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), hide: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))
+
+
 
 ## Properties
+
 
 | Name | Summary |
 |---|---|

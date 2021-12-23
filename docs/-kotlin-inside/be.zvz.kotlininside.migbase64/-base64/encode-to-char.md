@@ -1,24 +1,33 @@
 ---
 title: encodeToChar
 ---
-//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.migbase64](../index.html)/[Base64](index.html)
-/[encodeToChar](encode-to-char.html)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.migbase64](../index.html)/[Base64](index.html)/[encodeToChar](encode-to-char.html)
+
+
 
 # encodeToChar
 
+
+
 [jvm]\
-fun [encodeToChar](encode-to-char.html)(
-sArr: [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)>
-,
-lineSep: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)): [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<[Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)>
+fun [encodeToChar](encode-to-char.html)(sArr: [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)&lt;[Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)&gt;, lineSep: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)): [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)&lt;[Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)&gt;
+
+
 
 Encodes a raw byte array into a BASE64 char[] representation i accordance with RFC 2045.
 
+
+
 #### Return
+
+
 
 A BASE64 encoded array. Never null.
 
+
+
 ## Parameters
+
 
 jvm
 

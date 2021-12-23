@@ -1,15 +1,21 @@
 ---
 title: MiniGallery
 ---
-//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)
-/[MiniGallery](index.html)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)/[MiniGallery](index.html)
+
+
 
 # MiniGallery
+
+
 
 [jvm]\
 object [MiniGallery](index.html)
 
+
+
 ## Properties
+
 
 | Name | Summary |
 |---|---|
