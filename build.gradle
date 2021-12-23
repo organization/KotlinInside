@@ -1,5 +1,3 @@
-import org.jmailen.gradle.kotlinter.tasks.*
-
 plugins {
     id 'java'
     id 'org.jetbrains.kotlin.jvm' version '1.6.10'
@@ -10,10 +8,12 @@ plugins {
     id 'org.jmailen.kotlinter' version '3.8.0'
 }
 
-def libName = 'KotlinInside'
-def libDevVersion = ''
-def libVersion = "1.10.2$libDevVersion"
-def libDesc = 'Unofficial DCInside API written in Kotlin'
+boolean isDev = false
+
+String libName = 'KotlinInside'
+String libDevVersion = isDev ? '-SNAPSHOT' : ''
+String libVersion = "1.10.2$libDevVersion"
+String libDesc = 'Unofficial DCInside API written in Kotlin'
 
 group = 'be.zvz'
 version = libVersion
