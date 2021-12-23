@@ -7,8 +7,8 @@ title: FileData
 # FileData
 
 [jvm]\
-data class [FileData](index.html)(**block**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
-, **fileSize**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))
+data class [FileData](index.html)(block: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html),
+fileSize: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))
 
 ## Properties
 

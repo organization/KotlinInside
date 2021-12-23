@@ -1,15 +1,21 @@
 ---
 title: Installations
 ---
-//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[Const](../index.html)
-/[Installations](index.html)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[Const](../index.html)/[Installations](index.html)
+
+
 
 # Installations
+
+
 
 [jvm]\
 object [Installations](index.html)
 
+
+
 ## Properties
+
 
 | Name | Summary |
 |---|---|

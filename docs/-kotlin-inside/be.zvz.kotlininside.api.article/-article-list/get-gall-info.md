@@ -13,7 +13,7 @@ fun [getGallInfo](get-gall-info.html)(): [ArticleList.GallInfo](-gall-info/index
 
 [be.zvz.kotlininside.api.article.ArticleList.GallInfo](-gall-info/index.html) gall_info 객체를 반환합니다.
 
-#### Throws
+## Throws
 
 | | |
 |---|---|

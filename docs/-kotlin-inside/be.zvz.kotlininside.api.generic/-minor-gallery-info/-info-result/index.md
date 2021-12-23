@@ -1,28 +1,21 @@
 ---
 title: InfoResult
 ---
-//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)
-/[MinorGalleryInfo](../index.html)/[InfoResult](index.html)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic](../../index.html)/[MinorGalleryInfo](../index.html)/[InfoResult](index.html)
+
+
 
 # InfoResult
 
+
+
 [jvm]\
-data class [InfoResult](index.html)(**
-id**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
-koName**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
-image**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, **
-description**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, **
-manager**: [MinorGalleryInfo.Manager](../-manager/index.html), **
-subManager**: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[MinorGalleryInfo.Manager](
-../-manager/index.html)>, **
-createDate**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
-new**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), **
-hotState**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
-totalCount**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
-categoryName**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
-mini**: [MinorGalleryInfo.MiniGalleryInfo](../-mini-gallery-info/index.html)?)
+data class [InfoResult](index.html)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), koName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), image: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, description: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, manager: [MinorGalleryInfo.Manager](../-manager/index.html), subManager: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[MinorGalleryInfo.Manager](../-manager/index.html)&gt;, createDate: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), new: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), hotState: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), totalCount: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), categoryName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), mini: [MinorGalleryInfo.MiniGalleryInfo](../-mini-gallery-info/index.html)?)
+
+
 
 ## Properties
+
 
 | Name | Summary |
 |---|---|
@@ -36,6 +29,6 @@ mini**: [MinorGalleryInfo.MiniGalleryInfo](../-mini-gallery-info/index.html)?)
 | [manager](manager.html) | [jvm]<br>val [manager](manager.html): [MinorGalleryInfo.Manager](../-manager/index.html) |
 | [mini](mini.html) | [jvm]<br>val [mini](mini.html): [MinorGalleryInfo.MiniGalleryInfo](../-mini-gallery-info/index.html)? = null |
 | [new](new.html) | [jvm]<br>val [new](new.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
-| [subManager](sub-manager.html) | [jvm]<br>val [subManager](sub-manager.html): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[MinorGalleryInfo.Manager](../-manager/index.html)> |
+| [subManager](sub-manager.html) | [jvm]<br>val [subManager](sub-manager.html): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[MinorGalleryInfo.Manager](../-manager/index.html)&gt; |
 | [totalCount](total-count.html) | [jvm]<br>val [totalCount](total-count.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 

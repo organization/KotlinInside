@@ -3,14 +3,19 @@ title: Gallery
 ---
 //[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.type](../index.html)/[Gallery](index.html)
 
+
+
 # Gallery
 
+
+
 [jvm]\
-data class [Gallery](index.html)(**
-title**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
-id**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+data class [Gallery](index.html)(title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+
+
 
 ## Properties
+
 
 | Name | Summary |
 |---|---|

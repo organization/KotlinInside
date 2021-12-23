@@ -1,15 +1,21 @@
 ---
 title: MainInfo
 ---
-//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)
-/[MainInfo](index.html)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)/[MainInfo](index.html)
+
+
 
 # MainInfo
+
+
 
 [jvm]\
 object [MainInfo](index.html)
 
+
+
 ## Properties
+
 
 | Name | Summary |
 |---|---|

@@ -8,7 +8,8 @@ title: requestMemberJoinAsync
 
 [jvm]\
 suspend fun [requestMemberJoinAsync](request-member-join-async.html)():
-Deferred<[JoinMiniGallery.MemberJoinResult](../../be.zvz.kotlininside.api.generic.minigallery/-join-mini-gallery/-member-join-result/index.html)>
+Deferred&lt;[JoinMiniGallery.MemberJoinResult](../../be.zvz.kotlininside.api.generic.minigallery/-join-mini-gallery/-member-join-result/index.html)
+&gt;
 
 
 

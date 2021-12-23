@@ -8,7 +8,7 @@ title: modify
 
 [jvm]\
 
-@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)()
+@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)
 
 fun [modify](modify.html)(article: [Article](../../be.zvz.kotlininside.api.type/-article/index.html),
 fcmToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) = "

@@ -8,7 +8,8 @@ title: upvoteAsync
 
 [jvm]\
 suspend fun [upvoteAsync](upvote-async.html)():
-Deferred<[ArticleHitUpvote.HitUpvoteResult](../../be.zvz.kotlininside.api.article/-article-hit-upvote/-hit-upvote-result/index.html)>
+Deferred&lt;[ArticleHitUpvote.HitUpvoteResult](../../be.zvz.kotlininside.api.article/-article-hit-upvote/-hit-upvote-result/index.html)
+&gt;
 
 
 

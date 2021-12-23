@@ -8,7 +8,7 @@ title: downvoteAsync
 
 [jvm]\
 suspend fun [downvoteAsync](downvote-async.html)():
-Deferred<[ArticleVote.VoteResult](../../be.zvz.kotlininside.api.article/-article-vote/-vote-result/index.html)>
+Deferred&lt;[ArticleVote.VoteResult](../../be.zvz.kotlininside.api.article/-article-vote/-vote-result/index.html)&gt;
 
 
 

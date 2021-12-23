@@ -8,7 +8,8 @@ title: deleteAsync
 
 [jvm]\
 suspend fun [deleteAsync](delete-async.html)():
-Deferred<[ArticleDelete.DeleteResult](../../be.zvz.kotlininside.api.article/-article-delete/-delete-result/index.html)>
+Deferred&lt;[ArticleDelete.DeleteResult](../../be.zvz.kotlininside.api.article/-article-delete/-delete-result/index.html)
+&gt;
 
 
 

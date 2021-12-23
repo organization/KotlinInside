@@ -1,15 +1,21 @@
 ---
 title: PlayService
 ---
-//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)
-/[PlayService](index.html)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)/[PlayService](index.html)
+
+
 
 # PlayService
+
+
 
 [jvm]\
 object [PlayService](index.html)
 
+
+
 ## Properties
+
 
 | Name | Summary |
 |---|---|

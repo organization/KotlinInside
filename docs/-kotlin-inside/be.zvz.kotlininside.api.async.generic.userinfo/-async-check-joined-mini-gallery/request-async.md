@@ -8,7 +8,8 @@ title: requestAsync
 
 [jvm]\
 suspend fun [requestAsync](request-async.html)():
-Deferred<[CheckJoinedMiniGallery.CheckResult](../../be.zvz.kotlininside.api.generic.userinfo/-check-joined-mini-gallery/-check-result/index.html)>
+Deferred&lt;[CheckJoinedMiniGallery.CheckResult](../../be.zvz.kotlininside.api.generic.userinfo/-check-joined-mini-gallery/-check-result/index.html)
+&gt;
 
 
 

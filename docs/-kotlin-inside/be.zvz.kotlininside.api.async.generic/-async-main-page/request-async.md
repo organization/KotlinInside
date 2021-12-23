@@ -8,7 +8,7 @@ title: requestAsync
 
 [jvm]\
 suspend fun [requestAsync](request-async.html)():
-Deferred<[Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)>
+Deferred&lt;[Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)&gt;
 
 
 

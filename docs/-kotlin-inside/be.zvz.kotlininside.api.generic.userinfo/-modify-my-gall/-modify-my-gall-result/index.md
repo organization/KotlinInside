@@ -1,17 +1,21 @@
 ---
 title: ModifyMyGallResult
 ---
-//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic.userinfo](../../index.html)
-/[ModifyMyGall](../index.html)/[ModifyMyGallResult](index.html)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic.userinfo](../../index.html)/[ModifyMyGall](../index.html)/[ModifyMyGallResult](index.html)
+
+
 
 # ModifyMyGallResult
 
+
+
 [jvm]\
-data class [ModifyMyGallResult](index.html)(**
-result**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), **
-cause**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+data class [ModifyMyGallResult](index.html)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+
+
 
 ## Properties
+
 
 | Name | Summary |
 |---|---|

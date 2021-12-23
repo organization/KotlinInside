@@ -1,17 +1,25 @@
 ---
 title: request
 ---
-//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.comment](../index.html)/[CommentRead](index.html)
-/[request](request.html)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.comment](../index.html)/[CommentRead](index.html)/[request](request.html)
+
+
 
 # request
+
+
 
 [jvm]\
 fun [request](request.html)(): [CommentRead.ReadResult](-read-result/index.html)
 
+
+
 댓글 데이터를 읽어옵니다.
 
-#### Throws
+
+
+## Throws
+
 
 | | |
 |---|---|

@@ -1,15 +1,21 @@
 ---
 title: BlockOption
 ---
-//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.management](../../index.html)
-/[UserBlock](../index.html)/[BlockOption](index.html)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.management](../../index.html)/[UserBlock](../index.html)/[BlockOption](index.html)
+
+
 
 # BlockOption
+
+
 
 [jvm]\
 class [BlockOption](index.html)
 
+
+
 ## Properties
+
 
 | Name | Summary |
 |---|---|

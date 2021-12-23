@@ -8,7 +8,7 @@ title: buyAsync
 
 [jvm]\
 suspend fun [buyAsync](buy-async.html)():
-Deferred<[DCConBuy.BuyResult](../../be.zvz.kotlininside.api.dccon/-d-c-con-buy/-buy-result/index.html)>
+Deferred&lt;[DCConBuy.BuyResult](../../be.zvz.kotlininside.api.dccon/-d-c-con-buy/-buy-result/index.html)&gt;
 
 
 

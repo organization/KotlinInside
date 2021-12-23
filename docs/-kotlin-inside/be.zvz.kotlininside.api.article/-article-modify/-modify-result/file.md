@@ -7,8 +7,8 @@ title: file
 # file
 
 [jvm]\
-val [file](file.html): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[ArticleModify.FileData](
-../-file-data/index.html)>
+val [file](file.html): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[ArticleModify.FileData](
+../-file-data/index.html)&gt;
 
 
 

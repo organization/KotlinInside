@@ -1,15 +1,21 @@
 ---
 title: Auth
 ---
-//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)
-/[Auth](index.html)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)/[Auth](index.html)
+
+
 
 # Auth
+
+
 
 [jvm]\
 object [Auth](index.html)
 
+
+
 ## Properties
+
 
 | Name | Summary |
 |---|---|

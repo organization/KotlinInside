@@ -8,8 +8,8 @@ title: getGallListAsync
 
 [jvm]\
 suspend fun [getGallListAsync](get-gall-list-async.html)():
-Deferred<[List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[ArticleList.GallList](
-../../be.zvz.kotlininside.api.article/-article-list/-gall-list/index.html)>>
+Deferred&lt;[List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[ArticleList.GallList](
+../../be.zvz.kotlininside.api.article/-article-list/-gall-list/index.html)&gt;&gt;
 
 
 

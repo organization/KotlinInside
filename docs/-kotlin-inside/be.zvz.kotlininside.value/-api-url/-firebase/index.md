@@ -1,15 +1,21 @@
 ---
 title: Firebase
 ---
-//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)
-/[Firebase](index.html)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)/[Firebase](index.html)
+
+
 
 # Firebase
+
+
 
 [jvm]\
 object [Firebase](index.html)
 
+
+
 ## Properties
+
 
 | Name | Summary |
 |---|---|

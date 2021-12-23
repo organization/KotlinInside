@@ -11,7 +11,7 @@ fun [downvote](downvote.html)(): [ArticleVote.VoteResult](-vote-result/index.htm
 
 글을 비추천합니다.
 
-#### Throws
+## Throws
 
 | | |
 |---|---|

@@ -1,22 +1,33 @@
 ---
 title: request
 ---
-//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.generic](../index.html)/[GalleryRanking](index.html)
-/[request](request.html)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.generic](../index.html)/[GalleryRanking](index.html)/[request](request.html)
+
+
 
 # request
 
+
+
 [jvm]\
-fun [request](request.html)(): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[GalleryRanking.RankingItem](
--ranking-item/index.html)>
+fun [request](request.html)(): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[GalleryRanking.RankingItem](-ranking-item/index.html)&gt;
+
+
 
 정식 갤러리 랭킹을 불러옵니다.
 
+
+
 #### Return
+
+
 
 정식 갤러리 랭킹을 반환합니다.
 
-#### Throws
+
+
+## Throws
+
 
 | | |
 |---|---|

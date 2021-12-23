@@ -11,7 +11,7 @@ fun [write](write.html)(): [ArticleWrite.WriteResult](-write-result/index.html)
 
 글을 작성합니다.
 
-#### Throws
+## Throws
 
 | | |
 |---|---|

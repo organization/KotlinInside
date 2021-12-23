@@ -3,14 +3,19 @@ title: GallerySetting
 ---
 //[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.management](../index.html)/[GallerySetting](index.html)
 
+
+
 # GallerySetting
 
+
+
 [jvm]\
-class [GallerySetting](index.html)(**
-gallId**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
-session**: [Session](../../be.zvz.kotlininside.session/-session/index.html))
+class [GallerySetting](index.html)(gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), session: [Session](../../be.zvz.kotlininside.session/-session/index.html))
+
+
 
 ## Functions
+
 
 | Name | Summary |
 |---|---|

@@ -7,12 +7,12 @@ title: ViewMain
 # ViewMain
 
 [jvm]\
-data class [ViewMain](index.html)(**
-content**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
-upvote**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **
-upvoteMember**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **
-downvote**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **
-isManager**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))
+data class [ViewMain](index.html)(
+content: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html),
+upvote: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html),
+upvoteMember: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html),
+downvote: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html),
+isManager: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))
 
 ## Properties
 

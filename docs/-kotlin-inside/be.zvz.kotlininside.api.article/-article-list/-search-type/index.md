@@ -7,8 +7,8 @@ title: SearchType
 # SearchType
 
 [jvm]\
-enum [SearchType](index.html) : [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)<[ArticleList.SearchType](
-index.html)>
+enum [SearchType](index.html) : [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)&lt;[ArticleList.SearchType](
+index.html)&gt;
 
 ## Entries
 
@@ -20,11 +20,12 @@ index.html)>
 | [SUBJECT](-s-u-b-j-e-c-t/index.html) | [jvm]<br>[SUBJECT](-s-u-b-j-e-c-t/index.html)("subject") |
 | [ALL](-a-l-l/index.html) | [jvm]<br>[ALL](-a-l-l/index.html)("all") |
 
+
 ## Properties
 
 | Name | Summary |
 |---|---|
-| [name](index.html#-1453413950%2FProperties%2F863300109) | [jvm]<br>val [name](index.html#-1453413950%2FProperties%2F863300109): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
-| [ordinal](index.html#-1615344068%2FProperties%2F863300109) | [jvm]<br>val [ordinal](index.html#-1615344068%2FProperties%2F863300109): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
+| [name](../../../be.zvz.kotlininside.session.user/-user-type/-a-n-o-n-y-m-o-u-s/index.html#-372974862%2FProperties%2F863300109) | [jvm]<br>val [name](../../../be.zvz.kotlininside.session.user/-user-type/-a-n-o-n-y-m-o-u-s/index.html#-372974862%2FProperties%2F863300109): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [ordinal](../../../be.zvz.kotlininside.session.user/-user-type/-a-n-o-n-y-m-o-u-s/index.html#-739389684%2FProperties%2F863300109) | [jvm]<br>val [ordinal](../../../be.zvz.kotlininside.session.user/-user-type/-a-n-o-n-y-m-o-u-s/index.html#-739389684%2FProperties%2F863300109): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
 | [type](type.html) | [jvm]<br>val [type](type.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 

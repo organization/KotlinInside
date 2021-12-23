@@ -7,12 +7,12 @@ title: AsyncMinorGalleryInfo
 # AsyncMinorGalleryInfo
 
 [jvm]\
-class [AsyncMinorGalleryInfo](index.html)(**
-gallId**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+class [AsyncMinorGalleryInfo](index.html)(
+gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
 
 ## Functions
 
 | Name | Summary |
 |---|---|
-| [getAsync](get-async.html) | [jvm]<br>suspend fun [getAsync](get-async.html)(): Deferred<[MinorGalleryInfo.InfoResult](../../be.zvz.kotlininside.api.generic/-minor-gallery-info/-info-result/index.html)> |
+| [getAsync](get-async.html) | [jvm]<br>suspend fun [getAsync](get-async.html)(): Deferred&lt;[MinorGalleryInfo.InfoResult](../../be.zvz.kotlininside.api.generic/-minor-gallery-info/-info-result/index.html)&gt; |
 

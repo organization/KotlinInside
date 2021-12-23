@@ -1,17 +1,25 @@
 ---
 title: delete
 ---
-//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.comment](../index.html)/[CommentDelete](index.html)
-/[delete](delete.html)
+//[KotlinInside](../../../index.html)/[be.zvz.kotlininside.api.comment](../index.html)/[CommentDelete](index.html)/[delete](delete.html)
+
+
 
 # delete
+
+
 
 [jvm]\
 fun [delete](delete.html)(): [CommentDelete.DeleteResult](-delete-result/index.html)
 
+
+
 댓글을 삭제합니다.
 
-#### Throws
+
+
+## Throws
+
 
 | | |
 |---|---|

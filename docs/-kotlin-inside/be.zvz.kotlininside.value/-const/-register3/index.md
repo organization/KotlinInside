@@ -1,15 +1,21 @@
 ---
 title: Register3
 ---
-//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[Const](../index.html)
-/[Register3](index.html)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[Const](../index.html)/[Register3](index.html)
+
+
 
 # Register3
+
+
 
 [jvm]\
 object [Register3](index.html)
 
+
+
 ## Properties
+
 
 | Name | Summary |
 |---|---|

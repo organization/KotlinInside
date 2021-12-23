@@ -8,7 +8,7 @@ title: getViewMainAsync
 
 [jvm]\
 suspend fun [getViewMainAsync](get-view-main-async.html)():
-Deferred<[ArticleRead.ViewMain](../../be.zvz.kotlininside.api.article/-article-read/-view-main/index.html)>
+Deferred&lt;[ArticleRead.ViewMain](../../be.zvz.kotlininside.api.article/-article-read/-view-main/index.html)&gt;
 
 
 

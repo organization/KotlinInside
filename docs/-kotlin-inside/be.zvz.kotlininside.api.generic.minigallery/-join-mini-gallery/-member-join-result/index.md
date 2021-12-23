@@ -1,17 +1,21 @@
 ---
 title: MemberJoinResult
 ---
-//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic.minigallery](../../index.html)
-/[JoinMiniGallery](../index.html)/[MemberJoinResult](index.html)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.generic.minigallery](../../index.html)/[JoinMiniGallery](../index.html)/[MemberJoinResult](index.html)
+
+
 
 # MemberJoinResult
 
+
+
 [jvm]\
-data class [MemberJoinResult](index.html)(**
-result**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), **
-joinQuestion**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+data class [MemberJoinResult](index.html)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), joinQuestion: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+
+
 
 ## Properties
+
 
 | Name | Summary |
 |---|---|

@@ -8,7 +8,8 @@ title: quitAsync
 
 [jvm]\
 suspend fun [quitAsync](quit-async.html)():
-Deferred<[QuitMiniGallery.MemberQuitResult](../../be.zvz.kotlininside.api.generic.minigallery/-quit-mini-gallery/-member-quit-result/index.html)>
+Deferred&lt;[QuitMiniGallery.MemberQuitResult](../../be.zvz.kotlininside.api.generic.minigallery/-quit-mini-gallery/-member-quit-result/index.html)
+&gt;
 
 
 

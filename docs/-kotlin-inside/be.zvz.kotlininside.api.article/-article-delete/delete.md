@@ -11,7 +11,7 @@ fun [delete](delete.html)(): [ArticleDelete.DeleteResult](-delete-result/index.h
 
 글을 삭제합니다.
 
-#### Throws
+## Throws
 
 | | |
 |---|---|

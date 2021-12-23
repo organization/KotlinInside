@@ -39,8 +39,8 @@ useAutoDelete: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/in
 useListFix: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)?,
 membership: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)?,
 memberGrant: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)?,
-headText: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[HeadText](
-../../../be.zvz.kotlininside.api.type/-head-text/index.html)>,
+headText: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[HeadText](
+../../../be.zvz.kotlininside.api.type/-head-text/index.html)&gt;,
 commentDeleteScope: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))
 
 

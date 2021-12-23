@@ -8,7 +8,7 @@ title: getGallInfoAsync
 
 [jvm]\
 suspend fun [getGallInfoAsync](get-gall-info-async.html)():
-Deferred<[ArticleList.GallInfo](../../be.zvz.kotlininside.api.article/-article-list/-gall-info/index.html)>
+Deferred&lt;[ArticleList.GallInfo](../../be.zvz.kotlininside.api.article/-article-list/-gall-info/index.html)&gt;
 
 
 

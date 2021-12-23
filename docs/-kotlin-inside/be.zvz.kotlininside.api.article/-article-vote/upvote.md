@@ -11,7 +11,7 @@ fun [upvote](upvote.html)(): [ArticleVote.VoteResult](-vote-result/index.html)
 
 글을 추천합니다.
 
-#### Throws
+## Throws
 
 | | |
 |---|---|

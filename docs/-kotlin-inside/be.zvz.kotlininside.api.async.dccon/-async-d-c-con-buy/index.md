@@ -6,12 +6,12 @@ title: AsyncDCConBuy
 # AsyncDCConBuy
 
 [jvm]\
-class [AsyncDCConBuy](index.html)(**dcCon**: [DCCon](../../be.zvz.kotlininside.api.type/-d-c-con/index.html), **
-session**: [Session](../../be.zvz.kotlininside.session/-session/index.html))
+class [AsyncDCConBuy](index.html)(dcCon: [DCCon](../../be.zvz.kotlininside.api.type/-d-c-con/index.html),
+session: [Session](../../be.zvz.kotlininside.session/-session/index.html))
 
 ## Functions
 
 | Name | Summary |
 |---|---|
-| [buyAsync](buy-async.html) | [jvm]<br>suspend fun [buyAsync](buy-async.html)(): Deferred<[DCConBuy.BuyResult](../../be.zvz.kotlininside.api.dccon/-d-c-con-buy/-buy-result/index.html)> |
+| [buyAsync](buy-async.html) | [jvm]<br>suspend fun [buyAsync](buy-async.html)(): Deferred&lt;[DCConBuy.BuyResult](../../be.zvz.kotlininside.api.dccon/-d-c-con-buy/-buy-result/index.html)&gt; |
 

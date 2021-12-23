@@ -8,7 +8,8 @@ title: requestMemberJoinOkAsync
 
 [jvm]\
 suspend fun [requestMemberJoinOkAsync](request-member-join-ok-async.html)():
-Deferred<[JoinMiniGallery.MemberJoinOkResult](../../be.zvz.kotlininside.api.generic.minigallery/-join-mini-gallery/-member-join-ok-result/index.html)>
+Deferred&lt;[JoinMiniGallery.MemberJoinOkResult](../../be.zvz.kotlininside.api.generic.minigallery/-join-mini-gallery/-member-join-ok-result/index.html)
+&gt;
 
 
 

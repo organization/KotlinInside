@@ -1,15 +1,21 @@
 ---
 title: User
 ---
-//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)
-/[User](index.html)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.value](../../index.html)/[ApiUrl](../index.html)/[User](index.html)
+
+
 
 # User
+
+
 
 [jvm]\
 object [User](index.html)
 
+
+
 ## Properties
+
 
 | Name | Summary |
 |---|---|

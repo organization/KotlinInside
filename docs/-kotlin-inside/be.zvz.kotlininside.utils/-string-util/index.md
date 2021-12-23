@@ -3,14 +3,23 @@ title: StringUtil
 ---
 //[KotlinInside](../../../index.html)/[be.zvz.kotlininside.utils](../index.html)/[StringUtil](index.html)
 
+
+
 # StringUtil
 
-[jvm]\
-class [StringUtil](index.html)
 
-## Types
+
+[jvm]\
+object [StringUtil](index.html)
+
+
+
+## Functions
+
 
 | Name | Summary |
 |---|---|
-| [Companion](-companion/index.html) | [jvm]<br>object [Companion](-companion/index.html) |
+| [mdToHtml](md-to-html.html) | [jvm]<br>@[JvmStatic](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-static/index.html)<br>fun [mdToHtml](md-to-html.html)(s: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [toHtml](to-html.html) | [jvm]<br>@[JvmStatic](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-static/index.html)<br>fun [toHtml](to-html.html)(s: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [ynToBoolean](yn-to-boolean.html) | [jvm]<br>@[JvmStatic](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-static/index.html)<br>fun [ynToBoolean](yn-to-boolean.html)(s: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
 

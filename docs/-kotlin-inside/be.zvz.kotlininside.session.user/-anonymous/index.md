@@ -3,14 +3,19 @@ title: Anonymous
 ---
 //[KotlinInside](../../../index.html)/[be.zvz.kotlininside.session.user](../index.html)/[Anonymous](index.html)
 
+
+
 # Anonymous
 
+
+
 [jvm]\
-data class [Anonymous](index.html)(**
-id**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **
-password**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [User](../-user/index.html)
+data class [Anonymous](index.html)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), password: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [User](../-user/index.html)
+
+
 
 ## Properties
+
 
 | Name | Summary |
 |---|---|

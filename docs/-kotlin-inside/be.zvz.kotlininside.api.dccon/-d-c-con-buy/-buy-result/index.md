@@ -1,17 +1,21 @@
 ---
 title: BuyResult
 ---
-//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.dccon](../../index.html)/[DCConBuy](../index.html)
-/[BuyResult](index.html)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.api.dccon](../../index.html)/[DCConBuy](../index.html)/[BuyResult](index.html)
+
+
 
 # BuyResult
 
+
+
 [jvm]\
-data class [BuyResult](index.html)(**
-result**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **
-msg**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+data class [BuyResult](index.html)(result: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), msg: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+
+
 
 ## Properties
+
 
 | Name | Summary |
 |---|---|
