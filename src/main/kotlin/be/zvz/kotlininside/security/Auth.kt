@@ -172,7 +172,7 @@ class Auth {
                         return String(Hex.encodeHex(DigestUtils.sha256("dcArdchk_$time")))
                     }
                 }
-            } catch (e: Exception) {
+            } catch (_: Exception) {
             }
         } else {
             return String(Hex.encodeHex(DigestUtils.sha256("dcArdchk_$time")))
@@ -236,26 +236,33 @@ class Auth {
     @Throws(HttpException::class)
     fun login(user: User): Session {
         if (user !is Anonymous) {
-            val option = HttpInterface.Option()
-                .addBodyParameter("user_id", user.id)
-                .addBodyParameter("user_pw", user.password)
-                .addBodyParameter("mode", "login_normal")
-                .addBodyParameter("client_token", fcmToken)
+            val option = Request.getDefaultOption()
+                .addMultipartParameter("user_id", user.id)
+                .addMultipartParameter("user_pw", user.password)
+                .addMultipartParameter("mode", "login_normal")
+                .addMultipartParameter("client_token", fcmToken)
 
-            val json =
-                JsonBrowser.parse(KotlinInside.getInstance().httpInterface.post(ApiUrl.Auth.LOGIN, option)).index(0)
+            val json = JsonBrowser.parse(
+                KotlinInside.getInstance().httpInterface.upload(
+                    ApiUrl.Auth.LOGIN,
+                    option
+                )
+            ).index(0)
 
             val detail = SessionDetail(
                 result = json.get("result").asBoolean(),
                 userId = json.get("user_id").safeText(),
                 userNo = json.get("user_no").safeText(),
                 name = json.get("name").safeText(),
-                stype = json.get("stype").safeText(),
+                sessionType = json.get("stype").safeText(),
                 isAdult = json.get("is_adult").asInteger(),
                 isDormancy = json.get("is_dormancy").asInteger(),
                 isOtp = json.get("is_otp").asInteger(),
                 pwCampaign = json.get("pw_campaign").asInteger(),
                 mailSend = json.get("mail_send").safeText(),
+                isGonick = json.get("is_gonick").asInteger(),
+                isSecurityCode = json.get("is_security_code").safeText(),
+                authChange = json.get("auth_change").asInteger(),
                 cause = json.get("cause").text(),
             )
 
@@ -263,11 +270,11 @@ class Auth {
                 throw HttpException(401, detail.cause)
             }
 
-            val loginUser = when (detail.stype) {
-                UserType.NAMED.stype -> {
+            val loginUser = when (detail.sessionType) {
+                UserType.NAMED.sessionType -> {
                     Named(user.id, user.password)
                 }
-                UserType.DUPLICATE_NAMED.stype -> {
+                UserType.DUPLICATE_NAMED.sessionType -> {
                     DuplicateNamed(user.id, user.password)
                 }
                 else -> {
