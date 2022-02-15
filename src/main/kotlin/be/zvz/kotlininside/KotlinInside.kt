@@ -13,7 +13,7 @@ class KotlinInside private constructor(
     val httpInterface: HttpInterface,
     private val sessionAutoRefresh: Boolean
 ) {
-    val auth: Auth = Auth()
+    val auth = Auth()
     lateinit var hashedAppKey: String
     lateinit var app: App
     lateinit var session: Session

@@ -16,12 +16,14 @@ import be.zvz.kotlininside.value.ApiUrl
 import be.zvz.kotlininside.value.Const
 import org.apache.commons.codec.binary.Hex
 import org.apache.commons.codec.digest.DigestUtils
-import org.apache.commons.lang3.time.FastDateFormat
+import java.text.SimpleDateFormat
 import java.util.*
 
 class Auth {
     private val seoulTimeZone = TimeZone.getTimeZone("Asia/Seoul")
-    private val refreshDateFormat = FastDateFormat.getInstance("yyyyMMddHH", seoulTimeZone)
+    private val refreshDateFormat = SimpleDateFormat("yyyyMMddHH", Locale.US).apply {
+        timeZone = seoulTimeZone
+    }
     private lateinit var time: String
     private lateinit var formattedTime: String
 
@@ -85,7 +87,7 @@ class Auth {
                 .addBodyParameter("app_ver", Const.DC_APP_VERSION_CODE)
                 .addBodyParameter("cert", Const.Register3.CERT)
         )!!
-        return register3.split("=")[1]
+        return register3.split('=')[1]
     }
 
     /**
@@ -144,15 +146,17 @@ class Auth {
         val dayOfWeek = calendar[Calendar.DAY_OF_WEEK]
         val weekOfYear = calendar[Calendar.WEEK_OF_YEAR]
 
-        return FastDateFormat.getInstance(
+        return SimpleDateFormat(
             "E${dayOfYear - 1}d${getDayOfWeekMonday(dayOfWeek)}${dayOfWeek - 1}${
             String.format(
                 "%02d",
                 weekOfYear
             )
             }MddMM",
-            seoulTimeZone, Locale.US
-        ).format(date)
+            Locale.US
+        ).apply {
+            timeZone = seoulTimeZone
+        }.format(date)
     }
 
     /**
