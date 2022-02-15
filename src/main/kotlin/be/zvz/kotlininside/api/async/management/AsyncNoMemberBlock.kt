@@ -8,9 +8,9 @@ import kotlinx.coroutines.coroutineScope
 import java.util.*
 
 class AsyncNoMemberBlock(
-    private val session: Session,
-    private val gallId: String,
-    private val option: NoMemberBlock.BlockOption = NoMemberBlock.BlockOption()
+    session: Session,
+    gallId: String,
+    option: NoMemberBlock.BlockOption = NoMemberBlock.BlockOption()
 ) {
     private val noMemberBlock = NoMemberBlock(
         session,
