@@ -7,21 +7,15 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 import java.util.*
 
-class AsyncNoMemberBlock @JvmOverloads constructor(
+class AsyncNoMemberBlock(
     private val session: Session,
     private val gallId: String,
-    private val imgStatus: NoMemberBlock.ImageStatus,
-    private val proxyDate: Date? = null,
-    private val mobileDate: Date? = null,
-    private val imgDate: Date? = null
+    private val option: NoMemberBlock.BlockOption = NoMemberBlock.BlockOption()
 ) {
     private val noMemberBlock = NoMemberBlock(
         session,
         gallId,
-        imgStatus,
-        proxyDate,
-        mobileDate,
-        imgDate
+        option,
     )
 
     suspend fun blockAsync() = coroutineScope {
