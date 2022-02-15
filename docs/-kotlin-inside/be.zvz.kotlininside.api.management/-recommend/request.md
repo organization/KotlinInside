@@ -18,4 +18,20 @@ fun [request](request.html)(): [Recommend.RecommendResult](-recommend-result/ind
 
 
 
+#### Return
+
+
+
+개념글 설정 결과
+
+
+
+## Throws
+
+
+| | |
+|---|---|
+| [be.zvz.kotlininside.exception.InsufficientPermissionException](../../be.zvz.kotlininside.exception/-insufficient-permission-exception/index.html) | 유저 세션이 [Anonymous](../../be.zvz.kotlininside.session.user/-anonymous/index.html)일 경우, 예외를 반환합니다. |
+
+
 

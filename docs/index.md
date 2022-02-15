@@ -32,6 +32,7 @@ title: KotlinInside
 | [be.zvz.kotlininside.api.type](-kotlin-inside/be.zvz.kotlininside.api.type/index.html) |
 | [be.zvz.kotlininside.api.type.comment](-kotlin-inside/be.zvz.kotlininside.api.type.comment/index.html) |
 | [be.zvz.kotlininside.api.type.content](-kotlin-inside/be.zvz.kotlininside.api.type.content/index.html) |
+| [be.zvz.kotlininside.exception](-kotlin-inside/be.zvz.kotlininside.exception/index.html) |
 | [be.zvz.kotlininside.http](-kotlin-inside/be.zvz.kotlininside.http/index.html) |
 | [be.zvz.kotlininside.json](-kotlin-inside/be.zvz.kotlininside.json/index.html) |
 | [be.zvz.kotlininside.migbase64](-kotlin-inside/be.zvz.kotlininside.migbase64/index.html) |

@@ -22,7 +22,7 @@ fun [getLink](get-link.html)(): [String](https://kotlinlang.org/api/latest/jvm/s
 
 
 
-갤러리 관리 페이지 URL을 반환합니다.
+갤러리 관리 페이지 URL
 
 
 
@@ -31,7 +31,7 @@ fun [getLink](get-link.html)(): [String](https://kotlinlang.org/api/latest/jvm/s
 
 | | |
 |---|---|
-| [kotlin.RuntimeException](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-runtime-exception/index.html) | 유저 세션이 [Anonymous](../../be.zvz.kotlininside.session.user/-anonymous/index.html)일 경우, 예외를 반환합니다. |
+| [be.zvz.kotlininside.exception.InsufficientPermissionException](../../be.zvz.kotlininside.exception/-insufficient-permission-exception/index.html) | 유저 세션이 [Anonymous](../../be.zvz.kotlininside.session.user/-anonymous/index.html)일 경우, 예외를 반환합니다. |
 
 
 

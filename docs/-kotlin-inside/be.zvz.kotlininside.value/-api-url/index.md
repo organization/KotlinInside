@@ -41,6 +41,7 @@ object [ApiUrl](index.html)
 | [AUTH_API](-a-u-t-h_-a-p-i.html) | [jvm]<br>const val [AUTH_API](-a-u-t-h_-a-p-i.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [MAIN_API](-m-a-i-n_-a-p-i.html) | [jvm]<br>const val [MAIN_API](-m-a-i-n_-a-p-i.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [MOBILE_WEB](-m-o-b-i-l-e_-w-e-b.html) | [jvm]<br>const val [MOBILE_WEB](-m-o-b-i-l-e_-w-e-b.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [MOBILE_WEB_HTTPS](-m-o-b-i-l-e_-w-e-b_-h-t-t-p-s.html) | [jvm]<br>const val [MOBILE_WEB_HTTPS](-m-o-b-i-l-e_-w-e-b_-h-t-t-p-s.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [PC_WEB](-p-c_-w-e-b.html) | [jvm]<br>const val [PC_WEB](-p-c_-w-e-b.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [REDIRECT](-r-e-d-i-r-e-c-t.html) | [jvm]<br>const val [REDIRECT](-r-e-d-i-r-e-c-t.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [UPLOAD](-u-p-l-o-a-d.html) | [jvm]<br>const val [UPLOAD](-u-p-l-o-a-d.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |

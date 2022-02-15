@@ -24,4 +24,5 @@ object [Gallery](index.html)
 | [MINOR_INFO](-m-i-n-o-r_-i-n-f-o.html) | [jvm]<br>const val [MINOR_INFO](-m-i-n-o-r_-i-n-f-o.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [MINOR_MANAGEMENT](-m-i-n-o-r_-m-a-n-a-g-e-m-e-n-t.html) | [jvm]<br>const val [MINOR_MANAGEMENT](-m-i-n-o-r_-m-a-n-a-g-e-m-e-n-t.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [MINOR_MANAGER_REQUEST](-m-i-n-o-r_-m-a-n-a-g-e-r_-r-e-q-u-e-s-t.html) | [jvm]<br>const val [MINOR_MANAGER_REQUEST](-m-i-n-o-r_-m-a-n-a-g-e-r_-r-e-q-u-e-s-t.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [MINOR_NOMEMBER](-m-i-n-o-r_-n-o-m-e-m-b-e-r.html) | [jvm]<br>const val [MINOR_NOMEMBER](-m-i-n-o-r_-n-o-m-e-m-b-e-r.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 
