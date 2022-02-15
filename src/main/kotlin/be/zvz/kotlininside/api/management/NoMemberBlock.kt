@@ -11,21 +11,30 @@ import java.io.IOException
 import java.text.SimpleDateFormat
 import java.util.*
 
-class NoMemberBlock @JvmOverloads constructor(
+class NoMemberBlock(
     private val session: Session,
     private val gallId: String,
-    private val imgStatus: ImageStatus,
-    private val proxyDate: Date? = null,
-    private val mobileDate: Date? = null,
-    private val imgDate: Date? = null
+    private val option: BlockOption = BlockOption()
 ) {
-    private val dateFormat = SimpleDateFormat("yyyy.MM.dd HH:mm")
+    private val dateFormat by lazy { SimpleDateFormat("yyyy.MM.dd HH:mm") }
 
-    enum class ImageStatus(val status: String) {
+    enum class ImageStatus(val value: String) {
         NONE(""),
+        ANONYMOUS("A"),
         PROXY("P"),
-        MOBILE("M"),
-        BOTH("P,M")
+        CELLULAR("M"),
+        PROXY_AND_CELLULAR("P,M")
+    }
+
+    class BlockOption {
+        val proxy: Date? = null
+        val cellular: Date? = null
+        val image: ImageRestrictionOption? = null
+
+        class ImageRestrictionOption(
+            val time: Date,
+            val type: ImageStatus
+        )
     }
 
     data class BlockResult(
@@ -45,17 +54,17 @@ class NoMemberBlock @JvmOverloads constructor(
                     // proxyDate format = 2022.02.03 20:48(yyyy.MM.dd HH:mm)
                     // proxyDate, mobileDate, imgDate 는 현재시간 + 48시간, 현재시간 + 1시간, 현재시간 + 48시간 을 넘길 수 없습니다.
                     // 시간을 초과하게 되면 자동으로 해제됩니다.
-                    if (proxyDate !== null) {
-                        addBodyParameter("proxyDate", dateFormat.format(proxyDate))
+                    if (option.proxy !== null) {
+                        addBodyParameter("proxyDate", dateFormat.format(option.proxy))
                     }
-                    if (mobileDate !== null) {
-                        addBodyParameter("mobileDate", dateFormat.format(mobileDate))
+                    if (option.proxy !== null) {
+                        addBodyParameter("mobileDate", dateFormat.format(option.cellular))
                     }
-                    if (imgDate !== null) {
-                        addBodyParameter("imgDate", dateFormat.format(imgDate))
-                    }
-                    if (imgStatus != ImageStatus.NONE) {
-                        addBodyParameter("imgStatus", imgStatus.status)
+                    if (option.image !== null) {
+                        addBodyParameter("imgDate", dateFormat.format(option.image.time))
+                        if (option.image.type != ImageStatus.NONE) {
+                            addBodyParameter("imgStatus", option.image.type.value)
+                        }
                     }
                 }
             val json = try {
