@@ -3,6 +3,7 @@ package be.zvz.kotlininside.value
 object ApiUrl {
     const val PC_WEB = Protocol.HTTPS + "gall.dcinside.com/"
     const val MOBILE_WEB = Protocol.HTTP + "m.dcinside.com/"
+    const val MOBILE_WEB_HTTPS = Protocol.HTTPS + "m.dcinside.com/"
     const val APP_API = Protocol.HTTPS + "app.dcinside.com/api/"
     const val AUTH_API = Protocol.HTTPS + "dcid.dcinside.com/join/"
     const val MAIN_API = Protocol.HTTP + "json2.dcinside.com/"
@@ -48,6 +49,7 @@ object ApiUrl {
     object Gallery {
         const val MINOR_INFO = APP_API + "minor_info"
         const val MINOR_MANAGEMENT = PC_WEB + "mgallery/management/mobile"
+        const val MINOR_NOMEMBER = MOBILE_WEB_HTTPS + "management/minor/nomember"
         const val MINOR_MANAGER_REQUEST = APP_API + "_manager_request.php"
         const val MINOR_BLOCK_WEB = APP_API + "minor_avoid"
         const val MINOR_BLOCK_ADD = APP_API + "minor_avoidadd"

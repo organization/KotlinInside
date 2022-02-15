@@ -1,6 +1,7 @@
 package be.zvz.kotlininside.api.management
 
 import be.zvz.kotlininside.KotlinInside
+import be.zvz.kotlininside.exception.InsufficientPermissionException
 import be.zvz.kotlininside.http.Request
 import be.zvz.kotlininside.json.JsonBrowser
 import be.zvz.kotlininside.session.Session
@@ -37,9 +38,10 @@ class UserBlock @JvmOverloads constructor(
         val cause: String
     )
 
+    @Throws(InsufficientPermissionException::class)
     fun block(): BlockResult {
         if (session.user is Anonymous) {
-            throw RuntimeException("Anonymous는 갤러리 유저 차단을 사용할 수 없습니다.")
+            throw InsufficientPermissionException(UserBlock::class)
         }
 
         val requestOption = Request.getDefaultOption()
@@ -63,10 +65,8 @@ class UserBlock @JvmOverloads constructor(
             .addBodyParameter("app_id", KotlinInside.getInstance().auth.getAppId())
             .addBodyParameter("confirm_id", session.detail!!.userId)
 
-        lateinit var json: JsonBrowser
-
-        try {
-            json = JsonBrowser.parse(
+        val json: JsonBrowser = try {
+            JsonBrowser.parse(
                 KotlinInside.getInstance().httpInterface.post(
                     ApiUrl.Gallery.MINOR_BLOCK_ADD,
                     requestOption
