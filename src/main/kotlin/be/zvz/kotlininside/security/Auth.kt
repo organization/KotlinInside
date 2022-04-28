@@ -210,24 +210,21 @@ class Auth {
      * @param hashedAppKey SHA256 단방향 암호화된 value_token 값입니다.
      * @return [java.lang.String] app_id를 반환합니다.
      */
+    @Throws(HttpException::class)
     fun fetchAppId(hashedAppKey: String): String {
         fcmToken = fetchFcmToken()
 
-        val appId = try {
-            val option = Request.getDefaultOption()
-                .addMultipartParameter("value_token", hashedAppKey)
-                .addMultipartParameter("signature", Const.DC_APP_SIGNATURE)
-                .addMultipartParameter("pkg", Const.DC_APP_PACKAGE)
-                .addMultipartParameter("vCode", Const.DC_APP_VERSION_CODE)
-                .addMultipartParameter("vName", Const.DC_APP_VERSION_NAME)
-                .addMultipartParameter("client_token", fcmToken)
+        val option = Request.getDefaultOption()
+            .addMultipartParameter("value_token", hashedAppKey)
+            .addMultipartParameter("signature", Const.DC_APP_SIGNATURE)
+            .addMultipartParameter("pkg", Const.DC_APP_PACKAGE)
+            .addMultipartParameter("vCode", Const.DC_APP_VERSION_CODE)
+            .addMultipartParameter("vName", Const.DC_APP_VERSION_NAME)
+            .addMultipartParameter("client_token", fcmToken)
 
-            JsonBrowser.parse(KotlinInside.getInstance().httpInterface.upload(ApiUrl.Auth.APP_ID, option))
-        } catch (e: HttpException) {
-            return ""
-        }
+        val appId = JsonBrowser.parse(KotlinInside.getInstance().httpInterface.upload(ApiUrl.Auth.APP_ID, option))
 
-        return appId.index(0).get("app_id").text()!!
+        return appId.get("app_id").text() ?: throw HttpException(RuntimeException("Can't get app_id: ${appId.text()}"))
     }
 
     /**
@@ -251,7 +248,7 @@ class Auth {
                     ApiUrl.Auth.LOGIN,
                     option
                 )
-            ).index(0)
+            )
 
             val detail = SessionDetail(
                 result = json.get("result").asBoolean(),

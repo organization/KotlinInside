@@ -31,7 +31,7 @@ class KotlinInsideTest {
     fun initKotlinInside() {
         KotlinInside.createInstance(
             Anonymous("ㅇㅇ", "1234"),
-            DefaultHttpClient(true, true)
+            DefaultHttpClient()
         )
     }
 
