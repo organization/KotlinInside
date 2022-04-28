@@ -56,16 +56,16 @@ class DefaultHttpClient
         }
         var firstKey = false
 
-        return buildString {
+        return StringBuilder(replacedUrl).apply {
             option.queryParameter.forEach { (key, value) ->
                 if (!firstKey) {
-                    append("?").append(urlEncode(key)).append("=").append(urlEncode(value))
                     firstKey = true
+                    append("?")
                 } else {
-                    append("&").append(urlEncode(key)).append("=").append(urlEncode(value))
-                }
+                    append("&")
+                }.append(urlEncode(key)).append("=").append(urlEncode(value))
             }
-        }
+        }.toString()
     }
 
     private fun setPostRequestHeaders(option: HttpInterface.Option, request: HttpRequest, bodyData: StringBuilder) {
@@ -79,11 +79,11 @@ class DefaultHttpClient
             var firstKey = false
             option.bodyParameter.forEach { (key, value) ->
                 if (!firstKey) {
-                    bodyData.append(urlEncode(key)).append("=").append(urlEncode(value))
                     firstKey = true
+                    bodyData
                 } else {
-                    bodyData.append("&").append(urlEncode(key)).append("=").append(urlEncode(value))
-                }
+                    bodyData.append("&")
+                }.append(urlEncode(key)).append("=").append(urlEncode(value))
             }
         }
     }
@@ -168,9 +168,7 @@ class DefaultHttpClient
         val bodyData = StringBuilder()
         if (option != null) {
             setPostRequestHeaders(option, request, bodyData)
-            option.multipartParameter.forEach { (key, value) ->
-                request.part(key, value)
-            }
+            option.multipartParameter.forEach(request::part)
             var count = 0
             option.multipartFile.forEach { (key, stream) ->
                 request.part(key, getFileName(stream, count), "image/jpg", stream)
@@ -178,7 +176,7 @@ class DefaultHttpClient
             }
             count = 0
             option.multipartFileList.forEach { (key, value) ->
-                for (stream in value) {
+                value.forEach { stream ->
                     request.part(key, getFileName(stream, count), "image/jpg", stream)
                     count++
                 }
