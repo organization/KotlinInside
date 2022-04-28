@@ -22,7 +22,9 @@ object Const {
 
     object Register3 {
         const val SENDER = "477369754343"
-        const val X_SCOPE = "*"
+        const val X_SCOPE_ALL = "*"
+        const val X_SCOPE_REFRESH_REMOTE_CONFIG = "/topics/DcRefreshRemoteConfig"
+        const val X_SCOPE_SHOW_NOTICE_MESSAGE = "/topics/DcShowNoticeMessage"
         const val X_FIREBASE_APP_NAME_HASH = "R1dAH9Ui7M-ynoznwBdw01tLxhI"
         const val USER_AGENT = "Android-GCM/1.5"
         const val APP = DC_APP_PACKAGE

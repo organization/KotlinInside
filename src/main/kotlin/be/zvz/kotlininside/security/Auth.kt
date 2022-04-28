@@ -89,6 +89,29 @@ class Auth {
         }
     }
 
+    private fun requestToGcmWithScope(clientToken: String, installationToken: String, scope: String) {
+        KotlinInside.getInstance().httpInterface.post(
+            ApiUrl.PlayService.REGISTER3,
+            HttpInterface.Option()
+                .addHeader("Authorization", "AidLogin ${androidCheckin.androidId}:${androidCheckin.securityToken}")
+                .setUserAgent(Const.Register3.USER_AGENT)
+                .addBodyParameter("X-subtype", clientToken)
+                .addBodyParameter("sender", clientToken)
+                .addBodyParameter("X-gcm.topic", scope)
+                .addBodyParameter("X-app_ver", Const.DC_APP_VERSION_CODE)
+                .addBodyParameter("X-appid", fid)
+                .addBodyParameter("X-scope", "/topics/DcRefreshRemoteConfig")
+                .addBodyParameter("X-Goog-Firebase-Installations-Auth", installationToken)
+                .addBodyParameter("X-gmp_app_id", Const.Firebase.APP_ID)
+                .addBodyParameter("X-firebase-app-name-hash", Const.Register3.X_FIREBASE_APP_NAME_HASH)
+                .addBodyParameter("X-app_ver_name", Const.DC_APP_VERSION_NAME)
+                .addBodyParameter("app", Const.Register3.APP)
+                .addBodyParameter("device", androidCheckin.androidId.toString())
+                .addBodyParameter("app_ver", Const.DC_APP_VERSION_CODE)
+                .addBodyParameter("cert", Const.Register3.CERT)
+        )
+    }
+
     @JvmOverloads
     fun fetchFcmToken(argFid: String? = null, argRefreshToken: String? = null): String {
         val firebaseInstallations = JsonBrowser.parse(
@@ -121,25 +144,34 @@ class Auth {
         refreshToken = firebaseInstallations.get("refreshToken").safeText()
         val token = firebaseInstallations.get("authToken").get("token").safeText()
         androidCheckin = fetchAndroidCheckin()
+
         val register3 = KotlinInside.getInstance().httpInterface.post(
             ApiUrl.PlayService.REGISTER3,
             HttpInterface.Option()
                 .addHeader("Authorization", "AidLogin ${androidCheckin.androidId}:${androidCheckin.securityToken}")
                 .setUserAgent(Const.Register3.USER_AGENT)
+                .addBodyParameter("X-subtype", "477369754343")
                 .addBodyParameter("sender", Const.Register3.SENDER)
+                .addBodyParameter("X-app_ver", Const.DC_APP_VERSION_CODE)
                 .addBodyParameter("X-appid", fid)
-                .addBodyParameter("X-scope", Const.Register3.X_SCOPE)
-                .addBodyParameter("X-app_ver_name", Const.DC_APP_VERSION_NAME)
+                .addBodyParameter("X-scope", Const.Register3.X_SCOPE_ALL)
                 .addBodyParameter("X-Goog-Firebase-Installations-Auth", token)
                 .addBodyParameter("X-gmp_app_id", Const.Firebase.APP_ID)
                 .addBodyParameter("X-firebase-app-name-hash", Const.Register3.X_FIREBASE_APP_NAME_HASH)
+                .addBodyParameter("X-app_ver_name", Const.DC_APP_VERSION_NAME)
                 .addBodyParameter("app", Const.Register3.APP)
                 .addBodyParameter("device", androidCheckin.androidId.toString())
                 .addBodyParameter("app_ver", Const.DC_APP_VERSION_CODE)
                 .addBodyParameter("gcm_ver", Const.Register3.GCM_VERSION)
                 .addBodyParameter("cert", Const.Register3.CERT)
-        )!!
-        return register3.split('=')[1]
+        ) ?: throw RuntimeException("Can't get client_token")
+
+        val clientToken = register3.split('=')[1]
+
+        requestToGcmWithScope(clientToken, token, Const.Register3.X_SCOPE_REFRESH_REMOTE_CONFIG)
+        requestToGcmWithScope(clientToken, token, Const.Register3.X_SCOPE_SHOW_NOTICE_MESSAGE)
+
+        return clientToken
     }
 
     /**
