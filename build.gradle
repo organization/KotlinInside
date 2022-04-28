@@ -8,13 +8,14 @@ plugins {
     id 'io.github.gradle-nexus.publish-plugin' version '1.1.0'
     id 'signing'
     id 'org.jmailen.kotlinter' version '3.10.0'
+    id 'com.google.protobuf' version '0.8.18'
 }
 
 boolean isDev = false
 
 String libName = 'KotlinInside'
 String libDevVersion = isDev ? '-SNAPSHOT' : ''
-String libVersion = "1.12.0$libDevVersion"
+String libVersion = "1.13.0$libDevVersion"
 String libDesc = 'Unofficial DCInside API written in Kotlin'
 
 group = 'be.zvz'
@@ -26,9 +27,41 @@ repositories {
     mavenCentral()
 }
 
+sourceSets {
+    main {
+        proto {
+            srcDir 'src/main/proto'
+        }
+        java {
+            srcDir 'build/generated/source/proto/main/javalite'
+        }
+    }
+}
+
 compileJava {
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+protobuf {
+    protoc {
+        artifact = 'com.google.protobuf:protoc:3.0.0'
+    }
+    plugins {
+        javalite {
+            artifact = 'com.google.protobuf:protoc-gen-javalite:3.0.0'
+        }
+    }
+    generateProtoTasks {
+        all().each { task ->
+            task.builtins {
+                remove java
+            }
+            task.plugins {
+                javalite {}
+            }
+        }
+    }
 }
 
 dependencies {
@@ -44,6 +77,9 @@ dependencies {
     implementation group: 'com.vladsch.flexmark', name: 'flexmark-ext-gfm-strikethrough', version: '0.62.2'
     implementation group: 'com.vladsch.flexmark', name: 'flexmark-ext-tables', version: '0.62.2'
     implementation group: 'com.vladsch.flexmark', name: 'flexmark-ext-gfm-tasklist', version: '0.62.2'
+
+    // Protobuf
+    api group: 'com.google.protobuf', name: 'protobuf-lite', version: '3.0.1'
 
     // Use the Kotlin JDK standard library.
     implementation group: 'org.jetbrains.kotlin', name: 'kotlin-stdlib-jdk7'
@@ -61,6 +97,12 @@ tasks.test {
     useJUnitPlatform()
     testLogging {
         events("passed", "skipped", "failed")
+    }
+}
+
+tasks.withType(Copy) {
+    filesMatching("**/*.proto") {
+        duplicatesStrategy = DuplicatesStrategy.INCLUDE
     }
 }
 

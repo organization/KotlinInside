@@ -57,7 +57,7 @@ class NoMemberBlock(
                     if (option.proxy !== null) {
                         addBodyParameter("proxyDate", dateFormat.format(option.proxy))
                     }
-                    if (option.proxy !== null) {
+                    if (option.cellular !== null) {
                         addBodyParameter("mobileDate", dateFormat.format(option.cellular))
                     }
                     if (option.image !== null) {

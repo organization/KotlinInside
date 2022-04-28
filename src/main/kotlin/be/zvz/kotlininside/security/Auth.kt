@@ -16,6 +16,12 @@ import be.zvz.kotlininside.value.ApiUrl
 import be.zvz.kotlininside.value.Const
 import org.apache.commons.codec.binary.Hex
 import org.apache.commons.codec.digest.DigestUtils
+import org.apache.commons.lang3.RandomStringUtils
+import org.microg.gms.checkin.CheckinProto
+import java.io.BufferedInputStream
+import java.io.BufferedOutputStream
+import java.net.HttpURLConnection
+import java.net.URL
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -31,6 +37,7 @@ class Auth {
         private set
     lateinit var fid: String
     lateinit var refreshToken: String
+    lateinit var androidCheckin: CheckinProto.CheckinResponse
 
     data class AppCheck(
         val result: Boolean,
@@ -39,6 +46,48 @@ class Auth {
         val noticeUpdate: Boolean? = null,
         val date: String? = null
     )
+
+    fun fetchAndroidCheckin(): CheckinProto.CheckinResponse {
+        val checkin = CheckinProto.CheckinRequest.newBuilder()
+            .setAndroidId(0)
+            .setCheckin(
+                CheckinProto.CheckinRequest.Checkin.newBuilder()
+                    .setBuild(
+                        CheckinProto.CheckinRequest.Checkin.Build.newBuilder()
+                            .setFingerprint("google/razor/flo:7.1.1/NMF26Q/1602158:user/release-keys")
+                            .setHardware("flo")
+                            .setBrand("google")
+                            .setRadio("FLO-04.04")
+                            .setClientId("android-google")
+                            .setSdkVersion(25)
+                            .build()
+                    )
+                    .setLastCheckinMs(0)
+                    .build()
+            )
+            .setLocale("ko")
+            .addMacAddress(RandomStringUtils.random(12, "ABCDEF0123456789"))
+            .setMeid(RandomStringUtils.randomNumeric(15))
+            .setTimeZone("Asia/Seoul")
+            .setVersion(3)
+            .addOtaCert("--no-output--")
+            .addMacAddressType("wifi")
+            .setFragment(0)
+            .setUserSerialNumber(0)
+            .build()
+
+        val request = URL(ApiUrl.PlayService.CHECKIN).openConnection() as HttpURLConnection
+        request.requestMethod = "POST"
+        request.doOutput = true
+        request.setRequestProperty("Content-Type", "application/x-protobuf")
+        request.setRequestProperty("User-Agent", "Android-Checkin/3.0")
+        request.outputStream.use {
+            BufferedOutputStream(it).use(checkin::writeTo)
+        }
+        return request.inputStream.use {
+            BufferedInputStream(it).use(CheckinProto.CheckinResponse::parseFrom)
+        }
+    }
 
     @JvmOverloads
     fun fetchFcmToken(argFid: String? = null, argRefreshToken: String? = null): String {
@@ -71,10 +120,11 @@ class Auth {
         fid = firebaseInstallations.get("fid").safeText()
         refreshToken = firebaseInstallations.get("refreshToken").safeText()
         val token = firebaseInstallations.get("authToken").get("token").safeText()
+        androidCheckin = fetchAndroidCheckin()
         val register3 = KotlinInside.getInstance().httpInterface.post(
             ApiUrl.PlayService.REGISTER3,
             HttpInterface.Option()
-                .addHeader("Authorization", Const.Register3.AUTHORIZATION)
+                .addHeader("Authorization", "AidLogin ${androidCheckin.androidId}:${androidCheckin.securityToken}")
                 .setUserAgent(Const.Register3.USER_AGENT)
                 .addBodyParameter("sender", Const.Register3.SENDER)
                 .addBodyParameter("X-appid", fid)
@@ -83,7 +133,7 @@ class Auth {
                 .addBodyParameter("X-gmp_app_id", Const.Firebase.APP_ID)
                 .addBodyParameter("X-firebase-app-name-hash", Const.Register3.X_FIREBASE_APP_NAME_HASH)
                 .addBodyParameter("app", Const.Register3.APP)
-                .addBodyParameter("device", Const.Register3.DEVICE)
+                .addBodyParameter("device", androidCheckin.androidId.toString())
                 .addBodyParameter("app_ver", Const.DC_APP_VERSION_CODE)
                 .addBodyParameter("cert", Const.Register3.CERT)
         )!!
