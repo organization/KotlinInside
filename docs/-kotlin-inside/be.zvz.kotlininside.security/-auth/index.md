@@ -35,6 +35,7 @@ class [Auth](index.html)
 
 | Name | Summary |
 |---|---|
+| [fetchAndroidCheckin](fetch-android-checkin.html) | [jvm]<br>fun [fetchAndroidCheckin](fetch-android-checkin.html)(): &lt;ERROR CLASS&gt; |
 | [fetchAppId](fetch-app-id.html) | [jvm]<br>fun [fetchAppId](fetch-app-id.html)(hashedAppKey: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>app_id를 서버로부터 얻어오는 메소드입니다. |
 | [fetchFcmToken](fetch-fcm-token.html) | [jvm]<br>@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)<br>fun [fetchFcmToken](fetch-fcm-token.html)(argFid: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null, argRefreshToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [generateHashedAppKey](generate-hashed-app-key.html) | [jvm]<br>fun [generateHashedAppKey](generate-hashed-app-key.html)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>SHA256 단방향 암호화된 value_token을 서버로부터 얻어오거나, 생성하는 메소드입니다. |
@@ -48,6 +49,7 @@ class [Auth](index.html)
 
 | Name | Summary |
 |---|---|
+| [androidCheckin](android-checkin.html) | [jvm]<br>lateinit var [androidCheckin](android-checkin.html): &lt;ERROR CLASS&gt; |
 | [fcmToken](fcm-token.html) | [jvm]<br>lateinit val [fcmToken](fcm-token.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [fid](fid.html) | [jvm]<br>lateinit var [fid](fid.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [refreshToken](refresh-token.html) | [jvm]<br>lateinit var [refreshToken](refresh-token.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
