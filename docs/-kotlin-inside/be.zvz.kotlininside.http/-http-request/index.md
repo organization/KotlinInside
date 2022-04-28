@@ -34,7 +34,6 @@ A fluid interface for making HTTP requests using an underlying [HttpURLConnectio
 
 | Name | Summary |
 |---|---|
-| [Base64](-base64/index.html) | [jvm]<br>open class [Base64](-base64/index.html)<br> Encodes and decodes to and from Base64 notation. |
 | [ConnectionFactory](-connection-factory/index.html) | [jvm]<br>interface [ConnectionFactory](-connection-factory/index.html)<br>Creates [HTTP connections](https://docs.oracle.com/javase/7/docs/api/java/net/HttpURLConnection.html) for [urls](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html). |
 | [HttpRequestException](-http-request-exception/index.html) | [jvm]<br>open class [HttpRequestException](-http-request-exception/index.html) : [RuntimeException](https://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html)<br>HTTP request exception whose cause is always an [IOException](https://docs.oracle.com/javase/7/docs/api/java/io/IOException.html) |
 | [RequestOutputStream](-request-output-stream/index.html) | [jvm]<br>open class [RequestOutputStream](-request-output-stream/index.html) : [BufferedOutputStream](https://docs.oracle.com/javase/7/docs/api/java/io/BufferedOutputStream.html)<br>Request output stream |

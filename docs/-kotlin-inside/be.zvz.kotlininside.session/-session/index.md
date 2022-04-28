@@ -10,8 +10,16 @@ title: Session
 
 
 [jvm]\
-data class [Session](index.html)(user: [User](../../be.zvz.kotlininside.session.user/-user/index.html), detail: [SessionDetail](../-session-detail/index.html)?)
+data class [Session](index.html)(val user: [User](../../be.zvz.kotlininside.session.user/-user/index.html), val detail: [SessionDetail](../-session-detail/index.html)?)
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [Session](-session.html) | [jvm]<br>fun [Session](-session.html)(user: [User](../../be.zvz.kotlininside.session.user/-user/index.html), detail: [SessionDetail](../-session-detail/index.html)?) |
 
 
 ## Properties

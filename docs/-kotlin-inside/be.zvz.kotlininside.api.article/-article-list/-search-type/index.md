@@ -19,11 +19,11 @@ enum [SearchType](index.html) : [Enum](https://kotlinlang.org/api/latest/jvm/std
 
 | | |
 |---|---|
-| [SUBJECT_AND_CONTENT](-s-u-b-j-e-c-t_-a-n-d_-c-o-n-t-e-n-t/index.html) | [jvm]<br>[SUBJECT_AND_CONTENT](-s-u-b-j-e-c-t_-a-n-d_-c-o-n-t-e-n-t/index.html)("subject_m") |
-| [NAME](-n-a-m-e/index.html) | [jvm]<br>[NAME](-n-a-m-e/index.html)("name") |
-| [CONTENT](-c-o-n-t-e-n-t/index.html) | [jvm]<br>[CONTENT](-c-o-n-t-e-n-t/index.html)("memo") |
-| [SUBJECT](-s-u-b-j-e-c-t/index.html) | [jvm]<br>[SUBJECT](-s-u-b-j-e-c-t/index.html)("subject") |
-| [ALL](-a-l-l/index.html) | [jvm]<br>[ALL](-a-l-l/index.html)("all") |
+| [SUBJECT_AND_CONTENT](-s-u-b-j-e-c-t_-a-n-d_-c-o-n-t-e-n-t/index.html) | [jvm]<br>[SUBJECT_AND_CONTENT](-s-u-b-j-e-c-t_-a-n-d_-c-o-n-t-e-n-t/index.html)(&quot;subject_m&quot;) |
+| [NAME](-n-a-m-e/index.html) | [jvm]<br>[NAME](-n-a-m-e/index.html)(&quot;name&quot;) |
+| [CONTENT](-c-o-n-t-e-n-t/index.html) | [jvm]<br>[CONTENT](-c-o-n-t-e-n-t/index.html)(&quot;memo&quot;) |
+| [SUBJECT](-s-u-b-j-e-c-t/index.html) | [jvm]<br>[SUBJECT](-s-u-b-j-e-c-t/index.html)(&quot;subject&quot;) |
+| [ALL](-a-l-l/index.html) | [jvm]<br>[ALL](-a-l-l/index.html)(&quot;all&quot;) |
 
 
 ## Properties

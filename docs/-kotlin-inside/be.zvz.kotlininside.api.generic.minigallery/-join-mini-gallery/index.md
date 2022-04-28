@@ -14,13 +14,21 @@ class [JoinMiniGallery](index.html)(gallId: [String](https://kotlinlang.org/api/
 
 
 
+## Constructors
+
+
+| | |
+|---|---|
+| [JoinMiniGallery](-join-mini-gallery.html) | [jvm]<br>fun [JoinMiniGallery](-join-mini-gallery.html)(gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), session: [Session](../../be.zvz.kotlininside.session/-session/index.html)) |
+
+
 ## Types
 
 
 | Name | Summary |
 |---|---|
-| [MemberJoinOkResult](-member-join-ok-result/index.html) | [jvm]<br>data class [MemberJoinOkResult](-member-join-ok-result/index.html)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), status: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
-| [MemberJoinResult](-member-join-result/index.html) | [jvm]<br>data class [MemberJoinResult](-member-join-result/index.html)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), joinQuestion: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
+| [MemberJoinOkResult](-member-join-ok-result/index.html) | [jvm]<br>data class [MemberJoinOkResult](-member-join-ok-result/index.html)(val result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), val cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val status: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
+| [MemberJoinResult](-member-join-result/index.html) | [jvm]<br>data class [MemberJoinResult](-member-join-result/index.html)(val result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), val joinQuestion: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
 
 
 ## Functions

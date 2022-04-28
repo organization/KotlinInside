@@ -14,6 +14,14 @@ class [AsyncMyGall](index.html)(session: [Session](../../be.zvz.kotlininside.ses
 
 
 
+## Constructors
+
+
+| | |
+|---|---|
+| [AsyncMyGall](-async-my-gall.html) | [jvm]<br>fun [AsyncMyGall](-async-my-gall.html)(session: [Session](../../be.zvz.kotlininside.session/-session/index.html)) |
+
+
 ## Functions
 
 

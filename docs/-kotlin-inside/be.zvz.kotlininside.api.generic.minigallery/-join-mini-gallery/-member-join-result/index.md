@@ -10,8 +10,16 @@ title: MemberJoinResult
 
 
 [jvm]\
-data class [MemberJoinResult](index.html)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), joinQuestion: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+data class [MemberJoinResult](index.html)(val result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), val joinQuestion: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [MemberJoinResult](-member-join-result.html) | [jvm]<br>fun [MemberJoinResult](-member-join-result.html)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), joinQuestion: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
 
 
 ## Properties

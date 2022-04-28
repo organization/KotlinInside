@@ -10,7 +10,7 @@ title: PROXY
 
 
 [jvm]\
-[PROXY](index.html)("P")
+[PROXY](index.html)(&quot;P&quot;)
 
 
 

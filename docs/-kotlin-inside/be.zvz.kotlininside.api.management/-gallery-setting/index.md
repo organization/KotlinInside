@@ -14,6 +14,14 @@ class [GallerySetting](index.html)(gallId: [String](https://kotlinlang.org/api/l
 
 
 
+## Constructors
+
+
+| | |
+|---|---|
+| [GallerySetting](-gallery-setting.html) | [jvm]<br>fun [GallerySetting](-gallery-setting.html)(gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), session: [Session](../../be.zvz.kotlininside.session/-session/index.html)) |
+
+
 ## Functions
 
 

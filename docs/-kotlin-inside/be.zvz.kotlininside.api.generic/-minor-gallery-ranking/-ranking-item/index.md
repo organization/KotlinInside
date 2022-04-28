@@ -10,8 +10,16 @@ title: RankingItem
 
 
 [jvm]\
-data class [RankingItem](index.html)(gallLink: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), gallName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), rankType: [MinorGalleryRanking.RankType](../-rank-type/index.html), rank: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), rankUpdown: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))
+data class [RankingItem](index.html)(val gallLink: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val gallName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val rankType: [MinorGalleryRanking.RankType](../-rank-type/index.html), val rank: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), val rankUpdown: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [RankingItem](-ranking-item.html) | [jvm]<br>fun [RankingItem](-ranking-item.html)(gallLink: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), gallName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), rankType: [MinorGalleryRanking.RankType](../-rank-type/index.html), rank: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), rankUpdown: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)) |
 
 
 ## Properties

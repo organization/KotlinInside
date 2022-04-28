@@ -10,8 +10,16 @@ title: UserBlock
 
 
 [jvm]\
-class [UserBlock](index.html)@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)constructor(gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), session: [Session](../../be.zvz.kotlininside.session/-session/index.html), option: [UserBlock.BlockOption](-block-option/index.html))
+class [UserBlock](index.html)@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)constructor(gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), session: [Session](../../be.zvz.kotlininside.session/-session/index.html), option: [UserBlock.BlockOption](-block-option/index.html) = BlockOption())
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [UserBlock](-user-block.html) | [jvm]<br>@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)<br>fun [UserBlock](-user-block.html)(gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), session: [Session](../../be.zvz.kotlininside.session/-session/index.html), option: [UserBlock.BlockOption](-block-option/index.html) = BlockOption()) |
 
 
 ## Types
@@ -21,7 +29,7 @@ class [UserBlock](index.html)@[JvmOverloads](https://kotlinlang.org/api/latest/j
 |---|---|
 | [BlockCategory](-block-category/index.html) | [jvm]<br>enum [BlockCategory](-block-category/index.html) : [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)&lt;[UserBlock.BlockCategory](-block-category/index.html)&gt; |
 | [BlockOption](-block-option/index.html) | [jvm]<br>class [BlockOption](-block-option/index.html) |
-| [BlockResult](-block-result/index.html) | [jvm]<br>data class [BlockResult](-block-result/index.html)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
+| [BlockResult](-block-result/index.html) | [jvm]<br>data class [BlockResult](-block-result/index.html)(val result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), val cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
 
 
 ## Functions

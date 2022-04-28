@@ -14,6 +14,14 @@ class [AsyncJoinMiniGallery](index.html)(gallId: [String](https://kotlinlang.org
 
 
 
+## Constructors
+
+
+| | |
+|---|---|
+| [AsyncJoinMiniGallery](-async-join-mini-gallery.html) | [jvm]<br>fun [AsyncJoinMiniGallery](-async-join-mini-gallery.html)(gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), session: [Session](../../be.zvz.kotlininside.session/-session/index.html)) |
+
+
 ## Functions
 
 

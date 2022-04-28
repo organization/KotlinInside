@@ -34,7 +34,7 @@ jvm
 | | |
 |---|---|
 | sArr | The bytes to convert. If null or length 0 an empty array will be returned. |
-| lineSep | Optional "\r\n" after 76 characters, unless end of file.No line separator will be in breach of RFC 2045 which specifies max 76 per line but will be a little faster. |
+| lineSep | Optional &quot;\r\n&quot; after 76 characters, unless end of file.No line separator will be in breach of RFC 2045 which specifies max 76 per line but will be a little faster. |
 
 
 
@@ -67,7 +67,7 @@ jvm
 | sArr | The bytes to convert. If null an empty array will be returned. |
 | sOff | The starting position in the bytes to convert. |
 | sLen | The number of bytes to convert. If 0 an empty array will be returned. |
-| lineSep | Optional "\r\n" after 76 characters, unless end of file.No line separator will be in breach of RFC 2045 which specifies max 76 per line but will be a little faster. |
+| lineSep | Optional &quot;\r\n&quot; after 76 characters, unless end of file.No line separator will be in breach of RFC 2045 which specifies max 76 per line but will be a little faster. |
 
 
 

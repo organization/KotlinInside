@@ -10,8 +10,16 @@ title: Gallery
 
 
 [jvm]\
-data class [Gallery](index.html)(title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), hide: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))
+data class [Gallery](index.html)(val title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val hide: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [Gallery](-gallery.html) | [jvm]<br>fun [Gallery](-gallery.html)(title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), hide: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)) |
 
 
 ## Properties

@@ -14,15 +14,23 @@ class [TotalSearch](index.html)(keyword: [String](https://kotlinlang.org/api/lat
 
 
 
+## Constructors
+
+
+| | |
+|---|---|
+| [TotalSearch](-total-search.html) | [jvm]<br>fun [TotalSearch](-total-search.html)(keyword: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
+
+
 ## Types
 
 
 | Name | Summary |
 |---|---|
-| [RealTime](-real-time/index.html) | [jvm]<br>data class [RealTime](-real-time/index.html)(rank: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), url: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
-| [SearchedArticle](-searched-article/index.html) | [jvm]<br>data class [SearchedArticle](-searched-article/index.html)(title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), content: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), gallName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), regDate: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
-| [TotalSearchResult](-total-search-result/index.html) | [jvm]<br>data class [TotalSearchResult](-total-search-result/index.html)(mainGallery: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Gallery](../../be.zvz.kotlininside.api.type/-gallery/index.html)&gt;, minorGallery: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Gallery](../../be.zvz.kotlininside.api.type/-gallery/index.html)&gt;, wiki: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[TotalSearch.Wiki](-wiki/index.html)&gt;, board: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[TotalSearch.SearchedArticle](-searched-article/index.html)&gt;, todayIssue: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[TotalSearch.SearchedArticle](-searched-article/index.html)&gt;, realTime: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[TotalSearch.RealTime](-real-time/index.html)&gt;) |
-| [Wiki](-wiki/index.html) | [jvm]<br>data class [Wiki](-wiki/index.html)(title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), gallName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), url: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
+| [RealTime](-real-time/index.html) | [jvm]<br>data class [RealTime](-real-time/index.html)(val rank: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), val title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val url: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
+| [SearchedArticle](-searched-article/index.html) | [jvm]<br>data class [SearchedArticle](-searched-article/index.html)(val title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val content: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val gallName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), val regDate: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
+| [TotalSearchResult](-total-search-result/index.html) | [jvm]<br>data class [TotalSearchResult](-total-search-result/index.html)(val mainGallery: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Gallery](../../be.zvz.kotlininside.api.type/-gallery/index.html)&gt;, val minorGallery: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Gallery](../../be.zvz.kotlininside.api.type/-gallery/index.html)&gt;, val wiki: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[TotalSearch.Wiki](-wiki/index.html)&gt;, val board: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[TotalSearch.SearchedArticle](-searched-article/index.html)&gt;, val todayIssue: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[TotalSearch.SearchedArticle](-searched-article/index.html)&gt;, val realTime: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[TotalSearch.RealTime](-real-time/index.html)&gt;) |
+| [Wiki](-wiki/index.html) | [jvm]<br>data class [Wiki](-wiki/index.html)(val title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val gallName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val url: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
 
 
 ## Functions

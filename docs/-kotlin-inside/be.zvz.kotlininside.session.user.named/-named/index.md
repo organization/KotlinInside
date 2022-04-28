@@ -10,8 +10,16 @@ title: Named
 
 
 [jvm]\
-data class [Named](index.html)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), password: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [LoginUser](../../be.zvz.kotlininside.session.user/-login-user/index.html)
+data class [Named](index.html)(val id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val password: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [LoginUser](../../be.zvz.kotlininside.session.user/-login-user/index.html)
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [Named](-named.html) | [jvm]<br>fun [Named](-named.html)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), password: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
 
 
 ## Properties

@@ -10,8 +10,16 @@ title: InsufficientPermissionException
 
 
 [jvm]\
-class [InsufficientPermissionException](index.html)(causeClass: [KClass](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html)&lt;*&gt;) : [IllegalStateException](https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException.html)
+class [InsufficientPermissionException](index.html)(val causeClass: [KClass](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html)&lt;*&gt;) : [IllegalStateException](https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException.html)
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [InsufficientPermissionException](-insufficient-permission-exception.html) | [jvm]<br>fun [InsufficientPermissionException](-insufficient-permission-exception.html)(causeClass: [KClass](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html)&lt;*&gt;) |
 
 
 ## Functions

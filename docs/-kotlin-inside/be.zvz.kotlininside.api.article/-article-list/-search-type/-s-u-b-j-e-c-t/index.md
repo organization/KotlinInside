@@ -10,7 +10,7 @@ title: SUBJECT
 
 
 [jvm]\
-[SUBJECT](index.html)("subject")
+[SUBJECT](index.html)(&quot;subject&quot;)
 
 
 

@@ -10,8 +10,16 @@ title: StringComment
 
 
 [jvm]\
-data class [StringComment](index.html)(memo: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [Comment](../-comment/index.html)
+data class [StringComment](index.html)(val memo: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [Comment](../-comment/index.html)
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [StringComment](-string-comment.html) | [jvm]<br>fun [StringComment](-string-comment.html)(memo: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
 
 
 ## Properties

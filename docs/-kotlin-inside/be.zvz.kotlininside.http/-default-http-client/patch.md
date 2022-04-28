@@ -10,15 +10,7 @@ title: patch
 
 
 [jvm]\
-
-
-
-
-@Nullable
-
-
-
-open fun [patch](patch.html)(@NotNullurl: @NotNull[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), @Nullableoption: @Nullable[HttpInterface.Option](../-http-interface/-option/index.html)): @Nullable[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
+open override fun [patch](patch.html)(url: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), option: [HttpInterface.Option](../-http-interface/-option/index.html)?): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?
 
 
 

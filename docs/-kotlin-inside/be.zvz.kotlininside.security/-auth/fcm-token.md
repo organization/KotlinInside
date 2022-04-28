@@ -10,7 +10,7 @@ title: fcmToken
 
 
 [jvm]\
-lateinit var [fcmToken](fcm-token.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
+lateinit val [fcmToken](fcm-token.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
 
 

@@ -10,8 +10,16 @@ title: BlockResult
 
 
 [jvm]\
-data class [BlockResult](index.html)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+data class [BlockResult](index.html)(val result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), val msg: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [BlockResult](-block-result.html) | [jvm]<br>fun [BlockResult](-block-result.html)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), msg: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
 
 
 ## Properties
@@ -19,6 +27,6 @@ data class [BlockResult](index.html)(result: [Boolean](https://kotlinlang.org/ap
 
 | Name | Summary |
 |---|---|
-| [cause](cause.html) | [jvm]<br>val [cause](cause.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [msg](msg.html) | [jvm]<br>val [msg](msg.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [result](result.html) | [jvm]<br>val [result](result.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
 

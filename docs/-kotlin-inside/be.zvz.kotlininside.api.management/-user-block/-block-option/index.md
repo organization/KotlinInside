@@ -14,6 +14,14 @@ class [BlockOption](index.html)
 
 
 
+## Constructors
+
+
+| | |
+|---|---|
+| [BlockOption](-block-option.html) | [jvm]<br>fun [BlockOption](-block-option.html)() |
+
+
 ## Properties
 
 

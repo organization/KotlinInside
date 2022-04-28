@@ -10,8 +10,16 @@ title: LoginUser
 
 
 [jvm]\
-open class [LoginUser](index.html)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), password: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [User](../-user/index.html)
+open class [LoginUser](index.html)(val id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val password: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [User](../-user/index.html)
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [LoginUser](-login-user.html) | [jvm]<br>fun [LoginUser](-login-user.html)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), password: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
 
 
 ## Properties

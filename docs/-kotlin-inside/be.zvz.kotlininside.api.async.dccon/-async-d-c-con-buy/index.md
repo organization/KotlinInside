@@ -14,6 +14,14 @@ class [AsyncDCConBuy](index.html)(dcCon: [DCCon](../../be.zvz.kotlininside.api.t
 
 
 
+## Constructors
+
+
+| | |
+|---|---|
+| [AsyncDCConBuy](-async-d-c-con-buy.html) | [jvm]<br>fun [AsyncDCConBuy](-async-d-c-con-buy.html)(dcCon: [DCCon](../../be.zvz.kotlininside.api.type/-d-c-con/index.html), session: [Session](../../be.zvz.kotlininside.session/-session/index.html)) |
+
+
 ## Functions
 
 

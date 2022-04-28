@@ -14,12 +14,20 @@ class [GalleryRanking](index.html)
 
 
 
+## Constructors
+
+
+| | |
+|---|---|
+| [GalleryRanking](-gallery-ranking.html) | [jvm]<br>fun [GalleryRanking](-gallery-ranking.html)() |
+
+
 ## Types
 
 
 | Name | Summary |
 |---|---|
-| [RankingItem](-ranking-item/index.html) | [jvm]<br>data class [RankingItem](-ranking-item/index.html)(gallLink: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), gallName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), rankType: [GalleryRanking.RankType](-rank-type/index.html), rank: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), rankUpdown: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)) |
+| [RankingItem](-ranking-item/index.html) | [jvm]<br>data class [RankingItem](-ranking-item/index.html)(val gallLink: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val gallName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val rankType: [GalleryRanking.RankType](-rank-type/index.html), val rank: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), val rankUpdown: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)) |
 | [RankType](-rank-type/index.html) | [jvm]<br>enum [RankType](-rank-type/index.html) : [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)&lt;[GalleryRanking.RankType](-rank-type/index.html)&gt; |
 
 

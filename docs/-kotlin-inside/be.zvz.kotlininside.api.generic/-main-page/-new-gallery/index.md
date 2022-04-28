@@ -10,8 +10,16 @@ title: NewGallery
 
 
 [jvm]\
-data class [NewGallery](index.html)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+data class [NewGallery](index.html)(val id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [NewGallery](-new-gallery.html) | [jvm]<br>fun [NewGallery](-new-gallery.html)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
 
 
 ## Properties

@@ -10,8 +10,16 @@ title: GallerySearchResult
 
 
 [jvm]\
-data class [GallerySearchResult](index.html)(mainGallery: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Gallery](../../../be.zvz.kotlininside.api.type/-gallery/index.html)&gt;, minorGallery: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Gallery](../../../be.zvz.kotlininside.api.type/-gallery/index.html)&gt;, mainRecommendGallery: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Gallery](../../../be.zvz.kotlininside.api.type/-gallery/index.html)&gt;, minorRecommendGallery: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Gallery](../../../be.zvz.kotlininside.api.type/-gallery/index.html)&gt;)
+data class [GallerySearchResult](index.html)(val mainGallery: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Gallery](../../../be.zvz.kotlininside.api.type/-gallery/index.html)&gt;, val minorGallery: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Gallery](../../../be.zvz.kotlininside.api.type/-gallery/index.html)&gt;, val mainRecommendGallery: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Gallery](../../../be.zvz.kotlininside.api.type/-gallery/index.html)&gt;, val minorRecommendGallery: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Gallery](../../../be.zvz.kotlininside.api.type/-gallery/index.html)&gt;)
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [GallerySearchResult](-gallery-search-result.html) | [jvm]<br>fun [GallerySearchResult](-gallery-search-result.html)(mainGallery: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Gallery](../../../be.zvz.kotlininside.api.type/-gallery/index.html)&gt;, minorGallery: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Gallery](../../../be.zvz.kotlininside.api.type/-gallery/index.html)&gt;, mainRecommendGallery: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Gallery](../../../be.zvz.kotlininside.api.type/-gallery/index.html)&gt;, minorRecommendGallery: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Gallery](../../../be.zvz.kotlininside.api.type/-gallery/index.html)&gt;) |
 
 
 ## Properties

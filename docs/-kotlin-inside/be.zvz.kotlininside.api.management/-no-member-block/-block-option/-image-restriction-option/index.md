@@ -10,8 +10,16 @@ title: ImageRestrictionOption
 
 
 [jvm]\
-class [ImageRestrictionOption](index.html)(time: [Date](https://docs.oracle.com/javase/7/docs/api/java/util/Date.html), type: [NoMemberBlock.ImageStatus](../../-image-status/index.html))
+class [ImageRestrictionOption](index.html)(val time: [Date](https://docs.oracle.com/javase/7/docs/api/java/util/Date.html), val type: [NoMemberBlock.ImageStatus](../../-image-status/index.html))
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [ImageRestrictionOption](-image-restriction-option.html) | [jvm]<br>fun [ImageRestrictionOption](-image-restriction-option.html)(time: [Date](https://docs.oracle.com/javase/7/docs/api/java/util/Date.html), type: [NoMemberBlock.ImageStatus](../../-image-status/index.html)) |
 
 
 ## Properties

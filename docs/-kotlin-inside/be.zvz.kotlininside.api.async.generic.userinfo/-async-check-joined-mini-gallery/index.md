@@ -14,6 +14,14 @@ class [AsyncCheckJoinedMiniGallery](index.html)(session: [Session](../../be.zvz.
 
 
 
+## Constructors
+
+
+| | |
+|---|---|
+| [AsyncCheckJoinedMiniGallery](-async-check-joined-mini-gallery.html) | [jvm]<br>fun [AsyncCheckJoinedMiniGallery](-async-check-joined-mini-gallery.html)(session: [Session](../../be.zvz.kotlininside.session/-session/index.html)) |
+
+
 ## Functions
 
 

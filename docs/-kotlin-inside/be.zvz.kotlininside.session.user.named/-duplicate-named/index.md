@@ -10,8 +10,16 @@ title: DuplicateNamed
 
 
 [jvm]\
-data class [DuplicateNamed](index.html)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), password: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [LoginUser](../../be.zvz.kotlininside.session.user/-login-user/index.html)
+data class [DuplicateNamed](index.html)(val id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val password: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [LoginUser](../../be.zvz.kotlininside.session.user/-login-user/index.html)
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [DuplicateNamed](-duplicate-named.html) | [jvm]<br>fun [DuplicateNamed](-duplicate-named.html)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), password: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
 
 
 ## Properties

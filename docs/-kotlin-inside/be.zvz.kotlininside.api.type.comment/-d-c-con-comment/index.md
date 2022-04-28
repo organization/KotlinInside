@@ -10,8 +10,16 @@ title: DCConComment
 
 
 [jvm]\
-data class [DCConComment](index.html)(dcCon: [DCCon](../../be.zvz.kotlininside.api.type/-d-c-con/index.html)) : [Comment](../-comment/index.html)
+data class [DCConComment](index.html)(val dcCon: [DCCon](../../be.zvz.kotlininside.api.type/-d-c-con/index.html)) : [Comment](../-comment/index.html)
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [DCConComment](-d-c-con-comment.html) | [jvm]<br>fun [DCConComment](-d-c-con-comment.html)(dcCon: [DCCon](../../be.zvz.kotlininside.api.type/-d-c-con/index.html)) |
 
 
 ## Properties

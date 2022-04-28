@@ -14,6 +14,14 @@ class [AsyncQuitMiniGallery](index.html)(gallId: [String](https://kotlinlang.org
 
 
 
+## Constructors
+
+
+| | |
+|---|---|
+| [AsyncQuitMiniGallery](-async-quit-mini-gallery.html) | [jvm]<br>fun [AsyncQuitMiniGallery](-async-quit-mini-gallery.html)(gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), session: [Session](../../be.zvz.kotlininside.session/-session/index.html)) |
+
+
 ## Functions
 
 

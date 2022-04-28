@@ -18,7 +18,7 @@ title: modify
 
 
 
-fun [modify](modify.html)(article: [Article](../../be.zvz.kotlininside.api.type/-article/index.html), fcmToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) = "N"): [ArticleWrite.WriteResult](../-article-write/-write-result/index.html)
+fun [modify](modify.html)(article: [Article](../../be.zvz.kotlininside.api.type/-article/index.html), fcmToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) = &quot;N&quot;): [ArticleWrite.WriteResult](../-article-write/-write-result/index.html)
 
 
 

@@ -19,9 +19,9 @@ enum [UserType](index.html) : [Enum](https://kotlinlang.org/api/latest/jvm/stdli
 
 | | |
 |---|---|
-| [DUPLICATE_NAMED](-d-u-p-l-i-c-a-t-e_-n-a-m-e-d/index.html) | [jvm]<br>[DUPLICATE_NAMED](-d-u-p-l-i-c-a-t-e_-n-a-m-e-d/index.html)("B") |
-| [NAMED](-n-a-m-e-d/index.html) | [jvm]<br>[NAMED](-n-a-m-e-d/index.html)("A") |
-| [ANONYMOUS](-a-n-o-n-y-m-o-u-s/index.html) | [jvm]<br>[ANONYMOUS](-a-n-o-n-y-m-o-u-s/index.html)("C") |
+| [DUPLICATE_NAMED](-d-u-p-l-i-c-a-t-e_-n-a-m-e-d/index.html) | [jvm]<br>[DUPLICATE_NAMED](-d-u-p-l-i-c-a-t-e_-n-a-m-e-d/index.html)(&quot;B&quot;) |
+| [NAMED](-n-a-m-e-d/index.html) | [jvm]<br>[NAMED](-n-a-m-e-d/index.html)(&quot;A&quot;) |
+| [ANONYMOUS](-a-n-o-n-y-m-o-u-s/index.html) | [jvm]<br>[ANONYMOUS](-a-n-o-n-y-m-o-u-s/index.html)(&quot;C&quot;) |
 
 
 ## Properties

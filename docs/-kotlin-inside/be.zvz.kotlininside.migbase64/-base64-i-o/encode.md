@@ -27,7 +27,7 @@ jvm
 |---|---|
 | in |  |
 | out |  |
-| lineSep | Optional "\r\n" after 76 characters, unless end of file.No line separator will be in breach of RFC 2045 which specifies max 76 per line but will be a little faster. |
+| lineSep | Optional &quot;\r\n&quot; after 76 characters, unless end of file.No line separator will be in breach of RFC 2045 which specifies max 76 per line but will be a little faster. |
 
 
 

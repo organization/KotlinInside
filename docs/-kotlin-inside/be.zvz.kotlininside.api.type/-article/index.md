@@ -10,8 +10,16 @@ title: Article
 
 
 [jvm]\
-data class [Article](index.html)@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)constructor(subject: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), content: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Content](../../be.zvz.kotlininside.api.type.content/-content/index.html)&gt;, headText: [HeadText](../-head-text/index.html)?)
+data class [Article](index.html)@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)constructor(val subject: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val content: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Content](../../be.zvz.kotlininside.api.type.content/-content/index.html)&gt;, val headText: [HeadText](../-head-text/index.html)? = null)
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [Article](-article.html) | [jvm]<br>@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)<br>fun [Article](-article.html)(subject: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), content: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Content](../../be.zvz.kotlininside.api.type.content/-content/index.html)&gt;, headText: [HeadText](../-head-text/index.html)? = null) |
 
 
 ## Properties

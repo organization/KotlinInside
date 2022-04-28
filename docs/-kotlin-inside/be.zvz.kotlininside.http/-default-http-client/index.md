@@ -10,7 +10,22 @@ title: DefaultHttpClient
 
 
 [jvm]\
-open class [DefaultHttpClient](index.html) : [HttpInterface](../-http-interface/index.html)
+class [DefaultHttpClient](index.html)@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)constructor(enableGzipCompression: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = true, enableCache: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = true, proxy: [DefaultHttpClient.Proxy](-proxy/index.html)? = null) : [HttpInterface](../-http-interface/index.html)
+
+DefaultHttpClient의 constructor입니다.
+
+
+
+## Parameters
+
+
+jvm
+
+| | |
+|---|---|
+| enableGzipCompression | GZIP 압축 사용 유무 |
+| enableCache | 캐시 사용 유무 |
+| proxy | Proxy 설정 |
 
 
 
@@ -19,10 +34,7 @@ open class [DefaultHttpClient](index.html) : [HttpInterface](../-http-interface/
 
 | | |
 |---|---|
-| [DefaultHttpClient](-default-http-client.html) | [jvm]<br>open fun [DefaultHttpClient](-default-http-client.html)()<br>DefaultHttpClient의 constructor입니다. |
-| [DefaultHttpClient](-default-http-client.html) | [jvm]<br>open fun [DefaultHttpClient](-default-http-client.html)(gzip: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))<br>DefaultHttpClient의 constructor입니다. |
-| [DefaultHttpClient](-default-http-client.html) | [jvm]<br>open fun [DefaultHttpClient](-default-http-client.html)(gzip: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), useCache: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))<br>DefaultHttpClient의 constructor입니다. |
-| [DefaultHttpClient](-default-http-client.html) | [jvm]<br>open fun [DefaultHttpClient](-default-http-client.html)(gzip: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), useCache: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), @Nullableproxy: @Nullable[DefaultHttpClient.Proxy](-proxy/index.html))<br>DefaultHttpClient의 constructor입니다. |
+| [DefaultHttpClient](-default-http-client.html) | [jvm]<br>@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)<br>fun [DefaultHttpClient](-default-http-client.html)(enableGzipCompression: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = true, enableCache: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = true, proxy: [DefaultHttpClient.Proxy](-proxy/index.html)? = null) |
 
 
 ## Types
@@ -30,7 +42,7 @@ open class [DefaultHttpClient](index.html) : [HttpInterface](../-http-interface/
 
 | Name | Summary |
 |---|---|
-| [Proxy](-proxy/index.html) | [jvm]<br>open class [Proxy](-proxy/index.html) |
+| [Proxy](-proxy/index.html) | [jvm]<br>class [Proxy](-proxy/index.html) |
 
 
 ## Functions
@@ -38,11 +50,11 @@ open class [DefaultHttpClient](index.html) : [HttpInterface](../-http-interface/
 
 | Name | Summary |
 |---|---|
-| [delete](delete.html) | [jvm]<br>@Nullable<br>open fun [delete](delete.html)(@NotNullurl: @NotNull[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), @Nullableoption: @Nullable[HttpInterface.Option](../-http-interface/-option/index.html)): @Nullable[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) |
-| [get](get.html) | [jvm]<br>@Nullable<br>open fun [get](get.html)(@NotNullurl: @NotNull[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), @Nullableoption: @Nullable[HttpInterface.Option](../-http-interface/-option/index.html)): @Nullable[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) |
-| [head](head.html) | [jvm]<br>@Nullable<br>open fun [head](head.html)(@NotNullurl: @NotNull[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), @Nullableoption: @Nullable[HttpInterface.Option](../-http-interface/-option/index.html)): @Nullable[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) |
-| [patch](patch.html) | [jvm]<br>@Nullable<br>open fun [patch](patch.html)(@NotNullurl: @NotNull[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), @Nullableoption: @Nullable[HttpInterface.Option](../-http-interface/-option/index.html)): @Nullable[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) |
-| [post](post.html) | [jvm]<br>@Nullable<br>open fun [post](post.html)(@NotNullurl: @NotNull[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), @Nullableoption: @Nullable[HttpInterface.Option](../-http-interface/-option/index.html)): @Nullable[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) |
-| [put](put.html) | [jvm]<br>@Nullable<br>open fun [put](put.html)(@NotNullurl: @NotNull[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), @Nullableoption: @Nullable[HttpInterface.Option](../-http-interface/-option/index.html)): @Nullable[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) |
-| [upload](upload.html) | [jvm]<br>@Nullable<br>open fun [upload](upload.html)(@NotNullurl: @NotNull[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), @Nullableoption: @Nullable[HttpInterface.Option](../-http-interface/-option/index.html)): @Nullable[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) |
+| [delete](delete.html) | [jvm]<br>open override fun [delete](delete.html)(url: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), option: [HttpInterface.Option](../-http-interface/-option/index.html)?): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? |
+| [get](get.html) | [jvm]<br>open operator override fun [get](get.html)(url: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), option: [HttpInterface.Option](../-http-interface/-option/index.html)?): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? |
+| [head](head.html) | [jvm]<br>open override fun [head](head.html)(url: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), option: [HttpInterface.Option](../-http-interface/-option/index.html)?): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? |
+| [patch](patch.html) | [jvm]<br>open override fun [patch](patch.html)(url: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), option: [HttpInterface.Option](../-http-interface/-option/index.html)?): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? |
+| [post](post.html) | [jvm]<br>open override fun [post](post.html)(url: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), option: [HttpInterface.Option](../-http-interface/-option/index.html)?): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? |
+| [put](put.html) | [jvm]<br>open override fun [put](put.html)(url: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), option: [HttpInterface.Option](../-http-interface/-option/index.html)?): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? |
+| [upload](upload.html) | [jvm]<br>open override fun [upload](upload.html)(url: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), option: [HttpInterface.Option](../-http-interface/-option/index.html)?): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? |
 

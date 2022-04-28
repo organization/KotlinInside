@@ -10,8 +10,16 @@ title: HitUpvoteResult
 
 
 [jvm]\
-data class [HitUpvoteResult](index.html)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?)
+data class [HitUpvoteResult](index.html)(val result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), val cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null)
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [HitUpvoteResult](-hit-upvote-result.html) | [jvm]<br>fun [HitUpvoteResult](-hit-upvote-result.html)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null) |
 
 
 ## Properties

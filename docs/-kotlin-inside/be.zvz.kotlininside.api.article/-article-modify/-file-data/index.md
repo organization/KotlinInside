@@ -10,8 +10,16 @@ title: FileData
 
 
 [jvm]\
-data class [FileData](index.html)(block: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), fileSize: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))
+data class [FileData](index.html)(val block: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), val fileSize: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [FileData](-file-data.html) | [jvm]<br>fun [FileData](-file-data.html)(block: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), fileSize: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)) |
 
 
 ## Properties

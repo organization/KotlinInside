@@ -14,6 +14,14 @@ class [AsyncMainPage](index.html)
 
 
 
+## Constructors
+
+
+| | |
+|---|---|
+| [AsyncMainPage](-async-main-page.html) | [jvm]<br>fun [AsyncMainPage](-async-main-page.html)() |
+
+
 ## Functions
 
 

@@ -14,13 +14,21 @@ class [MainPage](index.html)
 
 
 
+## Constructors
+
+
+| | |
+|---|---|
+| [MainPage](-main-page.html) | [jvm]<br>fun [MainPage](-main-page.html)() |
+
+
 ## Types
 
 
 | Name | Summary |
 |---|---|
-| [Article](-article/index.html) | [jvm]<br>data class [Article](-article/index.html)(gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), gallName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), thumbnail: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
-| [NewGallery](-new-gallery/index.html) | [jvm]<br>data class [NewGallery](-new-gallery/index.html)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
+| [Article](-article/index.html) | [jvm]<br>data class [Article](-article/index.html)(val gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), val gallName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null, val title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val thumbnail: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
+| [NewGallery](-new-gallery/index.html) | [jvm]<br>data class [NewGallery](-new-gallery/index.html)(val id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
 
 
 ## Functions

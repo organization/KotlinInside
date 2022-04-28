@@ -10,8 +10,16 @@ title: ViewMain
 
 
 [jvm]\
-data class [ViewMain](index.html)(content: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), upvote: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), upvoteMember: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), downvote: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), isManager: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))
+data class [ViewMain](index.html)(val content: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val upvote: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), val upvoteMember: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), val downvote: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), val isManager: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [ViewMain](-view-main.html) | [jvm]<br>fun [ViewMain](-view-main.html)(content: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), upvote: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), upvoteMember: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), downvote: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), isManager: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)) |
 
 
 ## Properties

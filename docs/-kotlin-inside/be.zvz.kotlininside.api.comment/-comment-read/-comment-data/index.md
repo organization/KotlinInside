@@ -10,8 +10,16 @@ title: CommentData
 
 
 [jvm]\
-data class [CommentData](index.html)(memberIcon: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), ipData: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, gallerCon: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, name: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), userId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), content: [Comment](../../../be.zvz.kotlininside.api.type.comment/-comment/index.html), identifier: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), dateTime: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), isReply: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), isDeleteFlag: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?)
+data class [CommentData](index.html)(val memberIcon: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), val ipData: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, val gallerCon: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, val name: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val userId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val content: [Comment](../../../be.zvz.kotlininside.api.type.comment/-comment/index.html), val identifier: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), val dateTime: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val isReply: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), val isDeleteFlag: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?)
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [CommentData](-comment-data.html) | [jvm]<br>fun [CommentData](-comment-data.html)(memberIcon: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), ipData: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, gallerCon: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, name: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), userId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), content: [Comment](../../../be.zvz.kotlininside.api.type.comment/-comment/index.html), identifier: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), dateTime: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), isReply: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), isDeleteFlag: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?) |
 
 
 ## Properties

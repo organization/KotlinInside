@@ -14,12 +14,20 @@ class [BlockOption](index.html)
 
 
 
+## Constructors
+
+
+| | |
+|---|---|
+| [BlockOption](-block-option.html) | [jvm]<br>fun [BlockOption](-block-option.html)() |
+
+
 ## Types
 
 
 | Name | Summary |
 |---|---|
-| [ImageRestrictionOption](-image-restriction-option/index.html) | [jvm]<br>class [ImageRestrictionOption](-image-restriction-option/index.html)(time: [Date](https://docs.oracle.com/javase/7/docs/api/java/util/Date.html), type: [NoMemberBlock.ImageStatus](../-image-status/index.html)) |
+| [ImageRestrictionOption](-image-restriction-option/index.html) | [jvm]<br>class [ImageRestrictionOption](-image-restriction-option/index.html)(val time: [Date](https://docs.oracle.com/javase/7/docs/api/java/util/Date.html), val type: [NoMemberBlock.ImageStatus](../-image-status/index.html)) |
 
 
 ## Properties

@@ -14,6 +14,14 @@ class [AsyncTotalSearch](index.html)(keyword: [String](https://kotlinlang.org/ap
 
 
 
+## Constructors
+
+
+| | |
+|---|---|
+| [AsyncTotalSearch](-async-total-search.html) | [jvm]<br>fun [AsyncTotalSearch](-async-total-search.html)(keyword: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
+
+
 ## Functions
 
 

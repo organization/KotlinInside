@@ -14,6 +14,14 @@ class [AsyncDCConDetail](index.html)(dcCon: [DCCon](../../be.zvz.kotlininside.ap
 
 
 
+## Constructors
+
+
+| | |
+|---|---|
+| [AsyncDCConDetail](-async-d-c-con-detail.html) | [jvm]<br>fun [AsyncDCConDetail](-async-d-c-con-detail.html)(dcCon: [DCCon](../../be.zvz.kotlininside.api.type/-d-c-con/index.html)) |
+
+
 ## Functions
 
 

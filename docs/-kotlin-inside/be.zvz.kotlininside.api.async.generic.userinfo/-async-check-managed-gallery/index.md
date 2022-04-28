@@ -14,6 +14,14 @@ class [AsyncCheckManagedGallery](index.html)(session: [Session](../../be.zvz.kot
 
 
 
+## Constructors
+
+
+| | |
+|---|---|
+| [AsyncCheckManagedGallery](-async-check-managed-gallery.html) | [jvm]<br>fun [AsyncCheckManagedGallery](-async-check-managed-gallery.html)(session: [Session](../../be.zvz.kotlininside.session/-session/index.html)) |
+
+
 ## Functions
 
 

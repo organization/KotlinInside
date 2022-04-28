@@ -14,6 +14,14 @@ class [AsyncMinorGalleryRanking](index.html)
 
 
 
+## Constructors
+
+
+| | |
+|---|---|
+| [AsyncMinorGalleryRanking](-async-minor-gallery-ranking.html) | [jvm]<br>fun [AsyncMinorGalleryRanking](-async-minor-gallery-ranking.html)() |
+
+
 ## Functions
 
 

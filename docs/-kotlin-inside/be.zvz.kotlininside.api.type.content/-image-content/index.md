@@ -10,7 +10,7 @@ title: ImageContent
 
 
 [jvm]\
-data class [ImageContent](index.html)(stream: [InputStream](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)) : [Content](../-content/index.html)
+data class [ImageContent](index.html)(val stream: [InputStream](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)) : [Content](../-content/index.html)
 
 
 
@@ -20,6 +20,7 @@ data class [ImageContent](index.html)(stream: [InputStream](https://docs.oracle.
 | | |
 |---|---|
 | [ImageContent](-image-content.html) | [jvm]<br>fun [ImageContent](-image-content.html)(file: [File](https://docs.oracle.com/javase/7/docs/api/java/io/File.html)) |
+| [ImageContent](-image-content.html) | [jvm]<br>fun [ImageContent](-image-content.html)(stream: [InputStream](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)) |
 
 
 ## Properties

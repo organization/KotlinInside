@@ -10,8 +10,16 @@ title: BuyResult
 
 
 [jvm]\
-data class [BuyResult](index.html)(result: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), msg: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+data class [BuyResult](index.html)(val result: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), val msg: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [BuyResult](-buy-result.html) | [jvm]<br>fun [BuyResult](-buy-result.html)(result: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), msg: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
 
 
 ## Properties

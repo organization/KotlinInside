@@ -14,12 +14,20 @@ class [Auth](index.html)
 
 
 
+## Constructors
+
+
+| | |
+|---|---|
+| [Auth](-auth.html) | [jvm]<br>fun [Auth](-auth.html)() |
+
+
 ## Types
 
 
 | Name | Summary |
 |---|---|
-| [AppCheck](-app-check/index.html) | [jvm]<br>data class [AppCheck](-app-check/index.html)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), version: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, notice: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)?, noticeUpdate: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)?, date: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?) |
+| [AppCheck](-app-check/index.html) | [jvm]<br>data class [AppCheck](-app-check/index.html)(val result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), val version: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null, val notice: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)? = null, val noticeUpdate: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)? = null, val date: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null) |
 
 
 ## Functions
@@ -40,7 +48,7 @@ class [Auth](index.html)
 
 | Name | Summary |
 |---|---|
-| [fcmToken](fcm-token.html) | [jvm]<br>lateinit var [fcmToken](fcm-token.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [fcmToken](fcm-token.html) | [jvm]<br>lateinit val [fcmToken](fcm-token.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [fid](fid.html) | [jvm]<br>lateinit var [fid](fid.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [refreshToken](refresh-token.html) | [jvm]<br>lateinit var [refreshToken](refresh-token.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 

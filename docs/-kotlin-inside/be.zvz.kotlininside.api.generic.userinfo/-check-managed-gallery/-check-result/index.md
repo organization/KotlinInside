@@ -10,8 +10,16 @@ title: CheckResult
 
 
 [jvm]\
-data class [CheckResult](index.html)(myManageList: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[CheckManagedGallery.Gallery](../-gallery/index.html)&gt;)
+data class [CheckResult](index.html)(val myManageList: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[CheckManagedGallery.Gallery](../-gallery/index.html)&gt;)
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [CheckResult](-check-result.html) | [jvm]<br>fun [CheckResult](-check-result.html)(myManageList: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[CheckManagedGallery.Gallery](../-gallery/index.html)&gt;) |
 
 
 ## Properties

@@ -14,12 +14,20 @@ class [Notice](index.html)(gallId: [String](https://kotlinlang.org/api/latest/jv
 
 
 
+## Constructors
+
+
+| | |
+|---|---|
+| [Notice](-notice.html) | [jvm]<br>fun [Notice](-notice.html)(gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), session: [Session](../../be.zvz.kotlininside.session/-session/index.html)) |
+
+
 ## Types
 
 
 | Name | Summary |
 |---|---|
-| [NoticeResult](-notice-result/index.html) | [jvm]<br>data class [NoticeResult](-notice-result/index.html)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), state: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
+| [NoticeResult](-notice-result/index.html) | [jvm]<br>data class [NoticeResult](-notice-result/index.html)(val result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), val cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val state: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
 
 
 ## Functions

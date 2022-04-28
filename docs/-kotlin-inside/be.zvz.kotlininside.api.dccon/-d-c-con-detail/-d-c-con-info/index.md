@@ -10,8 +10,16 @@ title: DCConInfo
 
 
 [jvm]\
-data class [DCConInfo](index.html)(packageIndex: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), mainImg: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), description: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), mandu: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), getState: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))
+data class [DCConInfo](index.html)(val packageIndex: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), val mainImg: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val description: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val mandu: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), val getState: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [DCConInfo](-d-c-con-info.html) | [jvm]<br>fun [DCConInfo](-d-c-con-info.html)(packageIndex: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), mainImg: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), description: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), mandu: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), getState: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)) |
 
 
 ## Properties

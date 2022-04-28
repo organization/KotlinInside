@@ -10,8 +10,16 @@ title: MemberQuitResult
 
 
 [jvm]\
-data class [MemberQuitResult](index.html)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))
+data class [MemberQuitResult](index.html)(val result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [MemberQuitResult](-member-quit-result.html) | [jvm]<br>fun [MemberQuitResult](-member-quit-result.html)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)) |
 
 
 ## Properties

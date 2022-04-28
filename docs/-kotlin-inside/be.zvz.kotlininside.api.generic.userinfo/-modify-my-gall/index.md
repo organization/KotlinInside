@@ -14,12 +14,20 @@ class [ModifyMyGall](index.html)(gallName: [String](https://kotlinlang.org/api/l
 
 
 
+## Constructors
+
+
+| | |
+|---|---|
+| [ModifyMyGall](-modify-my-gall.html) | [jvm]<br>fun [ModifyMyGall](-modify-my-gall.html)(gallName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), session: [Session](../../be.zvz.kotlininside.session/-session/index.html)) |
+
+
 ## Types
 
 
 | Name | Summary |
 |---|---|
-| [ModifyMyGallResult](-modify-my-gall-result/index.html) | [jvm]<br>data class [ModifyMyGallResult](-modify-my-gall-result/index.html)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
+| [ModifyMyGallResult](-modify-my-gall-result/index.html) | [jvm]<br>data class [ModifyMyGallResult](-modify-my-gall-result/index.html)(val result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), val cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
 
 
 ## Functions

@@ -14,6 +14,14 @@ class [AsyncModifyMyGall](index.html)(gallName: [String](https://kotlinlang.org/
 
 
 
+## Constructors
+
+
+| | |
+|---|---|
+| [AsyncModifyMyGall](-async-modify-my-gall.html) | [jvm]<br>fun [AsyncModifyMyGall](-async-modify-my-gall.html)(gallName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), session: [Session](../../be.zvz.kotlininside.session/-session/index.html)) |
+
+
 ## Functions
 
 

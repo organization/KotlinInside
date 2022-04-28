@@ -14,6 +14,14 @@ class [AsyncGallerySearch](index.html)(keyword: [String](https://kotlinlang.org/
 
 
 
+## Constructors
+
+
+| | |
+|---|---|
+| [AsyncGallerySearch](-async-gallery-search.html) | [jvm]<br>fun [AsyncGallerySearch](-async-gallery-search.html)(keyword: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
+
+
 ## Functions
 
 

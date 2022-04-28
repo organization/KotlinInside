@@ -8,7 +8,7 @@
 ### Gradle
 
 ```gradle
-compile 'be.zvz:KotlinInside:1.11.2'
+compile 'be.zvz:KotlinInside:1.12.0'
 ```
 
 ### Maven
@@ -17,14 +17,14 @@ compile 'be.zvz:KotlinInside:1.11.2'
 <dependency>
   <groupId>be.zvz</groupId>
   <artifactId>KotlinInside</artifactId>
-  <version>1.11.2</version>
+  <version>1.12.0</version>
 </dependency>
 ```
 
 ### 라이브러리 최소 요구사항
 
-- **Java 1.7 (Java 7)** 이상 필요
-- **Kotlin 1.5+** 권장
+- **Java 1.8 (Java 8)** 이상 필요
+- **Kotlin 1.6+** 권장
 - **Android에서 사용 가능**
 - **Java에서도 사용 가능 (타 JVM 계열 언어에서도 사용 가능)**
 

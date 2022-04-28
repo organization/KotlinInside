@@ -10,7 +10,7 @@ title: NAMED
 
 
 [jvm]\
-[NAMED](index.html)("A")
+[NAMED](index.html)(&quot;A&quot;)
 
 
 

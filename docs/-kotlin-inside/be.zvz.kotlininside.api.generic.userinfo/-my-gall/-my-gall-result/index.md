@@ -10,8 +10,16 @@ title: MyGallResult
 
 
 [jvm]\
-data class [MyGallResult](index.html)(myGall: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Gallery](../../../be.zvz.kotlininside.api.type/-gallery/index.html)&gt;, favorite: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Gallery](../../../be.zvz.kotlininside.api.type/-gallery/index.html)&gt;)
+data class [MyGallResult](index.html)(val myGall: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Gallery](../../../be.zvz.kotlininside.api.type/-gallery/index.html)&gt;, val favorite: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Gallery](../../../be.zvz.kotlininside.api.type/-gallery/index.html)&gt;)
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [MyGallResult](-my-gall-result.html) | [jvm]<br>fun [MyGallResult](-my-gall-result.html)(myGall: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Gallery](../../../be.zvz.kotlininside.api.type/-gallery/index.html)&gt;, favorite: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Gallery](../../../be.zvz.kotlininside.api.type/-gallery/index.html)&gt;) |
 
 
 ## Properties

@@ -14,6 +14,14 @@ class [AsyncGallerySetting](index.html)(gallId: [String](https://kotlinlang.org/
 
 
 
+## Constructors
+
+
+| | |
+|---|---|
+| [AsyncGallerySetting](-async-gallery-setting.html) | [jvm]<br>fun [AsyncGallerySetting](-async-gallery-setting.html)(gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), session: [Session](../../be.zvz.kotlininside.session/-session/index.html)) |
+
+
 ## Functions
 
 

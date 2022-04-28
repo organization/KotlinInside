@@ -28,7 +28,7 @@ jvm
 | | |
 |---|---|
 | url | Remote resource URL. |
-| method | HTTP request method (e.g., "GET", "POST"). |
+| method | HTTP request method (e.g., &quot;GET&quot;, &quot;POST&quot;). |
 
 
 

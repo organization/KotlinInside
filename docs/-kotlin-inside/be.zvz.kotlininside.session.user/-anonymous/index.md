@@ -10,8 +10,16 @@ title: Anonymous
 
 
 [jvm]\
-data class [Anonymous](index.html)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), password: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [User](../-user/index.html)
+data class [Anonymous](index.html)(val id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val password: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [User](../-user/index.html)
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [Anonymous](-anonymous.html) | [jvm]<br>fun [Anonymous](-anonymous.html)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), password: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
 
 
 ## Properties

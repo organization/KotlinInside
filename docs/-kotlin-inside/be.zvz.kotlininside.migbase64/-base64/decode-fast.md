@@ -14,7 +14,7 @@ fun [decodeFast](decode-fast.html)(sArr: [Array](https://kotlinlang.org/api/late
 
 
 
-Decodes a BASE64 encoded char array that is known to be resonably well formatted. The method is about twice as fast as [decode](decode.html). The preconditions are: + The array must have a line length of 76 chars OR no line separators at all (one line). + Line separator must be "\r\n", as specified in RFC 2045 + The array must not contain illegal characters within the encoded string + The array CAN have illegal characters at the beginning and end, those will be dealt with appropriately.
+Decodes a BASE64 encoded char array that is known to be resonably well formatted. The method is about twice as fast as [decode](decode.html). The preconditions are: + The array must have a line length of 76 chars OR no line separators at all (one line). + Line separator must be &quot;\r\n&quot;, as specified in RFC 2045 + The array must not contain illegal characters within the encoded string + The array CAN have illegal characters at the beginning and end, those will be dealt with appropriately.
 
 
 
@@ -44,7 +44,7 @@ fun [decodeFast](decode-fast.html)(sArr: [Array](https://kotlinlang.org/api/late
 
 
 
-Decodes a BASE64 encoded byte array that is known to be resonably well formatted. The method is about twice as fast as [decode](decode.html). The preconditions are: + The array must have a line length of 76 chars OR no line separators at all (one line). + Line separator must be "\r\n", as specified in RFC 2045 + The array must not contain illegal characters within the encoded string + The array CAN have illegal characters at the beginning and end, those will be dealt with appropriately.
+Decodes a BASE64 encoded byte array that is known to be resonably well formatted. The method is about twice as fast as [decode](decode.html). The preconditions are: + The array must have a line length of 76 chars OR no line separators at all (one line). + Line separator must be &quot;\r\n&quot;, as specified in RFC 2045 + The array must not contain illegal characters within the encoded string + The array CAN have illegal characters at the beginning and end, those will be dealt with appropriately.
 
 
 
@@ -74,7 +74,7 @@ fun [decodeFast](decode-fast.html)(s: [String](https://docs.oracle.com/javase/7/
 
 
 
-Decodes a BASE64 encoded string that is known to be resonably well formatted. The method is about twice as fast as [decode](decode.html). The preconditions are: + The array must have a line length of 76 chars OR no line separators at all (one line). + Line separator must be "\r\n", as specified in RFC 2045 + The array must not contain illegal characters within the encoded string + The array CAN have illegal characters at the beginning and end, those will be dealt with appropriately.
+Decodes a BASE64 encoded string that is known to be resonably well formatted. The method is about twice as fast as [decode](decode.html). The preconditions are: + The array must have a line length of 76 chars OR no line separators at all (one line). + Line separator must be &quot;\r\n&quot;, as specified in RFC 2045 + The array must not contain illegal characters within the encoded string + The array CAN have illegal characters at the beginning and end, those will be dealt with appropriately.
 
 
 

@@ -14,6 +14,14 @@ class [ArticleReport](index.html)(gallId: [String](https://kotlinlang.org/api/la
 
 
 
+## Constructors
+
+
+| | |
+|---|---|
+| [ArticleReport](-article-report.html) | [jvm]<br>fun [ArticleReport](-article-report.html)(gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), session: [Session](../../be.zvz.kotlininside.session/-session/index.html)) |
+
+
 ## Functions
 
 

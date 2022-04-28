@@ -14,6 +14,14 @@ class [AsyncCommentRead](index.html)(gallId: [String](https://kotlinlang.org/api
 
 
 
+## Constructors
+
+
+| | |
+|---|---|
+| [AsyncCommentRead](-async-comment-read.html) | [jvm]<br>fun [AsyncCommentRead](-async-comment-read.html)(gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), rePage: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)) |
+
+
 ## Functions
 
 

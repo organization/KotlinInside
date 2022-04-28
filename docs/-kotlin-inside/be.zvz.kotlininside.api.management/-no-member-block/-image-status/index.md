@@ -19,11 +19,11 @@ enum [ImageStatus](index.html) : [Enum](https://kotlinlang.org/api/latest/jvm/st
 
 | | |
 |---|---|
-| [PROXY_AND_CELLULAR](-p-r-o-x-y_-a-n-d_-c-e-l-l-u-l-a-r/index.html) | [jvm]<br>[PROXY_AND_CELLULAR](-p-r-o-x-y_-a-n-d_-c-e-l-l-u-l-a-r/index.html)("P,M") |
-| [CELLULAR](-c-e-l-l-u-l-a-r/index.html) | [jvm]<br>[CELLULAR](-c-e-l-l-u-l-a-r/index.html)("M") |
-| [PROXY](-p-r-o-x-y/index.html) | [jvm]<br>[PROXY](-p-r-o-x-y/index.html)("P") |
-| [ANONYMOUS](-a-n-o-n-y-m-o-u-s/index.html) | [jvm]<br>[ANONYMOUS](-a-n-o-n-y-m-o-u-s/index.html)("A") |
-| [NONE](-n-o-n-e/index.html) | [jvm]<br>[NONE](-n-o-n-e/index.html)("") |
+| [PROXY_AND_CELLULAR](-p-r-o-x-y_-a-n-d_-c-e-l-l-u-l-a-r/index.html) | [jvm]<br>[PROXY_AND_CELLULAR](-p-r-o-x-y_-a-n-d_-c-e-l-l-u-l-a-r/index.html)(&quot;P,M&quot;) |
+| [CELLULAR](-c-e-l-l-u-l-a-r/index.html) | [jvm]<br>[CELLULAR](-c-e-l-l-u-l-a-r/index.html)(&quot;M&quot;) |
+| [PROXY](-p-r-o-x-y/index.html) | [jvm]<br>[PROXY](-p-r-o-x-y/index.html)(&quot;P&quot;) |
+| [ANONYMOUS](-a-n-o-n-y-m-o-u-s/index.html) | [jvm]<br>[ANONYMOUS](-a-n-o-n-y-m-o-u-s/index.html)(&quot;A&quot;) |
+| [NONE](-n-o-n-e/index.html) | [jvm]<br>[NONE](-n-o-n-e/index.html)(&quot;&quot;) |
 
 
 ## Properties

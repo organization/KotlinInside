@@ -1,16 +1,17 @@
 ---
-title: ip -
+title: ip
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.http](../../index.md)/[DefaultHttpClient](../index.md)/[Proxy](index.md)/[ip](ip.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.http](../../index.html)/[DefaultHttpClient](../index.html)/[Proxy](index.html)/[ip](ip.html)
 
 
 
-# ip  
-[jvm]  
-Content  
-@NotNull()  
-  
-open val [ip](ip.md): [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)  
+# ip
+
+
+
+[jvm]\
+var [ip](ip.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
+
 
 
 

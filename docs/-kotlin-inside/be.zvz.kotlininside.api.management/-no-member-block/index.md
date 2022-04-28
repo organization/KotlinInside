@@ -10,8 +10,16 @@ title: NoMemberBlock
 
 
 [jvm]\
-class [NoMemberBlock](index.html)(session: [Session](../../be.zvz.kotlininside.session/-session/index.html), gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), option: [NoMemberBlock.BlockOption](-block-option/index.html))
+class [NoMemberBlock](index.html)(session: [Session](../../be.zvz.kotlininside.session/-session/index.html), gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), option: [NoMemberBlock.BlockOption](-block-option/index.html) = BlockOption())
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [NoMemberBlock](-no-member-block.html) | [jvm]<br>fun [NoMemberBlock](-no-member-block.html)(session: [Session](../../be.zvz.kotlininside.session/-session/index.html), gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), option: [NoMemberBlock.BlockOption](-block-option/index.html) = BlockOption()) |
 
 
 ## Types
@@ -20,7 +28,7 @@ class [NoMemberBlock](index.html)(session: [Session](../../be.zvz.kotlininside.s
 | Name | Summary |
 |---|---|
 | [BlockOption](-block-option/index.html) | [jvm]<br>class [BlockOption](-block-option/index.html) |
-| [BlockResult](-block-result/index.html) | [jvm]<br>data class [BlockResult](-block-result/index.html)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
+| [BlockResult](-block-result/index.html) | [jvm]<br>data class [BlockResult](-block-result/index.html)(val result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), val msg: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
 | [ImageStatus](-image-status/index.html) | [jvm]<br>enum [ImageStatus](-image-status/index.html) : [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)&lt;[NoMemberBlock.ImageStatus](-image-status/index.html)&gt; |
 
 

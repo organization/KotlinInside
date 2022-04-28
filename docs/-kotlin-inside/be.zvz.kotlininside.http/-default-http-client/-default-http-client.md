@@ -10,22 +10,15 @@ title: DefaultHttpClient
 
 
 [jvm]\
-open fun [DefaultHttpClient](-default-http-client.html)()
-
-
-
-DefaultHttpClient의 constructor입니다.
 
 
 
 
-
-[jvm]\
-open fun [DefaultHttpClient](-default-http-client.html)(gzip: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))
+@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)
 
 
 
-DefaultHttpClient의 constructor입니다.
+fun [DefaultHttpClient](-default-http-client.html)(enableGzipCompression: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = true, enableCache: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = true, proxy: [DefaultHttpClient.Proxy](-proxy/index.html)? = null)
 
 
 
@@ -36,53 +29,8 @@ jvm
 
 | | |
 |---|---|
-| gzip | GZIP 압축 사용 유무 |
-
-
-
-
-
-[jvm]\
-open fun [DefaultHttpClient](-default-http-client.html)(gzip: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), useCache: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))
-
-
-
-DefaultHttpClient의 constructor입니다.
-
-
-
-## Parameters
-
-
-jvm
-
-| | |
-|---|---|
-| gzip | GZIP 압축 사용 유무 |
-| useCache | 캐시 사용 유무 |
-
-
-
-
-
-[jvm]\
-open fun [DefaultHttpClient](-default-http-client.html)(gzip: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), useCache: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), @Nullableproxy: @Nullable[DefaultHttpClient.Proxy](-proxy/index.html))
-
-
-
-DefaultHttpClient의 constructor입니다.
-
-
-
-## Parameters
-
-
-jvm
-
-| | |
-|---|---|
-| gzip | GZIP 압축 사용 유무 |
-| useCache | 캐시 사용 유무 |
+| enableGzipCompression | GZIP 압축 사용 유무 |
+| enableCache | 캐시 사용 유무 |
 | proxy | Proxy 설정 |
 
 

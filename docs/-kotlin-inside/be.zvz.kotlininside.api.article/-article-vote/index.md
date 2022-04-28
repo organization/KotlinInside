@@ -14,12 +14,20 @@ class [ArticleVote](index.html)(gallId: [String](https://kotlinlang.org/api/late
 
 
 
+## Constructors
+
+
+| | |
+|---|---|
+| [ArticleVote](-article-vote.html) | [jvm]<br>fun [ArticleVote](-article-vote.html)(gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), articleId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), session: [Session](../../be.zvz.kotlininside.session/-session/index.html)) |
+
+
 ## Types
 
 
 | Name | Summary |
 |---|---|
-| [VoteResult](-vote-result/index.html) | [jvm]<br>data class [VoteResult](-vote-result/index.html)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), member: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)?) |
+| [VoteResult](-vote-result/index.html) | [jvm]<br>data class [VoteResult](-vote-result/index.html)(val result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), val cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val member: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)? = null) |
 
 
 ## Functions

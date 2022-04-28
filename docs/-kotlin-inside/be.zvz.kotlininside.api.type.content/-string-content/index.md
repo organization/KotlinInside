@@ -10,8 +10,16 @@ title: StringContent
 
 
 [jvm]\
-data class [StringContent](index.html)(string: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [Content](../-content/index.html)
+data class [StringContent](index.html)(val string: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [Content](../-content/index.html)
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [StringContent](-string-content.html) | [jvm]<br>fun [StringContent](-string-content.html)(string: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
 
 
 ## Properties

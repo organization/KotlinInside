@@ -10,8 +10,16 @@ title: WriteResult
 
 
 [jvm]\
-data class [WriteResult](index.html)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), data: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)?, cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, word: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?)
+data class [WriteResult](index.html)(val result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), val data: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)? = null, val cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null, val word: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null)
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [WriteResult](-write-result.html) | [jvm]<br>fun [WriteResult](-write-result.html)(result: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), data: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)? = null, cause: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null, word: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null) |
 
 
 ## Properties

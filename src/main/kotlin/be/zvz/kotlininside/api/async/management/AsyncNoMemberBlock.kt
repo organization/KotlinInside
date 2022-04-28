@@ -5,7 +5,6 @@ import be.zvz.kotlininside.session.Session
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
-import java.util.*
 
 class AsyncNoMemberBlock(
     session: Session,

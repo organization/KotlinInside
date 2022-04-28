@@ -14,6 +14,14 @@ class [AsyncMinorGalleryInfo](index.html)(gallId: [String](https://kotlinlang.or
 
 
 
+## Constructors
+
+
+| | |
+|---|---|
+| [AsyncMinorGalleryInfo](-async-minor-gallery-info.html) | [jvm]<br>fun [AsyncMinorGalleryInfo](-async-minor-gallery-info.html)(gallId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
+
+
 ## Functions
 
 

@@ -10,7 +10,7 @@ title: modifyAsync
 
 
 [jvm]\
-suspend fun [modifyAsync](modify-async.html)(article: [Article](../../be.zvz.kotlininside.api.type/-article/index.html), fcmToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) = "N"): Deferred&lt;[ArticleWrite.WriteResult](../../be.zvz.kotlininside.api.article/-article-write/-write-result/index.html)&gt;
+suspend fun [modifyAsync](modify-async.html)(article: [Article](../../be.zvz.kotlininside.api.type/-article/index.html), fcmToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) = &quot;N&quot;): Deferred&lt;[ArticleWrite.WriteResult](../../be.zvz.kotlininside.api.article/-article-write/-write-result/index.html)&gt;
 
 
 

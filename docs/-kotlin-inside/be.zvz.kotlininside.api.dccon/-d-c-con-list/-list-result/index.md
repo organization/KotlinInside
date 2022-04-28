@@ -10,8 +10,16 @@ title: ListResult
 
 
 [jvm]\
-data class [ListResult](index.html)(tab: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[DCCon](../../../be.zvz.kotlininside.api.type/-d-c-con/index.html)&gt;, list: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[DCCon](../../../be.zvz.kotlininside.api.type/-d-c-con/index.html)&gt;&gt;)
+data class [ListResult](index.html)(val tab: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[DCCon](../../../be.zvz.kotlininside.api.type/-d-c-con/index.html)&gt;, val list: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[DCCon](../../../be.zvz.kotlininside.api.type/-d-c-con/index.html)&gt;&gt;)
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [ListResult](-list-result.html) | [jvm]<br>fun [ListResult](-list-result.html)(tab: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[DCCon](../../../be.zvz.kotlininside.api.type/-d-c-con/index.html)&gt;, list: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[DCCon](../../../be.zvz.kotlininside.api.type/-d-c-con/index.html)&gt;&gt;) |
 
 
 ## Properties

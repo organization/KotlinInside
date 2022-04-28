@@ -10,7 +10,7 @@ title: DUPLICATE_NAMED
 
 
 [jvm]\
-[DUPLICATE_NAMED](index.html)("B")
+[DUPLICATE_NAMED](index.html)(&quot;B&quot;)
 
 
 

@@ -10,7 +10,7 @@ title: PROXY_AND_CELLULAR
 
 
 [jvm]\
-[PROXY_AND_CELLULAR](index.html)("P,M")
+[PROXY_AND_CELLULAR](index.html)(&quot;P,M&quot;)
 
 
 

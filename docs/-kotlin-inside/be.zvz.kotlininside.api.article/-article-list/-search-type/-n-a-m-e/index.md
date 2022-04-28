@@ -10,7 +10,7 @@ title: NAME
 
 
 [jvm]\
-[NAME](index.html)("name")
+[NAME](index.html)(&quot;name&quot;)
 
 
 

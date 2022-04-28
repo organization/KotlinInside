@@ -39,7 +39,7 @@ class NoMemberBlock(
 
     data class BlockResult(
         val result: Boolean,
-        val cause: String
+        val msg: String
     )
 
     @Throws(InsufficientPermissionException::class)
@@ -77,12 +77,12 @@ class NoMemberBlock(
             } catch (e: IOException) {
                 return BlockResult(
                     result = false,
-                    cause = "권한이 없습니다."
+                    msg = "권한이 없습니다."
                 )
             }
             return BlockResult(
                 result = json.get("result").asBoolean(),
-                cause = json.get("cause").safeText()
+                msg = json.get("msg").safeText()
             )
         }
     }

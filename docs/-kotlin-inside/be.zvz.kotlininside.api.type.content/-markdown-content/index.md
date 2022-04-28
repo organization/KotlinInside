@@ -10,8 +10,16 @@ title: MarkdownContent
 
 
 [jvm]\
-data class [MarkdownContent](index.html)(markdownString: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [Content](../-content/index.html)
+data class [MarkdownContent](index.html)(val markdownString: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [Content](../-content/index.html)
 
+
+
+## Constructors
+
+
+| | |
+|---|---|
+| [MarkdownContent](-markdown-content.html) | [jvm]<br>fun [MarkdownContent](-markdown-content.html)(markdownString: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
 
 
 ## Properties

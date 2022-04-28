@@ -10,15 +10,7 @@ title: put
 
 
 [jvm]\
-
-
-
-
-@Nullable
-
-
-
-open fun [put](put.html)(@NotNullurl: @NotNull[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), @Nullableoption: @Nullable[HttpInterface.Option](../-http-interface/-option/index.html)): @Nullable[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
+open override fun [put](put.html)(url: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), option: [HttpInterface.Option](../-http-interface/-option/index.html)?): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?
 
 
 

@@ -1,14 +1,17 @@
 ---
-title: port -
+title: port
 ---
-//[KotlinInside](../../../index.md)/[be.zvz.kotlininside.http](../../index.md)/[DefaultHttpClient](../index.md)/[Proxy](index.md)/[port](port.md)
+//[KotlinInside](../../../../index.html)/[be.zvz.kotlininside.http](../../index.html)/[DefaultHttpClient](../index.html)/[Proxy](index.html)/[port](port.html)
 
 
 
-# port  
-[jvm]  
-Content  
-open val [port](port.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
+# port
+
+
+
+[jvm]\
+var [port](port.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
+
 
 
 

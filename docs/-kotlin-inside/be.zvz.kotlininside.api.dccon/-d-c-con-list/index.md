@@ -14,12 +14,20 @@ class [DCConList](index.html)(session: [Session](../../be.zvz.kotlininside.sessi
 
 
 
+## Constructors
+
+
+| | |
+|---|---|
+| [DCConList](-d-c-con-list.html) | [jvm]<br>fun [DCConList](-d-c-con-list.html)(session: [Session](../../be.zvz.kotlininside.session/-session/index.html)) |
+
+
 ## Types
 
 
 | Name | Summary |
 |---|---|
-| [ListResult](-list-result/index.html) | [jvm]<br>data class [ListResult](-list-result/index.html)(tab: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[DCCon](../../be.zvz.kotlininside.api.type/-d-c-con/index.html)&gt;, list: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[DCCon](../../be.zvz.kotlininside.api.type/-d-c-con/index.html)&gt;&gt;) |
+| [ListResult](-list-result/index.html) | [jvm]<br>data class [ListResult](-list-result/index.html)(val tab: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[DCCon](../../be.zvz.kotlininside.api.type/-d-c-con/index.html)&gt;, val list: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[DCCon](../../be.zvz.kotlininside.api.type/-d-c-con/index.html)&gt;&gt;) |
 
 
 ## Functions

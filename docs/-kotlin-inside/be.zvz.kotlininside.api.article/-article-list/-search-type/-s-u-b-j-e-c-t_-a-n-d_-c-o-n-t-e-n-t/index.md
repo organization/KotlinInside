@@ -10,7 +10,7 @@ title: SUBJECT_AND_CONTENT
 
 
 [jvm]\
-[SUBJECT_AND_CONTENT](index.html)("subject_m")
+[SUBJECT_AND_CONTENT](index.html)(&quot;subject_m&quot;)
 
 
 

@@ -18,7 +18,7 @@ title: DCCon
 
 
 
-fun [DCCon](-d-c-con.html)(packageIndex: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) = 0, detailIndex: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) = 0, imgLink: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) = "", memo: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) = "", title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) = "")
+fun [DCCon](-d-c-con.html)(packageIndex: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) = 0, detailIndex: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) = 0, imgLink: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) = &quot;&quot;, memo: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) = &quot;&quot;, title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) = &quot;&quot;)
 
 
 

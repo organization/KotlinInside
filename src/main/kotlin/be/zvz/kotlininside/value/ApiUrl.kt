@@ -5,7 +5,7 @@ object ApiUrl {
     const val MOBILE_WEB = Protocol.HTTP + "m.dcinside.com/"
     const val MOBILE_WEB_HTTPS = Protocol.HTTPS + "m.dcinside.com/"
     const val APP_API = Protocol.HTTPS + "app.dcinside.com/api/"
-    const val AUTH_API = Protocol.HTTPS + "dcid.dcinside.com/join/"
+    const val AUTH_API = Protocol.HTTPS + "msign.dcinside.com/"
     const val MAIN_API = Protocol.HTTP + "json2.dcinside.com/"
     const val UPLOAD = Protocol.HTTPS + "upload.dcinside.com/"
     const val REDIRECT = APP_API + "redirect.php"
@@ -60,9 +60,9 @@ object ApiUrl {
     }
 
     object Auth {
-        const val LOGIN = AUTH_API + "mobile_app_login.php"
-        const val APP_ID = AUTH_API + "mobile_app_key_verification_3rd.php"
-        const val APP_CHECK = MAIN_API + "json0/app_check_A_rina_beta.php"
+        const val LOGIN = AUTH_API + "api/login"
+        const val APP_ID = AUTH_API + "auth/mobile_app_verification"
+        const val APP_CHECK = MAIN_API + "json0/app_check_A_rina_one.php"
     }
 
     object User {
