@@ -1,8 +1,9 @@
 syntax = "proto2";
 
-package org.microg.gms.checkin;
+// from MicroG
+package be.zvz.kotlininside.proto.checkin;
 
-option java_package = "org.microg.gms.checkin";
+option java_package = "be.zvz.kotlininside.proto.checkin";
 
 option java_outer_classname = "CheckinProto";
 

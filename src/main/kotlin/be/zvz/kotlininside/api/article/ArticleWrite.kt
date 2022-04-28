@@ -93,6 +93,8 @@ class ArticleWrite internal constructor(
                 )
             }
         }
+        option.addMultipartParameter("fix", "")
+        option.addMultipartParameter("secret_use", "0")
 
         val json = JsonBrowser.parse(
             KotlinInside.getInstance().httpInterface.upload(

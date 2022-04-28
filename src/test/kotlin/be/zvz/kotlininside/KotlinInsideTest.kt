@@ -5,6 +5,7 @@ package be.zvz.kotlininside
 
 import be.zvz.kotlininside.api.article.*
 import be.zvz.kotlininside.api.generic.GalleryRanking
+import be.zvz.kotlininside.api.generic.MiniGalleryRanking
 import be.zvz.kotlininside.api.generic.MinorGalleryRanking
 import be.zvz.kotlininside.api.type.Article
 import be.zvz.kotlininside.api.type.HeadText
@@ -64,6 +65,13 @@ class KotlinInsideTest {
 
     @Order(5)
     @Test
+    fun testMiniGalleryRanking() {
+        val miniGalleryRanking = MiniGalleryRanking()
+        println(miniGalleryRanking.request())
+    }
+
+    @Order(6)
+    @Test
     fun testArticleList() {
         val articleList = ArticleList("hit", 1)
         articleList.request()
@@ -79,7 +87,7 @@ class KotlinInsideTest {
         }
     }
 
-    @Order(6)
+    @Order(7)
     @Test
     fun testArticleRead() {
         val articleRead = ArticleRead("hit", 1)
@@ -89,7 +97,7 @@ class KotlinInsideTest {
         println(articleRead.getViewMain())
     }
 
-    @Order(7)
+    @Order(8)
     @Test
     fun testArticleWrite() {
         val articleWrite = ArticleWrite(
@@ -127,7 +135,7 @@ class KotlinInsideTest {
             articleId = writeResult.articleId!!
     }
 
-    @Order(8)
+    @Order(9)
     @Test
     fun testArticleVote() {
         val articleVote = ArticleVote(
@@ -145,7 +153,7 @@ class KotlinInsideTest {
         println(downvoteResult)
     }
 
-    @Order(9)
+    @Order(10)
     @Test
     fun testArticleDelete() {
         val articleDelete = ArticleDelete(

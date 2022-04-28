@@ -5,6 +5,7 @@ import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.http.HttpInterface
 import be.zvz.kotlininside.http.Request
 import be.zvz.kotlininside.json.JsonBrowser
+import be.zvz.kotlininside.proto.checkin.CheckinProto
 import be.zvz.kotlininside.session.Session
 import be.zvz.kotlininside.session.SessionDetail
 import be.zvz.kotlininside.session.user.Anonymous
@@ -17,7 +18,6 @@ import be.zvz.kotlininside.value.Const
 import org.apache.commons.codec.binary.Hex
 import org.apache.commons.codec.digest.DigestUtils
 import org.apache.commons.lang3.RandomStringUtils
-import org.microg.gms.checkin.CheckinProto
 import java.io.BufferedInputStream
 import java.io.BufferedOutputStream
 import java.net.HttpURLConnection
@@ -68,7 +68,7 @@ class Auth {
             .setLocale("ko")
             .addMacAddress(RandomStringUtils.random(12, "ABCDEF0123456789"))
             .setMeid(RandomStringUtils.randomNumeric(15))
-            .setTimeZone("Asia/Seoul")
+            .setTimeZone("KST")
             .setVersion(3)
             .addOtaCert("--no-output--")
             .addMacAddressType("wifi")
@@ -129,12 +129,14 @@ class Auth {
                 .addBodyParameter("sender", Const.Register3.SENDER)
                 .addBodyParameter("X-appid", fid)
                 .addBodyParameter("X-scope", Const.Register3.X_SCOPE)
+                .addBodyParameter("X-app_ver_name", Const.DC_APP_VERSION_NAME)
                 .addBodyParameter("X-Goog-Firebase-Installations-Auth", token)
                 .addBodyParameter("X-gmp_app_id", Const.Firebase.APP_ID)
                 .addBodyParameter("X-firebase-app-name-hash", Const.Register3.X_FIREBASE_APP_NAME_HASH)
                 .addBodyParameter("app", Const.Register3.APP)
                 .addBodyParameter("device", androidCheckin.androidId.toString())
                 .addBodyParameter("app_ver", Const.DC_APP_VERSION_CODE)
+                .addBodyParameter("gcm_ver", Const.Register3.GCM_VERSION)
                 .addBodyParameter("cert", Const.Register3.CERT)
         )!!
         return register3.split('=')[1]

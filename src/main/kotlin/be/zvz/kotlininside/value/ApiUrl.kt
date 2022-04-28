@@ -84,5 +84,6 @@ object ApiUrl {
         const val APP_MAIN = MAIN_API + "json3/main_content.php"
         const val GALLERY_RANKING = MAIN_API + "json3/ranking_gallery.php"
         const val MINOR_GALLERY_RANKING = MAIN_API + "json1/mgallmain/mgallery_ranking.php"
+        const val MINI_GALLERY_RANKING = MAIN_API + "json1/migallmain/migallery_ranking.php"
     }
 }
