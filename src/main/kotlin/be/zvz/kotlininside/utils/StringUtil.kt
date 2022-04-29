@@ -23,8 +23,14 @@ object StringUtil {
     private val HTML_RENDERER = HtmlRenderer.builder(OPTIONS).escapeHtml(true).build()
 
     @JvmStatic
-    fun ynToBoolean(s: String): Boolean = when (s) {
-        "Y" -> true
+    fun ynToBoolean(s: String): Boolean = when (s.lowercase()) {
+        "y" -> true
+        else -> false
+    }
+
+    @JvmStatic
+    fun okToBoolean(s: String): Boolean = when (s.lowercase()) {
+        "ok" -> true
         else -> false
     }
 

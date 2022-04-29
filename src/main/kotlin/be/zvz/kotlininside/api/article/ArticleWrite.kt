@@ -77,6 +77,7 @@ class ArticleWrite internal constructor(
 
         var imageCount = 0
         var movieCount = 0
+        var dcConCount = 0
         article.content.forEachIndexed { index, content ->
             when (content) {
                 is MovieContent -> {
@@ -116,6 +117,13 @@ class ArticleWrite internal constructor(
                             "${insertResult.movieId}|${insertResult.movieToken}|${content.fileId}"
                         )
                         movieCount++
+                    }
+                }
+                is DCConContent -> {
+                    if (content.dcConInsertResult.imageTag != null) {
+                        option.addMultipartParameter("memo_block[$index]", content.dcConInsertResult.imageTag)
+                        option.addMultipartParameter("detail_idx[$dcConCount]", content.dcCon.detailIndex.toString())
+                        dcConCount++
                     }
                 }
                 is ImageContent -> {
