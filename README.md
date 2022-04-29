@@ -10,13 +10,13 @@
 #### < Gradle 7
 
 ```groovy
-compile 'be.zvz:KotlinInside:1.13.1'
+compile 'be.zvz:KotlinInside:1.14.0'
 ```
 
 #### Gradle 7+
 
 ```groovy
-implementation 'be.zvz:KotlinInside:1.13.1'
+implementation 'be.zvz:KotlinInside:1.14.0'
 ```
 
 ### Maven
@@ -25,7 +25,7 @@ implementation 'be.zvz:KotlinInside:1.13.1'
 <dependency>
   <groupId>be.zvz</groupId>
   <artifactId>KotlinInside</artifactId>
-  <version>1.13.1</version>
+  <version>1.14.0</version>
 </dependency>
 ```
 

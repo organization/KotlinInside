@@ -10,7 +10,7 @@ title: fid
 
 
 [jvm]\
-lateinit var [fid](fid.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
+var [fid](fid.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null
 
 
 

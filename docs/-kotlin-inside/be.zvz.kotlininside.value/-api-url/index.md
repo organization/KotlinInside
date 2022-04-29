@@ -29,6 +29,7 @@ object [ApiUrl](index.html)
 | [MiniGallery](-mini-gallery/index.html) | [jvm]<br>object [MiniGallery](-mini-gallery/index.html) |
 | [PlayService](-play-service/index.html) | [jvm]<br>object [PlayService](-play-service/index.html) |
 | [Search](-search/index.html) | [jvm]<br>object [Search](-search/index.html) |
+| [Upload](-upload/index.html) | [jvm]<br>object [Upload](-upload/index.html) |
 | [User](-user/index.html) | [jvm]<br>object [User](-user/index.html) |
 
 
@@ -42,6 +43,7 @@ object [ApiUrl](index.html)
 | [MAIN_API](-m-a-i-n_-a-p-i.html) | [jvm]<br>const val [MAIN_API](-m-a-i-n_-a-p-i.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [MOBILE_WEB](-m-o-b-i-l-e_-w-e-b.html) | [jvm]<br>const val [MOBILE_WEB](-m-o-b-i-l-e_-w-e-b.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [MOBILE_WEB_HTTPS](-m-o-b-i-l-e_-w-e-b_-h-t-t-p-s.html) | [jvm]<br>const val [MOBILE_WEB_HTTPS](-m-o-b-i-l-e_-w-e-b_-h-t-t-p-s.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [MOVIE_UPLOAD](-m-o-v-i-e_-u-p-l-o-a-d.html) | [jvm]<br>const val [MOVIE_UPLOAD](-m-o-v-i-e_-u-p-l-o-a-d.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [PC_WEB](-p-c_-w-e-b.html) | [jvm]<br>const val [PC_WEB](-p-c_-w-e-b.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [REDIRECT](-r-e-d-i-r-e-c-t.html) | [jvm]<br>const val [REDIRECT](-r-e-d-i-r-e-c-t.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [UPLOAD](-u-p-l-o-a-d.html) | [jvm]<br>const val [UPLOAD](-u-p-l-o-a-d.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |

@@ -19,8 +19,10 @@ interface [Content](index.html)
 
 | Name |
 |---|
+| [DCConContent](../-d-c-con-content/index.html) |
 | [HtmlContent](../-html-content/index.html) |
 | [ImageContent](../-image-content/index.html) |
 | [MarkdownContent](../-markdown-content/index.html) |
+| [MovieContent](../-movie-content/index.html) |
 | [StringContent](../-string-content/index.html) |
 

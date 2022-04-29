@@ -22,6 +22,7 @@ object [Article](index.html)
 | [DELETE](-d-e-l-e-t-e.html) | [jvm]<br>const val [DELETE](-d-e-l-e-t-e.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [DOWNVOTE](-d-o-w-n-v-o-t-e.html) | [jvm]<br>const val [DOWNVOTE](-d-o-w-n-v-o-t-e.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [HIT_UPVOTE](-h-i-t_-u-p-v-o-t-e.html) | [jvm]<br>const val [HIT_UPVOTE](-h-i-t_-u-p-v-o-t-e.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [INSERT_MOVIE_INFO](-i-n-s-e-r-t_-m-o-v-i-e_-i-n-f-o.html) | [jvm]<br>const val [INSERT_MOVIE_INFO](-i-n-s-e-r-t_-m-o-v-i-e_-i-n-f-o.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [LIST](-l-i-s-t.html) | [jvm]<br>const val [LIST](-l-i-s-t.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [MODIFY](-m-o-d-i-f-y.html) | [jvm]<br>const val [MODIFY](-m-o-d-i-f-y.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [READ](-r-e-a-d.html) | [jvm]<br>const val [READ](-r-e-a-d.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
