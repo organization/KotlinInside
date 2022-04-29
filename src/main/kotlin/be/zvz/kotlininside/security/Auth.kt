@@ -100,7 +100,7 @@ class Auth {
                 .addBodyParameter("X-gcm.topic", scope)
                 .addBodyParameter("X-app_ver", Const.DC_APP_VERSION_CODE)
                 .addBodyParameter("X-appid", fid)
-                .addBodyParameter("X-scope", "/topics/DcRefreshRemoteConfig")
+                .addBodyParameter("X-scope", scope)
                 .addBodyParameter("X-Goog-Firebase-Installations-Auth", installationToken)
                 .addBodyParameter("X-gmp_app_id", Const.Firebase.APP_ID)
                 .addBodyParameter("X-firebase-app-name-hash", Const.Register3.X_FIREBASE_APP_NAME_HASH)
