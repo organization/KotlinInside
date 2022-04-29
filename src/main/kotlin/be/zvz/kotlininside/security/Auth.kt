@@ -6,6 +6,9 @@ import be.zvz.kotlininside.http.HttpInterface
 import be.zvz.kotlininside.http.Request
 import be.zvz.kotlininside.json.JsonBrowser
 import be.zvz.kotlininside.proto.checkin.CheckinProto
+import be.zvz.kotlininside.proto.checkin.CheckinRequestKt.CheckinKt.build
+import be.zvz.kotlininside.proto.checkin.CheckinRequestKt.checkin
+import be.zvz.kotlininside.proto.checkin.checkinRequest
 import be.zvz.kotlininside.session.Session
 import be.zvz.kotlininside.session.SessionDetail
 import be.zvz.kotlininside.session.user.Anonymous
@@ -27,17 +30,13 @@ import java.util.*
 
 class Auth {
     private val seoulTimeZone = TimeZone.getTimeZone("Asia/Seoul")
-    private val refreshDateFormat = SimpleDateFormat("yyyyMMddHH", Locale.US).apply {
-        timeZone = seoulTimeZone
-    }
     private lateinit var time: String
-    private lateinit var formattedTime: String
+    private lateinit var lastRefreshTime: Calendar
 
-    lateinit var fcmToken: String
+    var fcmToken: String = ""
         private set
-    lateinit var fid: String
-    lateinit var refreshToken: String
-    lateinit var androidCheckin: CheckinProto.CheckinResponse
+    var fid: String? = null
+    var refreshToken: String? = null
 
     data class AppCheck(
         val result: Boolean,
@@ -47,59 +46,56 @@ class Auth {
         val date: String? = null
     )
 
-    fun fetchAndroidCheckin(): CheckinProto.CheckinResponse {
-        val checkin = CheckinProto.CheckinRequest.newBuilder()
-            .setAndroidId(0)
-            .setCheckin(
-                CheckinProto.CheckinRequest.Checkin.newBuilder()
-                    .setBuild(
-                        CheckinProto.CheckinRequest.Checkin.Build.newBuilder()
-                            .setFingerprint("google/razor/flo:7.1.1/NMF26Q/1602158:user/release-keys")
-                            .setHardware("flo")
-                            .setBrand("google")
-                            .setRadio("FLO-04.04")
-                            .setClientId("android-google")
-                            .setSdkVersion(25)
-                            .build()
-                    )
-                    .setLastCheckinMs(0)
-                    .build()
-            )
-            .setLocale("ko")
-            .addMacAddress(RandomStringUtils.random(12, "ABCDEF0123456789"))
-            .setMeid(RandomStringUtils.randomNumeric(15))
-            .setTimeZone("KST")
-            .setVersion(3)
-            .addOtaCert("--no-output--")
-            .addMacAddressType("wifi")
-            .setFragment(0)
-            .setUserSerialNumber(0)
-            .build()
+    fun generateAidLoginFromCheckin(checkinRes: CheckinProto.CheckinResponse): String =
+        "AidLogin ${checkinRes.androidId}:${checkinRes.securityToken}"
 
-        val request = URL(ApiUrl.PlayService.CHECKIN).openConnection() as HttpURLConnection
-        request.requestMethod = "POST"
-        request.doOutput = true
-        request.setRequestProperty("Content-Type", "application/x-protobuf")
-        request.setRequestProperty("User-Agent", "Android-Checkin/3.0")
-        request.outputStream.use {
-            BufferedOutputStream(it).use(checkin::writeTo)
+    fun fetchAndroidCheckin(): CheckinProto.CheckinResponse {
+        val checkinReq = checkinRequest {
+            androidId = 0
+            checkin = checkin {
+                build = build {
+                    fingerprint = "google/razor/flo:7.1.1/NMF26Q/1602158:user/release-keys"
+                    hardware = "flo"
+                    brand = "google"
+                    radio = "FLO-04.04"
+                    clientId = "android-google"
+                    sdkVersion = 25
+                }
+                lastCheckinMs = 0
+            }
+            locale = "ko"
+            macAddress.add(RandomStringUtils.random(12, "ABCDEF0123456789"))
+            meid = RandomStringUtils.randomNumeric(15)
+            timeZone = TimeZone.getDefault().getDisplayName(true, TimeZone.SHORT)
+            version = 3
+            otaCert.add("--no-output--")
+            macAddressType.add("wifi")
+            fragment = 0
+            userSerialNumber = 0
         }
-        return request.inputStream.use {
-            BufferedInputStream(it).use(CheckinProto.CheckinResponse::parseFrom)
+
+        val request = (URL(ApiUrl.PlayService.CHECKIN).openConnection() as HttpURLConnection).apply {
+            requestMethod = "POST"
+            doOutput = true
+            setRequestProperty("Content-Type", "application/x-protobuf")
+            setRequestProperty("User-Agent", "Android-Checkin/3.0")
         }
+
+        BufferedOutputStream(request.outputStream).use(checkinReq::writeTo)
+        return BufferedInputStream(request.inputStream).use(CheckinProto.CheckinResponse::parseFrom)
     }
 
-    private fun requestToGcmWithScope(clientToken: String, installationToken: String, scope: String) {
+    private fun requestToGcmWithScope(androidCheckin: CheckinProto.CheckinResponse, clientToken: String, installationToken: String, scope: String) {
         KotlinInside.getInstance().httpInterface.post(
             ApiUrl.PlayService.REGISTER3,
             HttpInterface.Option()
-                .addHeader("Authorization", "AidLogin ${androidCheckin.androidId}:${androidCheckin.securityToken}")
+                .addHeader("Authorization", generateAidLoginFromCheckin(androidCheckin))
                 .setUserAgent(Const.Register3.USER_AGENT)
                 .addBodyParameter("X-subtype", clientToken)
                 .addBodyParameter("sender", clientToken)
                 .addBodyParameter("X-gcm.topic", scope)
                 .addBodyParameter("X-app_ver", Const.DC_APP_VERSION_CODE)
-                .addBodyParameter("X-appid", fid)
+                .addBodyParameter("X-appid", fid ?: "")
                 .addBodyParameter("X-scope", scope)
                 .addBodyParameter("X-Goog-Firebase-Installations-Auth", installationToken)
                 .addBodyParameter("X-gmp_app_id", Const.Firebase.APP_ID)
@@ -143,17 +139,17 @@ class Auth {
         fid = firebaseInstallations.get("fid").safeText()
         refreshToken = firebaseInstallations.get("refreshToken").safeText()
         val token = firebaseInstallations.get("authToken").get("token").safeText()
-        androidCheckin = fetchAndroidCheckin()
+        val androidCheckin = fetchAndroidCheckin()
 
         val register3 = KotlinInside.getInstance().httpInterface.post(
             ApiUrl.PlayService.REGISTER3,
             HttpInterface.Option()
-                .addHeader("Authorization", "AidLogin ${androidCheckin.androidId}:${androidCheckin.securityToken}")
+                .addHeader("Authorization", generateAidLoginFromCheckin(androidCheckin))
                 .setUserAgent(Const.Register3.USER_AGENT)
-                .addBodyParameter("X-subtype", "477369754343")
+                .addBodyParameter("X-subtype", Const.Register3.SENDER)
                 .addBodyParameter("sender", Const.Register3.SENDER)
                 .addBodyParameter("X-app_ver", Const.DC_APP_VERSION_CODE)
-                .addBodyParameter("X-appid", fid)
+                .addBodyParameter("X-appid", fid ?: "")
                 .addBodyParameter("X-scope", Const.Register3.X_SCOPE_ALL)
                 .addBodyParameter("X-Goog-Firebase-Installations-Auth", token)
                 .addBodyParameter("X-gmp_app_id", Const.Firebase.APP_ID)
@@ -168,8 +164,8 @@ class Auth {
 
         val clientToken = register3.split('=')[1]
 
-        requestToGcmWithScope(clientToken, token, Const.Register3.X_SCOPE_REFRESH_REMOTE_CONFIG)
-        requestToGcmWithScope(clientToken, token, Const.Register3.X_SCOPE_SHOW_NOTICE_MESSAGE)
+        requestToGcmWithScope(androidCheckin, clientToken, token, Const.Register3.X_SCOPE_REFRESH_REMOTE_CONFIG)
+        requestToGcmWithScope(androidCheckin, clientToken, token, Const.Register3.X_SCOPE_SHOW_NOTICE_MESSAGE)
 
         return clientToken
     }
@@ -203,29 +199,22 @@ class Auth {
         )
     }
 
-    private fun getDayOfWeekMonday(day: Int): Int {
-        return when (day) {
-            Calendar.MONDAY -> 1
-            Calendar.TUESDAY -> 2
-            Calendar.WEDNESDAY -> 3
-            Calendar.THURSDAY -> 4
-            Calendar.FRIDAY -> 5
-            Calendar.SATURDAY -> 6
-            Calendar.SUNDAY -> 7
-            else -> 1
-        }
+    private fun getDayOfWeekMonday(day: Int): Int = when (day) {
+        Calendar.MONDAY -> 1
+        Calendar.TUESDAY -> 2
+        Calendar.WEDNESDAY -> 3
+        Calendar.THURSDAY -> 4
+        Calendar.FRIDAY -> 5
+        Calendar.SATURDAY -> 6
+        Calendar.SUNDAY -> 7
+        else -> 1
     }
 
     /**
      *
      * @return [java.lang.String] Fri332295548112911 형식의 날짜 문자열을 반환합니다.
      */
-    private fun dateToString(date: Date): String {
-        val calendar = Calendar.getInstance(seoulTimeZone, Locale.US)
-        calendar.minimalDaysInFirstWeek = 4
-        calendar.firstDayOfWeek = Calendar.MONDAY
-        calendar.time = date
-
+    private fun dateToString(calendar: Calendar): String {
         val dayOfYear = calendar[Calendar.DAY_OF_YEAR]
         val dayOfWeek = calendar[Calendar.DAY_OF_WEEK]
         val weekOfYear = calendar[Calendar.WEEK_OF_YEAR]
@@ -240,22 +229,29 @@ class Auth {
             Locale.US
         ).apply {
             timeZone = seoulTimeZone
-        }.format(date)
+        }.format(calendar.time)
     }
+
+    private fun needsRefresh(old: Calendar, new: Calendar): Boolean = old[Calendar.YEAR] != new[Calendar.YEAR] ||
+        old[Calendar.MONTH] != new[Calendar.MONTH] ||
+        old[Calendar.DAY_OF_MONTH] != new[Calendar.DAY_OF_MONTH] ||
+        old[Calendar.HOUR_OF_DAY] != new[Calendar.HOUR_OF_DAY]
 
     /**
      * SHA256 단방향 암호화된 value_token을 서버로부터 얻어오거나, 생성하는 메소드입니다.
      * @return [java.lang.String] value_token을 반환합니다.
      */
     fun generateHashedAppKey(): String {
-        val now = Date()
-        val tempFormattedTime = refreshDateFormat.format(now)
+        val now = Calendar.getInstance(seoulTimeZone, Locale.US).apply {
+            minimalDaysInFirstWeek = 4
+            firstDayOfWeek = Calendar.MONDAY
+        }
 
-        if (!::time.isInitialized || !::formattedTime.isInitialized || formattedTime != tempFormattedTime) {
+        if (!::time.isInitialized || !::lastRefreshTime.isInitialized || needsRefresh(lastRefreshTime, now)) {
             try {
                 getAppCheck().run {
                     date?.let {
-                        formattedTime = tempFormattedTime
+                        lastRefreshTime = now
                         time = it
                         return String(Hex.encodeHex(DigestUtils.sha256("dcArdchk_$time")))
                     }
@@ -268,7 +264,7 @@ class Auth {
 
         // 디시인사이드 2019/10/31 변경점 - Fri332295548112911 형식으로 변경됨
         // 예외가 발생했거나, 값이 null이어서 time을 제대로 설정하지 못한 경우
-        formattedTime = tempFormattedTime
+        lastRefreshTime = now
         time = dateToString(now)
         return String(Hex.encodeHex(DigestUtils.sha256("dcArdchk_$time")))
     }
@@ -296,7 +292,7 @@ class Auth {
      */
     @Throws(HttpException::class)
     fun fetchAppId(hashedAppKey: String): String {
-        fcmToken = fetchFcmToken()
+        fcmToken = fetchFcmToken(fid, refreshToken)
 
         val option = Request.getDefaultOption()
             .addMultipartParameter("value_token", hashedAppKey)

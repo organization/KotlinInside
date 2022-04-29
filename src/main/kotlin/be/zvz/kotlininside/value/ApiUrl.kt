@@ -8,6 +8,7 @@ object ApiUrl {
     const val AUTH_API = Protocol.HTTPS + "msign.dcinside.com/"
     const val MAIN_API = Protocol.HTTP + "json2.dcinside.com/"
     const val UPLOAD = Protocol.HTTPS + "upload.dcinside.com/"
+    const val MOVIE_UPLOAD = Protocol.HTTPS + "m4up4.dcinside.com/"
     const val REDIRECT = APP_API + "redirect.php"
 
     private object Protocol {
@@ -26,6 +27,11 @@ object ApiUrl {
         const val CHECKIN = "$ANDROID_CLIENT/checkin"
     }
 
+    object Upload {
+        const val CHECK_UPLOAD_RESTRICTION = "$APP_API/api/chk_upload_restriction"
+        const val MOVIE = "$MOVIE_UPLOAD/movie_upload_v1.php"
+    }
+
     object Article {
         const val LIST = APP_API + "gall_list_new.php"
         const val READ = APP_API + "gall_view_new.php"
@@ -36,6 +42,7 @@ object ApiUrl {
         const val DOWNVOTE = APP_API + "_recommend_down.php"
         const val REPORT = MOBILE_WEB + "api/report.php"
         const val HIT_UPVOTE = APP_API + "hit_recommend"
+        const val INSERT_MOVIE_INFO = APP_API + "movie/insert-mvinfo"
     }
 
     object Comment {

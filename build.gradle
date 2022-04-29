@@ -11,11 +11,11 @@ plugins {
     id 'com.google.protobuf' version '0.8.18'
 }
 
-boolean isDev = false
+boolean isDev = true
 
 String libName = 'KotlinInside'
 String libDevVersion = isDev ? '-SNAPSHOT' : ''
-String libVersion = "1.13.1$libDevVersion"
+String libVersion = "1.13.2$libDevVersion"
 String libDesc = 'Unofficial DCInside API written in Kotlin'
 
 group = 'be.zvz'
@@ -31,9 +31,6 @@ sourceSets {
     main {
         proto {
             srcDir 'src/main/proto'
-        }
-        java {
-            srcDir 'build/generated/source/proto/main/javalite'
         }
     }
 }
@@ -55,10 +52,12 @@ protobuf {
     generateProtoTasks {
         all().each { task ->
             task.builtins {
-                remove java
-            }
-            task.plugins {
-                javalite {}
+                java {
+                    option 'lite'
+                }
+                kotlin {
+                    option 'lite'
+                }
             }
         }
     }
@@ -79,7 +78,7 @@ dependencies {
     implementation group: 'com.vladsch.flexmark', name: 'flexmark-ext-gfm-tasklist', version: '0.62.2'
 
     // Protobuf
-    api group: 'com.google.protobuf', name: 'protobuf-lite', version: '3.0.1'
+    implementation group: 'com.google.protobuf', name: 'protobuf-kotlin-lite', version: '3.20.1'
 
     // Use the Kotlin JDK standard library.
     implementation group: 'org.jetbrains.kotlin', name: 'kotlin-stdlib-jdk7'

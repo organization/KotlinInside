@@ -18,13 +18,16 @@ import org.junit.jupiter.api.MethodOrderer
 import org.junit.jupiter.api.Order
 import org.junit.jupiter.api.TestInstance
 import org.junit.jupiter.api.TestMethodOrder
+import java.time.ZoneId
 import java.util.*
+import java.util.logging.Logger
 import kotlin.test.Test
 import kotlin.test.assertNotNull
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @TestMethodOrder(MethodOrderer.OrderAnnotation::class)
 class KotlinInsideTest {
+    private var log = Logger.getLogger(KotlinInsideTest::class.java.name)
     private var articleId = 0
 
     @Order(1)
@@ -40,12 +43,18 @@ class KotlinInsideTest {
     @Test
     fun testDateGenerator() {
         val auth = KotlinInside.getInstance().auth
-        val date = Date()
+        val date = Calendar.getInstance(
+            TimeZone.getTimeZone(ZoneId.of("Asia/Seoul")),
+            Locale.US
+        ).apply {
+            minimalDaysInFirstWeek = 4
+            firstDayOfWeek = Calendar.MONDAY
+        }
         val appCheck = auth.getAppCheck()
-        val dateToString = auth::class.java.getDeclaredMethod("dateToString", Date::class.java)
+        val dateToString = auth::class.java.getDeclaredMethod("dateToString", Calendar::class.java)
         dateToString.isAccessible = true
 
-        println(appCheck.date + " == " + dateToString.invoke(auth, date))
+        log.info(appCheck.date + " == " + dateToString.invoke(auth, date))
         assert(appCheck.date == dateToString.invoke(auth, date))
     }
 
@@ -131,8 +140,11 @@ class KotlinInsideTest {
 
         println(writeResult)
 
-        if (writeResult.result)
-            articleId = writeResult.articleId!!
+        if (writeResult.result) {
+            writeResult.articleId?.let {
+                articleId = it
+            }
+        }
     }
 
     @Order(9)

@@ -171,13 +171,15 @@ class DefaultHttpClient
             option.multipartParameter.forEach(request::part)
             var count = 0
             option.multipartFile.forEach { (key, stream) ->
-                request.part(key, getFileName(stream, count), "image/jpg", stream)
+                val (contentType, fileName) = getFileInfo(stream, count)
+                request.part(key, fileName, contentType, stream)
                 count++
             }
             count = 0
             option.multipartFileList.forEach { (key, value) ->
                 value.forEach { stream ->
-                    request.part(key, getFileName(stream, count), "image/jpg", stream)
+                    val (contentType, fileName) = getFileInfo(stream, count)
+                    request.part(key, fileName, contentType, stream)
                     count++
                 }
             }
@@ -191,21 +193,25 @@ class DefaultHttpClient
         }
     }
 
-    private fun getFileName(inputStream: InputStream, infix: Int): String {
-        var contentType: String?
-        try {
-            contentType = URLConnection.guessContentTypeFromStream(inputStream)
-            if (contentType == null) {
-                contentType = "image/jpg"
-            }
+    private data class FileInfo(
+        val contentType: String,
+        val fileName: String
+    )
+    private fun getFileInfo(inputStream: InputStream, infix: Int): FileInfo {
+        val contentType = try {
+            URLConnection.guessContentTypeFromStream(inputStream) ?: "video/mp4"
         } catch (e: IOException) {
-            contentType = "image/jpg"
+            "video/mp4"
         }
-        return "image$infix." + when (contentType) {
-            "image/png" -> "png"
-            "image/gif" -> "gif"
-            else -> "jpg"
-        }
+        return FileInfo(
+            contentType,
+            "image$infix." + when (contentType) {
+                "image/png" -> "png"
+                "image/gif" -> "gif"
+                "image/jpeg" -> "jpg"
+                else -> "mp4"
+            }
+        )
     }
 
     class Proxy internal constructor(var ip: String, var port: Int)
