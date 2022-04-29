@@ -62,21 +62,21 @@ class KotlinInsideTest {
     @Test
     fun testGalleryRanking() {
         val galleryRanking = GalleryRanking()
-        println(galleryRanking.request())
+        log.info(galleryRanking.request().toString())
     }
 
     @Order(4)
     @Test
     fun testMinorGalleryRanking() {
         val minorGalleryRanking = MinorGalleryRanking()
-        println(minorGalleryRanking.request())
+        log.info(minorGalleryRanking.request().toString())
     }
 
     @Order(5)
     @Test
     fun testMiniGalleryRanking() {
         val miniGalleryRanking = MiniGalleryRanking()
-        println(miniGalleryRanking.request())
+        log.info(miniGalleryRanking.request().toString())
     }
 
     @Order(6)
@@ -90,9 +90,9 @@ class KotlinInsideTest {
 
         assertNotNull(gallList[0], "ArticleList.getGallList()[0] must not be null")
 
-        println(gallInfo)
+        log.info(gallInfo.toString())
         gallList.forEach {
-            println(it)
+            log.info(it.toString())
         }
     }
 
@@ -102,8 +102,8 @@ class KotlinInsideTest {
         val articleRead = ArticleRead("hit", 1)
         articleRead.request()
 
-        println(articleRead.getViewInfo())
-        println(articleRead.getViewMain())
+        log.info(articleRead.getViewInfo().toString())
+        log.info(articleRead.getViewMain().toString())
     }
 
     @Order(8)
@@ -138,7 +138,7 @@ class KotlinInsideTest {
 
         val writeResult = articleWrite.write()
 
-        println(writeResult)
+        log.info(writeResult.toString())
 
         if (writeResult.result) {
             writeResult.articleId?.let {
@@ -158,11 +158,11 @@ class KotlinInsideTest {
 
         val upvoteResult = articleVote.upvote()
 
-        println(upvoteResult)
+        log.info(upvoteResult.toString())
 
         val downvoteResult = articleVote.downvote()
 
-        println(downvoteResult)
+        log.info(downvoteResult.toString())
     }
 
     @Order(10)
@@ -176,6 +176,6 @@ class KotlinInsideTest {
 
         val deleteResult = articleDelete.delete()
 
-        println(deleteResult)
+        log.info(deleteResult.toString())
     }
 }
