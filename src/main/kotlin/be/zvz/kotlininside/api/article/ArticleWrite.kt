@@ -2,10 +2,7 @@ package be.zvz.kotlininside.api.article
 
 import be.zvz.kotlininside.KotlinInside
 import be.zvz.kotlininside.api.type.Article
-import be.zvz.kotlininside.api.type.content.HtmlContent
-import be.zvz.kotlininside.api.type.content.ImageContent
-import be.zvz.kotlininside.api.type.content.MarkdownContent
-import be.zvz.kotlininside.api.type.content.StringContent
+import be.zvz.kotlininside.api.type.content.*
 import be.zvz.kotlininside.http.HttpException
 import be.zvz.kotlininside.http.Request
 import be.zvz.kotlininside.json.JsonBrowser
@@ -43,6 +40,13 @@ class ArticleWrite internal constructor(
         val id: String? = null
     )
 
+    private data class MovieInsertResult(
+        val result: Boolean,
+        val movieId: Int? = null,
+        val movieThumbnailUrl: String? = null,
+        val movieToken: String? = null
+    )
+
     /**
      * 글을 작성합니다.
      * @exception [be.zvz.kotlininside.http.HttpException] 글을 작성하지 못할 경우, HttpException 발생
@@ -72,8 +76,48 @@ class ArticleWrite internal constructor(
         }
 
         var imageCount = 0
+        var movieCount = 0
         article.content.forEachIndexed { index, content ->
             when (content) {
+                is MovieContent -> {
+                    if (!content.uploaded) {
+                        throw IllegalStateException(
+                            "MovieContent must be uploaded with MovieUpload before writing the article"
+                        )
+                    }
+                    val insertResponse = JsonBrowser.parse(
+                        KotlinInside.getInstance().httpInterface.upload(
+                            ApiUrl.Article.INSERT_MOVIE_INFO,
+                            Request.getDefaultOption().apply {
+                                addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
+                                if (session.user !is Anonymous) {
+                                    addMultipartParameter("confirm_id", session.detail!!.userId)
+                                }
+                                addMultipartParameter("id", gallId)
+                                addMultipartParameter("mv_allow_down", if (!content.info.allowDownload) "0" else "1")
+                                addMultipartParameter("mv_thumb", content.info.thumbnailUrl)
+                                addMultipartParameter("mv_width", content.info.width.toString())
+                                addMultipartParameter("mv_height", content.info.height.toString())
+                                addMultipartParameter("mv_desc", content.info.description)
+                                addMultipartParameter("mv_tag", content.info.tag.joinToString("|"))
+                            }
+                        )
+                    )
+                    val insertResult = MovieInsertResult(
+                        result = insertResponse.get("result").asBoolean(),
+                        movieId = insertResponse.get("mv_no").asInteger(),
+                        movieThumbnailUrl = insertResponse.get("mv_thumb").text(),
+                        movieToken = insertResponse.get("mv_token").text()
+                    )
+
+                    if (insertResult.result) {
+                        option.addMultipartParameter(
+                            "movie_data[$movieCount]",
+                            "${insertResult.movieId}|${insertResult.movieToken}|${content.fileId}"
+                        )
+                        movieCount++
+                    }
+                }
                 is ImageContent -> {
                     option.addMultipartParameter("memo_block[$index]", "Dc_App_Img_$imageCount")
                     option.addMultipartFile("upload[$imageCount]", content.stream)

@@ -7,12 +7,14 @@ import java.io.InputStream
 
 data class ImageContent(
     val stream: InputStream
-) : Content {
+) : Content, AutoCloseable {
     constructor(
         file: File
     ) : this(
-        stream = BufferedInputStream(
-            FileInputStream(file)
-        )
+        stream = BufferedInputStream(FileInputStream(file))
     )
+
+    override fun close() {
+        stream.close()
+    }
 }
