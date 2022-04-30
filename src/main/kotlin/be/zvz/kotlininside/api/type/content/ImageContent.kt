@@ -4,10 +4,18 @@ import java.io.BufferedInputStream
 import java.io.File
 import java.io.FileInputStream
 import java.io.InputStream
+import java.net.URLConnection
 
-data class ImageContent(
-    val stream: InputStream
+data class ImageContent @JvmOverloads constructor(
+    val stream: InputStream,
+    val mimeType: String? = null
 ) : Content, AutoCloseable {
+    constructor(
+        urlConnection: URLConnection
+    ) : this(
+        stream = BufferedInputStream(urlConnection.inputStream),
+        mimeType = urlConnection.contentType
+    )
     constructor(
         file: File
     ) : this(

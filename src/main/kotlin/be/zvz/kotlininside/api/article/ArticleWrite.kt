@@ -4,6 +4,7 @@ import be.zvz.kotlininside.KotlinInside
 import be.zvz.kotlininside.api.type.Article
 import be.zvz.kotlininside.api.type.content.*
 import be.zvz.kotlininside.http.HttpException
+import be.zvz.kotlininside.http.HttpInterface
 import be.zvz.kotlininside.http.Request
 import be.zvz.kotlininside.json.JsonBrowser
 import be.zvz.kotlininside.session.Session
@@ -128,7 +129,13 @@ class ArticleWrite internal constructor(
                 }
                 is ImageContent -> {
                     option.addMultipartParameter("memo_block[$index]", "Dc_App_Img_$imageCount")
-                    option.addMultipartFile("upload[$imageCount]", content.stream)
+                    option.addMultipartFile(
+                        "upload[$imageCount]",
+                        HttpInterface.Option.FileInfo(
+                            content.stream,
+                            content.mimeType
+                        )
+                    )
                     imageCount++
                 }
                 is StringContent -> option.addMultipartParameter(

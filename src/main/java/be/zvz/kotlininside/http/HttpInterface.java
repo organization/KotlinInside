@@ -4,6 +4,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -24,6 +25,22 @@ public interface HttpInterface {
     @Nullable String upload(@NotNull String url, @Nullable Option option) throws HttpException;
 
     final class Option {
+        public static final class FileInfo {
+            @NotNull
+            final InputStream stream;
+            @Nullable
+            final String mimeType;
+
+            public FileInfo(@NotNull InputStream stream) {
+                this(stream, null);
+            }
+
+            public FileInfo(@NotNull InputStream stream, @Nullable String mimeType) {
+                this.stream = stream;
+                this.mimeType = mimeType;
+            }
+        }
+
         @NotNull
         private final Map<String, String> headers = new LinkedHashMap<>();
         @NotNull
@@ -33,9 +50,9 @@ public interface HttpInterface {
         @NotNull
         private final Map<String, String> queryParameter = new LinkedHashMap<>();
         @NotNull
-        private final Map<String, InputStream> multipartFile = new LinkedHashMap<>();
+        private final Map<String, FileInfo> multipartFile = new LinkedHashMap<>();
         @NotNull
-        private final Map<String, List<InputStream>> multipartFileList = new LinkedHashMap<>();
+        private final Map<String, List<FileInfo>> multipartFileList = new LinkedHashMap<>();
         @NotNull
         private final Map<String, String> multipartParameter = new LinkedHashMap<>();
         @Nullable
@@ -169,12 +186,18 @@ public interface HttpInterface {
          */
         @NotNull
         public Option addMultipartFile(@NotNull String key, @NotNull InputStream value) {
+            this.multipartFile.put(key, new FileInfo(value));
+            return this;
+        }
+
+        @NotNull
+        public Option addMultipartFile(@NotNull String key, @NotNull FileInfo value) {
             this.multipartFile.put(key, value);
             return this;
         }
 
         @NotNull
-        public Map<String, InputStream> getMultipartFile() {
+        public Map<String, FileInfo> getMultipartFile() {
             return this.multipartFile;
         }
 
@@ -185,12 +208,16 @@ public interface HttpInterface {
          */
         @NotNull
         public Option addMultipartFileList(@NotNull String key, @NotNull List<InputStream> value) {
-            this.multipartFileList.put(key, value);
+            ArrayList<FileInfo> fileInfos = new ArrayList<>();
+            for (InputStream inputStream : value) {
+                fileInfos.add(new FileInfo(inputStream));
+            }
+            this.multipartFileList.put(key, fileInfos);
             return this;
         }
 
         @NotNull
-        public Map<String, List<InputStream>> getMultipartFileList() {
+        public Map<String, List<FileInfo>> getMultipartFileList() {
             return this.multipartFileList;
         }
 

@@ -10,6 +10,7 @@ import be.zvz.kotlininside.api.generic.MinorGalleryRanking
 import be.zvz.kotlininside.api.type.Article
 import be.zvz.kotlininside.api.type.HeadText
 import be.zvz.kotlininside.api.type.content.HtmlContent
+import be.zvz.kotlininside.api.type.content.ImageContent
 import be.zvz.kotlininside.api.type.content.MarkdownContent
 import be.zvz.kotlininside.api.type.content.StringContent
 import be.zvz.kotlininside.http.DefaultHttpClient
@@ -18,6 +19,7 @@ import org.junit.jupiter.api.MethodOrderer
 import org.junit.jupiter.api.Order
 import org.junit.jupiter.api.TestInstance
 import org.junit.jupiter.api.TestMethodOrder
+import java.net.URL
 import java.time.ZoneId
 import java.util.*
 import java.util.logging.Logger

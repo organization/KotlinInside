@@ -11,11 +11,11 @@ plugins {
     id 'com.google.protobuf' version '0.8.18'
 }
 
-boolean isDev = false
+boolean isDev = true
 
 String libName = 'KotlinInside'
 String libDevVersion = isDev ? '-SNAPSHOT' : ''
-String libVersion = "1.14.0$libDevVersion"
+String libVersion = "1.14.1$libDevVersion"
 String libDesc = 'Unofficial DCInside API written in Kotlin'
 
 group = 'be.zvz'
@@ -66,6 +66,8 @@ protobuf {
 dependencies {
     implementation group: 'commons-codec', name: 'commons-codec', version: '1.15'
     implementation group: 'org.apache.commons', name: 'commons-text', version: '1.9'
+    implementation group: 'org.apache.tika', name: 'tika-core', version: '2.3.0'
+
 
     //Jackson
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.2.2'

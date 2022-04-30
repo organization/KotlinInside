@@ -1,10 +1,11 @@
 package be.zvz.kotlininside.http
 
 import be.zvz.kotlininside.http.HttpRequest.HttpRequestException
+import org.apache.tika.Tika
+import org.apache.tika.mime.MimeTypes
 import java.io.IOException
 import java.io.InputStream
 import java.io.UnsupportedEncodingException
-import java.net.URLConnection
 import java.net.URLEncoder
 
 class DefaultHttpClient
@@ -20,6 +21,8 @@ class DefaultHttpClient
     private val enableCache: Boolean = true,
     private val proxy: Proxy? = null
 ) : HttpInterface {
+    private val tika = Tika()
+
     private fun useGzipEncoding(request: HttpRequest): HttpRequest {
         return if (enableGzipCompression) {
             request.acceptGzipEncoding().uncompress(true)
@@ -153,6 +156,20 @@ class DefaultHttpClient
         throw UnsupportedOperationException("Not implemented yet")
     }
 
+    private fun addToPart(request: HttpRequest, key: String, fileInfo: HttpInterface.Option.FileInfo, infix: Int) {
+        if (fileInfo.mimeType == null) {
+            val (contentType, fileName) = getFileInfoFromStream(fileInfo.stream, infix)
+            request.part(key, fileName, contentType, fileInfo.stream)
+        } else {
+            request.part(
+                key,
+                "image$infix.${fromMimeTypeToExtension(fileInfo.mimeType)}",
+                fileInfo.mimeType,
+                fileInfo.stream
+            )
+        }
+    }
+
     @Throws(HttpException::class)
     override fun upload(url: String, option: HttpInterface.Option?): String? {
         val request = useCache(
@@ -170,16 +187,14 @@ class DefaultHttpClient
             setPostRequestHeaders(option, request, bodyData)
             option.multipartParameter.forEach(request::part)
             var count = 0
-            option.multipartFile.forEach { (key, stream) ->
-                val (contentType, fileName) = getFileInfo(stream, count)
-                request.part(key, fileName, contentType, stream)
+            option.multipartFile.forEach { (key, fileInfo) ->
+                addToPart(request, key, fileInfo, count)
                 count++
             }
             count = 0
             option.multipartFileList.forEach { (key, value) ->
-                value.forEach { stream ->
-                    val (contentType, fileName) = getFileInfo(stream, count)
-                    request.part(key, fileName, contentType, stream)
+                value.forEach { fileInfo ->
+                    addToPart(request, key, fileInfo, count)
                     count++
                 }
             }
@@ -197,20 +212,18 @@ class DefaultHttpClient
         val contentType: String,
         val fileName: String
     )
-    private fun getFileInfo(inputStream: InputStream, infix: Int): FileInfo {
+
+    private fun fromMimeTypeToExtension(contentType: String): String =
+        MimeTypes.getDefaultMimeTypes().forName(contentType).extension
+    private fun getFileInfoFromStream(inputStream: InputStream, infix: Int): FileInfo {
         val contentType = try {
-            URLConnection.guessContentTypeFromStream(inputStream) ?: "video/mp4"
-        } catch (e: IOException) {
+            tika.detect(inputStream)
+        } catch (_: IOException) {
             "video/mp4"
         }
         return FileInfo(
             contentType,
-            "image$infix." + when (contentType) {
-                "image/png" -> "png"
-                "image/gif" -> "gif"
-                "image/jpeg" -> "jpg"
-                else -> "mp4"
-            }
+            "image$infix.${fromMimeTypeToExtension(contentType)}"
         )
     }
 
