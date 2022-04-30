@@ -673,8 +673,10 @@ $dokka.location:be.zvz.kotlininside.api.type.content/HtmlContent/HtmlContent/#ko
 $dokka.location:be.zvz.kotlininside.api.type.content/HtmlContent/htmlString/#/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.api.type.content/-html-content/html-string.html
 $dokka.location:be.zvz.kotlininside.api.type.content/ImageContent///PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.api.type.content/-image-content/index.html
 $dokka.location:be.zvz.kotlininside.api.type.content/ImageContent/ImageContent/#java.io.File/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.api.type.content/-image-content/-image-content.html
-$dokka.location:be.zvz.kotlininside.api.type.content/ImageContent/ImageContent/#java.io.InputStream/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.api.type.content/-image-content/-image-content.html
+$dokka.location:be.zvz.kotlininside.api.type.content/ImageContent/ImageContent/#java.io.InputStream#kotlin.String?/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.api.type.content/-image-content/-image-content.html
+$dokka.location:be.zvz.kotlininside.api.type.content/ImageContent/ImageContent/#java.net.URLConnection/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.api.type.content/-image-content/-image-content.html
 $dokka.location:be.zvz.kotlininside.api.type.content/ImageContent/close/#/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.api.type.content/-image-content/close.html
+$dokka.location:be.zvz.kotlininside.api.type.content/ImageContent/mimeType/#/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.api.type.content/-image-content/mime-type.html
 $dokka.location:be.zvz.kotlininside.api.type.content/ImageContent/stream/#/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.api.type.content/-image-content/stream.html
 $dokka.location:be.zvz.kotlininside.api.type.content/MarkdownContent///PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.api.type.content/-markdown-content/index.html
 $dokka.location:be.zvz.kotlininside.api.type.content/MarkdownContent/MarkdownContent/#kotlin.String/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.api.type.content/-markdown-content/-markdown-content.html
@@ -740,9 +742,13 @@ $dokka.location:be.zvz.kotlininside.http/HttpException///PointingToDeclaration/
 $dokka.location:be.zvz.kotlininside.http/HttpException/HttpException/#kotlin.Int#kotlin.String?/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.http/-http-exception/-http-exception.html
 $dokka.location:be.zvz.kotlininside.http/HttpException/HttpException/#kotlin.Throwable?/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.http/-http-exception/-http-exception.html
 $dokka.location:be.zvz.kotlininside.http/HttpException/statusCode/#/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.http/-http-exception/status-code.html
+$dokka.location:be.zvz.kotlininside.http/HttpInterface.Option.FileInfo///PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.http/-http-interface/-option/-file-info/index.html
+$dokka.location:be.zvz.kotlininside.http/HttpInterface.Option.FileInfo/FileInfo/#java.io.InputStream#java.lang.String/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.http/-http-interface/-option/-file-info/-file-info.html
+$dokka.location:be.zvz.kotlininside.http/HttpInterface.Option.FileInfo/FileInfo/#java.io.InputStream/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.http/-http-interface/-option/-file-info/-file-info.html
 $dokka.location:be.zvz.kotlininside.http/HttpInterface.Option///PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.http/-http-interface/-option/index.html
 $dokka.location:be.zvz.kotlininside.http/HttpInterface.Option/addBodyParameter/#java.lang.String#java.lang.String/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.http/-http-interface/-option/add-body-parameter.html
 $dokka.location:be.zvz.kotlininside.http/HttpInterface.Option/addHeader/#java.lang.String#java.lang.String/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.http/-http-interface/-option/add-header.html
+$dokka.location:be.zvz.kotlininside.http/HttpInterface.Option/addMultipartFile/#java.lang.String#be.zvz.kotlininside.http.HttpInterface.Option.FileInfo/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.http/-http-interface/-option/add-multipart-file.html
 $dokka.location:be.zvz.kotlininside.http/HttpInterface.Option/addMultipartFile/#java.lang.String#java.io.InputStream/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.http/-http-interface/-option/add-multipart-file.html
 $dokka.location:be.zvz.kotlininside.http/HttpInterface.Option/addMultipartFileList/#java.lang.String#java.util.List<java.io.InputStream>/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.http/-http-interface/-option/add-multipart-file-list.html
 $dokka.location:be.zvz.kotlininside.http/HttpInterface.Option/addMultipartParameter/#java.lang.String#java.lang.String/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.http/-http-interface/-option/add-multipart-parameter.html

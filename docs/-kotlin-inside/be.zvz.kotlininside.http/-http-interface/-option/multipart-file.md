@@ -22,7 +22,7 @@ title: multipartFile
 
 
 
-private val [multipartFile](multipart-file.html): @NotNull[Map](https://docs.oracle.com/javase/7/docs/api/java/util/Map.html)&lt;[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), [InputStream](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html)&gt;
+private val [multipartFile](multipart-file.html): @NotNull[Map](https://docs.oracle.com/javase/7/docs/api/java/util/Map.html)&lt;[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), [HttpInterface.Option.FileInfo](-file-info/index.html)&gt;
 
 
 

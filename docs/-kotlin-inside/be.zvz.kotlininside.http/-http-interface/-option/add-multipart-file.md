@@ -43,3 +43,18 @@ jvm
 
 
 
+
+[jvm]\
+
+
+
+
+@NotNull
+
+
+
+open fun [addMultipartFile](add-multipart-file.html)(@NotNullkey: @NotNull[String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html), @NotNullvalue: @NotNull[HttpInterface.Option.FileInfo](-file-info/index.html)): @NotNull[HttpInterface.Option](index.html)
+
+
+
+
