@@ -27,9 +27,19 @@ public interface HttpInterface {
     final class Option {
         public static final class FileInfo {
             @NotNull
-            final InputStream stream;
+            private final InputStream stream;
             @Nullable
-            final String mimeType;
+            private final String mimeType;
+
+            @NotNull
+            public InputStream getStream() {
+                return stream;
+            }
+
+            @Nullable
+            public String getMimeType() {
+                return mimeType;
+            }
 
             public FileInfo(@NotNull InputStream stream) {
                 this(stream, null);

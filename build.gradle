@@ -15,7 +15,7 @@ boolean isDev = false
 
 String libName = 'KotlinInside'
 String libDevVersion = isDev ? '-SNAPSHOT' : ''
-String libVersion = "1.14.1$libDevVersion"
+String libVersion = "1.14.2$libDevVersion"
 String libDesc = 'Unofficial DCInside API written in Kotlin'
 
 group = 'be.zvz'
@@ -36,9 +36,12 @@ sourceSets {
 }
 
 compileJava {
+    options.encoding = 'UTF-8'
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
 }
+
+javadoc.options.encoding = 'UTF-8'
 
 protobuf {
     protoc {

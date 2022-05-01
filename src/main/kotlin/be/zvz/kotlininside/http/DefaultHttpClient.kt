@@ -163,7 +163,7 @@ class DefaultHttpClient
         } else {
             request.part(
                 key,
-                "image$infix.${fromMimeTypeToExtension(fileInfo.mimeType)}",
+                "image$infix${fromMimeTypeToExtension(fileInfo.mimeType)}",
                 fileInfo.mimeType,
                 fileInfo.stream
             )
@@ -213,19 +213,23 @@ class DefaultHttpClient
         val fileName: String
     )
 
-    private fun fromMimeTypeToExtension(contentType: String): String =
-        MimeTypes.getDefaultMimeTypes().forName(contentType).extension
+    private fun fromMimeTypeToExtension(contentType: String?): String =
+        MimeTypes.getDefaultMimeTypes().forName(contentType ?: DEFAULT_MIME_TYPE).extension
     private fun getFileInfoFromStream(inputStream: InputStream, infix: Int): FileInfo {
         val contentType = try {
             tika.detect(inputStream)
         } catch (_: IOException) {
-            "video/mp4"
+            DEFAULT_MIME_TYPE
         }
         return FileInfo(
             contentType,
-            "image$infix.${fromMimeTypeToExtension(contentType)}"
+            "image$infix${fromMimeTypeToExtension(contentType)}"
         )
     }
 
     class Proxy internal constructor(var ip: String, var port: Int)
+
+    companion object {
+        const val DEFAULT_MIME_TYPE = "video/mp4"
+    }
 }
