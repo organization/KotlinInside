@@ -726,6 +726,8 @@ $dokka.location:be.zvz.kotlininside.exception/InsufficientPermissionException///
 $dokka.location:be.zvz.kotlininside.exception/InsufficientPermissionException/InsufficientPermissionException/#kotlin.reflect.KClass[*]/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.exception/-insufficient-permission-exception/-insufficient-permission-exception.html
 $dokka.location:be.zvz.kotlininside.exception/InsufficientPermissionException/causeClass/#/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.exception/-insufficient-permission-exception/cause-class.html
 $dokka.location:be.zvz.kotlininside.http////PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.http/index.html
+$dokka.location:be.zvz.kotlininside.http/DefaultHttpClient.Companion///PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.http/-default-http-client/-companion/index.html
+$dokka.location:be.zvz.kotlininside.http/DefaultHttpClient.Companion/DEFAULT_MIME_TYPE/#/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.http/-default-http-client/-companion/-d-e-f-a-u-l-t_-m-i-m-e_-t-y-p-e.html
 $dokka.location:be.zvz.kotlininside.http/DefaultHttpClient.Proxy///PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.http/-default-http-client/-proxy/index.html
 $dokka.location:be.zvz.kotlininside.http/DefaultHttpClient.Proxy/ip/#/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.http/-default-http-client/-proxy/ip.html
 $dokka.location:be.zvz.kotlininside.http/DefaultHttpClient.Proxy/port/#/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.http/-default-http-client/-proxy/port.html
@@ -745,6 +747,8 @@ $dokka.location:be.zvz.kotlininside.http/HttpException/statusCode/#/PointingToDe
 $dokka.location:be.zvz.kotlininside.http/HttpInterface.Option.FileInfo///PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.http/-http-interface/-option/-file-info/index.html
 $dokka.location:be.zvz.kotlininside.http/HttpInterface.Option.FileInfo/FileInfo/#java.io.InputStream#java.lang.String/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.http/-http-interface/-option/-file-info/-file-info.html
 $dokka.location:be.zvz.kotlininside.http/HttpInterface.Option.FileInfo/FileInfo/#java.io.InputStream/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.http/-http-interface/-option/-file-info/-file-info.html
+$dokka.location:be.zvz.kotlininside.http/HttpInterface.Option.FileInfo/mimeType/#/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.http/-http-interface/-option/-file-info/mime-type.html
+$dokka.location:be.zvz.kotlininside.http/HttpInterface.Option.FileInfo/stream/#/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.http/-http-interface/-option/-file-info/stream.html
 $dokka.location:be.zvz.kotlininside.http/HttpInterface.Option///PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.http/-http-interface/-option/index.html
 $dokka.location:be.zvz.kotlininside.http/HttpInterface.Option/addBodyParameter/#java.lang.String#java.lang.String/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.http/-http-interface/-option/add-body-parameter.html
 $dokka.location:be.zvz.kotlininside.http/HttpInterface.Option/addHeader/#java.lang.String#java.lang.String/PointingToDeclaration/-kotlin-inside/be.zvz.kotlininside.http/-http-interface/-option/add-header.html

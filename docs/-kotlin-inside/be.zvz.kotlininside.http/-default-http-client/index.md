@@ -42,6 +42,7 @@ jvm
 
 | Name | Summary |
 |---|---|
+| [Companion](-companion/index.html) | [jvm]<br>object [Companion](-companion/index.html) |
 | [Proxy](-proxy/index.html) | [jvm]<br>class [Proxy](-proxy/index.html) |
 
 
