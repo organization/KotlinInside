@@ -113,6 +113,7 @@ class ArticleWrite internal constructor(
                     )
 
                     if (insertResult.result) {
+                        option.addMultipartParameter("memo_block[$index]", "Dc_App_Movie_$movieCount")
                         option.addMultipartParameter(
                             "movie_data[$movieCount]",
                             "${insertResult.movieId}|${insertResult.movieToken}|${content.fileId}"
