@@ -41,6 +41,7 @@ object [ApiUrl](index.html)
 | [APP_API](-a-p-p_-a-p-i.html) | [jvm]<br>const val [APP_API](-a-p-p_-a-p-i.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [AUTH_API](-a-u-t-h_-a-p-i.html) | [jvm]<br>const val [AUTH_API](-a-u-t-h_-a-p-i.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [MAIN_API](-m-a-i-n_-a-p-i.html) | [jvm]<br>const val [MAIN_API](-m-a-i-n_-a-p-i.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [MOBILE_APP](-m-o-b-i-l-e_-a-p-p.html) | [jvm]<br>const val [MOBILE_APP](-m-o-b-i-l-e_-a-p-p.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [MOBILE_WEB](-m-o-b-i-l-e_-w-e-b.html) | [jvm]<br>const val [MOBILE_WEB](-m-o-b-i-l-e_-w-e-b.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [MOBILE_WEB_HTTPS](-m-o-b-i-l-e_-w-e-b_-h-t-t-p-s.html) | [jvm]<br>const val [MOBILE_WEB_HTTPS](-m-o-b-i-l-e_-w-e-b_-h-t-t-p-s.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [MOVIE_UPLOAD](-m-o-v-i-e_-u-p-l-o-a-d.html) | [jvm]<br>const val [MOVIE_UPLOAD](-m-o-v-i-e_-u-p-l-o-a-d.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |

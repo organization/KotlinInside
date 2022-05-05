@@ -4,7 +4,8 @@ object ApiUrl {
     const val PC_WEB = Protocol.HTTPS + "gall.dcinside.com/"
     const val MOBILE_WEB = Protocol.HTTP + "m.dcinside.com/"
     const val MOBILE_WEB_HTTPS = Protocol.HTTPS + "m.dcinside.com/"
-    const val APP_API = Protocol.HTTPS + "app.dcinside.com/api/"
+    const val MOBILE_APP = Protocol.HTTPS + "app.dcinside.com/"
+    const val APP_API = MOBILE_APP + "api/"
     const val AUTH_API = Protocol.HTTPS + "msign.dcinside.com/"
     const val MAIN_API = Protocol.HTTP + "json2.dcinside.com/"
     const val UPLOAD = Protocol.HTTPS + "upload.dcinside.com/"
@@ -28,7 +29,7 @@ object ApiUrl {
     }
 
     object Upload {
-        const val CHECK_UPLOAD_RESTRICTION = "$APP_API/api/chk_upload_restriction"
+        const val CHECK_UPLOAD_RESTRICTION = "$APP_API/chk_upload_restriction"
         const val MOVIE = "$MOVIE_UPLOAD/movie_upload_v1.php"
     }
 
@@ -42,7 +43,7 @@ object ApiUrl {
         const val DOWNVOTE = APP_API + "_recommend_down.php"
         const val REPORT = MOBILE_WEB + "api/report.php"
         const val HIT_UPVOTE = APP_API + "hit_recommend"
-        const val INSERT_MOVIE_INFO = APP_API + "movie/insert-mvinfo"
+        const val INSERT_MOVIE_INFO = MOBILE_APP + "movie/insert-mvinfo"
     }
 
     object Comment {
