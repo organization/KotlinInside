@@ -10,14 +10,13 @@ import java.io.InputStream
  * 글 작성 전에 [be.zvz.kotlininside.api.generic.MovieUpload]를 사용하여
  * [MovieContent]를 업로드 해놓아야 합니다.
  */
-data class MovieContent(
+data class MovieContent @JvmOverloads constructor(
     val info: MovieInfo,
-    val stream: InputStream
+    val stream: InputStream,
+    val mimeType: String? = null
 ) : Content, AutoCloseable {
     data class MovieInfo @JvmOverloads constructor(
         val allowDownload: Boolean,
-        val width: Int,
-        val height: Int,
         val description: String,
         val tag: List<String> = emptyList()
     ) {
@@ -25,6 +24,10 @@ data class MovieContent(
          * [be.zvz.kotlininside.api.generic.MovieUpload]에서 얻은 섬네일 URL 중 하나를 입력해주시면 됩니다.
          */
         var thumbnailUrl: String = ""
+        var width = 0
+            internal set
+        var height = 0
+            internal set
     }
 
     internal var uploaded = false

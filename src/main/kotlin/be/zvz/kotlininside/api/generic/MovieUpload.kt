@@ -2,8 +2,10 @@ package be.zvz.kotlininside.api.generic
 
 import be.zvz.kotlininside.KotlinInside
 import be.zvz.kotlininside.api.type.content.MovieContent
+import be.zvz.kotlininside.http.HttpInterface
 import be.zvz.kotlininside.http.Request
 import be.zvz.kotlininside.json.JsonBrowser
+import be.zvz.kotlininside.session.user.Anonymous
 import be.zvz.kotlininside.value.ApiUrl
 import java.io.IOException
 
@@ -23,6 +25,8 @@ class MovieUpload @JvmOverloads constructor(
         val msg: String?,
         val fileId: Int?,
         val thumbnailUrls: List<String>?,
+        val width: Int?,
+        val height: Int?,
     )
 
     data class CheckResult(
@@ -32,13 +36,13 @@ class MovieUpload @JvmOverloads constructor(
 
     @Throws(UploadException::class)
     fun upload(): UploadResult {
-        if (checkRestriction) {
+        if (checkRestriction && KotlinInside.getInstance().session.user is Anonymous) {
             val json = JsonBrowser.parse(
                 KotlinInside.getInstance().httpInterface.get(
                     ApiUrl.Upload.CHECK_UPLOAD_RESTRICTION +
                         "?app_id=${KotlinInside.getInstance().auth.getAppId()}" +
-                        "&id=gallId" +
-                        "&type=movie",
+                        "&id=$gallId" +
+                        "&mode=movie",
                     Request.getDefaultOption()
                 )
             )
@@ -57,7 +61,13 @@ class MovieUpload @JvmOverloads constructor(
                 ApiUrl.Upload.MOVIE,
                 Request.getDefaultOption().apply {
                     addMultipartParameter("id", gallId)
-                    addMultipartFile("avatar", content.stream)
+                    addMultipartFile(
+                        "avatar",
+                        HttpInterface.Option.FileInfo(
+                            content.stream,
+                            content.mimeType
+                        )
+                    )
                 },
             )
         )
@@ -67,7 +77,7 @@ class MovieUpload @JvmOverloads constructor(
                 content.uploaded = true
                 content.fileId = this
             },
-            thumbnailUrls = result.get("thumbnail_urls").run {
+            thumbnailUrls = result.get("thum_url_arr").run {
                 if (!isNull) {
                     mutableListOf<String>().apply {
                         values().forEach {
@@ -77,7 +87,13 @@ class MovieUpload @JvmOverloads constructor(
                 } else {
                     null
                 }
-            }
+            },
+            width = result.get("width").asNullableInteger()?.apply {
+                content.info.width = this
+            },
+            height = result.get("height").asNullableInteger()?.apply {
+                content.info.height = this
+            },
         )
     }
 }

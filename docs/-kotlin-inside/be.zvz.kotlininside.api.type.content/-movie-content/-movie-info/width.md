@@ -10,7 +10,7 @@ title: width
 
 
 [jvm]\
-val [width](width.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
+val [width](width.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) = 0
 
 
 

@@ -29,7 +29,7 @@ object ApiUrl {
     }
 
     object Upload {
-        const val CHECK_UPLOAD_RESTRICTION = "$APP_API/chk_upload_restriction"
+        const val CHECK_UPLOAD_RESTRICTION = APP_API + "chk_upload_restriction"
         const val MOVIE = "$MOVIE_UPLOAD/movie_upload_v1.php"
     }
 

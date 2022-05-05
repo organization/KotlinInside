@@ -12,7 +12,15 @@ title: MovieContent
 [jvm]\
 fun [MovieContent](-movie-content.html)(info: [MovieContent.MovieInfo](-movie-info/index.html), file: [File](https://docs.oracle.com/javase/7/docs/api/java/io/File.html))
 
-fun [MovieContent](-movie-content.html)(info: [MovieContent.MovieInfo](-movie-info/index.html), stream: [InputStream](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html))
+
+
+
+
+@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)
+
+
+
+fun [MovieContent](-movie-content.html)(info: [MovieContent.MovieInfo](-movie-info/index.html), stream: [InputStream](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html), mimeType: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null)
 
 
 
