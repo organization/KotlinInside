@@ -15,7 +15,7 @@ boolean isDev = false
 
 String libName = 'KotlinInside'
 String libDevVersion = isDev ? '-SNAPSHOT' : ''
-String libVersion = "1.14.5$libDevVersion"
+String libVersion = "1.14.6$libDevVersion"
 String libDesc = 'Unofficial DCInside API written in Kotlin'
 
 group = 'be.zvz'
@@ -73,8 +73,8 @@ dependencies {
 
 
     //Jackson
-    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.2.2'
-    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.13.2'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.3'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.13.3'
 
     //FlexMark
     implementation group: 'com.vladsch.flexmark', name: 'flexmark', version: '0.62.2'

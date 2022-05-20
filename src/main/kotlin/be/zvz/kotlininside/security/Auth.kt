@@ -317,14 +317,16 @@ class Auth {
     @Throws(HttpException::class)
     fun login(user: User): Session {
         if (user !is Anonymous) {
-            val option = Request.getDefaultOption()
-                .addMultipartParameter("user_id", user.id)
-                .addMultipartParameter("user_pw", user.password)
-                .addMultipartParameter("mode", "login_normal")
-                .addMultipartParameter("client_token", fcmToken)
+            val option = HttpInterface.Option()
+                .setUserAgent("com.dcinside.mobileapp")
+                .addHeader("Referer", "http://www.dcinside.com")
+                .addBodyParameter("client_token", fcmToken)
+                .addBodyParameter("mode", "login_quick")
+                .addBodyParameter("user_id", user.id)
+                .addBodyParameter("user_pw", user.password)
 
             val json = JsonBrowser.parse(
-                KotlinInside.getInstance().httpInterface.upload(
+                KotlinInside.getInstance().httpInterface.post(
                     ApiUrl.Auth.LOGIN,
                     option
                 )
