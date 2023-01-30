@@ -74,7 +74,7 @@ dependencies {
 
     //Jackson
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.14.1'
-    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.14.1'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.14.2'
 
     //FlexMark
     implementation group: 'com.vladsch.flexmark', name: 'flexmark', version: '0.62.2'
