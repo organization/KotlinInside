@@ -15,7 +15,7 @@ boolean isDev = false
 
 String libName = 'KotlinInside'
 String libDevVersion = isDev ? '-SNAPSHOT' : ''
-String libVersion = "1.14.6$libDevVersion"
+String libVersion = "1.14.7$libDevVersion"
 String libDesc = 'Unofficial DCInside API written in Kotlin'
 
 group = 'be.zvz'
@@ -39,6 +39,10 @@ compileJava {
     options.encoding = 'UTF-8'
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = JavaVersion.VERSION_1_8.toString()
 }
 
 javadoc.options.encoding = 'UTF-8'
@@ -110,14 +114,14 @@ tasks.withType(Copy) {
     }
 }
 
-dokkaJekyll {
+dokkaHtml {
     outputDirectory.set(file("docs"))
 
     dokkaSourceSets {
         configureEach {
             platform.set(org.jetbrains.dokka.Platform.jvm)
 
-            jdkVersion.set(7)
+            jdkVersion.set(8)
             noStdlibLink.set(false)
             noJdkLink.set(false)
 
@@ -129,12 +133,12 @@ dokkaJekyll {
 
 // Maven-Central publish
 task javadocJar(type: Jar, dependsOn: dokkaJavadoc) {
-    classifier = 'javadoc'
+    archiveClassifier = 'javadoc'
     from javadoc.destinationDir
 }
 
 task sourcesJar(type: Jar, dependsOn: classes) {
-    classifier = 'sources'
+    archiveClassifier = 'sources'
     from sourceSets.main.allSource
 }
 
