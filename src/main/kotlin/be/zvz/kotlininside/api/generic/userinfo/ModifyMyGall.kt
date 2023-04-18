@@ -32,7 +32,7 @@ class ModifyMyGall(
         val json = JsonBrowser.parse(
             KotlinInside.getInstance().httpInterface.upload(
                 ApiUrl.User.MY_GALL_MODIFY,
-                option,
+                option
             )
         ).index(0)
 

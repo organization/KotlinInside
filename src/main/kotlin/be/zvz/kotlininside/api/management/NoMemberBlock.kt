@@ -44,9 +44,9 @@ class NoMemberBlock(
 
     @Throws(InsufficientPermissionException::class)
     fun block(): BlockResult {
-        if (session.user is Anonymous)
+        if (session.user is Anonymous) {
             throw InsufficientPermissionException(NoMemberBlock::class)
-        else {
+        } else {
             val option = Request.getDefaultOption()
                 .addBodyParameter("app_id", KotlinInside.getInstance().auth.getAppId())
                 .addBodyParameter("confirm_id", session.detail!!.userId)

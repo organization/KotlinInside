@@ -26,7 +26,9 @@ class DefaultHttpClient
     private fun useGzipEncoding(request: HttpRequest): HttpRequest {
         return if (enableGzipCompression) {
             request.acceptGzipEncoding().uncompress(true)
-        } else request
+        } else {
+            request
+        }
     }
 
     private fun useProxy(request: HttpRequest): HttpRequest {

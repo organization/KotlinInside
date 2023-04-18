@@ -26,7 +26,7 @@ class MovieUpload @JvmOverloads constructor(
         val fileId: Int?,
         val thumbnailUrls: List<String>?,
         val width: Int?,
-        val height: Int?,
+        val height: Int?
     )
 
     data class CheckResult(
@@ -68,7 +68,7 @@ class MovieUpload @JvmOverloads constructor(
                             content.mimeType
                         )
                     )
-                },
+                }
             )
         )
         return UploadResult(
@@ -93,7 +93,7 @@ class MovieUpload @JvmOverloads constructor(
             },
             height = result.get("height").asNullableInteger()?.apply {
                 content.info.height = this
-            },
+            }
         )
     }
 }

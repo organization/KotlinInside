@@ -14,7 +14,7 @@ class AsyncNoMemberBlock(
     private val noMemberBlock = NoMemberBlock(
         session,
         gallId,
-        option,
+        option
     )
 
     suspend fun blockAsync() = coroutineScope {

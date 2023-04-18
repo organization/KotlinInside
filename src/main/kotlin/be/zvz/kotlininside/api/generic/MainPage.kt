@@ -43,8 +43,9 @@ class MainPage {
      */
     @Throws(HttpException::class)
     fun getHit(): List<Article> {
-        if (!::json.isInitialized)
+        if (!::json.isInitialized) {
             request()
+        }
 
         return mutableListOf<Article>().apply {
             json.get("hit").values().forEach {
@@ -66,8 +67,9 @@ class MainPage {
      */
     @Throws(HttpException::class)
     fun getBest(): List<Article> {
-        if (!::json.isInitialized)
+        if (!::json.isInitialized) {
             request()
+        }
 
         return mutableListOf<Article>().apply {
             json.get("best").values().forEach {
@@ -90,8 +92,9 @@ class MainPage {
      */
     @Throws(HttpException::class)
     fun getIssueZoom(): List<Article> {
-        if (!::json.isInitialized)
+        if (!::json.isInitialized) {
             request()
+        }
 
         return mutableListOf<Article>().apply {
             json.get("issuezoom").values().forEach {
@@ -114,8 +117,9 @@ class MainPage {
      */
     @Throws(HttpException::class)
     fun getNewGallery(): List<NewGallery> {
-        if (!::json.isInitialized)
+        if (!::json.isInitialized) {
             request()
+        }
 
         return mutableListOf<NewGallery>().apply {
             json.get("new_gallery").values().forEach {

@@ -5,5 +5,5 @@ import be.zvz.kotlininside.api.type.DCCon
 
 data class DCConContent(
     val dcCon: DCCon,
-    val dcConInsertResult: DCConInsert.InsertResult,
+    val dcConInsertResult: DCConInsert.InsertResult
 ) : Content

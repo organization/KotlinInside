@@ -39,7 +39,8 @@ class KotlinInside private constructor(
                         }
                     }
                 },
-                43200L * 1000, 43200L * 1000
+                43200L * 1000,
+                43200L * 1000
             )
         }
     }

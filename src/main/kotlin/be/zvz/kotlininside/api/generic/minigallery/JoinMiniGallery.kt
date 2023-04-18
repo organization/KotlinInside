@@ -19,7 +19,7 @@ class JoinMiniGallery(
     data class MemberJoinOkResult(
         val result: Boolean,
         val cause: String,
-        val status: String,
+        val status: String
     )
 
     fun join(): Pair<MemberJoinResult, MemberJoinOkResult> {

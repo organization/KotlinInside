@@ -91,8 +91,9 @@ class ArticleRead @JvmOverloads constructor(
      * @exception [be.zvz.kotlininside.http.HttpException] 글을 불러오지 못할 경우, HttpException 발생
      */
     fun getViewInfo(): ViewInfo {
-        if (!::json.isInitialized)
+        if (!::json.isInitialized) {
             request()
+        }
 
         val viewInfo = json.index(0).get("view_info")
         return ViewInfo(
@@ -151,8 +152,9 @@ class ArticleRead @JvmOverloads constructor(
      * @exception [be.zvz.kotlininside.http.HttpException] 글을 불러오지 못할 경우, HttpException 발생
      */
     fun getViewMain(): ViewMain {
-        if (!::json.isInitialized)
+        if (!::json.isInitialized) {
             request()
+        }
 
         val viewMain = json.index(0).get("view_main")
         return ViewMain(
