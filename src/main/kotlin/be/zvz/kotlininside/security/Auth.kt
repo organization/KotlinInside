@@ -6,6 +6,7 @@ import be.zvz.kotlininside.http.HttpInterface
 import be.zvz.kotlininside.http.Request
 import be.zvz.kotlininside.json.JsonBrowser
 import be.zvz.kotlininside.proto.checkin.CheckinProto
+import be.zvz.kotlininside.proto.checkin.CheckinRequestKt.CheckinKt.build
 import be.zvz.kotlininside.proto.checkin.CheckinRequestKt.checkin
 import be.zvz.kotlininside.proto.checkin.checkinRequest
 import be.zvz.kotlininside.session.Session
