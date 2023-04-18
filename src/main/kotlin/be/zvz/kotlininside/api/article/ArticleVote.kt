@@ -41,8 +41,9 @@ class ArticleVote(
             )
         )
 
-        if (json.isList)
+        if (json.isList) {
             json = json.index(0)
+        }
 
         return VoteResult(
             result = json.get("result").asBoolean(),

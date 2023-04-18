@@ -8,14 +8,14 @@ import be.zvz.kotlininside.session.user.Anonymous
 import be.zvz.kotlininside.value.ApiUrl
 
 class CheckManagedGallery(
-    private val session: Session,
+    private val session: Session
 ) {
     data class Gallery(
         val hide: Int,
         val id: String,
         val title: String,
         val type: String, // TODO: Enum class로 변경
-        val managerType: String, // TODO: Enum class로 변경
+        val managerType: String // TODO: Enum class로 변경
     )
 
     data class CheckResult(
@@ -56,7 +56,7 @@ class CheckManagedGallery(
                         )
                     )
                 }
-            },
+            }
         )
     }
 }

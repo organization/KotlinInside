@@ -85,7 +85,12 @@ class Auth {
         return BufferedInputStream(request.inputStream).use(CheckinProto.CheckinResponse::parseFrom)
     }
 
-    private fun requestToGcmWithScope(androidCheckin: CheckinProto.CheckinResponse, clientToken: String, installationToken: String, scope: String) {
+    private fun requestToGcmWithScope(
+        androidCheckin: CheckinProto.CheckinResponse,
+        clientToken: String,
+        installationToken: String,
+        scope: String
+    ) {
         KotlinInside.getInstance().httpInterface.post(
             ApiUrl.PlayService.REGISTER3,
             HttpInterface.Option()
@@ -183,10 +188,11 @@ class Auth {
             )
         )
 
-        if (!appCheck.get("result").isNull)
+        if (!appCheck.get("result").isNull) {
             return AppCheck(
                 result = appCheck.get("result").asBoolean()
             )
+        }
 
         val json = appCheck.index(0)
 
@@ -221,10 +227,10 @@ class Auth {
 
         return SimpleDateFormat(
             "E${dayOfYear - 1}d${getDayOfWeekMonday(dayOfWeek)}${dayOfWeek - 1}${
-            String.format(
-                "%02d",
-                weekOfYear
-            )
+                String.format(
+                    "%02d",
+                    weekOfYear
+                )
             }MddMM",
             Locale.US
         ).apply {
@@ -346,7 +352,7 @@ class Auth {
                 isGonick = json.get("is_gonick").asInteger(),
                 isSecurityCode = json.get("is_security_code").safeText(),
                 authChange = json.get("auth_change").asInteger(),
-                cause = json.get("cause").text(),
+                cause = json.get("cause").text()
             )
 
             if (!detail.result) {

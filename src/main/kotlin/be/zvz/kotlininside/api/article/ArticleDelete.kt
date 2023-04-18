@@ -44,8 +44,9 @@ class ArticleDelete @JvmOverloads constructor(
 
         var json = JsonBrowser.parse(KotlinInside.getInstance().httpInterface.upload(ApiUrl.Article.DELETE, option))
 
-        if (json.isList)
+        if (json.isList) {
             json = json.index(0)
+        }
 
         return DeleteResult(
             result = json.get("result").asBoolean(),

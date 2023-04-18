@@ -8,7 +8,7 @@ import be.zvz.kotlininside.session.user.Anonymous
 import be.zvz.kotlininside.value.ApiUrl
 
 class CheckJoinedMiniGallery(
-    private val session: Session,
+    private val session: Session
 ) {
     data class Gallery(
         val title: String,
@@ -19,7 +19,7 @@ class CheckJoinedMiniGallery(
     data class CheckResult(
         val myJoinMiniIn: List<Gallery>,
         val myJoinMiniHold: List<Gallery>,
-        val myJoinMiniOut: List<Gallery>,
+        val myJoinMiniOut: List<Gallery>
     )
 
     /**
@@ -50,7 +50,7 @@ class CheckJoinedMiniGallery(
                         Gallery(
                             title = it.get("gall_koname").safeText(),
                             id = it.get("gall_id").safeText(),
-                            hide = it.get("gall_hide").asInteger(),
+                            hide = it.get("gall_hide").asInteger()
                         )
                     )
                 }
@@ -61,7 +61,7 @@ class CheckJoinedMiniGallery(
                         Gallery(
                             title = it.get("gall_koname").safeText(),
                             id = it.get("gall_id").safeText(),
-                            hide = it.get("gall_hide").asInteger(),
+                            hide = it.get("gall_hide").asInteger()
                         )
                     )
                 }
@@ -72,11 +72,11 @@ class CheckJoinedMiniGallery(
                         Gallery(
                             title = it.get("gall_koname").safeText(),
                             id = it.get("gall_id").safeText(),
-                            hide = it.get("gall_hide").asInteger(),
+                            hide = it.get("gall_hide").asInteger()
                         )
                     )
                 }
-            },
+            }
         )
     }
 }

@@ -126,12 +126,15 @@ class ArticleList @JvmOverloads constructor(
                     append(searchType.type)
                     append("&serVal=").append(URLEncoder.encode(searchKeyword, "UTF-8").replace("+", "%20"))
                 }
-                if (recommend)
+                if (recommend) {
                     append("&recommend=1")
-                if (notice)
+                }
+                if (notice) {
                     append("&notice=1")
-                if (headId > 0)
+                }
+                if (headId > 0) {
                     append("&headid=").append(headId)
+                }
                 session?.let {
                     if (it.user !is Anonymous) {
                         append("&confirm_id=").append(it.detail!!.userId)
@@ -152,8 +155,9 @@ class ArticleList @JvmOverloads constructor(
      * @exception [be.zvz.kotlininside.http.HttpException] 글 목록을 불러오지 못할 경우, HttpException 발생
      */
     fun getGallInfo(): GallInfo {
-        if (!::json.isInitialized)
+        if (!::json.isInitialized) {
             request()
+        }
 
         val gallInfo = json.index(0).get("gall_info").index(0)
 
@@ -204,8 +208,9 @@ class ArticleList @JvmOverloads constructor(
      * @exception [be.zvz.kotlininside.http.HttpException] 글 목록을 불러오지 못할 경우, HttpException 발생
      */
     fun getGallList(): List<GallList> {
-        if (!::json.isInitialized)
+        if (!::json.isInitialized) {
             request()
+        }
 
         return mutableListOf<GallList>().apply {
             json.index(0).get("gall_list").values().forEach { gallList ->

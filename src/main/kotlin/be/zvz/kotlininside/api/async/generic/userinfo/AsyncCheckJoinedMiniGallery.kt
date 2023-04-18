@@ -7,7 +7,7 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 
 class AsyncCheckJoinedMiniGallery(
-    session: Session,
+    session: Session
 ) {
     private val checkJoinMiniGallery = CheckJoinedMiniGallery(session)
 

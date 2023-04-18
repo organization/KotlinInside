@@ -1,5 +1,3 @@
-import org.jmailen.gradle.kotlinter.tasks.*
-
 plugins {
     id 'java'
     id 'org.jetbrains.kotlin.jvm' version '1.8.20'
@@ -7,7 +5,6 @@ plugins {
     id 'maven-publish'
     id 'io.github.gradle-nexus.publish-plugin' version '1.3.0'
     id 'signing'
-    id 'org.jmailen.kotlinter' version '3.13.0'
     id 'com.google.protobuf' version '0.9.2'
 }
 
@@ -15,7 +12,7 @@ boolean isDev = false
 
 String libName = 'KotlinInside'
 String libDevVersion = isDev ? '-SNAPSHOT' : ''
-String libVersion = "1.14.6$libDevVersion"
+String libVersion = "1.15.0$libDevVersion"
 String libDesc = 'Unofficial DCInside API written in Kotlin'
 
 group = 'be.zvz'
@@ -41,11 +38,15 @@ compileJava {
     targetCompatibility = JavaVersion.VERSION_1_8
 }
 
+compileKotlin {
+    kotlinOptions.jvmTarget = JavaVersion.VERSION_1_8.toString()
+}
+
 javadoc.options.encoding = 'UTF-8'
 
 protobuf {
     protoc {
-        artifact = 'com.google.protobuf:protoc:3.22.2'
+        artifact = 'com.google.protobuf:protoc:3.22.3'
     }
     plugins {
         javalite {
@@ -83,16 +84,18 @@ dependencies {
     implementation group: 'com.vladsch.flexmark', name: 'flexmark-ext-gfm-tasklist', version: '0.62.2'
 
     // Protobuf
-    implementation group: 'com.google.protobuf', name: 'protobuf-kotlin-lite', version: '3.22.2'
+    implementation group: 'com.google.protobuf', name: 'protobuf-kotlin-lite', version: '3.22.3'
 
     // Use the Kotlin JDK standard library.
-    implementation group: 'org.jetbrains.kotlin', name: 'kotlin-stdlib-jdk7'
+    implementation group: 'org.jetbrains.kotlin', name: 'kotlin-stdlib', version: '1.8.20'
     // Use the Kotlin coroutines library.
     implementation group: 'org.jetbrains.kotlinx', name: 'kotlinx-coroutines-core', version: '1.6.4'
     // Use the Kotlin test library.
-    testImplementation group: 'org.jetbrains.kotlin', name: 'kotlin-test'
+    testImplementation group: 'org.jetbrains.kotlin', name: 'kotlin-test', version: '1.8.20'
     // Use the Kotlin JUnit integration.
-    testImplementation group: 'org.jetbrains.kotlin', name: 'kotlin-test-junit5'
+    testImplementation group: 'org.jetbrains.kotlin', name: 'kotlin-test-junit5', version: '1.8.20'
+
+    implementation group: 'com.squareup.okhttp3', name: 'okhttp', version: '5.0.0-alpha.11'
 
     testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter', version: '5.9.2'
 }
@@ -104,20 +107,20 @@ tasks.test {
     }
 }
 
-tasks.withType(Copy) {
+tasks.withType(Copy).configureEach {
     filesMatching("**/*.proto") {
         duplicatesStrategy = DuplicatesStrategy.INCLUDE
     }
 }
 
-dokkaJekyll {
+dokkaHtml {
     outputDirectory.set(file("docs"))
 
     dokkaSourceSets {
         configureEach {
             platform.set(org.jetbrains.dokka.Platform.jvm)
 
-            jdkVersion.set(7)
+            jdkVersion.set(8)
             noStdlibLink.set(false)
             noJdkLink.set(false)
 
@@ -128,24 +131,16 @@ dokkaJekyll {
 }
 
 // Maven-Central publish
-task javadocJar(type: Jar, dependsOn: dokkaJavadoc) {
-    classifier = 'javadoc'
+tasks.register('javadocJar', Jar) {
+    dependsOn dokkaJavadoc
+    archiveClassifier = 'javadoc'
     from javadoc.destinationDir
 }
 
-task sourcesJar(type: Jar, dependsOn: classes) {
-    classifier = 'sources'
+tasks.register('sourcesJar', Jar) {
+    dependsOn classes
+    archiveClassifier = 'sources'
     from sourceSets.main.allSource
-}
-
-task ktLint(type: LintTask, group: 'verification') {
-    source files('src')
-}
-
-task ktFormat(type: FormatTask, group: 'formatting') {
-    source files('src')
-    report = file('build/format-report.txt')
-    disabledRules = ["import-ordering"]
 }
 
 signing {

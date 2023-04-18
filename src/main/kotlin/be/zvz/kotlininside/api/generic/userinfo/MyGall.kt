@@ -9,7 +9,7 @@ import be.zvz.kotlininside.session.user.Anonymous
 import be.zvz.kotlininside.value.ApiUrl
 
 class MyGall(
-    private val session: Session,
+    private val session: Session
 ) {
     data class MyGallResult(
         val myGall: List<Gallery>,
@@ -57,7 +57,7 @@ class MyGall(
                         )
                     )
                 }
-            },
+            }
         )
     }
 }

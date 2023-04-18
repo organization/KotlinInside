@@ -10,13 +10,13 @@
 #### < Gradle 7
 
 ```groovy
-compile 'be.zvz:KotlinInside:1.14.6'
+compile 'be.zvz:KotlinInside:1.15.0'
 ```
 
 #### Gradle 7+
 
 ```groovy
-implementation 'be.zvz:KotlinInside:1.14.6'
+implementation 'be.zvz:KotlinInside:1.15.0'
 ```
 
 ### Maven
@@ -24,15 +24,15 @@ implementation 'be.zvz:KotlinInside:1.14.6'
 ```xml
 <dependency>
   <groupId>be.zvz</groupId>
-  <artifactId>KotlinInside</artifactId>
-  <version>1.14.6</version>
+    <artifactId>KotlinInside</artifactId>
+    <version>1.15.0</version>
 </dependency>
 ```
 
 ### 라이브러리 최소 요구사항
 
 - **Java 1.8 (Java 8)** 이상 필요
-- **Kotlin 1.6+** 권장
+- **Kotlin 1.8+** 권장
 - **Android에서 사용 가능**
 - **Java에서도 사용 가능 (타 JVM 계열 언어에서도 사용 가능)**
 
@@ -48,8 +48,8 @@ implementation 'be.zvz:KotlinInside:1.14.6'
 
 ```kotlin
 KotlinInside.createInstance(
-        Anonymous("이름", "비밀번호"),
-        DefaultHttpClient(true, true)
+    Anonymous("이름", "비밀번호"),
+    DefaultHttpClient()
 )
 ```
 
@@ -57,8 +57,8 @@ KotlinInside.createInstance(
 
 ```kotlin
 KotlinInside.createInstance(
-        LoginUser("아이디", "비밀번호"),
-        DefaultHttpClient(true, true)
+    LoginUser("아이디", "비밀번호"),
+    DefaultHttpClient()
 )
 ```
 
@@ -149,26 +149,4 @@ limitations under the License.
  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
  OF SUCH DAMAGE.
-```
- - [***http-request***](https://github.com/kevinsawicki/http-request)
-```
-Copyright (c) 2014 Kevin Sawicki <kevinsawicki@gmail.com>
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to
-deal in the Software without restriction, including without limitation the
-rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-sell copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-IN THE SOFTWARE.
 ```

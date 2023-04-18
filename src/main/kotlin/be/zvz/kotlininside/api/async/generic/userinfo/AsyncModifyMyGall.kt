@@ -9,7 +9,7 @@ import kotlinx.coroutines.coroutineScope
 class AsyncModifyMyGall(
     gallName: String,
     gallId: String,
-    session: Session,
+    session: Session
 ) {
     private val modifyMyGall = ModifyMyGall(gallName, gallId, session)
 
