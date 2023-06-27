@@ -1,11 +1,11 @@
 plugins {
     id 'java'
-    id 'org.jetbrains.kotlin.jvm' version '1.8.20'
+    id 'org.jetbrains.kotlin.jvm' version '1.8.22'
     id 'org.jetbrains.dokka' version '1.8.10'
     id 'maven-publish'
     id 'io.github.gradle-nexus.publish-plugin' version '1.3.0'
     id 'signing'
-    id 'com.google.protobuf' version '0.9.2'
+    id 'com.google.protobuf' version '0.9.3'
 }
 
 boolean isDev = false
@@ -75,7 +75,7 @@ dependencies {
 
     //Jackson
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.15.2'
-    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.14.2'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.15.2'
 
     //FlexMark
     implementation group: 'com.vladsch.flexmark', name: 'flexmark', version: '0.62.2'
@@ -84,20 +84,20 @@ dependencies {
     implementation group: 'com.vladsch.flexmark', name: 'flexmark-ext-gfm-tasklist', version: '0.62.2'
 
     // Protobuf
-    implementation group: 'com.google.protobuf', name: 'protobuf-kotlin-lite', version: '3.22.3'
+    implementation group: 'com.google.protobuf', name: 'protobuf-kotlin-lite', version: '3.23.3'
 
     // Use the Kotlin JDK standard library.
-    implementation group: 'org.jetbrains.kotlin', name: 'kotlin-stdlib', version: '1.8.20'
+    implementation group: 'org.jetbrains.kotlin', name: 'kotlin-stdlib', version: '1.8.22'
     // Use the Kotlin coroutines library.
     implementation group: 'org.jetbrains.kotlinx', name: 'kotlinx-coroutines-core', version: '1.6.4'
     // Use the Kotlin test library.
-    testImplementation group: 'org.jetbrains.kotlin', name: 'kotlin-test', version: '1.8.20'
+    testImplementation group: 'org.jetbrains.kotlin', name: 'kotlin-test', version: '1.8.22'
     // Use the Kotlin JUnit integration.
-    testImplementation group: 'org.jetbrains.kotlin', name: 'kotlin-test-junit5', version: '1.8.20'
+    testImplementation group: 'org.jetbrains.kotlin', name: 'kotlin-test-junit5', version: '1.8.22'
 
     implementation group: 'com.squareup.okhttp3', name: 'okhttp', version: '5.0.0-alpha.11'
 
-    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter', version: '5.9.2'
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter', version: '5.9.3'
 }
 
 tasks.test {
