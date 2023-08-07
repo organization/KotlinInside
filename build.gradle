@@ -87,7 +87,7 @@ dependencies {
     implementation group: 'com.google.protobuf', name: 'protobuf-kotlin-lite', version: '3.23.3'
 
     // Use the Kotlin JDK standard library.
-    implementation group: 'org.jetbrains.kotlin', name: 'kotlin-stdlib', version: '1.8.22'
+    implementation group: 'org.jetbrains.kotlin', name: 'kotlin-stdlib', version: '1.9.0'
     // Use the Kotlin coroutines library.
     implementation group: 'org.jetbrains.kotlinx', name: 'kotlinx-coroutines-core', version: '1.7.3'
     // Use the Kotlin test library.
