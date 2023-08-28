@@ -84,7 +84,7 @@ dependencies {
     implementation group: 'com.vladsch.flexmark', name: 'flexmark-ext-gfm-tasklist', version: '0.62.2'
 
     // Protobuf
-    implementation group: 'com.google.protobuf', name: 'protobuf-kotlin-lite', version: '3.23.3'
+    implementation group: 'com.google.protobuf', name: 'protobuf-kotlin-lite', version: '3.24.2'
 
     // Use the Kotlin JDK standard library.
     implementation group: 'org.jetbrains.kotlin', name: 'kotlin-stdlib', version: '1.8.22'
