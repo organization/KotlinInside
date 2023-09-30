@@ -99,6 +99,9 @@ class Auth {
             ApiUrl.PlayService.REGISTER3,
             HttpInterface.Option()
                 .addHeader("Authorization", generateAidLoginFromCheckin(androidCheckin))
+                .addHeader("app", Const.Register3.APP)
+                .addHeader("gcm_ver", Const.Register3.GCM_VERSION)
+                .addHeader("app_ver", Const.DC_APP_VERSION_CODE)
                 .setUserAgent(Const.Register3.USER_AGENT)
                 .addBodyParameter("X-subtype", clientToken)
                 .addBodyParameter("sender", clientToken)
@@ -162,6 +165,9 @@ class Auth {
             ApiUrl.PlayService.REGISTER3,
             HttpInterface.Option()
                 .addHeader("Authorization", generateAidLoginFromCheckin(androidCheckin))
+                .addHeader("app", Const.Register3.APP)
+                .addHeader("gcm_ver", Const.Register3.GCM_VERSION)
+                .addHeader("app_ver", Const.DC_APP_VERSION_CODE)
                 .setUserAgent(Const.Register3.USER_AGENT)
                 .addBodyParameter("X-subtype", Const.Register3.SENDER)
                 .addBodyParameter("sender", Const.Register3.SENDER)
