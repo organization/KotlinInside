@@ -63,7 +63,7 @@ class Auth {
                     brand = "google"
                     radio = "FLO-04.04"
                     clientId = "android-google"
-                    sdkVersion = 25
+                    sdkVersion = Const.Firebase.OS_VERSION.toInt()
                 }
                 lastCheckinMs = 0
             }
@@ -104,6 +104,9 @@ class Auth {
                 .addBodyParameter("sender", clientToken)
                 .addBodyParameter("X-gcm.topic", scope)
                 .addBodyParameter("X-app_ver", Const.DC_APP_VERSION_CODE)
+                .addBodyParameter("X-osv", Const.Firebase.OS_VERSION)
+                .addBodyParameter("X-cliv", Const.Firebase.CLIV)
+                .addBodyParameter("X-gmsv", Const.Firebase.GCM_VERSION)
                 .addBodyParameter("X-appid", fid ?: "")
                 .addBodyParameter("X-scope", scope)
                 .addBodyParameter("X-Goog-Firebase-Installations-Auth", installationToken)
@@ -113,7 +116,11 @@ class Auth {
                 .addBodyParameter("app", Const.Register3.APP)
                 .addBodyParameter("device", androidCheckin.androidId.toString())
                 .addBodyParameter("app_ver", Const.DC_APP_VERSION_CODE)
+                .addBodyParameter("info", Const.Firebase.INFO)
+                .addBodyParameter("plat", "0")
+                .addBodyParameter("gcm_ver", Const.Register3.GCM_VERSION)
                 .addBodyParameter("cert", Const.Register3.CERT)
+                .addBodyParameter("target_ver", Const.Firebase.TARGET_VER)
         )
     }
 
@@ -159,6 +166,9 @@ class Auth {
                 .addBodyParameter("X-subtype", Const.Register3.SENDER)
                 .addBodyParameter("sender", Const.Register3.SENDER)
                 .addBodyParameter("X-app_ver", Const.DC_APP_VERSION_CODE)
+                .addBodyParameter("X-osv", Const.Firebase.OS_VERSION)
+                .addBodyParameter("X-cliv", Const.Firebase.CLIV)
+                .addBodyParameter("X-gmsv", Const.Firebase.GCM_VERSION)
                 .addBodyParameter("X-appid", fid ?: "")
                 .addBodyParameter("X-scope", Const.Register3.X_SCOPE_ALL)
                 .addBodyParameter("X-Goog-Firebase-Installations-Auth", token)
@@ -168,8 +178,11 @@ class Auth {
                 .addBodyParameter("app", Const.Register3.APP)
                 .addBodyParameter("device", androidCheckin.androidId.toString())
                 .addBodyParameter("app_ver", Const.DC_APP_VERSION_CODE)
+                .addBodyParameter("info", Const.Firebase.INFO)
+                .addBodyParameter("plat", "0")
                 .addBodyParameter("gcm_ver", Const.Register3.GCM_VERSION)
                 .addBodyParameter("cert", Const.Register3.CERT)
+                .addBodyParameter("target_ver", Const.Firebase.TARGET_VER)
         ) ?: throw RuntimeException("Can't get client_token")
 
         val clientToken = register3.split('=')[1]
@@ -189,7 +202,7 @@ class Auth {
                     "application/json",
                     JsonBrowser.getMapper().writeValueAsString(
                         JsonBrowser.getMapper().createObjectNode()?.apply {
-                            put("platformVersion", "25")
+                            put("platformVersion", Const.Firebase.OS_VERSION)
                             put("appInstanceId", fid ?: "")
                             put("packageName", Const.DC_APP_PACKAGE)
                             put("appVersion", Const.DC_APP_VERSION_NAME)
