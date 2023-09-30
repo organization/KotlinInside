@@ -18,6 +18,7 @@ import be.zvz.kotlininside.session.user.named.DuplicateNamed
 import be.zvz.kotlininside.session.user.named.Named
 import be.zvz.kotlininside.value.ApiUrl
 import be.zvz.kotlininside.value.Const
+import com.fasterxml.jackson.databind.JsonNode
 import org.apache.commons.codec.binary.Hex
 import org.apache.commons.codec.digest.DigestUtils
 import org.apache.commons.lang3.RandomStringUtils
@@ -26,6 +27,9 @@ import java.io.BufferedOutputStream
 import java.net.HttpURLConnection
 import java.net.URL
 import java.text.SimpleDateFormat
+import java.time.ZoneId
+import java.time.ZonedDateTime
+import java.time.format.DateTimeFormatter
 import java.util.*
 
 class Auth {
@@ -172,6 +176,50 @@ class Auth {
 
         requestToGcmWithScope(androidCheckin, clientToken, token, Const.Register3.X_SCOPE_REFRESH_REMOTE_CONFIG)
         requestToGcmWithScope(androidCheckin, clientToken, token, Const.Register3.X_SCOPE_SHOW_NOTICE_MESSAGE)
+
+        KotlinInside.getInstance().httpInterface.post(
+            ApiUrl.Firebase.REMOTE_CONFIG,
+            HttpInterface.Option()
+                .addHeader("X-Goog-Api-Key", Const.Installations.X_GOOG_API_KEY)
+                .addHeader("X-Android-Package", Const.Installations.X_ANDROID_PACKAGE)
+                .addHeader("X-Android-Cert", Const.Installations.X_ANDROID_CERT)
+                .addHeader("X-Google-GFE-Can-Retry", "yes")
+                .addHeader("X-Goog-Firebase-Installations-Auth", token)
+                .setContentTypeAndBody(
+                    "application/json",
+                    JsonBrowser.getMapper().writeValueAsString(
+                        JsonBrowser.getMapper().createObjectNode()?.apply {
+                            put("platformVersion", "25")
+                            put("appInstanceId", fid ?: "")
+                            put("packageName", Const.DC_APP_PACKAGE)
+                            put("appVersion", Const.DC_APP_VERSION_NAME)
+                            put("countryCode", "KR")
+                            put("sdkVersion", Const.Firebase.REMOTE_CONFIG_SDK_VERSION)
+                            put("appBuild", Const.DC_APP_VERSION_CODE)
+                            put(
+                                "firstOpenTime",
+                                ZonedDateTime.now()
+                                    .withHour(12)
+                                    .withMinute(0)
+                                    .withSecond(0)
+                                    .withNano(0)
+                                    .format(DateTimeFormatter.ISO_INSTANT)
+                            )
+                            set<JsonNode>(
+                                "analyticsUserProperties",
+                                JsonBrowser.getMapper().createObjectNode().apply {
+                                    put("store_name", "ONE")
+                                }
+                            )
+                            put("appId", Const.Firebase.APP_ID)
+                            put("languageCode", "ko-KR")
+                            put("appInstanceIdToken", token)
+                            // Style: Asia/Seoul
+                            put("timeZone", ZoneId.systemDefault().id)
+                        }
+                    )
+                )
+        ) ?: throw RuntimeException("Can't get firebase config")
 
         return clientToken
     }

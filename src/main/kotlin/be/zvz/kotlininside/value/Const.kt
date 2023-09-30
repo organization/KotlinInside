@@ -8,11 +8,12 @@ object Const {
     const val USER_AGENT = "dcinside.app"
 
     object Firebase {
-        const val APP_ID = "1:477369754343:android:d2ffdd960120a207727842"
+        const val APP_ID = "1:${Register3.SENDER}:android:d2ffdd960120a207727842"
         const val AUTH_VERSION = "FIS_v2"
         const val FIREBASE_CLIENT = "H4sIAAAAAAAAAKtWykhNLCpJSk0sKVayio7VUSpLLSrOzM9TslIyUqoFAFyivEQfAAAA"
         const val SDK_VERSION = "a:17.1.0"
-        const val CERT = "E6DA04787492CDBD34C77F31B890A3FAA3682D44"
+        const val REMOTE_CONFIG_SDK_VERSION = "21.2.1"
+        const val CERT = "43bd70dfc365ec1749f0424d28174da44ee7659d"
     }
 
     object Installations {

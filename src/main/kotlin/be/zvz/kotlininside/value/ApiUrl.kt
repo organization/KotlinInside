@@ -20,6 +20,8 @@ object ApiUrl {
     object Firebase {
         const val INSTALLATIONS =
             Protocol.HTTPS + "firebaseinstallations.googleapis.com/v1/projects/dcinside-b3f40/installations"
+        const val REMOTE_CONFIG =
+            Protocol.HTTPS + "firebaseremoteconfig.googleapis.com/v1/projects/${Const.Register3.SENDER}/namespaces/firebase:fetch"
     }
 
     object PlayService {
