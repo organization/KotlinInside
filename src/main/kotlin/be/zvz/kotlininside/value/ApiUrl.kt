@@ -72,7 +72,7 @@ object ApiUrl {
     object Auth {
         const val LOGIN = AUTH_API + "api/login"
         const val APP_ID = AUTH_API + "auth/mobile_app_verification"
-        const val APP_CHECK = MAIN_API + "json0/app_check_A_rina_one.php"
+        const val APP_CHECK = MAIN_API + "json0/app_check_A_rina_one_new.php"
     }
 
     object User {
@@ -89,6 +89,7 @@ object ApiUrl {
     }
 
     object MainInfo {
+        const val NOTICE = MAIN_API + "json3/app_dc_notice_one_new.php"
         const val APP_MAIN = MAIN_API + "json3/main_content.php"
         const val GALLERY_RANKING = MAIN_API + "json3/ranking_gallery.php"
         const val MINOR_GALLERY_RANKING = MAIN_API + "json1/mgallmain/mgallery_ranking.php"
