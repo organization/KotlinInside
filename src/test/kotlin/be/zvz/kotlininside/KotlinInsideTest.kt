@@ -3,7 +3,11 @@
  */
 package be.zvz.kotlininside
 
-import be.zvz.kotlininside.api.article.*
+import be.zvz.kotlininside.api.article.ArticleDelete
+import be.zvz.kotlininside.api.article.ArticleList
+import be.zvz.kotlininside.api.article.ArticleRead
+import be.zvz.kotlininside.api.article.ArticleVote
+import be.zvz.kotlininside.api.article.ArticleWrite
 import be.zvz.kotlininside.api.generic.GalleryRanking
 import be.zvz.kotlininside.api.generic.MiniGalleryRanking
 import be.zvz.kotlininside.api.generic.MinorGalleryRanking
@@ -14,19 +18,44 @@ import be.zvz.kotlininside.api.type.content.MarkdownContent
 import be.zvz.kotlininside.api.type.content.StringContent
 import be.zvz.kotlininside.http.DefaultHttpClient
 import be.zvz.kotlininside.session.user.Anonymous
+import okhttp3.OkHttpClient
 import org.junit.jupiter.api.MethodOrderer
 import org.junit.jupiter.api.Order
 import org.junit.jupiter.api.TestInstance
 import org.junit.jupiter.api.TestMethodOrder
+import java.security.SecureRandom
+import java.security.cert.X509Certificate
 import java.time.ZoneId
-import java.util.*
+import java.util.Calendar
+import java.util.Locale
+import java.util.TimeZone
 import java.util.logging.Logger
+import javax.net.ssl.SSLContext
+import javax.net.ssl.TrustManager
+import javax.net.ssl.X509TrustManager
 import kotlin.test.Test
 import kotlin.test.assertNotNull
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @TestMethodOrder(MethodOrderer.OrderAnnotation::class)
 class KotlinInsideTest {
+    private fun OkHttpClient.Builder.ignoreAllSSLErrors(): OkHttpClient.Builder {
+        val naiveTrustManager = object : X509TrustManager {
+            override fun getAcceptedIssuers(): Array<X509Certificate> = arrayOf()
+            override fun checkClientTrusted(certs: Array<X509Certificate>, authType: String) = Unit
+            override fun checkServerTrusted(certs: Array<X509Certificate>, authType: String) = Unit
+        }
+
+        val insecureSocketFactory = SSLContext.getInstance("TLSv1.2").apply {
+            val trustAllCerts = arrayOf<TrustManager>(naiveTrustManager)
+            init(null, trustAllCerts, SecureRandom())
+        }.socketFactory
+
+        sslSocketFactory(insecureSocketFactory, naiveTrustManager)
+        hostnameVerifier { _, _ -> true }
+        return this
+    }
+
     private var log = Logger.getLogger(KotlinInsideTest::class.java.name)
     private var articleId = 0
 
@@ -35,7 +64,7 @@ class KotlinInsideTest {
     fun initKotlinInside() {
         KotlinInside.createInstance(
             Anonymous("ㅇㅇ", "1234"),
-            DefaultHttpClient()
+            DefaultHttpClient(okHttpClient = OkHttpClient.Builder().ignoreAllSSLErrors().build())
         )
     }
 

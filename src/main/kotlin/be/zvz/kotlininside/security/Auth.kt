@@ -121,6 +121,7 @@ class Auth {
                 HttpInterface.Option()
                     .addHeader("X-Android-Package", Const.Installations.X_ANDROID_PACKAGE)
                     .addHeader("X-Android-Cert", Const.Installations.X_ANDROID_CERT)
+                    .addHeader("X-firebase-client", Const.Firebase.FIREBASE_CLIENT)
                     .addHeader("x-goog-api-key", Const.Installations.X_GOOG_API_KEY)
                     .setContentTypeAndBody(
                         "application/json",
