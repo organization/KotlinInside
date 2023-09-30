@@ -10,13 +10,13 @@
 #### < Gradle 7
 
 ```groovy
-compile 'be.zvz:KotlinInside:1.15.0'
+compile 'be.zvz:KotlinInside:1.16.0'
 ```
 
 #### Gradle 7+
 
 ```groovy
-implementation 'be.zvz:KotlinInside:1.15.0'
+implementation 'be.zvz:KotlinInside:1.16.0'
 ```
 
 ### Maven
@@ -25,14 +25,14 @@ implementation 'be.zvz:KotlinInside:1.15.0'
 <dependency>
   <groupId>be.zvz</groupId>
     <artifactId>KotlinInside</artifactId>
-    <version>1.15.0</version>
+    <version>1.16.0</version>
 </dependency>
 ```
 
 ### 라이브러리 최소 요구사항
 
 - **Java 1.8 (Java 8)** 이상 필요
-- **Kotlin 1.8+** 권장
+- **Kotlin 1.9+** 권장
 - **Android에서 사용 가능**
 - **Java에서도 사용 가능 (타 JVM 계열 언어에서도 사용 가능)**
 
