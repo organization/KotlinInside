@@ -39,7 +39,7 @@ class Auth {
 
     var fcmToken: String = ""
         private set
-    var fid: String? = null
+    var fid = RandomFidGenerator.createRandomFid()
     var refreshToken: String? = null
 
     data class AppCheck(
