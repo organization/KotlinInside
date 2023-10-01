@@ -74,10 +74,9 @@ class Auth {
             loggingId = Random(System.currentTimeMillis()).nextLong()
             macAddress.add(RandomStringUtils.random(12, "abcdef0123456789"))
             meid = RandomStringUtils.randomNumeric(14)
-            serial = RandomStringUtils.random(8, "abcdef0123456789")
             timeZone = TimeZone.getDefault().id
             version = 3
-            otaCert.add("--no-output--")
+            otaCert.add("71Q6Rn2DDZl1zPDVaaeEHItd")
             macAddressType.add("wifi")
             fragment = 0
             userSerialNumber = 0
