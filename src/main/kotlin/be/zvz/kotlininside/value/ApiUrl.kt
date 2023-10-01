@@ -26,7 +26,8 @@ object ApiUrl {
 
     object PlayService {
         const val ANDROID_CLIENT = Protocol.HTTPS + "android.clients.google.com"
-        const val REGISTER3 = "$ANDROID_CLIENT/c2dm/register3"
+        const val ANDROID_APIS = Protocol.HTTPS + "android.apis.google.com"
+        const val REGISTER3 = "$ANDROID_APIS/c2dm/register3"
         const val CHECKIN = "$ANDROID_CLIENT/checkin"
     }
 

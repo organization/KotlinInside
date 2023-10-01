@@ -19,13 +19,12 @@ import be.zvz.kotlininside.session.user.named.Named
 import be.zvz.kotlininside.value.ApiUrl
 import be.zvz.kotlininside.value.Const
 import com.fasterxml.jackson.databind.JsonNode
+import okhttp3.MediaType.Companion.toMediaType
+import okhttp3.OkHttpClient
+import okhttp3.RequestBody.Companion.toRequestBody
 import org.apache.commons.codec.binary.Hex
 import org.apache.commons.codec.digest.DigestUtils
 import org.apache.commons.lang3.RandomStringUtils
-import java.io.BufferedInputStream
-import java.io.BufferedOutputStream
-import java.net.HttpURLConnection
-import java.net.URL
 import java.text.SimpleDateFormat
 import java.time.ZoneId
 import java.time.ZonedDateTime
@@ -34,6 +33,7 @@ import java.util.*
 
 class Auth {
     private val seoulTimeZone = TimeZone.getTimeZone("Asia/Seoul")
+    private val internalOkHttpClient = OkHttpClient.Builder().build()
     private lateinit var time: String
     private lateinit var lastRefreshTime: Calendar
 
@@ -67,10 +67,10 @@ class Auth {
                 }
                 lastCheckinMs = 0
             }
-            locale = "ko"
+            locale = Locale.getDefault().language
             macAddress.add(RandomStringUtils.random(12, "ABCDEF0123456789"))
             meid = RandomStringUtils.randomNumeric(15)
-            timeZone = TimeZone.getDefault().getDisplayName(true, TimeZone.SHORT)
+            timeZone = ZoneId.systemDefault().id
             version = 3
             otaCert.add("--no-output--")
             macAddressType.add("wifi")
@@ -78,15 +78,24 @@ class Auth {
             userSerialNumber = 0
         }
 
-        val request = (URL(ApiUrl.PlayService.CHECKIN).openConnection() as HttpURLConnection).apply {
-            requestMethod = "POST"
-            doOutput = true
-            setRequestProperty("Content-Type", "application/x-protobuf")
-            setRequestProperty("User-Agent", "Android-Checkin/3.0")
+        return internalOkHttpClient.newCall(
+            okhttp3.Request.Builder()
+                .url(ApiUrl.PlayService.CHECKIN)
+                .post(
+                    checkinReq.toByteArray().let {
+                        it.toRequestBody(
+                            "application/x-protobuf".toMediaType(),
+                            0, it.size
+                        )
+                    }
+                )
+                .build()
+        ).execute().use {
+            if (!it.isSuccessful) {
+                throw HttpException(it.code, it.message)
+            }
+            it.body.byteStream().buffered().use(CheckinProto.CheckinResponse::parseFrom)
         }
-
-        BufferedOutputStream(request.outputStream).use(checkinReq::writeTo)
-        return BufferedInputStream(request.inputStream).use(CheckinProto.CheckinResponse::parseFrom)
     }
 
     private fun requestToGcmWithScope(
@@ -110,7 +119,7 @@ class Auth {
                 .addBodyParameter("X-osv", Const.Firebase.OS_VERSION)
                 .addBodyParameter("X-cliv", Const.Firebase.CLIV)
                 .addBodyParameter("X-gmsv", Const.Firebase.GCM_VERSION)
-                .addBodyParameter("X-appid", fid ?: "")
+                .addBodyParameter("X-appid", fid)
                 .addBodyParameter("X-scope", scope)
                 .addBodyParameter("X-Goog-Firebase-Installations-Auth", installationToken)
                 .addBodyParameter("X-gmp_app_id", Const.Firebase.APP_ID)
@@ -175,7 +184,7 @@ class Auth {
                 .addBodyParameter("X-osv", Const.Firebase.OS_VERSION)
                 .addBodyParameter("X-cliv", Const.Firebase.CLIV)
                 .addBodyParameter("X-gmsv", Const.Firebase.GCM_VERSION)
-                .addBodyParameter("X-appid", fid ?: "")
+                .addBodyParameter("X-appid", fid)
                 .addBodyParameter("X-scope", Const.Register3.X_SCOPE_ALL)
                 .addBodyParameter("X-Goog-Firebase-Installations-Auth", token)
                 .addBodyParameter("X-gmp_app_id", Const.Firebase.APP_ID)
@@ -209,10 +218,10 @@ class Auth {
                     JsonBrowser.getMapper().writeValueAsString(
                         JsonBrowser.getMapper().createObjectNode()?.apply {
                             put("platformVersion", Const.Firebase.OS_VERSION)
-                            put("appInstanceId", fid ?: "")
+                            put("appInstanceId", fid)
                             put("packageName", Const.DC_APP_PACKAGE)
                             put("appVersion", Const.DC_APP_VERSION_NAME)
-                            put("countryCode", "KR")
+                            put("countryCode", Locale.getDefault().country)
                             put("sdkVersion", Const.Firebase.REMOTE_CONFIG_SDK_VERSION)
                             put("appBuild", Const.DC_APP_VERSION_CODE)
                             put(
@@ -231,9 +240,8 @@ class Auth {
                                 }
                             )
                             put("appId", Const.Firebase.APP_ID)
-                            put("languageCode", "ko-KR")
+                            put("languageCode", Locale.getDefault().toLanguageTag())
                             put("appInstanceIdToken", token)
-                            // Style: Asia/Seoul
                             put("timeZone", ZoneId.systemDefault().id)
                         }
                     )
