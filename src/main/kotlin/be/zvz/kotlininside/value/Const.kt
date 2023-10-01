@@ -34,7 +34,7 @@ object Const {
         const val X_SCOPE_REFRESH_REMOTE_CONFIG = "/topics/DcRefreshRemoteConfig"
         const val X_SCOPE_SHOW_NOTICE_MESSAGE = "/topics/DcShowNoticeMessage"
         const val X_FIREBASE_APP_NAME_HASH = "R1dAH9Ui7M-ynoznwBdw01tLxhI"
-        const val USER_AGENT = "Android-GCM/1.5"
+        const val USER_AGENT = "Android-GCM/1.5 (generic_x86 KK)"
         const val APP = DC_APP_PACKAGE
         const val GCM_VERSION = Firebase.GCM_VERSION
         const val CERT = Firebase.CERT

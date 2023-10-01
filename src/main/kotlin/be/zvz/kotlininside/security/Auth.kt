@@ -30,6 +30,7 @@ import java.time.ZoneId
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
 import java.util.*
+import kotlin.random.Random
 
 class Auth {
     private val seoulTimeZone = TimeZone.getTimeZone("Asia/Seoul")
@@ -64,13 +65,17 @@ class Auth {
                     radio = "FLO-04.04"
                     clientId = "android-google"
                     sdkVersion = Const.Firebase.OS_VERSION.toInt()
+                    packageVersionCode = Const.DC_APP_VERSION_CODE.toInt()
                 }
                 lastCheckinMs = 0
+                roaming = "WIFI::"
             }
-            locale = Locale.getDefault().language
-            macAddress.add(RandomStringUtils.random(12, "ABCDEF0123456789"))
-            meid = RandomStringUtils.randomNumeric(15)
-            timeZone = ZoneId.systemDefault().id
+            locale = Locale.getDefault().toString()
+            loggingId = Random(System.currentTimeMillis()).nextLong()
+            macAddress.add(RandomStringUtils.random(12, "abcdef0123456789"))
+            meid = RandomStringUtils.randomNumeric(14)
+            serial = RandomStringUtils.random(8, "abcdef0123456789")
+            timeZone = TimeZone.getDefault().id
             version = 3
             otaCert.add("--no-output--")
             macAddressType.add("wifi")
