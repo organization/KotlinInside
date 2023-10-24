@@ -18,6 +18,8 @@ class DCConList(
 
     fun request(): ListResult {
         val option = Request.getDefaultOption()
+            .addMultipartParameter("type", "list")
+            .addMultipartParameter("app_id", KotlinInside.getInstance().auth.getAppId())
 
         if (session.user is LoginUser) {
             option.addMultipartParameter("user_id", session.detail!!.userId)
