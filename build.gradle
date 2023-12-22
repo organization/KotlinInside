@@ -93,7 +93,7 @@ dependencies {
     // Use the Kotlin test library.
     testImplementation group: 'org.jetbrains.kotlin', name: 'kotlin-test', version: '1.9.10'
     // Use the Kotlin JUnit integration.
-    testImplementation group: 'org.jetbrains.kotlin', name: 'kotlin-test-junit5', version: '1.9.10'
+    testImplementation group: 'org.jetbrains.kotlin', name: 'kotlin-test-junit5', version: '1.9.22'
 
     implementation group: 'com.squareup.okhttp3', name: 'okhttp', version: '5.0.0-alpha.11'
 
